@@ -4845,11 +4845,3 @@ function wp_delete_file( $file ) {
 		@unlink( $delete );
 	}
 }
-
-
-$args = array(
-	'default-color' => '000000',
-	'default-image' => '../imgs/background.jpg',
-);
-
-add_theme_support( 'custom-background', $args );
