@@ -11,27 +11,30 @@
 add_action('wp_enqueue_scripts','wpex_load_scripts');
 
 if ( ! function_exists( 'wpex_load_scripts' ) ) {
-	
+
 	function wpex_load_scripts() {
-		
-		
+
+
 		/*******
 		*** CSS
 		*******************/
-		
+
 		// Main
 		wp_enqueue_style( 'style', get_stylesheet_uri() );
-		
+
 		// Responsive
 		wp_enqueue_style( 'wpex-responsive', WPEX_CSS_DIR . '/responsive.css' );
-		
+
+		// Customize
+		wp_enqueue_style( 'customize', WPEX_CSS_DIR . '/customize-theme.css' );
+
 		// Google Fonts
 		wp_enqueue_style( 'opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese,latin-ext', 'style' );
 
 		/*******
 		*** jQuery
 		*******************/
-		
+
 		// Core
 		wp_enqueue_script( 'wpex-plugins', WPEX_JS_DIR .'/plugins.js', array( 'jquery' ), '1.0', true );
 		wp_enqueue_script( 'wpex-global', WPEX_JS_DIR .'/global.js', array( 'jquery', 'wpex-plugins' ), '1.0', true );
@@ -45,7 +48,7 @@ if ( ! function_exists( 'wpex_load_scripts' ) ) {
 			wp_enqueue_script('comment-reply');
 		}
 
-		
+
 	} //end wpex_load_scripts()
 
 }

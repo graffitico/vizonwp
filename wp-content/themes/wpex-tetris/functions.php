@@ -55,13 +55,7 @@ function wpex_setup() {
 
 	//theme support
 	add_theme_support('automatic-feed-links');
-
-	// add the background image
-	$args = array(
-		'default-color' => '000000',
-		'default-image' => '/imgs/background.jpg'
-	);
-	add_theme_support('custom-background', $args);
+	add_theme_support('custom-background');
 	add_theme_support('post-thumbnails');
 
 	// Menu
