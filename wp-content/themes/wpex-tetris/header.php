@@ -51,17 +51,18 @@
 			</div><!-- /logo -->
 			<nav id="navigation" class="clearfix">
 				<?php wp_nav_menu( array(
-					'theme_location'	=> 'main_menu',
+					'theme_location'	=> 'header_menu',
 					'sort_column'		=> 'menu_order',
 					'menu_class'		=> 'sf-menu',
+					'container_class' 	=> 'vizuri_menu_class',
 					'fallback_cb'		=> false
 				)); ?>
 			</nav><!-- /navigation -->
 		</header><!-- /header -->
 	</div><!-- /header-wrap -->
-	
+
 	<div id="main-content" class="clearfix">
-	
+
 		<?php
 		// Homepage tagline
 		if( is_front_page() &&  get_bloginfo('description') ) { ?>
