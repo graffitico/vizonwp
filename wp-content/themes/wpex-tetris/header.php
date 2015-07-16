@@ -30,6 +30,20 @@
 
 	<div id="header-wrap">
 		<div id="pre-header" class="clearfix">
+			<ul id="header-actions">
+				<li>
+					<input type='button' class='login-button' value='LOGIN' />
+				</li>
+				<li>
+					<a class='icon-search' href='javascript://'>SEARCH</a>
+				</li>
+				<li>
+					<a class='icon-user' href='javascript://'>USER</a>
+				</li>
+				<li>
+					<a class='icon-language' href='javascript://'>LANGUAGE</a>
+				</li>
+			</ul>
 			<ul id="header-social" class="clearfix">
 				<?php
 				// Show social icons if enabled
