@@ -36,13 +36,13 @@
 					<input type='button' class='login-button' value='LOGIN' />
 				</li>
 				<li>
-					<a class='icon-search' href='javascript://'>SEARCH</a>
+					<span class='icon-home_header_search'></span>
 				</li>
 				<li>
-					<a class='icon-user' href='javascript://'>USER</a>
+					<span class='icon-home_header_contact'></span>
 				</li>
 				<li>
-					<a class='icon-language' href='javascript://'>LANGUAGE</a>
+					<span>EN</span><span class='icon-home_header_lang'></span>
 				</li>
 			</ul>
 			<ul id="header-social" class="clearfix">
