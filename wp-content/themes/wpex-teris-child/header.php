@@ -21,6 +21,7 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/global.js"></script>
 </head>
 
 <!-- Begin Body -->
@@ -72,6 +73,61 @@
 					'fallback_cb'		=> false
 				)); ?>
 			</nav><!-- /navigation -->
+			<div class='subnav'>
+				<div class='products-subnav'>
+					<div class='reach-block product-subnav-block'>
+						<h3>REACH</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<div class='convert-block product-subnav-block'>
+						<h3>CONVERT</h3>
+						<div>Retargeting solutions</div>
+						<ul class='subnav-list-control'>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>CONVERT XP</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>App Re-Engagement</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Facebook Marketing</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Cross Channel</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Mobile Web-App Engagement</a>
+							</li>
+						</ul>
+					</div>
+					<div class='engage-block product-subnav-block'>
+						<h3>ENGAGE</h3>
+						<div>Performance marketing hub</div>
+						<ul class='subnav-list-control'>
+							<li>
+								<a href='javascript://'>Data Onboarding / Aggregation</a>
+							</li>
+							<li>
+								<a href='javascript://'>Analytics & Reporting</a>
+							</li>
+							<li>
+								<a href='javascript://'>Marketing Channels & Optimization</a>
+							</li>
+						</ul>
+					</div>
+					<div class='contact-block product-subnav-block'>
+						<div>For personalised solutions,</div>
+						<input type='button' value='GET IN TOUCH' />
+					</div>
+				</div>
+				<div class='about-subnav'></div>
+				<div class='resources-subnav'></div>
+			</div>
 		</header><!-- /header -->
 	</div><!-- /header-wrap -->
 

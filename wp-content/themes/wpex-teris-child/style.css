@@ -45,7 +45,7 @@
 #navigation .sf-menu > li > a {
 	font-family: proxima;
 	font-size: 18px;
-	margin-left: 40px;
+	padding-left: 50px;
 }
 
 #wpadminbar {
@@ -61,4 +61,68 @@
 #pre-header ul li {
 	display: inline-block;
 	margin-left: 10px;
+}
+
+#header .subnav {
+	display: none;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.9;
+	position: absolute;
+	top: 82px;
+	left: 0;
+}
+
+#header .subnav .product-subnav-block {
+	width: 24.5%;
+	border-right: 1px solid #bebebe;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 20px;
+	margin: 20px 0;
+	vertical-align: top;
+	height: 210px;
+}
+
+#header .subnav .contact-block {
+	border-width: 0;
+	padding-top: 70px;
+}
+
+#header .subnav .product-subnav-block p {
+	color: #bebebe;
+	text-align: justify;
+}
+
+#header .subnav .product-subnav-block div {
+	color: #bebebe;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#header .subnav .product-subnav-block h3 {
+	color: #fff;
+}
+
+#header .subnav .subnav-list-control {
+	color: #fff;
+	text-align: left;
+}
+
+#header .subnav .subnav-list-control span {
+	width: 40px;
+	color: inherit;
+	display: inline-block;
+}
+
+#header .subnav .subnav-list-control a {
+	color: inherit;
+}
+
+.subnav-list-control a:hover {
+	text-decoration: none;
+}
+
+.contact {
+
 }
