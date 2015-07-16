@@ -124,6 +124,14 @@
 	text-decoration: none;
 }
 
+
+/** Main content */
+#main-content {
+	margin: 0;
+}
+
+
+
 /* Header Icons */
 @font-face {
 	font-family: 'icomoon';

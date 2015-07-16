@@ -132,9 +132,3 @@
 	</div><!-- /header-wrap -->
 
 	<div id="main-content" class="clearfix">
-
-		<?php
-		// Homepage tagline
-		if( is_front_page() &&  get_bloginfo('description') ) { ?>
-			<h2 id="homepage-title"><span><?php echo get_bloginfo('description'); ?></span></h2>
-		<?php } ?>

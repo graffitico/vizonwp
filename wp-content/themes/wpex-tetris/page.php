@@ -21,6 +21,7 @@ if( has_post_thumbnail( get_the_ID() ) ) {
 } ?>
 
 <div id="page-heading">
+	<h2>One more tit</h2>
 	<h1><?php the_title(); ?></h1>
 </div><!-- /page-heading -->
 
