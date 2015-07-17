@@ -54,24 +54,28 @@
 
 		<header id="header" class="clearfix">
 			<div id="logo">
-				<?php
-				// Show custom image logo if defined in the admin
-				if( get_theme_mod('wpex_logo') ) { ?>
-					<a href="<?php echo home_url(); ?>/" title="<?php echo get_bloginfo( 'name' ); ?>" rel="home"><img src="<?php echo get_theme_mod('wpex_logo'); ?>" alt="<?php echo get_bloginfo( 'name' ) ?>" /></a>
-				<?php }
-				// No custom img logo - show text logo
-					else { ?>
-					<h2><a href="<?php echo home_url(); ?>/" title="<?php echo get_bloginfo( 'name' ); ?>" rel="home"><?php echo get_bloginfo( 'name' ); ?></a></h2>
-				<?php } ?>
+				<a href="<?php echo home_url(); ?>/" title="<?php echo get_bloginfo( 'name' ); ?>" rel="home"><img src="/imgs/logo.png" alt="<?php echo get_bloginfo( 'name' ) ?>" /></a>
 			</div><!-- /logo -->
 			<nav id="navigation" class="clearfix">
-				<?php wp_nav_menu( array(
-					'theme_location'	=> 'header_menu',
-					'sort_column'		=> 'menu_order',
-					'menu_class'		=> 'sf-menu',
-					'container_class' 	=> 'vizuri_menu_class',
-					'fallback_cb'		=> false
-				)); ?>
+				<div class="vizuri_menu_class">
+					<ul id="menu-header-menu" class="sf-menu sf-js-enabled">
+						<li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
+							<a href="http://localhost:8888/products">PRODUCTS</a>
+						</li>
+						<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
+							<a href="http://localhost:8888/about">ABOUT</a>
+						</li>
+						<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+							<a href="http://localhost:8888/publishers">PUBLISHERS</a>
+						</li>
+						<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
+							<a href="http://localhost:8888/resources">RESOURCES</a>
+						</li>
+						<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
+							<a href="http://localhost:8888/blog">BLOG</a>
+						</li>
+					</ul>
+				</div>
 			</nav><!-- /navigation -->
 			<div class='subnav'>
 				<div class='products-subnav'>

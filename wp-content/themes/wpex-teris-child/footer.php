@@ -13,24 +13,8 @@
 </div><!-- /main-content -->
 	<div id="footer-wrap">
 		<footer id="footer">
-			<div id="footer-widgets" class="clearfix">
-				<div class="footer-box">
-					<?php dynamic_sidebar('footer-one'); ?>
-				</div><!-- /footer-box -->
-				<div class="footer-box">
-					<?php dynamic_sidebar('footer-two'); ?>
-				</div><!-- /footer-box -->
-				<div class="footer-box remove-margin">
-					<?php dynamic_sidebar('footer-three'); ?>
-				</div><!-- /footer-box -->
-			</div><!-- /footer-widgets -->
 		</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->
-	<?php if ( get_theme_mod( 'wpex_copyright', '1' ) ) { ?>
-		<div id="copyright">
-			<?php echo get_theme_mod('wpex_copyright', 'Powered by <a href=\"http://www.wordpress.org\" title="WordPress" target="_blank">WordPress</a> and <a href=\"http://themeforest.net/user/WPExplorer?ref=WPExplorer" target="_blank" title="WPExplorer" rel="nofollow">WPExplorer Themes</a>') ?>
-		</div>
-	<?php } ?>
 </div><!-- /wrap -->
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/global.js"></script>
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
