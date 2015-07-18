@@ -78,7 +78,7 @@
 				</div>
 			</nav><!-- /navigation -->
 			<div class='subnav'>
-				<div class='products-subnav'>
+				<div class='subnav-block products-subnav'>
 					<div class='reach-block product-subnav-block'>
 						<h3>REACH</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -129,8 +129,71 @@
 						<input type='button' value='GET IN TOUCH' />
 					</div>
 				</div>
-				<div class='about-subnav'></div>
-				<div class='resources-subnav'></div>
+				<div class='subnav-block about-subnav'>
+					<div class='company-block product-subnav-block'>
+						<h3>Company</h3>
+						<ul class='subnav-list-control'>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Story</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Values</a>
+							</li>
+						</ul>
+					</div>
+					<div class='convert-block product-subnav-block'>
+						<h3>Team</h3>
+						<ul class='subnav-list-control'>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Founders</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Board</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Leadership</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Investors</a>
+							</li>
+						</ul>
+					</div>
+					<div class='engage-block product-subnav-block'>
+						<h3>Careers</h3>
+						<div>Life @ Vizury</div>
+						<ul class='subnav-list-control'>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Vizurians Speak</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Job Openings</a>
+							</li>
+						</ul>
+					</div>
+					<div class='no-border press-block product-subnav-block'>
+						<h3>Press Room</h3>
+						<div>Press Release</div>
+						<ul class='subnav-list-control'>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Media Coverage</a>
+							</li>
+							<li>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>Exclusives</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class='subnav-block resources-subnav'></div>
 			</div>
 		</header><!-- /header -->
 

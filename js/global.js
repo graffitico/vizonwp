@@ -4,7 +4,11 @@ jQuery(function () {
 	var $ = jQuery;
 	var subNavTimer;
 
-	function showSubNav() {
+	function showSubNav(subnavName) {
+		if (subnavName) {
+			$('#header .subnav-block').hide();
+			$('#header .' + subnavName + '-subnav').show();
+		}
 		$('#header .subnav').show();
 	}
 
@@ -31,7 +35,7 @@ jQuery(function () {
 	// Header hover functionality
 	$('.vizuri_menu_class li a').hover(function (e) {
 		stopSubNavHide();
-		showSubNav();
+		showSubNav($(e.target).text().toLowerCase());
 	}, function (e) {
 		hideSubNav();
 	});

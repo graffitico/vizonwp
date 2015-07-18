@@ -97,8 +97,7 @@ html {
 #header .subnav {
 	display: none;
 	width: 100%;
-	background-color: #000;
-	opacity: 0.9;
+	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
 	top: 82px;
 	left: 0;
@@ -314,6 +313,11 @@ html {
 	bottom: -220px;
 	display: inline-block;
 }
+
+.no-border {
+	border-width: 0 !important;
+}
+
 
 /* Header Icons */
 @font-face {
