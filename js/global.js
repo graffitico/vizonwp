@@ -94,5 +94,15 @@ jQuery(function () {
 			mouseOnTop = true;
 		}
 		manageHeaderVisibility();
-	})
+	});
+
+
+	// Product Landing page
+
+	//Script for the Products on Hover Text change effect
+    $('#pills-first a').hover(function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+   });
+
 });

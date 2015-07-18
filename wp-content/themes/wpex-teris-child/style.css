@@ -9,6 +9,7 @@
 @import url('/css/bootstrap.min.css');
 @import url('/css/creative.css');
 @import url('/css/animate.min.css');
+@import url('/css/ihover.css');
 
 @font-face {
    font-family: 'proxima';
@@ -214,14 +215,14 @@ html {
 	color: #fff;
 }
 
-.front-page-container .yellow-text-block {
+.yellow-text-block {
 	padding: 10px;
 	position: relative;
 	background-color: #FFD845;
 	text-align: center;
 }
 
-.front-page-container .yellow-text-block .arrow-button {
+.yellow-text-block .arrow-button {
 	font-size: 24px;
 }
 
@@ -320,6 +321,13 @@ html {
 
 .no-border {
 	border-width: 0 !important;
+}
+
+
+/* Product Page CSS */
+.container .nav-pills {
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -478,7 +486,6 @@ html {
 }
 .icon-home_yellowband_arrowc .path1:before {
 	content: "\e62a";
-	color: rgb(255, 255, 255);
 }
 .icon-home_yellowband_arrowc .path2:before {
 	content: "\e62b";
