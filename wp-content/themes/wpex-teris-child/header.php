@@ -133,6 +133,10 @@
 				<div class='resources-subnav'></div>
 			</div>
 		</header><!-- /header -->
+
+		<div class='floating-header'>
+			<div class='small-logo'></div>
+		</div>
 	</div><!-- /header-wrap -->
 
 	<div id="main-content" class="clearfix">

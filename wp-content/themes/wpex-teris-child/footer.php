@@ -73,7 +73,10 @@
     	</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->
 </div><!-- /wrap -->
-<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/global.js"></script>
+<script type="text/javascript" src="/js/global.js"></script>
+<script type="text/javascript" src="/js/wow.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/js/creative.js"></script>
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
 </body>
 </html>

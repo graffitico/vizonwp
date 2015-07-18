@@ -8,6 +8,7 @@
 @import url('../wpex-tetris/style.css');
 @import url('/css/bootstrap.min.css');
 @import url('/css/creative.css');
+@import url('/css/animate.min.css');
 
 @font-face {
    font-family: 'proxima';
@@ -28,7 +29,6 @@ html {
 }
 
 .container {
-	width: 100%;
 	background: none;
 }
 
@@ -43,10 +43,33 @@ html {
 	z-index: 10;
 }
 
+#pre-header {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: right;
+	padding: 10px 100px;
+	margin: 0;
+}
+
+#header-actions {
+	margin: 0;
+}
+
+#pre-header input {
+	background-color: #fff;
+	color: #000;
+	border-width: 0;
+	border-radius: 2px;
+	padding: 0 10px;
+}
+
+#pre-header * {
+	vertical-align: top;
+}
+
 #header {
 	width: 100%;
 	padding: 20px 10px;
-	opacity: 0.9;
 	margin: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	background-image: none;
@@ -64,12 +87,6 @@ html {
 
 #wpadminbar {
 	display: none;
-}
-
-#pre-header {
-	text-align: right;
-	margin: 0;
-	padding: 5px 100px;
 }
 
 #pre-header ul li {
@@ -137,6 +154,18 @@ html {
 	text-decoration: none;
 }
 
+.floating-header {
+	padding: 20px 20px 20px 37px;
+	display: none;
+}
+
+.floating-header .small-logo {
+	background-image: url(/imgs/logo2.png);
+	width: 45px;
+	height: 44px;
+	display: inline-block;
+}
+
 /** Footer */
 
 #footer {
@@ -149,10 +178,6 @@ html {
 	margin: 0;
 	padding: 0;
 	position: relative;
-}
-
-#main-content .container {
-	padding: 0;
 }
 
 .front-page-container {

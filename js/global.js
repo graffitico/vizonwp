@@ -18,6 +18,16 @@ jQuery(function () {
 		clearTimeout(subNavTimer);
 	}
 
+	function hideNavigation () {
+		$('#header').hide();
+		$('.floating-header').show();
+	}
+
+	function showNavigation () {
+		$('#header').show();
+		$('.floating-header').hide();
+	}
+
 	// Header hover functionality
 	$('.vizuri_menu_class li a').hover(function (e) {
 		stopSubNavHide();
@@ -32,5 +42,23 @@ jQuery(function () {
 		showSubNav();
 	}, function () {
 		hideSubNav();
+	});
+
+	$(window).scroll(function (e) {
+		if ($(window).scrollTop() > 50) {
+			hideNavigation();
+		}
+		else {
+			showNavigation();
+		}
+	});
+
+	$(window).mousemove(function (e) {
+		if (e.clientY > 150 && $(window).scrollTop() > 50) {
+			hideNavigation();
+		}
+		else {
+			showNavigation();
+		}
 	})
 });
