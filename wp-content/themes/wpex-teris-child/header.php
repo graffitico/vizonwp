@@ -36,13 +36,13 @@
 					<input type='button' class='login-button' value='LOGIN' />
 				</li>
 				<li>
-					<span class='icon-home_header_search'></span>
+					<span class='icon-home_header_searchwhite'></span>
 				</li>
 				<li>
-					<span class='icon-home_header_contact'></span>
+					<span class='icon-home_header_contactwhite'></span>
 				</li>
 				<li>
-					<span>EN</span><span class='icon-home_header_lang'></span>
+					<span>EN</span><span class='icon-home_header_langwhite'></span>
 				</li>
 			</ul>
 			<ul id="header-social" class="clearfix">
