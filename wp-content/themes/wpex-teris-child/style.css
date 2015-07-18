@@ -44,10 +44,9 @@ html {
 }
 
 #pre-header {
-	background-color: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	text-align: right;
-	padding: 10px 100px;
+	padding: 10px 100px 0;
 	margin: 0;
 }
 
@@ -91,7 +90,12 @@ html {
 
 #pre-header ul li {
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+#pre-header ul li span {
+	font-size: 18px;
 }
 
 #header .subnav {

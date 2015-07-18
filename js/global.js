@@ -3,6 +3,10 @@ jQuery(function () {
 
 	var $ = jQuery;
 	var subNavTimer;
+	var navVisible = true;
+	var preNavBg = false;
+	var mouseOnTop = false;
+	var scrollOnTop = true;
 
 	function showSubNav(subnavName) {
 		if (subnavName) {
@@ -22,14 +26,38 @@ jQuery(function () {
 		clearTimeout(subNavTimer);
 	}
 
+	function manageHeaderVisibility() {
+
+		if (scrollOnTop) {
+			$('#pre-header').css('background-color', '')
+			showNavigation();
+		}
+		else {
+			if (mouseOnTop) {
+				$('#pre-header').css('background-color', 'rgba(0,0,0,0.5)');
+				showNavigation();
+			}
+			else {
+				hideNavigation();
+			}
+		}
+	}
+
 	function hideNavigation () {
-		$('#header').hide();
-		$('.floating-header').show();
+		if (navVisible) {
+			$('#header').hide();
+			$('.floating-header').show();
+			$('#pre-header').css('background-color', '');
+			navVisible = false;
+		}
 	}
 
 	function showNavigation () {
-		$('#header').show();
-		$('.floating-header').hide();
+		if (!navVisible) {
+			$('#header').show();
+			$('.floating-header').hide();
+			navVisible = true;
+		}
 	}
 
 	// Header hover functionality
@@ -50,19 +78,21 @@ jQuery(function () {
 
 	$(window).scroll(function (e) {
 		if ($(window).scrollTop() > 50) {
-			hideNavigation();
+			scrollOnTop = false;
 		}
 		else {
-			showNavigation();
+			scrollOnTop = true;
 		}
+		manageHeaderVisibility();
 	});
 
 	$(window).mousemove(function (e) {
-		if (e.clientY > 150 && $(window).scrollTop() > 50) {
-			hideNavigation();
+		if (e.clientY > 150) {
+			mouseOnTop = false;
 		}
 		else {
-			showNavigation();
+			mouseOnTop = true;
 		}
+		manageHeaderVisibility();
 	})
 });
