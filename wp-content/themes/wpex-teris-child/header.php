@@ -60,19 +60,19 @@
 				<div class="vizuri_menu_class">
 					<ul id="menu-header-menu" class="sf-menu sf-js-enabled">
 						<li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
-							<a href="http://localhost:8888/products">PRODUCTS</a>
+							<a href="/products">PRODUCTS</a>
 						</li>
 						<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-							<a href="http://localhost:8888/about">ABOUT</a>
+							<a href="8888/about">ABOUT</a>
 						</li>
 						<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-							<a href="http://localhost:8888/publishers">PUBLISHERS</a>
+							<a href="/publishers">PUBLISHERS</a>
 						</li>
 						<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-							<a href="http://localhost:8888/resources">RESOURCES</a>
+							<a href="/resources">RESOURCES</a>
 						</li>
 						<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-							<a href="http://localhost:8888/blog">BLOG</a>
+							<a href="/blog">BLOG</a>
 						</li>
 					</ul>
 				</div>
@@ -93,19 +93,19 @@
 							</li>
 							<li>
 								<span class='icon-temp'></span>
-								<a href='javascript://'>App Re-Engagement</a>
+								<a href='/products/reengagement'>App Re-Engagement</a>
 							</li>
 							<li>
 								<span class='icon-temp'></span>
-								<a href='javascript://'>Facebook Marketing</a>
+								<a href='/products/fbmarketing'>Facebook Marketing</a>
 							</li>
 							<li>
 								<span class='icon-temp'></span>
-								<a href='javascript://'>Cross Channel</a>
+								<a href='/products/crosschannel'>Cross Channel</a>
 							</li>
 							<li>
 								<span class='icon-temp'></span>
-								<a href='javascript://'>Mobile Web-App Engagement</a>
+								<a href='/products/mobileengage'>Mobile Web-App Engagement</a>
 							</li>
 						</ul>
 					</div>
