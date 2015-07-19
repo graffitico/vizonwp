@@ -6,19 +6,19 @@
 */
 
 @import url('../intergalactic/style.css');
-@import url('../../css/bootstrap.min.css');
-@import url('../../css/creative.css');
-@import url('../../css/animate.min.css');
-@import url('../../css/ihover.css');
+@import url('../../../css/bootstrap.min.css');
+@import url('../../../css/creative.css');
+@import url('../../../css/animate.min.css');
+@import url('../../../css/ihover.css');
 
 @font-face {
    font-family: 'proxima';
-   src: url('/fonts/ProximaNova-Light_0.otf');
+   src: url('../../../fonts/ProximaNova-Light_0.otf');
 }
 
 @font-face {
    font-family: 'proximab';
-   src: url('/fonts/ProximaNova-Bold.otf');
+   src: url('../../../fonts/ProximaNova-Bold.otf');
 }
 
 /* test add start */
@@ -194,7 +194,7 @@ html {
 }
 
 .floating-header .small-logo {
-	background-image: url(/imgs/logo2.png);
+	background-image: url(../../../imgs/logo2.png);
 	width: 45px;
 	height: 44px;
 	display: inline-block;
@@ -220,7 +220,7 @@ html {
 
 .front-page-container .heading-block {
 	padding-top: 120px;
-	background-image: url(/imgs/background.jpg);
+	background-image: url(../../../imgs/background.jpg);
 	height: 600px;
 	position: relative;
 }
@@ -293,21 +293,21 @@ html {
 }
 
 .product-reach-image {
-	background-image: url(/imgs/reach-logo.png);
+	background-image: url(../../../imgs/reach-logo.png);
 	width: 148px;
 	height: 148px;
 	display: inline-block;
 }
 
 .product-convert-image {
-	background-image: url(/imgs/convert-logo.png);
+	background-image: url(../../../imgs/convert-logo.png);
 	width: 148px;
 	height: 148px;
 	display: inline-block;
 }
 
 .product-engage-image {
-	background-image: url(/imgs/engage-logo.png);
+	background-image: url(../../../imgs/engage-logo.png);
 	width: 148px;
 	height: 148px;
 	display: inline-block;
@@ -364,11 +364,11 @@ html {
 /* Header Icons */
 @font-face {
 	font-family: 'icomoon';
-	src:url('/fonts/icomoon.eot?o5jdto');
-	src:url('/fonts/icomoon.eot?#iefixo5jdto') format('embedded-opentype'),
-		url('/fonts/icomoon.ttf?o5jdto') format('truetype'),
-		url('/fonts/icomoon.woff?o5jdto') format('woff'),
-		url('/fonts/icomoon.svg?o5jdto#icomoon') format('svg');
+	src:url('../../../fonts/icomoon.eot?o5jdto');
+	src:url('../../../fonts/icomoon.eot?#iefixo5jdto') format('embedded-opentype'),
+		url('../../../fonts/icomoon.ttf?o5jdto') format('truetype'),
+		url('../../../fonts/icomoon.woff?o5jdto') format('woff'),
+		url('../../../fonts/icomoon.svg?o5jdto#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
