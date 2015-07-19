@@ -63,7 +63,7 @@
 							<a href="/products">PRODUCTS</a>
 						</li>
 						<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-							<a href="8888/about">ABOUT</a>
+							<a href="/about">ABOUT</a>
 						</li>
 						<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
 							<a href="/publishers">PUBLISHERS</a>
@@ -80,11 +80,11 @@
 			<div class='subnav'>
 				<div class='subnav-block products-subnav'>
 					<div class='reach-block product-subnav-block'>
-						<h3>REACH</h3>
+						<h3><a href='/reach'>REACH</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 					<div class='convert-block product-subnav-block'>
-						<h3>CONVERT</h3>
+						<h3><a href='/convert'>CONVERT</a></h3>
 						<div>Retargeting solutions</div>
 						<ul class='subnav-list-control'>
 							<li>
