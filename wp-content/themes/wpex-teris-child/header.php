@@ -1,23 +1,27 @@
 <?php
 /**
- * The header for our theme.
+ * The Header for our theme.
  *
- * Displays all of the <head> section and everything up till <div id="content">
- *
- * @package Intergalactic
+ * @package WordPress
+ * @subpackage Tetris WPExplorer Theme
+ * @since Tetris 1.0
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-<?php wp_head(); ?>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width">
+	<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo('name'); ?></title>
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<?php if ( get_theme_mod('wpex_custom_favicon') ) { ?>
+		<link rel="shortcut icon" href="<?php echo get_theme_mod('wpex_custom_favicon'); ?>" />
+	<?php } ?>
+	<!--[if lt IE 9]>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+	<![endif]-->
+	<?php wp_head(); ?>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/global.js"></script>
 </head>
 
 <!-- Begin Body -->
@@ -44,13 +48,13 @@
 			<ul id="header-social" class="clearfix">
 				<?php
 				// Show social icons if enabled
-				//wpex_display_social(); ?>
+				wpex_display_social(); ?>
 			</ul><!-- /header-social -->
 		</div><!-- /pre-header -->
 
 		<header id="header" class="clearfix">
 			<div id="logo">
-				<a href="<?php echo home_url(); ?>/" title="<?php echo get_bloginfo( 'name' ); ?>" rel="home"><img src="<?php echo get_site_url() ?>/imgs/logo.png" alt="<?php echo get_bloginfo( 'name' ) ?>" /></a>
+				<a href="<?php echo home_url(); ?>/" title="<?php echo get_bloginfo( 'name' ); ?>" rel="home"><img src="/imgs/logo.png" alt="<?php echo get_bloginfo( 'name' ) ?>" /></a>
 			</div><!-- /logo -->
 			<nav id="navigation" class="clearfix">
 				<div class="vizuri_menu_class">
@@ -59,7 +63,7 @@
 							<a href="/products">PRODUCTS</a>
 						</li>
 						<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-							<a href="8888/about">ABOUT</a>
+							<a href="/about">ABOUT</a>
 						</li>
 						<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
 							<a href="/publishers">PUBLISHERS</a>
@@ -76,47 +80,37 @@
 			<div class='subnav'>
 				<div class='subnav-block products-subnav'>
 					<div class='reach-block product-subnav-block'>
-						<a href='/reach'><h3>REACH</h3></a>
+						<h3><a href='/reach'>REACH</a></h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 					</div>
 					<div class='convert-block product-subnav-block'>
-						<a href='/convert'><h3>CONVERT</h3></a>
+						<h3><a href='/convert'>CONVERT</a></h3>
 						<div>Retargeting solutions</div>
 						<ul class='subnav-list-control'>
 							<li>
-								<a href='javascript://'>
-									<span class='icon-home_menuicons__convertxp'></span>
-									CONVERT XP
-								</a>
+								<span class='icon-temp'></span>
+								<a href='javascript://'>CONVERT XP</a>
 							</li>
 							<li>
-								<a href='/products/reengage'>
-									<span class='icon-home_menuicons_apprengage'></span>
-									App Re-Engagement
-								</a>
+								<span class='icon-temp'></span>
+								<a href='/products/reengagement'>App Re-Engagement</a>
 							</li>
 							<li>
-								<a href='/products/fbmarketing'>
-									<span class='icon-home_menuicons__fbmarketing'></span>
-									Facebook Marketing
-								</a>
+								<span class='icon-temp'></span>
+								<a href='/products/fbmarketing'>Facebook Marketing</a>
 							</li>
 							<li>
-								<a href='/products/crosschannel'>
-									<span class='icon-home_menuicons__crosschannel'></span>
-									Cross Channel
-								</a>
+								<span class='icon-temp'></span>
+								<a href='/products/crosschannel'>Cross Channel</a>
 							</li>
 							<li>
-								<a href='/products/mobileengage'>
-									<span class='icon-home_menuicons__webmobileapp'></span>
-									Mobile Web-App Engagement
-								</a>
+								<span class='icon-temp'></span>
+								<a href='/products/mobileengage'>Mobile Web-App Engagement</a>
 							</li>
 						</ul>
 					</div>
 					<div class='engage-block product-subnav-block'>
-						<a href='/engage'><h3>ENGAGE</h3></a>
+						<h3>ENGAGE</h3>
 						<div>Performance marketing hub</div>
 						<ul class='subnav-list-control'>
 							<li>

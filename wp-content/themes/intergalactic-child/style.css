@@ -10,6 +10,7 @@
 @import url('../../../css/creative.css');
 @import url('../../../css/animate.min.css');
 @import url('../../../css/ihover.css');
+@import url('../../../css/icons.css');
 
 @font-face {
    font-family: 'proxima';
@@ -24,15 +25,6 @@
 /* test add start */
 body {
   background: #ddd;
-}
-
-
-#navigation {
-  position: absolute;
-  height: 50px;
-  top: 50%;
-  right: 15px;
-  margin-top: -16px;
 }
 
 
@@ -57,6 +49,12 @@ html {
 
 * {
 	box-sizing: border-box;
+	font-family: proxima;
+	color: inherit;
+}
+
+td {
+	border-width: 0;
 }
 
 .container {
@@ -72,6 +70,16 @@ html {
 	width: 100%;
 	top: 0;
 	z-index: 10;
+}
+
+#header-wrap a {
+	color: #fff;
+}
+
+#header-wrap a:hover,
+#header-wrap a:focus {
+	color: #f05f40;
+	text-decoration: none;
 }
 
 #pre-header {
@@ -103,14 +111,22 @@ html {
 	margin: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	background-image: none;
+	position: relative;
 }
 
 .vizuri_menu_class {
 	margin-right: 100px;
 }
 
+#navigation {
+  position: absolute;
+  height: 50px;
+  top: 50%;
+  right: 15px;
+  margin-top: -12px;
+}
+
 #navigation .sf-menu > li > a {
-	font-family: proxima;
 	font-size: 18px;
 	padding-left: 50px;
 }
@@ -166,26 +182,30 @@ html {
 }
 
 #header .subnav .product-subnav-block h3 {
-	color: #fff;
+	color: inherit;
 }
 
-#header .subnav .subnav-list-control {
+#header .subnav .subnav-list-control li {
 	color: #fff;
 	text-align: left;
+	list-style-type: none;
+}
+
+#header .subnav .subnav-list-control li:hover {
+	color: #f05f40;
+    -webkit-transition: .3s all ease-in-out;
+       -moz-transition: .3s all ease-in-out;
+            transition: .3s all ease-in-out;
 }
 
 #header .subnav .subnav-list-control span {
-	width: 40px;
+	width: 20px;
 	color: inherit;
 	display: inline-block;
 }
 
 #header .subnav .subnav-list-control a {
 	color: inherit;
-}
-
-.subnav-list-control a:hover {
-	text-decoration: none;
 }
 
 .floating-header {
@@ -360,191 +380,3 @@ html {
 	padding: 0;
 }
 
-
-/* Header Icons */
-@font-face {
-	font-family: 'icomoon';
-	src:url('../../../fonts/icomoon.eot?o5jdto');
-	src:url('../../../fonts/icomoon.eot?#iefixo5jdto') format('embedded-opentype'),
-		url('../../../fonts/icomoon.ttf?o5jdto') format('truetype'),
-		url('../../../fonts/icomoon.woff?o5jdto') format('woff'),
-		url('../../../fonts/icomoon.svg?o5jdto#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	font-size: 18px;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-contactus_contact:before {
-	content: "\e600";
-}
-.icon-contactus_Maplocatorc:before {
-	content: "\e601";
-}
-.icon-contactus_Maplocator:before {
-	content: "\e602";
-}
-.icon-contactus_Query:before {
-	content: "\e603";
-}
-.icon-convert_readmore_arrow:before {
-	content: "\e604";
-}
-.icon-header_contactblue:before {
-	content: "\e605";
-}
-.icon-header_langblue:before {
-	content: "\e606";
-}
-.icon-header_searchblue:before {
-	content: "\e607";
-}
-.icon-home_footer_FBc:before {
-	content: "\e608";
-}
-.icon-home_footer_FB:before {
-	content: "\e609";
-}
-.icon-home_footer_linkedinc:before {
-	content: "\e60a";
-}
-.icon-home_footer_linkedin:before {
-	content: "\e60b";
-}
-.icon-home_footer_Twitterc:before {
-	content: "\e60c";
-}
-.icon-home_footer_Twitter:before {
-	content: "\e60d";
-}
-.icon-home_footer_youtubec:before {
-	content: "\e60e";
-}
-.icon-home_footer_youtube:before {
-	content: "\e60f";
-}
-.icon-home_header_contactwhite:before {
-	content: "\e610";
-}
-.icon-home_header_langwhite:before {
-	content: "\e611";
-}
-.icon-home_header_searchwhite:before {
-	content: "\e612";
-}
-.icon-home_menuicons__analyticsandreporting:before {
-	content: "\e613";
-}
-.icon-home_menuicons__board:before {
-	content: "\e614";
-}
-.icon-home_menuicons__convertxp:before {
-	content: "\e615";
-}
-.icon-home_menuicons__crosschannel:before {
-	content: "\e616";
-}
-.icon-home_menuicons__Dataonboarding:before {
-	content: "\e617";
-}
-.icon-home_menuicons__exclusives:before {
-	content: "\e618";
-}
-.icon-home_menuicons__fbmarketing:before {
-	content: "\e619";
-}
-.icon-home_menuicons__founders:before {
-	content: "\e61a";
-}
-.icon-home_menuicons__industryreports:before {
-	content: "\e61b";
-}
-.icon-home_menuicons__insights:before {
-	content: "\e61c";
-}
-.icon-home_menuicons__investors:before {
-	content: "\e61d";
-}
-.icon-home_menuicons__jobopening:before {
-	content: "\e61e";
-}
-.icon-home_menuicons__leadership:before {
-	content: "\e61f";
-}
-.icon-home_menuicons__marketingchannel:before {
-	content: "\e620";
-}
-.icon-home_menuicons__mediacoverage:before {
-	content: "\e621";
-}
-.icon-home_menuicons__ourstory:before {
-	content: "\e622";
-}
-.icon-home_menuicons__successstories:before {
-	content: "\e623";
-}
-.icon-home_menuicons__values:before {
-	content: "\e624";
-}
-.icon-home_menuicons__Vizurianspeak:before {
-	content: "\e625";
-}
-.icon-home_menuicons__webmobileapp:before {
-	content: "\e626";
-}
-.icon-home_menuicons__whitepaper:before {
-	content: "\e627";
-}
-.icon-home_menuicons_apprengage:before {
-	content: "\e628";
-}
-.icon-home_menuicons_pressroom:before {
-	content: "\e629";
-}
-.icon-home_yellowband_arrowc .path1:before {
-	content: "\e62a";
-}
-.icon-home_yellowband_arrowc .path2:before {
-	content: "\e62b";
-	margin-left: -1em;
-	color: rgb(0, 0, 0);
-}
-.icon-home_yellowband_arrowc .path3:before {
-	content: "\e62c";
-	margin-left: -1em;
-	color: rgb(0, 0, 0);
-}
-.icon-home_yellowband_arrow:before {
-	content: "\e62d";
-}
-.icon-jobopenings_department:before {
-	content: "\e62e";
-}
-.icon-jobopenings_experience:before {
-	content: "\e62f";
-}
-.icon-jobopenings_locationwhite:before {
-	content: "\e630";
-}
-.icon-Minus:before {
-	content: "\e631";
-}
-.icon-Plus:before {
-	content: "\e632";
-}
-.icon-story_arrowwhite:before {
-	content: "\e633";
-}
