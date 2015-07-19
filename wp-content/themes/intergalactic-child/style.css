@@ -1,0 +1,550 @@
+/*
+	Theme Name: Intergalactic Child Theme
+	Description: Intergalactic Child Theme
+	Author: Graffiti
+	Template: intergalactic
+*/
+
+@import url('../intergalactic/style.css');
+@import url('../../../css/bootstrap.min.css');
+@import url('../../../css/creative.css');
+@import url('../../../css/animate.min.css');
+@import url('../../../css/ihover.css');
+
+@font-face {
+   font-family: 'proxima';
+   src: url('../../../fonts/ProximaNova-Light_0.otf');
+}
+
+@font-face {
+   font-family: 'proximab';
+   src: url('../../../fonts/ProximaNova-Bold.otf');
+}
+
+/* test add start */
+body {
+  background: #ddd;
+}
+
+
+#navigation {
+  position: absolute;
+  height: 50px;
+  top: 50%;
+  right: 15px;
+  margin-top: -16px;
+}
+
+
+.sf-menu {
+  line-height: 1.0;
+}
+.sf-menu, .sf-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#navigation .sf-menu li {
+  float: left;
+  position: relative;
+}
+/* test add end */
+
+html {
+	margin: 0 !important;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	background: none;
+}
+
+#wrap {
+	width: 100%;
+}
+
+#header-wrap {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+
+#pre-header {
+	color: #fff;
+	text-align: right;
+	padding: 10px 100px 0;
+	margin: 0;
+}
+
+#header-actions {
+	margin: 0;
+}
+
+#pre-header input {
+	background-color: #fff;
+	color: #000;
+	border-width: 0;
+	border-radius: 2px;
+	padding: 0 10px;
+}
+
+#pre-header * {
+	vertical-align: top;
+}
+
+#header {
+	width: 100%;
+	padding: 20px 10px;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: none;
+}
+
+.vizuri_menu_class {
+	margin-right: 100px;
+}
+
+#navigation .sf-menu > li > a {
+	font-family: proxima;
+	font-size: 18px;
+	padding-left: 50px;
+}
+
+#wpadminbar {
+	display: none;
+}
+
+#pre-header ul li {
+	display: inline-block;
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+#pre-header ul li span {
+	font-size: 18px;
+}
+
+#header .subnav {
+	display: none;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 82px;
+	left: 0;
+}
+
+#header .subnav .product-subnav-block {
+	width: 24.5%;
+	border-right: 1px solid #bebebe;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 20px;
+	margin: 20px 0;
+	vertical-align: top;
+	height: 210px;
+}
+
+#header .subnav .contact-block {
+	border-width: 0;
+	padding-top: 70px;
+}
+
+#header .subnav .product-subnav-block p {
+	color: #bebebe;
+	text-align: justify;
+}
+
+#header .subnav .product-subnav-block div {
+	color: #bebebe;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#header .subnav .product-subnav-block h3 {
+	color: #fff;
+}
+
+#header .subnav .subnav-list-control {
+	color: #fff;
+	text-align: left;
+}
+
+#header .subnav .subnav-list-control span {
+	width: 40px;
+	color: inherit;
+	display: inline-block;
+}
+
+#header .subnav .subnav-list-control a {
+	color: inherit;
+}
+
+.subnav-list-control a:hover {
+	text-decoration: none;
+}
+
+.floating-header {
+	padding: 20px 20px 20px 37px;
+	display: none;
+}
+
+.floating-header .small-logo {
+	background-image: url(../../../imgs/logo2.png);
+	width: 45px;
+	height: 44px;
+	display: inline-block;
+}
+
+/** Footer */
+
+#footer {
+	background: none;
+	padding: 0;
+}
+
+/** Main content */
+#main-content {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.front-page-container {
+	display: block;
+}
+
+.front-page-container .heading-block {
+	padding-top: 120px;
+	background-image: url(../../../imgs/background.jpg);
+	height: 600px;
+	position: relative;
+}
+
+.front-page-container .heading-block .heading-text {
+	padding: 30px;
+	position: absolute;
+	bottom: 0;
+}
+
+.front-page-container .heading-block .heading-text h2 {
+	margin: 0;
+	font-size: 54px;
+	line-height: 60px;
+	color: #fff;
+	font-family: proximab
+}
+
+.front-page-container .heading-block .heading-text h4 {
+	margin: 5px 0;
+	font-size: 18px;
+	color: #fff;
+}
+
+.yellow-text-block {
+	padding: 10px;
+	position: relative;
+	background-color: #FFD845;
+	text-align: center;
+}
+
+.yellow-text-block .arrow-button {
+	font-size: 24px;
+}
+
+.front-page-container .products-block {
+	background-color: #202020;
+	text-align: center
+}
+
+.front-page-container .products-block .products-intro {
+	margin: 30px;
+	color: #fff;
+	font-size: 24px;
+	display: inline-block;
+	width: 850px;
+}
+
+.front-page-container .products-block .products-details {
+	text-align: center;
+}
+
+.front-page-container .products-block .products-details .products-section {
+	display: inline-block;
+	width: 250px;
+	text-align: center;
+	margin: 20px;
+}
+
+.front-page-container .products-block .products-details .products-section .product-title {
+	font-size: 24px;
+	margin: 20px auto;
+	color: #fff;
+}
+
+.front-page-container .products-block .products-details .products-section .product-description {
+	display: inline-block;
+	width: 250px;
+	text-align: center;
+}
+
+.product-reach-image {
+	background-image: url(../../../imgs/reach-logo.png);
+	width: 148px;
+	height: 148px;
+	display: inline-block;
+}
+
+.product-convert-image {
+	background-image: url(../../../imgs/convert-logo.png);
+	width: 148px;
+	height: 148px;
+	display: inline-block;
+}
+
+.product-engage-image {
+	background-image: url(../../../imgs/engage-logo.png);
+	width: 148px;
+	height: 148px;
+	display: inline-block;
+}
+
+
+.front-page-container .leading-brands-block {
+	background-color: #C2D667;
+	position: relative;
+	padding: 80px;
+	min-height: 400px;
+	text-align: center;
+}
+
+.front-page-container .leading-brands-block .brands-choose {
+	color: #fff;
+	vertical-align: top;
+	position: absolute;
+	top: 40px;
+	right: 60px;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.front-page-container .leading-brands-block .brands-choose h3 {
+	font-family: proximab;
+	color: #fff;
+	font-size: 24px;
+	margin: 0px;
+}
+
+.front-page-container .leading-brands-block .brands-list {
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 20px;
+	min-width: 400px;
+	position: relative;
+	bottom: -220px;
+	display: inline-block;
+}
+
+.no-border {
+	border-width: 0 !important;
+}
+
+
+/* Product Page CSS */
+.container .nav-pills {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Header Icons */
+@font-face {
+	font-family: 'icomoon';
+	src:url('../../../fonts/icomoon.eot?o5jdto');
+	src:url('../../../fonts/icomoon.eot?#iefixo5jdto') format('embedded-opentype'),
+		url('../../../fonts/icomoon.ttf?o5jdto') format('truetype'),
+		url('../../../fonts/icomoon.woff?o5jdto') format('woff'),
+		url('../../../fonts/icomoon.svg?o5jdto#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 18px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-contactus_contact:before {
+	content: "\e600";
+}
+.icon-contactus_Maplocatorc:before {
+	content: "\e601";
+}
+.icon-contactus_Maplocator:before {
+	content: "\e602";
+}
+.icon-contactus_Query:before {
+	content: "\e603";
+}
+.icon-convert_readmore_arrow:before {
+	content: "\e604";
+}
+.icon-header_contactblue:before {
+	content: "\e605";
+}
+.icon-header_langblue:before {
+	content: "\e606";
+}
+.icon-header_searchblue:before {
+	content: "\e607";
+}
+.icon-home_footer_FBc:before {
+	content: "\e608";
+}
+.icon-home_footer_FB:before {
+	content: "\e609";
+}
+.icon-home_footer_linkedinc:before {
+	content: "\e60a";
+}
+.icon-home_footer_linkedin:before {
+	content: "\e60b";
+}
+.icon-home_footer_Twitterc:before {
+	content: "\e60c";
+}
+.icon-home_footer_Twitter:before {
+	content: "\e60d";
+}
+.icon-home_footer_youtubec:before {
+	content: "\e60e";
+}
+.icon-home_footer_youtube:before {
+	content: "\e60f";
+}
+.icon-home_header_contactwhite:before {
+	content: "\e610";
+}
+.icon-home_header_langwhite:before {
+	content: "\e611";
+}
+.icon-home_header_searchwhite:before {
+	content: "\e612";
+}
+.icon-home_menuicons__analyticsandreporting:before {
+	content: "\e613";
+}
+.icon-home_menuicons__board:before {
+	content: "\e614";
+}
+.icon-home_menuicons__convertxp:before {
+	content: "\e615";
+}
+.icon-home_menuicons__crosschannel:before {
+	content: "\e616";
+}
+.icon-home_menuicons__Dataonboarding:before {
+	content: "\e617";
+}
+.icon-home_menuicons__exclusives:before {
+	content: "\e618";
+}
+.icon-home_menuicons__fbmarketing:before {
+	content: "\e619";
+}
+.icon-home_menuicons__founders:before {
+	content: "\e61a";
+}
+.icon-home_menuicons__industryreports:before {
+	content: "\e61b";
+}
+.icon-home_menuicons__insights:before {
+	content: "\e61c";
+}
+.icon-home_menuicons__investors:before {
+	content: "\e61d";
+}
+.icon-home_menuicons__jobopening:before {
+	content: "\e61e";
+}
+.icon-home_menuicons__leadership:before {
+	content: "\e61f";
+}
+.icon-home_menuicons__marketingchannel:before {
+	content: "\e620";
+}
+.icon-home_menuicons__mediacoverage:before {
+	content: "\e621";
+}
+.icon-home_menuicons__ourstory:before {
+	content: "\e622";
+}
+.icon-home_menuicons__successstories:before {
+	content: "\e623";
+}
+.icon-home_menuicons__values:before {
+	content: "\e624";
+}
+.icon-home_menuicons__Vizurianspeak:before {
+	content: "\e625";
+}
+.icon-home_menuicons__webmobileapp:before {
+	content: "\e626";
+}
+.icon-home_menuicons__whitepaper:before {
+	content: "\e627";
+}
+.icon-home_menuicons_apprengage:before {
+	content: "\e628";
+}
+.icon-home_menuicons_pressroom:before {
+	content: "\e629";
+}
+.icon-home_yellowband_arrowc .path1:before {
+	content: "\e62a";
+}
+.icon-home_yellowband_arrowc .path2:before {
+	content: "\e62b";
+	margin-left: -1em;
+	color: rgb(0, 0, 0);
+}
+.icon-home_yellowband_arrowc .path3:before {
+	content: "\e62c";
+	margin-left: -1em;
+	color: rgb(0, 0, 0);
+}
+.icon-home_yellowband_arrow:before {
+	content: "\e62d";
+}
+.icon-jobopenings_department:before {
+	content: "\e62e";
+}
+.icon-jobopenings_experience:before {
+	content: "\e62f";
+}
+.icon-jobopenings_locationwhite:before {
+	content: "\e630";
+}
+.icon-Minus:before {
+	content: "\e631";
+}
+.icon-Plus:before {
+	content: "\e632";
+}
+.icon-story_arrowwhite:before {
+	content: "\e633";
+}
