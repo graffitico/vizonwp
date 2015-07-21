@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* Fonts */
+/*
+@font-face {
+	font-family: 'icomoon';
+	src:url(../fonts/icomoon.eot);
+	src:url(../fonts/icomoon.svg);
+	src:url(../fonts/icomoon.ttf);
+	src:url(../fonts/icomoon.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_ProximaNova-Regular_0';
+	src:url(../fonts/ProximaNova-Regular_0.eot);
+	src:url(../fonts/ProximaNova-Regular_0.svg);
+	src:url(../fonts/ProximaNova-Regular_0.ttf);
+	src:url(../fonts/ProximaNova-Regular_0.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_ProximaNova-Semibold';
+	src:url(../fonts/ProximaNova-Semibold.eot);
+	src:url(../fonts/ProximaNova-Semibold.svg);
+	src:url(../fonts/ProximaNova-Semibold.ttf);
+	src:url(../fonts/ProximaNova-Semibold.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+/* Job Search bar */
+
+.skin-border-bg1{
+	  margin-top: 12px;
+}
+
+#job-s
+{
+	width:100%;
+	height:30px;
+	padding:25px;
+	border: solid #CCC 3px;
+	/*font-family:'Conv_ProximaNova-Regular_0',Sans-Serif;*/
+	font-size:16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.search-button
+{
+	background:#000;
+	border: 0px;
+	padding:15px;
+	width:100%;
+	
+}
+
+.search-button:hover
+{
+	background:#333;
+}
+
+/* End of Job Search bar */
+
+.panel{box-shadow:none !important; -webkit-box-shadow:none !important;}
+/*.panel-default{border:none;} <---In case you wanna remove the border around the job result*/
+.panel-default>.panel-heading{background-image:none !important; background:none !important;}
+
+
+.job-result
+{
+	border-bottom:#CCC 1px solid; background:none;
+}
+
+.categ-head
+{
+	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
+	font-size:14px;
+	text-align:center;
+	color:#000;
+	display:block;
+	width:100%;
+	padding:0 15px;
+}
+
+.categ-down
+{
+	background:none;
+	margin-left:10px;
+	border:none;
+}
+
+.job-desc
+{
+	position:relative;
+	width:100%;
+	padding:15px;
+}
+
+.job-desc h3
+{
+	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
+	font-size:14px;
+}
+
+.job-desc p
+{
+	font-family:'Conv_ProximaNova-Regular_0',Sans-Serif;
+	line-height:24px;
+}
+
+.apply-button
+{
+	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
+	font-size:14px;
+	text-transform:uppercase;
+	float:right;
+	background:#000;
+	border: 0px;
+	padding:15px;
+	width:200px;
+	height:50px;
+	color:#FFF;
+}
+
+.apply-button:hover
+{
+	background:#333;
+}
