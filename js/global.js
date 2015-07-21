@@ -103,6 +103,12 @@ jQuery(function () {
     $('#pills-first a').hover(function (e) {
       e.preventDefault()
       $(this).tab('show')
-   });
+   	});
+
+   	$('.hoverable-text').hover(function () {
+   		$(this).addClass('expanded');
+   	}, function () {
+   		$(this).removeClass('expanded');
+   	})
 
 });
