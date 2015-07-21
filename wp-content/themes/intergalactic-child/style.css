@@ -62,6 +62,15 @@ td {
 	vertical-align: middle;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: none;
+}
+
 .container {
 	background: none;
 }
@@ -380,6 +389,14 @@ td {
 }
 
 /** Engage Pages */
+.engage-floating-bg {
+
+	width: 1000px;
+	height: 475px;
+
+	background-image: url(/svgs/engage-1.svg);
+}
+
 .convert-floating-bg {
 	width: 500px;
 	height: 500px;
@@ -432,6 +449,7 @@ td {
     -webkit-transition-timing-function: ease-in-out;
     transform: translate(-50%, -50%);
     z-index: 100;
+    padding: 10%;
 }
 
 .smallcircle.expanded {
@@ -495,12 +513,12 @@ td {
 .floating-text-element-small b,
 .floating-text-element-medium b,
 .floating-text-element-large b {
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
 
 .floating-text-element-xsmall {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .floating-text-element-small {

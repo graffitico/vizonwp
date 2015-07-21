@@ -109,6 +109,8 @@ jQuery(function () {
    		$(this).addClass('expanded');
    	}, function () {
    		$(this).removeClass('expanded');
-   	})
+   	});
+
+   	$('#myCarousel').carousel();
 
 });
