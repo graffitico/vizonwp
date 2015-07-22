@@ -4,7 +4,7 @@ Plugin Name: Job Postings
 Plugin URI: http://thegraffiti.co
 Description: Declares a plugin that will create a custom post type displaying job postings.
 Version: 1.0
-Author: shazad
+Author: Graffiti Collaborative
 Author URI: http://thegraffiti.co
 */
 add_action( 'init', 'create_jobs' );
@@ -18,6 +18,54 @@ add_action( 'manage_job_applications_posts_custom_column', 'bs_job_application_t
 
 
 add_action('post_edit_form_tag', 'update_edit_form');
+
+
+//////////
+
+
+
+add_action( 'init', 'create_department_hierarchical_taxonomy', 0 );
+
+
+
+//create a custom taxonomy name it topics for your posts
+
+function create_department_hierarchical_taxonomy() {
+
+// Add new taxonomy, make it hierarchical like categories
+//first do the translations part for GUI
+
+  $labels = array(
+    'name' => _x( 'Department', 'taxonomy general name' ),
+    'singular_name' => _x( 'Department', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Departments' ),
+    'all_items' => __( 'All Departments' ),
+    'parent_item' => __( 'Parent Department' ),
+    'parent_item_colon' => __( 'Parent Department:' ),
+    'edit_item' => __( 'Edit Department' ), 
+    'update_item' => __( 'Update Department' ),
+    'add_new_item' => __( 'Add New Department' ),
+    'new_item_name' => __( 'New Department Name' ),
+    'menu_name' => __( 'Departments' ),
+  );    
+
+// Now register the taxonomy
+
+  register_taxonomy('departments',array('job_postings'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'department' ),
+  ));
+
+}
+
+//////////
+
+
+
 
 function update_edit_form() {
 	
@@ -94,8 +142,6 @@ function include_template_function( $template_path ) {
                 $template_path = $theme_file;
             } else {
                 $template_path = plugin_dir_path( __FILE__ ) . '/single-job_postings.php';
-                echo $template_path;
-                die();
             }
         }
     }
@@ -106,11 +152,14 @@ function add_job_posting_fields( $job_id, $job_obj ) {
     // Check post type for job postings
     if ( $job_obj->post_type == 'job_postings' ) {
         // Store data in post meta table if present in post data
-        if ( isset( $_POST['job_posting_category_name'] ) && $_POST['job_posting_category_name'] != '' ) {
-            update_post_meta( $job_id, 'posting_category', $_POST['job_posting_category_name'] );
+        if ( isset( $_POST['job_posting_location_name'] ) && $_POST['job_posting_location_name'] != '' ) {
+            update_post_meta( $job_id, 'posting_location', $_POST['job_posting_location_name'] );
         }
-        if ( isset( $_POST['job_posting_experience'] ) && $_POST['job_posting_experience'] != '' ) {
-            update_post_meta( $job_id, 'experience', $_POST['job_posting_experience'] );
+        if ( isset( $_POST['job_posting_experience_from'] ) && $_POST['job_posting_experience_from'] != '' ) {
+            update_post_meta( $job_id, 'experience_from', $_POST['job_posting_experience_from'] );
+        }
+        if ( isset( $_POST['job_posting_experience_to'] ) && $_POST['job_posting_experience_to'] != '' ) {
+            update_post_meta( $job_id, 'experience_to', $_POST['job_posting_experience_to'] );
         }
     }
     
@@ -241,26 +290,42 @@ function display_job_posting_meta_box( $job_posting ) {
  if($job_posting->post_type == 'job_postings'){
 
     // Retrieve current name of the Director and Movie Rating based on review ID
-    $posting_category = esc_html( get_post_meta( $job_posting->ID, 'posting_category', true ) );
-    $experience = intval( get_post_meta( $job_posting->ID, 'experience', true ) );
+    $posting_location = esc_html( get_post_meta( $job_posting->ID, 'posting_location', true ) );
+    $experience_from = intval( get_post_meta( $job_posting->ID, 'experience_from', true ) );
+    $experience_to = intval( get_post_meta( $job_posting->ID, 'experience_to', true ) );
+    
     ?>
     <table>
         <tr>
-            <td style="width: 100%">Posting Category</td>
-            <td><input type="text" size="80" name="job_posting_category_name" value="<?php echo $posting_category; ?>" /></td>
+            <td style="width: 100%">Posting Location</td>
+            <td><input type="text" size="80" name="job_posting_location_name" value="<?php echo $posting_location; ?>" /></td>
         </tr>
         <tr>
             <td style="width: 150px">Experience</td>
+            <tr>
             <td>
-                <select style="width: 100px" name="job_posting_experience">
+                From:
+                <select style="width: 100px" name="job_posting_experience_from">
                 <?php
                 // Generate all items of drop-down list
                 for ( $exp = 10; $exp >= 1; $exp -- ) {
                 ?>
-                    <option value="<?php echo $exp; ?>" <?php echo selected( $exp, $experience ); ?>>
+                    <option value="<?php echo $exp; ?>" <?php echo selected( $exp, $experience_from ); ?>>
                     <?php echo $exp; ?> years <?php } ?>
                 </select>
             </td>
+             <td>
+                To:
+                <select style="width: 100px" name="job_posting_experience_to">
+                <?php
+                // Generate all items of drop-down list
+                for ( $exp = 10; $exp >= 1; $exp -- ) {
+                ?>
+                    <option value="<?php echo $exp; ?>" <?php echo selected( $exp, $experience_to ); ?>>
+                    <?php echo $exp; ?> years <?php } ?>
+                </select>
+            </td>
+            </tr>
         </tr>
     </table>
     <?php

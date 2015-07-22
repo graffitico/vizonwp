@@ -78,6 +78,9 @@
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/creative.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/SmoothScroll.js"></script>
+<script type="text/javascript" src="<?php echo get_site_url() ?>/js/classie.js"></script>
+
+
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
 </body>
 </html>
