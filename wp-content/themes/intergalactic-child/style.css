@@ -565,3 +565,129 @@ td {
 	padding: 0;
 }
 
+
+
+
+
+.ab-panelCon{
+	position:fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+}
+.ab-panel {
+    width: 100%;
+	border-bottom:#ffd846 15px solid;
+}
+
+.ab-info-top
+{
+	background:url(/imgs/black_trans.png);
+	display:block;
+	margin-top:10%;
+	padding:20px;
+}
+
+.ab-info-top-left
+{
+	background:url(/imgs/black_trans.png);
+	display:block;
+	margin-top:10%;
+	padding:20px;
+	text-align:right;
+}
+
+.ab-info-bottom
+{
+	background:url(/imgs/black_trans.png);
+	display:block;
+	margin-top:0%;
+}
+
+.story_btn
+{
+	margin-top:15%;
+	font-size:28px;
+	color:#FFF;
+	text-align:center;
+	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
+	text-transform:uppercase;
+}
+
+
+.ab-panel h1 {
+    position: relative;
+	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
+	color:#ffd846;
+    display: block;
+    margin: 0 auto;
+	text-transform:uppercase;
+	font-size:24px;
+}
+
+.ab-panel span {
+    position: relative;
+	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
+	color:#ffd846;
+	text-transform:uppercase;
+	font-size:24px;
+}
+
+
+.ab-panel p {
+	position:relative;
+	font-family:'Conv_ProximaNova-Regular_0',Sans-Serif;
+	color:#FFF;
+}
+#ab-pane-1 {
+    background: url(../../../imgs/ab-01.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#ab-pane-2 {
+    background: url(../../../imgs/ab-02.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#ab-pane-3 {
+    background: url(../../../imgs/ab-03.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#ab-pane-4 {
+    background: url(../../../imgs/ab-04.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#ab-pane-5 {
+    background: url(../../../imgs/ab-05.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#ab-pane-6 {
+    background: url(../../../imgs/ab-06.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#ab-pane-7 {
+    background: url(../../../imgs/about_landing.jpg) no-repeat center center; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+
