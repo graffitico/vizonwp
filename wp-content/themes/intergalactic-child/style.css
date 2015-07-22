@@ -398,24 +398,36 @@ h6 {
 
 /** Engage Pages */
 .engage-floating-bg {
-
 	width: 1000px;
 	height: 475px;
-
 	background-image: url(/svgs/engage-1.svg);
 }
-
-.convert-floating-bg {
+.engage-data-floating-bg {
 	width: 500px;
 	height: 500px;
-
+	background-image: url(/svgs/data.svg);
+}
+.engage-insights-floating-bg {
+	width: 500px;
+	height: 500px;
 	background-image: url(/svgs/insights.svg);
 }
-
-.convert-hover-magic-text {
+.engage-marketing-floating-bg {
+	width: 500px;
+	height: 500px;
+	background-position: center;
+	background-image: url(/svgs/marketing.svg);
+}
+.engage-data-floating-bg div,
+.engage-insights-floating-bg div,
+.engage-marketing-floating-bg div {
+	white-space: nowrap;
+}
+.engage-hover-magic-text {
 	width: 600px;
 	height: 600px;
 }
+
 
 /* Floating Text Box */
 .floating-text-box {
