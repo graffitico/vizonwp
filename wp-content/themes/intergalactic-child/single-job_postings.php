@@ -111,7 +111,7 @@ get_header(); ?>
 
 
 
-<div style="width:100%; position:relative; height:100px; background:#000;  margin-top: 45px;   margin-bottom: 20px;"></div>
+<div style="width:100%; position:relative; height:100px; background:#000;  margin-top: 13px;   margin-bottom: 20px;"></div>
 <div class="container">
     
     <!-- Main Search -->

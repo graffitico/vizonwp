@@ -59,7 +59,7 @@
 							<a href="/products">PRODUCTS</a>
 						</li>
 						<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-							<a href="8888/about">ABOUT</a>
+							<a href="/about">ABOUT</a>
 						</li>
 						<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
 							<a href="/publishers">PUBLISHERS</a>
@@ -84,31 +84,31 @@
 						<div>Retargeting solutions</div>
 						<ul class='subnav-list-control'>
 							<li>
-								<a href='javascript://'>
+								<a href='/convert'>
 									<span class='icon-home_menuicons__convertxp'></span>
 									CONVERT XP
 								</a>
 							</li>
 							<li>
-								<a href='/products/reengage'>
+								<a href='/app-re-engagement/'>
 									<span class='icon-home_menuicons_apprengage'></span>
 									App Re-Engagement
 								</a>
 							</li>
 							<li>
-								<a href='/products/fbmarketing'>
+								<a href='/facebook-marketing'>
 									<span class='icon-home_menuicons__fbmarketing'></span>
 									Facebook Marketing
 								</a>
 							</li>
 							<li>
-								<a href='/products/crosschannel'>
+								<a href='/cross-devise'>
 									<span class='icon-home_menuicons__crosschannel'></span>
 									Cross Channel
 								</a>
 							</li>
 							<li>
-								<a href='/products/mobileengage'>
+								<a href='/mobile-web-app-re-engagment'>
 									<span class='icon-home_menuicons__webmobileapp'></span>
 									Mobile Web-App Engagement
 								</a>
@@ -180,7 +180,7 @@
 							</li>
 							<li>
 								<span class='icon-temp'></span>
-								<a href='javascript://'>Job Openings</a>
+								<a href='/job-postings'>Job Openings</a>
 							</li>
 						</ul>
 					</div>
