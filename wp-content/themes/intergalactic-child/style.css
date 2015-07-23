@@ -136,6 +136,10 @@ h6 {
 	position: relative;
 }
 
+#mobilenavigation-container {
+	display: none;
+}
+
 .vizuri_menu_class {
 	margin-right: 100px;
 }
@@ -241,6 +245,7 @@ h6 {
 	height: 44px;
 	display: inline-block;
 }
+
 
 /** Footer */
 
@@ -595,10 +600,6 @@ h6 {
 	padding: 0;
 }
 
-
-
-
-
 .ab-panelCon{
 	position:fixed;
     bottom: 0;
@@ -670,49 +671,49 @@ h6 {
 	color:#FFF;
 }
 #ab-pane-1 {
-    background: url(../../../imgs/ab-01.jpg) no-repeat center center; 
+    background: url(../../../imgs/ab-01.jpg) no-repeat center center;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 }
 #ab-pane-2 {
-    background: url(../../../imgs/ab-02.jpg) no-repeat center center; 
+    background: url(../../../imgs/ab-02.jpg) no-repeat center center;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 }
 #ab-pane-3 {
-    background: url(../../../imgs/ab-03.jpg) no-repeat center center; 
+    background: url(../../../imgs/ab-03.jpg) no-repeat center center;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 }
 #ab-pane-4 {
-    background: url(../../../imgs/ab-04.jpg) no-repeat center center; 
+    background: url(../../../imgs/ab-04.jpg) no-repeat center center;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 }
 #ab-pane-5 {
-    background: url(../../../imgs/ab-05.jpg) no-repeat center center; 
+    background: url(../../../imgs/ab-05.jpg) no-repeat center center;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 }
 #ab-pane-6 {
-    background: url(../../../imgs/ab-06.jpg) no-repeat center center; 
+    background: url(../../../imgs/ab-06.jpg) no-repeat center center;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
 }
 #ab-pane-7 {
-    background: url(../../../imgs/about_landing.jpg) no-repeat center center; 
+    background: url(../../../imgs/about_landing.jpg) no-repeat center center;
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -720,4 +721,94 @@ h6 {
 }
 
 
+
+@media screen and (max-width: 640px) {
+
+	#pre-header {
+		display: none;
+	}
+
+	#navigation {
+		display: none;
+	}
+
+	#mobilenavigation-container {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	#mobilenavigation-container .navigation-trigger {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		padding: 3px;
+		color: #fff;
+		border: 1px solid #fff;
+		border-radius: 3px;
+		line-height: 10px;
+		font-size: 30px;
+	}
+
+	.mobilenavigation {
+		display: none;
+		font-size: 30px;
+		color: #fff;
+		margin: 0;
+		position: relative;
+		top: 80px;
+		overflow: auto;
+		padding: 0 15px;
+		list-style-type: none;
+		background-color: #999
+	}
+
+	.mobilesubnav {
+		display: none;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.mobilenavigation li {
+		padding: 10px 0;
+		font-size: 0.8em;
+	}
+
+	.mobilenavigation li input {
+		padding: 3px 8px;
+		background-color: #fff;
+		border: 1px solid #fff;
+		border-radius: 4px;
+		color: #999;
+	}
+
+	.mobilenavigation li > div {
+		font-weight: bold;
+		display: inline-block;
+	}
+
+	.mobilenavigation li .plus-icon,
+	.mobilenavigation li .minus-icon {
+		float: right;
+		line-height: 13px;
+		padding: 4px 3px 2px 3px;
+		border: 1px solid #fff;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+	}
+
+	.mobilenavigation li > .minus-icon,
+	.mobilenavigation li.expanded-menu > .plus-icon {
+		display: none;
+	}
+
+	.mobilenavigation li > .plus-icon,
+	.mobilenavigation li.expanded-menu > .minus-icon {
+		display: inline-block;
+	}
+}
 
