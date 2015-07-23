@@ -45,11 +45,7 @@
 					<span>EN</span><span class='icon-home_header_langwhite'></span>
 				</li>
 			</ul>
-			<ul id="header-social" class="clearfix">
-				<?php
-				// Show social icons if enabled
-				wpex_display_social(); ?>
-			</ul><!-- /header-social -->
+
 		</div><!-- /pre-header -->
 
 		<header id="header" class="clearfix">
