@@ -1,0 +1,96 @@
+.link-button a {
+	color: #000;
+}
+
+
+.press-release-container {
+	padding-top: 160px;
+	background-color: #fff;
+	margin: 0;
+}
+.press-release-container h3 {
+	padding: 0 60px;
+}
+
+
+.left-press-posts {
+
+}
+.left-press-posts .post-list {
+	padding: 20px 40px;
+
+}
+.left-press-posts .post-item {
+	position: relative;
+	border-bottom: 1px solid #cecece;
+	font-size: 24px;
+	padding: 30px 45px 0 0;
+}
+.left-press-posts .post-title {
+	color: #000;
+	font-size: 1em;
+	font-weight: bold;
+}
+.left-press-posts .post-description {
+	color: #999;
+	font-size: 0.8em;
+	margin-top: 20px;
+}
+.left-press-posts .post-media {
+	margin: 20px 0;
+}
+.left-press-posts .post-media img {
+	max-height: 150px;
+}
+
+
+.right-press-posts {
+	padding: 0 20px;
+	font-size: 24px;
+}
+.right-press-posts .section-heading {
+	padding: 40px 0;
+}
+.right-press-posts .section-heading h4 {
+	font-family: proximab;
+	font-size: 1em;
+}
+.right-press-posts .section-sub-heading {
+	font-size: 0.9em;
+}
+.right-press-posts .section-heading a {
+	color: #000;
+	font-family: proximab;
+}
+.right-press-posts .post-list {
+	padding: 20px 0;
+}
+.right-press-posts .post-item {
+	position: relative;
+	font-size: 24px;
+	padding-bottom: 80px;
+	margin-right: 50px;
+}
+.right-press-posts .post-type {
+	font-size: 1.2em;
+}
+.right-press-posts .post-media img {
+	width: 100%;
+	margin: 10px 0;
+}
+.right-press-posts .post-date {
+	font-size: 0.7em;
+	font-weight: bold;
+}
+.right-press-posts .post-title {
+	font-size: 0.7em;
+}
+.right-press-posts .post-description {
+	color: #999;
+	font-size: 0.7em;
+}
+.right-press-posts .post-author {
+	color: #999;
+	font-size: 0.7em;
+}
+
