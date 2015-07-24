@@ -8,6 +8,18 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
+
+// function all_posts_on_case_studies_page( $query ) {
+
+  
+
+//       // query_posts();
+//     }
+
+// add_action( 'pre_get_posts', 'all_posts_on_case_studies_page' );
+
+
+
 function theme_enqueue_styles(){
 	wp_enqueue_style('job-op', get_template_directory_uri().'/css/job-op.css' );
 
