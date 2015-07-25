@@ -140,7 +140,17 @@ jQuery(function () {
 
    	$('#myCarousel').carousel();
 
+   	if ($(window).width() < 640) {
+   		$('.flexslider').flexslider();
+   	} else {
 
+	   	$('.flexslider .slides').kwicks({
+			max : 800,
+			spacing : 0
+		}).find('li > a').click(function (){
+			return false;
+		});
+	}
 // about us js
 
 var winHeight = $(window).innerHeight();

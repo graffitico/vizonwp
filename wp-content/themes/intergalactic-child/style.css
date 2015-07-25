@@ -10,8 +10,9 @@
 @import url('../../../css/creative.css');
 @import url('../../../css/animate.min.css');
 @import url('../../../css/ihover.css');
-/*@import url('../../../css/sprites.css');*/
+@import url('../../../css/sprites.css');
 @import url('../../../css/press-release.css');
+@import url('../../../css/flexslider.css');
 
 @import url('../../../css/cs-select.css');
 @import url('../../../css/cs-skin-border.css');
@@ -123,9 +124,24 @@ input.yellowbutton {
 .white-text {
 	color: #fff;
 }
+.service-box .has-content {
+	font-size: 18px;
+}
+.white-3dbox-block {
+
+}
+.white-3dbox-block p {
+	font-size: 16px;
+}
 
 
-
+.blog-entry-tile {
+	height: 520px;
+	padding: 10px 30px;
+}
+.no-border {
+	border-width: 0 !important;
+}
 
 .bottom-right {
 	position: absolute;
@@ -133,7 +149,8 @@ input.yellowbutton {
 	right: 10px;
 }
 
-.link-button a {
+.link-button a,
+a .icon-home_yellowband_arrow {
 	font-size: 36px;
 }
 
@@ -316,6 +333,39 @@ input.yellowbutton {
 	display: inline-block;
 }
 
+/** Flex slider **/
+.flexslider {
+	border: none;
+}
+.flexslider .slides > li {
+	display:inline-block;
+	overflow:hidden;
+	position:relative;
+	margin-right: -.25em;
+	width:20.08%;
+}
+.flexslider .slides > li p {
+	margin: 0;
+}
+.flexslider .slides > li .normal-text,
+.flexslider .slides > li:hover .hover-text {
+	display: block;
+}
+.flexslider .slides > li .hover-text,
+.flexslider .slides > li:hover .normal-text {
+	display: none;
+}
+.flexslider .flex-caption {
+	top: 50%;
+	margin-left: 20px;
+	background-color: transparent;
+}
+.flexslider .slides img {
+	display: block;
+	max-width: 1000px;
+	height: 600px;
+}
+
 
 /** Footer */
 
@@ -393,15 +443,16 @@ input.yellowbutton {
 }
 
 
-.front-page-container .leading-brands-block {
+
+
+.leading-brands-block {
 	background-color: #C2D667;
 	position: relative;
 	padding: 80px;
 	min-height: 400px;
 	text-align: center;
 }
-
-.front-page-container .leading-brands-block .brands-choose {
+.leading-brands-block .brands-choose {
 	color: #fff;
 	vertical-align: top;
 	position: absolute;
@@ -410,25 +461,21 @@ input.yellowbutton {
 	font-size: 24px;
 	line-height: 36px;
 }
-
-.front-page-container .leading-brands-block .brands-choose h3 {
+.leading-brands-block .brands-choose h3 {
 	font-family: proximab;
 	color: #fff;
 	font-size: 30px;
 	margin: 0px;
 }
-
-.front-page-container .leading-brands-block .brands-list {
+.leading-brands-block .brands-list {
 	background-color: #fff;
 	border-radius: 4px;
 	padding: 20px;
 	min-width: 400px;
-	position: relative;
+	position: absolute;
 	display: inline-block;
-}
-
-.no-border {
-	border-width: 0 !important;
+	bottom: 30px;
+	margin-left: -200px;
 }
 
 /** Engage Pages */
@@ -500,13 +547,25 @@ input.yellowbutton {
 	margin: 5px 0;
 	font-size: 36px;
 	line-height: 36px;
+	font-family: proxima;
 }
 
 
-
+#pills-first {
+	text-align: center;
+}
+.tab-pane {
+	height: 200px;
+}
+.nav-pills>li{
+	display: inline-block;
+	float: none;
+	margin: 0;
+}
 
 .yellow-text-block {
 	padding: 10px;
+	padding-bottom: 0;
 	position: relative;
 	background-color: #FFD845;
 	text-align: center;
@@ -1033,5 +1092,11 @@ input.yellowbutton {
 	.mobilenavigation li.expanded-menu > .minus-icon {
 		display: inline-block;
 	}
+
+
+	.tab-pane {
+		height: auto;
+	}
+
 }
 

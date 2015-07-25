@@ -9,6 +9,17 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'glyphicons-halflings-regular';
+	src:url('/fonts/glyphicons-halflings-regular.eot?b2w8hw');
+	src:url('/fonts/glyphicons-halflings-regular.eot?#iefixb2w8hw') format('embedded-opentype'),
+		url('/fonts/glyphicons-halflings-regular.ttf?b2w8hw') format('truetype'),
+		url('/fonts/glyphicons-halflings-regular.woff?b2w8hw') format('woff'),
+		url('/fonts/glyphicons-halflings-regular.svg?b2w8hw#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;

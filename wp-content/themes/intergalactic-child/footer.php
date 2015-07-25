@@ -87,13 +87,13 @@
 									<a href='#'>CONTACT US</a>
 								</li>
 								<li>
-									<a href='#'><span class="icon-home_footer_linkedin"></span></a>
+									<a href='https://www.linkedin.com/company/vizury-interactive'><span class="icon-home_footer_linkedin"></span></a>
 									&nbsp;&nbsp;
-									<a href='#'><span class="icon-home_footer_Twitterc"></span></a>
+									<a href='https://twitter.com/VizuryOneToOne'><span class="icon-home_footer_Twitterc"></span></a>
 									&nbsp;&nbsp;
-									<a href='#'><span class="icon-home_footer_FB"></span></a>
+									<a href='https://www.facebook.com/vizury1to1'><span class="icon-home_footer_FB"></span></a>
 									&nbsp;&nbsp;
-									<a href='#'><span class="icon-home_footer_youtubec"></span></a>
+									<a href='https://www.youtube.com/user/vizury1to1'><span class="icon-home_footer_youtubec"></span></a>
 								</li>
 							</ul>
 						</div>
@@ -113,6 +113,8 @@
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/creative.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/SmoothScroll.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/classie.js"></script>
+<script type="text/javascript" src="<?php echo get_site_url() ?>/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="<?php echo get_site_url() ?>/js/kwiks.js"></script>
 
 
 <?php wp_footer(); // Footer hook, do not delete, ever ?>

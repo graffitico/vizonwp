@@ -24,18 +24,6 @@ hr.light {
     border-color: #fff;
 }
 
-a {
-    color: #f05f40;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-a:hover,
-a:focus {
-    color: #eb3812;
-}
-
 h1,
 h2,
 h3,
@@ -46,8 +34,6 @@ h6 {
 }
 
 p {
-    margin-bottom: 20px;
-    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -230,7 +216,7 @@ aside {
     .header .header-content .header-content-inner {
         margin-right: auto;
         margin-left: auto;
-        max-width: 1060px;
+        max-width: 1065px;
     }
 
     .header .header-content .header-content-inner p {
@@ -563,11 +549,8 @@ img.hoverImages:hover {
     margin-top: 5px;
 }
 
-.onhoveryellow:hover{color:#ffd846;}
 .footersubmenu{
 	font-size: 16px;
-	font-family: proximab;
-	cursor: pointer;
 }
 .footertertiarymenu{
   font-size: 12px;
