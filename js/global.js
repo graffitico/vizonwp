@@ -69,7 +69,7 @@ jQuery(function () {
 		}
 	});
 
-	$('.mobilenavigation li').click(function (e) {
+	$('.mobilenavigation li').on('click touchstart', function (e) {
 		if ($(this).hasClass('expanded-menu')) {
 			$(this).removeClass('expanded-menu');
 			$(this).find('> .mobilesubnav').slideUp();
