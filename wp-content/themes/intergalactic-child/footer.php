@@ -103,6 +103,8 @@
     	</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->
 </div><!-- /wrap -->
+
+
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/jquery.fittext.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/global.js"></script>

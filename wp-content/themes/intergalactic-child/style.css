@@ -689,7 +689,7 @@ input.yellowbutton {
 	padding: 0;
 }
 
-.ab-panelCon{
+/*.ab-panelCon{
 	position:fixed;
     bottom: 0;
     left:0;
@@ -808,8 +808,142 @@ input.yellowbutton {
   	-o-background-size: cover;
   	background-size: cover;
 }
+*/
+
+/*----------About Page-----------*/
 
 
+.ab-panel {
+    width: 100%;
+	border-bottom:#ffd846 15px solid;
+}
+
+.ab-viztoday-top {
+	background:#202020;
+	display:block;
+	margin-top:10%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-viztoday-bottom {
+	background:#202020;
+	display:block;
+	margin-bottom: 2.5%;
+	opacity: 0.8;
+	padding:35px;
+}
+
+.ab-story-button {
+	margin-top: 10%;
+	margin-bottom: 1.5%;
+	text-align: center;
+}
+
+.ab-vizinno {
+	background:#202020;
+	display:block;
+	margin-top: 10%;
+	margin-bottom: 22%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizgrowth {
+	background:#202020;
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizinvestors {
+	background:#202020;
+	display:block;
+	margin-top: 3%;
+	margin-bottom: 30%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizinvestors h4, .ab-idea h4 {
+	color: #ffd846
+}
+
+.ab-vizinvestors p, .ab-idea p {
+	color: #ffffff
+}
+
+.ab-team {
+	background:#202020;
+	display:block;
+	margin-top: 8%;
+	margin-bottom: 30%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-idea {
+	background:#202020;
+	display:block;
+	margin-top: 25%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-founders {
+	background:#202020;
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+#viz-today {
+	background: url("../../../imgs/about-frame7.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-innovating {
+	background: url("../../../imgs/about-frame6.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-growth {
+	background: url("../../../imgs/about-frame5.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-investors {
+	background: url("../../../imgs/about-frame4.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-team {
+	background: url("../../../imgs/about-frame3.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-idea {
+	background: url("../../../imgs/about-frame2.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-founders {
+	background: url("../../../imgs/about-frame1.svg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+/*------About Section Ends-------*/
 
 @media screen and (max-width: 640px) {
 
