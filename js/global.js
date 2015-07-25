@@ -61,7 +61,7 @@ jQuery(function () {
 	}
 
 	// Mobile Navigation
-	$('.navigation-trigger').click(function (e) {
+	$('.navigation-trigger').on('click touchstart', function (e) {
 		if ($('.mobilenavigation').is(":visible")) {
 			$('.mobilenavigation').slideUp();
 		} else {
