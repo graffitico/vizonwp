@@ -263,12 +263,14 @@ aside {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 1);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
-
+.portfolio-box p {
+    margin: 0;
+}
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
     position: absolute;
     top: 50%;

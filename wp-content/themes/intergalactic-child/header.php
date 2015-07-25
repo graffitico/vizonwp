@@ -92,17 +92,17 @@
 							<li>
 								<a href='/convert'>
 									<span class='icon-home_menuicons__convertxp'></span>
-									CONVERT XP
+									CONVERT RS
 								</a>
 							</li>
 							<li>
-								<a href='/app-re-engagement/'>
+								<a href='/convert/reengage/'>
 									<span class='icon-home_menuicons_apprengage'></span>
 									App Re-Engagement
 								</a>
 							</li>
 							<li>
-								<a href='/facebook-marketing'>
+								<a href='/convert/fbmarketing'>
 									<span class='icon-home_menuicons__fbmarketing'></span>
 									Facebook Marketing
 								</a>
