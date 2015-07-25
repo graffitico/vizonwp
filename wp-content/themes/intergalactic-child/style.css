@@ -599,7 +599,6 @@ a .icon-home_yellowband_arrow {
 }
 
 .hoverable-text {
-	padding: 5%;
 	display: block;
 	cursor: pointer;
 }
@@ -615,14 +614,13 @@ a .icon-home_yellowband_arrow {
     -webkit-transition-timing-function: ease-in-out;
 }
 
-.bigcircle.expanded
+.bigcircle.expanded,
 .smallcircle.expanded {
     -webkit-transition-duration: .5s;
     -webkit-transition-property: all;
     -webkit-transition-timing-function: ease-in-out;
-    transform: translate(-50%, -50%);
+    transform: translate(-25%, -25%);
     z-index: 100;
-    padding: 10%;
 }
 
 .smallcircle.expanded {
@@ -633,7 +631,6 @@ a .icon-home_yellowband_arrow {
 .bigcircle.expanded {
 	width: 320px;
 	height: 320px;
-
 }
 
 .hoverable-text .plus-icon,
@@ -664,14 +661,19 @@ a .icon-home_yellowband_arrow {
 
 .hoverable-text .floating-hover-text {
 	text-align: center;
-	vertical-align: middle;
+	top: 50%;
+	margin-top: -70px;
+	position: absolute;
 	color: #fff;
+	text-align: justify;
+	padding: 0 30px;
 }
 
 .hoverable-text .floating-normal-text {
 	text-align: center;
 	vertical-align: middle;
 	color: #fff;
+	position: absolute;
 }
 
 .floating-text-element-xsmall,
@@ -700,6 +702,10 @@ a .icon-home_yellowband_arrow {
 
 .floating-text-element-medium {
 	font-size: 20px;
+}
+
+.floating-text-element-large {
+	font-size: 24px;
 }
 
 /* Black Bg Heading */
@@ -731,7 +737,7 @@ a .icon-home_yellowband_arrow {
 .unfloat-to-center {
 	float: none !important;
 	margin: auto;
-	text-align: center;
+	text-align: justify;
 }
 
 
