@@ -843,13 +843,7 @@ a .icon-home_yellowband_arrow {
 	padding: 0;
 }
 
-<<<<<<< HEAD
-/*--------repeated about page css
-
-.ab-panelCon{
-=======
 /*.ab-panelCon{
->>>>>>> origin/master
 	position:fixed;
     bottom: 0;
     left:0;
@@ -1387,11 +1381,7 @@ color: #ffffff;
 
 /*----------Contact Us Ends-------*/
 
-    }
-
-
----------*/
-
+}
 
 @media screen and (max-width: 640px) {
 
