@@ -167,7 +167,7 @@ aside {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(/imgs/background.jpg);
+    background-image: url(/imgs/productlanding.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -286,7 +286,6 @@ aside {
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
 }
@@ -323,9 +322,9 @@ aside {
 }
 
 .btn-default {
-  border-color: #fff;
-  color: #030303;
-  background-color:#FFD846;
+  border: none;
+  color: #ffd846;
+  background-color:#202020;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -431,7 +430,6 @@ fieldset[disabled] .btn-primary.active {
 .btn {
     border: 0;
     border-radius: 5px;
-    text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
 }
@@ -559,6 +557,7 @@ img.hoverImages:hover {
   font-size: 12px;
   cursor: pointer;
 }
+
 .linkedinlove:hover{content: url('../img/linkedin-color.png');}
 .twitterbird:hover{content: url('../img/twitter-color.png');}
 .facebookpunch:hover{content: url('../img/facebook-color.png');}

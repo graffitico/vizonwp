@@ -53,14 +53,14 @@ span {
 	vertical-align: middle;
 }
 
-html,body
+/*html,body
 {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-}
+}*/
 
 .btn, .btn-default, .dropdown, .form, span, .label{
 	font-family: 'Conv_ProximaNova-Regular_0';
