@@ -6,6 +6,7 @@
 */
 
 @import url('../intergalactic/style.css');
+@import url('../../../css/pages.css');
 @import url('../../../css/bootstrap.min.css');
 @import url('../../../css/creative.css');
 @import url('../../../css/animate.min.css');
@@ -14,9 +15,11 @@
 @import url('../../../css/press-release.css');
 @import url('../../../css/flexslider.css');
 
+
 @import url('../../../css/cs-select.css');
 @import url('../../../css/cs-skin-border.css');
 @import url('../../../css/pages.css');
+
 
 
 
@@ -166,7 +169,7 @@ input.yellowbutton {
 .has-text,
 .has-content {
 	color: #202020;
-	font-size: 24px;
+	font-size: 18px;
 }
 .white-text {
 	color: #fff;
@@ -638,7 +641,7 @@ a .icon-home_yellowband_arrow {
 	background-color: #FFD845;
 	text-align: center;
 	color: #333;
-	font-size: 14px;
+	font-size: 12px;
 }
 .yellow-text-block .gray-text {
 	font-weight: bold;
@@ -648,7 +651,9 @@ a .icon-home_yellowband_arrow {
 	color: #333;
 }
 
-
+.yellow-band-fixed {
+	height: 100px;
+}
 
 /* Floating Text Box */
 .floating-text-box {
@@ -807,7 +812,7 @@ a .icon-home_yellowband_arrow {
 .white-background {
 	background-color: #fff;
 	color: #333;
-	text-align: center;
+	text-align: justify;
 	padding: 30px;
 }
 .white-background .row {
@@ -820,7 +825,7 @@ a .icon-home_yellowband_arrow {
 
 .unfloat-to-center {
 	float: none !important;
-	margin: auto;
+	margin: 10% auto;
 	text-align: justify;
 }
 
@@ -838,7 +843,13 @@ a .icon-home_yellowband_arrow {
 	padding: 0;
 }
 
+<<<<<<< HEAD
+/*--------repeated about page css
+
+.ab-panelCon{
+=======
 /*.ab-panelCon{
+>>>>>>> origin/master
 	position:fixed;
     bottom: 0;
     left:0;
@@ -1379,6 +1390,7 @@ color: #ffffff;
     }
 
 
+---------*/
 
 
 @media screen and (max-width: 640px) {

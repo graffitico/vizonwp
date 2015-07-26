@@ -106,11 +106,7 @@ function include_press_template_function( $template_path ) {
         }else{
 
         	if($post->post_title == 'Press Release'){
-	            if ( $theme_file = locate_template( array ( 'list-press_release.php' ) ) ) {
-	                $template_path = $theme_file;
-	            } else {
-	                $template_path = plugin_dir_path( __FILE__ ) . '/list-press_release.php';
-	            }   
+	            
         	}elseif($post->post_title == 'Media Coverage') {
         		    if ( $theme_file = locate_template( array ( 'list-media_coverage.php' ) ) ) {
 		                $template_path = $theme_file;

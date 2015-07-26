@@ -1,23 +1,5 @@
 ﻿
 
-<!DOCTYPE html>
-
-
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
-    <title>Publishers Page</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/animations-ja.css">
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-</head>
-
 <body id="publishers">
 
 <!-------Banner Begins--------->
@@ -151,36 +133,5 @@
  
  <!---------Publishers Logos Ends------->
  
- 
- <div>
- <img id="feature-1" class="slideUp" src="/imgs/Map-locator.svg" height="100px">
- </div>
- 
- <!-----Animation Script---------->
- 
- <script type="text/javascript">
-	debugger;
-	$(window).scroll(function() {
-		console.log('scrolling');
-		debugger;
-		$('#feature-1').each(function(){
-		var imagePos = $(this).offset().top;
 
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideUp");
-			}
-		});
-	});
-	
-</script>
-
-<script>
-	$('#feature-1').click(function() {
-		$(this).addClass("slideUp");
-	});
-</script>
-
-<!-------Animation Script Ends------>
-	
 </body>
