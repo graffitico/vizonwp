@@ -71,7 +71,7 @@ color: #000000;
 
  .values-info {
 	background: url ("../../../imgs/values-info.svg") no-repeat center center;
-}   
+}
 
 .yellow-box {
 	background-color: #ffd846;
@@ -261,6 +261,18 @@ a .icon-home_yellowband_arrow {
 
 #mobilenavigation-container {
 	display: none;
+}
+
+#pre-header .search-bar {
+	width: 0px;
+	padding: 0;
+    -webkit-transition-duration: .8s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
+}
+#pre-header .search-bar.searchvisible {
+	width: 150px;
+	padding: 0 5px;
 }
 
 .vizuri_menu_class {
@@ -1083,10 +1095,10 @@ a .icon-home_yellowband_arrow {
 /*------About Section Ends-------*/
 
 
-  /* Extra Small Devices, Phones */ 
+  /* Extra Small Devices, Phones */
     @media only screen and (min-width : 480px) {
-		
-					
+
+
 /*----------About Page-----------*/
 
 
@@ -1276,7 +1288,7 @@ width: 10em;
 
 /*-------Contact Us Page Ends---------*/
 
-	
+
     }
 
     /* Small Devices, Tablets */
@@ -1286,9 +1298,9 @@ width: 10em;
 		margin-bottom: 30vh;
 		margin-top: 30vh;
 	}
-	
+
 /*--------Values Section------*/
-	
+
   #values p {
 	padding: 2%;
 }
@@ -1307,13 +1319,13 @@ width: 10em;
 }
 
 /*----------Contact Page Ends----------*/
-	
+
 	}
 
-	
-	
-	
-	
+
+
+
+
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
 
@@ -1321,19 +1333,19 @@ width: 10em;
 		margin-bottom: 30vh;
 		margin-top: 30vh;
 	}
-	
-	
+
+
     }
 
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-		
+
 	#investors .row {
 		margin-bottom: 30vh;
 		margin-top: 30vh;
 	}
-	
-/*----------Contact Us Page------------*/	
+
+/*----------Contact Us Page------------*/
 
 button#submit {
 width: 12em;

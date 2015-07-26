@@ -32,8 +32,7 @@
 					<input type='button' class='login-button' value='LOGIN' />
 				</li>
 				<li>
-					<div class='search-bar-container'>
-					</div>
+					<input class='search-bar' type="text" id="search_container" style="" />
 					<span class='header-icon icon-home_header_searchwhite'></span>
 				</li>
 				<li>
@@ -281,7 +280,6 @@
 									</li>
 									<li>
 										<a href='/products/convert'>Convert XP</a>
-
 									</li>
 									<li>
 										<a href='/products/convert/app-re-engagement/'>App Re engagement</a>

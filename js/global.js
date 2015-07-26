@@ -82,7 +82,24 @@ jQuery(function () {
 		}
 
 		e.stopPropagation();
-	})
+	});
+
+	// Search button click
+	$('.icon-home_header_searchwhite').click(function () {
+
+		//$('.search-bar').slideToggle();
+		var searchAttr = $(this).attr('search-showing');
+
+		if (!searchAttr || searchAttr === "0") {
+			$(this).attr('search-showing', '1');
+
+			$('.search-bar').addClass('searchvisible')/*.show()*/.focus();
+		} else {
+			$(this).attr('search-showing', '0');
+
+			$('.search-bar').removeClass('searchvisible')/*.hide()*/;
+		}
+	});
 
 	// Header hover functionality
 	$('.vizuri_menu_class li a').hover(function (e) {
