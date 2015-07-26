@@ -846,6 +846,9 @@ a .icon-home_yellowband_arrow {
 		margin: 10px auto !important;
 		background-color: rgba(0,0,0,0.5);
 	}
+	.floating-text-element-medium {
+		font-size: 30px;
+	}
 	.floating-text-element-xsmall b,
 	.floating-text-element-small b,
 	.floating-text-element-medium b,
