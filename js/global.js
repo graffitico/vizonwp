@@ -1,9 +1,9 @@
-
 jQuery(function () {
 
 	var $ = jQuery;
 	var subNavTimer;
 	var navVisible = true;
+	var subNavVisible = false;
 	var preNavBg = false;
 	var mouseOnTop = false;
 	var scrollOnTop = true;
@@ -14,11 +14,13 @@ jQuery(function () {
 			$('#header .' + subnavName + '-subnav').show();
 		}
 		$('#header .subnav').show();
+		subNavVisible = true;
 	}
 
 	function hideSubNav() {
 		subNavTimer = setTimeout(function () {
 			$('#header .subnav').hide();
+			subNavVisible = false;
 		}, 300);
 	}
 
@@ -37,7 +39,7 @@ jQuery(function () {
 				$('#pre-header').css('background-color', 'rgba(0,0,0,0.5)');
 				showNavigation();
 			}
-			else {
+			else if (!subNavVisible) {
 				hideNavigation();
 			}
 		}
@@ -181,6 +183,20 @@ jQuery(function () {
 		});
 	});
 
+
+
+/**************************** contact form js start **************************/
+$(".contact-marker").click(function(){
+	contact_id = $(this).attr("id");
+	console.log(contact_id);
+
+addr_html = $("#"+contact_id+"-content").html();
+
+$("#address-number").html(addr_html);
+
+
+});
+/**************************** contact form js end **************************/
 
 
 
