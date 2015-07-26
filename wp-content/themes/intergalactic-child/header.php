@@ -112,7 +112,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/cross-devise/'>
+								<a href='/products/convert/cross-channel/'>
 									<span class='icon-home_menuicons__crosschannel'></span>
 									Cross Channel
 								</a>
@@ -269,7 +269,7 @@
 								<a href='/products'>Products Overview</a>
 							</li>
 							<li>
-								<a href='/reach'>Reach</a>
+								<a href='/products/reach'>Reach</a>
 							</li>
 							<li class='has-submenu'>
 								<div>Convert</div>
@@ -290,7 +290,7 @@
 										<a href='/products/convert/facebook-marketing/'>Facebook Marketing</a>
 									</li>
 									<li>
-										<a href='/products/convert/cross-devise/'>Cross Channel</a>
+										<a href='/products/convert/cross-channel/'>Cross Channel</a>
 									</li>
 									<li>
 										<a href='/products/convert/mobile-web-app-re-engagment/'>Mobile Web-App Engagement</a>
