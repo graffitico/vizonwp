@@ -24,11 +24,11 @@
 	font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
 	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
 	color: #202020;
 }
-
+*/
 p {
 	font-family:'Conv_ProximaNova-Regular_0',Sans-Serif;
 	text-align: justify;
@@ -63,25 +63,25 @@ span {
 
 /*------Sprite 1-------*/
 
-.map, .testimonial-box, .chick, .guy, .tanx, 
-.left-cube, .right-cube, .ascent-capital, .cleartrip, .cleartripb, 
-.dafiti, .dafitib, .danmurphys, .danmurphysb, .ebay, 
-.ebayb, .ethihad, .ethihadb, .flipkart, .flipkartb, 
-.hdfc, .hdfcb, .intel-capital, .inventus, .jabong, 
-.jabongb, .netshoes, .netshoesb, .nokia, .ojas, 
-.policy, .policyb, .sony, .sonyb, .souq, 
-.souqb, .walmart, .walmartb, .wego, .wegob, 
-.yintai, .yintaib, .custom-build, .hassle-free, .multichannel, 
-.one-stop-solution, .performance, .baidu, .baidub, .openxb, 
-.pubmatic, .pubmaticb, .yahoo, .yahoob, .adorika, 
-.adorikab, .appnexus, .appnexusb, .doubleclick, .doubleclickb, 
-.facebook, .facebookb, .microsoft, .microsoftb, .msn, 
-.msnb, .openx, .twitter, .twitterb, .yeildone, 
-.yieldoneb, .vizury, .convert, .engage, .reach, 
-.vizury-box, .facebook, .facebookc, .linkdin, .linkdinc, 
+.map, .testimonial-box, .chick, .guy, .tanx,
+.left-cube, .right-cube, .ascent-capital, .cleartrip, .cleartripb,
+.dafiti, .dafitib, .danmurphys, .danmurphysb, .ebay,
+.ebayb, .ethihad, .ethihadb, .flipkart, .flipkartb,
+.hdfc, .hdfcb, .intel-capital, .inventus, .jabong,
+.jabongb, .netshoes, .netshoesb, .nokia, .ojas,
+.policy, .policyb, .sony, .sonyb, .souq,
+.souqb, .walmart, .walmartb, .wego, .wegob,
+.yintai, .yintaib, .custom-build, .hassle-free, .multichannel,
+.one-stop-solution, .performance, .baidu, .baidub, .openxb,
+.pubmatic, .pubmaticb, .yahoo, .yahoob, .adorika,
+.adorikab, .appnexus, .appnexusb, .doubleclick, .doubleclickb,
+.facebook, .facebookb, .microsoft, .microsoftb, .msn,
+.msnb, .openx, .twitter, .twitterb, .yeildone,
+.yieldoneb, .vizury, .convert, .engage, .reach,
+.vizury-box, .facebook, .facebookc, .linkdin, .linkdinc,
 .twitter, .twitterc, .youtube, .youtubec
 { max-width: 100%; background-size: 100%; background-image: url("../imgs/sprite-2.png"); }
- 
+
 .map { background-position: 0 0%; background-size: 100%; }
 .testimonial-box { background-position: 0 8.72169%; background-size: 331.838565%; }
 .chick { background-position: 0 13.273475%; background-size: 333.333333%; }
@@ -319,7 +319,7 @@ color: #000000;
 
 .values-info {
 	background: url ("/imgs/values-info.svg") no-repeat center center;
-}   
+}
 
 .yellow-box {
 	background-color: #ffd846;
@@ -412,7 +412,7 @@ body#publishers .jumbotron {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-		
+
 }
 
 .pub-heading-text {
@@ -502,9 +502,9 @@ ul.pub-logos img:hover {
 
 
 
-	/* Custom, iPhone Retina */ 
+	/* Custom, iPhone Retina */
     @media only screen and (max-width : 480px) {
-        
+
 		/*----------About Page-----------*/
 
 
@@ -639,10 +639,10 @@ ul.pub-logos img:hover {
 }
 
 /*------About Section Ends-------*/
-		
-		
-/*-----Investors Section Begins-----*/		
-		
+
+
+/*-----Investors Section Begins-----*/
+
 body#investors .row {
 		margin-bottom: 10%;
 		margin-top: 10%;
@@ -726,13 +726,13 @@ width: 10em;
 }
 
 /*----------Publishers Page Ends-------*/
-		
+
     }
 
-    /* Extra Small Devices, Phones */ 
+    /* Extra Small Devices, Phones */
     @media only screen and (min-width : 480px) {
-		
-					
+
+
 /*----------About Page-----------*/
 
 
@@ -951,7 +951,7 @@ width: 10em;
 
 /*--------Publishers Page Ends-----*/
 
-	
+
     }
 
     /* Small Devices, Tablets */
@@ -961,9 +961,9 @@ width: 10em;
 		margin-bottom: 30vh;
 		margin-top: 30vh;
 	}
-	
+
 /*--------Values Section------*/
-	
+
 	body#values p {
 	padding: 2%;
 }
@@ -995,13 +995,13 @@ width: 10em;
 }
 
 /*------Publishers Page Ends-----*/
-	
+
 	}
 
 
-	
-	
-	
+
+
+
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
 
@@ -1009,19 +1009,19 @@ width: 10em;
 		margin-bottom: 30vh;
 		margin-top: 30vh;
 	}
-	
-	
+
+
     }
 
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-		
+
 	body#investors .row {
 		margin-bottom: 30vh;
 		margin-top: 30vh;
 	}
-	
-/*----------Contact Us Page------------*/	
+
+/*----------Contact Us Page------------*/
 
 button#submit {
 width: 12em;

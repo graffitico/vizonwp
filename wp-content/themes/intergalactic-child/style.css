@@ -581,6 +581,36 @@ a .icon-home_yellowband_arrow {
 	height: 600px;
 }
 
+@media only screen and (max-width: 440px) {
+	.engage-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-data-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-insights-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-marketing-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-hover-magic-text {
+		width: auto;
+		height: auto;
+	}
+}
 
 /** Testimonials block */
 .testimonial-bg {
@@ -661,21 +691,17 @@ a .icon-home_yellowband_arrow {
 	margin: 0 auto;
 	list-style-type: none;
 }
-
 .floating-text-box .gray-bg {
 	background-color: #333;
 	color: #fff;
 }
-
 .floating-text-box .circular-bound {
 	border-radius: 50%;
 }
-
 .hoverable-text {
 	display: block;
 	cursor: pointer;
 }
-
 .bigcircle,
 .smallcircle {
 	position: absolute;
@@ -686,7 +712,6 @@ a .icon-home_yellowband_arrow {
     -webkit-transition-property: all;
     -webkit-transition-timing-function: ease-in-out;
 }
-
 .bigcircle.expanded,
 .smallcircle.expanded {
     -webkit-transition-duration: .5s;
@@ -695,17 +720,14 @@ a .icon-home_yellowband_arrow {
     transform: translate(-25%, -25%);
     z-index: 100;
 }
-
 .smallcircle.expanded {
 	width: 280px;
 	height: 280px;
 }
-
 .bigcircle.expanded {
 	width: 320px;
 	height: 320px;
 }
-
 .hoverable-text .plus-icon,
 .hoverable-text .minus-icon {
 	position: absolute;
@@ -717,21 +739,22 @@ a .icon-home_yellowband_arrow {
 	font-size: 16px;
 	line-height: 8px;
 }
-
 .hoverable-text .floating-normal-text,
 .hoverable-text .plus-icon,
+.hoverable-text.activate .minus-icon,
+.hoverable-text.activate .floating-hover-text,
 .hoverable-text:hover .minus-icon,
 .hoverable-text:hover .floating-hover-text {
 	display: block;
 }
-
 .hoverable-text .floating-hover-text,
 .hoverable-text .minus-icon,
+.hoverable-text.activate .plus-icon,
+.hoverable-text.activate .floating-normal-text,
 .hoverable-text:hover .plus-icon,
 .hoverable-text:hover .floating-normal-text {
 	display: none;
 }
-
 .hoverable-text .floating-hover-text {
 	text-align: center;
 	top: 50%;
@@ -741,14 +764,12 @@ a .icon-home_yellowband_arrow {
 	text-align: justify;
 	padding: 0 30px;
 }
-
 .hoverable-text .floating-normal-text {
 	text-align: center;
 	vertical-align: middle;
 	color: #fff;
 	position: absolute;
 }
-
 .floating-text-element-xsmall,
 .floating-text-element-small,
 .floating-text-element-medium,
@@ -756,29 +777,82 @@ a .icon-home_yellowband_arrow {
 	position: absolute;
 	text-align: center;
 }
-
 .floating-text-element-xsmall b,
 .floating-text-element-small b,
 .floating-text-element-medium b,
 .floating-text-element-large b {
 	font-size: 1.2em;
 }
-
-
 .floating-text-element-xsmall {
 	font-size: 14px;
 }
-
 .floating-text-element-small {
 	font-size: 16px;
 }
-
 .floating-text-element-medium {
 	font-size: 20px;
 }
-
 .floating-text-element-large {
 	font-size: 24px;
+}
+
+@media only screen and (max-width: 440px) {
+	.floating-text-box {
+		position: static;
+		background-image: none !important;
+		margin: 0 auto;
+		list-style-type: none;
+		text-align: center;
+	}
+	.floating-text-box .circular-bound {
+		border-radius: 25%;
+	}
+	.bigcircle,
+	.smallcircle {
+		display: block;
+		position: relative;
+		left: 0 !important;
+		top: 0 !important;
+		margin: 0 !important;
+		padding: 10px;
+		margin: 20px;
+		font-size: 12px;
+	    -webkit-transition-duration: .5s;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: ease-in-out;
+	}
+	.bigcircle.expanded,
+	.smallcircle.expanded {
+	    transform: none;
+	}
+	.hoverable-text .floating-normal-text {
+		text-align: center;
+		vertical-align: middle;
+		color: #fff;
+		position: relative;
+	}
+	.floating-text-element-xsmall,
+	.floating-text-element-small,
+	.floating-text-element-medium,
+	.floating-text-element-large {
+		position: relative;
+		left: 0 !important;
+		top: 0 !important;
+		margin: 0 !important;
+		text-align: center;
+		padding: 4px 12px;
+		display: block;
+		font-size: 1.2em;
+		margin: 10px auto !important;
+		background-color: rgba(0,0,0,0.5);
+	}
+	.floating-text-element-xsmall b,
+	.floating-text-element-small b,
+	.floating-text-element-medium b,
+	.floating-text-element-large b {
+		font-size: 1.2em;
+	}
+
 }
 
 /* Portfolio Box */
