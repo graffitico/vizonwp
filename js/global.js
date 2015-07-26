@@ -61,7 +61,7 @@ jQuery(function () {
 	}
 
 	// Mobile Navigation
-	$('.navigation-trigger').click(function (e) {
+	$('.navigation-trigger').on('click touchstart', function (e) {
 		if ($('.mobilenavigation').is(":visible")) {
 			$('.mobilenavigation').slideUp();
 		} else {
@@ -69,7 +69,7 @@ jQuery(function () {
 		}
 	});
 
-	$('.mobilenavigation li').click(function (e) {
+	$('.mobilenavigation li').on('click touchstart', function (e) {
 		if ($(this).hasClass('expanded-menu')) {
 			$(this).removeClass('expanded-menu');
 			$(this).find('> .mobilesubnav').slideUp();
@@ -151,20 +151,53 @@ jQuery(function () {
 			return false;
 		});
 	}
-// about us js
 
-var winHeight = $(window).innerHeight();
-$(document).ready(function () {
-    $(".ab-panel").height(winHeight);
-    $("body").height(winHeight*$(".ab-panel").length);
-});
+	// about us js
+	var winHeight = $(window).innerHeight();
+	$(document).ready(function () {
+	    $(".ab-panel").height(winHeight);
+	    $("body").height(winHeight*$(".ab-panel").length);
+	});
 
-window.addEventListener('resize', function (event) {
-    $(".ab-panel").height($(window).innerHeight());
+	window.addEventListener('resize', function (event) {
+	    $(".ab-panel").height($(window).innerHeight());
+	});
+	$(window).on('scroll',function(){
+	    $(".ab-panelCon").css('bottom',$(window).scrollTop()*-1);
+	});
+
+	$('.floating-text-box .hoverable-text .floating-normal-text').each(function () {
+		var width = $(this).width();
+		var height = $(this).height();
+		var parentHeight = $(this).closest('.hoverable-text').height();
+		var parentWidth = $(this).closest('.hoverable-text').width();
+
+		var left = (parentWidth - width) / 2;
+		var top = (parentHeight - height) / 2;
+
+		$(this).css({
+			left: (left + 5) + 'px',
+			top: (top - 5) + 'px'
+		});
+	});
+
+
+
+/**************************** contact form js start **************************/
+$(".contact-marker").click(function(){
+	contact_id = $(this).attr("id"); 
+	console.log(contact_id);
+
+addr_html = $("#"+contact_id+"-content").html();
+
+$("#address-number").html(addr_html);
+
+
 });
-$(window).on('scroll',function(){
-    $(".ab-panelCon").css('bottom',$(window).scrollTop()*-1);
-});
+/**************************** contact form js end **************************/
+
+
+
 
 
 

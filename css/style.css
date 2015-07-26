@@ -1,0 +1,1063 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ----------Global Styles----------- */
+
+@font-face {
+	font-family: 'Conv_ProximaNova-Regular_0';
+	src:url(../fonts/ProximaNova-Regular_0.eot);
+	src:url(../fonts/ProximaNova-Regular_0.svg);
+	src:url(../fonts/ProximaNova-Regular_0.ttf);
+	src:url(../fonts/ProximaNova-Regular_0.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_ProximaNova-Semibold';
+	src:url(../fonts/ProximaNova-Semibold.eot);
+	src:url(../fonts/ProximaNova-Semibold.svg);
+	src:url(../fonts/ProximaNova-Semibold.ttf);
+	src:url(../fonts/ProximaNova-Semibold.woff);
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
+	color: #202020;
+}
+
+p {
+	font-family:'Conv_ProximaNova-Regular_0',Sans-Serif;
+	text-align: justify;
+	color: #202020;
+}
+
+.white-text {
+	color: #ffffff;
+}
+
+.yellow-text {
+	color: #ffd846;
+}
+
+.remove-padding {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}*/
+
+.btn, .btn-default, .dropdown, .form, span, .label{
+	font-family: 'Conv_ProximaNova-Regular_0';
+}
+
+
+
+
+/*------Sprite 1-------*/
+
+.map, .testimonial-box, .chick, .guy, .tanx, 
+.left-cube, .right-cube, .ascent-capital, .cleartrip, .cleartripb, 
+.dafiti, .dafitib, .danmurphys, .danmurphysb, .ebay, 
+.ebayb, .ethihad, .ethihadb, .flipkart, .flipkartb, 
+.hdfc, .hdfcb, .intel-capital, .inventus, .jabong, 
+.jabongb, .netshoes, .netshoesb, .nokia, .ojas, 
+.policy, .policyb, .sony, .sonyb, .souq, 
+.souqb, .walmart, .walmartb, .wego, .wegob, 
+.yintai, .yintaib, .custom-build, .hassle-free, .multichannel, 
+.one-stop-solution, .performance, .baidu, .baidub, .openxb, 
+.pubmatic, .pubmaticb, .yahoo, .yahoob, .adorika, 
+.adorikab, .appnexus, .appnexusb, .doubleclick, .doubleclickb, 
+.facebook, .facebookb, .microsoft, .microsoftb, .msn, 
+.msnb, .openx, .twitter, .twitterb, .yeildone, 
+.yieldoneb, .vizury, .convert, .engage, .reach, 
+.vizury-box, .facebook, .facebookc, .linkdin, .linkdinc, 
+.twitter, .twitterc, .youtube, .youtubec
+{ max-width: 100%; background-size: 100%; background-image: url("/imgs/sprite-2.png"); }
+ 
+.map { background-position: 0 0%; background-size: 100%; }
+.testimonial-box { background-position: 0 8.72169%; background-size: 331.838565%; }
+.chick { background-position: 0 13.273475%; background-size: 333.333333%; }
+.guy { background-position: 0 17.2328%; background-size: 333.333333%; }
+.tanx { background-position: 0 20.655841%; background-size: 404.371585%; }
+.left-cube { background-position: 0 22.533232%; background-size: 462.5%; }
+.right-cube { background-position: 0 26.391441%; background-size: 462.5%; }
+.ascent-capital { background-position: 0 29.435272%; background-size: 592%; }
+.cleartrip { background-position: 0 30.497423%; background-size: 592%; }
+.cleartripb { background-position: 0 31.559575%; background-size: 592%; }
+.dafiti { background-position: 0 32.621727%; background-size: 592%; }
+.dafitib { background-position: 0 33.683878%; background-size: 592%; }
+.danmurphys { background-position: 0 34.564285%; background-size: 592%; }
+.danmurphysb { background-position: 0 35.097814%; background-size: 592%; }
+.ebay { background-position: 0 35.818698%; background-size: 592%; }
+.ebayb { background-position: 0 36.88085%; background-size: 592%; }
+.ethihad { background-position: 0 37.943001%; background-size: 592%; }
+.ethihadb { background-position: 0 39.005153%; background-size: 592%; }
+.flipkart { background-position: 0 40.067305%; background-size: 592%; }
+.flipkartb { background-position: 0 41.129456%; background-size: 592%; }
+.hdfc { background-position: 0 42.191608%; background-size: 592%; }
+.hdfcb { background-position: 0 43.25376%; background-size: 592%; }
+.intel-capital { background-position: 0 44.315911%; background-size: 592%; }
+.inventus { background-position: 0 45.378063%; background-size: 592%; }
+.jabong { background-position: 0 46.440215%; background-size: 592%; }
+.jabongb { background-position: 0 47.502366%; background-size: 592%; }
+.netshoes { background-position: 0 48.564518%; background-size: 592%; }
+.netshoesb { background-position: 0 49.626669%; background-size: 592%; }
+.nokia { background-position: 0 50.688821%; background-size: 592%; }
+.ojas { background-position: 0 51.750973%; background-size: 592%; }
+.policy { background-position: 0 52.813124%; background-size: 592%; }
+.policyb { background-position: 0 53.875276%; background-size: 592%; }
+.sony { background-position: 0 54.937428%; background-size: 592%; }
+.sonyb { background-position: 0 55.999579%; background-size: 592%; }
+.souq { background-position: 0 57.061731%; background-size: 592%; }
+.souqb { background-position: 0 58.123883%; background-size: 592%; }
+.walmart { background-position: 0 59.186034%; background-size: 592%; }
+.walmartb { background-position: 0 60.248186%; background-size: 592%; }
+.wego { background-position: 0 61.310338%; background-size: 592%; }
+.wegob { background-position: 0 62.372489%; background-size: 592%; }
+.yintai { background-position: 0 63.434641%; background-size: 592%; }
+.yintaib { background-position: 0 64.496793%; background-size: 592%; }
+.custom-build { background-position: 0 66.688062%; background-size: 611.570248%; }
+.hassle-free { background-position: 0 69.4908%; background-size: 611.570248%; }
+.multichannel { background-position: 0 72.293539%; background-size: 611.570248%; }
+.one-stop-solution { background-position: 0 75.096277%; background-size: 611.570248%; }
+.performance { background-position: 0 77.899016%; background-size: 611.570248%; }
+.baidu { background-position: 0 78.986494%; background-size: 704.761905%; }
+.baidub { background-position: 0 79.60423%; background-size: 704.761905%; }
+.openxb { background-position: 0 80.221966%; background-size: 704.761905%; }
+.pubmatic { background-position: 0 80.839703%; background-size: 704.761905%; }
+.pubmaticb { background-position: 0 81.457439%; background-size: 704.761905%; }
+.yahoo { background-position: 0 82.075175%; background-size: 704.761905%; }
+.yahoob { background-position: 0 82.692912%; background-size: 704.761905%; }
+.adorika { background-position: 0 83.310648%; background-size: 704.761905%; }
+.adorikab { background-position: 0 83.928384%; background-size: 704.761905%; }
+.appnexus { background-position: 0 84.546121%; background-size: 704.761905%; }
+.appnexusb { background-position: 0 85.163857%; background-size: 704.761905%; }
+.doubleclick { background-position: 0 85.781594%; background-size: 704.761905%; }
+.doubleclickb { background-position: 0 86.39933%; background-size: 704.761905%; }
+.facebook { background-position: 0 87.017066%; background-size: 704.761905%; }
+.facebookb { background-position: 0 87.634803%; background-size: 704.761905%; }
+.microsoft { background-position: 0 88.252539%; background-size: 704.761905%; }
+.microsoftb { background-position: 0 88.870275%; background-size: 704.761905%; }
+.msn { background-position: 0 89.488012%; background-size: 704.761905%; }
+.msnb { background-position: 0 90.105748%; background-size: 704.761905%; }
+.openx { background-position: 0 90.723484%; background-size: 704.761905%; }
+.twitter { background-position: 0 91.341221%; background-size: 704.761905%; }
+.twitterb { background-position: 0 91.958957%; background-size: 704.761905%; }
+.yeildone { background-position: 0 92.576694%; background-size: 704.761905%; }
+.yieldoneb { background-position: 0 93.19443%; background-size: 704.761905%; }
+.vizury { background-position: 0 93.714047%; background-size: 740%; }
+.convert { background-position: 0 95.101868%; background-size: 1088.235294%; }
+.engage { background-position: 0 96.548084%; background-size: 1088.235294%; }
+.reach { background-position: 0 97.9943%; background-size: 1088.235294%; }
+.vizury-box { background-position: 0 98.742138%; background-size: 2144.927536%; }
+.facebook { background-position: 0 98.90568%; background-size: 10571.428571%; }
+.facebookc { background-position: 0 99.062011%; background-size: 10571.428571%; }
+.linkdin { background-position: 0 99.218343%; background-size: 10571.428571%; }
+.linkdinc { background-position: 0 99.374674%; background-size: 10571.428571%; }
+.twitter { background-position: 0 99.531006%; background-size: 10571.428571%; }
+.twitterc { background-position: 0 99.687337%; background-size: 10571.428571%; }
+.youtube { background-position: 0 99.843669%; background-size: 10571.428571%; }
+.youtubec { background-position: 0 100%; background-size: 10571.428571%; }
+
+/*---------Sprite 1 Ends-----------*/
+
+
+
+/*-------Investors Page Begins----------*/
+
+
+body#investors {
+background: linear-gradient(to left, #202020, #ffffff);
+color: #000000;
+}
+
+.table > tbody > tr > td {
+    border-top: 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+/*----------Investors Page Ends------------*/
+
+
+
+
+/*----------About Page-----------*/
+
+
+.ab-panel {
+    width: 100%;
+	border-bottom:#ffd846 15px solid;
+}
+
+.ab-viztoday-top {
+	background:#202020;
+	display:block;
+	margin-top:10%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-viztoday-bottom {
+	background:#202020;
+	display:block;
+	margin-bottom: 2.5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-story-button {
+	margin-top: 10%;
+	margin-bottom: 1.5%;
+	text-align: center;
+}
+
+.ab-vizinno {
+	background:#202020;
+	display:block;
+	margin-top: 10%;
+	margin-bottom: 22%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizgrowth {
+	background:#202020;
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizinvestors {
+	display:block;
+	margin-top: 3%;
+	margin-bottom: 30%;
+	padding:20px;
+}
+
+.ab-team {
+	background:#202020;
+	display:block;
+	margin-top: 8%;
+	margin-bottom: 30%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-idea {
+	display:block;
+	margin-top: 25%;
+	margin-bottom: 5%;
+	padding:20px;
+}
+
+.ab-founders {
+	background:#202020;
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+#viz-today {
+	background: url("/imgs/about-frame7.svg") no-repeat center center fixed;
+	background-size: 100%;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-innovating {
+	background: url("/imgs/about-frame6.svg") no-repeat center center fixed;
+	background-size: 100%;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-growth {
+	background: url("/imgs/about-frame5.svg") no-repeat center center fixed;
+	background-size: 100%;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-investors {
+	background: url("/imgs/about-frame4.svg") no-repeat center center fixed;
+	background-size: 100%;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-team {
+	background: url("/imgs/about-frame3.svg") no-repeat center center fixed;
+	background-size: 100%;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-idea {
+	background: url("/imgs/about-frame2.svg") no-repeat center center fixed;
+	background-size: 100%;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-founders {
+	background: url("/imgs/about-frame1.svg") no-repeat center center fixed;
+	background-size: 100%;
+}
+
+/*------About Section Ends-------*/
+
+ /*-------Values Section Begins---------*/
+
+.values-info {
+	background: url ("/imgs/values-info.svg") no-repeat center center;
+}   
+
+.yellow-box {
+	background-color: #ffd846;
+	height: 200px;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	width: 200px;
+	padding-top: 1%;
+}
+
+/*----------Values Section Ends---------*/
+
+/*-------Contact Page Beings--------*/
+
+svg a:hover {
+fill: #62C5BB;
+}
+
+button#submit {
+width: 12em;
+cursor: pointer;
+padding: .5em 1.5em;
+border-radius: 0em;
+background: #202020;
+border: none;
+color: #ffffff;
+}
+
+button#submit:hover {
+background: #ffd846;
+color: #202020;
+}
+
+button#menu1 {
+border-radius: 0em;
+width: 12em;
+padding: 0.5em 1.5em;
+}
+
+.form-control {
+border-radius: 0em;
+}
+
+.dropdown {
+	margin-bottom: 10%;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.address-icons {
+	height: 30px;
+	width: auto;
+}
+
+.padding-addressmenu {
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+#address-number .row {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+#infoform .row {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+#map .row {
+	margin-top: 10%;
+	margin-bottom: 2%;
+}
+
+/*-------Contact Page Ends---------*/
+
+
+/*---------Publishers Page Begins------*/
+
+body#publishers .jumbotron {
+	background: #ffffff url("/imgs/about-frame6.svg") no-repeat center center;
+	background-size: cover;
+	color: #ffd846;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+		
+}
+
+.pub-heading-text {
+	padding-top: 25%;
+	padding-bottom: 20%;
+	padding-left: 3%;
+}
+
+.pub-body-text {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.read-more {
+	border-radius: 0px;
+	background: #202020;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	margin: 2% auto 2% auto;
+	padding: .5em .5em;
+	position: center;
+	width: 8em;
+}
+
+.read-more:hover {
+	background: #ffd846;
+	color: #202020;
+}
+
+.pub-yellow-box {
+	background: #ffd846;
+	padding-left: 5%;
+	padding-right: 2%;
+	padding-top: 3%;
+	padding-bottom: 1%;
+	margin-bottom: 2%;
+}
+
+.features {
+	display: block;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+#pub-features .row{
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.body-title {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: center;
+}
+
+.pub-logos {
+	list-style: none;
+	margin-top: 5%;
+}
+
+.pub-logos li {
+	display: inline-block;
+	background: #ffffff;
+	margin-right: 4%;
+	margin-left: 4%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+ul.pub-logos img {
+	filter: grayscale(1);
+}
+
+ul.pub-logos img:hover {
+	filter: none;
+}
+
+/*---------Publishers Page Ends------*/
+
+
+#feature-1 {
+	background-color: #ffffff;
+	visibility: hidden;
+}
+
+
+
+
+	/* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 480px) {
+        
+		/*----------About Page-----------*/
+
+
+.ab-panel {
+    width: 100%;
+	border-bottom:#ffd846 15px solid;
+}
+
+.ab-viztoday-top {
+	background:#202020;
+	display:block;
+	margin-top:10%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-viztoday-bottom {
+	background:#202020;
+	display:block;
+	margin-bottom: 2.5%;
+	opacity: 0.8;
+	padding:35px;
+}
+
+.ab-story-button {
+	margin-top: 10%;
+	margin-bottom: 1.5%;
+	text-align: center;
+}
+
+.ab-vizinno {
+	background:#202020;
+	display:block;
+	margin-top: 10%;
+	margin-bottom: 22%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizgrowth {
+	background:#202020;
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizinvestors {
+	background:#202020;
+	display:block;
+	margin-top: 3%;
+	margin-bottom: 30%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizinvestors h4, .ab-idea h4 {
+	color: #ffd846
+}
+
+.ab-vizinvestors p, .ab-idea p {
+	color: #ffffff
+}
+
+.ab-team {
+	background:#202020;
+	display:block;
+	margin-top: 8%;
+	margin-bottom: 30%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-idea {
+	background:#202020;
+	display:block;
+	margin-top: 25%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-founders {
+	background:#202020;
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+#viz-today {
+	background: url("/imgs/about-frame7.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-innovating {
+	background: url("/imgs/about-frame6.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-growth {
+	background: url("/imgs/about-frame5.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-investors {
+	background: url("/imgs/about-frame4.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-team {
+	background: url("/imgs/about-frame3.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-idea {
+	background: url("/imgs/about-frame2.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-founders {
+	background: url("/imgs/about-frame1.svg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+/*------About Section Ends-------*/
+		
+		
+/*-----Investors Section Begins-----*/		
+		
+body#investors .row {
+		margin-bottom: 10%;
+		margin-top: 10%;
+}
+
+body#investors p {
+		margin-bottom: 10%;
+		margin-top: 10%;
+}
+
+/*------Investors Section Ends--------*/
+
+/*--------Values Section------*/
+body#values p {
+	padding: 15px;
+}
+
+ .yellow-box-2 {
+	 background-color: #ffd846;
+ }
+
+/*--------Values Section---------*/
+
+/*-----Contact Us Page----------*/
+
+#infoform .remove-padding {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+button#submit {
+width: 8em;
+cursor: pointer;
+padding: .5em 1.5em;
+border-radius: 0em;
+background: #202020;
+border: none;
+color: #ffffff;
+}
+
+button#menu1 {
+border-radius: 0em;
+width: 10em;
+}
+
+#address-number .row {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/*-------Contact Us Page Ends---------*/
+
+/*--------Publishers Page Begins------*/
+
+.pub-logos li {
+	display: inline-block;
+	background: #ffffff;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.pub-yellow-box {
+	background: #ffd846;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 3%;
+	padding-bottom: 5%;
+	margin-bottom: 5%;
+}
+
+.pub-body-text {
+	padding-bottom: 5%;
+}
+
+.pub-heading-text {
+	padding-top: 25%;
+	padding-bottom: 1%;
+	padding-left: 3%;
+}
+
+/*----------Publishers Page Ends-------*/
+		
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+		
+					
+/*----------About Page-----------*/
+
+
+.ab-panel {
+    width: 100%;
+	border-bottom:#ffd846 15px solid;
+}
+
+.ab-viztoday-top {
+	background:#202020;
+	display:block;
+	margin-top:10%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-viztoday-bottom {
+	background:#202020;
+	display:block;
+	margin-bottom: 2.5%;
+	opacity: 0.8;
+	padding:35px;
+}
+
+.ab-story-button {
+	margin-top: 10%;
+	margin-bottom: 1.5%;
+	text-align: center;
+}
+
+.ab-vizinno {
+	background:#202020;
+	display:block;
+	margin-top: 10%;
+	margin-bottom: 22%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizgrowth {
+	background:#202020;
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizinvestors {
+	background:#202020;
+	display:block;
+	margin-top: 3%;
+	margin-bottom: 30%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-vizinvestors h4, .ab-idea h4 {
+	color: #ffd846
+}
+
+.ab-vizinvestors p, .ab-idea p {
+	color: #ffffff
+}
+
+.ab-team {
+	background:#202020;
+	display:block;
+	margin-top: 8%;
+	margin-bottom: 30%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-idea {
+	background:#202020;
+	display:block;
+	margin-top: 25%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+.ab-founders {
+	background:#202020;
+	display:block;
+	margin-top: 30%;
+	margin-bottom: 5%;
+	opacity: 0.8;
+	padding:20px;
+}
+
+#viz-today {
+	background: url("/imgs/about-frame7.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-innovating {
+	background: url("/imgs/about-frame6.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-growth {
+	background: url("/imgs/about-frame5.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-investors {
+	background: url("/imgs/about-frame4.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-team {
+	background: url("/imgs/about-frame3.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-idea {
+	background: url("/imgs/about-frame2.svg") no-repeat center center fixed;
+	background-size: cover;
+	border-bottom: #ffd846 15px solid;
+}
+
+#viz-founders {
+	background: url("/imgs/about-frame1.svg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+/*------About Section Ends-------*/
+
+/*------Investors Section------*/
+
+body#investors .row {
+		margin-bottom: 10%;
+		margin-top: 10%;
+}
+
+body#investors p {
+		margin-bottom: 10%;
+		margin-top: 10%;
+}
+
+/*-------Investors Section Ends-------*/
+
+/*--------Values Section------*/
+body#values p {
+	padding: 15px;
+}
+
+ .yellow-box-2 {
+	 background-color: #ffd846;
+ }
+
+/*--------Values Section---------*/
+
+/*-----Contact Us Page----------*/
+
+#infoform .remove-padding {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+button#submit {
+width: 8em;
+cursor: pointer;
+padding: .5em 1.5em;
+border-radius: 0em;
+background: #202020;
+border: none;
+color: #ffffff;
+}
+
+button#menu1 {
+border-radius: 0em;
+width: 10em;
+}
+
+#address-number .row {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+/*-------Contact Us Page Ends---------*/
+
+/*--------Publishers Page Begins-------*/
+
+.pub-logos li {
+	display: inline-block;
+	background: #ffffff;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.pub-yellow-box {
+	background: #ffd846;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 3%;
+	padding-bottom: 1%;
+	margin-bottom: 2%;
+}
+
+.pub-body-text {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+/*--------Publishers Page Ends-----*/
+
+	
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+	body#investors .row {
+		margin-bottom: 30vh;
+		margin-top: 30vh;
+	}
+	
+/*--------Values Section------*/
+	
+	body#values p {
+	padding: 2%;
+}
+
+	.yellow-box-2 {
+	background-color: #ffd846;
+}
+
+/*--------Values Section Ends---------*/
+
+/*--------Contact Page---------*/
+
+#infoform .remove-padding {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*----------Contact Page Ends----------*/
+
+/*-------Publishers Page Begins----*/
+
+.pub-logos li {
+	display: inline-block;
+	background: #ffffff;
+	margin-right: 3%;
+	margin-left: 3%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+/*------Publishers Page Ends-----*/
+	
+	}
+
+
+	
+	
+	
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+	body#investors .row {
+		margin-bottom: 30vh;
+		margin-top: 30vh;
+	}
+	
+	
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+		
+	body#investors .row {
+		margin-bottom: 30vh;
+		margin-top: 30vh;
+	}
+	
+/*----------Contact Us Page------------*/	
+
+button#submit {
+width: 12em;
+cursor: pointer;
+padding: .5em 1.5em;
+border-radius: 0em;
+background: #202020;
+border: none;
+color: #ffffff;
+}
+
+#address-number .row {
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+}
+
+#infoform .row {
+	margin-top: 5%;
+	margin-bottom: 2%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+#map .row {
+	margin-top: 10%;
+	margin-bottom: 2%;
+}
+
+/*----------Contact Us Ends-------*/
+
+    }
