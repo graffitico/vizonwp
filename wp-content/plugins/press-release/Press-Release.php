@@ -105,8 +105,38 @@ function include_press_template_function( $template_path ) {
             }
         }else{
 
-        	if($post->post_title == 'Press Release'){
+						if($post->post_title == 'Press Release'){
 	            
+        	}elseif($post->post_title == 'Media Coverage') {
+        		    if ( $theme_file = locate_template( array ( 'list-media_coverage.php' ) ) ) {
+		                $template_path = $theme_file;
+		            } else {
+		                $template_path = plugin_dir_path( __FILE__ ) . '/list-media_coverage.php';
+		            }   
+			}elseif ($post->post_title == 'White Papers') {
+        		    if ( $theme_file = locate_template( array ( 'list-white_paper.php' ) ) ) {
+		                $template_path = $theme_file;
+		            } else {
+		                $template_path = plugin_dir_path( __FILE__ ) . '/list-white_paper.php';
+		            }  				
+			}elseif ($post->post_title == 'Insights') {
+        		    if ( $theme_file = locate_template( array ( 'list-insight.php' ) ) ) {
+		                $template_path = $theme_file;
+		            } else {
+		                $template_path = plugin_dir_path( __FILE__ ) . '/list-insight.php';
+		            }  				
+			}elseif ($post->post_title == 'Industry Reports') {
+        		    if ( $theme_file = locate_template( array ( 'list-industry_reports.php' ) ) ) {
+		                $template_path = $theme_file;
+		            } else {
+		                $template_path = plugin_dir_path( __FILE__ ) . '/list-industry_reports.php';
+		            }  				
+			}
+
+        }
+    }
+    return $template_path;
+			 
         	}elseif($post->post_title == 'Media Coverage') {
         		    if ( $theme_file = locate_template( array ( 'list-media_coverage.php' ) ) ) {
 		                $template_path = $theme_file;
