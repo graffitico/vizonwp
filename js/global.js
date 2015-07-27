@@ -84,6 +84,7 @@ jQuery(function () {
 	});
 
 	// Search button click
+	debugger;
 	$('.icon-home_header_searchwhite').click(function () {
 
 		//$('.search-bar').slideToggle();
