@@ -81,7 +81,33 @@ jQuery(function () {
 		}
 
 		e.stopPropagation();
-	})
+	});
+
+	// Search button click
+	$('.icon-home_header_searchwhite').click(function () {
+
+		//$('.search-bar').slideToggle();
+		var searchAttr = $(this).attr('search-showing');
+
+		if (!searchAttr || searchAttr === "0") {
+			$(this).attr('search-showing', '1');
+
+			$('.search-bar').addClass('searchvisible')/*.show()*/.focus();
+		} else {
+			$(this).attr('search-showing', '0');
+
+			$('.search-bar').removeClass('searchvisible')/*.hide()*/;
+		}
+	});
+
+	//Simulate hover action
+	$('.hoverable-text').on('click touchend', function () {
+		if (!$(this).hasClass('expanded')) {
+			$(this).addClass('expanded')
+		} else {
+			$(this).removeClass('expanded');
+		}
+	});
 
 	// Header hover functionality
 	$('.vizuri_menu_class li a').hover(function (e) {
