@@ -176,6 +176,8 @@ input.yellowbutton {
 }
 .service-box .has-content {
 	font-size: 18px;
+	text-align: justify;
+	height: 220px;
 }
 .white-3dbox-block {
 
@@ -681,10 +683,6 @@ a .icon-home_yellowband_arrow {
 	color: #333;
 }
 
-.yellow-band-fixed {
-	height: 100px;
-}
-
 /* Floating Text Box */
 .floating-text-box {
 	position: relative;
@@ -902,7 +900,7 @@ a .icon-home_yellowband_arrow {
 
 .unfloat-to-center {
 	float: none !important;
-	margin: 10% auto;
+	margin: 40px auto;
 	text-align: justify;
 }
 
