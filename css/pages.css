@@ -24,12 +24,6 @@
 	font-style: normal;
 }
 
-p {
-	font-family:'Conv_ProximaNova-Regular_0',Sans-Serif;
-	text-align: justify;
-	color: #202020;
-}
-
 .white-text {
 	color: #ffffff;
 }
@@ -47,7 +41,6 @@ span {
 	display: inline-block;
 	vertical-align: middle;
 }
-
 
 .btn, .btn-default, .dropdown, .form, span, .label{
 	font-family: 'Conv_ProximaNova-Regular_0';

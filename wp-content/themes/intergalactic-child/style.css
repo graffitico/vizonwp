@@ -6,7 +6,6 @@
 */
 
 @import url('../intergalactic/style.css');
-
 @import url('../../../css/bootstrap.min.css');
 @import url('../../../css/creative.css');
 @import url('../../../css/animate.min.css');
@@ -41,11 +40,14 @@ body {
   background: #ddd;
 }
 
+/** Overriding Intergalactic CSS */
 
+.single-page .entry-header {
+    background-color: transparent;
+}
 
-
-#primary{
-	  margin-top: 127px;
+.single.single-thumbnail .entry-background {
+    top: 0;
 }
 
 
