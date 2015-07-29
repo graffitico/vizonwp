@@ -53,6 +53,17 @@ p {
 section {
     padding: 12px 0;
     overflow: hidden;
+    position: relative;
+}
+
+section .top-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+section .sprite-css-static {
+    display: inline-block;
 }
 
 aside {
