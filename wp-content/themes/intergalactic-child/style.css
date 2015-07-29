@@ -6,7 +6,6 @@
 */
 
 @import url('../intergalactic/style.css');
-@import url('../../../css/pages.css');
 @import url('../../../css/bootstrap.min.css');
 @import url('../../../css/creative.css');
 @import url('../../../css/animate.min.css');
@@ -40,6 +39,20 @@
 body {
   background: #ddd;
 }
+
+/** Overriding Intergalactic CSS */
+
+.single-page .entry-header {
+    background-color: transparent;
+}
+
+.single.single-thumbnail .entry-background {
+    top: 0;
+}
+
+
+
+
 
 
 /*-------Investors Page Begins----------*/
@@ -85,14 +98,7 @@ color: #000000;
 	padding-top: 1%;
 }
 
- /**values**/
-
-
-#primary{
-	  margin-top: 127px;
-}
-
-
+/**values**/
 .sf-menu {
   line-height: 1.0;
 }
