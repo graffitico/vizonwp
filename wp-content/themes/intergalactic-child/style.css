@@ -358,6 +358,15 @@ a .icon-home_yellowband_arrow {
 	display: inline-block;
 }
 
+/** ihover override **/
+div.img {
+	text-align: center;
+}
+.ih-item img {
+	width: auto;
+	height: auto;
+}
+
 /** Text below image */
 .text-below-image {
 	text-align: justify;
@@ -541,6 +550,9 @@ a .icon-home_yellowband_arrow {
 .engage-hover-magic-text {
 	width: 600px;
 	height: 600px;
+	background-image: url(/images/node_lines_engage.svg);
+	background-position: center;
+	background-size: 200%
 }
 
 @media only screen and (max-width: 440px) {

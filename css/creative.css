@@ -61,9 +61,15 @@ section .top-left {
     left: 0;
     top: 0;
 }
-
+section .no-scale-img {
+    max-width: none;
+}
 section .sprite-css-static {
     display: inline-block;
+}
+section .full-height-img {
+    max-width: none;
+    max-height: 100%;
 }
 
 aside {
