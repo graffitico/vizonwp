@@ -6,7 +6,6 @@
 */
 
 @import url('../intergalactic/style.css');
-@import url('../../../css/pages.css');
 @import url('../../../css/bootstrap.min.css');
 @import url('../../../css/creative.css');
 @import url('../../../css/animate.min.css');
@@ -41,55 +40,14 @@ body {
   background: #ddd;
 }
 
+/** Overriding Intergalactic CSS */
 
-/*-------Investors Page Begins----------*/
-
-
-/*#investors {
-background: linear-gradient(to left, #202020, #ffffff);
-color: #000000;
-}*/
-
-.table > tbody > tr > td {
-    border-top: 0;
-	display: table-cell;
-	vertical-align: middle;
+.single-page .entry-header {
+    background-color: transparent;
 }
 
-
-
-/*----------Investors Page Ends------------*/
-
-
-
-
-/**values**/
-#values p {
-	padding: 15px;
-}
-
- .yellow-box-2 {
-	 background-color: #ffd846;
- }
-
- .values-info {
-	background: url ("../../../imgs/values-info.svg") no-repeat center center;
-}
-
-.yellow-box {
-	background-color: #ffd846;
-	height: 200px;
-	margin-bottom: 2%;
-	margin-top: 2%;
-	width: 200px;
-	padding-top: 1%;
-}
-
- /**values**/
-
-
-#primary{
-	  margin-top: 127px;
+.single.single-thumbnail .entry-background {
+    top: 0;
 }
 
 
@@ -176,6 +134,8 @@ input.yellowbutton {
 }
 .service-box .has-content {
 	font-size: 18px;
+	text-align: justify;
+	height: 220px;
 }
 .white-3dbox-block {
 
@@ -228,7 +188,7 @@ a .icon-home_yellowband_arrow {
 #pre-header {
 	color: #fff;
 	text-align: right;
-	padding: 10px 100px 0;
+	padding: 10px 100px 5px;
 	margin: 0;
 }
 
@@ -681,10 +641,6 @@ a .icon-home_yellowband_arrow {
 	color: #333;
 }
 
-.yellow-band-fixed {
-	height: 100px;
-}
-
 /* Floating Text Box */
 .floating-text-box {
 	position: relative;
@@ -846,6 +802,9 @@ a .icon-home_yellowband_arrow {
 		margin: 10px auto !important;
 		background-color: rgba(0,0,0,0.5);
 	}
+	.floating-text-element-medium {
+		font-size: 30px;
+	}
 	.floating-text-element-xsmall b,
 	.floating-text-element-small b,
 	.floating-text-element-medium b,
@@ -899,7 +858,7 @@ a .icon-home_yellowband_arrow {
 
 .unfloat-to-center {
 	float: none !important;
-	margin: 10% auto;
+	margin: 40px auto;
 	text-align: justify;
 }
 
@@ -917,490 +876,11 @@ a .icon-home_yellowband_arrow {
 	padding: 0;
 }
 
-/*.ab-panelCon{
-	position:fixed;
-    bottom: 0;
-    left:0;
-    width: 100%;
-}
-.ab-panel {
-    width: 100%;
-	border-bottom:#ffd846 15px solid;
-}
-
-.ab-info-top
-{
-	background:url(/imgs/black_trans.png);
-	display:block;
-	margin-top:10%;
-	padding:20px;
-}
-
-.ab-info-top-left
-{
-	background:url(/imgs/black_trans.png);
-	display:block;
-	margin-top:10%;
-	padding:20px;
-	text-align:right;
-}
-
-.ab-info-bottom
-{
-	background:url(/imgs/black_trans.png);
-	display:block;
-	margin-top:0%;
-}
-
-.story_btn
-{
-	margin-top:15%;
-	font-size:28px;
-	color:#FFF;
-	text-align:center;
-	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
-	text-transform:uppercase;
-}
-
-
-.ab-panel h1 {
-    position: relative;
-	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
-	color:#ffd846;
-    display: block;
-    margin: 0 auto;
-	text-transform:uppercase;
-	font-size:24px;
-}
-
-.ab-panel span {
-    position: relative;
-	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
-	color:#ffd846;
-	text-transform:uppercase;
-	font-size:24px;
-}
-
-
-.ab-panel p {
-	position:relative;
-	font-family:'Conv_ProximaNova-Regular_0',Sans-Serif;
-	color:#FFF;
-}
-#ab-pane-1 {
-    background: url(../../../imgs/ab-01.jpg) no-repeat center center;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-#ab-pane-2 {
-    background: url(../../../imgs/ab-02.jpg) no-repeat center center;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-#ab-pane-3 {
-    background: url(../../../imgs/ab-03.jpg) no-repeat center center;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-#ab-pane-4 {
-    background: url(../../../imgs/ab-04.jpg) no-repeat center center;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-#ab-pane-5 {
-    background: url(../../../imgs/ab-05.jpg) no-repeat center center;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-#ab-pane-6 {
-    background: url(../../../imgs/ab-06.jpg) no-repeat center center;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-#ab-pane-7 {
-    background: url(../../../imgs/about_landing.jpg) no-repeat center center;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-*/
-
-/*----------About Page-----------*/
-
-
-.ab-panel {
-    width: 100%;
-	border-bottom:#ffd846 15px solid;
-}
-
-.ab-viztoday-top {
-	background:#202020;
-	display:block;
-	margin-top:10%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-viztoday-bottom {
-	background:#202020;
-	display:block;
-	margin-bottom: 2.5%;
-	opacity: 0.8;
-	padding:35px;
-}
-
-.ab-story-button {
-	margin-top: 10%;
-	margin-bottom: 1.5%;
-	text-align: center;
-}
-
-.ab-vizinno {
-	background:#202020;
-	display:block;
-	margin-top: 10%;
-	margin-bottom: 22%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-vizgrowth {
-	background:#202020;
-	display:block;
-	margin-top: 30%;
-	margin-bottom: 5%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-vizinvestors {
-	background:#202020;
-	display:block;
-	margin-top: 3%;
-	margin-bottom: 30%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-vizinvestors h4, .ab-idea h4 {
-	color: #ffd846
-}
-
-.ab-vizinvestors p, .ab-idea p {
-	color: #ffffff
-}
-
-.ab-team {
-	background:#202020;
-	display:block;
-	margin-top: 8%;
-	margin-bottom: 30%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-idea {
-	background:#202020;
-	display:block;
-	margin-top: 25%;
-	margin-bottom: 5%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-founders {
-	background:#202020;
-	display:block;
-	margin-top: 30%;
-	margin-bottom: 5%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-#viz-today {
-	background: url("../../../imgs/about-frame7.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-innovating {
-	background: url("../../../imgs/about-frame6.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-growth {
-	background: url("../../../imgs/about-frame5.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-investors {
-	background: url("../../../imgs/about-frame4.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-team {
-	background: url("../../../imgs/about-frame3.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-idea {
-	background: url("../../../imgs/about-frame2.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-founders {
-	background: url("../../../imgs/about-frame1.svg") no-repeat center center fixed;
-	background-size: cover;
-}
-
-/*------About Section Ends-------*/
-
-
-  /* Extra Small Devices, Phones */
-    @media only screen and (min-width : 480px) {
-
-
-/*----------About Page-----------*/
-
-
-.ab-panel {
-    width: 100%;
-	border-bottom:#ffd846 15px solid;
-}
-
-.ab-viztoday-top {
-	background:#202020;
-	display:block;
-	margin-top:10%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-viztoday-bottom {
-	background:#202020;
-	display:block;
-	margin-bottom: 2.5%;
-	opacity: 0.8;
-	padding:35px;
-}
-
-.ab-story-button {
-	margin-top: 10%;
-	margin-bottom: 1.5%;
-	text-align: center;
-}
-
-.ab-vizinno {
-	background:#202020;
-	display:block;
-	margin-top: 10%;
-	margin-bottom: 22%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-vizgrowth {
-	background:#202020;
-	display:block;
-	margin-top: 30%;
-	margin-bottom: 5%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-vizinvestors {
-	background:#202020;
-	display:block;
-	margin-top: 3%;
-	margin-bottom: 30%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-vizinvestors h4, .ab-idea h4 {
-	color: #ffd846
-}
-
-.ab-vizinvestors p, .ab-idea p {
-	color: #ffffff
-}
-
-.ab-team {
-	background:#202020;
-	display:block;
-	margin-top: 8%;
-	margin-bottom: 30%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-idea {
-	background:#202020;
-	display:block;
-	margin-top: 25%;
-	margin-bottom: 5%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-.ab-founders {
-	background:#202020;
-	display:block;
-	margin-top: 30%;
-	margin-bottom: 5%;
-	opacity: 0.8;
-	padding:20px;
-}
-
-#viz-today {
-	background: url("../../../imgs/about-frame7.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-innovating {
-	background: url("../../../imgs/about-frame6.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-growth {
-	background: url("../../../imgs/about-frame5.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-investors {
-	background: url("../../../imgs/about-frame4.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-team {
-	background: url("../../../imgs/about-frame3.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-idea {
-	background: url("../../../imgs/about-frame2.svg") no-repeat center center fixed;
-	background-size: cover;
-	border-bottom: #ffd846 15px solid;
-}
-
-#viz-founders {
-	background: url("../../../imgs/about-frame1.svg") no-repeat center center fixed;
-	background-size: cover;
-}
-
-/*------About Section Ends-------*/
-
-/*------Investors Section------*/
-
-#investors .row {
-		margin-bottom: 10%;
-		margin-top: 10%;
-}
-
-#investors p {
-		margin-bottom: 10%;
-		margin-top: 10%;
-}
-
-/*-------Investors Section Ends-------*/
-
-/*--------Values Section------*/
-#values p {
-	padding: 15px;
-}
-
- .yellow-box-2 {
-	 background-color: #ffd846;
- }
-
-/*--------Values Section---------*/
-
-/*-----Contact Us Page----------*/
-
-#infoform .remove-padding {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-button#submit {
-width: 8em;
-cursor: pointer;
-padding: .5em 1.5em;
-border-radius: 0em;
-background: #202020;
-border: none;
-color: #ffffff;
-}
-
-button#menu1 {
-border-radius: 0em;
-width: 10em;
-}
-
-#address-number .row {
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-
-/*-------Contact Us Page Ends---------*/
-
 
     }
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
-
-	#investors .row {
-		margin-bottom: 30vh;
-		margin-top: 30vh;
-	}
-
-/*--------Values Section------*/
-
-  #values p {
-	padding: 2%;
-}
-
-	.yellow-box-2 {
-	background-color: #ffd846;
-}
-
-/*--------Values Section Ends---------*/
-
-/*--------Contact Page---------*/
-
-#infoform .remove-padding {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-/*----------Contact Page Ends----------*/
-
-	}
-
 
 
 
@@ -1408,10 +888,6 @@ width: 10em;
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
 
-	#investors .row {
-		margin-bottom: 30vh;
-		margin-top: 30vh;
-	}
 
 
     }
@@ -1419,39 +895,6 @@ width: 10em;
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
 
-	#investors .row {
-		margin-bottom: 30vh;
-		margin-top: 30vh;
-	}
-
-/*----------Contact Us Page------------*/
-
-button#submit {
-width: 12em;
-cursor: pointer;
-padding: .5em 1.5em;
-border-radius: 0em;
-background: #202020;
-border: none;
-color: #ffffff;
-}
-
-#address-number .row {
-	margin-top: 0.5%;
-	margin-bottom: 0.5%;
-}
-
-#infoform .row {
-	margin-top: 5%;
-	margin-bottom: 2%;
-	margin-right: 5%;
-	margin-left: 5%;
-}
-
-#map .row {
-	margin-top: 10%;
-	margin-bottom: 2%;
-}
 
 /*----------Contact Us Ends-------*/
 

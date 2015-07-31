@@ -53,6 +53,17 @@ p {
 section {
     padding: 12px 0;
     overflow: hidden;
+    position: relative;
+}
+
+section .top-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+section .sprite-css-static {
+    display: inline-block;
 }
 
 aside {
@@ -167,7 +178,6 @@ aside {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(/imgs/productlanding.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -244,6 +254,7 @@ aside {
 
 .service-box p {
     margin-bottom: 0;
+    text-align: center;
 }
 
 .portfolio-box {
