@@ -197,7 +197,7 @@
 							</li>
 							<li>
 								<span class='icon-home_menuicons__jobopening'></span>
-								<a href='/jobopeninings'>Job Openings</a>
+								<a href='/jobopenings'>Job Openings</a>
 							</li>
 						</ul>
 					</div>
@@ -221,7 +221,7 @@
 				</div>
 				<div class='subnav-block resources-subnav'>
 					<div class='company-block resources-subnav-block'>
-						<a href='/whitepaper'>
+						<a href='/whitepapers'>
 							<h3>
 								<span class='icon-home_menuicons__whitepaper'></span>
 								Whitepaper
@@ -362,7 +362,7 @@
 										<a href='/convert'>Vizurians Speak</a>
 									</li>
 									<li>
-										<a href='/joboppenings'>Job Openings</a>
+										<a href='/jobopenings'>Job Openings</a>
 									</li>
 								</ul>
 							</li>

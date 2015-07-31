@@ -2,102 +2,8 @@
  /*Template Name: contact template
  */
 
-//If the form is submitted
-if(isset($_POST['submitted'])) {
- //If there is no error, send the email
-
-if(trim($_POST['contact_name']) === '') {
- $contact_nameError = 'You forgot to enter your name.';
- $hasError = true;
-} else {
- $contact_name = trim($_POST['contact_name']);
-}
-
-if(trim($_POST['company_name']) === '') {
- $company_nameError = 'You forgot to enter your company name.';
- $hasError = true;
-} else {
- $company_name = trim($_POST['company_name']);
-}
-
-
-if(trim($_POST['designation']) === '') {
- $designationError = 'You forgot to enter your designation.';
- $hasError = true;
-} else {
- $designation = trim($_POST['designation']);
-}
-
-
-if(trim($_POST['looking_for']) === '') {
- $looking_forError = 'You forgot to enter what you are looking for.';
- $hasError = true;
-} else {
- $looking_for = trim($_POST['looking_for']);
-}
-
-
-if(trim($_POST['traffic']) === '') {
- $trafficError = 'You forgot to enter your traffic.';
- $hasError = true;
-} else {
- $traffic = trim($_POST['traffic']);
-}
-
-
-if(trim($_POST['message']) === '') {
- $messageError = 'You forgot to enter your message.';
- $hasError = true;
-} else {
- if(function_exists('stripslashes')) {
-  $message = stripslashes(trim($_POST['message']));
- } else {
-  $message = trim($_POST['message']);
- }
-}
-
-
- if(!isset($hasError)) {
- $emailTo = '<strong>shazad26@gmail.com</strong>';
- $subject = 'Contact Form Submission from '.$contact_name;
- $sendCopy = false;//trim($_POST['sendCopy']);
- $body = "Name: $name nnEmail:  nnComments: $message";
- $headers = 'From: My Site <'.$emailTo.'>' ;
- 
- mail($emailTo, $subject, $body, $headers);
- 
- if($sendCopy == true) {
-  $subject = 'You emailed <strong>Your Name</strong>';
-  $headers = 'From: <strong>Your Name</strong> <<strong>shazad26@gmail.com</strong>>';
-  mail($email, $subject, $body, $headers);
- }
- 
- $emailSent = true;
- }
-} 
-get_header(); ?>
-
-<?php 
-//If the email was sent, show a thank you message
-//Otherwise show form
-if(isset($emailSent) && $emailSent == true) {
+get_header();
 ?>
-<div style="margin-top:150px;margin-bottom:200px;" class="thanks">
-  <h1>Thanks, <?=$name;?></h1>
-  <p>Your email was successfully sent. We will be in touch soon.</p>
- </div>
-
- 
-<?php } else { ?>
- 
-
- <?php if(isset($hasError) || isset($captchaError)) { ?>
-    <p class="error">
-     There was an error submitting the form.
-    <p>
-   <?php } ?>
-
-
 
     <div id="map" class="container-fluid">
 	<div class="hidden-xs">
@@ -1168,7 +1074,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</g>
 	<g id="XMLID_15614_">
 		<g>
-		<a class="contact-marker"  id="contact-1" xlink:href="#address-number"  >
+		<a class="contact-marker"  data-id="contact-1" xlink:href="#address-number"  >
 		<path id="XMLID_9_"  d="M3367-100.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C3366.7-104.5,3366.8-102.6,3367-100.7z M3328.6-117
@@ -1177,7 +1083,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</g>
 	<g id="XMLID_5_">
 		<g>
-		<a class="contact-marker"  id="contact-2"  xlink:href="#address-number"  >
+		<a class="contact-marker"  data-id="contact-2"  xlink:href="#address-number"  >
 		<path id="XMLID_7_" d="M3793-292.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C3792.7-296.5,3792.9-294.7,3793-292.7z M3754.6-309
@@ -1186,7 +1092,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</g>
 	<g id="XMLID_15_">
 		<g>
-		<a class="contact-marker" id="contact-3" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-3" xlink:href="#address-number" >
 		<path id="XMLID_17_" d="M4180.1-259.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C4179.8-263.5,4179.9-261.7,4180.1-259.7z M4141.7-276
@@ -1195,7 +1101,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</g>
 	<g id="XMLID_19_">
 		<g>
-		<a class="contact-marker" id="contact-4" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-4" xlink:href="#address-number" >
 		<path id="XMLID_21_" d="M4007-307.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C4006.7-311.5,4006.9-309.7,4007-307.7z M3968.7-324
@@ -1204,7 +1110,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</g>
 	<g id="XMLID_23_">
 		<g>
-		<a class="contact-marker"  id="contact-5" xlink:href="#address-number" >
+		<a class="contact-marker"  data-id="contact-5" xlink:href="#address-number" >
 		<path id="XMLID_25_" d="M3938-196.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C3937.7-200.5,3937.9-198.7,3938-196.7z M3899.6-213
@@ -1213,7 +1119,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</g>
 	<g id="XMLID_29_">
 		<g>
-		<a class="contact-marker" id="contact-6" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-6" xlink:href="#address-number" >
 		<path id="XMLID_33_" d="M4041.9,145.1c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C4041.6,141.3,4041.8,143.1,4041.9,145.1z M4003.5,128.8
@@ -1222,7 +1128,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</g>
 	<g id="XMLID_37_">
 		<g>
-		<a class="contact-marker" id="contact-7" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-7" xlink:href="#address-number" >
 		<path id="XMLID_41_" d="M4206.9,436.2c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C4206.6,432.3,4206.8,434.2,4206.9,436.2z M4168.6,419.8
@@ -1231,7 +1137,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</g>
 	<g id="XMLID_10_">
 		<g>
-		<a class="contact-marker" id="contact-8" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-8" xlink:href="#address-number" >
 		<path id="XMLID_13_" d="M3661-55.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C3660.7-59.5,3660.9-57.6,3661-55.7z M3622.6-72
@@ -1240,7 +1146,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</g>
 	<g id="XMLID_1_">
 		<g>
-		<a class="contact-marker" id="contact-9" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-9" xlink:href="#address-number" >
 		<path id="XMLID_3_" d="M2286.9,187.4c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C2286.6,183.6,2286.7,185.4,2286.9,187.4z M2248.5,171.1
@@ -1254,7 +1160,7 @@ if(isset($emailSent) && $emailSent == true) {
 	</div>
 	
 	
-	<div id="address-drop" class="visible-xs">
+	<div  style="margin-top:100px"  id="address-drop" class="visible-xs">
 	  <div class="container">
 	      <div class="row">
 		    <div class="col-xs-offset-3 col-xs-6">
@@ -1263,17 +1169,17 @@ if(isset($emailSent) && $emailSent == true) {
                 <span class="caret"></span>
 		      </button>
               <ul class="dropdown-menu">
-                <li><a href="#">India</a></li>
-                <li><a href="#">China</a></li>
-                <li><a href="#">Australia</a></li>
-                <li><a href="#">Singapore</a></li>
-				<li><a href="#">Brazil</a></li>
-				<li><a href="#">Taiwan</a></li>
-				<li><a href="#">Indonesia</a></li>
-				<li><a href="#">Dubai</a></li>
-				<li><a href="#">Japan</a></li>
-				<li><a href="#">Korea</a></li>
-				<li><a href="#">USA</a></li>
+                <li><a  data-id="contact-8" class="country_drop" >India</a></li>
+                <li><a  data-id="contact-2" class="country_drop" >China</a></li>
+                <li><a  data-id="contact-7" class="country_drop" >Australia</a></li>
+                <li><a  data-id="contact-6"  class="country_drop" >Singapore</a></li>
+				<!-- <li><a class="country_drop" >Brazil</a></li> -->
+				<li><a data-id="contact-3" class="country_drop" >Taiwan</a></li>
+				<li><a data-id="contact-5" class="country_drop" >Indonesia</a></li>
+				<li><a  data-id="contact-1" class="country_drop" >Dubai</a></li>
+				<li><a  data-id="contact-4"  class="country_drop" >Japan</a></li>
+			<!-- 	<li><a class="country_drop" >Korea</a></li> -->
+				<li><a  data-id="contact-9" class="country_drop" >USA</a></li>
 			  </ul>
 			</div>
 			</div>
@@ -1502,75 +1408,13 @@ if(isset($emailSent) && $emailSent == true) {
 
 
 
- <?php if (have_posts()) : ?>
- 
-  <?php while (have_posts()) : the_post(); ?>
 	
     <div id="infoform" class="container">
-    <form class="form form-horizontal" role="form" action="<?php the_permalink(); ?>" method="post" >
-    <div class="row">
-        <div class="form-group">
-        <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label" for="company">Company</label>
-          <div class="col-md-3 col-lg-4">
-            <input name="company_name"  value="<?php if(isset($_POST['company_name'])) echo $_POST['contactName'];?>" type="text" class="form-control" id="company" placeholder="Company Name">
-          </div>
-        </div>
-        <div class="form-group">
-        <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label" for="name">Name</label>
-          <div class="col-md-3 col-lg-4">
-            <input name="contact_name"  value="<?php if(isset($_POST['contact_name'])) echo $_POST['contactName'];?>" type="text" class="form-control" id="name" placeholder="Your Name">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label" for="title">Title *</label>
-            <div class="col-md-3 col-lg-4">
-              <input name="designation"  value="<?php if(isset($_POST['designation'])) echo $_POST['contactName'];?>" type="text" class="form-control" id="title" required="true" placeholder="Your Designation">
-            </div>
-        </div>
-        <div class="form-group">
-        <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label remove-padding" for="what">What are you looking for *</label>
-          <div class="col-md-3 col-lg-4">
-            <select name="looking_for" class="form-control">
-              <option value="Re-Targeting/Vizury Convert"  <?php if($_POST['looking_for']=='Re-Targeting/Vizury Convert'){?> selected="true" <?php } ?>   >Re-Targeting/Vizury Convert</option>
-       	      <option value="New User Acquisition - Vizury Reach"  <?php if($_POST['looking_for']=='New User Acquisition - Vizury Reach'){?> selected="true" <?php } ?>   >New User Acquisition - Vizury Reach</option>
-              <option value="DMP - Vizury Engage" <?php if($_POST['looking_for']=='DMP - Vizury Engage'){?> selected="true" <?php } ?>   >DMP - Vizury Engage</option>
-              <option value="Jobs"  <?php if($_POST['looking_for']=='Jobs'){?> selected="true" <?php } ?>   >Jobs</option>
-              <option value="Something Else"  <?php if($_POST['looking_for']=='Something Else'){?> selected="true" <?php } ?>   >Something Else</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-        <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label" for="traffic">Traffic</label>
-          <div class="col-md-3 col-lg-4">
-            <select name="traffic" class="form-control">
-              <option value="1 Million"  <?php if($_POST['traffic']=='1 Million'){?> selected="true" <?php } ?>  >< 1 Million</option>
-              <option value="1 - 5 Million"  <?php if($_POST['traffic']=='1 - 5 Million'){?> selected="true" <?php } ?>  >1 - 5 Million</option>
-              <option value=">5 - 10 Million"  <?php if($_POST['traffic']=='>5 - 10 Million'){?> selected="true" <?php } ?>  >5 - 10 Million</option>
-              <option value="> 10 Million"  <?php if($_POST['traffic']=='> 10 Million'){?> selected="true" <?php } ?> >> 10 Million</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-        <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label" for="comment">Message</label>
-          <div class="col-md-3 col-lg-4">
-            <textarea name="message" class="form-control" rows="5" id="comment"><?php if(isset($_POST['company_name'])) echo $_POST['message'];?></textarea>
-          </div>
-        </div>
-        <div class="form-group">
-        <div class="col-xs-offset-4 col-xs-5 col-sm-offset-4 col-sm-3 col-md-offset-5 col-md-3 col-lg-offset-4 col-lg-2 " style="text-align: center">
-	  <input type="hidden" name="submitted" id="submitted" value="true" />
-	  <button type="submit" id="submit" class="btn btn-default">Submit</button>
-	  </div>
-        </div>
-     </div>   
-     </form>
-   </div>
- 
-  <?php endwhile; ?>
- <?php endif; ?>
-
-
-<?php } ?>
+    	
+    	<div class="form form-horizontal">
+    	<?php echo do_shortcode('[contact-form-7 id="306" title="Contact form 1"]'); ?>
+    	</div>
+    </div>
 
 
 <?php

@@ -18,6 +18,16 @@
 
 // add_action( 'pre_get_posts', 'all_posts_on_case_studies_page' );
 
+include 'short_codes.php';
+
+add_action('admin_init', 'load_scripts');
+
+
+function load_scripts()
+{
+wp_enqueue_script('jquery-ui-dialog');
+wp_enqueue_style("wp-jquery-ui-dialog");
+}
 
 
 function theme_enqueue_styles(){
@@ -32,9 +42,34 @@ add_action('wp_enqueue_scripts','theme_enqueue_styles');
 
 function ajax_filter_posts_scripts() {
   // Enqueue script
+    wp_register_script('jquery_script', get_site_url() . '/js/jquery.min.js', false, null, false);
+
   wp_register_script('afp_script', get_template_directory_uri() . '/js/ajax-filter-posts.js', false, null, true);
   wp_register_script('selectfx_script', get_template_directory_uri() . '/js/selectFx.js', false, null, false);
+      wp_register_script('kwiks', get_site_url() . '/js/kwiks.js', false, null, false);
   
+   wp_register_script('bootstrap_script', get_site_url() . '/js/bootstrap.min.js', false, null, false);
+  
+  wp_register_script('global_script', get_site_url() . '/js/global.js', false, null, false);
+
+  wp_register_script('flex_script', get_site_url() . '/js/jquery.flexslider-min.js', false, null, false);
+
+
+  
+
+
+  
+
+  
+
+
+  
+   wp_enqueue_script('jquery_script');
+   wp_enqueue_script('bootstrap_script');
+      wp_enqueue_script('kwiks');
+   wp_enqueue_script('flex_script');
+   wp_enqueue_script('global_script');
+
    wp_enqueue_script('selectfx_script');
   wp_enqueue_script('afp_script');
  
