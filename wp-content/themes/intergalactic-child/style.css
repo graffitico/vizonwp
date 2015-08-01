@@ -98,11 +98,14 @@ h1 {
 	font-size: ;
 }
 
+a:visited,
+a:focus,
 a {
 	color: #fff;
     -webkit-transition: all .1s;
     -moz-transition: all .1s;
     transition: all .1s;
+    text-decoration: none;
 }
 
 a:active,
@@ -355,6 +358,15 @@ a .icon-home_yellowband_arrow {
 	display: inline-block;
 }
 
+/** ihover override **/
+div.img {
+	text-align: center;
+}
+.ih-item img {
+	width: auto;
+	height: auto;
+}
+
 /** Text below image */
 .text-below-image {
 	text-align: justify;
@@ -479,7 +491,6 @@ a .icon-home_yellowband_arrow {
 .leading-brands-block {
 	background-color: #C2D667;
 	position: relative;
-	padding: 80px;
 	min-height: 400px;
 	text-align: center;
 }
@@ -501,12 +512,12 @@ a .icon-home_yellowband_arrow {
 .leading-brands-block .brands-list {
 	background-color: #fff;
 	border-radius: 4px;
-	padding: 20px;
+	padding: 0 100px;
 	min-width: 400px;
 	position: absolute;
 	display: inline-block;
-	bottom: 30px;
-	margin-left: -200px;
+	bottom: 200px;
+	margin-left: -350px;
 }
 
 /** Engage Pages */
@@ -539,6 +550,9 @@ a .icon-home_yellowband_arrow {
 .engage-hover-magic-text {
 	width: 600px;
 	height: 600px;
+	background-image: url(/images/node_lines_engage.svg);
+	background-position: center;
+	background-size: 200%
 }
 
 @media only screen and (max-width: 440px) {
@@ -570,6 +584,10 @@ a .icon-home_yellowband_arrow {
 		width: auto;
 		height: auto;
 	}
+	.leading-brands-block {
+		display: none;
+	}
+
 }
 
 /** Testimonials block */
@@ -877,26 +895,21 @@ a .icon-home_yellowband_arrow {
 }
 
 
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
 
 
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
 
 
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
+}
 
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
 
-
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-
-
-/*----------Contact Us Ends-------*/
 
 }
 
