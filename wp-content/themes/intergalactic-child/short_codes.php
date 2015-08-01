@@ -85,17 +85,22 @@ function add_top_main_shortcode( $shortcode_tags )
 
 
 function top_main_shortcode( $atts ){
-	return '    <div class="header">
-    	<div class="header-content">
-    		<div class="header-content-inner wow fadeIn">
-    			<p style="font-size: 38px; color: #fff; margin: 0;">MAKE THE MOST OF YOUR</p>
-    			<h1>data and marketing</h1>
-    			<p style="font-size: 38px; color: #fff; margin: 0;">WITH VIZURY\'S</p>
-    			<h1>Performance Marketing Hub</h1>
-    		</div>
-    	</div>
-    </div>
-';
+	return '<div class="header">
+<div class="header-content heading-block">
+<div class="header-content-inner heading-text wow fadeIn">
+		<!------	<button class="play" type="button">
+			</button></div>
+<div id="video-modal" class="modal hide fade" aria-hideen="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1">
+			<button class="close" aria-hidden="true" data-dismiss="modal" type="button">X</button>
+<div id="prod-video">
+				<iframe src="https://player.vimeo.com/video/125552015?color=ffd846&title=0&portrait=0?id=1" width="1080" height="607" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+</div>
+---->
+<h4>Make the most of your data and marketing with</h4>
+<h2>Vizury’s Performance Marketing Hub</h2>
+</div>
+</div>
+</div>';
 }
 add_shortcode( 'top_main_box', 'top_main_shortcode' );
 
