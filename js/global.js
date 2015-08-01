@@ -100,6 +100,13 @@ jQuery(function () {
 		}
 	});
 
+	// testimonial actions
+	$('.brands-list img').on('mouseover', function () {
+		$('.brand-images img').hide();
+		var toshow = $(this).attr('testimonial');
+		$('.' + toshow).show();
+	});
+
 	//Simulate hover action
 	$('.hoverable-text').on('click touchend', function () {
 		if (!$(this).hasClass('expanded')) {
