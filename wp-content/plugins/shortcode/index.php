@@ -39,7 +39,8 @@ class Shortcode_Tinymce
      */
     public function pu_add_buttons( $plugin_array )
     {
-        $plugin_array['pushortcodes'] = plugin_dir_url( __FILE__ ) . 'js/shortcode-droplist.js';
+         $plugin_array['pushortcodes'] = plugin_dir_url( __FILE__ ) . 'js/shortcode-droplist.js';
+         $plugin_array['wpvizury'] = plugin_dir_url( __FILE__ ) . 'js/tinymce_shortcode_plugin.js';
 
         return $plugin_array;
     }

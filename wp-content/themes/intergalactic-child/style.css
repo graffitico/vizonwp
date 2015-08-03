@@ -40,6 +40,22 @@ body {
   background: #ddd;
 }
 
+/* admin editor css */
+
+html .mceContentBody {
+        height: 9999px; 
+}
+
+
+.main-s-wrapper{
+	border-radius: 1px;
+	border-color: black;
+}
+
+
+/* admin editor css */
+
+
 /** Overriding Intergalactic CSS */
 
 .single-page .entry-header {

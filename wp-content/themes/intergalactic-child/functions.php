@@ -20,6 +20,15 @@
 
 include 'short_codes.php';
 
+
+add_action( 'wp_ajax_echo_shortcode', 'echo_shortcode_callback' );
+
+function echo_shortcode_callback(){
+	echo  do_shortcode($_POST['shortcode']);
+	die();
+}
+
+
 add_action('admin_init', 'load_scripts');
 
 
@@ -27,6 +36,7 @@ function load_scripts()
 {
 wp_enqueue_script('jquery-ui-dialog');
 wp_enqueue_style("wp-jquery-ui-dialog");
+add_editor_style('style.css');
 }
 
 
