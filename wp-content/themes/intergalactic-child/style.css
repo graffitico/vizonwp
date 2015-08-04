@@ -418,7 +418,18 @@ div.img {
 	max-width: 1000px;
 	height: 600px;
 }
-
+.flexslider .flex-caption {
+	padding: 20px;
+	background-color: rgba(0,0,0,0.8);
+	display: inline-block;
+	bottom: auto;
+	width: 80%;
+	font-size: 20px;
+	line-height: 1.5em;
+}
+.flexslider .flex-caption h4 {
+	font-size: 24px;
+}
 
 /** Footer */
 
