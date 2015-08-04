@@ -132,21 +132,29 @@ input.yellowbutton {
 	color: #202020;
 	font-size: 18px;
 }
+.has-text p,
+.has-content p {
+	text-align: justify;
+}
 .white-text {
 	color: #fff;
 }
 .service-box .has-content {
-	font-size: 18px;
+	font-size: 16px;
 	text-align: justify;
 	height: 220px;
 }
 .white-3dbox-block {
-
+	background-color: #000;
+	padding: 50px 0px;
 }
 .white-3dbox-block p {
 	font-size: 16px;
+	color: #fff;
 }
-
+.white-3dbox-block h2 {
+	font-size: 30px;
+}
 
 .blog-entry-tile {
 	height: 520px;
@@ -165,6 +173,10 @@ input.yellowbutton {
 .link-button a,
 a .icon-home_yellowband_arrow {
 	font-size: 36px;
+}
+
+a:hover .icon-home_yellowband_arrow {
+	color: #fff;
 }
 
 #wrap {
@@ -494,6 +506,10 @@ div.img {
 	min-height: 400px;
 	text-align: center;
 }
+.leading-brands-block .brand-images {
+	height: 750px;
+	overflow: hidden;
+}
 .leading-brands-block .brands-choose {
 	color: #fff;
 	vertical-align: top;
@@ -516,7 +532,7 @@ div.img {
 	min-width: 400px;
 	position: absolute;
 	display: inline-block;
-	bottom: 200px;
+	bottom: 120px;
 	margin-left: -350px;
 }
 
@@ -657,6 +673,9 @@ div.img {
 .yellow-text-block a,
 .yellow-text-block a:hover {
 	color: #333;
+}
+.yellow-text-block a.carousel-control {
+	color: #fff;
 }
 
 /* Floating Text Box */
@@ -842,10 +861,14 @@ div.img {
 	background-color: rgba(0,0,0,0.5);
 	text-align: center;
 }
-.portfolio-box-static p {
+.portfolio-box-static span {
 	position: relative;
 	top: 50%;
 	margin-top: -20px;
+	font-size: 20px;
+}
+.portfolio-box-caption .icon-home_yellowband_arrow {
+	font-size: 54px;
 }
 
 /* Black Bg Heading */

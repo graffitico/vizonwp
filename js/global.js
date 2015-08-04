@@ -63,7 +63,7 @@ jQuery(function () {
 	}
 
 	// Mobile Navigation
-	$('.navigation-trigger').on('click touchstart', function (e) {
+	$('.navigation-trigger').on('click touchend', function (e) {
 		if ($('.mobilenavigation').is(":visible")) {
 			$('.mobilenavigation').slideUp();
 		} else {
@@ -71,7 +71,7 @@ jQuery(function () {
 		}
 	});
 
-	$('.mobilenavigation li').on('click touchstart', function (e) {
+	$('.mobilenavigation li').on('click touchend', function (e) {
 		if ($(this).hasClass('expanded-menu')) {
 			$(this).removeClass('expanded-menu');
 			$(this).find('> .mobilesubnav').slideUp();
@@ -162,7 +162,7 @@ jQuery(function () {
 	// Product Landing page
 
 	//Script for the Products on Hover Text change effect
-    $('#pills-first a').hover(function (e) {
+    $('#pills-first a').on('mouseover touchend', function (e) {
       e.preventDefault()
       $(this).tab('show')
    	});
@@ -173,7 +173,7 @@ jQuery(function () {
    		$(this).removeClass('expanded');
    	});
 
-   	$('#myCarousel').carousel();
+   	//$('#myCarousel').carousel({interval: 2000, auto: false});
 
    	if ($(window).width() < 640) {
    		$('.flexslider').flexslider();
