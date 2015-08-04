@@ -678,6 +678,13 @@ div.img {
 	color: #fff;
 }
 
+
+/* Round Images container */
+.round-images-container {
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+
 /* Floating Text Box */
 .floating-text-box {
 	position: relative;
@@ -685,7 +692,7 @@ div.img {
 	list-style-type: none;
 }
 .floating-text-box .gray-bg {
-	background-color: #333;
+	background-color: #666;
 	color: #fff;
 }
 .floating-text-box .circular-bound {
