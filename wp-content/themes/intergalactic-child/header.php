@@ -404,11 +404,12 @@
 					</li>
 					<li>
 						<a href='/login'>
-							<input type='button' value='Login' />
+							<input class='login-button' type='button' value='Login' />
 						</a>
 					</li>
 					<li>
-						<a href='/search'>
+						<a href='javascript://'>
+							<input class='search-bar' type="text" id="search_container_mobile" style="" />
 							<span class='icon-home_header_searchwhite'></span>
 						</a>
 					</li>
