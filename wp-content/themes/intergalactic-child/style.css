@@ -677,6 +677,14 @@ div.img {
 .yellow-text-block a.carousel-control {
 	color: #fff;
 }
+.yellow-text-block .btn-default {
+	color: #ffd845;
+	background-color: #202020;
+}
+.yellow-text-block .btn-default:hover {
+	background-color: #fff;
+	color: #202020;
+}
 
 
 /* Round Images container */
