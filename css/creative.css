@@ -347,8 +347,8 @@ aside {
 
 .btn-default {
   border: none;
-  color: #ffd846;
-  background-color:#202020;
+  color: #202020;
+  background-color:#ffd846;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -361,8 +361,8 @@ aside {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
     border-color: #ededed;
-    color: #222;
-    background-color: #f2f2f2;
+    color: #f2f2f2;
+    background-color: #222;
 }
 
 .btn-default:active,
