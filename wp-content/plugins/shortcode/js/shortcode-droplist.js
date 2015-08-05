@@ -1,33 +1,8 @@
-// (function() {
 
-//     tinymce.PluginManager.add('pushortcodes', function( editor )
-//     {
-//         var shortcodeValues = [];
-//         jQuery.each(shortcodes_button, function(i)
-//         {
-//             shortcodeValues.push({text: shortcodes_button[i], value:i});
-//         });
-
-//         editor.addButton('pushortcodes', {
-//             type: 'listbox',
-//             text: 'Shortcodes',
-//             onselect: function(e) {
-//                 var v = e.control._text;
-//                 console.log(e);
-//                 tinyMCE.activeEditor.selection.setContent( '[' + v + '][/' + v + ']' );
-//             },
-//             values: shortcodeValues
-//         });
-//     });
-// })();
-
-// jQuery(document).ready(function() {
-//   jQuery("html .mceContentBody").css("height", "9999px !important"); 
-//   console.log("ss");
-// });
 
 
 (function() {
+
 
     tinymce.PluginManager.add('pushortcodes', function( editor )
     {
@@ -49,6 +24,7 @@
 
                 if(shortcodes_form[v] != undefined)
                 {
+                    console.log(shortcodes_form);
                     dialogForm += shortcodes_form[v];
 
                     if(dialogForm != '<table>')
@@ -78,7 +54,11 @@
                                         'action': 'echo_shortcode',
                                         'shortcode': content      // We pass php values differently!
                                     };
+
+                                    console.log(content);
                                     jQuery.post("admin-ajax.php", data, function(response) {
+
+                                        console.log(response);
                                              tinyMCE.activeEditor.selection.setContent( "<div class='main-s-wrapper' ><div class='shortcode-wrap' style='display:none' >"+content+"</div>" + response + "</div>", {format : 'raw'});
                                               jQuery( "#shortcode-dialog" ).dialog( "close" );
                                     });
@@ -101,12 +81,3 @@
     });
 
 })();
-
-
-// <div class="wpview-body" contenteditable="false"><div class="wpview-content wpview-type-gallery">
-        
-//             <div class="wpview-error">
-//                 <div class="dashicons dashicons-format-gallery"></div><p>No items found.</p>
-//             </div>
-        
-//     </div><div class="wpview-clipboard" contenteditable="true">[gallery][/gallery]</div></div>

@@ -84,7 +84,7 @@
 						<div class="col-lg-3 col-md-3 text-left">
 							<ul style="list-style: none;">
 								<li>
-									<a href='#'>CONTACT US</a>
+									<a href='/contact-us'>CONTACT US</a>
 								</li>
 								<li>
 									<a href='https://www.linkedin.com/company/vizury-interactive'><span class="icon-home_footer_linkedin"></span></a>

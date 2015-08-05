@@ -5,6 +5,8 @@
 get_header();
 ?>
 
+<div style="margin-top:100px"></div>
+
     <div id="map" class="container-fluid">
 	<div class="hidden-xs">
     <div class="row">
@@ -1173,12 +1175,12 @@ get_header();
                 <li><a  data-id="contact-2" class="country_drop" >China</a></li>
                 <li><a  data-id="contact-7" class="country_drop" >Australia</a></li>
                 <li><a  data-id="contact-6"  class="country_drop" >Singapore</a></li>
-				<!-- <li><a class="country_drop" >Brazil</a></li> -->
+			    <li><a data-id="contact-10" class="country_drop"  >Brazil</a></li> 
 				<li><a data-id="contact-3" class="country_drop" >Taiwan</a></li>
 				<li><a data-id="contact-5" class="country_drop" >Indonesia</a></li>
 				<li><a  data-id="contact-1" class="country_drop" >Dubai</a></li>
 				<li><a  data-id="contact-4"  class="country_drop" >Japan</a></li>
-			<!-- 	<li><a class="country_drop" >Korea</a></li> -->
+			 	<li><a data-id="contact-11"  class="country_drop" >Korea</a></li> 
 				<li><a  data-id="contact-9" class="country_drop" >USA</a></li>
 			  </ul>
 			</div>
@@ -1203,7 +1205,10 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
        </div>		
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
-		 <span> contact 1 Address Line  1</br>Address Line 2</br>Address Line 3</br>Pincode</br>Country</br></span>
+		 <span> Vizury Interactive Solutions LLC
+</br>DIC First Step Office # G13,Building # 16
+</br>Dubai Internet City</br>, Dubai 73030
+</br>United Arab Emirates</br></span>
 	   </div>
      </div>
 	 <div class="row">
@@ -1211,7 +1216,8 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
-	     <span>xx-xxx-xxxxx</span>
+	     <span>+971 4 458 2626 <br/>
+sales-mea@vizury.com</span>
        </div>
      </div>
 
@@ -1225,7 +1231,10 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
        </div>		
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
-		 <span> contact 2 Address Line  1</br>Address Line 2</br>Address Line 3</br>Pincode</br>Country</br></span>
+		 <span> Vizury(Beijing) Advertising Co. Ltd.,
+</br>Room 2908 – 2909, Tower 8, Wanda Plaza,
+</br>93 Jianguo Road,Chaoyang District,
+</br>Beijing</br>China</br></span>
 	   </div>
      </div>
 	 <div class="row">
@@ -1233,7 +1242,7 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
-	     <span>xx-xxx-xxxxx</span>
+	     <span>+86-10-57359239  <br/> sales-china@vizury.com </span>
        </div>
      </div>
 
@@ -1248,7 +1257,10 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
        </div>		
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
-		 <span> contact 3 Address Line  1</br>Address Line 2</br>Address Line 3</br>Pincode</br>Country</br></span>
+		 <span> 6F, 153 Xinyi Road, Section 3,
+</br>Daan District
+</br>Taipei City 106, </br>Taiwan
+</br></span>
 	   </div>
      </div>
 	 <div class="row">
@@ -1256,7 +1268,8 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
-	     <span>xx-xxx-xxxxx</span>
+	     <span> +886 (2) 6638 5280 ext. 6201 <br/>
+sales-taiwan@vizury.com</span>
        </div>
      </div>
 
@@ -1270,7 +1283,10 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
        </div>		
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
-		 <span> contact 4 Address Line  1</br>Address Line 2</br>Address Line 3</br>Pincode</br>Country</br></span>
+		 <span> Vizury Japan Gohdoh Kaisha
+</br>Shibuya Miyata building
+</br>8F 1-12-14 Jinnan Shibuya-ku Tokyo,
+</br>150-0041</br>Japan </br></span>
 	   </div>
      </div>
 	 <div class="row">
@@ -1278,7 +1294,8 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
-	     <span>xx-xxx-xxxxx</span>
+	     <span>+81-3-6869-5770 <br/>
+sales-japan@vizury.com</span>
        </div>
      </div>
 
@@ -1292,7 +1309,9 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
        </div>		
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
-		 <span> contact 5 Address Line  1</br>Address Line 2</br>Address Line 3</br>Pincode</br>Country</br></span>
+		 <span> Jl. Masjid No. 18,
+</br>Jakarta Pusat 10210,
+Indonesia</br></span>
 	   </div>
      </div>
 	 <div class="row">
@@ -1300,7 +1319,7 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
-	     <span>xx-xxx-xxxxx</span>
+	     <span>+62 21 9242 2123, 818 435 486 <br/> sales-sea@vizury.com </span>
        </div>
      </div>
 
@@ -1315,7 +1334,9 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
        </div>		
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
-		 <span> contact 6 Address Line  1</br>Address Line 2</br>Address Line 3</br>Pincode</br>Country</br></span>
+		 <span> Singapore One Raffles Place
+</br>1, Raffles Place, Level 24
+</br>Singapore </br>048616</br>Singapore</br></span>
 	   </div>
      </div>
 	 <div class="row">
@@ -1323,7 +1344,7 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
-	     <span>xx-xxx-xxxxx</span>
+	     <span>+65-6408 0533  <br/> sales-sea@vizury.com </span>
        </div>
      </div>
 
@@ -1338,7 +1359,10 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
        </div>		
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
-		 <span> contact 7 Address Line  1</br>Address Line 2</br>Address Line 3</br>Pincode</br>Country</br></span>
+		 <span> Vizury Interactive Solutions Australia PTY Ltd.
+</br>Suite 402, 93 Pacific Highway
+</br>North Sydney
+</br>NSW 2060</br>Australia</br></span>
 	   </div>
      </div>
 	 <div class="row">
@@ -1346,7 +1370,8 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
-	     <span>xx-xxx-xxxxx</span>
+	     <span>+61 2 8075 7950 <br/>
+sales-anz@vizury.com</span>
        </div>
      </div>
 
@@ -1361,7 +1386,10 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
        </div>		
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
-		 <span> contact 8 Address Line  1</br>Address Line 2</br>Address Line 3</br>Pincode</br>Country</br></span>
+		 <span> Vizury Interactive Solutions Pvt. Ltd.
+</br>#24,  4th Floor, Salarpuria Arena,
+</br>Hosur Main Road,
+Adugodi,Bangalore</br>560030</br>India</br></span>
 	   </div>
      </div>
 	 <div class="row">
@@ -1369,7 +1397,7 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
-	     <span>xx-xxx-xxxxx</span>
+	     <span>+91 80 49104000 <br/> sales-india@vizury.com </span>
        </div>
      </div>
 
@@ -1384,7 +1412,8 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
        </div>		
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
-		 <span> contact 9 Address Line  1</br>Address Line 2</br>Address Line 3</br>Pincode</br>Country</br></span>
+		 <span>Vizury Interactive Solutions Limited
+</br>Address: 599 Fairchild Dr. in Mountain View, <br/>CA</br></span>
 	   </div>
      </div>
 	 <div class="row">
@@ -1392,7 +1421,8 @@ get_header();
          <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
-	     <span>xx-xxx-xxxxx</span>
+	     <span>+19174129765 <br/>
+sales@vizury.com</span>
        </div>
      </div>
 
@@ -1400,7 +1430,57 @@ get_header();
 </div>
 
 
+<div id="contact-10-content" >
 
+     <div class="row">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
+       </div>		
+	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+		 <span> Vizury BrasilSolucoes Interativas Ltda.,
+</br>Av. Moema, 300,
+</br>conjunto 96.
+</br> CEP: 04077-020</br>Moema | São Paulo | SP Brazil</br></span>
+	   </div>
+     </div>
+	 <div class="row">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+	   </div>
+	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	     <span> + 55 11 43711275 <br/> sales-brazil@vizury.com </span>
+       </div>
+     </div>
+
+
+</div>
+
+
+<div id="contact-11-content" >
+
+     <div class="row">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
+       </div>		
+	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+		 <span> Vizury Interactive Solutions Korea Limited
+</br>#435, 4 Floor, EK Tower,
+</br>Seoul 
+</br> 135-876,</br>Korea</br></span>
+	   </div>
+     </div>
+	 <div class="row">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+	   </div>
+	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	     <span> +82 2 6188 0503 <br/>
+kr.vizury@vizury.com</span>
+       </div>
+     </div>
+
+
+</div>
 
 
 </div>

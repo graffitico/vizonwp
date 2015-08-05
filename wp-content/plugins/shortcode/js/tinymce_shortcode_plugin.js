@@ -30,7 +30,23 @@ tinymce.PluginManager.add('wpvizury', function( editor ) {
                 //         return;
                 // }
                 // Check if the `wp.media` API exists.
-                 jQuery('.shortcode-dialog-form').dialog();
+               rid  =   editor.dom.getAttrib( node, 'data-rid' ) ;
+console.log(tinyMCE);
+
+
+                s_form = editor.dom.select("#form-container-"+rid)[0]['innerHTML'];
+
+console.log(s_form);
+
+                 jQuery('.shortcode-dialog-form').empty();
+                 jQuery('.shortcode-dialog-form').append(s_form);
+                 jQuery('#shortcode-dialog').dialog();
+
+                
+
+
+
+
                 if ( typeof wp === 'undefined' || ! wp.media ) {
                         console.log("i m here");
                         return;

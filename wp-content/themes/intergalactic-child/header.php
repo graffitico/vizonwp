@@ -70,7 +70,7 @@
 							<a href="/publishers">PUBLISHERS</a>
 						</li>
 						<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-							<a href="/resources">RESOURCES</a>
+							<a href="/success-stories">RESOURCES</a>
 						</li>
 						<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
 							<a href="/vizuryblog">BLOG</a>

@@ -661,7 +661,7 @@ div.img {
 .yellow-text-block {
 	padding: 10px;
 	padding-bottom: 0;
-	position: relative;
+	/*position: relative;*/
 	background-color: #FFD845;
 	text-align: center;
 	color: #333;

@@ -100,4 +100,6 @@ get_header(); ?>
 
 </div>
 
-
+<?php 
+get_footer(); // Loads the footer.php file 
+?>
