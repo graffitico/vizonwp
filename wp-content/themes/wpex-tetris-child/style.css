@@ -6,10 +6,15 @@
 */
 
 @import url('../wpex-tetris/style.css');
-@import url('/css/bootstrap.min.css');
+/*@import url('/css/bootstrap.min.css');
 @import url('/css/creative.css');
 @import url('/css/animate.min.css');
 @import url('/css/ihover.css');
+*/
+
+@import url('../../../css/main.css');
+
+
 
 @font-face {
    font-family: 'proxima';
