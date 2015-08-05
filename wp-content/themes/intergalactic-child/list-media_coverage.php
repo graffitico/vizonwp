@@ -66,4 +66,6 @@ get_header(); ?>
 	</div>
 </div>
 
-
+<?php 
+get_footer(); // Loads the footer.php file 
+?>

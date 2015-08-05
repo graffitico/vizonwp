@@ -70,7 +70,7 @@
 							<a href="/publishers">PUBLISHERS</a>
 						</li>
 						<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-							<a href="/resources">RESOURCES</a>
+							<a href="/success-stories">RESOURCES</a>
 						</li>
 						<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
 							<a href="/vizuryblog">BLOG</a>
@@ -197,7 +197,7 @@
 							</li>
 							<li>
 								<span class='icon-home_menuicons__jobopening'></span>
-								<a href='/jobopeninings'>Job Openings</a>
+								<a href='/jobopenings'>Job Openings</a>
 							</li>
 						</ul>
 					</div>
@@ -221,7 +221,7 @@
 				</div>
 				<div class='subnav-block resources-subnav'>
 					<div class='company-block resources-subnav-block'>
-						<a href='/whitepaper'>
+						<a href='/whitepapers'>
 							<h3>
 								<span class='icon-home_menuicons__whitepaper'></span>
 								Whitepaper
@@ -362,7 +362,7 @@
 										<a href='/convert'>Vizurians Speak</a>
 									</li>
 									<li>
-										<a href='/joboppenings'>Job Openings</a>
+										<a href='/jobopenings'>Job Openings</a>
 									</li>
 								</ul>
 							</li>

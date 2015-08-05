@@ -241,9 +241,20 @@ jQuery(function () {
 
 /**************************** contact form js start **************************/
 $(".contact-marker").click(function(){
-	contact_id = $(this).attr("id");
+	contact_id = $(this).attr("data-id");
 	console.log(contact_id);
 
+addr_html = $("#"+contact_id+"-content").html();
+
+$("#address-number").html(addr_html);
+
+
+});
+$(".country_drop").click(function(){
+	contact_id = $(this).attr("data-id");
+	console.log(contact_id);
+btn_html = $(this).html() + "<span class='caret' ></span>";
+$("#menu1").html(btn_html);
 addr_html = $("#"+contact_id+"-content").html();
 
 $("#address-number").html(addr_html);

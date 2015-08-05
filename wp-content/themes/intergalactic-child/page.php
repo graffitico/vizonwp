@@ -17,7 +17,7 @@ if ($post->post_title == 'case studies') {
   $case_posts =  new WP_Query('showposts=1000');
 	?>
 	
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area blog">
 		<main id="main" class="site-main" role="main">
 
 			<?php if (  $case_posts->have_posts() ) : ?>
