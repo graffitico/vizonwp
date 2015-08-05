@@ -7,6 +7,7 @@ jQuery(function () {
 	var preNavBg = false;
 	var mouseOnTop = false;
 	var scrollOnTop = true;
+	var tapDiscard = false;
 
 	function showSubNav(subnavName) {
 		if (subnavName) {
@@ -64,6 +65,16 @@ jQuery(function () {
 
 	// Mobile Navigation
 	$('.navigation-trigger').on('click touchend', function (e) {
+
+		if (tapDiscard) {
+			return;
+		}
+
+		tapDiscard = true;
+		setTimeout(function () {
+			tapDiscard = false;
+		}, 500);
+
 		if ($('.mobilenavigation').is(":visible")) {
 			$('.mobilenavigation').slideUp();
 		} else {
@@ -72,6 +83,16 @@ jQuery(function () {
 	});
 
 	$('.mobilenavigation li').on('click touchend', function (e) {
+
+		if (tapDiscard) {
+			return;
+		}
+
+		tapDiscard = true;
+		setTimeout(function () {
+			tapDiscard = false;
+		}, 500);
+
 		if ($(this).hasClass('expanded-menu')) {
 			$(this).removeClass('expanded-menu');
 			$(this).find('> .mobilesubnav').slideUp();
