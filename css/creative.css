@@ -196,6 +196,7 @@ aside {
     width: 100%;
     padding: 250px 15px 100px;
     text-align: left;
+    background-color: rgba(0,0,0,0.7);
 }
 
 .header .header-content .header-content-inner h1 {
@@ -252,7 +253,7 @@ aside {
     max-width: 400px;
 }
 .service-box-image-container {
-    padding: 40px;
+    padding: 10%;
     display: block;
     margin: auto;
     border-radius: 100%;
@@ -267,7 +268,7 @@ aside {
 
 .service-box p {
     margin-bottom: 0;
-    text-align: center;
+    text-align: justify;
 }
 
 .portfolio-box {
@@ -346,8 +347,8 @@ aside {
 
 .btn-default {
   border: none;
-  color: #ffd846;
-  background-color:#202020;
+  color: #202020;
+  background-color:#ffd846;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -360,8 +361,8 @@ aside {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
     border-color: #ededed;
-    color: #222;
-    background-color: #f2f2f2;
+    color: #f2f2f2;
+    background-color: #222;
 }
 
 .btn-default:active,

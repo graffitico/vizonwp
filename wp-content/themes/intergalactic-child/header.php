@@ -96,7 +96,7 @@
 							</li>
 							<li>
 
-								<a href='/products/convert/app-re-engagement/'>
+								<a href='/products/convert/appreengage/'>
 
 									<span class='icon-home_menuicons_apprengage'></span>
 									App Re-Engagement
@@ -104,20 +104,20 @@
 							</li>
 							<li>
 
-								<a href='/products/convert/facebook-marketing/'>
+								<a href='/products/convert/fbmarketing/'>
 
 									<span class='icon-home_menuicons__fbmarketing'></span>
 									Facebook Marketing
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/cross-channel/'>
+								<a href='/products/convert/crossdevice/'>
 									<span class='icon-home_menuicons__crosschannel'></span>
-									Cross Channel
+									Cross Device
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/mobile-web-app-re-engagment/'>
+								<a href='/products/convert/mobilewebappengage/'>
 									<span class='icon-home_menuicons__webmobileapp'></span>
 									Mobile Web-App Engagement
 								</a>
@@ -282,16 +282,16 @@
 										<a href='/products/convert'>Convert XP</a>
 									</li>
 									<li>
-										<a href='/products/convert/app-re-engagement/'>App Re engagement</a>
+										<a href='/products/convert/appreengage/'>App Re engagement</a>
 									</li>
 									<li>
-										<a href='/products/convert/facebook-marketing/'>Facebook Marketing</a>
+										<a href='/products/convert/fbmarketing/'>Facebook Marketing</a>
 									</li>
 									<li>
-										<a href='/products/convert/cross-channel/'>Cross Channel</a>
+										<a href='/products/convert/crossdevice/'>Cross Device</a>
 									</li>
 									<li>
-										<a href='/products/convert/mobile-web-app-re-engagment/'>Mobile Web-App Engagement</a>
+										<a href='/products/convert/mobilewebappengage/'>Mobile Web-App Engagement</a>
 									</li>
 								</ul>
 							</li>
@@ -404,11 +404,12 @@
 					</li>
 					<li>
 						<a href='/login'>
-							<input type='button' value='Login' />
+							<input class='login-button' type='button' value='Login' />
 						</a>
 					</li>
 					<li>
-						<a href='/search'>
+						<a href='javascript://'>
+							<input class='search-bar' type="text" id="search_container_mobile" style="" />
 							<span class='icon-home_header_searchwhite'></span>
 						</a>
 					</li>
