@@ -340,10 +340,15 @@ a:hover .icon-home_yellowband_arrow {
 }
 
 .floating-header .small-logo {
-	background-image: url(../../../imgs/logo2.png);
-	width: 45px;
-	height: 44px;
+	background-image: url(../../../imgs/logo_v.svg);
+	width: 69px;
+	height: 69px;
 	display: inline-block;
+}
+
+.full_logo{
+	width: 200px;
+	height: 48px;
 }
 
 /** ihover override **/
