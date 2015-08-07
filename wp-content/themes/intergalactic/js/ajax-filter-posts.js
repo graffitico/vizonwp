@@ -65,7 +65,9 @@ q = jQuery("#job-s").val();
 
 
 jQuery(document).on('click' , '.apply-button' , function(){
+
     job_id = jQuery(this).data("id");
+     console.log( job_id );
     jQuery("#application_job_id").val(job_id);
 });
 
