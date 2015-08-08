@@ -25,7 +25,7 @@
 
 /* test add start */
 body {
-  background: #ddd;
+  background: #fff;
 }
 
 /** Overriding Intergalactic CSS */
@@ -80,16 +80,17 @@ h4,
 h5,
 h6 {
 	text-transform: none;
+	font-family: proxima;
+	color: #202020;
 }
 
 h1 {
 	font-size: ;
 }
 
-a:visited,
-a:focus,
+
 a {
-	color: #fff;
+	color: #202020;
     -webkit-transition: all .1s;
     -moz-transition: all .1s;
     transition: all .1s;
@@ -99,13 +100,12 @@ a {
 a:active,
 a:hover {
     text-decoration: none;
-    color: #ffd846;
+    color: #7b7b7b;
 }
 
 input.yellowbutton {
-	padding: 6px 18px;
+	padding: 10px 40px;
 	background-color: #ffd846;
-	border: 1px solid #ffd846;
 	border-radius: 4px;
 	color: #202020;
 }
@@ -114,48 +114,130 @@ input.yellowbutton {
 	background: none;
 }
 
+/** Image CSS */
+.feature-icon {
+	height: 125px;
+	width: 125px;
+	text-align: center;
+}
+
+.circle-no {
+	height: 180px;
+	width: 180px;
+	text-align: center;
+}
+
+.client-logo {
+	width: 210px;
+}
+
+.v-logo {
+	width: 175px;
+}
+
+.circle-box {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
 /** TEXTCSS */
-.has-text,
-.has-content {
-	color: #202020;
-	font-size: 18px;
-}
-.has-text p,
-.has-content p {
+
+p {
 	text-align: justify;
+	font-size: 16px;
+	margin: 1%;
 }
+
+
+.yellow-strip-text {
+	font-size: 20px;
+	text-align: center;
+}
+
+.intro-text {
+	font-size: 20px;
+	padding: 5% 10%;
+	text-align: center;
+}
+
 .white-text {
 	color: #fff;
 }
-.service-box .has-content {
-	font-size: 16px;
-	text-align: justify;
-	height: 220px;
+
+.text-center {
+	text-align: center;
 }
+
 .white-3dbox-block {
 	background-color: #000;
 	padding: 50px 0px;
-}
-.white-3dbox-block p {
-	font-size: 16px;
-	color: #fff;
-}
-.white-3dbox-block h2 {
-	font-size: 30px;
 }
 
 .blog-entry-tile {
 	height: 520px;
 	padding: 10px 30px;
+	font-size: 16px;
 }
+
 .no-border {
 	border-width: 0 !important;
 }
 
 .bottom-right {
 	position: absolute;
+	right: 5px;
+	bottom: 1px;
+}
+
+.bottom-right-convert {
+	position: absolute;
 	bottom: 10px;
 	right: 10px;
+}
+
+
+
+/** Heading Text */
+
+.heading-block {
+	height: 95vh;
+	color: #fff;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	position: relative;
+	background-color: rgba(0,0,0,0.7);
+}
+.heading-text {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.heading-block .heading-text h2 {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 60%;
+}
+
+.heading-block .heading-text h4 {
+	font-weight: 150;
+	font-size: 35px;
+	line-height: 200%;
+}
+
+
+/** Buttons CSS */
+
+.btn-default {
+	background: #ffd846;
+	color: #202020;
+	padding: 10px 40px;
+	border-radius: 2px;
+	font-size: 18px;
+}
+
+.btn-default:hover {
+	background: #202020;
+	color: #fff;
 }
 
 .link-button a,
@@ -164,7 +246,7 @@ a .icon-home_yellowband_arrow {
 }
 
 a:hover .icon-home_yellowband_arrow {
-	color: #fff;
+	color: #ffd846;
 }
 
 #wrap {
@@ -335,7 +417,7 @@ div.img {
 	text-align: center;
 }
 .leading-brands-block .brand-images {
-	height: 750px;
+	height: 650px;
 	overflow: hidden;
 }
 .leading-brands-block .brands-choose {
@@ -360,7 +442,7 @@ div.img {
 	min-width: 400px;
 	position: absolute;
 	display: inline-block;
-	bottom: 120px;
+	bottom: 50px;
 	margin-left: -350px;
 }
 
@@ -399,40 +481,6 @@ div.img {
 	background-size: 200%
 }
 
-@media only screen and (max-width: 440px) {
-	.engage-floating-bg {
-		width: auto;
-		height: auto;
-		background-image: none;
-		background-color: rgba(0,0,0, 0.2);
-	}
-	.engage-data-floating-bg {
-		width: auto;
-		height: auto;
-		background-image: none;
-		background-color: rgba(0,0,0, 0.2);
-	}
-	.engage-insights-floating-bg {
-		width: auto;
-		height: auto;
-		background-image: none;
-		background-color: rgba(0,0,0, 0.2);
-	}
-	.engage-marketing-floating-bg {
-		width: auto;
-		height: auto;
-		background-image: none;
-		background-color: rgba(0,0,0, 0.2);
-	}
-	.engage-hover-magic-text {
-		width: auto;
-		height: auto;
-	}
-	.leading-brands-block {
-		display: none;
-	}
-
-}
 
 /** Testimonials block */
 .testimonial-bg {
@@ -447,20 +495,8 @@ div.img {
 }
 
 
-/** Heading Text */
 
-.heading-block {
-	padding-top: 120px;
-	height: 600px;
-	position: relative;
-	color: #fff;
-}
-.heading-block .heading-text {
-	padding: 30px;
-	position: absolute;
-	bottom: 0;
-}
-.heading-block .heading-text h2 {
+/*-- .heading-block .heading-text h2 {
 	margin: 0;
 	font-size: 60px;
 	line-height: 72px;
@@ -472,7 +508,7 @@ div.img {
 	line-height: 36px;
 	font-family: proxima;
 }
-
+--*/
 
 #pills-first {
 	text-align: center;
@@ -632,67 +668,7 @@ div.img {
 	font-size: 24px;
 }
 
-@media only screen and (max-width: 440px) {
-	.floating-text-box {
-		position: static;
-		background-image: none !important;
-		margin: 0 auto;
-		list-style-type: none;
-		text-align: center;
-	}
-	.floating-text-box .circular-bound {
-		border-radius: 25%;
-	}
-	.bigcircle,
-	.smallcircle {
-		display: block;
-		position: relative;
-		left: 0 !important;
-		top: 0 !important;
-		margin: 0 !important;
-		padding: 10px;
-		margin: 20px;
-		font-size: 12px;
-	    -webkit-transition-duration: .5s;
-	    -webkit-transition-property: all;
-	    -webkit-transition-timing-function: ease-in-out;
-	}
-	.bigcircle.expanded,
-	.smallcircle.expanded {
-	    transform: none;
-	}
-	.hoverable-text .floating-normal-text {
-		text-align: center;
-		vertical-align: middle;
-		color: #fff;
-		position: relative;
-	}
-	.floating-text-element-xsmall,
-	.floating-text-element-small,
-	.floating-text-element-medium,
-	.floating-text-element-large {
-		position: relative;
-		left: 0 !important;
-		top: 0 !important;
-		margin: 0 !important;
-		text-align: center;
-		padding: 4px 12px;
-		display: block;
-		font-size: 1.2em;
-		margin: 10px auto !important;
-		background-color: rgba(0,0,0,0.5);
-	}
-	.floating-text-element-medium {
-		font-size: 30px;
-	}
-	.floating-text-element-xsmall b,
-	.floating-text-element-small b,
-	.floating-text-element-medium b,
-	.floating-text-element-large b {
-		font-size: 1.2em;
-	}
 
-}
 
 /* Portfolio Box */
 .portfolio-box-static {
@@ -761,20 +737,163 @@ div.img {
 }
 
 
+/* Custom, Iphone Retina */
+@media(max-width: 479px) {
+	
+	.heading-text {
+	margin-top: 60%;
+	margin-bottom: 10%;
+	}
+ 
+	.heading-block .heading-text h2 {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 100%;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+	.heading-block .heading-text h4 {
+	font-weight: 150;
+	font-size: 20px;
+	line-height: 120%;
+	margin-top: 20px;
+	}
+	
+	.floating-text-box {
+		position: static;
+		background-image: none !important;
+		margin: 0 auto;
+		list-style-type: none;
+		text-align: center;
+	}
+	.floating-text-box .circular-bound {
+		border-radius: 25%;
+	}
+	.bigcircle,
+	.smallcircle {
+		display: block;
+		position: relative;
+		left: 0 !important;
+		top: 0 !important;
+		margin: 0 !important;
+		padding: 10px;
+		margin: 20px;
+		font-size: 12px;
+	    -webkit-transition-duration: .5s;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: ease-in-out;
+	}
+	.bigcircle.expanded,
+	.smallcircle.expanded {
+	    transform: none;
+	}
+	.hoverable-text .floating-normal-text {
+		text-align: center;
+		vertical-align: middle;
+		color: #fff;
+		position: relative;
+	}
+	.floating-text-element-xsmall,
+	.floating-text-element-small,
+	.floating-text-element-medium,
+	.floating-text-element-large {
+		position: relative;
+		left: 0 !important;
+		top: 0 !important;
+		margin: 0 !important;
+		text-align: center;
+		padding: 4px 12px;
+		display: block;
+		font-size: 1.2em;
+		margin: 10px auto !important;
+		background-color: rgba(0,0,0,0.5);
+	}
+	.floating-text-element-medium {
+		font-size: 30px;
+	}
+	.floating-text-element-xsmall b,
+	.floating-text-element-small b,
+	.floating-text-element-medium b,
+	.floating-text-element-large b {
+		font-size: 1.2em;
+	}
+
+		.engage-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-data-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-insights-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-marketing-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-hover-magic-text {
+		width: auto;
+		height: auto;
+	}
+	.leading-brands-block {
+		display: none;
+	}
+
+}
+
+/* Extra Small Devices, Phones */ 
+ @media(min-width:480px) and (max-width:767px){
+
+	.heading-text {
+	margin-top: 35%;
+	margin-bottom: 10%;
+	}
+	
+	.heading-block .heading-text h2 {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 100%;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	}
+
+	.heading-block .heading-text h4 {
+	font-weight: 150;
+	font-size: 20px;
+	line-height: 120%;
+	margin-top: 20px;
+	}
+	
+	
+ 
+ }
+
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media(min-width : 768px) and (max-width:991px) {
 
 
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media(min-width : 992px) and (max-width:1199px) {
 
 
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media(min-width : 1200px) {
 
 
 }
