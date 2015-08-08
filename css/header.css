@@ -1,0 +1,179 @@
+#header-wrap {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+
+#header-wrap a {
+	color: #fff;
+}
+
+#header-wrap a:hover,
+#header-wrap a:focus {
+	color: #ffd846;
+	text-decoration: none;
+}
+
+#pre-header {
+	color: #fff;
+	text-align: right;
+	padding: 10px 100px 5px;
+	margin: 0;
+}
+
+#header-actions {
+	margin: 0;
+}
+
+#pre-header input {
+	background-color: #fff;
+	color: #000;
+	border-width: 0;
+	border-radius: 2px;
+	font-size: 14px;
+	padding: 2px 10px;
+}
+
+#pre-header .language-select {
+
+}
+
+#pre-header * {
+	vertical-align: top;
+}
+
+#header {
+	width: 100%;
+	padding: 10px;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: none;
+	position: relative;
+}
+
+#mobilenavigation-container {
+	display: none;
+}
+
+.vizuri_menu_class {
+	margin-right: 100px;
+}
+
+#navigation {
+  position: absolute;
+  height: 50px;
+  top: 50%;
+  right: 15px;
+  margin-top: -12px;
+}
+
+#navigation .sf-menu > li > a {
+	font-size: 18px;
+	padding: 20px 25px;
+}
+
+#wpadminbar {
+	display: none;
+}
+
+#pre-header ul li {
+	display: inline-block;
+	margin-left: 25px;
+	cursor: pointer;
+}
+
+#pre-header ul li .header-icon {
+	font-size: 18px;
+}
+
+#header .subnav {
+	display: none;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 82px;
+	left: 0;
+}
+
+#header .subnav .resources-subnav-block,
+#header .subnav .about-subnav-block,
+#header .subnav .product-subnav-block {
+	width: 24.5%;
+	border-right: 1px solid #bebebe;
+	display: inline-block;
+	text-align: center;
+	padding: 0 20px 10px;
+	margin: 20px 0;
+	vertical-align: top;
+}
+
+.about-subnav-block {
+	height: 180px;
+}
+
+.product-subnav-block {
+	height: 240px;
+}
+
+.resources-subnav-block {
+	height: auto;
+}
+
+#header .subnav .contact-block {
+	border-width: 0;
+	padding-top: 70px;
+}
+
+#header .subnav .product-subnav-block p {
+	color: #bebebe;
+	text-align: justify;
+}
+
+#header .subnav .product-subnav-block div {
+	color: #bebebe;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#header .subnav .product-subnav-block h3 {
+	color: inherit;
+}
+
+#header .subnav .subnav-list-control li {
+	color: #fff;
+	text-align: left;
+	list-style-type: none;
+	margin: 10px 0;
+}
+
+#header .subnav .subnav-list-control li:hover {
+	color: #ffd846;
+}
+
+#header .subnav .subnav-list-control span {
+	width: 20px;
+	color: inherit;
+	display: inline-block;
+}
+
+#header .subnav .subnav-list-control a {
+	color: inherit;
+}
+
+.floating-header {
+	padding: 20px 20px 20px 37px;
+	display: none;
+}
+
+.floating-header .small-logo {
+	background-image: url(../../../imgs/logo_v.svg);
+	width: 69px;
+	height: 69px;
+	display: inline-block;
+}
+
+.full_logo {
+	width: 200px;
+	height: 48px;
+}
