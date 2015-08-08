@@ -59,7 +59,10 @@ function ajax_filter_posts_scripts() {
   // Enqueue script
   //   wp_register_script('jquery_script', get_site_url() . '/js/jquery.min.js', false, null, false);
 
-  // wp_register_script('afp_script', get_template_directory_uri() . '/js/ajax-filter-posts.js', false, null, true);
+  wp_register_script('afp_script', get_template_directory_uri() . '/js/ajax-filter-posts.js', false, null, true);
+  wp_register_script('reverse_scroll_script', get_site_url() . '/js/reversescroll.js', false, null, true);
+  
+
   // wp_register_script('selectfx_script', get_template_directory_uri() . '/js/selectFx.js', false, null, false);
   //     wp_register_script('kwiks', get_site_url() . '/js/kwiks.js', false, null, false);
   
@@ -89,7 +92,7 @@ function ajax_filter_posts_scripts() {
   //  wp_enqueue_script('bootstrap_script');
   //     wp_enqueue_script('kwiks');
   //  wp_enqueue_script('flex_script');
-  //  wp_enqueue_script('global_script');
+ 
 
   //  wp_enqueue_script('selectfx_script');
   // wp_enqueue_script('afp_script');
@@ -101,7 +104,13 @@ function ajax_filter_posts_scripts() {
   //     wp_enqueue_script('smooth_scroll_script');
 
 
+wp_enqueue_script('afp_script');
 
+
+if(is_page( 'About' ))
+{
+wp_enqueue_script('reverse_scroll_script');
+}
   wp_localize_script( 'afp_script', 'afp_vars', array(
         'afp_nonce' => wp_create_nonce( 'afp_nonce' ), // Create nonce which we later will use to verify AJAX request
         'afp_ajax_url' => admin_url( 'admin-ajax.php' ),
@@ -252,7 +261,7 @@ $final
       <section class="job-desc panel-body">
       
      <?php echo the_content(); ?>
-      <button class="apply-button" type="button">Apply</button>
+      <button data-toggle="modal" data-target="#apply-modal" class="apply-button" data-id="<?php echo the_ID() ?>" >Apply</button>
       </section>      
       </div>
       

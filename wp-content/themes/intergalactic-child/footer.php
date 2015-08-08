@@ -106,6 +106,7 @@
 
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/jquery.fittext.js"></script>
+<script type="text/javascript" src="<?php echo get_site_url() ?>/js/selectFx.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/global.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/wow.min.js"></script>
 <script type="text/javascript" src="<?php echo get_site_url() ?>/js/jquery.easing.min.js"></script>

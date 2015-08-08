@@ -1,16 +1,17 @@
 
 
-var winHeight = $(window).innerHeight();
-$(document).ready(function () {
-    $(".ab-panel").height(winHeight);
-    $("body").height(winHeight*$(".ab-panel").length);
+var winHeight ;
+jQuery(document).ready(function () {
+	winHeight = jQuery(window).innerHeight();
+    jQuery(".ab-panel").height(winHeight);
+    jQuery("body").height(winHeight*jQuery(".ab-panel").length);
 });
 
 window.addEventListener('resize', function (event) {
-    $(".ab-panel").height($(window).innerHeight());
+    jQuery(".ab-panel").height(jQuery(window).innerHeight());
 });
-$(window).on('scroll',function(){
-    $(".ab-panelCon").css('bottom',$(window).scrollTop()*-1);
+jQuery(window).on('scroll',function(){
+    jQuery(".ab-panelCon").css('bottom',jQuery(window).scrollTop()*-1);
 });
 
 
