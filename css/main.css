@@ -23,11 +23,6 @@
    src: url('../fonts/ProximaNova-Bold.otf');
 }
 
-/* test add start */
-body {
-  background: #fff;
-}
-
 /** Overriding Intergalactic CSS */
 
 .single-page .entry-header {
@@ -56,6 +51,10 @@ body {
 
 html {
 	margin: 0 !important;
+}
+
+body {
+  background: #fff;
 }
 
 * {
@@ -88,6 +87,10 @@ h1 {
 	font-size: ;
 }
 
+input[type=button],
+input[type=submit] {
+	text-transform: none;
+}
 
 a {
 	color: #202020;
@@ -312,22 +315,6 @@ div.img {
 }
 .flexslider .flex-caption h4 {
 	font-size: 24px;
-}
-
-/** Search Bar */
-.search-bar {
-	width: 0px;
-	padding: 0 !important;
-    -webkit-transition-duration: .8s;
-    -webkit-transition-property: all;
-    -webkit-transition-timing-function: ease-in-out;
-    border-radius: 4px;
-    border-width: 0 !important;
-}
-.search-bar.searchvisible {
-	width: 150px;
-	padding: 0 5px !important;
-    border: 1px solid #fff !important;
 }
 
 
@@ -739,12 +726,12 @@ div.img {
 
 /* Custom, Iphone Retina */
 @media(max-width: 479px) {
-	
+
 	.heading-text {
 	margin-top: 60%;
 	margin-bottom: 10%;
 	}
- 
+
 	.heading-block .heading-text h2 {
 	font-size: 40px;
 	font-weight: 700;
@@ -759,7 +746,7 @@ div.img {
 	line-height: 120%;
 	margin-top: 20px;
 	}
-	
+
 	.floating-text-box {
 		position: static;
 		background-image: none !important;
@@ -853,14 +840,14 @@ div.img {
 
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
  @media(min-width:480px) and (max-width:767px){
 
 	.heading-text {
 	margin-top: 35%;
 	margin-bottom: 10%;
 	}
-	
+
 	.heading-block .heading-text h2 {
 	font-size: 40px;
 	font-weight: 700;
@@ -875,9 +862,9 @@ div.img {
 	line-height: 120%;
 	margin-top: 20px;
 	}
-	
-	
- 
+
+
+
  }
 
 /* Small Devices, Tablets */
@@ -934,7 +921,7 @@ div.img {
 		color: #fff;
 		margin: 0;
 		position: relative;
-		top: 80px;
+		top: 68px;
 		overflow: auto;
 		padding: 0 15px;
 		list-style-type: none;
