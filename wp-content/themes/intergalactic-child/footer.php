@@ -14,7 +14,7 @@
 		    <aside class="bg-dark">
 		        <div class="container text-center">
 		            <div class="has-text white-text" class="call-to-action">
-						<div class="col-lg-2 col-md-2 text-left">
+						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
 									<a href='/products'>PRODUCTS</a>
@@ -30,7 +30,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-lg-2 col-md-2 text-left">
+						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
 									<a href='#'>ABOUT</a>
@@ -49,7 +49,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-lg-2 col-md-2 text-left">
+						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
 									<a href='#'>PUBLISHERS</a>
@@ -68,7 +68,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-lg-2 col-md-2 text-left">
+						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
 									<a href='#'>BLOG</a>
@@ -81,19 +81,19 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-lg-3 col-md-3 text-left">
+						<div class="col-lg-3 col-md-3 col-sm-3 text-left">
 							<ul style="list-style: none;">
 								<li>
 									<a href='/contact-us'>CONTACT US</a>
 								</li>
 								<li>
-									<a href='https://www.linkedin.com/company/vizury-interactive'><span class="icon-home_footer_linkedin"></span></a>
+									<a href='https://www.linkedin.com/company/vizury-interactive'><span class="linkedin-contact"></span></a>
 									&nbsp;&nbsp;
-									<a href='https://twitter.com/VizuryOneToOne'><span class="icon-home_footer_Twitterc"></span></a>
+									<a href='https://twitter.com/VizuryOneToOne'><span class="twitter-contact"></span></a>
 									&nbsp;&nbsp;
-									<a href='https://www.facebook.com/vizury1to1'><span class="icon-home_footer_FB"></span></a>
+									<a href='https://www.facebook.com/vizury1to1'><span class="fb-contact"></span></a>
 									&nbsp;&nbsp;
-									<a href='https://www.youtube.com/user/vizury1to1'><span class="icon-home_footer_youtubec"></span></a>
+									<a href='https://www.youtube.com/user/vizury1to1'><span class="youtube-contact"></span></a>
 								</li>
 							</ul>
 						</div>

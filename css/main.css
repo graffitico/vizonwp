@@ -322,6 +322,47 @@ div.img {
 	background: none;
 	padding: 0;
 }
+#footer a,
+#footer a:active,
+#footer a:visited {
+	color: #fff;
+}
+#footer a:hover {
+	color: #ffd846;
+}
+#footer .fb-contact,
+#footer .linkedin-contact,
+#footer .youtube-contact,
+#footer .twitter-contact {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+#footer .fb-contact {
+	background-image: url(/images/home_footer_fb.svg);
+}
+#footer .fb-contact:hover {
+	background-image: url(/images/home_footer_fb_c.svg);
+}
+#footer .linkedin-contact {
+	background-image: url(/images/home_footer_linkedin.svg);
+}
+#footer .linkedin-contact:hover {
+	background-image: url(/images/home_footer_linkedin_c.svg);
+}
+#footer .youtube-contact {
+	background-image: url(/images/home_footer_youtube.svg);
+}
+#footer .youtube-contact:hover {
+	background-image: url(/images/home_footer_youtube_c.svg);
+}
+#footer .twitter-contact {
+	background-image: url(/images/home_footer_twitter.svg);
+}
+#footer .twitter-contact:hover {
+	background-image: url(/images/home_footer_twitter_c.svg);
+}
+
 
 /** Main content */
 #main-content {
@@ -707,8 +748,6 @@ div.img {
 	font-size: 24px;
 }
 
-
-
 /* Portfolio Box */
 .portfolio-box-static {
 	width:100%;
@@ -788,23 +827,23 @@ div.img {
 @media(max-width: 479px) {
 
 	.heading-text {
-	margin-top: 60%;
-	margin-bottom: 10%;
+		margin-top: 60%;
+		margin-bottom: 10%;
 	}
 
 	.heading-block .heading-text h2 {
-	font-size: 40px;
-	font-weight: 700;
-	line-height: 100%;
-	margin-top: 1px;
-	margin-bottom: 1px;
-}
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 100%;
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
 
 	.heading-block .heading-text h4 {
-	font-weight: 150;
-	font-size: 20px;
-	line-height: 120%;
-	margin-top: 20px;
+		font-weight: 150;
+		font-size: 20px;
+		line-height: 120%;
+		margin-top: 20px;
 	}
 
 	.floating-text-box {
@@ -945,7 +984,7 @@ div.img {
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
 
 	#pre-header {
 		display: none;
@@ -1041,6 +1080,16 @@ div.img {
 
 	.tab-pane {
 		height: auto;
+	}
+
+	#footer ul {
+		text-align: center;
+		margin: 0;
+		font-size: 20px;
+	}
+
+	#footer .white-text > div {
+		margin-bottom: 20px;
 	}
 
 }
