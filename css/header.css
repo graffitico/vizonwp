@@ -85,8 +85,8 @@
 	width: 200px;
 	padding: 0 5px !important;
 	display: inline;
+	border-width: 0;
 }
-
 
 
 #header {
@@ -216,7 +216,7 @@
 }
 
 .floating-header .small-logo {
-	background-image: url(../../../imgs/logo_v.svg);
+	background-image: url(../../../images/logo_v.svg);
 	width: 69px;
 	height: 69px;
 	display: inline-block;

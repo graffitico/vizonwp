@@ -201,7 +201,6 @@ p {
 
 
 /** Heading Text */
-
 .heading-block {
 	height: 95vh;
 	color: #fff;
@@ -214,22 +213,23 @@ p {
 	margin-top: 10%;
 	margin-bottom: 10%;
 }
-
 .heading-block .heading-text h2 {
 	font-size: 60px;
 	font-weight: 700;
-	line-height: 60%;
+	line-height: 120%;
+	color: #fff;
+	text-align: center;
 }
-
 .heading-block .heading-text h4 {
 	font-weight: 150;
 	font-size: 35px;
-	line-height: 200%;
+	line-height: 150%;
+	color: #fff;
+	text-align: center;
 }
 
 
 /** Buttons CSS */
-
 .btn-default {
 	background: #ffd846;
 	color: #202020;
@@ -237,7 +237,6 @@ p {
 	border-radius: 2px;
 	font-size: 18px;
 }
-
 .btn-default:hover {
 	background: #202020;
 	color: #fff;
@@ -440,18 +439,21 @@ div.img {
 	background-image: url(/svgs/engage-1.svg);
 }
 .engage-data-floating-bg {
-	width: 500px;
-	height: 500px;
+	width: 350px;
+	height: 350px;
+	margin-top: 50px !important;
 	background-image: url(/svgs/data.svg);
 }
 .engage-insights-floating-bg {
-	width: 500px;
-	height: 500px;
+	width: 350px;
+	height: 350px;
+	margin-top: 40px !important;
 	background-image: url(/svgs/insights.svg);
 }
 .engage-marketing-floating-bg {
-	width: 500px;
-	height: 500px;
+	width: 350px;
+	height: 350px;
+	margin-top: 50px !important;
 	background-position: center;
 	background-image: url(/svgs/marketing.svg);
 }
@@ -509,9 +511,14 @@ div.img {
 	margin: 0;
 }
 
+/** Intro text container */
+.intro-box {
+	padding-bottom: 4%;
+}
+
+/** Yellow Band CSS */
 .yellow-text-block {
-	padding: 10px;
-	padding-bottom: 0;
+	padding: 15px 0;
 	position: relative;
 	background-color: #FFD845;
 	text-align: center;
@@ -521,12 +528,18 @@ div.img {
 .yellow-text-block .gray-text {
 	font-weight: bold;
 }
+.yellow-text-block p {
+	margin: 0;
+}
 .yellow-text-block a,
 .yellow-text-block a:hover {
 	color: #333;
 }
 .yellow-text-block a.carousel-control {
 	color: #fff;
+}
+.yellow-text-block a .icon-home_yellowband_arrow {
+	color: inherit;
 }
 .yellow-text-block .btn-default {
 	color: #ffd845;
@@ -535,6 +548,37 @@ div.img {
 .yellow-text-block .btn-default:hover {
 	background-color: #fff;
 	color: #202020;
+}
+.yellow-text-block .inline-content p {
+	display: inline-block;
+	margin: 1%;
+}
+.yellow-text-block .big-white-number {
+	font-size: 120px;
+	color: #fff;
+	margin: 0 auto;
+	line-height: 1em;
+	font-family: 'proximab';
+}
+.yellow-text-block .big-white-number-text {
+	font-size: 44px;
+	color: #fff;
+	margin: 24px auto;
+	line-height: 1em
+}
+.yellow-text-block .vertical-middle {
+	display: inline-block;
+	margin-top: 48px;
+}
+
+/** Gray Gallery Block */
+.halka-gray-box {
+	background-color: #ccc;
+	padding: 30px 50px;
+}
+.halka-gray-box h2 {
+	margin: 30px auto 50px;
+	text-align: center;
 }
 
 
@@ -559,20 +603,36 @@ div.img {
 }
 .hoverable-text {
 	display: block;
-	cursor: pointer;
 }
+.xsmallcircle,
 .bigcircle,
-.smallcircle {
+.smallcircle,
+.xbigcircle {
 	position: absolute;
 	font-size: 12px;
-	width: 150px;
-	height: 150px;
     -webkit-transition-duration: .5s;
     -webkit-transition-property: all;
     -webkit-transition-timing-function: ease-in-out;
 }
+.xsmallcircle {
+	width: 90px;
+	height: 90px;
+}
+.bigcircle {
+	width: 150px;
+	height: 150px;
+}
+.smallcircle {
+	width: 120px;
+	height: 120px;
+}
+.xbigcircle {
+	width: 180px;
+	height: 180px;
+}
 .bigcircle.expanded,
-.smallcircle.expanded {
+.smallcircle.expanded,
+.xbigcircle.expanded {
     -webkit-transition-duration: .5s;
     -webkit-transition-property: all;
     -webkit-transition-timing-function: ease-in-out;
@@ -587,6 +647,10 @@ div.img {
 	width: 320px;
 	height: 320px;
 }
+.xbigcircle.expanded {
+	width: 320px;
+	height: 320px;
+}
 .hoverable-text .plus-icon,
 .hoverable-text .minus-icon {
 	position: absolute;
@@ -597,31 +661,25 @@ div.img {
 	padding: 3px;
 	font-size: 16px;
 	line-height: 8px;
+	border-radius: 50%;
 }
-.hoverable-text .floating-normal-text,
 .hoverable-text .plus-icon,
 .hoverable-text.activate .minus-icon,
-.hoverable-text.activate .floating-hover-text,
-.hoverable-text:hover .minus-icon,
-.hoverable-text:hover .floating-hover-text {
+.hoverable-text:hover .minus-icon {
 	display: block;
 }
-.hoverable-text .floating-hover-text,
 .hoverable-text .minus-icon,
 .hoverable-text.activate .plus-icon,
-.hoverable-text.activate .floating-normal-text,
-.hoverable-text:hover .plus-icon,
-.hoverable-text:hover .floating-normal-text {
+.hoverable-text:hover .plus-icon {
 	display: none;
 }
 .hoverable-text .floating-hover-text {
 	text-align: center;
-	top: 50%;
-	margin-top: -70px;
 	position: absolute;
 	color: #fff;
 	text-align: justify;
-	padding: 0 30px;
+	display: none;
+	width: 80%;
 }
 .hoverable-text .floating-normal-text {
 	text-align: center;
@@ -635,12 +693,6 @@ div.img {
 .floating-text-element-large {
 	position: absolute;
 	text-align: center;
-}
-.floating-text-element-xsmall b,
-.floating-text-element-small b,
-.floating-text-element-medium b,
-.floating-text-element-large b {
-	font-size: 1.2em;
 }
 .floating-text-element-xsmall {
 	font-size: 14px;
@@ -694,9 +746,17 @@ div.img {
 	color: #333;
 	text-align: justify;
 	padding: 30px;
+	position: relative;
 }
 .white-background .row {
 	margin: 10px;
+}
+.white-background h2,
+.white-background h3 {
+	text-align: center;
+}
+.white-background .call-to-action {
+	margin-top: 30px;
 }
 
 .unfloat {
@@ -806,7 +866,7 @@ div.img {
 		font-size: 1.2em;
 	}
 
-		.engage-floating-bg {
+	.engage-floating-bg {
 		width: auto;
 		height: auto;
 		background-image: none;
