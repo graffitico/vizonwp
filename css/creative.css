@@ -253,11 +253,9 @@ aside {
     max-width: 400px;
 }
 .service-box-image-container {
-    padding: 10%;
-    display: block;
     margin: auto;
     border-radius: 100%;
-    width: 66.67%;
+    display: inline-block;
 }
 
 @media(min-width:992px) {

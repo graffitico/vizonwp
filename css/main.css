@@ -196,6 +196,7 @@ p {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
+	color: #fff;
 }
 
 
@@ -263,6 +264,22 @@ div.img {
 	width: auto;
 	height: auto;
 }
+
+/** Background video */
+#bgvid {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/** Classes need to handle the extra <p> elements added the wordpress html editor */
+.flatten-extra-p p {
+	margin: 0;
+}
+.hide-extra-p p {
+	display: none;
+}
+
 
 /** Text below image */
 .text-below-image {
@@ -559,7 +576,7 @@ div.img {
 
 /** Yellow Band CSS */
 .yellow-text-block {
-	padding: 15px 0;
+	padding: 1% 0;
 	position: relative;
 	background-color: #FFD845;
 	text-align: center;
@@ -627,6 +644,12 @@ div.img {
 .round-images-container {
 	background-color: #fff;
 	padding-bottom: 50px;
+}
+.round-images-container img {
+	width: 150px;
+	height: 150px;
+	margin: 40px;
+	display: inline-block;
 }
 
 /* Floating Text Box */
@@ -784,7 +807,7 @@ div.img {
 	background-color: #fff;
 	color: #333;
 	text-align: justify;
-	padding: 30px;
+	padding: 5% 0;
 	position: relative;
 }
 .white-background .row {
@@ -969,7 +992,10 @@ div.img {
 /* Small Devices, Tablets */
 @media(min-width : 768px) and (max-width:991px) {
 
-
+	img.grayscale {
+	    filter: none;
+	    -webkit-filter: grayscale(0%);
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -984,7 +1010,7 @@ div.img {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
 	#pre-header {
 		display: none;
@@ -1092,5 +1118,9 @@ div.img {
 		margin-bottom: 20px;
 	}
 
+	img.grayscale {
+	    filter: none;
+	    -webkit-filter: grayscale(0%);
+	}
 }
 
