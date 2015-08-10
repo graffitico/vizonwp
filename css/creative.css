@@ -250,11 +250,10 @@ aside {
 
 
 .service-box-image-container {
-    padding: 10%;
-    display: block;
     margin: auto;
     border-radius: 100%;
-    width: 66.67%;
+    display: inline-block;
+    padding: 0;
 }
 
 @media(min-width:992px) {

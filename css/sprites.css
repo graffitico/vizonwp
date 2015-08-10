@@ -1,3 +1,4 @@
+
 .convert-boxes, .nodes, .reach-boxes, .sonial-lekhal, .yashish-dahiya, 
 .master-engage, .covert-xp, .data-analytics-reports-custom-insights, .data-from-silod-sources-on-board, .data-analytics-report-custom-insights, 
 .appre-eng, .cross-channel, .facebook-marketing, .mobile-app, .testimonial-box, 
@@ -11,6 +12,20 @@
 .msn, .openx, .pubmatic, .twitter, .yahoo, 
 .yieldone, .vizury-convert, .vizury-engage, .vizury-reach, .adjust, 
 .logo250, .vizury-product-convert, .vizury-product-engage2, .vizury-product-reach, .readmore-convert, 
+
+.convert-boxes, .nodes, .reach-boxes, .sonial-lekhal, .yashish-dahiya,
+.master-engage, .covert-xp, .data-analytics-reports-custom-insights, .data-from-silod-sources-on-board, .data-analytics-report-custom-insights,
+.appre-eng, .cross-channel, .facebook-marketing, .mobile-app, .testimonial-box,
+.data-engage, .tanx, .red-circle, .marketing-engage, .insights-engage,
+.appsflyer, .apsalar, .ascent-capital, .cleartrip, .connect,
+.dafiti, .danmurphys, .ebay, .ethihad, .flipkart,
+.hdfc, .intel-capital, .inventus, .jabong, .netshoes,
+.nokia, .ojas, .policy, .sony, .souq,
+.unbxd, .walmart, .wego, .yintai, .adorika,
+.appnexus, .baidu, .doubleclick, .exchange, .microsoft,
+.msn, .openx, .pubmatic, .twitter, .yahoo,
+.yieldone, .vizury-convert, .vizury-engage, .vizury-reach, .vizury-product-engage2, .vizury-product-convert, .vizury-product-reach, .adjust,
+.logo250, .blue-circle, .green-circle, .red-circle, .readmore-convert,
 .readmore-engage, .readmore-reach
 { max-width: 100%; background-size: 100%; background-image: url('/images/sprite.png'); }
 
@@ -84,7 +99,7 @@
 .readmore-reach { background-position: 0 100%; background-size: 6400%; }
 
 
-/** Images */
+/** Images 
 
 <img class="convert-boxes" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4AQMAAADSHVMAAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAARNJREFUeNrtwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCnAfjlAAH84Y/+AAAAAElFTkSuQmCC">
 <img class="nodes" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAbOAQMAAACGSbgtAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAa5JREFUeNrtwTEBAAAAwqD1T20Hb6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgM8AaEgAAZ9llt4AAAAASUVORK5CYII=">
@@ -152,4 +167,6 @@
 <img class="vizury-product-reach" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAEPAQMAAAA9DBllAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAB5JREFUeNrtwTEBAAAAwqD1T20JT6AAAAAAAACArwEbhgABxVlNrgAAAABJRU5ErkJggg==">
 <img class="readmore-convert" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg==">
 <img class="readmore-engage" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg==">
-/<img class="readmore-reach" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg==">*
+<img class="readmore-reach" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg==">*
+
+*/

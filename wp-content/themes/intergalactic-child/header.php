@@ -57,7 +57,7 @@
 
 		<header id="header" class="clearfix">
 			<div id="logo">
-				<a href="<?php echo home_url(); ?>/" title="<?php echo get_bloginfo( 'name' ); ?>" rel="home"><img src="<?php echo get_site_url() ?>/imgs/logo_full.svg" class="full_logo" alt="<?php echo get_bloginfo( 'name' ) ?>" /></a>
+				<a href="<?php echo home_url(); ?>/" title="<?php echo get_bloginfo( 'name' ); ?>" rel="home"><img src="<?php echo get_site_url() ?>/images/logo_full.svg" class="full_logo" alt="<?php echo get_bloginfo( 'name' ) ?>" /></a>
 			</div><!-- /logo -->
 			<nav id="navigation" class="clearfix">
 				<div class="vizuri_menu_class">

@@ -58,7 +58,7 @@ jQuery(function () {
 	function hideNavigation () {
 		if (navVisible) {
 			$('#header').hide();
-			$('.floating-header').slideUp(300);
+			$('.floating-header').show();
 			navVisible = false;
 		}
 	}
@@ -66,7 +66,7 @@ jQuery(function () {
 	function showNavigation () {
 		if (!navVisible) {
 			$('#header').show();
-			$('.floating-header').slideDown(300);
+			$('.floating-header').hide();
 			navVisible = true;
 		}
 	}
@@ -152,15 +152,6 @@ jQuery(function () {
 		$('.' + toshow).show();
 	});
 
-	//Simulate hover action
-	$('.hoverable-text').on('click touchend', function () {
-		if (!$(this).hasClass('expanded')) {
-			$(this).addClass('expanded')
-		} else {
-			$(this).removeClass('expanded');
-		}
-	});
-
 	if ($(window).width() > 640) {
 		$(window).scroll(function (e) {
 			if ($(window).scrollTop() > 50) {
@@ -196,11 +187,59 @@ jQuery(function () {
       $(this).tab('show')
    	});
 
+    // Hoverable text - For Engage Pages
    	$('.hoverable-text').hover(function () {
+   		$(this).find('.floating-normal-text').finish().hide();
    		$(this).addClass('expanded');
    	}, function () {
+   		$(this).find('.floating-hover-text').finish().hide();
    		$(this).removeClass('expanded');
    	});
+	//Simulate hover action
+	$('.hoverable-text').on('click touchend', function () {
+		if (!$(this).hasClass('expanded')) {
+   			$(this).find('.floating-normal-text').finish().hide();
+			$(this).addClass('expanded')
+		} else {
+   			$(this).find('.floating-hover-text').finish().hide();
+			$(this).removeClass('expanded');
+		}
+	});
+	$(".hoverable-text").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+		if ($(this).hasClass('expanded')) {
+
+			var element = $(this).find('.floating-hover-text');
+			element.fadeIn(250);
+			var width = element.width();
+			var height = element.height();
+			var parentHeight = $(this).height();
+			var parentWidth = $(this).width();
+
+			var left = (parentWidth - width) / 2;
+			var top = (parentHeight - height) / 2;
+
+			element.css({
+				left: left + 'px',
+				top: top + 'px'
+			});
+		} else {
+			var element = $(this).find('.floating-normal-text');
+			element.fadeIn(250);
+			var width = element.width();
+			var height = element.height();
+			var parentHeight = $(this).height();
+			var parentWidth = $(this).width();
+
+			var left = (parentWidth - width) / 2;
+			var top = (parentHeight - height) / 2;
+
+			element.css({
+				left: left + 'px',
+				top: top + 'px'
+			});
+		}
+	});
+
 
    	//$('#myCarousel').carousel({interval: 2000, auto: false});
 
