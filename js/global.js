@@ -10,19 +10,27 @@ jQuery(function () {
 	var tapDiscard = false;
 
 	function showSubNav(subnavName) {
+
 		if (subnavName) {
 			$('#header .subnav-block').hide();
-			$('#header .' + subnavName + '-subnav').show();
+
+			var subnavBlock = $('#header .' + subnavName + '-subnav');
+
+			if (subnavBlock.length) {
+				subnavBlock.fadeIn(200);
+				$('#header .subnav').height(subnavBlock.height());
+				subNavVisible = true;
+			} else {
+				$('#header .subnav').height(0);
+			}
 		}
-		$('#header .subnav').show();
-		subNavVisible = true;
 	}
 
 	function hideSubNav() {
 		subNavTimer = setTimeout(function () {
-			$('#header .subnav').hide();
+			$('#header .subnav').height(0);
 			subNavVisible = false;
-		}, 300);
+		}, 200);
 	}
 
 	function stopSubNavHide() {
@@ -37,10 +45,11 @@ jQuery(function () {
 		}
 		else {
 			if (mouseOnTop) {
-				$('#pre-header').css('background-color', 'rgba(0,0,0,0.5)');
+				$('#pre-header').css('background-color', 'rgba(0,0,0,0.8)');
 				showNavigation();
 			}
 			else if (!subNavVisible) {
+				$('#pre-header').css('background-color', '');
 				hideNavigation();
 			}
 		}
@@ -50,7 +59,6 @@ jQuery(function () {
 		if (navVisible) {
 			$('#header').hide();
 			$('.floating-header').show();
-			$('#pre-header').css('background-color', '');
 			navVisible = false;
 		}
 	}
@@ -62,6 +70,22 @@ jQuery(function () {
 			navVisible = true;
 		}
 	}
+
+	// Header hover functionality
+	$('.vizuri_menu_class li a').hover(function (e) {
+		stopSubNavHide();
+		showSubNav($(e.target).text().toLowerCase());
+	}, function (e) {
+		hideSubNav();
+	});
+
+	//
+	$('#header .subnav').hover(function (e) {
+		stopSubNavHide();
+		showSubNav();
+	}, function () {
+		hideSubNav();
+	});
 
 	// Mobile Navigation
 	$('.navigation-trigger').on('click touchend', function (e) {
@@ -113,7 +137,7 @@ jQuery(function () {
 		if (!searchAttr || searchAttr === "0") {
 			$(this).attr('search-showing', '1');
 
-			$('.search-bar').addClass('searchvisible')/*.show()*/.focus();
+			$('.search-bar')/*.show()*/.addClass('searchvisible').focus();
 		} else {
 			$(this).attr('search-showing', '0');
 
@@ -126,31 +150,6 @@ jQuery(function () {
 		$('.brand-images img').hide();
 		var toshow = $(this).attr('testimonial');
 		$('.' + toshow).show();
-	});
-
-	//Simulate hover action
-	$('.hoverable-text').on('click touchend', function () {
-		if (!$(this).hasClass('expanded')) {
-			$(this).addClass('expanded')
-		} else {
-			$(this).removeClass('expanded');
-		}
-	});
-
-	// Header hover functionality
-	$('.vizuri_menu_class li a').hover(function (e) {
-		stopSubNavHide();
-		showSubNav($(e.target).text().toLowerCase());
-	}, function (e) {
-		hideSubNav();
-	});
-
-	//
-	$('#header .subnav').hover(function (e) {
-		stopSubNavHide();
-		showSubNav();
-	}, function () {
-		hideSubNav();
 	});
 
 	if ($(window).width() > 640) {
@@ -188,11 +187,59 @@ jQuery(function () {
       $(this).tab('show')
    	});
 
+    // Hoverable text - For Engage Pages
    	$('.hoverable-text').hover(function () {
+   		$(this).find('.floating-normal-text').finish().hide();
    		$(this).addClass('expanded');
    	}, function () {
+   		$(this).find('.floating-hover-text').finish().hide();
    		$(this).removeClass('expanded');
    	});
+	//Simulate hover action
+	$('.hoverable-text').on('click touchend', function () {
+		if (!$(this).hasClass('expanded')) {
+   			$(this).find('.floating-normal-text').finish().hide();
+			$(this).addClass('expanded')
+		} else {
+   			$(this).find('.floating-hover-text').finish().hide();
+			$(this).removeClass('expanded');
+		}
+	});
+	$(".hoverable-text").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+		if ($(this).hasClass('expanded')) {
+
+			var element = $(this).find('.floating-hover-text');
+			element.fadeIn(250);
+			var width = element.width();
+			var height = element.height();
+			var parentHeight = $(this).height();
+			var parentWidth = $(this).width();
+
+			var left = (parentWidth - width) / 2;
+			var top = (parentHeight - height) / 2;
+
+			element.css({
+				left: left + 'px',
+				top: top + 'px'
+			});
+		} else {
+			var element = $(this).find('.floating-normal-text');
+			element.fadeIn(250);
+			var width = element.width();
+			var height = element.height();
+			var parentHeight = $(this).height();
+			var parentWidth = $(this).width();
+
+			var left = (parentWidth - width) / 2;
+			var top = (parentHeight - height) / 2;
+
+			element.css({
+				left: left + 'px',
+				top: top + 'px'
+			});
+		}
+	});
+
 
    	//$('#myCarousel').carousel({interval: 2000, auto: false});
 

@@ -248,16 +248,12 @@ aside {
     margin-top: 0;
 }
 
-.service-box {
-    margin: 50px auto 0;
-    max-width: 400px;
-}
+
 .service-box-image-container {
-    padding: 10%;
-    display: block;
     margin: auto;
     border-radius: 100%;
-    width: 66.67%;
+    display: inline-block;
+    padding: 0;
 }
 
 @media(min-width:992px) {
@@ -294,6 +290,7 @@ aside {
 }
 .portfolio-box p {
     margin: 0;
+	text-align: center;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
     position: absolute;
@@ -306,16 +303,15 @@ aside {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .portfolio-box:hover .portfolio-box-caption {
@@ -324,11 +320,11 @@ aside {
 
 @media(min-width:768px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
@@ -348,6 +344,7 @@ aside {
 .btn-default {
   border: none;
   color: #202020;
+  font-size: 18px;
   background-color:#ffd846;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
@@ -454,7 +451,7 @@ fieldset[disabled] .btn-primary.active {
 .btn {
     border: 0;
     border-radius: 5px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: proximab;
     font-weight: 700;
 }
 
