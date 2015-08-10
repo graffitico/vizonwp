@@ -101,8 +101,8 @@ function top_main_shortcode( $atts , $content = null ){
     $random_id =  rand(pow(10, $digits-1), pow(10, $digits)-1);
 
 
-    $shortcode_form = apply_filters('pu_shortcode_form_add_text', null, 'small_header', 'Small header' , 'Make the most of your data and marketing with');
-    $shortcode_form .= apply_filters('pu_shortcode_form_add_text', null, 'big_header', 'Big Header' , 'Vizury’s Performance Marketing Hub' );
+    $shortcode_form = apply_filters('pu_shortcode_form_add_text', null, 'small_header', 'Small header' , $a['small_header']);
+    $shortcode_form .= apply_filters('pu_shortcode_form_add_text', null, 'big_header', 'Big Header' , $a['big_header']  );
     $shortcode_form .= apply_filters('pu_shortcode_form_add_text', null, 'background_url', 'Background Image url' , '' );
 
 	return '<div class="header" data-wp-vizury-top="true" id="container-'.$random_id.'"  >

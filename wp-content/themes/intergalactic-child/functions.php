@@ -18,27 +18,27 @@
 
 // add_action( 'pre_get_posts', 'all_posts_on_case_studies_page' );
 
-// include 'short_codes.php';
+include 'short_codes.php';
 
 
-// add_action( 'wp_ajax_echo_shortcode', 'echo_shortcode_callback' );
+add_action( 'wp_ajax_echo_shortcode', 'echo_shortcode_callback' );
 
-// function echo_shortcode_callback(){
-//   // echo stripslashes($_POST['shortcode']);
-// 	echo  do_shortcode(stripslashes($_POST['shortcode']));
-// 	die();
-// }
-
-
-// add_action('admin_init', 'load_scripts');
+function echo_shortcode_callback(){
+  // echo stripslashes($_POST['shortcode']);
+	echo  do_shortcode(stripslashes($_POST['shortcode']));
+	die();
+}
 
 
-// function load_scripts()
-// {
-// wp_enqueue_script('jquery-ui-dialog');
-// wp_enqueue_style("wp-jquery-ui-dialog");
-// add_editor_style('style.css');
-// }
+add_action('admin_init', 'load_scripts');
+
+
+function load_scripts()
+{
+wp_enqueue_script('jquery-ui-dialog');
+wp_enqueue_style("wp-jquery-ui-dialog");
+add_editor_style('style.css');
+}
 
 
 function theme_enqueue_styles(){

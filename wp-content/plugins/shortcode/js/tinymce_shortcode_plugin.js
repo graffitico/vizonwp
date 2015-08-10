@@ -48,7 +48,7 @@ console.log(s_form);
 
 
                 if ( typeof wp === 'undefined' || ! wp.media ) {
-                        console.log("i m here");
+                       
                         return;
                 }
                 data = window.decodeURIComponent( editor.dom.getAttrib( node, 'data-wp-media' ) );
