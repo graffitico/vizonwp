@@ -361,7 +361,31 @@ a:hover .icon-home_yellowband_arrow {
 	font-size: 20px;
 }
 
+#heart-animation {
+	background: url('/images/heart_home.svg') no-repeat center;
+	background-size: 100px 100px;
+	animation: heart-beating 1.3s ease-in infinite;
+}
+ 
+@keyframes heart-beating{
+    from {transform: scale(0.9);}
+    to {transform: scale (1);}    
+}
 
+.no-animation {
+	animation-name: none !important;
+	position:absolute;
+	text-align: center;
+}
+
+.slow-fade {
+	animation: slow-fading 1s ease-in 1;
+}
+
+@keyframes slow-fading {
+	from {opacity: 0;}
+	to {opacity:1;}
+}
 
 #wrap {
 	width: 100%;
