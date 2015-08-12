@@ -38,9 +38,9 @@ console.log(tinyMCE);
 
 console.log(s_form);
 
-                 jQuery('.shortcode-dialog-form').empty();
-                 jQuery('.shortcode-dialog-form').append(s_form);
-                 jQuery('#shortcode-dialog').dialog();
+                 jQuery('.shortcode-dialog-edit-form').empty();
+                 jQuery('.shortcode-dialog-edit-form').append(s_form);
+                 jQuery('#edit-shortcode-dialog').dialog();
 
                 
 
