@@ -268,7 +268,7 @@ a:hover .icon-home_yellowband_arrow {
 }
 
 .service-box {
-    margin: 2% auto 10%;
+    margin: 2% auto 4%;
     max-width: 400px;
 }
 
@@ -283,7 +283,7 @@ a:hover .icon-home_yellowband_arrow {
 .leading-brands-block {
 	background-color: #C2D667;
 	position: relative;
-	height: 95vh;
+	height: 90vh;
 	text-align: center;
 }
 
@@ -323,7 +323,7 @@ a:hover .icon-home_yellowband_arrow {
 }
 
 .testi-loght {
-		height: 80px;
+		height: 58px;
 	}
 
 /** Feature Section */
@@ -339,6 +339,9 @@ a:hover .icon-home_yellowband_arrow {
 	margin: 10% auto 5%;
 }
 
+.feature-holder {
+	margin-top: 5%;
+}
 
 /** Numbers Section Circles */
 
@@ -361,7 +364,31 @@ a:hover .icon-home_yellowband_arrow {
 	font-size: 20px;
 }
 
+#heart-animation {
+	background: url('/images/heart_home.svg') no-repeat center;
+	background-size: 100px 100px;
+	animation: heart-beating 1.3s ease-in infinite;
+}
+ 
+@keyframes heart-beating{
+    from {transform: scale(0.9);}
+    to {transform: scale (1);}    
+}
 
+.no-animation {
+	animation-name: none !important;
+	position:absolute;
+	text-align: center;
+}
+
+.slow-fade {
+	animation: slow-fading 1s ease-in 1;
+}
+
+@keyframes slow-fading {
+	from {opacity: 0;}
+	to {opacity:1;}
+}
 
 #wrap {
 	width: 100%;
