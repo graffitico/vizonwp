@@ -135,9 +135,9 @@ function top_main_shortcode( $atts , $content = null ){
 // </div>
 // </div>
 // </div>';
+$response =array();
 
-
-return '<div class="header" style="background-image:url('.$a['background_url'].')" data-wp-vizury-top="true" id="container-'.$random_id.'"  >
+$response['html'] = '<div class="header" style="background-image:url('.$a['background_url'].')" data-wp-vizury-top="true"   >
     <div style="display:none" id="form-container-'.$random_id.'" > 
 '.$shortcode_form.'
     </div>
@@ -149,6 +149,10 @@ return '<div class="header" style="background-image:url('.$a['background_url'].'
 </div>
 </div>
 </div>';
+
+$response['rid'] = $random_id;
+
+return json_encode($response);
 
 
 

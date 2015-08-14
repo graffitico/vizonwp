@@ -32,6 +32,7 @@ tinymce.PluginManager.add('wpvizury', function( editor ) {
                 // Check if the `wp.media` API exists.
                rid  =   editor.dom.getAttrib( node, 'data-rid' ) ;
 console.log(tinyMCE);
+                v = editor.dom.getAttrib(editor.dom.select("#container-"+rid ) ,   'data-sc');
 
 
                 s_form = editor.dom.select("#form-container-"+rid)[0]['innerHTML'];
@@ -40,7 +41,46 @@ console.log(s_form);
 
                  jQuery('.shortcode-dialog-edit-form').empty();
                  jQuery('.shortcode-dialog-edit-form').append(s_form);
-                 jQuery('#edit-shortcode-dialog').dialog();
+                 jQuery('#edit-shortcode-dialog').dialog({
+                            width: 700,
+                            resizable: false,
+                            buttons: {
+                                "Edit shortcode": function(){
+                                    var formArray = jQuery('.shortcode-dialog-edit-form').serializeArray();
+
+                                    if(formArray.length > 0)
+                                    {
+                                        content = '[' + v + ' ';
+                                        jQuery(formArray).each(function(i){
+                                            content += jQuery(this)[0].name + '="'+ jQuery(this)[0].value +'" ';
+                                        });
+
+                                        content += '][/'+v+']';
+                                    }
+
+                                    var data = {
+                                        'action': 'echo_shortcode',
+                                        'shortcode': content,
+                                        'request_type': 'edit'      // We pass php values differently!
+                                    };
+
+                                    console.log(content);
+                                    jQuery.post("admin-ajax.php", data, function(resp) {
+                                        response = JSON.parse(resp);
+                                        console.log(response);
+                                            tinyMCE.activeEditor.dom.setHTML(tinyMCE.activeEditor.dom.select("#container-"+rid ), response.html);
+                                             // tinyMCE.activeEditor.selection.setContent( "<div class='main-s-wrapper' ><div class='shortcode-wrap' style='display:none' >"+content+"</div>" + response + "</div>", {format : 'raw'});
+                                              jQuery( "#edit-shortcode-dialog" ).dialog( "close" );
+                                    });
+
+
+                                   
+                                    //tinyMCE.activeEditor.execCommand('mceInsertRawHTML', 0, content);
+                                    // tinyMCE.activeEditor.selection.setContent( content );
+                                   
+                                }
+                            }
+                        });
 
                 
 
