@@ -839,9 +839,9 @@ div.img {
 	margin: auto 5% 5%;
 }
 .round-images-container img {
-	width: 125px;
-	height: 125px;
-	margin: 8%;
+	width: 140px;
+	height: 140px;
+	padding: 15px;
 	display: inline-block;
 	text-align: center;
 }

@@ -129,7 +129,7 @@ jQuery(function () {
 	});
 
 	// Search button click
-	$('.icon-home_header_searchwhite').click(function () {
+	$('.icon-header_searchblue').click(function () {
 
 		//$('.search-bar').slideToggle();
 		var searchAttr = $(this).attr('search-showing');
