@@ -162,7 +162,7 @@
 
 #header .subnav .contact-block {
 	border-width: 0;
-	padding-top: 70px;
+	padding-top: 8%;
 }
 
 #header .subnav .subnav-block p {
@@ -211,14 +211,14 @@
 }
 
 .floating-header {
-	padding: 20px 20px 20px 37px;
+	padding: 18px 20px 20px 45px;
 	display: none;
 }
 
 .floating-header .small-logo {
 	background-image: url(../../../images/logo_v.svg);
-	width: 69px;
-	height: 69px;
+	width: 35px;
+	height: 35px;
 	display: inline-block;
 }
 

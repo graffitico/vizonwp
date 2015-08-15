@@ -153,6 +153,7 @@ p {
 .section-title {
 	margin: 2% auto;
 	text-align: center;
+	position: relative;
 }
 
 .white-3dbox-block {
@@ -188,7 +189,7 @@ p {
 .heading-block {
 	height: 95vh;
 	color: #fff;
-	padding-top: 10%;
+	padding-top: 8%;
 	padding-bottom: 10%;
 	position: relative;
 	background-color: rgba(0,0,0,0.7);
@@ -241,7 +242,7 @@ p {
 	font-size: 20px;
 	text-align: center;
 	display: inline;
-	line-height: 1em;	
+	line-height: 1em;
 }
 
 .yellow-strip-text .icon-home_yellowband_arrow {
@@ -250,10 +251,6 @@ p {
 	margin: 1%;
 }
 
-a:hover .icon-home_yellowband_arrow {
-	color: #fff;
-}
- 
 /** Second frame text*/
 
 .intro-text {
@@ -265,6 +262,16 @@ a:hover .icon-home_yellowband_arrow {
 .intro-text p {
 	font-size: 20px;
 	text-align: center;
+}
+
+.v-intro-text {
+	margin: 5% auto;
+}
+
+.v-intro-text p {
+	font-size: 20px;
+	text-align: justify;
+	margin-top: 5%;
 }
 
 .service-box {
@@ -283,13 +290,34 @@ a:hover .icon-home_yellowband_arrow {
 .leading-brands-block {
 	background-color: #C2D667;
 	position: relative;
-	height: 90vh;
+	height: 100vh;
 	text-align: center;
+	padding: 5%;
 }
 
 .brand-images {
-	height: 70vh;
+	height: 80vh;
 	overflow: hidden;
+	position: relative;
+}
+
+.brand-images-sm {
+	display: none;
+}
+
+.brand-images-sm h2 {
+	color: #fff;
+}
+
+.brand-images-sm p {
+	color: #fff;
+	width: 70%;
+	text-align: justify;
+	display: inline-block;
+}
+
+.brand-images-sm > div {
+	margin: 2%;
 }
 
 .brands-choose {
@@ -297,6 +325,8 @@ a:hover .icon-home_yellowband_arrow {
 	position: absolute;
 	top: 10%;
 	right: 5%;
+	color: #fff;
+	max-width: 25%;
 }
 
 .brands-choose h2{
@@ -304,14 +334,21 @@ a:hover .icon-home_yellowband_arrow {
 	line-height: 0.5em;
 }
 
+.brand-testimonials p {
+	margin-top: 30px;
+	color: #fff;
+}
+
 .brands-list {
 	background-color: #fff;
 	border-radius: 2px;
 	padding: 0 5%;
-	margin-left:-25%;
+	margin-left: -330px;
 	min-width: 400px;
 	position: absolute;
 	display: inline-block;
+	bottom: 0;
+	left: 50%;
 }
 
 .brands-list li {
@@ -339,19 +376,19 @@ a:hover .icon-home_yellowband_arrow {
 	margin: 10% auto 5%;
 }
 
-.feature-holder {
-	margin-top: 5%;
-}
+
 
 /** Numbers Section Circles */
 
 .numbers-section {
-	background: #fff url("/images/bg-move.jpg") repeat 100% 100% fixed;
+	background-image: url("/images/bg-move.jpg");
+	background-position: fixed;
+	background-size: cover;
 	padding: 20% auto;
 }
 
 .circle-holder {
-	margin: 10% auto 5%;
+	margin: 8% auto 5%;
 }
 
 .circle-no {
@@ -366,19 +403,24 @@ a:hover .icon-home_yellowband_arrow {
 
 #heart-animation {
 	background: url('/images/heart_home.svg') no-repeat center;
-	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
 	animation: heart-beating 1.3s ease-in infinite;
 }
- 
+
 @keyframes heart-beating{
     from {transform: scale(0.9);}
-    to {transform: scale (1);}    
+    to {transform: scale (1);}
 }
 
 .no-animation {
 	animation-name: none !important;
-	position:absolute;
+	position: absolute;
 	text-align: center;
+	top: 15px;
+	left: 50%;
+	margin-left: -150px;
 }
 
 .slow-fade {
@@ -388,6 +430,17 @@ a:hover .icon-home_yellowband_arrow {
 @keyframes slow-fading {
 	from {opacity: 0;}
 	to {opacity:1;}
+}
+
+/**Reach Page*/
+
+.reach-nos {
+	height: 60vh;
+	padding: 10% auto;
+}
+
+.circle-holder-reach {
+	margin: 5% auto 5%;
 }
 
 #wrap {
@@ -408,6 +461,9 @@ div.img {
 	position: absolute;
 	left: 0;
 	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 /** Classes need to handle the extra <p> elements added the wordpress html editor */
@@ -673,18 +729,29 @@ div.img {
 	margin: 0% 5% 5%;
 	padding:0px;
 }
+.nav-pills>li>a {
+	padding: 15px 0;
+	margin: 0 15px;
+	border-radius: 0;
+	background-color: transparent !important;
+}
+
+.nav-pills>li>a:hover {
+	box-shadow: inset 0 -3px 0 0 #7b7b7b;
+}
+
 
 .prod-logo {
 		height: 100px;
 		width: 100px;
 	}
- 
+
  .tab-content h4 {
 	 padding-top: 8%;
 	 text-align: justify;
  }
 
- 
+
 
 /** Intro text container */
 .intro-box {
@@ -712,14 +779,19 @@ div.img {
 .yellow-text-block a:hover {
 	color: #333;
 }
->>>>>>> c32abf2dc7d735552fb195bde751f9ac1b404c30
 
 .yellow-text-block a.carousel-control {
 	color: #fff;
 }
 .yellow-text-block a .icon-home_yellowband_arrow {
 	color: inherit;
+	border-radius: 50%;
 }
+.yellow-text-block a:hover .icon-home_yellowband_arrow {
+	color: inherit;
+	background-color: #fff;
+}
+
 .yellow-text-block .btn-default {
 	color: #ffd845;
 	background-color: #202020;
@@ -764,13 +836,40 @@ div.img {
 /* Round Images container */
 .round-images-container {
 	background-color: #fff;
-	padding-bottom: 50px;
+	margin: auto 5% 5%;
 }
 .round-images-container img {
-	width: 150px;
-	height: 150px;
-	margin: 40px;
+	width: 125px;
+	height: 125px;
+	margin: 8%;
 	display: inline-block;
+	text-align: center;
+}
+
+.feature-icon-holder {
+	height: 175px;
+	width: 175px;
+	border: 2px solid;
+	border-radius: 100%;
+	text-align:center;
+	margin-bottom: 10%;
+	display: inline-block;
+}
+
+.feature-holder {
+	margin: 2% auto;
+}
+
+.feature-text {
+	margin: 5%;
+	text-align: justify;
+}
+
+
+/* Read More */
+
+.read-more-block {
+	margin: auto 5%;
 }
 
 /* Floating Text Box */
@@ -958,6 +1057,12 @@ div.img {
 	font-size: 120px;
 	font-weight: bold;
 }
+.xl-font {
+	font-size: 25px;
+}
+.large-font {
+	font-size: 20px;
+}
 
 
 /* Product Page CSS */
@@ -990,20 +1095,20 @@ div.img {
 		margin-top: 20px;
 	}
 
-	
+
 	.yellow-strip-text {
-	font-size: 18px;
-	text-align: center;
-	display: inline-block;
-	line-height: 1.3em;	
+		font-size: 18px;
+		text-align: center;
+		display: inline-block;
+		line-height: 1.3em;
 	}
-	
+
 	.intro-text {
-	font-size: 18px;
-	margin: 5% 5%;
-	text-align: center;
+		font-size: 18px;
+		margin: 5% 5%;
+		text-align: center;
 	}
-	
+
 	.floating-text-box {
 		position: static;
 		background-image: none !important;
@@ -1091,26 +1196,33 @@ div.img {
 		width: auto;
 		height: auto;
 	}
-	.leading-brands-block {
-		display: none;
-	}
 
 	.prod-logo {
 		height: 60px;
 		width: 60px;
 	}
- 
+
 	.nav-pills>li{
-	display: inline-block;
-	float: none;
-	margin: 0% 0% 5%;
+		display: inline-block;
+		float: none;
+		margin: 0% 0% 5%;
 	}
-	
+
 	.tab-content h4 {
 	 text-align: justify;
 	}
- 
-	
+
+	.reach-nos {
+	height: 130vh;
+	padding: 10% auto;
+	}
+
+	.blog-entry-tile {
+	height: 600px;
+	padding: 10px 30px;
+	font-size: 16px;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -1157,77 +1269,48 @@ div.img {
 		height: 80px;
 		width: 80px;
 	}
- 
+
 	.nav-pills>li{
-	display: inline-block;
-	float: none;
-	margin: 0% 1% 5%;
+		display: inline-block;
+		float: none;
+		margin: 0% 1% 5%;
 	}
-	
+
 	.tab-content h4 {
 	 padding-top: 2%;
 	 text-align: justify;
 	}
- 
+
+	.feature-icon-holder {
+	height: 175px;
+	width: 175px;
+	border: 2px solid;
+	border-radius: 100%;
+	text-align:center;
+	margin-bottom: 2%;
+	display: inline-block;
+	}
+
+	.feature-holder {
+	margin: 2% 15%;
+	}
+
+	.blog-entry-tile {
+	height: 450px;
+	padding: 10px 30px;
+	font-size: 16px;
+	}
+
+	.reach-nos {
+	height: 130vh;
+	padding: 10% auto;
+	}
+
  }
 
-/* Small Devices, Tablets */
-@media(min-width : 768px) and (max-width:991px) {
 
-
-	.brands-choose {
-	vertical-align: top;
-	position: absolute;
-	text-align: center;
-	margin: 2% auto;
-	}
-
-	.brands-list {
-	background-color: #fff;
-	border-radius: 2px;
-	padding: 0 5%;
-	margin-left:-35%;
-	min-width: 400px;
-	position: absolute;
-	display: inline-block;
-	}
-
-	.brand-images {
-	height: 60vh;
-	overflow: hidden;
-	}
-	
-	.testi-loght {
-		height: 58px;
-	}
-	
-	.nav-pills>li  {
-	display: inline-block;
-	float: none;
-	margin: 0% 2% 5%;
-	}
-	
-	.tab-content h4 {
-	 padding-top: 5%;
-	 text-align: justify;
-	}
-	
-
-}
-
-/* Medium Devices, Desktops */
-@media(min-width : 992px) and (max-width:1199px) {
-
-
-}
-
-/* Large Devices, Wide Screens */
-@media(min-width : 1200px) {
-
-
-}
-
-@media screen and (max-width: 767px) {
+ /* Anything less than App */
+ @media(max-width: 991px) {
 
 	#pre-header {
 		display: none;
@@ -1320,10 +1403,61 @@ div.img {
 		display: inline-block;
 	}
 
-
 	.tab-pane {
 		height: auto;
 	}
+
+	.leading-brands-block {
+		height: auto;
+	}
+
+	.brands-choose {
+		display: none;
+	}
+
+	.brand-images {
+		display: none;
+	}
+
+	.brand-images-sm {
+		display: block;
+	}
+
+	.testi-loght {
+		height: 58px;
+	}
+
+	.nav-pills>li  {
+		display: inline-block;
+		float: none;
+		margin: 0% 2% 5%;
+	}
+
+	.tab-content h4 {
+	 	padding-top: 5%;
+	 	text-align: justify;
+	}
+ }
+
+/* Small Devices, Tablets */
+@media(min-width : 768px) and (max-width:991px) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media(min-width : 992px) and (max-width:1199px) {
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media(min-width : 1200px) {
+
+
+}
+
+@media screen and (max-width: 767px) {
 
 	#footer ul {
 		text-align: center;

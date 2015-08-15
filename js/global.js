@@ -147,10 +147,19 @@ jQuery(function () {
 
 	// testimonial actions
 	$('.brands-list img').on('mouseover', function () {
-		$('.brand-images img').hide();
+		$('.brand-images > img').hide();
+		$('.brand-testimonials p').hide();
 		var toshow = $(this).attr('testimonial');
 		$('.' + toshow).show();
+		$('.' + toshow + '-text').show();
 	});
+
+	// Show sonia by default.
+	$('.brand-images > img').hide();
+	$('.brand-testimonials p').hide();
+	$('.sonia-v2').show();
+	$('.sonia-v2-text').show();
+
 
 	if ($(window).width() > 640) {
 		$(window).scroll(function (e) {
