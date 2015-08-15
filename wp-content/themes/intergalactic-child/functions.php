@@ -23,6 +23,9 @@ include 'short_codes.php';
 
 add_action( 'wp_ajax_echo_shortcode', 'echo_shortcode_callback' );
 
+// remove_filter( 'the_content', 'wpautop' );
+// remove_filter( 'the_excerpt', 'wpautop' );
+
 function echo_shortcode_callback(){
   // echo stripslashes($_POST['shortcode']);
 	echo  do_shortcode(stripslashes($_POST['shortcode']));
