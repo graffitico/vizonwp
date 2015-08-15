@@ -350,9 +350,6 @@ p {
 	margin: 10% auto 5%;
 }
 
-.feature-holder {
-	margin: 10% auto;
-}
 
 
 /** Numbers Section Circles */
@@ -742,7 +739,6 @@ div.img {
 .yellow-text-block a:hover {
 	color: #333;
 }
->>>>>>> c32abf2dc7d735552fb195bde751f9ac1b404c30
 
 .yellow-text-block a.carousel-control {
 	color: #fff;
@@ -827,7 +823,7 @@ div.img {
 /* Read More */
 
 .read-more-block {
-	padding: auto 5%;
+	margin: auto 5%;
 }
 
 /* Floating Text Box */
@@ -1172,6 +1168,12 @@ div.img {
 	padding: 10% auto;
 	}
 	
+	.blog-entry-tile {
+	height: 600px;
+	padding: 10px 30px;
+	font-size: 16px;
+	}
+	
 }
 
 /* Extra Small Devices, Phones */
@@ -1229,7 +1231,32 @@ div.img {
 	 padding-top: 2%;
 	 text-align: justify;
 	}
+	
+	.feature-icon-holder {
+	height: 175px;
+	width: 175px;
+	border: 2px solid;
+	border-radius: 100%;
+	text-align:center;
+	margin-bottom: 2%;
+	display: inline-block;
+	}
+	
+	.feature-holder {
+	margin: 2% 15%;
+	}
 
+	.blog-entry-tile {
+	height: 450px;
+	padding: 10px 30px;
+	font-size: 16px;
+	}
+
+	.reach-nos {
+	height: 130vh;
+	padding: 10% auto;
+	}
+	
  }
 
 /* Small Devices, Tablets */
