@@ -153,6 +153,7 @@ p {
 .section-title {
 	margin: 2% auto;
 	text-align: center;
+	position: relative;
 }
 
 .white-3dbox-block {
@@ -241,7 +242,7 @@ p {
 	font-size: 20px;
 	text-align: center;
 	display: inline;
-	line-height: 1em;	
+	line-height: 1em;
 }
 
 .yellow-strip-text .icon-home_yellowband_arrow {
@@ -250,10 +251,10 @@ p {
 	margin: 1%;
 }
 
-.yellow-strip-text a:hover {
-	background-color: #fff;
+.icon-home_yellowband_arrow a:hover {
+	color: #fff;
 }
- 
+
 /** Second frame text*/
 
 .intro-text {
@@ -349,6 +350,10 @@ p {
 	margin: 10% auto 5%;
 }
 
+.feature-holder {
+	margin: 10% auto;
+}
+
 
 /** Numbers Section Circles */
 
@@ -358,7 +363,7 @@ p {
 }
 
 .circle-holder {
-	margin: 10% auto 5%;
+	margin: 8% auto 5%;
 }
 
 .circle-no {
@@ -373,19 +378,24 @@ p {
 
 #heart-animation {
 	background: url('/images/heart_home.svg') no-repeat center;
-	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	display: inline-block;
 	animation: heart-beating 1.3s ease-in infinite;
 }
- 
+
 @keyframes heart-beating{
     from {transform: scale(0.9);}
-    to {transform: scale (1);}    
+    to {transform: scale (1);}
 }
 
 .no-animation {
 	animation-name: none !important;
-	position:absolute;
+	position: absolute;
 	text-align: center;
+	top: 15px;
+	left: 50%;
+	margin-left: -150px;
 }
 
 .slow-fade {
@@ -395,6 +405,17 @@ p {
 @keyframes slow-fading {
 	from {opacity: 0;}
 	to {opacity:1;}
+}
+
+/**Reach Page*/
+
+.reach-nos {
+	height: 60vh;
+	padding: 10% auto;
+}
+
+.circle-holder-reach {
+	margin: 5% auto 5%;
 }
 
 #wrap {
@@ -415,6 +436,7 @@ div.img {
 	position: absolute;
 	left: 0;
 	top: 0;
+	width: 100%;
 }
 
 /** Classes need to handle the extra <p> elements added the wordpress html editor */
@@ -685,13 +707,13 @@ div.img {
 		height: 100px;
 		width: 100px;
 	}
- 
+
  .tab-content h4 {
 	 padding-top: 8%;
 	 text-align: justify;
  }
 
- 
+
 
 /** Intro text container */
 .intro-box {
@@ -771,7 +793,7 @@ div.img {
 /* Round Images container */
 .round-images-container {
 	background-color: #fff;
-	padding-bottom: 5%;
+	margin: auto 5% 5%;
 }
 .round-images-container img {
 	width: 125px;
@@ -788,6 +810,7 @@ div.img {
 	border-radius: 100%;
 	text-align:center;
 	margin-bottom: 10%;
+	display: inline-block;
 }
 
 .feature-holder {
@@ -799,6 +822,12 @@ div.img {
 	text-align: justify;
 }
 
+
+/* Read More */
+
+.read-more-block {
+	padding: auto 5%;
+}
 
 /* Floating Text Box */
 .floating-text-box {
@@ -1017,20 +1046,20 @@ div.img {
 		margin-top: 20px;
 	}
 
-	
+
 	.yellow-strip-text {
 	font-size: 18px;
 	text-align: center;
 	display: inline-block;
-	line-height: 1.3em;	
+	line-height: 1.3em;
 	}
-	
+
 	.intro-text {
 	font-size: 18px;
 	margin: 5% 5%;
 	text-align: center;
 	}
-	
+
 	.floating-text-box {
 		position: static;
 		background-image: none !important;
@@ -1126,17 +1155,22 @@ div.img {
 		height: 60px;
 		width: 60px;
 	}
- 
+
 	.nav-pills>li{
 	display: inline-block;
 	float: none;
 	margin: 0% 0% 5%;
 	}
-	
+
 	.tab-content h4 {
 	 text-align: justify;
 	}
- 
+
+	.reach-nos {
+	height: 130vh;
+	padding: 10% auto;
+}
+	
 	
 }
 
@@ -1184,18 +1218,18 @@ div.img {
 		height: 80px;
 		width: 80px;
 	}
- 
+
 	.nav-pills>li{
 	display: inline-block;
 	float: none;
 	margin: 0% 1% 5%;
 	}
-	
+
 	.tab-content h4 {
 	 padding-top: 2%;
 	 text-align: justify;
 	}
- 
+
  }
 
 /* Small Devices, Tablets */
@@ -1223,22 +1257,22 @@ div.img {
 	height: 60vh;
 	overflow: hidden;
 	}
-	
+
 	.testi-loght {
 		height: 58px;
 	}
-	
+
 	.nav-pills>li  {
 	display: inline-block;
 	float: none;
 	margin: 0% 2% 5%;
 	}
-	
+
 	.tab-content h4 {
 	 padding-top: 5%;
 	 text-align: justify;
 	}
-	
+
 
 }
 
