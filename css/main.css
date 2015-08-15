@@ -369,7 +369,6 @@ a:hover .icon-home_yellowband_arrow {
 	background: url('/images/heart_home.svg') no-repeat center;
 	width: 100px;
 	height: 100px;
-	margin-left: 160px;
 	display: inline-block;
 	animation: heart-beating 1.3s ease-in infinite;
 }
