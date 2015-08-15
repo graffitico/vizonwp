@@ -335,7 +335,7 @@ function wp_custom_attachment() {
 function save_custom_meta_data($id) {
  
     /* --- security verification --- */
-    if(!wp_verify_nonce($_POST['wp_custom_attachment_nonce'], plugin_basename(__FILE__))) {
+    if( isset($_POST['wp_custom_attachment_nonce']) && !wp_verify_nonce($_POST['wp_custom_attachment_nonce'], plugin_basename(__FILE__))) {
       return $id;
     } // end if
        
@@ -343,7 +343,7 @@ function save_custom_meta_data($id) {
       return $id;
     } // end if
        
-    if('page' == $_POST['post_type']) {
+    if(isset($_POST['post_type']) &&'page' == $_POST['post_type']) {
       if(!current_user_can('edit_page', $id)) {
         return $id;
       } // end if
