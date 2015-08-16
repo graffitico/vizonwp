@@ -156,6 +156,15 @@ p {
 	position: relative;
 }
 
+.floating-section-title {
+	position: absolute;
+	padding: 1%;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(032, 032, 032, 0.8);
+}
+
 .white-3dbox-block {
 	background-color: #202020;
 }
