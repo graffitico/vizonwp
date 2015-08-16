@@ -1,21 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('/fonts/icomoon.eot?b2w8hw');
-	src:url('/fonts/icomoon.eot?#iefixb2w8hw') format('embedded-opentype'),
-		url('/fonts/icomoon.ttf?b2w8hw') format('truetype'),
-		url('/fonts/icomoon.woff?b2w8hw') format('woff'),
-		url('/fonts/icomoon.svg?b2w8hw#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'glyphicons-halflings-regular';
-	src:url('/fonts/glyphicons-halflings-regular.eot?b2w8hw');
-	src:url('/fonts/glyphicons-halflings-regular.eot?#iefixb2w8hw') format('embedded-opentype'),
-		url('/fonts/glyphicons-halflings-regular.ttf?b2w8hw') format('truetype'),
-		url('/fonts/glyphicons-halflings-regular.woff?b2w8hw') format('woff'),
-		url('/fonts/glyphicons-halflings-regular.svg?b2w8hw#icomoon') format('svg');
+	src:url('/fonts/icomoon.eot?f05wz2');
+	src:url('/fonts/icomoon.eot?#iefixf05wz2') format('embedded-opentype'),
+		url('/fonts/icomoon.ttf?f05wz2') format('truetype'),
+		url('/fonts/icomoon.woff?f05wz2') format('woff'),
+		url('/fonts/icomoon.svg?f05wz2#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -40,158 +29,120 @@
 .icon-contactus_Maplocatorc:before {
 	content: "\e601";
 }
-.icon-contactus_Maplocator:before {
+.icon-contactus_Query:before {
 	content: "\e602";
 }
-.icon-contactus_Query:before {
+.icon-convert_readmore_arrow:before {
 	content: "\e603";
 }
-.icon-convert_readmore_arrow:before {
+.icon-header_langblue:before {
 	content: "\e604";
 }
-.icon-header_contactblue:before {
+.icon-header_searchblue:before {
 	content: "\e605";
 }
-.icon-header_langblue:before {
+.icon-home_footer_FBc:before {
 	content: "\e606";
 }
-.icon-header_searchblue:before {
+.icon-home_footer_linkedinc:before {
 	content: "\e607";
 }
-.icon-home_footer_FBc:before {
+.icon-home_footer_Twitterc:before {
 	content: "\e608";
 }
-.icon-home_footer_FB:before {
+.icon-home_footer_youtubec:before {
 	content: "\e609";
 }
-.icon-home_footer_linkedinc:before {
+.icon-home_header_contactwhite:before {
 	content: "\e60a";
 }
-.icon-home_footer_linkedin:before {
+.icon-home_menuicons__analyticsandreporting:before {
 	content: "\e60b";
 }
-.icon-home_footer_Twitterc:before {
+.icon-home_menuicons__board:before {
 	content: "\e60c";
 }
-.icon-home_footer_Twitter:before {
+.icon-home_menuicons__convertxp:before {
 	content: "\e60d";
 }
-.icon-home_footer_youtubec:before {
+.icon-home_menuicons__crosschannel:before {
 	content: "\e60e";
 }
-.icon-home_footer_youtube:before {
+.icon-home_menuicons__Dataonboarding:before {
 	content: "\e60f";
 }
-.icon-home_header_contactwhite:before {
+.icon-home_menuicons__exclusives:before {
 	content: "\e610";
 }
-.icon-home_header_langwhite:before {
+.icon-home_menuicons__fbmarketing:before {
 	content: "\e611";
 }
-.icon-home_header_searchwhite:before {
+.icon-home_menuicons__founders:before {
 	content: "\e612";
 }
-.icon-home_menuicons__analyticsandreporting:before {
+.icon-home_menuicons__industryreports:before {
 	content: "\e613";
 }
-.icon-home_menuicons__board:before {
+.icon-home_menuicons__insights:before {
 	content: "\e614";
 }
-.icon-home_menuicons__convertxp:before {
+.icon-home_menuicons__investors:before {
 	content: "\e615";
 }
-.icon-home_menuicons__crosschannel:before {
+.icon-home_menuicons__jobopening:before {
 	content: "\e616";
 }
-.icon-home_menuicons__Dataonboarding:before {
+.icon-home_menuicons__leadership:before {
 	content: "\e617";
 }
-.icon-home_menuicons__exclusives:before {
+.icon-home_menuicons__marketingchannel:before {
 	content: "\e618";
 }
-.icon-home_menuicons__fbmarketing:before {
+.icon-home_menuicons__mediacoverage:before {
 	content: "\e619";
 }
-.icon-home_menuicons__founders:before {
+.icon-home_menuicons__ourstory:before {
 	content: "\e61a";
 }
-.icon-home_menuicons__industryreports:before {
+.icon-home_menuicons__successstories:before {
 	content: "\e61b";
 }
-.icon-home_menuicons__insights:before {
+.icon-home_menuicons__values:before {
 	content: "\e61c";
 }
-.icon-home_menuicons__investors:before {
+.icon-home_menuicons__Vizurianspeak:before {
 	content: "\e61d";
 }
-.icon-home_menuicons__jobopening:before {
+.icon-home_menuicons__webmobileapp:before {
 	content: "\e61e";
 }
-.icon-home_menuicons__leadership:before {
+.icon-home_menuicons__whitepaper:before {
 	content: "\e61f";
 }
-.icon-home_menuicons__marketingchannel:before {
+.icon-home_menuicons_apprengage:before {
 	content: "\e620";
 }
-.icon-home_menuicons__mediacoverage:before {
+.icon-home_menuicons_pressroom:before {
 	content: "\e621";
 }
-.icon-home_menuicons__ourstory:before {
+.icon-home_yellowband_arrow:before {
 	content: "\e622";
 }
-.icon-home_menuicons__successstories:before {
+.icon-jobopenings_department:before {
 	content: "\e623";
 }
-.icon-home_menuicons__values:before {
+.icon-jobopenings_experience:before {
 	content: "\e624";
 }
-.icon-home_menuicons__Vizurianspeak:before {
+.icon-jobopenings_locationwhite:before {
 	content: "\e625";
 }
-.icon-home_menuicons__webmobileapp:before {
+.icon-Minus:before {
 	content: "\e626";
 }
-.icon-home_menuicons__whitepaper:before {
+.icon-Plus:before {
 	content: "\e627";
 }
-.icon-home_menuicons_apprengage:before {
-	content: "\e628";
-}
-.icon-home_menuicons_pressroom:before {
-	content: "\e629";
-}
-.icon-home_yellowband_arrowc .path1:before {
-	content: "\e62a";
-	color: rgb(255, 255, 255);
-}
-.icon-home_yellowband_arrowc .path2:before {
-	content: "\e62b";
-	margin-left: -1em;
-	color: rgb(0, 0, 0);
-}
-.icon-home_yellowband_arrowc .path3:before {
-	content: "\e62c";
-	margin-left: -1em;
-	color: rgb(0, 0, 0);
-}
-.icon-home_yellowband_arrow:before {
-	content: "\e62d";
-}
-.icon-jobopenings_department:before {
-	content: "\e62e";
-}
-.icon-jobopenings_experience:before {
-	content: "\e62f";
-}
-.icon-jobopenings_locationwhite:before {
-	content: "\e630";
-}
-.icon-Minus:before {
-	content: "\e631";
-}
-.icon-Plus:before {
-	content: "\e632";
-}
-.icon-story_arrowwhite:before {
-	content: "\e633";
+.icon-three-bars:before {
+	content: "\f05e";
 }

@@ -64,6 +64,7 @@
 }
 .right-press-posts .post-list {
 	padding: 20px 0;
+	padding-top: 0px;
 }
 .right-press-posts .post-item {
 	position: relative;

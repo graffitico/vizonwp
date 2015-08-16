@@ -30,7 +30,7 @@
 			<ul id="header-actions">
 				<li class='has-icon'>
 					<input class='search-bar' type="text" id="search_container" style="" />
-					<span class='header-icon icon-home_header_searchwhite'></span>
+					<span class='header-icon icon-header_searchblue'></span>
 				</li>
 				<li class='has-icon'>
 					<a href='/contactusform'>
