@@ -176,6 +176,12 @@ p {
 	bottom: 4%;
 }
 
+.bottom-right-widget {
+	position: absolute;
+	right: 5px;
+	bottom: 40px;
+}
+
 .bottom-right-convert {
 	position: absolute;
 	bottom: 10px;
