@@ -500,7 +500,8 @@ img.grayscale:hover {
     -webkit-filter: grayscale(0%);
 }
 
-.logos{  padding-bottom: 40px;
+.logos{
+  padding-bottom: 40px;
   padding-top: 40px;
 }
 
@@ -521,7 +522,7 @@ img.grayscale:hover {
 		display:none;
     }
 
-	.wowBack {
+.wowBack {
   background:#222;
   position:relative; overflow:hidden;
 }

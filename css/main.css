@@ -653,26 +653,26 @@ div.img {
 .engage-floating-bg {
 	width: 1000px;
 	height: 475px;
-	background-image: url(/svgs/engage-1.svg);
+	background-image: url(/images/master_engage.svg);
 }
 .engage-data-floating-bg {
 	width: 350px;
 	height: 350px;
 	margin-top: 50px !important;
-	background-image: url(/svgs/data.svg);
+	background-image: url(/images/data_engage.svg);
 }
 .engage-insights-floating-bg {
 	width: 350px;
 	height: 350px;
 	margin-top: 40px !important;
-	background-image: url(/svgs/insights.svg);
+	background-image: url(/images/insights_engage.svg);
 }
 .engage-marketing-floating-bg {
 	width: 350px;
 	height: 350px;
 	margin-top: 50px !important;
 	background-position: center;
-	background-image: url(/svgs/marketing.svg);
+	background-image: url(/images/marketing_engage.svg);
 }
 .engage-data-floating-bg div,
 .engage-insights-floating-bg div,
