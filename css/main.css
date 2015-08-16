@@ -92,18 +92,22 @@ input[type=submit] {
 	text-transform: none;
 }
 
+a:visited,
+a:focus,
+a:active,
 a {
 	color: #202020;
     -webkit-transition: all .1s;
     -moz-transition: all .1s;
     transition: all .1s;
     text-decoration: none;
+    outline: none;
 }
 
-a:active,
 a:hover {
     text-decoration: none;
     color: #7b7b7b;
+    outline: none;
 }
 
 input.yellowbutton {
