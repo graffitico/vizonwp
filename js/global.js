@@ -187,6 +187,15 @@ jQuery(function () {
 		'max-height': ($(window).height() - $('#header').height()) + 'px'
 	});
 
+	$(".tab-accordion-engage h3").click(function(){
+		if (!$(this).next().is(":visible")) {
+			$(".tab-accordion-engage ul ul").slideUp();
+			$(this).next().slideDown();
+		}
+	});
+
+	$(".tab-accordion-engage h3").first().next().show();
+
 
 	// Product Landing page
 
