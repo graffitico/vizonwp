@@ -23,6 +23,11 @@ function press_admin() {
         'display_press_release_meta_box',
         'press_release', 'normal', 'high'
     );
+   add_meta_box( 'press_release_video_meta_box',
+        'Vimeo Video Link',
+        'display_press_release_video_meta_box',
+        'press_release', 'normal', 'high'
+    );
 }
 
 function add_press_release_fields( $press_release_id, $press_release ) {
@@ -31,6 +36,9 @@ function add_press_release_fields( $press_release_id, $press_release ) {
         // Store data in post meta table if present in post data
         if ( isset( $_POST['press_release_media_coverage_date'] ) && $_POST['press_release_media_coverage_date'] != '' ) {
             update_post_meta( $press_release_id, 'media_coverage_date', $_POST['press_release_media_coverage_date'] );
+        }
+         if ( isset( $_POST['press_release_vimeo_link'] ) && $_POST['press_release_vimeo_link'] != '' ) {
+            update_post_meta( $press_release_id, 'vimeo_link', $_POST['press_release_vimeo_link'] );
         }
     
     }
@@ -42,6 +50,7 @@ function add_press_release_fields( $press_release_id, $press_release ) {
 function display_press_release_meta_box( $press_release ) {
     // Retrieve current name of the Director and Movie Rating based on review ID
     $media_coverage_date = esc_html( get_post_meta( $press_release->ID, 'media_coverage_date', true ) );
+    $vimeo_link = esc_html( get_post_meta( $press_release->ID, 'vimeo_link', true ) );
     
     ?>
     <table>
@@ -49,10 +58,29 @@ function display_press_release_meta_box( $press_release ) {
             <td style="width: 100%">Media Coverage Date</td>
             <td><input type="text" name="press_release_media_coverage_date" value="<?php echo $media_coverage_date; ?>" /></td>
         </tr>
+
         
     </table>
     <?php
 }
+function display_press_release_video_meta_box( $press_release ) {
+    // Retrieve current name of the Director and Movie Rating based on review ID
+    $media_coverage_date = esc_html( get_post_meta( $press_release->ID, 'media_coverage_date', true ) );
+    $vimeo_link = esc_html( get_post_meta( $press_release->ID, 'vimeo_link', true ) );
+    
+    ?>
+    <table>
+
+         <tr>
+            <td style="width: 100%">Vimeo Video Link</td>
+            <td><input type="text" name="press_release_vimeo_link" value="<?php echo $vimeo_link; ?>" /></td>
+        </tr>
+        
+    </table>
+    <?php
+}
+
+
 
 
 //create a custom taxonomy name it topics for your posts

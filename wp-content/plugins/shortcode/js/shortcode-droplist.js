@@ -56,11 +56,15 @@
                                     };
 
                                     console.log(content);
-                                    jQuery.post("admin-ajax.php", data, function(response) {
-
+                                    jQuery.post("admin-ajax.php", data, function(resp) {
+                                        response = JSON.parse(resp);
                                         console.log(response);
-                                             tinyMCE.activeEditor.selection.setContent( "<div class='main-s-wrapper' ><div class='shortcode-wrap' style='display:none' >"+content+"</div>" + response + "</div>", {format : 'raw'});
+                                        console.log(editor);
+                                             editor.selection.setContent( "<div class='main-s-wrapper' data-sc='"+v+"''   id='container-"+response.rid+"'    >" + response.html + "</div>", {format : 'raw'});
+                                             // console.log(tinyMCE.activeEditor.getContent({format : 'raw'}));
+                                              
                                               jQuery( "#shortcode-dialog" ).dialog( "close" );
+                                              // editor.render();
                                     });
 
 

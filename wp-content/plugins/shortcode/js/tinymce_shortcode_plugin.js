@@ -31,16 +31,64 @@ tinymce.PluginManager.add('wpvizury', function( editor ) {
                 // }
                 // Check if the `wp.media` API exists.
                rid  =   editor.dom.getAttrib( node, 'data-rid' ) ;
-console.log(tinyMCE);
-
+console.log(rid);
+                v = editor.dom.getAttrib(editor.dom.select("#container-"+rid ) ,   'data-sc');
+console.log(v);
 
                 s_form = editor.dom.select("#form-container-"+rid)[0]['innerHTML'];
 
 console.log(s_form);
 
-                 jQuery('.shortcode-dialog-form').empty();
-                 jQuery('.shortcode-dialog-form').append(s_form);
-                 jQuery('#shortcode-dialog').dialog();
+                 jQuery('.shortcode-dialog-edit-form').empty();
+                 jQuery('.shortcode-dialog-edit-form').append(s_form);
+                 jQuery('#edit-shortcode-dialog').dialog({
+                            width: 700,
+                            resizable: false,
+                            buttons: {
+                                "Delete": function(){
+                                    tinyMCE.activeEditor.dom.remove(tinyMCE.activeEditor.dom.select("#container-"+rid ));
+                                    jQuery( "#edit-shortcode-dialog" ).dialog( "close" );
+                                },
+
+                                "Update": function(){
+                                    var formArray = jQuery('.shortcode-dialog-edit-form').serializeArray();
+
+                                    if(formArray.length > 0)
+                                    {
+                                        content = '[' + v + ' ';
+                                        jQuery(formArray).each(function(i){
+                                            content += jQuery(this)[0].name + '="'+ jQuery(this)[0].value +'" ';
+                                        });
+
+                                        content += '][/'+v+']';
+                                    }
+
+                                    var data = {
+                                        'action': 'echo_shortcode',
+                                        'shortcode': content,
+                                        'request_type': 'edit'      // We pass php values differently!
+                                    };
+
+                                    console.log(content);
+                                    jQuery.post("admin-ajax.php", data, function(resp) {
+                                        response = JSON.parse(resp);
+                                        console.log(response);
+                                            editor.dom.setHTML(tinyMCE.activeEditor.dom.select("#container-"+rid ), response.html);
+                                            editor.dom.setAttrib(editor.dom.select("#container-"+rid ) ,  'id' , "container-"+response.rid);
+                                             // console.log(tinyMCE.activeEditor.getContent({format : 'raw'}));
+                                            
+                                             // tinyMCE.activeEditor.selection.setContent( "<div class='main-s-wrapper' ><div class='shortcode-wrap' style='display:none' >"+content+"</div>" + response + "</div>", {format : 'raw'});
+                                              jQuery( "#edit-shortcode-dialog" ).dialog( "close" );
+                                    });
+
+
+                                   
+                                    //tinyMCE.activeEditor.execCommand('mceInsertRawHTML', 0, content);
+                                    // tinyMCE.activeEditor.selection.setContent( content );
+                                   
+                                }
+                            }
+                        });
 
                 
 
@@ -48,7 +96,7 @@ console.log(s_form);
 
 
                 if ( typeof wp === 'undefined' || ! wp.media ) {
-                        console.log("i m here");
+                       
                         return;
                 }
                 data = window.decodeURIComponent( editor.dom.getAttrib( node, 'data-wp-media' ) );
