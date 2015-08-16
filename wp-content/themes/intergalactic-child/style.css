@@ -9,20 +9,16 @@
 @import url('../../../css/main.css');
 
 .single.single-thumbnail .entry-title {
-	    font-size: 50px !important;
+	font-size: 50px !important;
     position: relative;
     margin: 0 auto;
     padding: .75em 0;
     text-transform: none;
-
-
 }
-
 
 .site-main article .entry-content-wrapper .entry-content p {
 	    font-size: 20px;
 }
-
 
 .site-main article .entry-content-wrapper .entry-content ul li{
 	    font-size: 20px;
