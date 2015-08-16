@@ -92,18 +92,22 @@ input[type=submit] {
 	text-transform: none;
 }
 
+a:visited,
+a:focus,
+a:active,
 a {
 	color: #202020;
     -webkit-transition: all .1s;
     -moz-transition: all .1s;
     transition: all .1s;
     text-decoration: none;
+    outline: none;
 }
 
-a:active,
 a:hover {
     text-decoration: none;
     color: #7b7b7b;
+    outline: none;
 }
 
 input.yellowbutton {
@@ -154,6 +158,15 @@ p {
 	margin: 2% auto;
 	text-align: center;
 	position: relative;
+}
+
+.floating-section-title {
+	position: absolute;
+	padding: 1%;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(032, 032, 032, 0.8);
 }
 
 .white-3dbox-block {
