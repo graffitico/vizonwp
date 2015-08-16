@@ -161,7 +161,7 @@ p {
 }
 
 .blog-entry-tile {
-	height: 520px;
+	height: 475px;
 	padding: 10px 30px;
 	font-size: 16px;
 }
@@ -400,6 +400,12 @@ p {
 .feature-section h3, .numbers-section h3 {
 	font-size: 20px;
 }
+
+.convert-boxes {
+	background-color: #8febc6;
+	background-image: url('/images/convert.svg');
+}
+
 
 #heart-animation {
 	background: url('/images/heart_home.svg') no-repeat center;
@@ -1246,7 +1252,7 @@ div.img {
 	}
 
 	.blog-entry-tile {
-	height: 600px;
+	height: 550px;
 	padding: 10px 30px;
 	font-size: 16px;
 	}
