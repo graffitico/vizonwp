@@ -18,6 +18,9 @@
 
 }
 
+.entry-title{
+	margin-top:110px !important;
+}
 
 .site-main article .entry-content-wrapper .entry-content p {
 	    font-size: 20px;
@@ -26,4 +29,8 @@
 
 .site-main article .entry-content-wrapper .entry-content ul li{
 	    font-size: 20px;
+}
+
+.entry-background {
+	height: 70vh !important;
 }
