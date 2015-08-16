@@ -24,6 +24,13 @@
 	font-style: normal;
 }
 
+.ab-panelCon{
+	position:fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+}
+
 .yellow-text {
 	color: #ffd846;
 }
@@ -83,6 +90,10 @@ background: linear-gradient(to left, #202020, #ffffff) !important;
 }
 
 .ab-section {
+	height: 100vh;
+}
+
+.ab-section-first {
 	height: 100%;
 }
 
@@ -308,7 +319,7 @@ ul.pub-logos img:hover {
 	display:block;
 	margin-left: 2%;
 	margin-right: 2%;
-	opacity: 0.8;
+	opacity: 0.85;
 	padding:20px;
 	text-align: justify;
 }
