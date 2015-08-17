@@ -870,6 +870,8 @@ div.img {
 .round-images-container img {
 	padding: 25px;
 	display: inline-block;
+	width: 150px;
+	height: 150px;
 }
 
 .feature-icon-holder {

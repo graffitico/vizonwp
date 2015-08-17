@@ -10,7 +10,7 @@ get_header(); ?>
     $loop = new WP_Query( $mypost );
     ?>
     	<div class='left-press-posts col-lg-8'>
-    		<h3> PRESS RELEASE </h3>
+    		<h3> Press Release </h3>
 		<div class='post-list'>
     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 <a href='<?php the_permalink(); ?>'>
