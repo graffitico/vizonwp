@@ -23,6 +23,11 @@
    src: url('../fonts/ProximaNova-Bold.otf');
 }
 
+@font-face {
+	font-family: 'proximasb';
+	src: url ('../fonts/ProximaNova-Semibold_0.otf');
+}
+
 /** Overriding Intergalactic CSS */
 
 .single-page .entry-header {
@@ -64,7 +69,7 @@ body {
 }
 
 b, strong {
-	font-family: proximab;
+	font-weight:900;
 }
 
 td {
@@ -81,6 +86,7 @@ h6 {
 	text-transform: none;
 	font-family: proxima;
 	color: #202020;
+	margin: 1%;
 }
 
 h1 {
@@ -300,6 +306,7 @@ p {
 
 .home-vbox {
 	margin: 2% auto;
+	width: 200px;
 }
 
 
@@ -457,6 +464,12 @@ p {
 @keyframes slow-fading {
 	from {opacity: 0;}
 	to {opacity:1;}
+}
+
+/**Clientsorpub*/
+
+.logo-section {
+	margin-bottom: 5%;
 }
 
 /**Reach Page*/
@@ -852,12 +865,8 @@ div.img {
 
 /** Gray Gallery Block */
 .halka-gray-box {
-	background-color: #ccc;
-	padding: 30px 50px;
-}
-.halka-gray-box h2 {
-	margin: 30px auto 50px;
-	text-align: center;
+	background-color: #f8835e;
+	padding-bottom:5%;
 }
 
 
@@ -879,12 +888,12 @@ div.img {
 	border: 2px solid;
 	border-radius: 100%;
 	text-align:center;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 	display: inline-block;
 }
 
 .feature-holder {
-	margin: 2% auto;
+	margin-top: 2%;
 }
 
 .feature-text {
@@ -897,6 +906,10 @@ div.img {
 
 .read-more-block {
 	margin: auto 5% 5%;
+}
+
+.read-more-block h4:hover {
+	color: #7b7b7b
 }
 
 /* Floating Text Box */
@@ -1503,7 +1516,7 @@ div.img {
 @media(min-width : 768px) and (max-width:991px) {
 
 .blog-entry-tile {
-	height: 650px;
+	height: 550px;
 	padding: 10px 30px;
 	font-size: 16px;
 	}
