@@ -55,14 +55,31 @@ span {
 
 
 .bg-grad {
-background: linear-gradient(to left, #202020, #ffffff) !important;
+background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 }
 
 .inv-tab {
-	margin-top: 25%;
-	margin-bottom: 10%;
+	height:100vh;
+	margin: 20% 5%;
 }
 
+.inv-tab tr, .inv-tab td, .inv-tab tbody {
+	border: 0px;
+}
+
+.table-responsive,   {
+	border: 0px;
+}
+
+.inv-logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.inv-logo-holder {
+	display: inline-block;
+	height: 100%;
+}
 
 /*----------Investors Page Ends------------*/
 
