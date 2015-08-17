@@ -10,7 +10,7 @@ get_header(); ?>
     $loop = new WP_Query( $mypost );
     ?>
     	<div class='left-press-posts col-lg-8'>
-    			<h3> Insights</h3>
+    			<div class="post-type-title" >Insights</div>
 		<div class='post-list'>
     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 <a href='<?php the_permalink(); ?>'>
@@ -55,20 +55,20 @@ get_header(); ?>
 		</div>
  -->
 <?php
-	  $mypost = array('showposts'=>1 , 'category_name' => 'case-studies');
+	  $mypost = array('showposts'=>2 , 'category_name' => 'case-studies');
     $loop = new WP_Query( $mypost );
     ?>
 
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 			<div class='post-item'>
-				<div class='post-type'>Case Studies </div>
+				<div class='post-type'><a href="/success-stories/">Case Studies </a></div>
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>
 				</div>
 				<div class='post-date'> <?php echo esc_html( get_post_meta( get_the_ID(), 'media_coverage_date', true ) ); ?></div>
 				<div class='post-title'><?php the_title(); ?></div>
-				<div class='post-author'>- <?php  the_author(); ?> </div>
+				<!-- <div class='post-author'>- <?php // the_author(); ?> </div> -->
 				<div class='post-description'><?php the_excerpt() ?></div>
 				<div class='link-button bottom-right'>
 					
@@ -86,21 +86,21 @@ get_header(); ?>
 
 
 	<?php
-	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'white-paper');
+	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'white-paper' , 'showposts'=>2);
     $loop = new WP_Query( $mypost );
     ?>
 		<div class='post-list'>
 
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 			<div class='post-item'>
-				<div class='post-type'>White Paper</div>
+				<div class='post-type'><a href="/whitepapers">White Paper</a></div>
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>
 				</div>
 				<div class='post-date'> <?php echo esc_html( get_post_meta( get_the_ID(), 'media_coverage_date', true ) ); ?></div>
 				<div class='post-title'><?php the_title(); ?></div>
-				<div class='post-author'>- <?php  the_author(); ?> </div>
+				<!-- <div class='post-author'>- <?php //  the_author(); ?> </div> -->
 				<div class='post-description'><?php the_excerpt() ?></div>
 				<div class='link-button bottom-right'>
 					
@@ -115,20 +115,20 @@ get_header(); ?>
 	<?php endwhile; ?>
 
 	<?php
-	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'industry-report');
+	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'industry-report' , 'showposts'=>2);
     $loop = new WP_Query( $mypost );
     ?>
 
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 			<div class='post-item'>
-				<div class='post-type'>Industry Report</div>
+				<div class='post-type'><a href="/industry-reports">Industry Reports</a></div>
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>
 				</div>
 				<div class='post-date'> <?php echo esc_html( get_post_meta( get_the_ID(), 'media_coverage_date', true ) ); ?></div>
 				<div class='post-title'><?php the_title(); ?></div>
-				<div class='post-author'>- <?php  the_author(); ?> </div>
+				<!-- <div class='post-author'>- <?php //  the_author(); ?> </div> -->
 				<div class='post-description'><?php the_excerpt() ?></div>
 				<div class='link-button bottom-right'>
 					
