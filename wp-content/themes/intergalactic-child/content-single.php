@@ -2,15 +2,7 @@
 /**
  * @package Intergalactic
  */
-get_header(); // Loads the header.php template
 ?>
-
-
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <?php if ( has_post_thumbnail() && 'post' == get_post_type() ) {
 	$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'intergalactic-large' ); ?>
 	<div class="entry-background" style="background-image:url(<?php echo esc_url( $thumbnail[0] ); ?>)">
@@ -27,23 +19,9 @@ get_header(); // Loads the header.php template
 	<div class="entry-content-wrapper">
 		<div class="entry-meta">
 			<?php //intergalactic_posted_on(); ?>
-			
 		</div><!-- .entry-meta -->
 		<div class="entry-content">
-
-
-					<?php 
-
-					if(null !==  get_post_meta( get_the_ID(), 'vimeo_link', true ) && get_post_meta( get_the_ID(), 'vimeo_link', true ) != "" ){
-						$url = get_post_meta( get_the_ID(), 'vimeo_link', true );
-						$arr = explode('/', $url);
-						
-					 ?>
-					
-					<iframe src="//player.vimeo.com/video/<?php echo end($arr) ?>" width="700" height="380"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					<!-- <iframe src="<?php // echo get_post_meta( get_the_ID(), 'vimeo_link', true ) ?>" width="250" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-					<?php }?>
-			<?php the_content() ; ?>
+			<?php the_content(); ?>
 			<?php
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . __( 'Pages:', 'intergalactic' ),
@@ -76,16 +54,3 @@ get_header(); // Loads the header.php template
 		</footer><!-- .entry-footer -->
 	</div><!-- .entry-content-wrapper -->
 </article><!-- #post-## -->
-
-			<?php endwhile; ?>
-
-			<?php intergalactic_paging_nav(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-		<?php get_sidebar(); ?>
-		<?php get_footer(); ?>
-

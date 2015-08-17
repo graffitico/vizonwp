@@ -22,7 +22,7 @@
 		</div><!-- .entry-meta -->
 		<div class="entry-content">
 
-			<br/>
+			
 			<?php the_content(); ?>
 			<?php
 				wp_link_pages( array(

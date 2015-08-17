@@ -423,6 +423,8 @@ p {
 .convert-boxes {
 	background-color: #8febc6;
 	background-image: url('/images/convert.svg');
+	height: 100%;
+	padding: 10% auto;
 }
 
 
@@ -431,7 +433,7 @@ p {
 	width: 100px;
 	height: 100px;
 	display: inline-block;
-	animation: heart-beating 1.3s ease-in infinite;
+	animation: heart-beating 1.5s ease-in infinite;
 }
 
 @keyframes heart-beating{
@@ -462,6 +464,8 @@ p {
 .reach-nos {
 	height: 100%;
 	padding: 10% auto;
+	background-color: #c2d568;
+	background-image: url('/images/reach.svg');
 }
 
 .circle-holder-reach {
