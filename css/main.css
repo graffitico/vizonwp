@@ -81,6 +81,7 @@ h6 {
 	text-transform: none;
 	font-family: proxima;
 	color: #202020;
+	margin: 1% auto;
 }
 
 h1 {
@@ -882,7 +883,7 @@ div.img {
 }
 
 .feature-holder {
-	margin: 2% auto;
+	margin-top: 2%;
 }
 
 .feature-text {
@@ -1501,7 +1502,7 @@ div.img {
 @media(min-width : 768px) and (max-width:991px) {
 
 .blog-entry-tile {
-	height: 650px;
+	height: 550px;
 	padding: 10px 30px;
 	font-size: 16px;
 	}
