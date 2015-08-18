@@ -84,18 +84,18 @@
 				<div class='subnav-block products-subnav'>
 					<div class='reach-block product-subnav-block'>
 						<a href='/products/reach'><h3>Reach</h3></a>
-						<p>Lorem ipsum dolor.</p>
+						<p class='text-center'>Lorem ipsum dolor.</p>
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/products/reach/webreach'>
-									<span class='icon-home_menuicons__convertxp'></span>
-									Web Reach
+									<span class='icon icon-home_menuicons__convertxp'></span>
+									<span>Web Reach</span>
 								</a>
 							</li>
 							<li>
 								<a href='/products/reach/appreengage/'>
-									<span class='icon-home_menuicons_apprengage'></span>
-									App Re-engagement
+									<span class='icon icon-home_menuicons_apprengage'></span>
+									<span>App Re-engagement</span>
 								</a>
 							</li>
 						</ul>
@@ -106,32 +106,32 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/products/convert'>
-									<span class='icon-home_menuicons__convertxp'></span>
-									Convert Go!
+									<span class='icon icon-home_menuicons__convertxp'></span>
+									<span>Convert Go!</span>
 								</a>
 							</li>
 							<li>
 								<a href='/products/convert/appretarget/'>
-									<span class='icon-home_menuicons_apprengage'></span>
-									App Re-targeting
+									<span class='icon icon-home_menuicons_apprengage'></span>
+									<span>App Re-targeting</span>
 								</a>
 							</li>
 							<li>
 								<a href='/products/convert/fbmarketing/'>
-									<span class='icon-home_menuicons__fbmarketing'></span>
-									Facebook Marketing
+									<span class='icon icon-home_menuicons__fbmarketing'></span>
+									<span>Facebook Marketing</span>
 								</a>
 							</li>
 							<li>
 								<a href='/products/convert/crosschannel/'>
-									<span class='icon-home_menuicons__crosschannel'></span>
-									Cross Channel
+									<span class='icon icon-home_menuicons__crosschannel'></span>
+									<span>Cross Channel</span>
 								</a>
 							</li>
 							<li>
 								<a href='/products/convert/mobilewebappengage/'>
-									<span class='icon-home_menuicons__webmobileapp'></span>
-									Mobile Web-App Engagement
+									<span class='icon icon-home_menuicons__webmobileapp'></span>
+									<span>Mobile Web-App Engagement</span>
 								</a>
 							</li>
 						</ul>
@@ -142,20 +142,20 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/products/engage/data-onboarding/'>
-									<span class='icon-home_menuicons__Dataonboarding'></span>
-									Data Onboarding / Aggregation
+									<span class='icon icon-home_menuicons__Dataonboarding'></span>
+									<span>Data Onboarding / Aggregation</span>
 								</a>
 							</li>
 							<li>
 								<a href='/products/engage/insights/'>
-									<span class='icon-home_menuicons__analyticsandreporting'></span>
-									Analytics & Reporting
+									<span class='icon icon-home_menuicons__analyticsandreporting'></span>
+									<span>Analytics & Reporting</span>
 								</a>
 							</li>
 							<li>
 								<a href='/products/engage/marketing/'>
-									<span class='icon-home_menuicons__marketingchannel'></span>
-									Marketing Channels & Optimization
+									<span class='icon icon-home_menuicons__marketingchannel'></span>
+									<span>Marketing Channels & Optimization</span>
 								</a>
 							</li>
 						</ul>
@@ -171,14 +171,14 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/story'>
-									<span class='icon-home_menuicons__ourstory'></span>
-									Story
+									<span class='icon icon-home_menuicons__ourstory'></span>
+									<span>Story</span>
 								</a>
 							</li>
 							<li>
 								<a href='/values'>
-									<span class='icon-home_menuicons__values'></span>
-									Values
+									<span class='icon icon-home_menuicons__values'></span>
+									<span>Values</span>
 								</a>
 							</li>
 						</ul>
@@ -188,20 +188,20 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/founders'>
-									<span class='icon-home_menuicons__founders'></span>
-									Founders
+									<span class='icon icon-home_menuicons__founders'></span>
+									<span>Founders</span>
 								</a>
 							</li>
 							<li>
 								<a href='/board'>
-									<span class='icon-home_menuicons__board'></span>
-									Board
+									<span class='icon icon-home_menuicons__board'></span>
+									<span>Board</span>
 								</a>
 							</li>
 							<li>
 								<a href='/investors'>
-									<span class='icon-home_menuicons__investors'></span>
-									Investors
+									<span class='icon icon-home_menuicons__investors'></span>
+									<span>Investors</span>
 								</a>
 							</li>
 						</ul>
@@ -211,14 +211,14 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/lifeatvizury'>
-									<span class='icon-home_menuicons__Vizurianspeak'></span>
-									Life @ Vizury
+									<span class='icon icon-home_menuicons__Vizurianspeak'></span>
+									<span>Life @ Vizury</span>
 								</a>
 							</li>
 							<li>
 								<a href='/jobopenings'>
-									<span class='icon-home_menuicons__jobopening'></span>
-									Job Openings
+									<span class='icon icon-home_menuicons__jobopening'></span>
+									<span>Job Openings</span>
 								</a>
 							</li>
 						</ul>
@@ -228,14 +228,14 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/press-release'>
-									<span class='icon-home_menuicons_pressroom'></span>
-									Press Release
+									<span class='icon icon-home_menuicons_pressroom'></span>
+									<span>Press Release</span>
 								</a>
 							</li>
 							<li>
 								<a href='/media-coverage'>
-									<span class='icon-home_menuicons__mediacoverage'></span>
-									Media Coverage
+									<span class='icon icon-home_menuicons__mediacoverage'></span>
+									<span>Media Coverage</span>
 								</a>
 							</li>
 							<!--
@@ -251,8 +251,8 @@
 					<div class='company-block resources-subnav-block'>
 						<a href='/whitepapers'>
 							<h3>
-								<span class='icon-home_menuicons__whitepaper'></span>
-								Whitepaper
+								<span class='icon icon-home_menuicons__whitepaper'></span>
+								<span>Whitepaper</span>
 							</h3>
 						</a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -260,8 +260,8 @@
 					<div class='convert-block resources-subnav-block'>
 						<a href='/success-stories'>
 							<h3>
-								<span class='icon-home_menuicons__successstories'></span>
-								Case Studies
+								<span class='icon icon-home_menuicons__successstories'></span>
+								<span>Case Studies</span>
 							</h3>
 						</a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -269,8 +269,8 @@
 					<div class='engage-block resources-subnav-block'>
 						<a href='/industry-reports'>
 							<h3>
-								<span class="icon-home_menuicons__industryreports"></span>
-								Industry Reports
+								<span class="icon icon-home_menuicons__industryreports"></span>
+								<span>Industry Reports</span>
 							</h3>
 						</a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -278,8 +278,8 @@
 					<div class='no-border press-block resources-subnav-block'>
 						<a href='/insights'>
 							<h3>
-								<span class="icon-home_menuicons__insights"></span>
-								Insights
+								<span class="icon icon-home_menuicons__insights"></span>
+								<span>Insights</span>
 							</h3>
 						</a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
