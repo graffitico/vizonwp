@@ -1,0 +1,63 @@
+@import url('./creative.css');
+@import url('./icons.css');
+@import url('./header.css');
+
+@font-face {
+   font-family: 'proxima';
+   src: url('../fonts/ProximaNova-Light_0.otf');
+}
+
+@font-face {
+   font-family: 'proximab';
+   src: url('../fonts/ProximaNova-Bold.otf');
+}
+
+* {
+	box-sizing: border-box;
+	color: inherit;
+	font-family: proxima;
+}
+
+b, strong {
+	font-family: proximab;
+}
+
+/** Buttons CSS */
+.btn-default {
+	background: #ffd846;
+	color: #202020;
+	padding: 10px 40px;
+	border-radius: 2px;
+	font-size: 18px;
+}
+.btn-default:hover {
+	background: #202020;
+	color: #fff;
+}
+
+
+/** Overriding CSS */
+#navigation {
+	top: 10px;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+#navigation .sf-menu > li > a {
+	color: #fff;
+}
+
+.inner-post {
+	font-family: proxima;
+}
+
+
