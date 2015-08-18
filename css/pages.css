@@ -59,27 +59,14 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 }
 
 .inv-tab {
-	height:100vh;
 	margin: 20% 5%;
 }
 
-.inv-tab tr, .inv-tab td, .inv-tab tbody {
+.inv-tab p {
 	border: 0px;
+	margin: auto 10%;
 }
 
-.table-responsive,   {
-	border: 0px;
-}
-
-.inv-logo {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-.inv-logo-holder {
-	display: inline-block;
-	height: 100%;
-}
 
 /*----------Investors Page Ends------------*/
 
@@ -94,7 +81,7 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 	background:#202020;
 	color: #fff;
 	display:block;
-	opacity: 0.8;
+	opacity: 0.9;
 	padding:20px;
 	text-align: justify;
 }
@@ -348,8 +335,8 @@ ul.pub-logos img:hover {
 /*-----Investors Section Begins-----*/
 
 .inv-tab {
-	margin-top: 10%;
-	margin-bottom: 5%;
+	margin-top: 35%;
+	margin-bottom: 10%;
 }
 
 /*------Investors Section Ends--------*/
