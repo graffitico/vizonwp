@@ -213,7 +213,7 @@ p {
 /** Heading Text */
 
 .heading-block {
-	height: 95vh;
+	height: 90vh;
 	color: #fff;
 	padding-top: 8%;
 	padding-bottom: 10%;
@@ -223,7 +223,7 @@ p {
 .heading-text {
 	margin-top: 10%;
 	margin-bottom: 10%;
-}
+	}
 
 .heading-block .heading-text h2 {
 	font-size: 60px;
@@ -231,7 +231,8 @@ p {
 	color: #fff;
 	text-align: center;
 	font-weight: normal;
-}
+	}
+	
 .heading-block .heading-text h4 {
 	font-weight: normal;
 	font-size: 35px;
@@ -260,12 +261,10 @@ p {
 /** Yellow Strip */
 
 .yellow-text-block {
-	padding: 10px;
 	position: relative;
 	background-color: #FFD845;
 	text-align: center !important;
 	color: #222;
-	font-size: 20px;
 }
 
 .yellow-strip-text {
@@ -276,7 +275,7 @@ p {
 }
 
 .yellow-strip-text .icon-home_yellowband_arrow {
-	font-size: 25px;
+	font-size: 35px;
 	color: #222;
 	margin: 1%;
 }
@@ -285,7 +284,7 @@ p {
 
 .intro-text {
 	font-size: 20px;
-	margin: 5% 10%;
+	margin: 5% 15%;
 	text-align: center;
 }
 
@@ -300,7 +299,7 @@ p {
 
 .v-intro-text p {
 	font-size: 20px;
-	text-align: justify;
+	text-align: center;
 	margin-top: 5%;
 }
 
@@ -342,8 +341,8 @@ p {
 
 .brand-images-sm p {
 	color: #fff;
-	width: 70%;
-	text-align: justify;
+	width: 80%;
+	text-align: center;
 	display: inline-block;
 }
 
@@ -371,7 +370,7 @@ p {
 	background-color: #fff;
 	border-radius: 2px;
 	padding: 0 5%;
-	margin-left: -330px;
+	margin-left: -45%;
 	min-width: 400px;
 	position: absolute;
 	display: inline-block;
@@ -389,6 +388,7 @@ p {
 
 .testi-loght {
 		height: 58px;
+		margin: auto 2%;
 	}
 
 /** Feature Section */
@@ -397,11 +397,15 @@ p {
 	margin: 0% auto 5%;
 }
 
+.feature-section h3 {
+	font-weight: normal;
+}
+
 .home-feature-icon {
 	height: 125px;
 	width: 125px;
 	text-align: center;
-	margin: 10% auto 5%;
+	margin: 10% auto;
 }
 
 
@@ -412,17 +416,17 @@ p {
 	background-image: url("/images/bg-move.jpg");
 	background-position: fixed;
 	background-size: cover;
-	padding: 20% auto;
 }
 
 .circle-holder {
-	margin: 8% auto 5%;
+	margin: 5% auto 5%;
 }
 
 .circle-no {
 	height: 180px;
 	width: 180px;
 	text-align: center;
+	margin-bottom: 10%;
 }
 
 .feature-section h3, .numbers-section h3 {
@@ -464,7 +468,7 @@ p {
 }
 
 @keyframes slow-fading {
-	from {opacity: 0;}
+	from {opacity:0;}
 	to {opacity:1;}
 }
 
@@ -521,7 +525,7 @@ div.img {
 
 /** Text below image */
 .text-below-image {
-	text-align: justify;
+	text-align: center;
 	padding: 10px 10px;
 	margin-bottom: 20px;
 }
@@ -804,7 +808,6 @@ div.img {
 
 /** Yellow Band CSS */
 .yellow-text-block {
-	padding: 1% 0;
 	position: relative;
 	background-color: #FFD845;
 	text-align: center;
@@ -1162,23 +1165,27 @@ div.img {
 		font-size: 40px;
 		font-weight: 700;
 		line-height: 100%;
-		margin-top: 1px;
-		margin-bottom: 1px;
 	}
 
 	.heading-block .heading-text h4 {
 		font-weight: 150;
 		font-size: 20px;
 		line-height: 120%;
-		margin-top: 20px;
 	}
-
 
 	.yellow-strip-text {
 		font-size: 18px;
 		text-align: center;
 		display: inline-block;
 		line-height: 1.3em;
+		font-weight: normal;
+		padding: 1% 3%;
+	}
+	
+	.yellow-strip-text .icon-home_yellowband_arrow {
+	font-size: 20px;
+	color: #222;	
+	margin: 1% 2%;
 	}
 
 	.intro-text {
@@ -1187,6 +1194,46 @@ div.img {
 		text-align: center;
 	}
 
+	.home-vbox {
+	margin: 10% auto 0;
+	width: 200px;
+	}
+
+	.sonia-v2-small-text {
+		margin: 10% 0%;
+	}
+	
+	.leading-brands-block {
+	background-color: #C2D667;
+	position: relative;
+	height: 100vh;
+	text-align: center;
+	padding: 5% 0%;
+	}
+	
+	.feature-section h2 {
+		font-weight:normal;
+		font-size: 22px;
+		text-align: center;
+	}
+	
+	.no-animation {
+	animation-name: none !important;
+	position: absolute;
+	text-align: center;
+	top: 30%;
+	left: 63%;
+	margin-left: -150px;
+	}
+	
+	.home-feature-icon {
+	height: 125px;
+	width: 125px;
+	text-align: center;
+	margin: 10% auto 5%;
+	}
+
+	
 	.floating-text-box {
 		position: static;
 		background-image: none !important;
@@ -1375,7 +1422,21 @@ div.img {
 	font-size: 16px;
 	}
 
-
+	.no-animation {
+	animation-name: none !important;
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	left: 50%;
+	margin-left: -150px;
+	}
+	
+	.brand-images-sm p {
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	}
+	
  }
 
 
@@ -1493,10 +1554,6 @@ div.img {
 		display: block;
 	}
 
-	.testi-loght {
-		height: 58px;
-	}
-
 	.nav-pills>li  {
 		display: inline-block;
 		float: none;
@@ -1528,6 +1585,28 @@ div.img {
 	height: 550px;
 	padding: 10px 30px;
 	font-size: 16px;
+	}
+
+	.brand-images-sm p {
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	}
+	
+	.yellow-text-block {
+	position: relative;
+	background-color: #FFD845;
+	text-align: center !important;
+	color: #222;
+	padding-top: 2%;
+	}
+	
+	.heading-block .heading-text h2 {
+	font-size: 60px;
+	line-height: 120%;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
 	}
 
 }
