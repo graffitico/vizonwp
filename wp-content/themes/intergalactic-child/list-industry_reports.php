@@ -10,7 +10,7 @@ get_header(); ?>
     $loop = new WP_Query( $mypost );
     ?>
     	<div class='left-press-posts col-lg-8'>
-    		<h3> Industry Reports</h3>
+    		<div class="post-type-title" >Industry Reports</div>
 		<div class='post-list'>
     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 <a href='<?php the_permalink(); ?>'>
@@ -43,13 +43,13 @@ get_header(); ?>
 	<div class='post-list'>
 
 	<?php
-	  $mypost = array('showposts'=>1 , 'category_name' => 'case-studies'  );
+	  $mypost = array('showposts'=>2 , 'category_name' => 'case-studies'  );
     $loop = new WP_Query( $mypost );
     ?>
 
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 			<div class='post-item'>
-				<div class='post-type'>Case Studies </div>
+				<div class='post-type'><a href="/success-stories/">Case Studies</a></div>
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>
@@ -73,14 +73,14 @@ get_header(); ?>
 
 
 			<?php
-	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'white-paper', 'showposts'=>1 );
+	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'white-paper', 'showposts'=>2 );
     $loop = new WP_Query( $mypost );
     ?>
 	
 
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 			<div class='post-item'>
-				<div class='post-type'>White Paper</div>
+				<div class='post-type'><a href="/whitepapers">White Paper</a></div>
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>
@@ -102,13 +102,13 @@ get_header(); ?>
 	<?php endwhile; ?>
 
 	<?php
-	  $mypost = array('showposts'=>1 , 'category_name' => 'insights'  );
+	  $mypost = array('showposts'=>2 , 'category_name' => 'insights'  );
     $loop = new WP_Query( $mypost );
     ?>
 
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 			<div class='post-item'>
-				<div class='post-type'>Case Studies </div>
+				<div class='post-type'><a href="/insights">Insights </a></div>
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>

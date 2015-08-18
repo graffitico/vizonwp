@@ -10,7 +10,7 @@ get_header(); ?>
     $loop = new WP_Query( $mypost );
     ?>
     	<div class='left-press-posts col-lg-8'>
-    			<h3> Media Release</h3>
+    			<div class="post-type-title" >Media Release</div>
 		<div class='post-list'>
     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 <a href='<?php the_permalink(); ?>'>
@@ -39,7 +39,7 @@ get_header(); ?>
 		</div> -->
 
 			<?php
-	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'press-release' , 'showposts'=>1);
+	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'press-release' , 'showposts'=>2);
     $loop = new WP_Query( $mypost );
     ?>
 		<div class='post-list'>
@@ -47,7 +47,7 @@ get_header(); ?>
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 			
 			<div class='post-item'>
-				<div class='post-type'>Press Release</div>
+				<div class='post-type'><a href="/press-release">Press Release</a></div>
 				 <a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>
