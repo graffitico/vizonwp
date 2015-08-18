@@ -70,9 +70,6 @@ body {
 	color: inherit;
 }
 
-b, strong {
-	font-family: 'proximasb';
-}
 
 td {
 	border-width: 0;
@@ -87,9 +84,11 @@ h5,
 h6 {
 	text-transform: none;
 	font-family: proxima;
+	font-weight: bold;
 	color: #202020;
 	margin: 1%;
 }
+
 
 h1 {
 	font-size: ;
@@ -149,7 +148,7 @@ input.yellowbutton {
 /** TEXTCSS */
 
 p {
-	text-align: justify;
+	text-align:left;
 	font-size: 16px;
 	margin: 1%;
 }
@@ -225,21 +224,25 @@ p {
 	margin-top: 10%;
 	margin-bottom: 10%;
 }
+
 .heading-block .heading-text h2 {
 	font-size: 60px;
-	font-weight: 700;
-	line-height: 120%;
+	line-height: 100%;
 	color: #fff;
 	text-align: center;
+	font-weight: normal;
 }
 .heading-block .heading-text h4 {
-	font-weight: 150;
+	font-weight: normal;
 	font-size: 35px;
-	line-height: 150%;
+	line-height: 100%;
 	color: #fff;
 	text-align: center;
 }
 
+.home-bg {
+	height: 100vh;
+}
 
 /** Buttons CSS */
 .btn-default {
@@ -344,9 +347,6 @@ p {
 	display: inline-block;
 }
 
-.brand-images-sm > div {
-	margin: 2%;
-}
 
 .brands-choose {
 	vertical-align: top;
@@ -359,7 +359,7 @@ p {
 
 .brands-choose h2{
 	color: #fff;
-	line-height: 0.5em;
+	line-height: 1em;
 }
 
 .brand-testimonials p {
@@ -790,8 +790,9 @@ div.img {
 	}
 
  .tab-content h4 {
-	 padding-top: 8%;
+	 padding-top: 10%;
 	 text-align: justify;
+	 font-weight:normal;	 
  }
 
 
@@ -864,6 +865,11 @@ div.img {
 .yellow-text-block .vertical-middle {
 	display: inline-block;
 	margin-top: 48px;
+}
+
+.yellow-band-logo {
+	margin-top: 1%;
+	text-align:right;
 }
 
 /** Gray Gallery Block */
