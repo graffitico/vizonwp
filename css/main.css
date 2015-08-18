@@ -232,7 +232,7 @@ p {
 	text-align: center;
 	font-weight: normal;
 	}
-	
+
 .heading-block .heading-text h4 {
 	font-weight: normal;
 	font-size: 35px;
@@ -849,6 +849,7 @@ div.img {
 }
 .yellow-text-block .inline-content p {
 	display: inline-block;
+	vertical-align: middle;
 	margin: 1%;
 }
 .yellow-text-block .big-white-number {
@@ -864,6 +865,9 @@ div.img {
 	color: #fff;
 	margin: 24px auto;
 	line-height: 1em
+}
+.yellow-text-block .white-text-more-button {
+	vertical-align: middle;
 }
 .yellow-text-block .vertical-middle {
 	display: inline-block;
@@ -984,8 +988,8 @@ div.img {
 	height: 320px;
 }
 .xbigcircle.expanded {
-	width: 320px;
-	height: 320px;
+	width: 400px;
+	height: 400px;
 }
 .hoverable-text .plus-icon,
 .hoverable-text .minus-icon {
@@ -993,11 +997,12 @@ div.img {
 	bottom: 10px;
 	left: 50%;
 	margin-left: -10px;
-	border: 1px solid #fff;
+	background-image: url(/images/categ-plus.svg);
+	/*border: 1px solid #fff;
 	padding: 3px;
 	font-size: 16px;
 	line-height: 8px;
-	border-radius: 50%;
+	border-radius: 50%;*/
 }
 .hoverable-text .plus-icon,
 .hoverable-text.activate .minus-icon,
@@ -1013,8 +1018,9 @@ div.img {
 	text-align: center;
 	position: absolute;
 	color: #fff;
-	text-align: justify;
+	text-align: center;
 	display: none;
+	font-size: 18px;
 	width: 80%;
 }
 .hoverable-text .floating-normal-text {
@@ -1022,6 +1028,11 @@ div.img {
 	vertical-align: middle;
 	color: #fff;
 	position: absolute;
+	white-space: nowrap;
+}
+.hoverable-text .floating-normal-text h4 {
+	font-size: 20px;
+	font-weight: normal;
 }
 .floating-text-element-xsmall,
 .floating-text-element-small,
@@ -1139,7 +1150,7 @@ div.img {
 	font-weight: bold;
 }
 .xl-font {
-	font-size: 25px;
+	font-size: 35px;
 }
 .large-font {
 	font-size: 20px;
@@ -1181,10 +1192,10 @@ div.img {
 		font-weight: normal;
 		padding: 1% 3%;
 	}
-	
+
 	.yellow-strip-text .icon-home_yellowband_arrow {
 	font-size: 20px;
-	color: #222;	
+	color: #222;
 	margin: 1% 2%;
 	}
 
@@ -1202,38 +1213,41 @@ div.img {
 	.sonia-v2-small-text {
 		margin: 10% 0%;
 	}
-	
+
 	.leading-brands-block {
-	background-color: #C2D667;
-	position: relative;
-	height: 100vh;
-	text-align: center;
-	padding: 5% 0%;
+		background-color: #C2D667;
+		position: relative;
+		height: 100vh;
+		text-align: center;
+		padding: 5% 0%;
 	}
-	
+
 	.feature-section h2 {
 		font-weight:normal;
 		font-size: 22px;
 		text-align: center;
 	}
-	
+
 	.no-animation {
-	animation-name: none !important;
-	position: absolute;
-	text-align: center;
-	top: 30%;
-	left: 63%;
-	margin-left: -150px;
-	}
-	
-	.home-feature-icon {
-	height: 125px;
-	width: 125px;
-	text-align: center;
-	margin: 10% auto 5%;
+		animation-name: none !important;
+		position: absolute;
+		text-align: center;
+		top: 30%;
+		left: 63%;
+		margin-left: -150px;
 	}
 
-	
+	.home-feature-icon {
+		height: 125px;
+		width: 125px;
+		text-align: center;
+		margin: 10% auto 5%;
+	}
+
+	.floating-section-title {
+		left: 0;
+		top: 10px;
+	}
 	.floating-text-box {
 		position: static;
 		background-image: none !important;
@@ -1245,20 +1259,19 @@ div.img {
 		border-radius: 25%;
 	}
 	.bigcircle,
+	.xbigcircle,
 	.smallcircle {
 		display: block;
 		position: relative;
 		left: 0 !important;
 		top: 0 !important;
-		margin: 0 !important;
-		padding: 10px;
-		margin: 20px;
-		font-size: 12px;
+		margin: 20px !important;
 	    -webkit-transition-duration: .5s;
 	    -webkit-transition-property: all;
 	    -webkit-transition-timing-function: ease-in-out;
 	}
 	.bigcircle.expanded,
+	.xbigcircle.expanded,
 	.smallcircle.expanded {
 	    transform: none;
 	}
@@ -1320,6 +1333,8 @@ div.img {
 	.engage-hover-magic-text {
 		width: auto;
 		height: auto;
+	    padding-top: 60px;
+    	position: relative;
 	}
 
 	.prod-logo {
@@ -1430,13 +1445,13 @@ div.img {
 	left: 50%;
 	margin-left: -150px;
 	}
-	
+
 	.brand-images-sm p {
 	color: #fff;
 	text-align: center;
 	display: inline-block;
 	}
-	
+
  }
 
 
@@ -1522,6 +1537,7 @@ div.img {
 		width: 20px;
 		height: 20px;
 		text-align: center;
+		font-weight: bold;
 	}
 
 	.mobilenavigation li > .minus-icon,
@@ -1592,7 +1608,7 @@ div.img {
 	text-align: center;
 	display: inline-block;
 	}
-	
+
 	.yellow-text-block {
 	position: relative;
 	background-color: #FFD845;
@@ -1600,7 +1616,7 @@ div.img {
 	color: #222;
 	padding-top: 2%;
 	}
-	
+
 	.heading-block .heading-text h2 {
 	font-size: 60px;
 	line-height: 120%;

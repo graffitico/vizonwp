@@ -45,7 +45,7 @@ jQuery(function () {
 		}
 		else {
 			if (mouseOnTop) {
-				$('#pre-header').css('background-color', 'rgba(0,0,0,0.8)');
+				$('#pre-header').css('background-color', 'rgba(032,032,032,0.95)');
 				showNavigation();
 			}
 			else if (!subNavVisible) {

@@ -34,7 +34,7 @@
 				</li>
 				<li class='has-icon'>
 					<a href='/contactusform'>
-						<span class='header-icon icon-home_header_contactwhite'></span>
+						<span class='header-icon icon-header_contactblue'></span>
 					</a>
 				</li>
 				<li>
@@ -88,13 +88,13 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/products/reach/webreach'>
-									<span class='icon icon-home_menuicons__convertxp'></span>
+									<span class='icon icon-home_menuicons__webreach'></span>
 									<span>Web Reach</span>
 								</a>
 							</li>
 							<li>
 								<a href='/products/reach/appreengage/'>
-									<span class='icon icon-home_menuicons_apprengage'></span>
+									<span class='icon icon-home_menuicons__appre_reach'></span>
 									<span>App Re-engagement</span>
 								</a>
 							</li>
