@@ -15,17 +15,19 @@
 
 @font-face {
    font-family: 'proxima';
-   src: url('../fonts/ProximaNova-Light_0.otf');
+   src: url('/fonts/ProximaNova-Light_0.otf');
 }
 
-@font-face {
-   font-family: 'proximab';
-   src: url('../fonts/ProximaNova-Bold.otf');
-}
+/*@font-face {
+   font-family: 'proxima';
+   font-weight: bold;
+   src: url('/fonts/ProximaNova-Bold.otf');
+}*/
 
 @font-face {
-	font-family: 'proximasb';
-	src: url ('../fonts/ProximaNova-Semibold_0.otf');
+	font-family: 'proxima';
+	font-weight: bold;
+	src: url('/fonts/ProximaNova-Semibold_0.otf');
 }
 
 /** Overriding Intergalactic CSS */
@@ -69,7 +71,7 @@ body {
 }
 
 b, strong {
-	font-weight:900;
+	font-family: 'proximasb';
 }
 
 td {
@@ -850,7 +852,8 @@ div.img {
 	color: #fff;
 	margin: 0 auto;
 	line-height: 1em;
-	font-family: 'proximab';
+	font-family: 'proxima';
+	font-weight: bold;
 }
 .yellow-text-block .big-white-number-text {
 	font-size: 44px;
