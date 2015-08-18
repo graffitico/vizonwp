@@ -28,7 +28,7 @@
 	margin: 0;
 }
 #pre-header input[type=button] {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(032,032,032,0.95);
 	color: #fff;
 	border-width: 0;
 	border-radius: 4px;
@@ -44,14 +44,14 @@
 #pre-header > ul > li.has-icon {
 	padding: 3px 5px;
 	border-radius: 16px;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(032,032,032,0.95);
 }
 #pre-header > ul > li .header-icon {
 	font-size: 16px;
 }
 #pre-header > ul > li button,
 #pre-header > ul > li button:hover {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(032,032,032,0.95);
 	color: #fff;
 	border-width: 0;
 	padding: 2px 10px;
@@ -61,7 +61,7 @@
 	font-family: 'proxima';
 }
 #pre-header .dropdown-menu {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(032,032,032,0.95);
 	min-width: 60px;
 }
 #pre-header .dropdown-menu > li > a {
@@ -94,9 +94,13 @@
 	width: 100%;
 	padding: 10px;
 	margin: 0;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(032,032,032,0.7);
 	background-image: none;
 	position: relative;
+}
+
+#header:hover {
+	background-color: rgba(032,032,032,0.95);
 }
 
 #mobilenavigation-container {
@@ -128,7 +132,7 @@
 	height: 0;
 	overflow: hidden;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(032,032,032,0.95);
 	position: absolute;
 	top: 68px;
 	left: 0;
@@ -141,7 +145,7 @@
 #header .subnav .about-subnav-block,
 #header .subnav .product-subnav-block {
 	width: 24.5%;
-	border-right: 1px solid #bebebe;
+	border-right: 1px solid #fff;
 	display: inline-block;
 	text-align: center;
 	margin: 20px 0 !important;
