@@ -144,7 +144,6 @@
 	border-right: 1px solid #bebebe;
 	display: inline-block;
 	text-align: center;
-	padding: 0 20px 10px;
 	margin: 20px 0 !important;
 	vertical-align: top;
 }
@@ -194,21 +193,25 @@
 }
 #header .subnav .subnav-list-control li a {
 	color: #fff;
-	padding: 10px 5px;
-	display: inline-block;
+	padding: 10px 5px 10px 70px;
+	display: block;
+	position: relative;
 }
 #header .subnav .subnav-list-control li a:hover {
 	color: #ffd846;
 }
+
 #header .subnav .subnav-list-control span {
-	width: 45px;
 	color: inherit;
 	display: inline-block;
-	font-size: 30px;
 }
 
-#header .subnav .subnav-list-control a {
-	color: inherit;
+#header .subnav .subnav-list-control span.icon {
+	width: 45px;
+	font-size: 30px;
+	position: absolute;
+	left: 25px;
+	top: 8px;
 }
 
 .floating-header {
