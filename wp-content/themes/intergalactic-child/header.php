@@ -34,7 +34,7 @@
 				</li>
 				<li class='has-icon'>
 					<a href='/contactusform'>
-						<span class='header-icon icon-header_contactblue'></span>
+						<span class='header-icon icon-home_header_contactwhite'></span>
 					</a>
 				</li>
 				<li>
@@ -161,7 +161,7 @@
 						</ul>
 					</div>
 					<div class='contact-block product-subnav-block'>
-						<p class='text-center'>For personalised solutions,</p>
+						<p class='text-center' style='margin-top: 0'>For personalised solutions,</p>
 						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' />
 					</div>
 				</div>
@@ -190,12 +190,6 @@
 								<a href='/founders'>
 									<span class='icon icon-home_menuicons__founders'></span>
 									<span>Founders</span>
-								</a>
-							</li>
-							<li>
-								<a href='/board'>
-									<span class='icon icon-home_menuicons__board'></span>
-									<span>Board</span>
 								</a>
 							</li>
 							<li>
@@ -251,44 +245,40 @@
 					<div class='company-block resources-subnav-block'>
 						<a href='/whitepapers'>
 							<h3>
-								<span class='icon icon-home_menuicons__whitepaper'></span>
 								<span>Whitepaper</span>
 							</h3>
 						</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p class='text-center'>Perception breakdown</p>
 					</div>
 					<div class='convert-block resources-subnav-block'>
 						<a href='/success-stories'>
 							<h3>
-								<span class='icon icon-home_menuicons__successstories'></span>
 								<span>Case Studies</span>
 							</h3>
 						</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p class='text-center'>Classic use cases for each of our offering.</p>
 					</div>
 					<div class='engage-block resources-subnav-block'>
 						<a href='/industry-reports'>
 							<h3>
-								<span class="icon icon-home_menuicons__industryreports"></span>
 								<span>Industry Reports</span>
 							</h3>
 						</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p class='text-center'>Numbers and more</p>
 					</div>
 					<div class='no-border press-block resources-subnav-block'>
 						<a href='/insights'>
 							<h3>
-								<span class="icon icon-home_menuicons__insights"></span>
 								<span>Insights</span>
 							</h3>
 						</a>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p class='text-center'>All that you need to know about big data marketing</p>
 					</div>
 				</div>
 			</div>
 			<nav id="mobilenavigation-container">
 				<div class='navigation-trigger'>
-					<span class='icon-jobopenings_department'></span>
+					<span class='icon-three-bars'></span>
 				</div>
 				<ul class="mobilenavigation">
 					<li class='has-submenu'>

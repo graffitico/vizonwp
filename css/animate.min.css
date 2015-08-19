@@ -271,17 +271,6 @@ Copyright (c) 2015 Daniel Eden
 	display:none;
 }
 
-.modal {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    z-index: 1050;
-    width: 560px;
-    margin-left: -280px;
-    background-color: #FFF;
-    background-clip: padding-box;
-}
-
 #video-modal .close {
     position: absolute;
     right: -40px;

@@ -13,6 +13,8 @@
 @import url('./icons.css');
 @import url('./header.css');
 
+@import url('./jquery.fancybox.css');
+
 @font-face {
    font-family: 'proxima';
    src: url('/fonts/ProximaNova-Light_0.otf');
@@ -178,6 +180,25 @@ p {
 	color: #202020;
 	text-align: center;
 	/*background-color: rgba(032, 032, 032, 0.8);*/
+}
+
+.fancybox-play {
+	position: absolute;
+	left: 50%;
+	margin-left: -10px;
+	bottom: 200px;
+	color: #fff;
+	font-size: 24px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	padding-left: 14px;
+	padding-top: 8px;
+}
+.fancybox-play:hover {
+	color: #fff;
 }
 
 .white-3dbox-block {
@@ -800,35 +821,42 @@ div.img {
 	text-align: center;
 }
 .tab-pane {
-	height: 200px;
-	padding: 5%;
+	height: 100px;
+	padding: 1.5%;
 }
 .nav-pills>li{
 	display: inline-block;
 	float: none;
-	margin: 0% 5% 5%;
 	padding:0px;
+	width: 33%;
+	text-align: center;
 }
 .nav-pills>li>a {
 	padding: 15px 0;
-	margin: 0 15px;
+	margin: 0 35px;
 	border-radius: 0;
+	display: inline-block;
 	background-color: transparent !important;
 }
 
-.nav-pills>li>a:hover {
+.nav-pills>li.active>a {
 	box-shadow: inset 0 -3px 0 0 #7b7b7b;
 }
 
 
 .prod-logo {
-		height: 100px;
-		width: 100px;
-	}
+	height: 100px;
+	width: 100px;
+}
+
+.horizontal-logo {
+	display: inline-block;
+	height: 70px;
+}
 
  .tab-content h4 {
-	 padding-top: 10%;
-	 text-align: justify;
+	 padding-top: 1%;
+	 text-align: center;
 	 font-weight:normal;
  }
 
@@ -1119,6 +1147,20 @@ div.img {
 	font-size: 54px;
 }
 
+/* Modal Override */
+.modal .modal-open {
+	text-align: center;
+}
+.modal-dialog {
+	width: auto;
+	display: inline-block;
+	text-align: left;
+	margin: 100px auto;
+}
+.modal-dialog input {
+	display: block;
+}
+
 /* Engage Accordion */
 .heading-block .tab-accordion-engage {
 	margin: 100px 20px;
@@ -1130,9 +1172,13 @@ div.img {
 .tab-accordion-engage h3 {
 	margin: 0;
 	padding: 8px 15px;
-	background-color: #aaa;
-	border: 1px solid #000;
-	color: #000;
+	background-color: #7b7b7b;
+	color: #fff;
+}
+.tab-accordion-engage > ul {
+	border: 1px solid #fff;
+	border-radius: 4px;
+	overflow: hidden;
 }
 .tab-accordion-engage ul {
 	list-style: none;
@@ -1146,6 +1192,7 @@ div.img {
 	padding: 5px 15px;
 	color: #000;
 	background-color: #fff;
+	font-size: 16px;
 }
 
 /* Black Bg Heading */
