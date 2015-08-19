@@ -290,6 +290,26 @@ jQuery(function () {
 	});
 
 
+	$('.flexslider .slides > li').hover(function () {
+   		$(this).find('.normal-text').finish().hide();
+   		$(this).find('.hover-text').delay(400).fadeIn(500);
+   		//$(this).addClass('expanded');
+	}, function () {
+   		$(this).find('.hover-text').finish().hide();
+   		$(this).find('.normal-text').delay(400).fadeIn(500);
+	});
+
+	// $(".flexslider .slides > li").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+
+	// 	if ($(this).hasClass('active')) {
+	// 		var element = $(this).find('.hover-text');
+	// 		element.fadeIn(500);
+	// 	} else {
+	// 		var element = $(this).find('.normal-text');
+	// 		element.fadeIn(500);
+	// 	}
+	// });
+
    	//$('#myCarousel').carousel({interval: 2000, auto: false});
 
    	if ($(window).width() < 640) {

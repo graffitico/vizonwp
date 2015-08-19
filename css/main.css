@@ -549,12 +549,10 @@ div.img {
 .flexslider .slides > li p {
 	margin: 0;
 }
-.flexslider .slides > li .normal-text,
-.flexslider .slides > li:hover .hover-text {
+.flexslider .slides > li .normal-text {
 	display: block;
 }
-.flexslider .slides > li .hover-text,
-.flexslider .slides > li:hover .normal-text {
+.flexslider .slides > li .hover-text {
 	display: none;
 }
 .flexslider .flex-caption {
@@ -576,8 +574,10 @@ div.img {
 	font-size: 20px;
 	line-height: 1.5em;
 }
-.flexslider .flex-caption h4 {
-	font-size: 24px;
+.flexslider h4.flex-caption {
+	font-size: 20px;
+	font-weight: normal;
+	color: #fff;
 }
 
 
