@@ -278,7 +278,7 @@
 			</div>
 			<nav id="mobilenavigation-container">
 				<div class='navigation-trigger'>
-					<span class='icon-jobopenings_department'></span>
+					<span class='icon-three-bars'></span>
 				</div>
 				<ul class="mobilenavigation">
 					<li class='has-submenu'>

@@ -291,6 +291,23 @@ jQuery(function () {
 		}
 	});
 
+	$('.viz-founders').click(function (e) {
+
+		$('html, body').animate({
+	        scrollTop: $("#viz-founders").offset().top
+	    }, 1200);
+
+	    e.preventDefault();
+	});
+
+
+	// Video player
+	$('.fancybox-play').fancybox({
+		type: 'iframe',
+		fitToView: false,
+		height: 450,
+		width: 800
+	});
 
 	$('.flexslider .slides > li').hover(function () {
    		$(this).find('.normal-text').finish().hide();
