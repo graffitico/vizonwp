@@ -786,35 +786,42 @@ div.img {
 	text-align: center;
 }
 .tab-pane {
-	height: 200px;
-	padding: 5%;
+	height: 100px;
+	padding: 1.5%;
 }
 .nav-pills>li{
 	display: inline-block;
 	float: none;
-	margin: 0% 5% 5%;
 	padding:0px;
+	width: 33%;
+	text-align: center;
 }
 .nav-pills>li>a {
 	padding: 15px 0;
-	margin: 0 15px;
+	margin: 0 35px;
 	border-radius: 0;
+	display: inline-block;
 	background-color: transparent !important;
 }
 
-.nav-pills>li>a:hover {
+.nav-pills>li.active>a {
 	box-shadow: inset 0 -3px 0 0 #7b7b7b;
 }
 
 
 .prod-logo {
-		height: 100px;
-		width: 100px;
-	}
+	height: 100px;
+	width: 100px;
+}
+
+.horizontal-logo {
+	display: inline-block;
+	height: 70px;
+}
 
  .tab-content h4 {
-	 padding-top: 10%;
-	 text-align: justify;
+	 padding-top: 1%;
+	 text-align: center;
 	 font-weight:normal;
  }
 
