@@ -9,10 +9,7 @@
 ?>
 <div class="clear"></div><!-- /clear any floats -->
 </div><!-- /main-content -->
-	
-</div><!-- /wrap -->
-
-<div id="footer-wrap">
+	<div id="footer-wrap">
 		<footer id="footer">
 		    <aside class="bg-dark">
 		        <div class="container text-center">
@@ -105,6 +102,7 @@
 		    </aside>
     	</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->
+</div><!-- /wrap -->
 
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/jquery.fittext.js"></script>
