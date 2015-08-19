@@ -201,6 +201,17 @@ jQuery(function () {
 
 	//Script for the Products on Hover Text change effect
     $('#pills-first a').on('mouseover touchend', function (e) {
+
+		if (tapDiscard) {
+			return;
+		}
+
+		tapDiscard = true;
+		setTimeout(function () {
+			tapDiscard = false;
+		}, 500);
+
+
       e.preventDefault()
       $(this).tab('show')
    	});
@@ -209,12 +220,30 @@ jQuery(function () {
    	$('.hoverable-text').hover(function () {
    		$(this).find('.floating-normal-text').finish().hide();
    		$(this).addClass('expanded');
+
+   		$(this).siblings().addClass('faded');
+   		$('.hover-magic-text-bg').css({opacity: 0.1});
    	}, function () {
    		$(this).find('.floating-hover-text').finish().hide();
    		$(this).removeClass('expanded');
+
+   		$(this).siblings().removeClass('faded');
+   		$('.hover-magic-text-bg').css({opacity: ''});
    	});
+
 	//Simulate hover action
 	$('.hoverable-text').on('click touchend', function () {
+
+		if (tapDiscard) {
+			return;
+		}
+
+		tapDiscard = true;
+		setTimeout(function () {
+			tapDiscard = false;
+		}, 500);
+
+
 		if (!$(this).hasClass('expanded')) {
    			$(this).find('.floating-normal-text').finish().hide();
 			$(this).addClass('expanded')
@@ -227,7 +256,7 @@ jQuery(function () {
 		if ($(this).hasClass('expanded')) {
 
 			var element = $(this).find('.floating-hover-text');
-			element.fadeIn(250);
+			element.fadeIn(500);
 			var width = element.width();
 			var height = element.height();
 			var parentHeight = $(this).height();
@@ -241,8 +270,10 @@ jQuery(function () {
 				top: top + 'px'
 			});
 		} else {
+
 			var element = $(this).find('.floating-normal-text');
-			element.fadeIn(250);
+			element.fadeIn(500);
+
 			var width = element.width();
 			var height = element.height();
 			var parentHeight = $(this).height();
