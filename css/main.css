@@ -153,6 +153,10 @@ p {
 	margin: 1%;
 }
 
+.normal-font {
+	font-weight: normal;
+}
+
 .white-text {
 	color: #fff;
 }
@@ -178,6 +182,10 @@ p {
 
 .white-3dbox-block {
 	background-color: #202020;
+}
+
+.box-touch {
+	margin-bottom: -75px;
 }
 
 .blog-entry-tile {
@@ -360,6 +368,10 @@ p {
 	max-width: 25%;
 }
 
+.aunty-uncle {
+	height: 450px;
+}
+
 .brands-choose h2{
 	color: #fff;
 	line-height: 1em;
@@ -374,7 +386,7 @@ p {
 	background-color: #fff;
 	border-radius: 2px;
 	padding: 0 5%;
-	margin-left: -45%;
+	margin-left: -25%;
 	min-width: 400px;
 	position: absolute;
 	display: inline-block;
@@ -486,10 +498,12 @@ p {
 /**Reach Page*/
 
 .reach-nos {
-	height: 100%;
-	padding: 10% auto;
 	background-color: #c2d568;
 	background-image: url('/images/reach.svg');
+}
+
+.reach-nos .circle-no {
+	margin-bottom: 5%;
 }
 
 .circle-holder-reach {
@@ -911,20 +925,19 @@ div.img {
 	margin: auto 5%;
 }
 .round-images-container img {
-	padding: 25px;
 	display: inline-block;
 	width: 150px;
 	height: 150px;
 }
 
 .feature-icon-holder {
-	height: 175px;
-	width: 175px;
-	border: 2px solid;
-	border-radius: 100%;
 	text-align:center;
 	margin-bottom: 5%;
 	display: inline-block;
+}
+
+.feature-size {
+	width: 175px;
 }
 
 .feature-holder {
