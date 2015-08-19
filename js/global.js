@@ -46,10 +46,12 @@ jQuery(function () {
 		else {
 			if (mouseOnTop) {
 				$('#pre-header').css('background-color', 'rgba(032,032,032,0.95)');
+				$('#header').css('background-color', 'rgba(032,032,032,0.95)');
 				showNavigation();
 			}
 			else if (!subNavVisible) {
 				$('#pre-header').css('background-color', '');
+				$('#header').css('background-color', '');
 				hideNavigation();
 			}
 		}
@@ -174,7 +176,7 @@ jQuery(function () {
 	}
 
 	$(window).mousemove(function (e) {
-		if (e.clientY > 150) {
+		if (e.clientY > 120) {
 			mouseOnTop = false;
 		}
 		else {

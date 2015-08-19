@@ -153,15 +153,15 @@
 }
 
 .about-subnav-block {
-	height: 220px;
+	height: 150px;
 }
 
 .product-subnav-block {
-	height: 380px;
+	height: 340px;
 }
 
 .resources-subnav-block {
-	height: auto;
+	height: 100px;
 }
 
 #header .subnav .contact-block {
@@ -171,7 +171,8 @@
 
 #header .subnav .subnav-block p {
 	color: #bebebe;
-	text-align: justify;
+	text-align: center;
+	margin-top: 10px;
 }
 #header .subnav .subnav-block p.text-center {
 	text-align: center;
