@@ -21,17 +21,17 @@ get_header(); ?>
 
 					<?php 
 
-					// if(null !==  get_post_meta( get_the_ID(), 'vimeo_link', true ) && get_post_meta( get_the_ID(), 'vimeo_link', true ) != "" ){
-					// 	$url = get_post_meta( get_the_ID(), 'vimeo_link', true );
-					// 	$arr = explode('/', $url);
+					if(null !==  get_post_meta( get_the_ID(), 'vimeo_link', true ) && get_post_meta( get_the_ID(), 'vimeo_link', true ) != "" ){
+						$url = get_post_meta( get_the_ID(), 'vimeo_link', true );
+						$arr = explode('/', $url);
 						
 					 ?>
 					
-					<!-- <iframe src="//player.vimeo.com/video/<?php // echo end($arr) ?>" width="500" height="280"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+					<iframe src="//player.vimeo.com/video/<?php  echo end($arr) ?>" width="500" height="280"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					<!-- <iframe src="<?php // echo get_post_meta( get_the_ID(), 'vimeo_link', true ) ?>" width="250" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-					<?php //}else{ ?>
+					<?php }else{ ?>
 					<?php the_post_thumbnail() ?>
-					<?php //} ?>
+					<?php } ?>
 					
 				</div>
 				<div class='link-button bottom-right'>
@@ -58,10 +58,10 @@ get_header(); ?>
 	  $mypost = array('showposts'=>2 , 'category_name' => 'case-studies');
     $loop = new WP_Query( $mypost );
     ?>
-
-			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 			<div class='post-item'>
 				<div class='post-type'><a href="/success-stories/">Case Studies </a></div>
+			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>
@@ -76,13 +76,13 @@ get_header(); ?>
 					
 				</div>
 				</a>
-			</div>
+		
 
 	
 
 	<?php endwhile; ?>
 
-
+	</div>
 
 
 	<?php
@@ -90,10 +90,10 @@ get_header(); ?>
     $loop = new WP_Query( $mypost );
     ?>
 		<div class='post-list'>
-
-			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 			<div class='post-item'>
 				<div class='post-type'><a href="/whitepapers">White Paper</a></div>
+			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>
@@ -108,20 +108,21 @@ get_header(); ?>
 					
 				</div>
 				</a>
-			</div>
+			
 
 	
 
 	<?php endwhile; ?>
-
+</div>
 	<?php
 	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'industry-report' , 'showposts'=>2);
     $loop = new WP_Query( $mypost );
     ?>
+    			<div class='post-item'>
+				<div class='post-type'><a href="/industry-reports">Industry Reports</a></div>
 
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
-			<div class='post-item'>
-				<div class='post-type'><a href="/industry-reports">Industry Reports</a></div>
+
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail() ?>
@@ -136,13 +137,13 @@ get_header(); ?>
 					
 				</div>
 				</a>
-			</div>
+			
 
 	
 
 	<?php endwhile; ?>
 
-
+</div>
 
 
 

@@ -3,18 +3,9 @@
  * @package Intergalactic
  */
 ?>
-<?php if ( has_post_thumbnail() && 'post' == get_post_type() ) {
-	$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'intergalactic-large' ); ?>
-	<div class="entry-background" style="background-image:url(<?php echo esc_url( $thumbnail[0] ); ?>)">
-		<header class="entry-header">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		</header><!-- .entry-header -->
-	</div>
-<?php } else { ?>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-<?php } ?>
+
+
+<div style="height:120px" ></div>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content-wrapper">
 		<div class="entry-meta">

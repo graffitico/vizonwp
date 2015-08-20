@@ -77,26 +77,9 @@ get_header(); // Loads the header.php template
 	</div><!-- .entry-content-wrapper -->
 </article><!-- #post-## -->
 
-
-			<div class="entry-footer-wrapper">
-				<?php if ( '' != get_the_author_meta( 'description' ) ) : ?>
-					<div class="entry-author">
-						<div class="author-avatar">
-							<?php echo get_avatar( get_the_author_meta( 'ID' ), '140' ); ?>
-						</div>
-						<div class="author-bio">
-							<?php echo get_the_author_meta( 'description' ); ?>
-						</div>
-					</div>
-				<?php endif; ?>
-			
-				<?php intergalactic_post_nav(); ?>
-			</div><!-- .entry-footer-wrapper -->
-
-
 			<?php endwhile; ?>
 
-			<?php // intergalactic_paging_nav(); ?>
+			<?php intergalactic_paging_nav(); ?>
 
 		<?php else : ?>
 
