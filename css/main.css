@@ -113,6 +113,10 @@ a {
     outline: none;
 }
 
+.heading-block a:focus {
+	transition: none;
+}
+
 a:hover {
     text-decoration: none;
     color: #7b7b7b;
@@ -153,6 +157,7 @@ p {
 	text-align:center;
 	font-size: 16px;
 	margin: 1%;
+	font-weight: normal;
 }
 
 .normal-font {
@@ -186,7 +191,6 @@ p {
 	position: absolute;
 	left: 50%;
 	margin-left: -10px;
-	bottom: 200px;
 	color: #fff;
 	font-size: 24px;
 	border: 2px solid #fff;
@@ -197,9 +201,7 @@ p {
 	padding-left: 14px;
 	padding-top: 8px;
 }
-.fancybox-play:hover {
-	color: #fff;
-}
+
 
 .white-3dbox-block {
 	background-color: #202020;
@@ -237,8 +239,8 @@ p {
 
 .bottom-right-convert {
 	position: absolute;
-	bottom: 10px;
-	right: 10px;
+	bottom: 5%;
+	right: 3%;
 	color: #fff;
 }
 
@@ -253,12 +255,25 @@ p {
 	position: relative;
 	background-color: rgba(0,0,0,0.7);
 }
+
+.engage-heading-block {
+	background: #f8835e;
+	height: 90vh;
+	padding-top: 8%;
+	padding-bottom: 10%;
+	position: relative;
+}
+
+.engage-heading-block .heading-text {
+	margin: 0% auto 5%;
+}
+
 .heading-text {
 	margin-top: 10%;
 	margin-bottom: 10%;
 	}
 
-.heading-block .heading-text h2 {
+.heading-text h2 {
 	font-size: 60px;
 	line-height: 100%;
 	color: #fff;
@@ -266,7 +281,7 @@ p {
 	font-weight: normal;
 	}
 
-.heading-block .heading-text h4 {
+.heading-text h4 {
 	font-weight: normal;
 	font-size: 35px;
 	line-height: 100%;
@@ -389,8 +404,14 @@ p {
 	max-width: 25%;
 }
 
-.aunty-uncle {
+.aunty {
 	height: 450px;
+	margin-left:5%;
+}
+
+.uncle {
+	height: 450px;
+	margin-left:-10%;
 }
 
 .brands-choose h2{
@@ -780,6 +801,22 @@ div.img {
 	position: relative;
 	height: 1000px;
 }
+
+.engage-header-icon {
+	height: 250px;
+	margin-top: 3%;
+}
+
+.engage-dim {
+	height: 800px;
+}
+
+.engage-dim-section {
+	margin: 10% auto 0;
+	background: #202020;
+	padding: 5% auto;
+}
+
 .hover-magic-text-bg {
 	opacity: 0.6;
 	height: 1000px;
@@ -803,13 +840,13 @@ div.img {
 
 
 
-/*-- .heading-block .heading-text h2 {
+/*-- .heading-text h2 {
 	margin: 0;
 	font-size: 60px;
 	line-height: 72px;
 	font-family: proximab
 }
-.heading-block .heading-text h4 {
+.heading-text h4 {
 	margin: 5px 0;
 	font-size: 36px;
 	line-height: 36px;
@@ -913,6 +950,7 @@ div.img {
 	vertical-align: middle;
 	margin: 1%;
 }
+
 .yellow-text-block .big-white-number {
 	font-size: 120px;
 	color: #fff;
@@ -1260,22 +1298,24 @@ div.img {
 @media(max-width: 479px) {
 
 	.heading-text {
-		margin-top: 60%;
+		margin-top: 50%;
 		margin-bottom: 10%;
 	}
 
-	.heading-block .heading-text h2 {
-		font-size: 40px;
-		font-weight: 700;
-		line-height: 100%;
+	 .heading-text h2 {
+		font-size: 30px;
+		line-height: 120%;
 	}
 
-	.heading-block .heading-text h4 {
-		font-weight: 150;
+	.heading-text h4 {
 		font-size: 20px;
 		line-height: 120%;
 	}
 
+	.heading-block .btn-default {
+		margin-top: 5%;
+	}
+	
 	.yellow-strip-text {
 		font-size: 18px;
 		text-align: center;
@@ -1292,8 +1332,7 @@ div.img {
 	}
 
 	.intro-text {
-		font-size: 18px;
-		margin: 5% 5%;
+		margin: 10% 10%;
 		text-align: center;
 	}
 
@@ -1319,7 +1358,12 @@ div.img {
 		font-size: 22px;
 		text-align: center;
 	}
+	
+	.feature-holder {
+		margin-bottom: 10%;
+	}
 
+	
 	.no-animation {
 		animation-name: none !important;
 		position: absolute;
@@ -1341,11 +1385,35 @@ div.img {
 		top: 10px;
 		opacity: 1;
 	}
-
-	.yellow-height {
+	
+	.engage-header-icon {
+		margin-top: 20%;
 		height: 200px;
 	}
+	
+	.section-title {
+		margin: 10% auto;
+	}
+	
+	.box-touch {
+	margin-bottom: 0;
+	}
 
+	.yellow-height {
+		height: 100%;
+	}
+	
+	.yellow-text-block .inline-content p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: auto 5%;
+}
+	
+	.bottom-right {
+		position: absolute;
+		right: 10%;
+	}
+	
 	.floating-text-box {
 		position: static;
 		background-image: none !important;
@@ -1452,13 +1520,22 @@ div.img {
 
 
 	.blog-entry-tile {
-	height: 550px;
+	height: 450px;
 	padding: 10px 30px;
 	font-size: 16px;
 	}
 
 	.blog-entry-tile p  {
 	text-align:left;
+	}
+	
+	.fancybox-play {
+		bottom: 50%;
+	}
+	.portfolio-box-caption .icon-home_yellowband_arrow {
+		font-size: 20px;
+		bottom: 3%;
+		right: 5%
 	}
 
 }
@@ -1467,20 +1544,32 @@ div.img {
  @media(min-width:480px) and (max-width:767px){
 
 	.heading-text {
-	margin-top: 20%;
+	margin-top: 30%;
 	margin-bottom: 10%;
 	}
 
-	.heading-block .heading-text h2 {
+	.portfolio-box-caption .icon-home_yellowband_arrow {
+		font-size: 40px;
+		right: 3%;
+		bottom: 3%;
+	}
+	
+	.big-white-number-text {
+		margin-top: 1%;
+	}
+	
+	.white-text-more-button {
+		margin-top: 2%;
+	}
+
+	 .heading-text h2 {
 	font-size: 40px;
-	font-weight: 700;
 	line-height: 100%;
 	margin-top: 1px;
 	margin-bottom: 1px;
 	}
 
-	.heading-block .heading-text h4 {
-	font-weight: 150;
+	.heading-text h4 {
 	font-size: 20px;
 	line-height: 120%;
 	margin-top: 20px;
@@ -1502,7 +1591,32 @@ div.img {
 	position: absolute;
 	display: inline-block;
 	}
-
+	
+	.yellow-strip-text .icon-home_yellowband_arrow {
+		font-size: 25px;
+	}
+	
+	.yellow-text-block {
+		padding: 3%;
+	}
+	
+	.yellow-height {
+		height: 100%;
+	}
+	
+	.sonia-v2-small-text {
+		margin: 5% auto;
+	}
+	
+	.home-feature-icon {
+		margin-bottom: 3%;
+	}
+	
+	.circle-no {
+		margin-bottom: 3%;
+		margin-top: 5%;
+	}
+	
 	.prod-logo {
 		height: 80px;
 		width: 80px;
@@ -1522,8 +1636,6 @@ div.img {
 	.feature-icon-holder {
 	height: 175px;
 	width: 175px;
-	border: 2px solid;
-	border-radius: 100%;
 	text-align:center;
 	margin-bottom: 2%;
 	display: inline-block;
@@ -1534,7 +1646,7 @@ div.img {
 	}
 
 	.blog-entry-tile {
-	height: 475px;
+	height: 520px;
 	padding: 0% 20%;
 	font-size: 16px;
 	text-align: center;
@@ -1560,6 +1672,10 @@ div.img {
 		position: absolute;
 		right: 23%;
 		bottom: 4%;
+	}
+	
+	.fancybox-play {
+		bottom: 50%;
 	}
 
  }
@@ -1707,12 +1823,16 @@ div.img {
 /* Small Devices, Tablets */
 @media(min-width : 768px) and (max-width:991px) {
 
-.blog-entry-tile {
-	height: 550px;
+	.blog-entry-tile {
+	height: 430px;
 	padding: 10px 30px;
 	font-size: 16px;
 	}
-
+		
+	.aunty {
+		height: 350px;
+	}
+	
 	.brand-images-sm p {
 	color: #fff;
 	text-align: center;
@@ -1724,17 +1844,41 @@ div.img {
 	background-color: #FFD845;
 	text-align: center !important;
 	color: #222;
-	padding-top: 2%;
 	}
 
-	.heading-block .heading-text h2 {
+	.heading-text h2 {
 	font-size: 60px;
 	line-height: 120%;
 	color: #fff;
 	text-align: center;
 	font-weight: normal;
 	}
-
+	
+	.heading-text {
+		margin-top: 20%;
+	}
+	
+	.sonia-v2-small-text {
+		margin: 5% auto;
+	}
+	
+	.bottom-right {
+		bottom: 1%;
+	}
+	
+	
+	.yellow-band-logo {
+		margin-top: 15%;
+	}
+	
+	.yellow-height {
+		height: 100px;
+	}
+	
+	.fancybox-play {
+		bottom: 50%;
+	}
+	
 }
 
 /* Medium Devices, Desktops */
