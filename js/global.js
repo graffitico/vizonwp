@@ -248,13 +248,17 @@ jQuery(function () {
 
 		if (!$(this).hasClass('expanded')) {
    			$(this).find('.floating-normal-text').finish().hide();
+			$(this).find('.floating-hover-text').finish().hide();
+
 			$(this).addClass('expanded')
 		} else {
-   			$(this).find('.floating-hover-text').finish().hide();
+   			$(this).find('.floating-normal-text').finish().hide();
+			$(this).find('.floating-hover-text').finish().hide();
+
 			$(this).removeClass('expanded');
 		}
 	});
-	$(".hoverable-text").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+	$(".hoverable-text").on("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
 		if ($(this).hasClass('expanded')) {
 
 			var element = $(this).find('.floating-hover-text');

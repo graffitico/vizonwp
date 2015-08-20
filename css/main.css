@@ -1010,8 +1010,12 @@ div.img {
 .xbigcircle {
 	position: absolute;
 	font-size: 12px;
-    -webkit-transition-duration: .5s;
-    -webkit-transition-property: all;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+
+    -moz-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
 }
 .xsmallcircle {
