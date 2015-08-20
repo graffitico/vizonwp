@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'sushant');
+define('DB_NAME', 'vizonwp');
 
 /** MySQL database username */
-define('DB_USER', 'adminpXsiYuE');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '_DsVJ2WwEdZl');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', getenv(OPENSHIFT_MYSQL_DB_HOST) . ':' . getenv(OPENSHIFT_MYSQL_DB_PORT));

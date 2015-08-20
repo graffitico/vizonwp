@@ -264,7 +264,7 @@ aside {
 
 .service-box p {
     margin-bottom: 0;
-    text-align: justify;
+    text-align: center;
 }
 
 .portfolio-box {
@@ -451,7 +451,7 @@ fieldset[disabled] .btn-primary.active {
 .btn {
     border: 0;
     border-radius: 5px;
-    font-family: proximab;
+    font-family: proxima;
     font-weight: 700;
 }
 

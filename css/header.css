@@ -1,3 +1,4 @@
+
 #header-wrap {
 	position: fixed;
 	width: 100%;
@@ -27,7 +28,7 @@
 	margin: 0;
 }
 #pre-header input[type=button] {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(032,032,032,0.95);
 	color: #fff;
 	border-width: 0;
 	border-radius: 4px;
@@ -43,14 +44,14 @@
 #pre-header > ul > li.has-icon {
 	padding: 3px 5px;
 	border-radius: 16px;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(032,032,032,0.95);
 }
 #pre-header > ul > li .header-icon {
 	font-size: 16px;
 }
 #pre-header > ul > li button,
 #pre-header > ul > li button:hover {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(032,032,032,0.95);
 	color: #fff;
 	border-width: 0;
 	padding: 2px 10px;
@@ -60,7 +61,7 @@
 	font-family: 'proxima';
 }
 #pre-header .dropdown-menu {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(032,032,032,0.95);
 	min-width: 60px;
 }
 #pre-header .dropdown-menu > li > a {
@@ -93,9 +94,13 @@
 	width: 100%;
 	padding: 10px;
 	margin: 0;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(032,032,032,0.7);
 	background-image: none;
 	position: relative;
+}
+
+#header:hover {
+	background-color: rgba(032,032,032,0.95);
 }
 
 #mobilenavigation-container {
@@ -127,7 +132,7 @@
 	height: 0;
 	overflow: hidden;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(032,032,032,0.95);
 	position: absolute;
 	top: 68px;
 	left: 0;
@@ -140,34 +145,34 @@
 #header .subnav .about-subnav-block,
 #header .subnav .product-subnav-block {
 	width: 24.5%;
-	border-right: 1px solid #bebebe;
+	border-right: 1px solid #fff;
 	display: inline-block;
 	text-align: center;
-	padding: 0 20px 10px;
 	margin: 20px 0 !important;
 	vertical-align: top;
 }
 
 .about-subnav-block {
-	height: 220px;
+	height: 150px;
 }
 
 .product-subnav-block {
-	height: 380px;
+	height: 340px;
 }
 
 .resources-subnav-block {
-	height: auto;
+	height: 100px;
 }
 
 #header .subnav .contact-block {
-	border-width: 0;
+	border-width: 2%;
 	padding-top: 8%;
 }
 
 #header .subnav .subnav-block p {
 	color: #bebebe;
-	text-align: justify;
+	text-align: center;
+	margin-top: 10px;
 }
 #header .subnav .subnav-block p.text-center {
 	text-align: center;
@@ -193,21 +198,25 @@
 }
 #header .subnav .subnav-list-control li a {
 	color: #fff;
-	padding: 10px 5px;
-	display: inline-block;
+	padding: 10px 5px 10px 70px;
+	display: block;
+	position: relative;
 }
 #header .subnav .subnav-list-control li a:hover {
 	color: #ffd846;
 }
+
 #header .subnav .subnav-list-control span {
-	width: 45px;
 	color: inherit;
 	display: inline-block;
-	font-size: 30px;
 }
 
-#header .subnav .subnav-list-control a {
-	color: inherit;
+#header .subnav .subnav-list-control span.icon {
+	width: 45px;
+	font-size: 30px;
+	position: absolute;
+	left: 25px;
+	top: 8px;
 }
 
 .floating-header {

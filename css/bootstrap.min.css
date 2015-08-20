@@ -22,15 +22,6 @@
 
  #menup{margin-bottom: 0px; font-size: 12px; line-height: 21px;}
 
-  @font-face {
-  font-family: 'proxima';
-  src: url('../fonts/ProximaNova-Light_0.otf');
-  }
-  @font-face {
-  font-family: 'proximab';
-  src: url('../fonts/ProximaNova-Bold.otf');
-  }
-
  /*tab and mobile menu css */
  /* adjust body when menu is open */
 body.slide-active {
