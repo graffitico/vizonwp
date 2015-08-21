@@ -257,6 +257,15 @@ jQuery(function () {
 		});
 	}
 
+	function onTransitionEnd () {
+
+		if ($(this).hasClass('expanded')) {
+			onExpandTransitionEnd.call(this);
+		} else {
+			onContractTransitionEnd.call(this);
+		}
+	}
+
     // Hoverable text - For Engage Pages
    	$('.hoverable-text').hover(function () {
 
@@ -268,7 +277,7 @@ jQuery(function () {
    		$(this).siblings().addClass('faded');
    		$('.hover-magic-text-bg').css({opacity: 0.1});
 
-   		$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onExpandTransitionEnd);
+   		//$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onExpandTransitionEnd);
    	}, function () {
 
    		console.log('hover out');
@@ -279,8 +288,10 @@ jQuery(function () {
    		$(this).siblings().removeClass('faded');
    		$('.hover-magic-text-bg').css({opacity: ''});
 
-   		$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onContractTransitionEnd);
+   		//$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onContractTransitionEnd);
    	});
+
+   	$('.hoverable-text').on("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onTransitionEnd);
 
 	//Simulate hover action
 	$('.hoverable-text').on('click touchend', function () {
