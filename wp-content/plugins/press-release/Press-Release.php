@@ -123,7 +123,7 @@ function create_type_hierarchical_taxonomy() {
 
 function include_press_template_function( $template_path ) {
 
- if ( get_post_type() == 'press_release' ) {
+ if ( isset($post) && get_post_type() == 'press_release' ) {
         if ( is_single() ) {
             // checks if the file exists in the theme first,
             // otherwise serve the file from the plugin

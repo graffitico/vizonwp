@@ -83,15 +83,27 @@ add_action( 'after_setup_theme', 'intergalactic_setup' );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function intergalactic_widgets_init() {
-	register_sidebar( array(
+	// register_sidebar( array(
+	// 	'name'          => __( 'Sidebar', 'intergalactic' ),
+	// 	'id'            => 'sidebar-1',
+	// 	'description'   => '',
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h1 class="widget-title">',
+	// 	'after_title'   => '</h1>',
+	// ) );
+
+		register_sidebar( array(
 		'name'          => __( 'Sidebar', 'intergalactic' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
+		'before_widget' => '<section class="read-more-block"><div class="container-fluid">',
+		'after_widget'  => '</div></div></section>',
+		'before_title'  => ' <div class="row"><div class="col-lg-12 text-center section-title"><h2>',
+		'after_title'   => '</h2></div></div>   <div class="row">',
+		) );
+
+
 }
 add_action( 'widgets_init', 'intergalactic_widgets_init' );
 
