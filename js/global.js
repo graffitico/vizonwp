@@ -391,34 +391,26 @@ jQuery(function () {
 
 
 
-/**************************** contact form js start **************************/
-$(".contact-marker").click(function(){
-	contact_id = $(this).attr("data-id");
-	console.log(contact_id);
+	/**************************** contact form js start **************************/
+	$(".contact-marker").hover(function(){
 
-addr_html = $("#"+contact_id+"-content").html();
+		debugger;
+		contact_id = $(this).attr("data-id");
+		console.log(contact_id);
 
-$("#address-number").html(addr_html);
+		addr_html = $("#"+contact_id+"-content").html();
+		$("#address-number").html(addr_html);
+	});
 
+	$(".country_drop").click(function(){
+		contact_id = $(this).attr("data-id");
+		console.log(contact_id);
+		btn_html = $(this).html() + "<span class='caret' ></span>";
+		$("#menu1").html(btn_html);
+		addr_html = $("#"+contact_id+"-content").html();
 
-});
-$(".country_drop").click(function(){
-	contact_id = $(this).attr("data-id");
-	console.log(contact_id);
-btn_html = $(this).html() + "<span class='caret' ></span>";
-$("#menu1").html(btn_html);
-addr_html = $("#"+contact_id+"-content").html();
-
-$("#address-number").html(addr_html);
-
-
-});
-/**************************** contact form js end **************************/
-
-
-
-
-
-
+		$("#address-number").html(addr_html);
+	});
+	/**************************** contact form js end **************************/
 
 });

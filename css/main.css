@@ -271,7 +271,8 @@ p {
 .heading-text {
 	margin-top: 10%;
 	margin-bottom: 10%;
-	}
+	position: relative;
+}
 
 .heading-text h2 {
 	font-size: 60px;
@@ -1317,7 +1318,7 @@ div.img {
 	.heading-block .btn-default {
 		margin-top: 5%;
 	}
-	
+
 	.yellow-strip-text {
 		font-size: 18px;
 		text-align: center;
@@ -1360,12 +1361,12 @@ div.img {
 		font-size: 22px;
 		text-align: center;
 	}
-	
+
 	.feature-holder {
 		margin-bottom: 10%;
 	}
 
-	
+
 	.no-animation {
 		animation-name: none !important;
 		position: absolute;
@@ -1387,16 +1388,16 @@ div.img {
 		top: 10px;
 		opacity: 1;
 	}
-	
+
 	.engage-header-icon {
 		margin-top: 20%;
 		height: 200px;
 	}
-	
+
 	.section-title {
 		margin: 10% auto;
 	}
-	
+
 	.box-touch {
 	margin-bottom: 0;
 	}
@@ -1404,18 +1405,18 @@ div.img {
 	.yellow-height {
 		height: 100%;
 	}
-	
+
 	.yellow-text-block .inline-content p {
 	display: inline-block;
 	vertical-align: middle;
 	margin: auto 5%;
 }
-	
+
 	.bottom-right {
 		position: absolute;
 		right: 10%;
 	}
-	
+
 	.floating-text-box {
 		position: static;
 		background-image: none !important;
@@ -1530,7 +1531,7 @@ div.img {
 	.blog-entry-tile p  {
 	text-align:left;
 	}
-	
+
 	.fancybox-play {
 		bottom: 50%;
 	}
@@ -1555,11 +1556,11 @@ div.img {
 		right: 3%;
 		bottom: 3%;
 	}
-	
+
 	.big-white-number-text {
 		margin-top: 1%;
 	}
-	
+
 	.white-text-more-button {
 		margin-top: 2%;
 	}
@@ -1593,32 +1594,32 @@ div.img {
 	position: absolute;
 	display: inline-block;
 	}
-	
+
 	.yellow-strip-text .icon-home_yellowband_arrow {
 		font-size: 25px;
 	}
-	
+
 	.yellow-text-block {
 		padding: 3%;
 	}
-	
+
 	.yellow-height {
 		height: 100%;
 	}
-	
+
 	.sonia-v2-small-text {
 		margin: 5% auto;
 	}
-	
+
 	.home-feature-icon {
 		margin-bottom: 3%;
 	}
-	
+
 	.circle-no {
 		margin-bottom: 3%;
 		margin-top: 5%;
 	}
-	
+
 	.prod-logo {
 		height: 80px;
 		width: 80px;
@@ -1675,7 +1676,7 @@ div.img {
 		right: 23%;
 		bottom: 4%;
 	}
-	
+
 	.fancybox-play {
 		bottom: 50%;
 	}
@@ -1830,11 +1831,11 @@ div.img {
 	padding: 10px 30px;
 	font-size: 16px;
 	}
-		
+
 	.aunty {
 		height: 350px;
 	}
-	
+
 	.brand-images-sm p {
 	color: #fff;
 	text-align: center;
@@ -1855,32 +1856,32 @@ div.img {
 	text-align: center;
 	font-weight: normal;
 	}
-	
+
 	.heading-text {
 		margin-top: 20%;
 	}
-	
+
 	.sonia-v2-small-text {
 		margin: 5% auto;
 	}
-	
+
 	.bottom-right {
 		bottom: 1%;
 	}
-	
-	
+
+
 	.yellow-band-logo {
 		margin-top: 15%;
 	}
-	
+
 	.yellow-height {
 		height: 100px;
 	}
-	
+
 	.fancybox-play {
 		bottom: 50%;
 	}
-	
+
 }
 
 /* Medium Devices, Desktops */
