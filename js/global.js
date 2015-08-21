@@ -218,19 +218,68 @@ jQuery(function () {
       $(this).tab('show')
    	});
 
+   	function onExpandTransitionEnd () {
+
+		var element = $(this).find('.floating-hover-text');
+		element.finish().hide().fadeIn(500);
+
+		var width = element.width();
+		var height = element.height();
+		var parentHeight = $(this).height();
+		var parentWidth = $(this).width();
+
+		var left = (parentWidth - width) / 2;
+		var top = (parentHeight - height) / 2;
+
+		element.css({
+			left: left + 'px',
+			top: top + 'px'
+		});
+
+	}
+
+	function onContractTransitionEnd () {
+
+		var element = $(this).find('.floating-normal-text');
+		element.finish().show().fadeIn(500);
+
+		var width = element.width();
+		var height = element.height();
+		var parentHeight = $(this).height();
+		var parentWidth = $(this).width();
+
+		var left = (parentWidth - width) / 2;
+		var top = (parentHeight - height) / 2;
+
+		element.css({
+			left: left + 'px',
+			top: top + 'px'
+		});
+	}
+
     // Hoverable text - For Engage Pages
    	$('.hoverable-text').hover(function () {
-   		$(this).find('.floating-normal-text').finish().hide();
+
+   		console.log('hover in');
+		$(this).find('.floating-normal-text').finish().hide();
+		$(this).find('.floating-hover-text').finish().hide();
    		$(this).addClass('expanded');
 
    		$(this).siblings().addClass('faded');
    		$('.hover-magic-text-bg').css({opacity: 0.1});
+
+   		$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onExpandTransitionEnd);
    	}, function () {
-   		$(this).find('.floating-hover-text').finish().hide();
+
+   		console.log('hover out');
+		$(this).find('.floating-normal-text').finish().hide();
+		$(this).find('.floating-hover-text').finish().hide();
    		$(this).removeClass('expanded');
 
    		$(this).siblings().removeClass('faded');
    		$('.hover-magic-text-bg').css({opacity: ''});
+
+   		$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onContractTransitionEnd);
    	});
 
 	//Simulate hover action
@@ -248,46 +297,14 @@ jQuery(function () {
 
 		if (!$(this).hasClass('expanded')) {
    			$(this).find('.floating-normal-text').finish().hide();
+			$(this).find('.floating-hover-text').finish().hide();
+
 			$(this).addClass('expanded')
 		} else {
-   			$(this).find('.floating-hover-text').finish().hide();
+   			$(this).find('.floating-normal-text').finish().hide();
+			$(this).find('.floating-hover-text').finish().hide();
+
 			$(this).removeClass('expanded');
-		}
-	});
-	$(".hoverable-text").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-		if ($(this).hasClass('expanded')) {
-
-			var element = $(this).find('.floating-hover-text');
-			element.fadeIn(500);
-			var width = element.width();
-			var height = element.height();
-			var parentHeight = $(this).height();
-			var parentWidth = $(this).width();
-
-			var left = (parentWidth - width) / 2;
-			var top = (parentHeight - height) / 2;
-
-			element.css({
-				left: left + 'px',
-				top: top + 'px'
-			});
-		} else {
-
-			var element = $(this).find('.floating-normal-text');
-			element.fadeIn(500);
-
-			var width = element.width();
-			var height = element.height();
-			var parentHeight = $(this).height();
-			var parentWidth = $(this).width();
-
-			var left = (parentWidth - width) / 2;
-			var top = (parentHeight - height) / 2;
-
-			element.css({
-				left: left + 'px',
-				top: top + 'px'
-			});
 		}
 	});
 

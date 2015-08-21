@@ -556,6 +556,10 @@ p {
 	width: 100%;
 }
 
+div#single-page-content {
+	margin-top: 0;
+}
+
 /** ihover override **/
 div.img {
 	text-align: center;
@@ -1048,8 +1052,12 @@ div.img {
 .xbigcircle {
 	position: absolute;
 	font-size: 12px;
-    -webkit-transition-duration: .5s;
-    -webkit-transition-property: all;
+
+    -webkit-transition-property: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+
+    -moz-transition-timing-function: ease-in-out;
     -webkit-transition-timing-function: ease-in-out;
 }
 .xsmallcircle {
@@ -1071,10 +1079,9 @@ div.img {
 .expandbig.expanded,
 .expandsmall.expanded,
 .expandxbig.expanded {
-    -webkit-transition-duration: .5s;
-    -webkit-transition-property: all;
-    -webkit-transition-timing-function: ease-in-out;
-    transform: translate(-25%, -25%);
+
+    margin-left: -7%;
+    margin-top: -7%;
     z-index: 100;
 }
 .bigcircle.faded,
@@ -1103,11 +1110,6 @@ div.img {
 	background-image: url(/images/plus_white.svg);
 	width: 19px;
 	height: 19px;
-	/*border: 1px solid #fff;
-	padding: 3px;
-	font-size: 16px;
-	line-height: 8px;
-	border-radius: 50%;*/
 }
 .hoverable-text .plus-icon,
 .hoverable-text.activate .minus-icon,
