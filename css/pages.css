@@ -29,18 +29,7 @@ span {
 /*-------Investors Page Begins----------*/
 
 
-.bg-grad {
-background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
-}
 
-.inv-tab {
-	margin: 20% 5%;
-}
-
-.inv-tab p {
-	border: 0px;
-	margin: auto 10%;
-}
 
 
 /*----------Investors Page Ends------------*/
@@ -215,7 +204,7 @@ border-radius: 0em;
 }
 
 .read-more {
-	border-radius: 0px;
+	border-radius: 4px;
 	background: #202020;
 	border: none;
 	color: #ffffff;
@@ -227,8 +216,8 @@ border-radius: 0em;
 }
 
 .read-more:hover {
-	background: #ffd846;
-	color: #202020;
+	background: #7b7b7b;
+	color: #fff;
 }
 
 .pub-yellow-box {

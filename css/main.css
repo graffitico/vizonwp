@@ -189,8 +189,7 @@ p {
 .fancybox-play {
 	position: absolute;
 	left: 48%;
-	bottom: 60%;
-	margin-left: -10px;
+	bottom: -30%;
 	color: #fff;
 	font-size: 24px;
 	border: 2px solid #fff;
@@ -198,8 +197,8 @@ p {
 	display: inline-block;
 	width: 48px;
 	height: 48px;
-	padding-left: 14px;
-	padding-top: 8px;
+	padding-left: 12px;
+	padding-top: 6px;
 }
 
 
@@ -329,6 +328,12 @@ p {
 	height: 100px;
 }
 
+.value-holder {
+	padding: 5%;
+	background-image: url ("/images/values_postit-02.svg");
+	background-size: 500px 300px;
+}
+
 /** Second frame text*/
 
 .intro-text {
@@ -450,6 +455,10 @@ p {
 		margin: auto 2%;
 	}
 
+.values-area {
+	margin: 5% auto;
+}
+	
 /** Feature Section */
 
 .feature-section {
@@ -467,7 +476,24 @@ p {
 	margin: 10% auto;
 }
 
+.bg-grad {
+background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
+}
 
+.inv-tab {
+	margin: 20% 5%;
+	text-align: center;
+}
+
+.inv-tab p {
+	border: 0px;
+	margin: auto 10%;
+}
+
+.inv-tab .td {
+	vertical-align: middle;
+	text-align: center;
+}
 
 /** Numbers Section Circles */
 
@@ -1014,6 +1040,10 @@ div.img {
 	text-align: justify;
 }
 
+.values-yes {
+	margin: 10% auto;
+	text-align: center;
+}
 
 /* Read More */
 
@@ -1527,8 +1557,7 @@ div.img {
 	}
 
 	.fancybox-play {
-		bottom: 25%;
-		left:45%;
+		left:42%;
 	}
 	.portfolio-box-caption .icon-home_yellowband_arrow {
 		font-size: 20px;
@@ -1605,15 +1634,11 @@ div.img {
 	.yellow-height {
 		height: 100%;
 	}
-<<<<<<< HEAD
-	
+
 	.yellow-text-block .inline-content p {
 		margin-top: 2%;
 	}
-	
-=======
 
->>>>>>> 1c5c68853029469517e1f93eba98280985e11a07
 	.sonia-v2-small-text {
 		margin: 5% auto;
 	}
@@ -1685,7 +1710,8 @@ div.img {
 	}
 
 	.fancybox-play {
-		bottom: 65%;
+		bottom: -50%;
+		left: 45%;
 	}
 
  }
@@ -1838,17 +1864,8 @@ div.img {
 	padding: 10px 30px;
 	font-size: 16px;
 	}
-<<<<<<< HEAD
-		
-
 	
-=======
-
-	.aunty {
-		height: 350px;
-	}
-
->>>>>>> 1c5c68853029469517e1f93eba98280985e11a07
+	
 	.brand-images-sm p {
 	color: #fff;
 	text-align: center;
@@ -1860,6 +1877,7 @@ div.img {
 	background-color: #FFD845;
 	text-align: center !important;
 	color: #222;
+	padding: 2%;
 	}
 
 	.heading-text h2 {
@@ -1871,7 +1889,7 @@ div.img {
 	}
 
 	.heading-text {
-		margin-top: 5%;
+		margin-top: 15%;
 	}
 
 	.sonia-v2-small-text {
@@ -1892,21 +1910,15 @@ div.img {
 		height: 100px;
 	}
 
-	.fancybox-play {
-		bottom: 35%;
-	}
-	
 	.engage-header-icon {
 		height: 200px;
 	}
-<<<<<<< HEAD
+
 	
 	.engage-heading-block {
 		padding-top: 2%;
 	}
-=======
 
->>>>>>> 1c5c68853029469517e1f93eba98280985e11a07
 }
 
 /* Medium Devices, Desktops */
