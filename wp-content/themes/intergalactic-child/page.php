@@ -14,9 +14,12 @@ get_header(); // Loads the header.php template
 
 
 if ($post->post_title == 'case studies') { 
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 	$args = array(
-	'showposts' => '1000',
-	'category_name' => 'case-studies' );
+	
+	'category_name' => 'case-studies',
+	'paged' => $paged ,
+	'posts_per_page'=>6 );
   $case_posts =  new WP_Query($args);
 	?>
 	
@@ -39,7 +42,50 @@ if ($post->post_title == 'case studies') {
 
 			<?php endwhile; ?>
 
-			<?php intergalactic_paging_nav(); ?>
+			<?php
+if($case_posts->max_num_pages>1){?>
+    <p class="navrechts">
+    <?php
+
+
+    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") { 
+       $http  = 'https://';
+} else { 
+   $http  = 'http://';
+}
+    $nav_url =  $http. $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+    // echo $nav_url;
+    $url_parts = parse_url($nav_url);
+parse_str($url_parts['query'], $params);
+// print_r($url_parts);
+
+
+      if ($paged > 1) {       
+      	$params['paged'] = $paged -1;
+      	// Note that this will url_encode all values
+$url_parts['query'] = http_build_query($params);
+
+
+
+      	?>
+
+        <a href="<?php echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>">Newer Case Studies</a>
+                        <?php }
+    // for($i=1;$i<=$case_posts->max_num_pages;$i++){?>
+       <!-- <a href="<?php // echo '?paged=' . $i; ?>" <?php  //echo ($paged==$i)? 'class="selected"':'';?>><?php //echo $i;?></a> -->
+         <?php
+    // }
+    if($paged < $case_posts->max_num_pages){
+      	$params['paged'] = $paged + 1;
+      	// Note that this will url_encode all values
+$url_parts['query'] = http_build_query($params);
+
+?>
+
+        <a href="<?php echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>">Older Case Studies</a>
+    <?php } ?>
+    </p>
+<?php } ?>
 
 		<?php else : ?>
 
