@@ -47,7 +47,7 @@ if($case_posts->max_num_pages>1){?>
     <p class="navrechts">
     <?php
 
-
+$params ;
     if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") { 
        $http  = 'https://';
 } else { 
@@ -56,7 +56,10 @@ if($case_posts->max_num_pages>1){?>
     $nav_url =  $http. $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
     // echo $nav_url;
     $url_parts = parse_url($nav_url);
-parse_str($url_parts['query'], $params);
+    if(isset($url_parts['query'])){
+    parse_str($url_parts['query'], $params);	
+    }
+
 // print_r($url_parts);
 
 
