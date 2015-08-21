@@ -101,7 +101,6 @@ input[type=submit] {
 	text-transform: none;
 }
 
-a:visited,
 a:focus,
 a:active,
 a {
@@ -189,7 +188,8 @@ p {
 
 .fancybox-play {
 	position: absolute;
-	left: 50%;
+	left: 48%;
+	bottom: 60%;
 	margin-left: -10px;
 	color: #fff;
 	font-size: 24px;
@@ -227,7 +227,7 @@ p {
 
 .bottom-right {
 	position: absolute;
-	right: 0%;
+	right: 8%;
 	bottom: 4%;
 }
 
@@ -811,14 +811,10 @@ div.img {
 	margin-top: 3%;
 }
 
-.engage-dim {
-	height: 800px;
-}
-
 .engage-dim-section {
-	margin: 10% auto 0;
 	background: #202020;
-	padding: 5% auto;
+	padding-top: 3%;
+	padding-bottom: 5%;
 }
 
 .hover-magic-text-bg {
@@ -909,15 +905,13 @@ div.img {
 }
 
 /** Yellow Band CSS */
-.yellow-text-block {
-	position: relative;
-	background-color: #FFD845;
-	text-align: center;
-	color: #333;
-	font-size: 12px;
-}
+
 .yellow-text-block .gray-text {
 	font-weight: bold;
+}
+
+.yellow-text-block h4 {
+	margin:0%;
 }
 
 .yellow-text-block p {
@@ -1522,7 +1516,7 @@ div.img {
 
 
 	.blog-entry-tile {
-	height: 450px;
+	height: 500px;
 	padding: 10px 30px;
 	font-size: 16px;
 	}
@@ -1532,7 +1526,8 @@ div.img {
 	}
 	
 	.fancybox-play {
-		bottom: 50%;
+		bottom: 25%;
+		left:45%;
 	}
 	.portfolio-box-caption .icon-home_yellowband_arrow {
 		font-size: 20px;
@@ -1546,8 +1541,12 @@ div.img {
  @media(min-width:480px) and (max-width:767px){
 
 	.heading-text {
-	margin-top: 30%;
+	margin-top: 20%;
 	margin-bottom: 10%;
+	}
+	
+	.engage-header-icon {
+		margin-top: none;
 	}
 
 	.portfolio-box-caption .icon-home_yellowband_arrow {
@@ -1606,6 +1605,10 @@ div.img {
 		height: 100%;
 	}
 	
+	.yellow-text-block .inline-content p {
+		margin-top: 2%;
+	}
+	
 	.sonia-v2-small-text {
 		margin: 5% auto;
 	}
@@ -1648,7 +1651,7 @@ div.img {
 	}
 
 	.blog-entry-tile {
-	height: 520px;
+	height: 450px;
 	padding: 0% 20%;
 	font-size: 16px;
 	text-align: center;
@@ -1677,7 +1680,7 @@ div.img {
 	}
 	
 	.fancybox-play {
-		bottom: 50%;
+		bottom: 65%;
 	}
 
  }
@@ -1831,9 +1834,7 @@ div.img {
 	font-size: 16px;
 	}
 		
-	.aunty {
-		height: 350px;
-	}
+
 	
 	.brand-images-sm p {
 	color: #fff;
@@ -1857,7 +1858,7 @@ div.img {
 	}
 	
 	.heading-text {
-		margin-top: 20%;
+		margin-top: 5%;
 	}
 	
 	.sonia-v2-small-text {
@@ -1866,6 +1867,7 @@ div.img {
 	
 	.bottom-right {
 		bottom: 1%;
+		right: 5%;
 	}
 	
 	
@@ -1878,9 +1880,16 @@ div.img {
 	}
 	
 	.fancybox-play {
-		bottom: 50%;
+		bottom: 35%;
 	}
 	
+	.engage-header-icon {
+		height: 200px;
+	}
+	
+	.engage-heading-block {
+		padding-top: 2%;
+	}
 }
 
 /* Medium Devices, Desktops */

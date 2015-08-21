@@ -131,3 +131,168 @@
 <img class="readmore-reach" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg==">
 
 */
+
+.founders-1, .founders-2, .founders-3, .ascent-capital, .intel-capital,
+.inventus, .nokia, .ojas
+{ max-width: 100%; background-size: 100%; background-image: url('/images/about-sprite.jpg'); }
+ 
+.founders-1 { background-position: 0 0%; background-size: 100%; }
+.founders-2 { background-position: 0 40.532433%; background-size: 100%; }
+.founders-3 { background-position: 0 81.064867%; background-size: 100%; }
+.ascent-capital { background-position: 0 88.922402%; background-size: 768%; }
+.intel-capital { background-position: 0 91.691801%; background-size: 768%; }
+.inventus { background-position: 0 94.461201%; background-size: 768%; }
+.nokia { background-position: 0 97.2306%; background-size: 768%; }
+.ojas { background-position: 0 100%; background-size: 768%; }
+
+/*
+<img class="founders-1" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4AQMAAADSHVMAAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAARNJREFUeNrtwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCnAfjlAAH84Y/+AAAAAElFTkSuQmCC">
+<img class="founders-2" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4AQMAAADSHVMAAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAARNJREFUeNrtwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCnAfjlAAH84Y/+AAAAAElFTkSuQmCC">
+<img class="founders-3" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4AQMAAADSHVMAAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAARNJREFUeNrtwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCnAfjlAAH84Y/+AAAAAElFTkSuQmCC">
+<img class="ascent-capital" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
+<img class="intel-capital" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
+<img class="inventus" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
+<img class="nokia" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
+<img class="ojas" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
+*/
+
+.adorika, .adplus, .adrope, .adskom, .appnexus,
+.baidu, .batanga, .bolanews, .crazy4media, .creafi,
+.darriens, .deli-ads, .dmg, .doubleclick, .exchange,
+.geniee, .global-adspace, .intag, .ironsource, .kapanlagi,
+.kompas, .lemmonet, .malaysiakini, .mangoads, .marimedia,
+.mediashakers, .mediawhite, .microsoft, .msn, .one52,
+.openx, .pubmatic, .pulsepoint, .rekket, .rubicon,
+.say, .tribun-news, .twitter, .xrost, .yahoo,
+.yieldone, .zetanet
+{ max-width: 100%; background-size: 100%; background-image: url('/images/pub-sprite.jpg'); }
+ 
+.adorika { background-position: 0 0%; background-size: 100%; }
+.adplus { background-position: 0 2.439024%; background-size: 100%; }
+.adrope { background-position: 0 4.878049%; background-size: 100%; }
+.adskom { background-position: 0 7.317073%; background-size: 100%; }
+.appnexus { background-position: 0 9.756098%; background-size: 100%; }
+.baidu { background-position: 0 12.195122%; background-size: 100%; }
+.batanga { background-position: 0 14.634146%; background-size: 100%; }
+.bolanews { background-position: 0 17.073171%; background-size: 100%; }
+.crazy4media { background-position: 0 19.512195%; background-size: 100%; }
+.creafi { background-position: 0 21.95122%; background-size: 100%; }
+.darriens { background-position: 0 24.390244%; background-size: 100%; }
+.deli-ads { background-position: 0 26.829268%; background-size: 100%; }
+.dmg { background-position: 0 29.268293%; background-size: 100%; }
+.doubleclick { background-position: 0 31.707317%; background-size: 100%; }
+.exchange { background-position: 0 34.146341%; background-size: 100%; }
+.geniee { background-position: 0 36.585366%; background-size: 100%; }
+.global-adspace { background-position: 0 39.02439%; background-size: 100%; }
+.intag { background-position: 0 41.463415%; background-size: 100%; }
+.ironsource { background-position: 0 43.902439%; background-size: 100%; }
+.kapanlagi { background-position: 0 46.341463%; background-size: 100%; }
+.kompas { background-position: 0 48.780488%; background-size: 100%; }
+.lemmonet { background-position: 0 51.219512%; background-size: 100%; }
+.malaysiakini { background-position: 0 53.658537%; background-size: 100%; }
+.mangoads { background-position: 0 56.097561%; background-size: 100%; }
+.marimedia { background-position: 0 58.536585%; background-size: 100%; }
+.mediashakers { background-position: 0 60.97561%; background-size: 100%; }
+.mediawhite { background-position: 0 63.414634%; background-size: 100%; }
+.microsoft { background-position: 0 65.853659%; background-size: 100%; }
+.msn { background-position: 0 68.292683%; background-size: 100%; }
+.one52 { background-position: 0 70.731707%; background-size: 100%; }
+.openx { background-position: 0 73.170732%; background-size: 100%; }
+.pubmatic { background-position: 0 75.609756%; background-size: 100%; }
+.pulsepoint { background-position: 0 78.04878%; background-size: 100%; }
+.rekket { background-position: 0 80.487805%; background-size: 100%; }
+.rubicon { background-position: 0 82.926829%; background-size: 100%; }
+.say { background-position: 0 85.365854%; background-size: 100%; }
+.tribun-news { background-position: 0 87.804878%; background-size: 100%; }
+.twitter { background-position: 0 90.243902%; background-size: 100%; }
+.xrost { background-position: 0 92.682927%; background-size: 100%; }
+.yahoo { background-position: 0 95.121951%; background-size: 100%; }
+.yieldone { background-position: 0 97.560976%; background-size: 100%; }
+.zetanet { background-position: 0 100%; background-size: 100%; }
+
+/*
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+	
+<img class="adorika" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="adplus" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="adrope" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="adskom" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="appnexus" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="baidu" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="batanga" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="bolanews" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="crazy4media" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="creafi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="darriens" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="deli-ads" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="dmg" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="doubleclick" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="exchange" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="geniee" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="global-adspace" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="intag" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="ironsource" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="kapanlagi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="kompas" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="lemmonet" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="malaysiakini" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="mangoads" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="marimedia" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="mediashakers" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="mediawhite" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="microsoft" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="msn" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="one52" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="openx" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="pubmatic" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="pulsepoint" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="rekket" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="rubicon" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="say" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="tribun-news" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="twitter" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="xrost" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="yahoo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="yieldone" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="zetanet" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+*/
