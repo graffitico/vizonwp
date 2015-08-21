@@ -1838,17 +1838,8 @@ div.img {
 	padding: 10px 30px;
 	font-size: 16px;
 	}
-<<<<<<< HEAD
-		
-
 	
-=======
-
-	.aunty {
-		height: 350px;
-	}
-
->>>>>>> 1c5c68853029469517e1f93eba98280985e11a07
+	
 	.brand-images-sm p {
 	color: #fff;
 	text-align: center;
@@ -1860,6 +1851,7 @@ div.img {
 	background-color: #FFD845;
 	text-align: center !important;
 	color: #222;
+	padding: 2%;
 	}
 
 	.heading-text h2 {
@@ -1871,7 +1863,7 @@ div.img {
 	}
 
 	.heading-text {
-		margin-top: 5%;
+		margin-top: 15%;
 	}
 
 	.sonia-v2-small-text {
@@ -1899,14 +1891,12 @@ div.img {
 	.engage-header-icon {
 		height: 200px;
 	}
-<<<<<<< HEAD
+
 	
 	.engage-heading-block {
 		padding-top: 2%;
 	}
-=======
 
->>>>>>> 1c5c68853029469517e1f93eba98280985e11a07
 }
 
 /* Medium Devices, Desktops */
