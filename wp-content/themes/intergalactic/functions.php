@@ -83,15 +83,27 @@ add_action( 'after_setup_theme', 'intergalactic_setup' );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function intergalactic_widgets_init() {
-	register_sidebar( array(
+	// register_sidebar( array(
+	// 	'name'          => __( 'Sidebar', 'intergalactic' ),
+	// 	'id'            => 'sidebar-1',
+	// 	'description'   => '',
+	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</aside>',
+	// 	'before_title'  => '<h1 class="widget-title">',
+	// 	'after_title'   => '</h1>',
+	// ) );
+
+		register_sidebar( array(
 		'name'          => __( 'Sidebar', 'intergalactic' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
+		'before_widget' => '<section class="read-more-block"><div class="container-fluid">',
+		'after_widget'  => '</div></div></section>',
+		'before_title'  => ' <div class="row"><div class="col-lg-12 text-center section-title"><h2>',
+		'after_title'   => '</h2></div></div>   <div class="row">',
+		) );
+
+
 }
 add_action( 'widgets_init', 'intergalactic_widgets_init' );
 
@@ -192,3 +204,77 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+
+
+/**
+ * Extend Recent Posts Widget 
+ *
+ * Adds different formatting to the default WordPress Recent Posts Widget
+ */
+
+Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
+
+	function widget($args, $instance) {
+	
+		extract( $args );
+		
+		$title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Posts') : $instance['title'], $instance, $this->id_base);
+				
+		if( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
+			$number = 10;
+					
+		$r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true ) ) );
+		if( $r->have_posts() ) :
+			
+			echo $before_widget;
+			if( $title ) echo $before_title . $title . $after_title; ?>
+<!-- 			<ul>
+				<?php // while( $r->have_posts() ) : $r->the_post(); ?>				
+				<li><?php // the_time( 'F d'); ?> - <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+				<?php //endwhile; ?>
+			</ul> -->
+<?php  while( $r->have_posts() ) : $r->the_post(); ?>	
+
+	<?php if ( has_post_thumbnail() ) {
+		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' ); 
+		$img_url =  esc_url( $thumbnail[0] ); 
+		
+ } ?>
+              <div class="col-sm-4 blog-entry-tile">
+                <div class="ih-item square colored effect4" style="background-color: #626262;" >
+                    <div class="img"><a href="<?php the_permalink(); ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  $img_url; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
+                    <div class="mask1"></div>
+                    <div class="mask2"></div>
+                    <div class="mask2"></div>
+                    <div class="info">
+                        <h3><?php the_title(); ?></h3>
+                       
+                    </div>
+                </div>
+                <a href="<?php the_permalink(); ?>" target="_blank">
+                <h4><?php the_title(); ?></h4></a>
+             <!--    <p><b>Author:</b> Vizury</p> -->
+                <p><b>Date:</b><?php the_time( 'M d, Y'); ?></p>
+                <p><?php the_excerpt(); ?></p>
+
+
+                <a href="<?php the_permalink(); ?>" target="_blank"><img class="readmore-convert img-responsive bottom-right" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg=="></a>
+            </div>
+	<?php endwhile ?>
+
+			 
+			<?php
+			echo $after_widget;
+		
+		wp_reset_postdata();
+		
+		endif;
+	}
+}
+function my_recent_widget_registration() {
+  unregister_widget('WP_Widget_Recent_Posts');
+  register_widget('My_Recent_Posts_Widget');
+}
+add_action('widgets_init', 'my_recent_widget_registration');
