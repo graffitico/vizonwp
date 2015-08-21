@@ -257,6 +257,15 @@ jQuery(function () {
 		});
 	}
 
+	function onTransitionEnd () {
+
+		if ($(this).hasClass('expanded')) {
+			onExpandTransitionEnd.call(this);
+		} else {
+			onContractTransitionEnd.call(this);
+		}
+	}
+
     // Hoverable text - For Engage Pages
    	$('.hoverable-text').hover(function () {
 
@@ -268,7 +277,7 @@ jQuery(function () {
    		$(this).siblings().addClass('faded');
    		$('.hover-magic-text-bg').css({opacity: 0.1});
 
-   		$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onExpandTransitionEnd);
+   		//$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onExpandTransitionEnd);
    	}, function () {
 
    		console.log('hover out');
@@ -279,8 +288,10 @@ jQuery(function () {
    		$(this).siblings().removeClass('faded');
    		$('.hover-magic-text-bg').css({opacity: ''});
 
-   		$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onContractTransitionEnd);
+   		//$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onContractTransitionEnd);
    	});
+
+   	$('.hoverable-text').on("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onTransitionEnd);
 
 	//Simulate hover action
 	$('.hoverable-text').on('click touchend', function () {
@@ -319,21 +330,23 @@ jQuery(function () {
 
 
 	// Video player
-	$('.fancybox-play').fancybox({
-		type: 'iframe',
-		fitToView: false,
-		height: 450,
-		width: 800
-	});
+	if ($.fn.fancybox) {
+		$('.fancybox-play').fancybox({
+			type: 'iframe',
+			fitToView: false,
+			height: 450,
+			width: 800
+		});
 
-	$('.flexslider .slides > li').hover(function () {
-   		$(this).find('.normal-text').finish().hide();
-   		$(this).find('.hover-text').delay(400).fadeIn(500);
-   		//$(this).addClass('expanded');
-	}, function () {
-   		$(this).find('.hover-text').finish().hide();
-   		$(this).find('.normal-text').delay(400).fadeIn(500);
-	});
+		$('.flexslider .slides > li').hover(function () {
+	   		$(this).find('.normal-text').finish().hide();
+	   		$(this).find('.hover-text').delay(400).fadeIn(500);
+	   		//$(this).addClass('expanded');
+		}, function () {
+	   		$(this).find('.hover-text').finish().hide();
+	   		$(this).find('.normal-text').delay(400).fadeIn(500);
+		});
+	}
 
 	// $(".flexslider .slides > li").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
 
@@ -393,10 +406,7 @@ jQuery(function () {
 
 	/**************************** contact form js start **************************/
 	$(".contact-marker").hover(function(){
-
-		debugger;
 		contact_id = $(this).attr("data-id");
-		console.log(contact_id);
 
 		addr_html = $("#"+contact_id+"-content").html();
 		$("#address-number").html(addr_html);
@@ -404,7 +414,7 @@ jQuery(function () {
 
 	$(".country_drop").click(function(){
 		contact_id = $(this).attr("data-id");
-		console.log(contact_id);
+
 		btn_html = $(this).html() + "<span class='caret' ></span>";
 		$("#menu1").html(btn_html);
 		addr_html = $("#"+contact_id+"-content").html();

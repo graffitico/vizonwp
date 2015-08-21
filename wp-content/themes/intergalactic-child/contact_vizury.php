@@ -11,114 +11,114 @@ get_header();
 	<div class="hidden-xs">
     <div class="row">
     <div class="col-sm-offset-1 col-sm-10">
-    
+
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="1440 -750 2980 1600" style="enable-background:new 1440 -750 2980 1600;" xml:space="preserve">
 	<style type="text/css">
 	.st0{fill:none;stroke:#B0AFB5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
 	.st1{fill:none;stroke:#B0AFB5;stroke-miterlimit:1;}
 	.st2{fill:#B0AFB5;}
 	</style>
-	
+
 	<g>
 	<g id="XMLID_16602_">
-		<polyline id="XMLID_16640_" class="st0" points="1496.3,-475.1 1537.8,-483.1 1549.5,-521.3 1599.4,-564.1 1634.2,-561.3 
-			1633.1,-502.7 1545.8,-526.7 1634.2,-561.3 1706,-548.4 1689.5,-474.1 1633.1,-502.7 1704,-553.8 1790.2,-557.6 1808.7,-486.7 
-			1702.5,-421.7 1747.1,-377.2 1701.8,-338.5 1761.9,-313.6 1765.4,-312.2 1741.4,-274 1747.4,-226.1 1692.4,-206.9 1647.8,-230.8 
-			1681.1,-273 1746.9,-273.9 1797.9,-291.5 1845.8,-323 1805.9,-403.9 1747.1,-377.2 1811.9,-484.1 1807.4,-409.3 1853.6,-456.6 
-			1883.7,-395.3 1882.1,-478.9 1921.5,-534.6 1958.7,-526.7 2007.9,-570.6 2023.3,-508.5 2050.5,-533.4 2095.2,-530.7 
-			2124.8,-546.3 2015.6,-570.6 1955.5,-449 1974,-383.9 2012.4,-445.3 2039.5,-396.3 2054.4,-354.9 2117.9,-346.6 2163.9,-395.3 
-			2198.5,-377.2 2210.8,-429.5 2271.8,-448.6 2202,-325.2 2076.5,-274.9 2016.7,-323 1909,-331.1 1947.6,-269.6 1880.8,-287.2 
-			1887.6,-229.5 1947.6,-229.5 2022.2,-242.5 1963,-145.1 1947.6,-229.5 1853.9,-159.9 1824.1,-216.5 1852.1,-320.1 1765.4,-314.9 
-			1891.6,-396.3 1944.5,-452.1 1911.3,-335.2 1830.8,-216.5 1751.4,-139.3 1668.7,-151.2 1726.8,-89.4 1761.9,-53.5 1805.9,-102.8 
-			1757.4,-132.8 1761.9,-53.5 1729.3,-28.2 1810.6,-1.6 1864.5,-6.5 1893.1,-17.3 1898.9,-19.5 1931.4,50.3 1913.3,58.9 
+		<polyline id="XMLID_16640_" class="st0" points="1496.3,-475.1 1537.8,-483.1 1549.5,-521.3 1599.4,-564.1 1634.2,-561.3
+			1633.1,-502.7 1545.8,-526.7 1634.2,-561.3 1706,-548.4 1689.5,-474.1 1633.1,-502.7 1704,-553.8 1790.2,-557.6 1808.7,-486.7
+			1702.5,-421.7 1747.1,-377.2 1701.8,-338.5 1761.9,-313.6 1765.4,-312.2 1741.4,-274 1747.4,-226.1 1692.4,-206.9 1647.8,-230.8
+			1681.1,-273 1746.9,-273.9 1797.9,-291.5 1845.8,-323 1805.9,-403.9 1747.1,-377.2 1811.9,-484.1 1807.4,-409.3 1853.6,-456.6
+			1883.7,-395.3 1882.1,-478.9 1921.5,-534.6 1958.7,-526.7 2007.9,-570.6 2023.3,-508.5 2050.5,-533.4 2095.2,-530.7
+			2124.8,-546.3 2015.6,-570.6 1955.5,-449 1974,-383.9 2012.4,-445.3 2039.5,-396.3 2054.4,-354.9 2117.9,-346.6 2163.9,-395.3
+			2198.5,-377.2 2210.8,-429.5 2271.8,-448.6 2202,-325.2 2076.5,-274.9 2016.7,-323 1909,-331.1 1947.6,-269.6 1880.8,-287.2
+			1887.6,-229.5 1947.6,-229.5 2022.2,-242.5 1963,-145.1 1947.6,-229.5 1853.9,-159.9 1824.1,-216.5 1852.1,-320.1 1765.4,-314.9
+			1891.6,-396.3 1944.5,-452.1 1911.3,-335.2 1830.8,-216.5 1751.4,-139.3 1668.7,-151.2 1726.8,-89.4 1761.9,-53.5 1805.9,-102.8
+			1757.4,-132.8 1761.9,-53.5 1729.3,-28.2 1810.6,-1.6 1864.5,-6.5 1893.1,-17.3 1898.9,-19.5 1931.4,50.3 1913.3,58.9
 			1861.2,31.2 1860.9,2.8 		"/>
 		<polyline id="XMLID_16639_" class="st0" points="2298.3,-377.2 2271.8,-448.6 2215.5,-431.6 2298.5,-365.4 2209.1,-332.4 		"/>
-		<polyline id="XMLID_16638_" class="st0" points="2328.4,-659.7 2412.1,-659.6 2449.7,-647.1 2489.8,-612.8 2535.6,-597.3 
-			2501,-542 2454.8,-512.3 2489.8,-612.8 2563.2,-662.5 2597,-669.5 2662.7,-648.9 2619.6,-587.7 2535.6,-597.3 2596.7,-658.7 
+		<polyline id="XMLID_16638_" class="st0" points="2328.4,-659.7 2412.1,-659.6 2449.7,-647.1 2489.8,-612.8 2535.6,-597.3
+			2501,-542 2454.8,-512.3 2489.8,-612.8 2563.2,-662.5 2597,-669.5 2662.7,-648.9 2619.6,-587.7 2535.6,-597.3 2596.7,-658.7
 			2619.6,-587.7 		"/>
-		<polyline id="XMLID_16637_" class="st0" points="1804.6,-406.9 1883.4,-399.5 1911.3,-331.1 1847.1,-324 1880.8,-287.2 
+		<polyline id="XMLID_16637_" class="st0" points="1804.6,-406.9 1883.4,-399.5 1911.3,-331.1 1847.1,-324 1880.8,-287.2
 			1797.9,-291.5 1746.9,-227.2 1824.1,-214.3 1883.4,-229.5 1852.1,-159.9 1755.3,-143 		"/>
 		<polyline id="XMLID_16636_" class="st0" points="1647.8,-230.8 1668.7,-151.2 1693.9,-207.4 1751.4,-139.3 1727,-92.5 		"/>
-		<polyline id="XMLID_16635_" class="st0" points="2117.9,-346.6 2007.4,-321.1 2019,-245.6 2076.5,-269.6 1944.5,-274 
-			2019.3,-238.2 1963.5,-147.1 1852.1,-159.9 1805.9,-102.8 1746.9,-227.2 1681.1,-269.6 1701.8,-338.5 1701.8,-422.7 
+		<polyline id="XMLID_16635_" class="st0" points="2117.9,-346.6 2007.4,-321.1 2019,-245.6 2076.5,-269.6 1944.5,-274
+			2019.3,-238.2 1963.5,-147.1 1852.1,-159.9 1805.9,-102.8 1746.9,-227.2 1681.1,-269.6 1701.8,-338.5 1701.8,-422.7
 			1687.3,-472.5 1808.7,-488.2 1702.5,-550.9 1794.2,-558.6 1872.1,-552.1 		"/>
 		<polyline id="XMLID_16634_" class="st1" points="1810.6,-487.7 1883.4,-483 1952.4,-453.6 1958.7,-524.2 		"/>
-		<polyline id="XMLID_16633_" class="st1" points="1998.7,146.3 1990.5,205.2 1998.4,293.2 2054.2,300.4 2053.4,369.3 2110.6,328.1 
-			2075.5,259.6 2109.2,199.9 2027,118 2059.7,96.5 2148.6,97.1 2182.8,128 2110.6,136.4 2143.7,255.3 2199.3,248.9 2251.6,172.7 
-			2325.9,240.7 2248.1,259.6 2193.8,321.9 2110.6,328.1 2104.3,433.5 2191.4,424.6 2258.9,328.1 2327.2,340 2368.5,309.3 
-			2263.3,321.4 2274,384.9 2365.8,424.3 2281.1,450.3 2300.4,514.9 2247.8,555.4 2209.2,507.9 2150.8,554.3 2097.3,508.8 
-			2116.8,611.7 2200.2,653.7 2132.4,659.3 2175.5,756.4 2202.2,649.1 2154.2,560.7 2248.9,558 2279.5,452.1 2191.9,423.3 
-			2104.3,505.8 2104.3,439.5 2189.7,328.1 2145.4,260.7 2178.7,126.9 2251.6,172.7 2248.1,255.3 2382.4,308.6 2406.3,378 
-			2371.1,417.2 2304.6,512.4 2214.4,502.3 2210.2,653.7 2132.4,657.8 2116.8,615.7 2149.1,557.8 2095.2,508.1 2210.2,502.3 
-			2191.4,424.6 2054.2,378 1994.1,291.7 2075.5,259.6 2000.8,143.2 2025.5,110.4 2108.8,135.4 2203.6,255.3 2256.5,322.4 
+		<polyline id="XMLID_16633_" class="st1" points="1998.7,146.3 1990.5,205.2 1998.4,293.2 2054.2,300.4 2053.4,369.3 2110.6,328.1
+			2075.5,259.6 2109.2,199.9 2027,118 2059.7,96.5 2148.6,97.1 2182.8,128 2110.6,136.4 2143.7,255.3 2199.3,248.9 2251.6,172.7
+			2325.9,240.7 2248.1,259.6 2193.8,321.9 2110.6,328.1 2104.3,433.5 2191.4,424.6 2258.9,328.1 2327.2,340 2368.5,309.3
+			2263.3,321.4 2274,384.9 2365.8,424.3 2281.1,450.3 2300.4,514.9 2247.8,555.4 2209.2,507.9 2150.8,554.3 2097.3,508.8
+			2116.8,611.7 2200.2,653.7 2132.4,659.3 2175.5,756.4 2202.2,649.1 2154.2,560.7 2248.9,558 2279.5,452.1 2191.9,423.3
+			2104.3,505.8 2104.3,439.5 2189.7,328.1 2145.4,260.7 2178.7,126.9 2251.6,172.7 2248.1,255.3 2382.4,308.6 2406.3,378
+			2371.1,417.2 2304.6,512.4 2214.4,502.3 2210.2,653.7 2132.4,657.8 2116.8,615.7 2149.1,557.8 2095.2,508.1 2210.2,502.3
+			2191.4,424.6 2054.2,378 1994.1,291.7 2075.5,259.6 2000.8,143.2 2025.5,110.4 2108.8,135.4 2203.6,255.3 2256.5,322.4
 			2194.1,329.2 2281.1,450.3 2327.2,343.9 2410.1,378 		"/>
 		<polyline id="XMLID_16632_" class="st1" points="1963.5,-147.1 2028.3,-42.5 2027,118 1929.1,50.3 2060.9,92.3 2028.3,-42.5 		"/>
-		<polyline id="XMLID_16631_" class="st0" points="3996,564.8 3989.5,469.9 4081.9,498.6 4116.4,407.8 4191.6,370.8 4214.1,417.4 
-			4274.4,445.3 4298.2,362.9 4324.6,447.7 4308.8,514.4 4306.7,588.1 4244.6,606.6 4203.5,571.9 4169.2,503.1 4098.7,568.9 
-			3995.1,566.1 4081.8,502.1 4214.1,417.4 4308.8,514.4 4168.9,502.1 4214.1,417.4 4244.8,608 4308.8,514.4 4203.5,571.9 
+		<polyline id="XMLID_16631_" class="st0" points="3996,564.8 3989.5,469.9 4081.9,498.6 4116.4,407.8 4191.6,370.8 4214.1,417.4
+			4274.4,445.3 4298.2,362.9 4324.6,447.7 4308.8,514.4 4306.7,588.1 4244.6,606.6 4203.5,571.9 4169.2,503.1 4098.7,568.9
+			3995.1,566.1 4081.8,502.1 4214.1,417.4 4308.8,514.4 4168.9,502.1 4214.1,417.4 4244.8,608 4308.8,514.4 4203.5,571.9
 			4173,566.1 4083.5,499.7 		"/>
 		<polyline id="XMLID_16630_" class="st0" points="3991.6,470.8 4118.6,408.8 4210.1,420 		"/>
 		<g id="XMLID_16620_">
-			<polyline id="XMLID_16629_" class="st0" points="4356.6,295.4 4288.7,264.9 4253,236.1 4074.6,236.1 3993.6,205.8 4030.9,172.9 
+			<polyline id="XMLID_16629_" class="st0" points="4356.6,295.4 4288.7,264.9 4253,236.1 4074.6,236.1 3993.6,205.8 4030.9,172.9
 				3998.8,168.2 3993.6,205.8 			"/>
 			<polyline id="XMLID_16628_" class="st0" points="3911.7,55.9 3863.3,136.4 3874.4,203.1 3890.3,234.4 3997.2,207.1 			"/>
 			<polyline id="XMLID_16627_" class="st0" points="3969,-122.5 3935.3,-53.3 3884.5,-10.5 3911.7,55.9 			"/>
-			<polyline id="XMLID_16626_" class="st0" points="3939.9,-186.3 3800.1,-149.7 3846.9,-55.1 3895.8,-127 3973.3,-119.3 
-				4026.5,-133.3 4067.1,-210.7 4044.3,-233.8 4037.3,-268.5 3964,-244.7 3938.7,-323.9 4066.9,-363 3954.8,-414.5 3938.4,-499.4 
+			<polyline id="XMLID_16626_" class="st0" points="3939.9,-186.3 3800.1,-149.7 3846.9,-55.1 3895.8,-127 3973.3,-119.3
+				4026.5,-133.3 4067.1,-210.7 4044.3,-233.8 4037.3,-268.5 3964,-244.7 3938.7,-323.9 4066.9,-363 3954.8,-414.5 3938.4,-499.4
 				4017,-484.1 			"/>
 			<polyline id="XMLID_16625_" class="st0" points="4162.2,-457 4222.8,-512.7 4184.6,-549.2 4131.5,-534.5 4064,-556 			"/>
-			<polyline id="XMLID_16624_" class="st0" points="3918.2,52.9 3866.4,33.4 3846.9,-55.1 3752.8,-86.7 3688.6,-71.3 3642.5,-42.7 
+			<polyline id="XMLID_16624_" class="st0" points="3918.2,52.9 3866.4,33.4 3846.9,-55.1 3752.8,-86.7 3688.6,-71.3 3642.5,-42.7
 				3617.7,9.6 3630.9,46.2 3631.5,47.9 3616.3,90.5 3589.4,40.3 3634.1,47.9 			"/>
-			<polyline id="XMLID_16623_" class="st0" points="3571.1,-3 3558.4,-49.7 3617.9,-141.1 3545,-119.3 3472.2,-114.6 3503.8,-183.2 
+			<polyline id="XMLID_16623_" class="st0" points="3571.1,-3 3558.4,-49.7 3617.9,-141.1 3545,-119.3 3472.2,-114.6 3503.8,-183.2
 				3580.2,-236.7 3694.7,-152 3688.6,-71.3 3617.9,-148.7 3653.5,-36 3557,-49 			"/>
 			<line id="XMLID_16622_" class="st0" x1="3998.8" y1="168.2" x2="3890.3" y2="234.4"/>
 			<line id="XMLID_16621_" class="st0" x1="4030.9" y1="172.9" x2="4252.5" y2="234.4"/>
 		</g>
 		<g id="XMLID_16614_">
-			<polyline id="XMLID_16619_" class="st0" points="4063.8,-549.2 4018.3,-480.5 3954.8,-414.5 4162.4,-454.2 4214.5,-419 
-				4222.8,-507.3 4128.3,-533.5 4162.4,-454.2 4062.5,-357.2 4128,-345.1 4038.7,-277.4 3942.7,-324.6 3911.7,-251.4 3939.9,-188.5 
-				3964,-121.2 3843.4,-60.9 3690.7,-158.7 3755.7,-224.8 3677.2,-248.2 3762.5,-292.9 3821.1,-328.7 3856.6,-264.4 3805,-149.7 
-				3912.7,-253.3 3841.4,-426.7 3730.4,-421.5 3653.8,-334 3759.6,-292.2 3730.5,-417.8 3657.5,-494.5 3697.4,-548.2 3759.6,-555 
+			<polyline id="XMLID_16619_" class="st0" points="4063.8,-549.2 4018.3,-480.5 3954.8,-414.5 4162.4,-454.2 4214.5,-419
+				4222.8,-507.3 4128.3,-533.5 4162.4,-454.2 4062.5,-357.2 4128,-345.1 4038.7,-277.4 3942.7,-324.6 3911.7,-251.4 3939.9,-188.5
+				3964,-121.2 3843.4,-60.9 3690.7,-158.7 3755.7,-224.8 3677.2,-248.2 3762.5,-292.9 3821.1,-328.7 3856.6,-264.4 3805,-149.7
+				3912.7,-253.3 3841.4,-426.7 3730.4,-421.5 3653.8,-334 3759.6,-292.2 3730.5,-417.8 3657.5,-494.5 3697.4,-548.2 3759.6,-555
 				3835.5,-523.2 3908.8,-560.7 3941.6,-498.5 3843.2,-427.5 3821.1,-328.7 3756.2,-224.9 3803.8,-150.4 3752.8,-86.7 			"/>
-			<polyline id="XMLID_16618_" class="st0" points="3675.5,-256 3577.8,-243.1 3616.3,-144.2 3503.8,-183.2 3543.1,-121.2 
-				3555.4,-49.7 3476.8,-116.2 3423.8,-205.7 3471.4,-235.2 3503.8,-310.8 3472.2,-334.2 3420.9,-329.9 3473.8,-422.1 
-				3577.5,-334.2 3611.9,-400 3536,-475.1 3656.3,-491 3653.5,-328.6 3571.3,-241.1 3509.3,-317.5 3581.7,-334.2 3532.6,-467.2 
-				3522.8,-544.4 3577.5,-589.4 3511.9,-597.3 3418.1,-562.7 3365.8,-475.1 3275.1,-507.3 3301.2,-561.7 3258.7,-608.2 
+			<polyline id="XMLID_16618_" class="st0" points="3675.5,-256 3577.8,-243.1 3616.3,-144.2 3503.8,-183.2 3543.1,-121.2
+				3555.4,-49.7 3476.8,-116.2 3423.8,-205.7 3471.4,-235.2 3503.8,-310.8 3472.2,-334.2 3420.9,-329.9 3473.8,-422.1
+				3577.5,-334.2 3611.9,-400 3536,-475.1 3656.3,-491 3653.5,-328.6 3571.3,-241.1 3509.3,-317.5 3581.7,-334.2 3532.6,-467.2
+				3522.8,-544.4 3577.5,-589.4 3511.9,-597.3 3418.1,-562.7 3365.8,-475.1 3275.1,-507.3 3301.2,-561.7 3258.7,-608.2
 				3192.8,-522.1 3239.2,-536.9 3262.4,-414.2 3268.5,-344.7 3148.1,-339.5 3155.6,-431.6 3268.7,-414.2 3367.8,-479.3 			"/>
-			<polyline id="XMLID_16617_" class="st0" points="3107.6,-111.5 3223.2,-96.4 3283.9,-102.1 3336.6,-29.4 3282.7,21.7 3192.5,2.2 
+			<polyline id="XMLID_16617_" class="st0" points="3107.6,-111.5 3223.2,-96.4 3283.9,-102.1 3336.6,-29.4 3282.7,21.7 3192.5,2.2
 				3117.2,-43.8 3106.4,-111.3 			"/>
-			<polyline id="XMLID_16616_" class="st0" points="3434.9,-431.6 3367.8,-479.3 3411.8,-323.4 3351.3,-249.7 3272,-341.1 
+			<polyline id="XMLID_16616_" class="st0" points="3434.9,-431.6 3367.8,-479.3 3411.8,-323.4 3351.3,-249.7 3272,-341.1
 				3218.5,-248.2 3275.1,-172.3 3399.9,-145.1 3423.8,-205.7 3356.3,-243.6 3230.5,-248.2 3145.6,-248.2 			"/>
-			<polyline id="XMLID_16615_" class="st0" points="3029.6,-148.1 2938.9,-141.1 2993.4,-79 2925,-2.3 2845.9,-58.2 2859.6,-152.8 
-				2766.3,-160.5 2685.8,-103.4 2759.3,-62 2798.5,-105 2776.1,20.5 2661.7,-41.4 2656,-8.8 2672.5,39.2 2708.9,99.7 2789.8,106.2 
-				2866,73.2 2776.1,20.5 2845.9,-58.2 2866,73.2 2963.8,73.9 3038.2,16.5 2993.4,-79 3107.6,-111.5 3282.7,21.7 3294,116.6 
-				3246.6,177.3 3174.7,162.3 3141.1,114.8 3203.7,78.1 3245.9,177.5 3211.9,229.1 3148.1,273.8 3058.1,276.3 3115.2,174.3 
+			<polyline id="XMLID_16615_" class="st0" points="3029.6,-148.1 2938.9,-141.1 2993.4,-79 2925,-2.3 2845.9,-58.2 2859.6,-152.8
+				2766.3,-160.5 2685.8,-103.4 2759.3,-62 2798.5,-105 2776.1,20.5 2661.7,-41.4 2656,-8.8 2672.5,39.2 2708.9,99.7 2789.8,106.2
+				2866,73.2 2776.1,20.5 2845.9,-58.2 2866,73.2 2963.8,73.9 3038.2,16.5 2993.4,-79 3107.6,-111.5 3282.7,21.7 3294,116.6
+				3246.6,177.3 3174.7,162.3 3141.1,114.8 3203.7,78.1 3245.9,177.5 3211.9,229.1 3148.1,273.8 3058.1,276.3 3115.2,174.3
 				3048.1,187.3 3025.9,135 3094.7,70.1 3192.5,2.2 3203.7,78.1 3174.7,163 3115.4,173.6 			"/>
 		</g>
-		<polyline id="XMLID_16613_" class="st0" points="3018.5,-651.6 2992.7,-636.7 2990.7,-546.7 2948.7,-499.4 2895.9,-490.8 
-			2947.7,-424 2965.2,-352.8 2905.3,-319.7 2886.2,-377.1 2813.3,-330.5 2800.4,-265.5 2753.5,-258.1 2813.3,-330.5 2905.3,-319.7 
-			2947.7,-424 3050.6,-428.5 3075.1,-366.2 3065.8,-299.1 2999.3,-294.4 3052.2,-432.7 3094.5,-542 2990.7,-546.7 3045,-429.4 
-			3158.9,-431.6 3094.5,-542 3195.1,-522.1 3158.9,-431.6 3079,-367.5 3148.1,-339.5 3262.4,-414.2 3420.9,-329.9 3268.5,-344.7 
-			3144.5,-249.7 3222,-97.5 3275.7,-171.3 3283.9,-99.8 3399.9,-145.1 3332.1,-29.8 3472.2,-114.6 3399.9,-145.1 3351.3,-249.7 
+		<polyline id="XMLID_16613_" class="st0" points="3018.5,-651.6 2992.7,-636.7 2990.7,-546.7 2948.7,-499.4 2895.9,-490.8
+			2947.7,-424 2965.2,-352.8 2905.3,-319.7 2886.2,-377.1 2813.3,-330.5 2800.4,-265.5 2753.5,-258.1 2813.3,-330.5 2905.3,-319.7
+			2947.7,-424 3050.6,-428.5 3075.1,-366.2 3065.8,-299.1 2999.3,-294.4 3052.2,-432.7 3094.5,-542 2990.7,-546.7 3045,-429.4
+			3158.9,-431.6 3094.5,-542 3195.1,-522.1 3158.9,-431.6 3079,-367.5 3148.1,-339.5 3262.4,-414.2 3420.9,-329.9 3268.5,-344.7
+			3144.5,-249.7 3222,-97.5 3275.7,-171.3 3283.9,-99.8 3399.9,-145.1 3332.1,-29.8 3472.2,-114.6 3399.9,-145.1 3351.3,-249.7
 			3277.2,-172.3 		"/>
 		<g id="XMLID_16609_">
-			<polyline id="XMLID_16612_" class="st0" points="3418.1,-328.6 3473.5,-240.9 3503.8,-183.2 3423.8,-205.7 3415,-331.4 
-				3434.9,-431.6 3471.4,-421.5 3536,-475.1 3423.4,-561.7 3298.6,-562.7 3236.7,-536.9 3277.6,-509.4 3418.4,-566.7 3517.5,-546.5 
-				3660.4,-494 3577.5,-589.4 3673.4,-581.4 3692.9,-555 3721.9,-581.4 3762.5,-559 3730.2,-421.5 3608.6,-400 3660.4,-494 
-				3835.5,-526.1 3838.4,-426.7 3908.8,-560.7 3958.2,-560.7 4017,-484.1 4062.5,-361.6 4132.4,-538 4063.6,-555.2 3962.4,-561.7 
+			<polyline id="XMLID_16612_" class="st0" points="3418.1,-328.6 3473.5,-240.9 3503.8,-183.2 3423.8,-205.7 3415,-331.4
+				3434.9,-431.6 3471.4,-421.5 3536,-475.1 3423.4,-561.7 3298.6,-562.7 3236.7,-536.9 3277.6,-509.4 3418.4,-566.7 3517.5,-546.5
+				3660.4,-494 3577.5,-589.4 3673.4,-581.4 3692.9,-555 3721.9,-581.4 3762.5,-559 3730.2,-421.5 3608.6,-400 3660.4,-494
+				3835.5,-526.1 3838.4,-426.7 3908.8,-560.7 3958.2,-560.7 4017,-484.1 4062.5,-361.6 4132.4,-538 4063.6,-555.2 3962.4,-561.7
 				3938.4,-499.4 			"/>
 			<path id="XMLID_16611_" class="st0" d="M3434.9-431.6"/>
-			<polyline id="XMLID_16610_" class="st0" points="3847.3,-422.1 3952.6,-411 3942.7,-327.3 3821.1,-328.7 3734.3,-415.2 
+			<polyline id="XMLID_16610_" class="st0" points="3847.3,-422.1 3952.6,-411 3942.7,-327.3 3821.1,-328.7 3734.3,-415.2
 				3832.9,-522.3 3939.9,-492 			"/>
 		</g>
-		<polyline id="XMLID_16608_" class="st0" points="2859.6,-152.8 2935.7,-144.2 2924.8,-5.1 2959.7,71.2 2913.1,158.4 2946.6,214.3 
-			3025.9,135 3141.1,114.8 3094.7,70.1 3038,20.9 3117.2,-43.8 3094.7,70.1 3111.7,172.4 3148.1,273.8 3222.3,319.8 3219.2,386.7 
-			3160.5,350.7 3148.1,273.8 3054.6,368.8 2993.4,308.9 3059.7,276.3 3048.1,187.3 2956.1,273.8 2950.2,360.1 2956.1,395.8 
-			3041,434.4 3054.6,368.8 3137,436.3 3115.3,517.7 3040.5,537.9 2996,591 2990.1,461.4 3041,434.4 3137,436.3 3160.5,350.7 
+		<polyline id="XMLID_16608_" class="st0" points="2859.6,-152.8 2935.7,-144.2 2924.8,-5.1 2959.7,71.2 2913.1,158.4 2946.6,214.3
+			3025.9,135 3141.1,114.8 3094.7,70.1 3038,20.9 3117.2,-43.8 3094.7,70.1 3111.7,172.4 3148.1,273.8 3222.3,319.8 3219.2,386.7
+			3160.5,350.7 3148.1,273.8 3054.6,368.8 2993.4,308.9 3059.7,276.3 3048.1,187.3 2956.1,273.8 2950.2,360.1 2956.1,395.8
+			3041,434.4 3054.6,368.8 3137,436.3 3115.3,517.7 3040.5,537.9 2996,591 2990.1,461.4 3041,434.4 3137,436.3 3160.5,350.7
 			3059.7,274.9 2946.6,214.3 2956.1,273.8 2993.4,308.9 2956.1,395.8 3054.6,368.8 		"/>
-		<polyline id="XMLID_16607_" class="st0" points="4026.5,-133.3 3996,-175.5 3938.3,-188.5 4044.3,-233.8 3965.1,-240.9 
+		<polyline id="XMLID_16607_" class="st0" points="4026.5,-133.3 3996,-175.5 3938.3,-188.5 4044.3,-233.8 3965.1,-240.9
 			3909.1,-251.9 3855.8,-262.7 3752.8,-223 3759.6,-292.2 		"/>
-		<polyline id="XMLID_16606_" class="st0" points="3895.8,-129.2 3800.1,-149.7 3694.7,-162.8 3675.2,-251.9 3653.5,-328.6 
+		<polyline id="XMLID_16606_" class="st0" points="3895.8,-129.2 3800.1,-149.7 3694.7,-162.8 3675.2,-251.9 3653.5,-328.6
 			3581.7,-334.2 3576.1,-241.1 3473.5,-240.9 3351.3,-249.7 		"/>
 		<polyline id="XMLID_16605_" class="st0" points="2683.6,-105 2661.7,-43.8 2759.3,-62 2776.1,16.8 2672.5,39.2 		"/>
 		<polyline id="XMLID_16604_" class="st0" points="1921.5,-535.7 1872.1,-552.1 1808.7,-488.2 1853.6,-456.6 		"/>
@@ -1160,8 +1160,8 @@ get_header();
     </div>
     </div>
 	</div>
-	
-	
+
+
 	<div  style="margin-top:100px"  id="address-drop" class="visible-xs">
 	  <div class="container">
 	      <div class="row">
@@ -1175,26 +1175,26 @@ get_header();
                 <li><a  data-id="contact-2" class="country_drop" >China</a></li>
                 <li><a  data-id="contact-7" class="country_drop" >Australia</a></li>
                 <li><a  data-id="contact-6"  class="country_drop" >Singapore</a></li>
-			    <li><a data-id="contact-10" class="country_drop"  >Brazil</a></li> 
+			    <li><a data-id="contact-10" class="country_drop"  >Brazil</a></li>
 				<li><a data-id="contact-3" class="country_drop" >Taiwan</a></li>
 				<li><a data-id="contact-5" class="country_drop" >Indonesia</a></li>
 				<li><a  data-id="contact-1" class="country_drop" >Dubai</a></li>
 				<li><a  data-id="contact-4"  class="country_drop" >Japan</a></li>
-			 	<li><a data-id="contact-11"  class="country_drop" >Korea</a></li> 
+			 	<li><a data-id="contact-11"  class="country_drop" >Korea</a></li>
 				<li><a  data-id="contact-9" class="country_drop" >USA</a></li>
 			  </ul>
 			</div>
 			</div>
 		  </div>
 		</div>
-    </div>  
+    </div>
 
-	
+
 
     <div id="address-number" class="container">
 
     </div>
-	
+
 
 <div style="display:none" >
 
@@ -1202,8 +1202,8 @@ get_header();
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> Vizury Interactive Solutions LLC
 </br>DIC First Step Office # G13,Building # 16
@@ -1213,7 +1213,7 @@ get_header();
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span>+971 4 458 2626 <br/>
@@ -1228,8 +1228,8 @@ sales-mea@vizury.com</span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> Vizury(Beijing) Advertising Co. Ltd.,
 </br>Room 2908 – 2909, Tower 8, Wanda Plaza,
@@ -1239,7 +1239,7 @@ sales-mea@vizury.com</span>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span>+86-10-57359239  <br/> sales-china@vizury.com </span>
@@ -1254,8 +1254,8 @@ sales-mea@vizury.com</span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> 6F, 153 Xinyi Road, Section 3,
 </br>Daan District
@@ -1265,7 +1265,7 @@ sales-mea@vizury.com</span>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span> +886 (2) 6638 5280 ext. 6201 <br/>
@@ -1280,8 +1280,8 @@ sales-taiwan@vizury.com</span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> Vizury Japan Gohdoh Kaisha
 </br>Shibuya Miyata building
@@ -1291,7 +1291,7 @@ sales-taiwan@vizury.com</span>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span>+81-3-6869-5770 <br/>
@@ -1306,8 +1306,8 @@ sales-japan@vizury.com</span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> Jl. Masjid No. 18,
 </br>Jakarta Pusat 10210,
@@ -1316,7 +1316,7 @@ Indonesia</br></span>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span>+62 21 9242 2123, 818 435 486 <br/> sales-sea@vizury.com </span>
@@ -1331,8 +1331,8 @@ Indonesia</br></span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> Singapore One Raffles Place
 </br>1, Raffles Place, Level 24
@@ -1341,7 +1341,7 @@ Indonesia</br></span>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span>+65-6408 0533  <br/> sales-sea@vizury.com </span>
@@ -1356,8 +1356,8 @@ Indonesia</br></span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> Vizury Interactive Solutions Australia PTY Ltd.
 </br>Suite 402, 93 Pacific Highway
@@ -1367,7 +1367,7 @@ Indonesia</br></span>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span>+61 2 8075 7950 <br/>
@@ -1383,8 +1383,8 @@ sales-anz@vizury.com</span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> Vizury Interactive Solutions Pvt. Ltd.
 </br>#24,  4th Floor, Salarpuria Arena,
@@ -1394,7 +1394,7 @@ Adugodi,Bangalore</br>560030</br>India</br></span>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span>+91 80 49104000 <br/> sales-india@vizury.com </span>
@@ -1409,8 +1409,8 @@ Adugodi,Bangalore</br>560030</br>India</br></span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span>Vizury Interactive Solutions Limited
 </br>Address: 599 Fairchild Dr. in Mountain View, <br/>CA</br></span>
@@ -1418,7 +1418,7 @@ Adugodi,Bangalore</br>560030</br>India</br></span>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span>+19174129765 <br/>
@@ -1434,8 +1434,8 @@ sales@vizury.com</span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> Vizury BrasilSolucoes Interativas Ltda.,
 </br>Av. Moema, 300,
@@ -1445,7 +1445,7 @@ sales@vizury.com</span>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span> + 55 11 43711275 <br/> sales-brazil@vizury.com </span>
@@ -1460,18 +1460,18 @@ sales@vizury.com</span>
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/Map-locator.svg" class="address-icons pull-right">
-       </div>		
+         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+       </div>
 	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
 		 <span> Vizury Interactive Solutions Korea Limited
 </br>#435, 4 Floor, EK Tower,
-</br>Seoul 
+</br>Seoul
 </br> 135-876,</br>Korea</br></span>
 	   </div>
      </div>
 	 <div class="row">
 	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
-         <img src="http://localhost/~shazadmaved/vizonwp/imgs/contact.svg" class="address-icons pull-right">
+         <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
 	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
 	     <span> +82 2 6188 0503 <br/>
@@ -1488,9 +1488,9 @@ kr.vizury@vizury.com</span>
 
 
 
-	
+
     <div id="infoform" class="container">
-    	
+
     	<div class="form form-horizontal">
     	<?php echo do_shortcode('[contact-form-7 id="306" title="Contact form 1"]'); ?>
     	</div>
