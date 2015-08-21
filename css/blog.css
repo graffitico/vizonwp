@@ -18,6 +18,10 @@
 	font-family: proxima;
 }
 
+p, a, h3, h4, h5, h6 {
+    font-family: proxima;
+}
+
 b, strong {
 	font-family: proximab;
 }
@@ -59,5 +63,40 @@ b, strong {
 .inner-post {
 	font-family: proxima;
 }
+
+.dropdown-menu {
+	display: none;
+}
+
+.open {
+	position: relative;
+}
+
+.open > .dropdown-toggle {
+	display: inline-block;
+}
+
+#pre-header > ul > li .search-bar {
+	width: 0px;
+	height: 20px;
+	padding: 0 !important;
+    -webkit-transition-duration: .8s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
+    border-radius: 4px;
+    border-width: 0 !important;
+    display: none;
+}
+#pre-header > ul > li .search-bar.searchvisible {
+	width: 200px;
+	padding: 0 5px !important;
+	display: inline;
+	border-width: 0;
+}
+
+#pre-header > ul > li.has-icon {
+    height: 26px;
+}
+
 
 
