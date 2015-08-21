@@ -800,8 +800,6 @@ div.img {
 
 }
 .engage-advantage-container {
-	/*background-image: url(/images/nodes_svg.svg);*/
-	background-size: cover;
 	padding: 10px;
 	position: relative;
 	height: 1000px;
@@ -826,9 +824,42 @@ div.img {
 	opacity: 0.6;
 	height: 1000px;
 	width: 100%;
+	min-width: 1000px;
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+.hover-magic-circle1 {
+	left: 34%;
+	top: 50%;
+}
+.hover-magic-circle2 {
+	left: 7%;
+	top: 24%;
+}
+.hover-magic-circle3 {
+	left: 60%;
+	top: 70%;
+}
+.hover-magic-circle4 {
+	left: 3%;
+	top: 80%;
+}
+.hover-magic-circle5 {
+	left: 86%;
+	top: 39%;
+}
+.hover-magic-circle6 {
+	left: 30%;
+	top: 78%;
+}
+.hover-magic-circle7 {
+	left: 15%;
+	top: 47%;
+}
+.hover-magic-circle8 {
+	left: 61%;
+	top: 25%;
 }
 
 /** Testimonials block */
@@ -1399,7 +1430,7 @@ div.img {
 	}
 
 	.box-touch {
-	margin-bottom: 0;
+		margin-bottom: 0;
 	}
 
 	.yellow-height {
@@ -1407,16 +1438,23 @@ div.img {
 	}
 
 	.yellow-text-block .inline-content p {
-	display: inline-block;
-	vertical-align: middle;
-	margin: auto 5%;
-}
+		display: inline-block;
+		vertical-align: middle;
+		margin: auto 5%;
+	}
 
 	.bottom-right {
 		position: absolute;
 		right: 10%;
 	}
 
+	.engage-advantage-container {
+		height: auto;
+		padding: 100px 0;
+	}
+	.hover-magic-text-bg {
+		display: none;
+	}
 	.floating-text-box {
 		position: static;
 		background-image: none !important;
@@ -1681,6 +1719,101 @@ div.img {
 		bottom: 50%;
 	}
 
+	.engage-advantage-container {
+		height: auto;
+		padding: 100px 0;
+	}
+	.hover-magic-text-bg {
+		display: none;
+	}
+	.floating-text-box {
+		position: static;
+		background-image: none !important;
+		margin: 0 auto;
+		list-style-type: none;
+		text-align: center;
+	}
+	.floating-text-box .circular-bound {
+		border-radius: 50%;
+	}
+	.bigcircle,
+	.xbigcircle,
+	.smallcircle {
+		display: block;
+		position: relative;
+		left: 0 !important;
+		top: 0 !important;
+		margin: 20px !important;
+	    -webkit-transition-duration: .5s;
+	    -webkit-transition-property: all;
+	    -webkit-transition-timing-function: ease-in-out;
+	}
+	.bigcircle.expanded,
+	.xbigcircle.expanded,
+	.smallcircle.expanded {
+	    transform: none;
+	}
+	.hoverable-text .floating-normal-text {
+		text-align: center;
+		vertical-align: middle;
+		color: #fff;
+		position: relative;
+	}
+	.floating-text-element-xsmall,
+	.floating-text-element-small,
+	.floating-text-element-medium,
+	.floating-text-element-large {
+		position: relative;
+		left: 0 !important;
+		top: 0 !important;
+		margin: 0 !important;
+		text-align: center;
+		padding: 4px 12px;
+		display: block;
+		font-size: 1.2em;
+		margin: 10px auto !important;
+		background-color: rgba(0,0,0,0.5);
+	}
+	.floating-text-element-medium {
+		font-size: 30px;
+	}
+	.floating-text-element-xsmall b,
+	.floating-text-element-small b,
+	.floating-text-element-medium b,
+	.floating-text-element-large b {
+		font-size: 1.2em;
+	}
+
+	.engage-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-data-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-insights-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-marketing-floating-bg {
+		width: auto;
+		height: auto;
+		background-image: none;
+		background-color: rgba(0,0,0, 0.2);
+	}
+	.engage-hover-magic-text {
+		width: auto;
+		height: auto;
+	    padding-top: 60px;
+    	position: relative;
+	}
  }
 
 
@@ -1827,9 +1960,9 @@ div.img {
 @media(min-width : 768px) and (max-width:991px) {
 
 	.blog-entry-tile {
-	height: 430px;
-	padding: 10px 30px;
-	font-size: 16px;
+		height: 430px;
+		padding: 10px 30px;
+		font-size: 16px;
 	}
 
 	.aunty {
@@ -1880,6 +2013,34 @@ div.img {
 
 	.fancybox-play {
 		bottom: 50%;
+	}
+
+	.hover-magic-circle1 {
+		left: 250px;
+	}
+	.hover-magic-circle2 {
+		left: 10px;
+	}
+	.hover-magic-circle3 {
+		left: 450px;
+	}
+	.hover-magic-circle4 {
+		left: 20px;
+		top: 550px;
+	}
+	.hover-magic-circle5 {
+		left: 440px;
+	}
+	.hover-magic-circle6 {
+		left: 220px;
+		top: 600px;
+	}
+	.hover-magic-circle7 {
+		left: 70px;
+	}
+	.hover-magic-circle8 {
+		left: 300px;
+		top: 215px;
 	}
 
 }
