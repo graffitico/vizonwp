@@ -479,6 +479,100 @@ p {
 .values-area {
 	margin: 5% auto;
 }
+
+.selfserve-header {
+	background-image: url("/images/selfserve-bg.svg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.selfserve-header .heading-block {
+	background: none;
+}
+
+.selfserve-header a {
+	font-size: 40px;
+}
+
+.selfserve-signup {
+	padding-top: 12%;
+	padding-right:4%;
+}
+
+.selfserve-header .btn-default{
+	margin-top: 50%;
+	margin-left: 40%;
+}
+
+.gift-box {
+	background-image: url("/images/gift.svg");
+	padding: 10% 20%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.gift-box h2 {
+	font-weight: normal;
+	text-align: center;
+	margin-top: 20%;
+}
+
+.section-title img {
+	width: 75%;
+	padding-right: 5%;
+}
+
+.yellow-icons {
+	background-image: url("/images/laptop-bg.jpg");
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-attachment: fixed;
+}
+
+.circle-text {
+	border-radius: 100%;
+	border-color: #f8835e;
+	height: 180px;
+	text-align: center;
+}
+
+.sscar-icon {
+	height: 200px;
+}
+
+.sscarousel {
+	height: 500px;
+	margin: 5% auto;
+}
+
+.sscarousel .carousel-control {
+	color: #ffd846;
+}
+
+.sscarousel img {
+	margin-left:40%;
+}
+
+.sscarousel .carousel-inner p {
+	margin: 0 30%;
+}
+
+.flying-box-area {
+	margin: 15% auto;
+}
+
+.yellow-icons .feature-icon-holder {
+	margin:5% auto 10%;
+	
+}
+
+.yellow-icons .feature-icon-holder img {
+	width:125px;
+}
+
+.flying-box-area h4, .flying-box-area p {
+	text-align: left;
+}
 	
 /** Feature Section */
 
@@ -1622,7 +1716,13 @@ div.img {
 
 	.fancybox-play {
 		left:42%;
+		top: 110%;
 	}
+	
+	.yellow-height {
+		height: 200px;
+	}
+	
 	.portfolio-box-caption .icon-home_yellowband_arrow {
 		font-size: 20px;
 		bottom: 3%;
@@ -1646,6 +1746,10 @@ div.img {
 
 .cgo {
 	width:100px; 
+}
+
+.service-box  {
+	margin: 4% auto 8%;
 }
 
 }
