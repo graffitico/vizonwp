@@ -74,10 +74,10 @@
 									<a href='/vizuryblog'>BLOG</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Marketing</a>
+									<a href='/vizuryblog/category/marketing'>Marketing</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Technology</a>
+									<a href='/vizuryblog/category/technology'>Technology</a>
 								</li>
 							</ul>
 						</div>
