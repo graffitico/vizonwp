@@ -243,6 +243,27 @@ p {
 	color: #fff;
 }
 
+.chetan {
+	background: url('/images/chetan.jpg') no-repeat center center fixed;
+	background-size: cover;
+	text-align: left;
+	padding: 15% 40% 10% 10%;
+}
+
+.vikram {
+	background: url('/images/vikram.jpg') no-repeat center center fixed;
+	background-size: cover;
+	text-align: left;
+	padding: 15% 10% 10% 40%;
+}
+
+.gourav {
+	background: url('/images/gourav.jpg') no-repeat center center fixed;
+	background-size: cover;
+	text-align: left;
+	padding: 15% 40% 10% 10%;
+}
+
 
 /** Heading Text */
 
@@ -1351,6 +1372,11 @@ div.img {
 	padding: 0;
 }
 
+.cgo {
+	width:300px; 
+	padding-top:5%;
+}
+
 
 /* Custom, Iphone Retina */
 @media(max-width: 479px) {
@@ -1602,6 +1628,25 @@ div.img {
 		bottom: 3%;
 		right: 5%
 	}
+	
+	.chetan {
+	background: linear-gradient(to left, #7b7b7b, #ffffff);
+	padding: 30% 10%;
+}
+
+	.vikram {
+	background: linear-gradient(to right, #7b7b7b, #ffffff);
+	padding: 20% 10%;
+}
+
+	.gourav {
+	background: linear-gradient(to left, #7b7b7b, #ffffff);
+	padding: 20% 10%;
+}
+
+.cgo {
+	width:100px; 
+}
 
 }
 
@@ -1849,6 +1894,21 @@ div.img {
 	    padding-top: 60px;
     	position: relative;
 	}
+	
+		.chetan {
+	background: linear-gradient(to left, #7b7b7b, #ffffff);
+	padding: 30% 10%;
+}
+
+	.vikram {
+	background: linear-gradient(to right, #7b7b7b, #ffffff);
+	padding: 20% 10%;
+}
+
+	.gourav {
+	background: linear-gradient(to left, #7b7b7b, #ffffff);
+	padding: 20% 10%;
+}
  }
 
 
@@ -1999,13 +2059,7 @@ div.img {
 		padding: 10px 30px;
 		font-size: 16px;
 	}
-<<<<<<< HEAD
 	
-	
-=======
-
-
->>>>>>> 82e728937ecf6e79215bd207347169f96a585a99
 	.brand-images-sm p {
 	color: #fff;
 	text-align: center;
@@ -2056,22 +2110,15 @@ div.img {
 		bottom: 35%;
 	}
 
->>>>>>> 82e728937ecf6e79215bd207347169f96a585a99
 	.engage-header-icon {
 		height: 200px;
 	}
 
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 82e728937ecf6e79215bd207347169f96a585a99
 	.engage-heading-block {
 		padding-top: 2%;
 	}
 
-<<<<<<< HEAD
-=======
+
 	.hover-magic-circle1 {
 		left: 250px;
 	}
@@ -2100,7 +2147,11 @@ div.img {
 		top: 215px;
 	}
 
->>>>>>> 82e728937ecf6e79215bd207347169f96a585a99
+	.cgo {
+	width:250px; 
+	padding-top:5%;
+}
+	
 }
 
 /* Medium Devices, Desktops */
