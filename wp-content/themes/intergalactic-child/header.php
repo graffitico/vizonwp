@@ -33,7 +33,7 @@
 					<span class='header-icon icon-header_searchblue'></span>
 				</li>
 				<li class='has-icon'>
-					<a href='/contactusform'>
+					<a href='/contactus'>
 						<span class='header-icon icon-home_header_contactwhite'></span>
 					</a>
 				</li>
@@ -72,7 +72,7 @@
 							<a href="/publishers">PUBLISHERS</a>
 						</li>
 						<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-							<a href="/success-stories">RESOURCES</a>
+							<a href="/casestudies">RESOURCES</a>
 						</li>
 						<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
 							<a href="/vizuryblog">BLOG</a>
@@ -93,7 +93,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='/products/reach/appreengage/'>
+								<a href='/products/reach/appreengagement'>
 									<span class='icon icon-home_menuicons__appre_reach'></span>
 									<span>App Re-engagement</span>
 								</a>
@@ -111,27 +111,27 @@
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/appretarget/'>
+								<a href='/products/convert/appretargeting'>
 									<span class='icon icon-home_menuicons_apprengage'></span>
 									<span>App Retargeting</span>
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/crosschannel/'>
+								<a href='/products/convert/crosschannel'>
 									<span class='icon icon-home_menuicons__crosschannel'></span>
 									<span>Cross-Channel</span>
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/mobilewebappengage/'>
+								<a href='/products/convert/mobileweb-appengagement'>
 									<span class='icon icon-home_menuicons__webmobileapp'></span>
-									<span>Mobile Web to App</span>
+									<span>Mobile Web-App Re-engagment</span>
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/fbmarketing/'>
+								<a href='/products/convert/facebookremarketing'>
 									<span class='icon icon-home_menuicons__fbmarketing'></span>
-									<span>Facebook Retargeting</span>
+									<span>Facebook Remarketing</span>
 								</a>
 							</li>
 						</ul>
@@ -141,19 +141,19 @@
 						<p class='text-center'>Data and Marketing Platform</p>
 						<ul class='subnav-list-control'>
 							<li>
-								<a href='/products/engage/data-onboarding/'>
+								<a href='/products/engage/dataonboarding/'>
 									<span class='icon icon-home_menuicons__Dataonboarding'></span>
 									<span>Data Onboarding & Aggregation</span>
 								</a>
 							</li>
 							<li>
-								<a href='/products/engage/insights/'>
+								<a href='/products/engage/analyticsandreporting'>
 									<span class='icon icon-home_menuicons__analyticsandreporting'></span>
 									<span>Analytics & Reporting</span>
 								</a>
 							</li>
 							<li>
-								<a href='/products/engage/marketing/'>
+								<a href='/products/engage/omnichannelmarketing'>
 									<span class='icon icon-home_menuicons__marketingchannel'></span>
 									<span>Omni-channel Marketing Optimisation</span>
 								</a>
@@ -227,7 +227,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='/media-coverage'>
+								<a href='/mediacoverage'>
 									<span class='icon icon-home_menuicons__mediacoverage'></span>
 									<span>Media Coverage</span>
 								</a>
@@ -245,13 +245,13 @@
 					<div class='company-block resources-subnav-block'>
 						<a href='/whitepapers'>
 							<h3>
-								<span>Whitepaper</span>
+								<span>White Papers</span>
 							</h3>
 						</a>
 						<p class='text-center'>Perception breakdown</p>
 					</div>
 					<div class='convert-block resources-subnav-block'>
-						<a href='/success-stories'>
+						<a href='/casestudies'>
 							<h3>
 								<span>Case Studies</span>
 							</h3>
@@ -259,7 +259,7 @@
 						<p class='text-center'>Classic use cases for each of our offering.</p>
 					</div>
 					<div class='engage-block resources-subnav-block'>
-						<a href='/industry-reports'>
+						<a href='/industryreports'>
 							<h3>
 								<span>Industry Reports</span>
 							</h3>
@@ -289,8 +289,18 @@
 							<li>
 								<a href='/products'>Products Overview</a>
 							</li>
-							<li>
-								<a href='/products/reach'>Reach</a>
+							<li class='has-submenu'>
+								<div>Reach</div>
+								<span class='plus-icon'>+</span>
+								<span class='minus-icon'>-</span>
+								<ul class='mobilesubnav'>
+									<li>
+										<a href='/products/reach/webreach'>Web Reach</a>
+									</li>
+									<li>
+										<a href='/products/reach/appreengagement'>App Re-engagement</a>
+									</li>
+								</ul>
 							</li>
 							<li class='has-submenu'>
 								<div>Convert</div>
@@ -304,16 +314,16 @@
 										<a href='/products/convert'>Convert Go!</a>
 									</li>
 									<li>
-										<a href='/products/convert/appreengage/'>App Re engagement</a>
+										<a href='/products/convert/appretargeting'>App Retargeting</a>
 									</li>
 									<li>
-										<a href='/products/convert/fbmarketing/'>Facebook Marketing</a>
+										<a href='/products/convert/crosschannel'>Cross-Channel</a>
 									</li>
 									<li>
-										<a href='/products/convert/crosschannel/'>Cross Channel</a>
+										<a href='/products/convert/mobileweb-appengagement'>Mobile Web-App Re-engagement</a>
 									</li>
 									<li>
-										<a href='/products/convert/mobilewebappengage/'>Mobile Web-App Engagement</a>
+										<a href='/products/convert/facebookremarketing'>Facebook Remarketing</a>
 									</li>
 								</ul>
 							</li>
@@ -326,13 +336,13 @@
 										<a href='/products/engage'>Engage Overview</a>
 									</li>
 									<li>
-										<a href='/products/engage/data-onboarding/'>Data On boarding / Aggregation</a>
+										<a href='/products/engage/dataonboarding/'>Data Onboarding & Aggregation</a>
 									</li>
 									<li>
-										<a href='/products/engage/insights/'>Analytics and Reporting</a>
+										<a href='/products/engage/analyticsandreporting'>Analytics and Reporting</a>
 									</li>
 									<li>
-										<a href='/products/engage/marketing'>Marketing Channels & Optimization</a>
+										<a href='/products/engage/omnichannelmarketing'>Omni-channel Marketing Optimisation</a>
 									</li>
 								</ul>
 							</li>
@@ -394,7 +404,7 @@
 										<a href='/press-release'>Press Release</a>
 									</li>
 									<li>
-										<a href='/media-coverage'>Media Coverage</a>
+										<a href='/mediacoverage'>Media Coverage</a>
 									</li>
 								</ul>
 							</li>
@@ -407,13 +417,26 @@
 						<div>Resources</div>
 						<span class='plus-icon'>+</span>
 						<span class='minus-icon'>-</span>
-						<ul class='mobilesubnav'></ul>
+						<ul class='mobilesubnav'>
+							<li>
+								<a href='/whitepapers'>White Papers</a>
+							</li>
+							<li>
+								<a href='/casestudies'>Case Studies</a>
+							</li>
+							<li>
+								<a href='/industryreports'>Industry Reports</a>
+							</li>
+							<li>
+								<a href='/insights'>Insights</a>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href='/vizuryblog'>Blog</a>
 					</li>
 					<li>
-						<a href='/contact'>Contact Us</a>
+						<a href='/contactus'>Contact Us</a>
 					</li>
 					<li class='has-submenu'>
 						<div>Language</div>

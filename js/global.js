@@ -331,7 +331,7 @@ jQuery(function () {
 
 	// Video player
 	if ($.fn.fancybox) {
-		$('.fancybox-play').fancybox({
+		$('.fancybox-play').show().fancybox({
 			type: 'iframe',
 			fitToView: false,
 			height: 450,

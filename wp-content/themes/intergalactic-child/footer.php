@@ -33,45 +33,45 @@
 						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
-									<a href='#'>ABOUT</a>
+									<a href='/story'>ABOUT</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Company</a>
+									<a href='/story'>Company</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Team</a>
+									<a href='/founders'>Team</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Careers</a>
+									<a href='/lifeatvizury'>Careers</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Press Room</a>
+									<a href='/press-release'>Press Room</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
-									<a href='#'>PUBLISHERS</a>
+									<a href='/publishers'>PUBLISHERS</a>
 								</li>
 								<li>
-									<a href='#'>RESOURCES</a>
+									<a href='/casestudies'>RESOURCES</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Whitepapers</a>
+									<a href='/whitepapers'>White Papers</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Reports</a>
+									<a href='/industryreports'>Industry Reports</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Insights</a>
+									<a href='/insights'>Insights</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
-									<a href='#'>BLOG</a>
+									<a href='/vizuryblog'>BLOG</a>
 								</li>
 								<li class="footersubmenu">
 									<a href='#'>Marketing</a>
@@ -84,7 +84,7 @@
 						<div class="col-lg-3 col-md-3 col-sm-3 text-left">
 							<ul style="list-style: none;">
 								<li>
-									<a href='/contact-us'>CONTACT US</a>
+									<a href='/contactus'>CONTACT US</a>
 								</li>
 								<li>
 									<a href='https://www.linkedin.com/company/vizury-interactive'><span class="linkedin-contact"></span></a>
