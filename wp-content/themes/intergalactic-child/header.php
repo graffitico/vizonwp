@@ -76,7 +76,7 @@
 							<a href="/publishers">PUBLISHERS</a>
 						</li>
 						<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-							<a href="/success-stories">RESOURCES</a>
+							<a href="/casestudies">RESOURCES</a>
 						</li>
 						<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
 							<a href="/vizuryblog">BLOG</a>
@@ -255,7 +255,7 @@
 						<p class='text-center'>Perception breakdown</p>
 					</div>
 					<div class='convert-block resources-subnav-block'>
-						<a href='/success-stories'>
+						<a href='/casestudies'>
 							<h3>
 								<span>Case Studies</span>
 							</h3>
