@@ -188,8 +188,10 @@ p {
 
 .fancybox-play {
 	position: absolute;
+	display: none;
+	text-align: center;
 	left: 48%;
-	bottom: -30%;
+	bottom: -100%;
 	color: #fff;
 	font-size: 24px;
 	border: 2px solid #fff;
@@ -197,7 +199,7 @@ p {
 	display: inline-block;
 	width: 48px;
 	height: 48px;
-	padding-left: 12px;
+	padding-left: 6px;
 	padding-top: 6px;
 }
 
@@ -1048,11 +1050,12 @@ div.img {
 	display: inline-block;
 	background-color: transparent !important;
 }
-
 .nav-pills>li.active>a {
 	box-shadow: inset 0 -3px 0 0 #7b7b7b;
 }
-
+.nav-pills>li+li {
+	margin-left: 0;
+}
 
 .prod-logo {
 	height: 100px;
@@ -1061,7 +1064,7 @@ div.img {
 
 .horizontal-logo {
 	display: inline-block;
-	height: 70px;
+	width: 100%;
 }
 
  .tab-content h4 {
@@ -1359,6 +1362,9 @@ div.img {
 }
 
 /* Modal Override */
+.modal {
+	text-align: center;
+}
 .modal .modal-open {
 	text-align: center;
 }
@@ -1467,7 +1473,7 @@ div.img {
 }
 
 .cgo {
-	width:300px; 
+	width:300px;
 	padding-top:5%;
 }
 
@@ -1728,7 +1734,7 @@ div.img {
 		bottom: 3%;
 		right: 5%
 	}
-	
+
 	.chetan {
 	background: linear-gradient(to left, #7b7b7b, #ffffff);
 	padding: 30% 10%;
@@ -1745,7 +1751,7 @@ div.img {
 }
 
 .cgo {
-	width:100px; 
+	width:100px;
 }
 
 .service-box  {
@@ -1899,7 +1905,6 @@ div.img {
 	}
 
 	.fancybox-play {
-		bottom: -50%;
 		left: 45%;
 	}
 
@@ -1998,7 +2003,7 @@ div.img {
 	    padding-top: 60px;
     	position: relative;
 	}
-	
+
 		.chetan {
 	background: linear-gradient(to left, #7b7b7b, #ffffff);
 	padding: 30% 10%;
@@ -2041,8 +2046,6 @@ div.img {
 		top: 20px;
 		padding: 3px;
 		color: #fff;
-		border: 1px solid #fff;
-		border-radius: 3px;
 		line-height: 10px;
 		font-size: 30px;
 	}
@@ -2153,6 +2156,11 @@ div.img {
 		display: block;
 		margin: 0 auto;
 	}
+
+	.nav-pills>li{
+		width: 100%;
+	}
+
  }
 
 /* Small Devices, Tablets */
@@ -2163,7 +2171,7 @@ div.img {
 		padding: 10px 30px;
 		font-size: 16px;
 	}
-	
+
 	.brand-images-sm p {
 	color: #fff;
 	text-align: center;
@@ -2208,8 +2216,6 @@ div.img {
 		height: 100px;
 	}
 
-<<<<<<< HEAD
-=======
 	.fancybox-play {
 		bottom: 35%;
 	}
@@ -2221,7 +2227,6 @@ div.img {
 	.engage-heading-block {
 		padding-top: 2%;
 	}
-
 
 	.hover-magic-circle1 {
 		left: 250px;
@@ -2252,10 +2257,10 @@ div.img {
 	}
 
 	.cgo {
-	width:250px; 
-	padding-top:5%;
-}
-	
+		width:250px;
+		padding-top:5%;
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -2286,5 +2291,7 @@ div.img {
 	    filter: none;
 	    -webkit-filter: grayscale(0%);
 	}
+
+
 }
 
