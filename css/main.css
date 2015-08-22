@@ -245,6 +245,27 @@ p {
 	color: #fff;
 }
 
+.chetan {
+	background: url('/images/chetan.jpg') no-repeat center center fixed;
+	background-size: cover;
+	text-align: left;
+	padding: 15% 40% 10% 10%;
+}
+
+.vikram {
+	background: url('/images/vikram.jpg') no-repeat center center fixed;
+	background-size: cover;
+	text-align: left;
+	padding: 15% 10% 10% 40%;
+}
+
+.gourav {
+	background: url('/images/gourav.jpg') no-repeat center center fixed;
+	background-size: cover;
+	text-align: left;
+	padding: 15% 40% 10% 10%;
+}
+
 
 /** Heading Text */
 
@@ -1357,6 +1378,11 @@ div.img {
 	padding: 0;
 }
 
+.cgo {
+	width:300px;
+	padding-top:5%;
+}
+
 
 /* Custom, Iphone Retina */
 @media(max-width: 479px) {
@@ -1609,6 +1635,25 @@ div.img {
 		right: 5%
 	}
 
+	.chetan {
+	background: linear-gradient(to left, #7b7b7b, #ffffff);
+	padding: 30% 10%;
+}
+
+	.vikram {
+	background: linear-gradient(to right, #7b7b7b, #ffffff);
+	padding: 20% 10%;
+}
+
+	.gourav {
+	background: linear-gradient(to left, #7b7b7b, #ffffff);
+	padding: 20% 10%;
+}
+
+.cgo {
+	width:100px;
+}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -1854,6 +1899,21 @@ div.img {
 	    padding-top: 60px;
     	position: relative;
 	}
+
+		.chetan {
+	background: linear-gradient(to left, #7b7b7b, #ffffff);
+	padding: 30% 10%;
+}
+
+	.vikram {
+	background: linear-gradient(to right, #7b7b7b, #ffffff);
+	padding: 20% 10%;
+}
+
+	.gourav {
+	background: linear-gradient(to left, #7b7b7b, #ffffff);
+	padding: 20% 10%;
+}
  }
 
 
@@ -2090,6 +2150,11 @@ div.img {
 	.hover-magic-circle8 {
 		left: 300px;
 		top: 215px;
+	}
+
+	.cgo {
+		width:250px;
+		padding-top:5%;
 	}
 
 }

@@ -251,7 +251,7 @@ $final
       <div class="col-md-4"><span class="categ-head"><?php  echo intval( get_post_meta( get_the_ID(), 'experience_from', true ) )  ?>-<?php  echo intval( get_post_meta( get_the_ID(), 'experience_to', true ) )  ?> Years</span></div>
       <div class="col-md-4"><span class="categ-head"> <?php echo esc_html( get_post_meta( get_the_ID(), 'posting_location', true ) ); ?>
       
-      <a class="categ-down" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo the_ID() ?>"><img src="<?php echo get_site_url() ?>/imgs/categ-plus.svg" /></a>
+      <a class="categ-down" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo the_ID() ?>"><img src="<?php echo get_site_url() ?>/images/categ-plus.svg" /></a>
        
       </span></div>
       
@@ -390,7 +390,80 @@ add_action('save_post', 'save_custom_meta_data');
 
 
 /****************************** custom functions for case studies attachments end **********************************************/
+/**
+ * Extend Recent Posts Widget 
+ *
+ * Adds different formatting to the default WordPress Recent Posts Widget
+ */
 
+Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
+
+  function widget($args, $instance) {
+  
+    extract( $args );
+    
+    $title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Posts') : $instance['title'], $instance, $this->id_base);
+        
+    if( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
+      $number = 10;
+          
+    $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true ) ) );
+    if( $r->have_posts() ) :
+      
+      echo '<section class="read-more-block"><div class="container-fluid">';
+      if( $title ) echo '<div class="row"><div class="col-lg-12 text-center section-title"><h2>' . $title . '</h2></div></div>   <div class="row">'; ?>
+<!--      <ul>
+        <?php // while( $r->have_posts() ) : $r->the_post(); ?>       
+        <li><?php // the_time( 'F d'); ?> - <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+        <?php //endwhile; ?>
+      </ul> -->
+<?php  while( $r->have_posts() ) : $r->the_post(); ?> 
+
+  <?php if ( has_post_thumbnail() ) {
+    $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' ); 
+    $img_url =  esc_url( $thumbnail[0] ); 
+    
+ } ?>
+              <div class="col-sm-4 blog-entry-tile">
+                <div class="ih-item square colored effect4" style="background-color: #626262;" >
+                    <div class="img"><a href="<?php the_permalink(); ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  $img_url; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
+                    <div class="mask1"></div>
+                    <div class="mask2"></div>
+                    <div class="mask2"></div>
+                    <div class="info">
+                        <h3><?php the_title(); ?></h3>
+                       
+                    </div>
+                </div>
+                <a href="<?php the_permalink(); ?>" target="_blank">
+                <h4><?php the_title(); ?></h4></a>
+             <!--    <p><b>Author:</b> Vizury</p> -->
+                <p><b>Date:</b><?php the_time( 'M d, Y'); ?></p>
+                <p><?php the_excerpt(); ?></p>
+
+
+                <a href="<?php the_permalink(); ?>" target="_blank"><img class="readmore-convert img-responsive bottom-right" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg=="></a>
+            </div>
+  <?php endwhile ?>
+
+       
+      <?php
+      echo '</div></div></section>';
+    
+    wp_reset_postdata();
+    
+    endif;
+  }
+}
+function my_recent_widget_registration() {
+
+  unregister_widget('WP_Widget_Recent_Posts');
+  register_widget('My_Recent_Posts_Widget');
+}
+add_action('widgets_init', 'my_recent_widget_registration');
+
+
+remove_action( 'widgets_init', 'intergalactic_widgets_init' );
 
 
 

@@ -23,8 +23,6 @@
 <!-- Begin Body -->
 <body <?php body_class(); ?>>
 
-<div id="wrap" class="clearfix">
-
 	<div id="header-wrap">
 		<div id="pre-header" class="clearfix">
 			<ul id="header-actions">
@@ -457,5 +455,11 @@
 			<div class='small-logo'></div>
 		</div>
 	</div><!-- /header-wrap -->
+
+	
+
+<div id="wrap" class="clearfix">
+
+
 
 	<div id="main-content" class="clearfix">
