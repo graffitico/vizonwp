@@ -11,7 +11,7 @@
 
 // function all_posts_on_case_studies_page( $query ) {
 
-  
+
 
 //       // query_posts();
 //     }
@@ -63,14 +63,13 @@ function ajax_filter_posts_scripts() {
   //   wp_register_script('jquery_script', get_site_url() . '/js/jquery.min.js', false, null, false);
 
   wp_register_script('afp_script', get_template_directory_uri() . '/js/ajax-filter-posts.js', false, null, true);
-  wp_register_script('reverse_scroll_script', get_site_url() . '/js/reversescroll.js', false, null, true);
-  
+
 
   // wp_register_script('selectfx_script', get_template_directory_uri() . '/js/selectFx.js', false, null, false);
   //     wp_register_script('kwiks', get_site_url() . '/js/kwiks.js', false, null, false);
-  
+
   //  wp_register_script('bootstrap_script', get_site_url() . '/js/bootstrap.min.js', false, null, false);
-  
+
   // wp_register_script('global_script', get_site_url() . '/js/global.js', false, null, false);
 
   // wp_register_script('flex_script', get_site_url() . '/js/jquery.flexslider-min.js', false, null, false);
@@ -82,20 +81,20 @@ function ajax_filter_posts_scripts() {
   // wp_register_script('classie_script', get_site_url() . '/js/classie.js', false, null, false);
   // wp_register_script('easing_script', get_site_url() . '/js/jquery.easing.min.js', false, null, false);
   // wp_register_script('smooth_scroll_script', get_site_url() . '/js/SmoothScroll.js', false, null, false);
-  
 
 
-  
-
-  
 
 
-  
+
+
+
+
+
   //  wp_enqueue_script('jquery_script');
   //  wp_enqueue_script('bootstrap_script');
   //     wp_enqueue_script('kwiks');
   //  wp_enqueue_script('flex_script');
- 
+
 
   //  wp_enqueue_script('selectfx_script');
   // wp_enqueue_script('afp_script');
@@ -133,11 +132,11 @@ add_action('wp_enqueue_scripts', 'ajax_filter_posts_scripts', 100);
 
 // Script for getting posts
 function ajax_filter_get_posts( $taxonomy ) {
- 
+
   // Verify nonce
   if( !isset( $_POST['afp_nonce'] ) || !wp_verify_nonce( $_POST['afp_nonce'], 'afp_nonce' ) )
     die('Permission denied');
- 
+
   $taxonomy = $_POST['taxonomy'];
   $year_range = $_POST['year'] ;
   $location = $_POST['location'];
@@ -146,24 +145,24 @@ function ajax_filter_get_posts( $taxonomy ) {
 
 
   // WP Query
- 
+
 
 
   $args = array('relation' => 'AND');
  if($location || $location != ''){
-	$args[] = array(	
-		
+	$args[] = array(
+
 		'key'		=> 'posting_location',
 		'value'	=>  $location
 		);
  }
- 
+
 
  if($year_range || $year_range != '' )
  {
 
  	if($year_range == 0){
- 		$args[] = array(	
+ 		$args[] = array(
 		'relation' => 'OR',
 		array(
 		'key'		=> 'experience_from',
@@ -171,15 +170,15 @@ function ajax_filter_get_posts( $taxonomy ) {
 		'compare' =>'>=',
 		'type'    => 'numeric'
 		)
-		, array(	
-		
+		, array(
+
 		'key'		=> 'experience_to',
 		'value'	=>  1 ,
 		'compare' =>'<=',
 		'type'    => 'numeric'
 		));
  	}elseif ($year_range == 2) {
- 		$args[] = array(	
+ 		$args[] = array(
 		'relation' => 'OR',
 		array(
 		'key'=> 'experience_from',
@@ -187,15 +186,15 @@ function ajax_filter_get_posts( $taxonomy ) {
 		'compare' =>'>',
 		'type'    => 'numeric'
 		)
-		,array(	
-		
+		,array(
+
 		'key'		=> 'experience_to',
 		'value'	=>  4 ,
 		'compare' =>'<=',
 		'type'    => 'numeric'
 		));
  	}elseif ($year_range == 5) {
- 		$args[] = array(	
+ 		$args[] = array(
 		'relation' => 'OR' ,
        array(
 
@@ -203,20 +202,20 @@ function ajax_filter_get_posts( $taxonomy ) {
 		'value'	=>   4 ,
 		'compare' =>'>',
 		'type'    => 'numeric'
-		), array(	
-		
+		), array(
+
 		'key'		=> 'experience_to',
 		'value'	=>  10 ,
 		'compare' =>'<=',
 		'type'    => 'numeric'
 		));
  	}
- 		
+
  }
 
  // if($q || $q != ''){
-	// $args[] = array(	
-		
+	// $args[] = array(
+
 	// 	'column'		=> 'post_title',
 	// 	'value'	=>  $q,
 	// 	'compare' => 'LIKE',
@@ -229,7 +228,7 @@ function ajax_filter_get_posts( $taxonomy ) {
   // if( !$taxonomy ) {
   //   unset( $args['tag'] );
   // }
- 
+
 if($taxonomy || $taxonomy != ''  ){
  $final = array('post_type' => 'job_postings', 'departments' => $taxonomy , 'meta_query' =>  $args , 's' => $q  );
 }else{
@@ -241,46 +240,46 @@ if($taxonomy || $taxonomy != ''  ){
 $final
 
     );
- 
+
   if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
- 
+
     <div class="panel panel-default">
       <div class="row job-result panel-heading">
-      
+
       <div class="col-md-4"><span class="categ-head"><?php echo the_title(); ?></span></div>
       <div class="col-md-4"><span class="categ-head"><?php  echo intval( get_post_meta( get_the_ID(), 'experience_from', true ) )  ?>-<?php  echo intval( get_post_meta( get_the_ID(), 'experience_to', true ) )  ?> Years</span></div>
       <div class="col-md-4"><span class="categ-head"> <?php echo esc_html( get_post_meta( get_the_ID(), 'posting_location', true ) ); ?>
-      
+
       <a class="categ-down" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo the_ID() ?>"><img src="<?php echo get_site_url() ?>/images/categ-plus.svg" /></a>
-       
+
       </span></div>
-      
+
       </div><!-- end of row -->
-      
+
       <!-- Job Description -->
       <div class="row">
-      
+
       <div id="collapse-<?php echo the_ID() ?>" class="col-md-12 panel-collapse collapse out">
       <section class="job-desc panel-body">
-      
+
      <?php echo the_content(); ?>
       <button data-toggle="modal" data-target="#apply-modal" class="apply-button" data-id="<?php echo the_ID() ?>" >Apply</button>
-      </section>      
+      </section>
       </div>
-      
+
       </div><!-- end of row/Job Description -->
-      
+
       </div><!-- end of panel-default -->
-    
- 
+
+
   <?php endwhile; ?>
   <?php else: ?>
     <h2>No job posts found</h2>
   <?php endif;
- 
+
   die();
 }
- 
+
 add_action('wp_ajax_filter_posts', 'ajax_filter_get_posts');
 add_action('wp_ajax_nopriv_filter_posts', 'ajax_filter_get_posts');
 
@@ -293,7 +292,7 @@ add_action('wp_ajax_nopriv_filter_posts', 'ajax_filter_get_posts');
 
 
 function add_custom_meta_boxes() {
- 
+
     // Define the custom attachment for posts
     add_meta_box(
         'wp_custom_attachment',
@@ -302,7 +301,7 @@ function add_custom_meta_boxes() {
         'post',
         'side'
     );
-     
+
     // Define the custom attachment for pages
     add_meta_box(
         'wp_custom_attachment',
@@ -311,38 +310,38 @@ function add_custom_meta_boxes() {
         'page',
         'side'
     );
- 
+
 } // end add_custom_meta_boxes
 add_action('add_meta_boxes', 'add_custom_meta_boxes');
 
 
 function wp_custom_attachment() {
- 
+
     wp_nonce_field(plugin_basename(__FILE__), 'wp_custom_attachment_nonce');
-     
+
     $html = '<p class="description">';
         $html .= 'Upload your PDF here.';
     $html .= '</p>';
     $html .= '<input type="file" id="wp_custom_attachment" name="wp_custom_attachment" value="" size="25" />';
-     
+
     echo $html;
- 
+
 } // end wp_custom_attachment
 
 
 
 
 function save_custom_meta_data($id) {
- 
+
     /* --- security verification --- */
     if( isset($_POST['wp_custom_attachment_nonce']) && !wp_verify_nonce($_POST['wp_custom_attachment_nonce'], plugin_basename(__FILE__))) {
       return $id;
     } // end if
-       
+
     if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
       return $id;
     } // end if
-       
+
     if(isset($_POST['post_type']) &&'page' == $_POST['post_type']) {
       if(!current_user_can('edit_page', $id)) {
         return $id;
@@ -353,36 +352,36 @@ function save_custom_meta_data($id) {
         } // end if
     } // end if
     /* - end security verification - */
-     
+
     // Make sure the file array isn't empty
     if(!empty($_FILES['wp_custom_attachment']['name'])) {
-         
+
         // Setup the array of supported file types. In this case, it's just PDF.
         $supported_types = array('application/pdf');
-         
+
         // Get the file type of the upload
         $arr_file_type = wp_check_filetype(basename($_FILES['wp_custom_attachment']['name']));
         $uploaded_type = $arr_file_type['type'];
-         
+
         // Check if the type is supported. If not, throw an error.
         if(in_array($uploaded_type, $supported_types)) {
- 
+
             // Use the WordPress API to upload the file
             $upload = wp_upload_bits($_FILES['wp_custom_attachment']['name'], null, file_get_contents($_FILES['wp_custom_attachment']['tmp_name']));
-     
+
             if(isset($upload['error']) && $upload['error'] != 0) {
                 wp_die('There was an error uploading your file. The error is: ' . $upload['error']);
             } else {
                 add_post_meta($id, 'wp_custom_attachment', $upload);
-                update_post_meta($id, 'wp_custom_attachment', $upload);     
+                update_post_meta($id, 'wp_custom_attachment', $upload);
             } // end if/else
- 
+
         } else {
             wp_die("The file type that you've uploaded is not a PDF.");
         } // end if/else
-         
+
     } // end if
-     
+
 } // end save_custom_meta_data
 add_action('save_post', 'save_custom_meta_data');
 
@@ -391,7 +390,7 @@ add_action('save_post', 'save_custom_meta_data');
 
 /****************************** custom functions for case studies attachments end **********************************************/
 /**
- * Extend Recent Posts Widget 
+ * Extend Recent Posts Widget
  *
  * Adds different formatting to the default WordPress Recent Posts Widget
  */
@@ -399,30 +398,30 @@ add_action('save_post', 'save_custom_meta_data');
 Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 
   function widget($args, $instance) {
-  
+
     extract( $args );
-    
+
     $title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Posts') : $instance['title'], $instance, $this->id_base);
-        
+
     if( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
       $number = 10;
-          
+
     $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true ) ) );
     if( $r->have_posts() ) :
-      
+
       echo '<section class="read-more-block"><div class="container-fluid">';
       if( $title ) echo '<div class="row"><div class="col-lg-12 text-center section-title"><h2>' . $title . '</h2></div></div>   <div class="row">'; ?>
 <!--      <ul>
-        <?php // while( $r->have_posts() ) : $r->the_post(); ?>       
+        <?php // while( $r->have_posts() ) : $r->the_post(); ?>
         <li><?php // the_time( 'F d'); ?> - <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
         <?php //endwhile; ?>
       </ul> -->
-<?php  while( $r->have_posts() ) : $r->the_post(); ?> 
+<?php  while( $r->have_posts() ) : $r->the_post(); ?>
 
   <?php if ( has_post_thumbnail() ) {
-    $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' ); 
-    $img_url =  esc_url( $thumbnail[0] ); 
-    
+    $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' );
+    $img_url =  esc_url( $thumbnail[0] );
+
  } ?>
               <div class="col-sm-4 blog-entry-tile">
                 <div class="ih-item square colored effect4" style="background-color: #626262;" >
@@ -432,7 +431,7 @@ Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
                     <div class="mask2"></div>
                     <div class="info">
                         <h3><?php the_title(); ?></h3>
-                       
+
                     </div>
                 </div>
                 <a href="<?php the_permalink(); ?>" target="_blank">
@@ -446,12 +445,12 @@ Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
             </div>
   <?php endwhile ?>
 
-       
+
       <?php
       echo '</div></div></section>';
-    
+
     wp_reset_postdata();
-    
+
     endif;
   }
 }

@@ -188,8 +188,10 @@ p {
 
 .fancybox-play {
 	position: absolute;
+	display: none;
+	text-align: center;
 	left: 48%;
-	bottom: -30%;
+	bottom: -100%;
 	color: #fff;
 	font-size: 24px;
 	border: 2px solid #fff;
@@ -197,7 +199,7 @@ p {
 	display: inline-block;
 	width: 48px;
 	height: 48px;
-	padding-left: 12px;
+	padding-left: 6px;
 	padding-top: 6px;
 }
 
@@ -478,6 +480,100 @@ p {
 
 .values-area {
 	margin: 5% auto;
+}
+
+.selfserve-header {
+	background-image: url("/images/selfserve-bg.svg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.selfserve-header .heading-block {
+	background: none;
+}
+
+.selfserve-header a {
+	font-size: 40px;
+}
+
+.selfserve-signup {
+	padding-top: 12%;
+	padding-right:4%;
+}
+
+.selfserve-header .btn-default{
+	margin-top: 50%;
+	margin-left: 40%;
+}
+
+.gift-box {
+	background-image: url("/images/gift.svg");
+	padding: 10% 20%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.gift-box h2 {
+	font-weight: normal;
+	text-align: center;
+	margin-top: 20%;
+}
+
+.section-title img {
+	width: 75%;
+	padding-right: 5%;
+}
+
+.yellow-icons {
+	background-image: url("/images/laptop-bg.jpg");
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-attachment: fixed;
+}
+
+.circle-text {
+	border-radius: 100%;
+	border-color: #f8835e;
+	height: 180px;
+	text-align: center;
+}
+
+.sscar-icon {
+	height: 200px;
+}
+
+.sscarousel {
+	height: 500px;
+	margin: 5% auto;
+}
+
+.sscarousel .carousel-control {
+	color: #ffd846;
+}
+
+.sscarousel img {
+	margin-left:40%;
+}
+
+.sscarousel .carousel-inner p {
+	margin: 0 30%;
+}
+
+.flying-box-area {
+	margin: 15% auto;
+}
+
+.yellow-icons .feature-icon-holder {
+	margin:5% auto 10%;
+	
+}
+
+.yellow-icons .feature-icon-holder img {
+	width:125px;
+}
+
+.flying-box-area h4, .flying-box-area p {
+	text-align: left;
 }
 	
 /** Feature Section */
@@ -954,11 +1050,12 @@ div.img {
 	display: inline-block;
 	background-color: transparent !important;
 }
-
 .nav-pills>li.active>a {
 	box-shadow: inset 0 -3px 0 0 #7b7b7b;
 }
-
+.nav-pills>li+li {
+	margin-left: 0;
+}
 
 .prod-logo {
 	height: 100px;
@@ -967,7 +1064,7 @@ div.img {
 
 .horizontal-logo {
 	display: inline-block;
-	height: 70px;
+	width: 100%;
 }
 
  .tab-content h4 {
@@ -1265,6 +1362,9 @@ div.img {
 }
 
 /* Modal Override */
+.modal {
+	text-align: center;
+}
 .modal .modal-open {
 	text-align: center;
 }
@@ -1373,7 +1473,7 @@ div.img {
 }
 
 .cgo {
-	width:300px; 
+	width:300px;
 	padding-top:5%;
 }
 
@@ -1622,13 +1722,19 @@ div.img {
 
 	.fancybox-play {
 		left:42%;
+		top: 110%;
 	}
+	
+	.yellow-height {
+		height: 200px;
+	}
+	
 	.portfolio-box-caption .icon-home_yellowband_arrow {
 		font-size: 20px;
 		bottom: 3%;
 		right: 5%
 	}
-	
+
 	.chetan {
 	background: linear-gradient(to left, #7b7b7b, #ffffff);
 	padding: 30% 10%;
@@ -1645,7 +1751,11 @@ div.img {
 }
 
 .cgo {
-	width:100px; 
+	width:100px;
+}
+
+.service-box  {
+	margin: 4% auto 8%;
 }
 
 }
@@ -1795,7 +1905,6 @@ div.img {
 	}
 
 	.fancybox-play {
-		bottom: -50%;
 		left: 45%;
 	}
 
@@ -1894,7 +2003,7 @@ div.img {
 	    padding-top: 60px;
     	position: relative;
 	}
-	
+
 		.chetan {
 	background: linear-gradient(to left, #7b7b7b, #ffffff);
 	padding: 30% 10%;
@@ -1937,8 +2046,6 @@ div.img {
 		top: 20px;
 		padding: 3px;
 		color: #fff;
-		border: 1px solid #fff;
-		border-radius: 3px;
 		line-height: 10px;
 		font-size: 30px;
 	}
@@ -2049,6 +2156,11 @@ div.img {
 		display: block;
 		margin: 0 auto;
 	}
+
+	.nav-pills>li{
+		width: 100%;
+	}
+
  }
 
 /* Small Devices, Tablets */
@@ -2059,7 +2171,7 @@ div.img {
 		padding: 10px 30px;
 		font-size: 16px;
 	}
-	
+
 	.brand-images-sm p {
 	color: #fff;
 	text-align: center;
@@ -2104,8 +2216,6 @@ div.img {
 		height: 100px;
 	}
 
-<<<<<<< HEAD
-=======
 	.fancybox-play {
 		bottom: 35%;
 	}
@@ -2117,7 +2227,6 @@ div.img {
 	.engage-heading-block {
 		padding-top: 2%;
 	}
-
 
 	.hover-magic-circle1 {
 		left: 250px;
@@ -2148,10 +2257,10 @@ div.img {
 	}
 
 	.cgo {
-	width:250px; 
-	padding-top:5%;
-}
-	
+		width:250px;
+		padding-top:5%;
+	}
+
 }
 
 /* Medium Devices, Desktops */
@@ -2182,5 +2291,7 @@ div.img {
 	    filter: none;
 	    -webkit-filter: grayscale(0%);
 	}
+
+
 }
 

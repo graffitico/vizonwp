@@ -33,58 +33,58 @@
 						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
-									<a href='#'>ABOUT</a>
+									<a href='/story'>ABOUT</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Company</a>
+									<a href='/story'>Company</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Team</a>
+									<a href='/founders'>Team</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Careers</a>
+									<a href='/lifeatvizury'>Careers</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Press Room</a>
+									<a href='/press-release'>Press Room</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
-									<a href='#'>PUBLISHERS</a>
+									<a href='/publishers'>PUBLISHERS</a>
 								</li>
 								<li>
-									<a href='#'>RESOURCES</a>
+									<a href='/casestudies'>RESOURCES</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Whitepapers</a>
+									<a href='/whitepapers'>White Papers</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Reports</a>
+									<a href='/industryreports'>Industry Reports</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Insights</a>
+									<a href='/insights'>Insights</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-2 col-md-2 col-sm-2 text-left">
 							<ul style="list-style: none;">
 								<li>
-									<a href='#'>BLOG</a>
+									<a href='/vizuryblog'>BLOG</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Marketing</a>
+									<a href='/vizuryblog/category/marketing'>Marketing</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='#'>Technology</a>
+									<a href='/vizuryblog/category/technology'>Technology</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 text-left">
 							<ul style="list-style: none;">
 								<li>
-									<a href='/contact-us'>CONTACT US</a>
+									<a href='/contactus'>CONTACT US</a>
 								</li>
 								<li>
 									<a href='https://www.linkedin.com/company/vizury-interactive'><span class="linkedin-contact"></span></a>
@@ -104,18 +104,18 @@
 	</div><!-- /footer-wrap -->
 </div><!-- /wrap -->
 
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/jquery.fittext.js"></script>
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/selectFx.js"></script>
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/global.js"></script>
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/wow.min.js"></script>
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/creative.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.fittext.js"></script>
+<script type="text/javascript" src="/js/selectFx.js"></script>
+<script type="text/javascript" src="/js/global.js"></script>
+<script type="text/javascript" src="/js/wow.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/js/creative.js"></script>
 <!-- <script type="text/javascript" src="<?php echo get_site_url() ?>/js/SmoothScroll.js"></script> -->
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/jquery.fancybox.pack.js"></script>
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/classie.js"></script>
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="<?php echo get_site_url() ?>/js/kwiks.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/js/classie.js"></script>
+<script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/js/kwiks.js"></script>
 
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
 </body>
