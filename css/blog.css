@@ -126,6 +126,10 @@ input.yellowbutton {
 
 
 /** Overriding CSS */
+#wrap {
+	margin-top: 180px;
+}
+
 #navigation {
 	top: 10px;
 }
