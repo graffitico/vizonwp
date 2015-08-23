@@ -13,7 +13,7 @@
 get_header(); // Loads the header.php template
 
 
-if ($post->post_title == 'case studies') { 
+if ($post->post_title == 'Case Studies') { 
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 	$args = array(
 	
