@@ -8,6 +8,7 @@ jQuery(function () {
 	var mouseOnTop = false;
 	var scrollOnTop = true;
 	var tapDiscard = false;
+    var screenWidth = $(window).width();
 
 	function showSubNav(subnavName) {
 
@@ -163,7 +164,7 @@ jQuery(function () {
 	$('.sonia-v2-text').show();
 
 
-	if ($(window).width() > 640) {
+	if ($(window).width() > 768) {
 		$(window).scroll(function (e) {
 			if ($(window).scrollTop() > 50) {
 				scrollOnTop = false;
@@ -173,17 +174,17 @@ jQuery(function () {
 			}
 			manageHeaderVisibility();
 		});
-	}
 
-	$(window).mousemove(function (e) {
-		if (e.clientY > 120) {
-			mouseOnTop = false;
-		}
-		else {
-			mouseOnTop = true;
-		}
-		manageHeaderVisibility();
-	});
+		$(window).mousemove(function (e) {
+			if (e.clientY > 120) {
+				mouseOnTop = false;
+			}
+			else {
+				mouseOnTop = true;
+			}
+			manageHeaderVisibility();
+		});
+	}
 
 	$('.mobilenavigation').css({
 		'max-height': ($(window).height() - $('#header').height()) + 'px'
@@ -202,7 +203,14 @@ jQuery(function () {
 	// Product Landing page
 
 	//Script for the Products on Hover Text change effect
-    $('#pills-first a').on('mouseover touchend', function (e) {
+	function showTab (e) {
+      e.preventDefault();
+      $(this).tab('show');
+	}
+	$('#pills-first a').on('mouseover', function (e) {
+		showTab.call(this, e);
+	});
+    $('#pills-first a').on('touchend', function (e) {
 
 		if (tapDiscard) {
 			return;
@@ -211,12 +219,12 @@ jQuery(function () {
 		tapDiscard = true;
 		setTimeout(function () {
 			tapDiscard = false;
-		}, 500);
+		}, 300);
 
-
-      e.preventDefault()
-      $(this).tab('show')
+		showTab.call(this, e);
    	});
+
+
 
    	function onExpandTransitionEnd () {
 
@@ -227,6 +235,11 @@ jQuery(function () {
 		var height = element.height();
 		var parentHeight = $(this).height();
 		var parentWidth = $(this).width();
+
+   		if ((screenWidth < 767) && (screenWidth > 479)) {
+   			parentHeight += 8;
+   			parentWidth += 24;
+   		}
 
 		var left = (parentWidth - width) / 2;
 		var top = (parentHeight - height) / 2;
@@ -274,7 +287,9 @@ jQuery(function () {
 		$(this).find('.floating-hover-text').finish().hide();
    		$(this).addClass('expanded');
 
-   		$(this).siblings().addClass('faded');
+   		if (screenWidth > 767) {
+   			$(this).siblings().addClass('faded');
+   		}
    		$('.hover-magic-text-bg').css({opacity: 0.1});
 
    		//$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onExpandTransitionEnd);
@@ -285,7 +300,9 @@ jQuery(function () {
 		$(this).find('.floating-hover-text').finish().hide();
    		$(this).removeClass('expanded');
 
-   		$(this).siblings().removeClass('faded');
+   		if (screenWidth > 767) {
+   			$(this).siblings().addClass('faded');
+   		}
    		$('.hover-magic-text-bg').css({opacity: ''});
 
    		//$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onContractTransitionEnd);

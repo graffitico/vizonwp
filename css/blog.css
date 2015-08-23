@@ -87,6 +87,7 @@ a {
     transition: all .1s;
     text-decoration: none;
     outline: none;
+    font-weight: bold;
 }
 
 .heading-block a:focus {
