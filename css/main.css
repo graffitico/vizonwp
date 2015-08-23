@@ -357,6 +357,25 @@ p {
 	background-size: 500px 300px;
 }
 
+.intro-blocks-container {
+	padding: 90px 20px;
+}
+
+.intro-blocks-container .intro-block {
+
+	border: 1px solid #fff;
+	padding: 20px;
+	color: #fff;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	background-color: #7b7b7b;
+	font-size: 16px;
+}
+
+.intro-blocks-container .intro-block h4 {
+	color: #fff;
+}
+
 /** Second frame text*/
 
 .intro-text {
@@ -565,7 +584,7 @@ p {
 
 .yellow-icons .feature-icon-holder {
 	margin:5% auto 10%;
-	
+
 }
 
 .yellow-icons .feature-icon-holder img {
@@ -575,7 +594,7 @@ p {
 .flying-box-area h4, .flying-box-area p {
 	text-align: left;
 }
-	
+
 /** Feature Section */
 
 .feature-section {
@@ -1724,11 +1743,11 @@ div.img {
 		left:42%;
 		top: 110%;
 	}
-	
+
 	.yellow-height {
 		height: 200px;
 	}
-	
+
 	.portfolio-box-caption .icon-home_yellowband_arrow {
 		font-size: 20px;
 		bottom: 3%;
