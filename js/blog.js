@@ -178,10 +178,10 @@ jQuery(function () {
 
 		if (isOpen) {
 			$(this).parent().removeClass('open');
-			$(this).find('.dropdown-menu').hide();
+			$('.dropdown-menu').hide();
 		} else {
 			$(this).parent().addClass('open');
-			$(this).find('.dropdown-menu').show();
+			$('.dropdown-menu').show();
 		}
 
 	})
