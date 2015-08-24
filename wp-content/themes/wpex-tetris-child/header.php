@@ -59,7 +59,8 @@
 
 		<header id="header" class="clearfix">
 			<div id="logo">
-				<a href="/" title="Vizury Home" rel="home"><img src="/images/logo_full.svg" class="full_logo" alt="Vizury Logo" /></a>
+				<a href="/" class="hidden-xs hidden-sm" title="Vizury Home" rel="home"><img src="/images/logo_full.svg" class="full_logo" alt="Vizury Logo" /></a>
+				<a href="/" class="hidden-lg hidden-md" title="Vizury Home" rel="home"><img src="/images/logo_v.svg" class="full_logo" style="width: auto;" alt="Vizury Logo" /></a>
 			</div><!-- /logo -->
 			<nav id="navigation" class="clearfix">
 				<div class="vizuri_menu_class">
@@ -107,7 +108,7 @@
 						<p class='text-center'>Personalized Retargeting</p>
 						<ul class='subnav-list-control'>
 							<li>
-								<a href='/products/convert'>
+								<a href='/products/convertgo'>
 									<span class='icon icon-home_menuicons__convertxp'></span>
 									<span>Convert Go!</span>
 								</a>
@@ -297,6 +298,9 @@
 								<span class='minus-icon'>-</span>
 								<ul class='mobilesubnav'>
 									<li>
+										<a href='/products/reach'>Reach Overview</a>
+									</li>
+									<li>
 										<a href='/products/reach/webreach'>Web Reach</a>
 									</li>
 									<li>
@@ -313,7 +317,7 @@
 										<a href='/products/convert'>Convert Overview</a>
 									</li>
 									<li>
-										<a href='/products/convert'>Convert Go!</a>
+										<a href='/products/convertgo'>Convert Go!</a>
 									</li>
 									<li>
 										<a href='/products/convert/appretargeting'>App Retargeting</a>
@@ -375,9 +379,6 @@
 								<ul class="mobilesubnav">
 									<li>
 										<a href='/founders'>Founders</a>
-									</li>
-									<li>
-										<a href='/board'>Board</a>
 									</li>
 									<li>
 										<a href='/investors'>Investors</a>

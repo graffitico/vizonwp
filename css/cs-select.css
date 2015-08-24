@@ -5,7 +5,6 @@ div.cs-select {
 	position: relative;
 	text-align: left;
 	background: #fff;
-	z-index: 100;
 	width: 100%;
 	max-width: 500px;
 	-webkit-touch-callout: none;
@@ -13,7 +12,7 @@ div.cs-select {
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;	
+	user-select: none;
 }
 
 div.cs-select:focus {
@@ -60,7 +59,7 @@ div.cs-select:focus {
 .cs-select > span::after {
 	content: '\25BE';
 	right: 1em;
-	
+
 }
 
 .cs-select .cs-selected span::after {
@@ -71,10 +70,6 @@ div.cs-select:focus {
 .cs-select.cs-active > span::after {
 	-webkit-transform: translateY(-50%) rotate(180deg);
 	transform: translateY(-50%) rotate(180deg);
-}
-
-div.cs-active {
-	z-index: 200;
 }
 
 /* Options */

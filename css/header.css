@@ -119,6 +119,10 @@
   margin-top: -12px;
 }
 
+#navigation .selector {
+	display: none !important;
+}
+
 #navigation .sf-menu > li > a {
 	font-size: 18px;
 	padding: 20px 25px;
@@ -234,4 +238,98 @@
 .full_logo {
 	width: 200px;
 	height: 48px;
+}
+
+@media(max-width: 991px) {
+
+	#pre-header {
+		display: none;
+	}
+
+	#navigation {
+		display: none !important;
+	}
+
+	#mobilenavigation-container {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	#mobilenavigation-container .navigation-trigger {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		padding: 3px;
+		color: #fff;
+		line-height: 10px;
+		font-size: 30px;
+	}
+
+	.mobilenavigation {
+		display: none;
+		font-size: 30px;
+		color: #fff;
+		margin: 0;
+		position: relative;
+		top: 68px;
+		overflow: auto;
+		padding: 0 15px;
+		list-style-type: none;
+		background-color: rgba(032, 032, 032, 0.95);
+	}
+
+	.mobilesubnav {
+		display: none;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.mobilenavigation li {
+		padding: 10px 0;
+		font-size: 0.8em;
+	}
+
+	.mobilenavigation li a {
+		display: block;
+	}
+
+	.mobilenavigation li .login-button {
+		padding: 3px 8px;
+		background-color: #fff;
+		border: 1px solid #fff;
+		border-radius: 4px;
+		color: #999;
+	}
+
+	.mobilenavigation li > div {
+		font-weight: bold;
+		display: inline-block;
+	}
+
+	.mobilenavigation li .plus-icon,
+	.mobilenavigation li .minus-icon {
+		float: right;
+		line-height: 13px;
+		padding: 4px 3px 2px 3px;
+		border: 1px solid #fff;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.mobilenavigation li > .minus-icon,
+	.mobilenavigation li.expanded-menu > .plus-icon {
+		display: none;
+	}
+
+	.mobilenavigation li > .plus-icon,
+	.mobilenavigation li.expanded-menu > .minus-icon {
+		display: inline-block;
+	}
+
 }

@@ -203,6 +203,9 @@ p {
 	padding-top: 6px;
 }
 
+.carousel-content {
+	margin-top: 1%;
+}
 
 .white-3dbox-block {
 	background-color: #202020;
@@ -267,6 +270,7 @@ p {
 }
 
 
+
 /** Heading Text */
 
 .heading-block {
@@ -275,7 +279,7 @@ p {
 	padding-top: 8%;
 	padding-bottom: 10%;
 	position: relative;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.2);
 }
 
 .engage-heading-block {
@@ -348,13 +352,32 @@ p {
 }
 
 .yellow-height {
-	height: 100px;
+	height: 120px;
 }
 
 .value-holder {
 	padding: 5%;
 	background-image: url ("/images/values_postit-02.svg");
 	background-size: 500px 300px;
+}
+
+.intro-blocks-container {
+	padding: 90px 20px;
+}
+
+.intro-blocks-container .intro-block {
+
+	border: 1px solid #fff;
+	padding: 20px;
+	color: #fff;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	background-color: #7b7b7b;
+	font-size: 16px;
+}
+
+.intro-blocks-container .intro-block h4 {
+	color: #fff;
 }
 
 /** Second frame text*/
@@ -565,7 +588,7 @@ p {
 
 .yellow-icons .feature-icon-holder {
 	margin:5% auto 10%;
-	
+
 }
 
 .yellow-icons .feature-icon-holder img {
@@ -575,7 +598,7 @@ p {
 .flying-box-area h4, .flying-box-area p {
 	text-align: left;
 }
-	
+
 /** Feature Section */
 
 .feature-section {
@@ -1045,13 +1068,16 @@ div.img {
 }
 .nav-pills>li>a {
 	padding: 15px 0;
-	margin: 0 35px;
+	margin: 0 auto;
 	border-radius: 0;
 	display: inline-block;
 	background-color: transparent !important;
 }
 .nav-pills>li.active>a {
 	box-shadow: inset 0 -3px 0 0 #7b7b7b;
+}
+.nav-pills>li>a>img {
+	height: 45px;
 }
 .nav-pills>li+li {
 	margin-left: 0;
@@ -1062,9 +1088,9 @@ div.img {
 	width: 100px;
 }
 
-.horizontal-logo {
+.nav-pills>li>a>img.horizontal-logo {
 	display: inline-block;
-	width: 100%;
+	max-width: 100%;
 }
 
  .tab-content h4 {
@@ -1479,7 +1505,7 @@ div.img {
 
 
 /* Custom, Iphone Retina */
-@media(max-width: 479px) {
+@media (max-width: 479px) {
 
 	.heading-text {
 		margin-top: 50%;
@@ -1510,9 +1536,9 @@ div.img {
 	}
 
 	.yellow-strip-text .icon-home_yellowband_arrow {
-	font-size: 20px;
-	color: #222;
-	margin: 1% 2%;
+		font-size: 20px;
+		color: #222;
+		margin: 1% 2%;
 	}
 
 	.intro-text {
@@ -1521,8 +1547,8 @@ div.img {
 	}
 
 	.home-vbox {
-	margin: 10% auto 0;
-	width: 200px;
+		margin: 10% auto 0;
+		width: 200px;
 	}
 
 	.sonia-v2-small-text {
@@ -1584,7 +1610,7 @@ div.img {
 	}
 
 	.yellow-height {
-		height: 100%;
+		height: 120px;
 	}
 
 	.yellow-text-block .inline-content p {
@@ -1613,7 +1639,7 @@ div.img {
 		text-align: center;
 	}
 	.floating-text-box .circular-bound {
-		border-radius: 50%;
+		border-radius: 20%;
 	}
 	.bigcircle,
 	.xbigcircle,
@@ -1623,6 +1649,7 @@ div.img {
 		left: 0 !important;
 		top: 0 !important;
 		margin: 20px !important;
+		max-width: 90%;
 	    -webkit-transition-duration: .5s;
 	    -webkit-transition-property: all;
 	    -webkit-transition-timing-function: ease-in-out;
@@ -1632,7 +1659,8 @@ div.img {
 	.smallcircle.expanded {
 	    transform: none;
 	}
-	.hoverable-text .floating-normal-text {
+	.hoverable-text .floating-normal-text,
+	.hoverable-text .floating-hover-text {
 		text-align: center;
 		vertical-align: middle;
 		color: #fff;
@@ -1711,9 +1739,9 @@ div.img {
 
 
 	.blog-entry-tile {
-	height: 500px;
-	padding: 10px 30px;
-	font-size: 16px;
+		height: 500px;
+		padding: 10px 30px;
+		font-size: 16px;
 	}
 
 	.blog-entry-tile p  {
@@ -1724,11 +1752,11 @@ div.img {
 		left:42%;
 		top: 110%;
 	}
-	
+
 	.yellow-height {
 		height: 200px;
 	}
-	
+
 	.portfolio-box-caption .icon-home_yellowband_arrow {
 		font-size: 20px;
 		bottom: 3%;
@@ -1736,19 +1764,19 @@ div.img {
 	}
 
 	.chetan {
-	background: linear-gradient(to left, #7b7b7b, #ffffff);
-	padding: 30% 10%;
-}
+		background: linear-gradient(to left, #7b7b7b, #ffffff);
+		padding: 30% 10%;
+	}
 
 	.vikram {
-	background: linear-gradient(to right, #7b7b7b, #ffffff);
-	padding: 20% 10%;
-}
+		background: linear-gradient(to right, #7b7b7b, #ffffff);
+		padding: 20% 10%;
+	}
 
 	.gourav {
-	background: linear-gradient(to left, #7b7b7b, #ffffff);
-	padding: 20% 10%;
-}
+		background: linear-gradient(to left, #7b7b7b, #ffffff);
+		padding: 20% 10%;
+	}
 
 .cgo {
 	width:100px;
@@ -1825,7 +1853,7 @@ div.img {
 	}
 
 	.yellow-height {
-		height: 100%;
+		height: 120px;
 	}
 
 
@@ -2004,115 +2032,25 @@ div.img {
     	position: relative;
 	}
 
-		.chetan {
-	background: linear-gradient(to left, #7b7b7b, #ffffff);
-	padding: 30% 10%;
-}
+	.chetan {
+		background: linear-gradient(to left, #7b7b7b, #ffffff);
+		padding: 30% 10%;
+	}
 
 	.vikram {
-	background: linear-gradient(to right, #7b7b7b, #ffffff);
-	padding: 20% 10%;
-}
+		background: linear-gradient(to right, #7b7b7b, #ffffff);
+		padding: 20% 10%;
+	}
 
 	.gourav {
-	background: linear-gradient(to left, #7b7b7b, #ffffff);
-	padding: 20% 10%;
-}
+		background: linear-gradient(to left, #7b7b7b, #ffffff);
+		padding: 20% 10%;
+	}
  }
 
 
  /* Anything less than App */
  @media(max-width: 991px) {
-
-	#pre-header {
-		display: none;
-	}
-
-	#navigation {
-		display: none;
-	}
-
-	#mobilenavigation-container {
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-	}
-
-	#mobilenavigation-container .navigation-trigger {
-		position: absolute;
-		right: 20px;
-		top: 20px;
-		padding: 3px;
-		color: #fff;
-		line-height: 10px;
-		font-size: 30px;
-	}
-
-	.mobilenavigation {
-		display: none;
-		font-size: 30px;
-		color: #fff;
-		margin: 0;
-		position: relative;
-		top: 68px;
-		overflow: auto;
-		padding: 0 15px;
-		list-style-type: none;
-		background-color: #999
-	}
-
-	.mobilesubnav {
-		display: none;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	.mobilenavigation li {
-		padding: 10px 0;
-		font-size: 0.8em;
-	}
-
-	.mobilenavigation li a {
-		display: block;
-	}
-
-	.mobilenavigation li .login-button {
-		padding: 3px 8px;
-		background-color: #fff;
-		border: 1px solid #fff;
-		border-radius: 4px;
-		color: #999;
-	}
-
-	.mobilenavigation li > div {
-		font-weight: bold;
-		display: inline-block;
-	}
-
-	.mobilenavigation li .plus-icon,
-	.mobilenavigation li .minus-icon {
-		float: right;
-		line-height: 13px;
-		padding: 4px 3px 2px 3px;
-		border: 1px solid #fff;
-		width: 20px;
-		height: 20px;
-		text-align: center;
-		font-weight: bold;
-	}
-
-	.mobilenavigation li > .minus-icon,
-	.mobilenavigation li.expanded-menu > .plus-icon {
-		display: none;
-	}
-
-	.mobilenavigation li > .plus-icon,
-	.mobilenavigation li.expanded-menu > .minus-icon {
-		display: inline-block;
-	}
 
 	.tab-pane {
 		height: auto;
@@ -2141,8 +2079,8 @@ div.img {
 	}
 
 	.tab-content h4 {
-	 	padding-top: 5%;
-	 	text-align: justify;
+	 	padding-top: 1%;
+	 	text-align: center;
 	}
 
 	.engage-marketing-floating-bg,
@@ -2173,29 +2111,29 @@ div.img {
 	}
 
 	.brand-images-sm p {
-	color: #fff;
-	text-align: center;
-	display: inline-block;
+		color: #fff;
+		text-align: center;
+		display: inline-block;
 	}
 
 	.yellow-text-block {
-	position: relative;
-	background-color: #FFD845;
-	text-align: center !important;
-	color: #222;
-	padding: 2%;
+		position: relative;
+		background-color: #FFD845;
+		text-align: center !important;
+		color: #222;
+		padding: 2%;
 	}
 
 	.heading-text h2 {
-	font-size: 60px;
-	line-height: 120%;
-	color: #fff;
-	text-align: center;
-	font-weight: normal;
+		font-size: 60px;
+		line-height: 120%;
+		color: #fff;
+		text-align: center;
+		font-weight: normal;
 	}
 
 	.heading-text {
-		margin-top: 15%;
+		margin-top: 30%;
 	}
 
 	.sonia-v2-small-text {
@@ -2213,7 +2151,7 @@ div.img {
 	}
 
 	.yellow-height {
-		height: 100px;
+		height: 130px;
 	}
 
 	.fancybox-play {
@@ -2291,7 +2229,5 @@ div.img {
 	    filter: none;
 	    -webkit-filter: grayscale(0%);
 	}
-
-
 }
 

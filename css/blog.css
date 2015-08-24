@@ -4,12 +4,19 @@
 
 @font-face {
    font-family: 'proxima';
-   src: url('../fonts/ProximaNova-Light_0.otf');
+   src: url('/fonts/ProximaNova-Light_0.otf');
 }
 
+/*@font-face {
+   font-family: 'proxima';
+   font-weight: bold;
+   src: url('/fonts/ProximaNova-Bold.otf');
+}*/
+
 @font-face {
-   font-family: 'proximab';
-   src: url('../fonts/ProximaNova-Bold.otf');
+	font-family: 'proxima';
+	font-weight: bold;
+	src: url('/fonts/ProximaNova-Semibold_0.otf');
 }
 
 * {
@@ -18,13 +25,92 @@
 	font-family: proxima;
 }
 
+html {
+	margin: 0 !important;
+}
+
+body {
+  background: #fff;
+}
+
+td {
+	border-width: 0;
+	vertical-align: middle;
+}
+
 p, a, h3, h4, h5, h6 {
     font-family: proxima;
 }
 
 b, strong {
-	font-family: proximab;
+	font-family: proxima;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: none;
+	font-family: proxima;
+	font-weight: bold;
+	color: #202020;
+	margin: 1%;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+input[type=button],
+input[type=submit] {
+	text-transform: none;
+}
+
+p {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 1%;
+    text-align: center;
+}
+p {
+    line-height: 1.5;
+}
+
+a:focus,
+a:active,
+a {
+	color: #202020;
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    transition: all .1s;
+    text-decoration: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.heading-block a:focus {
+	transition: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #7b7b7b;
+    outline: none;
+}
+
+input.yellowbutton {
+	padding: 10px 40px;
+	background-color: #ffd846;
+	border-radius: 8px;
+	color: #202020;
+}
+
+.container {
+	background: none;
+}
+
 
 /** Buttons CSS */
 .btn-default {
@@ -41,6 +127,10 @@ b, strong {
 
 
 /** Overriding CSS */
+#wrap {
+	margin-top: 180px;
+}
+
 #navigation {
 	top: 10px;
 }
@@ -66,14 +156,16 @@ b, strong {
 
 .dropdown-menu {
 	display: none;
+	z-index: 50;
 }
 
 .open {
 	position: relative;
 }
 
-.open > .dropdown-toggle {
+.dropdown-toggle {
 	display: inline-block;
+	cursor: pointer;
 }
 
 #pre-header > ul > li .search-bar {
