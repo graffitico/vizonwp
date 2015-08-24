@@ -126,7 +126,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/mobileweb-appengagement'>
+								<a href='/products/convert/mobileweb-appreengagement'>
 									<span class='icon icon-home_menuicons__webmobileapp'></span>
 									<span>Mobile Web-App Re-engagment</span>
 								</a>
@@ -164,7 +164,7 @@
 						</ul>
 					</div>
 					<div class='contact-block product-subnav-block'>
-						<p class='text-center' style='margin-top: 0'>For personalised solutions,</p>
+						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
 						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' />
 					</div>
 				</div>

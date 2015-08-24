@@ -344,6 +344,10 @@ p {
 	line-height: 1em;
 }
 
+#marketersloveus .btn-default {
+	margin-top: 5%;
+}
+
 .yellow-strip-text .icon-home_yellowband_arrow {
 	font-size: 35px;
 	color: #222;
@@ -995,11 +999,14 @@ div.img {
 	margin-top: 3%;
 }
 
+
 .engage-dim-section {
 	background: #202020;
 	padding-top: 3%;
 	padding-bottom: 5%;
+	padding-left: 3%;
 }
+
 
 .hover-magic-text-bg {
 	opacity: 0.6;
