@@ -46,7 +46,25 @@ get_jobs(data);
 jQuery("#search-id").click(function($) {
 
 
-q = jQuery("#job-s").val();
+search_jobs();
+
+
+});
+
+
+
+
+jQuery("#job-s").keypress(function(e) {
+    if(e.which == 13) {
+      search_jobs();
+    }
+});
+
+
+
+
+function search_jobs(){
+    q = jQuery("#job-s").val();
 
        data = {
             action: 'filter_posts', // function to execute
@@ -59,9 +77,8 @@ q = jQuery("#job-s").val();
  
 
         get_jobs(data);
+}
 
-
-});
 
 
 jQuery(document).on('click' , '.apply-button' , function(){
