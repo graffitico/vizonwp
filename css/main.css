@@ -191,7 +191,6 @@ p {
 	display: none;
 	text-align: center;
 	left: 48%;
-	bottom: -100%;
 	color: #fff;
 	font-size: 24px;
 	border: 2px solid #fff;
@@ -507,26 +506,29 @@ p {
 
 .selfserve-header {
 	background-image: url("/images/selfserve-bg.svg");
-	background-attachment: fixed;
-	background-size: cover;
-}
+	background-repeat: no-repeat;
+	background-attachment:	fixed;
+ }
 
 .selfserve-header .heading-block {
 	background: none;
 }
 
-.selfserve-header a {
+.selfserve-header a, .selfserve-signup a {
 	font-size: 40px;
 }
 
-.selfserve-signup {
-	padding-top: 12%;
-	padding-right:4%;
+.selfserve-end .selfserve-signup {
+	padding: 2% 5%;
+	margin-bottom: 5%;
 }
 
-.selfserve-header .btn-default{
-	margin-top: 50%;
-	margin-left: 40%;
+.selfserve-header .selfserve-signup{
+	margin-top: 8%;
+}
+
+.black-nos .circle-holder {
+	height: 180px;
 }
 
 .gift-box {
@@ -555,10 +557,11 @@ p {
 }
 
 .circle-text {
-	border-radius: 100%;
-	border-color: #f8835e;
-	height: 180px;
 	text-align: center;
+	color: #ffd846;
+	font-size: 85px;
+	font-weight: 900;
+	margin: 15% auto 5%;
 }
 
 .sscar-icon {
@@ -574,16 +577,20 @@ p {
 	color: #ffd846;
 }
 
-.sscarousel img {
-	margin-left:40%;
-}
-
-.sscarousel .carousel-inner p {
+.sscarousel .carousel-inner img {
 	margin: 0 30%;
 }
 
 .flying-box-area {
-	margin: 15% auto;
+	margin-bottom: 5%;
+}
+
+.flying-box img {
+	height: 300px;
+}
+
+.flying-box h4 {
+	margin-top: 10%;
 }
 
 .yellow-icons .feature-icon-holder {
@@ -598,6 +605,18 @@ p {
 .flying-box-area h4, .flying-box-area p {
 	text-align: left;
 }
+
+.black-nos {
+	background-color: #202020;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.black-nos h4, .black-nos p{
+color: #ffffff;	
+}
+
+
 
 /** Feature Section */
 
