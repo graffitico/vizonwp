@@ -20,13 +20,13 @@
 									<a href='/products'>PRODUCTS</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/reach'>Reach</a>
+									<a href='products/reach'><p>Reach</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/convert'>Convert</a>
+									<a href='products/convert'><p>Convert</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/engage'>Engage</a>
+									<a href='products/engage'><p>Engage</p></a>
 								</li>
 							</ul>
 						</div>
@@ -36,16 +36,16 @@
 									<a href='/story'>ABOUT</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/story'>Company</a>
+									<a href='/story'><p>Company</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/founders'>Team</a>
+									<a href='/founders'><p>Team</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/lifeatvizury'>Careers</a>
+									<a href='/lifeatvizury'><p>Careers</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/press-release'>Press Room</a>
+									<a href='/press-release'><p>Press Room</p></a>
 								</li>
 							</ul>
 						</div>
@@ -58,13 +58,13 @@
 									<a href='/casestudies'>RESOURCES</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/whitepapers'>White Papers</a>
+									<a href='/whitepapers'><p>White Papers</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/industryreports'>Industry Reports</a>
+									<a href='/industryreports'><p>Industry Reports</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/insights'>Insights</a>
+									<a href='/insights'><p>Insights</p></a>
 								</li>
 							</ul>
 						</div>
@@ -74,10 +74,10 @@
 									<a href='/vizuryblog'>BLOG</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/vizuryblog/category/marketing'>Marketing</a>
+									<a href='/vizuryblog/category/marketing'><p>Marketing</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='/vizuryblog/category/technology'>Technology</a>
+									<a href='/vizuryblog/category/technology'><p>Technology</p></a>
 								</li>
 							</ul>
 						</div>

@@ -112,7 +112,7 @@
 						<p class='text-center'>Personalized Retargeting</p>
 						<ul class='subnav-list-control'>
 							<li>
-								<a href='/products/convertgo'>
+								<a href='/products/convert/convertgo'>
 									<span class='icon icon-home_menuicons__convertxp'></span>
 									<span>Convert Go!</span>
 								</a>
@@ -130,7 +130,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/mobileweb-appengagement'>
+								<a href='/products/convert/mobileweb-appreengagement'>
 									<span class='icon icon-home_menuicons__webmobileapp'></span>
 									<span>Mobile Web-App Re-engagment</span>
 								</a>
@@ -168,7 +168,7 @@
 						</ul>
 					</div>
 					<div class='contact-block product-subnav-block'>
-						<p class='text-center' style='margin-top: 0'>For personalised solutions,</p>
+						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
 						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' />
 					</div>
 				</div>
@@ -321,7 +321,7 @@
 										<a href='/products/convert'>Convert Overview</a>
 									</li>
 									<li>
-										<a href='/products/convertgo'>Convert Go!</a>
+										<a href='/products/convert/convertgo'>Convert Go!</a>
 									</li>
 									<li>
 										<a href='/products/convert/appretargeting'>App Retargeting</a>
@@ -330,7 +330,7 @@
 										<a href='/products/convert/crosschannel'>Cross-Channel</a>
 									</li>
 									<li>
-										<a href='/products/convert/mobileweb-appengagement'>Mobile Web-App Re-engagement</a>
+										<a href='/products/convert/mobileweb-appreengagement'>Mobile Web-App Re-engagement</a>
 									</li>
 									<li>
 										<a href='/products/convert/facebookremarketing'>Facebook Remarketing</a>

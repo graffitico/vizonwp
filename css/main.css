@@ -191,7 +191,6 @@ p {
 	display: none;
 	text-align: center;
 	left: 48%;
-	bottom: -100%;
 	color: #fff;
 	font-size: 24px;
 	border: 2px solid #fff;
@@ -203,6 +202,9 @@ p {
 	padding-top: 6px;
 }
 
+.carousel-content {
+	margin-top: 1%;
+}
 
 .white-3dbox-block {
 	background-color: #202020;
@@ -267,6 +269,7 @@ p {
 }
 
 
+
 /** Heading Text */
 
 .heading-block {
@@ -275,7 +278,7 @@ p {
 	padding-top: 8%;
 	padding-bottom: 10%;
 	position: relative;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.2);
 }
 
 .engage-heading-block {
@@ -341,6 +344,10 @@ p {
 	line-height: 1em;
 }
 
+#marketersloveus .btn-default {
+	margin-top: 5%;
+}
+
 .yellow-strip-text .icon-home_yellowband_arrow {
 	font-size: 35px;
 	color: #222;
@@ -348,7 +355,7 @@ p {
 }
 
 .yellow-height {
-	height: 100px;
+	height: 120px;
 }
 
 .value-holder {
@@ -503,26 +510,29 @@ p {
 
 .selfserve-header {
 	background-image: url("/images/selfserve-bg.svg");
-	background-attachment: fixed;
-	background-size: cover;
-}
+	background-repeat: no-repeat;
+	background-attachment:	fixed;
+ }
 
 .selfserve-header .heading-block {
 	background: none;
 }
 
-.selfserve-header a {
+.selfserve-header a, .selfserve-signup a {
 	font-size: 40px;
 }
 
-.selfserve-signup {
-	padding-top: 12%;
-	padding-right:4%;
+.selfserve-end .selfserve-signup {
+	padding: 2% 5%;
+	margin-bottom: 5%;
 }
 
-.selfserve-header .btn-default{
-	margin-top: 50%;
-	margin-left: 40%;
+.selfserve-header .selfserve-signup{
+	margin-top: 8%;
+}
+
+.black-nos .circle-holder {
+	height: 180px;
 }
 
 .gift-box {
@@ -551,10 +561,11 @@ p {
 }
 
 .circle-text {
-	border-radius: 100%;
-	border-color: #f8835e;
-	height: 180px;
 	text-align: center;
+	color: #ffd846;
+	font-size: 85px;
+	font-weight: 900;
+	margin: 15% auto 5%;
 }
 
 .sscar-icon {
@@ -570,16 +581,20 @@ p {
 	color: #ffd846;
 }
 
-.sscarousel img {
-	margin-left:40%;
-}
-
-.sscarousel .carousel-inner p {
+.sscarousel .carousel-inner img {
 	margin: 0 30%;
 }
 
 .flying-box-area {
-	margin: 15% auto;
+	margin-bottom: 5%;
+}
+
+.flying-box img {
+	height: 300px;
+}
+
+.flying-box h4 {
+	margin-top: 10%;
 }
 
 .yellow-icons .feature-icon-holder {
@@ -594,6 +609,18 @@ p {
 .flying-box-area h4, .flying-box-area p {
 	text-align: left;
 }
+
+.black-nos {
+	background-color: #202020;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.black-nos h4, .black-nos p{
+color: #ffffff;	
+}
+
+
 
 /** Feature Section */
 
@@ -972,11 +999,14 @@ div.img {
 	margin-top: 3%;
 }
 
+
 .engage-dim-section {
 	background: #202020;
 	padding-top: 3%;
 	padding-bottom: 5%;
+	padding-left: 3%;
 }
+
 
 .hover-magic-text-bg {
 	opacity: 0.6;
@@ -1613,7 +1643,7 @@ div.img {
 	}
 
 	.yellow-height {
-		height: 100%;
+		height: 120px;
 	}
 
 	.yellow-text-block .inline-content p {
@@ -1861,7 +1891,7 @@ div.img {
 	}
 
 	.yellow-height {
-		height: 100%;
+		height: 120px;
 	}
 
 	.yellow-text-block .inline-content p {
@@ -2143,7 +2173,7 @@ div.img {
 	}
 
 	.heading-text {
-		margin-top: 15%;
+		margin-top: 30%;
 	}
 
 	.sonia-v2-small-text {
@@ -2161,7 +2191,7 @@ div.img {
 	}
 
 	.yellow-height {
-		height: 100px;
+		height: 130px;
 	}
 
 	.fancybox-play {

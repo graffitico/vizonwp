@@ -50,7 +50,7 @@ function theme_enqueue_styles(){
 
 }
 
-add_action('wp_enqueue_scripts','theme_enqueue_styles');
+
 
 function cc_mime_types($mimes) {
   $mimes['svg'] = 'image/svg+xml';
@@ -122,7 +122,7 @@ wp_enqueue_script('reverse_scroll_script');
 }
 add_action('wp_enqueue_scripts', 'ajax_filter_posts_scripts', 100);
 
-
+add_action('wp_enqueue_scripts','theme_enqueue_styles');
 
 
 
