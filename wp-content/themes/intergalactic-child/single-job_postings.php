@@ -141,25 +141,25 @@ get_header(); ?>
         </div>
         
         <div class="col-md-4">
-        <section>
+    
                 <select class="cs-select cs-skin-border skin-border-bg2" id="year-filter" >
                     <option value="" disabled selected>Browse by experience</option>
                     <option value="0">0-1 years</option>
                     <option value="2">2-4 years</option>
                     <option value="5">5-10 years</option>
                 </select>
-            </section>
+        
         </div>
         
         <div class="col-md-4">
-        <section>
+    
                 <select class="cs-select cs-skin-border skin-border-bg3" id="location-filter" >
                     <option value="" disabled selected>Browse by location</option>
                     <option value="Bangalore">Bangalore</option>
                     <option value="Mumbai">Mumbai</option>
                     <option value="Kolkata">Kolkata</option>
                 </select>
-            </section>
+       
         </div>        
       </div><!-- end of row -->
             
