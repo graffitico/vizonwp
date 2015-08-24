@@ -301,7 +301,7 @@ jQuery(function () {
    		$(this).removeClass('expanded');
 
    		if (screenWidth > 767) {
-   			$(this).siblings().addClass('faded');
+   			$(this).siblings().removeClass('faded');
    		}
    		$('.hover-magic-text-bg').css({opacity: ''});
 
