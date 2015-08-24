@@ -342,11 +342,12 @@ jQuery(function () {
 
 	// Video player
 	if ($.fn.fancybox) {
+
 		$('.fancybox-play').show().fancybox({
 			type: 'iframe',
-			fitToView: false,
+			fitToView: (screenWidth > 800 ? false : true),
 			height: 450,
-			width: 800
+			width: (screenWidth > 800 ? 800 : screenWidth)
 		});
 
 		$('.flexslider .slides > li').hover(function () {
