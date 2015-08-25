@@ -97,7 +97,7 @@ get_header(); ?>
                  phone   <input type="text" size="80" name="job_application_phone" required="true" /><br/>
                     <input  type="hidden" id="application_job_id" name="application_job_id"   value="<?php echo the_ID() ?>" />
             resume 
-            <input type="file" id="resume_attachment" name="resume_attachment" value="" size="25" required="true" /><br/>
+            <input type="file" id="resume_attachment" name="resume_attachment" value="" size="25" required="true"  accept="application/pdf" /><br/>
             <input name="submit" type="submit" value="submit" />
                   </form>
   </div>
