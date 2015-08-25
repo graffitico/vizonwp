@@ -23,6 +23,8 @@
 	<!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
+	<link rel="icon" href="<?php echo get_site_url(); ?>/images/logo_back.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/images/logo_back.ico" type="image/x-icon" />
 	<?php wp_head(); ?>
 </head>
 
