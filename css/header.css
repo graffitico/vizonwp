@@ -165,12 +165,16 @@
 }
 
 .resources-subnav-block {
-	height: 100px;
+	height: 120px;
 }
 
 #header .subnav .contact-block {
 	border-width: 2%;
 	padding-top: 8%;
+}
+
+#header .subnav .resources-subnav-block.contact-block {
+	padding-top: 2%;
 }
 
 #header .subnav .subnav-block p {
