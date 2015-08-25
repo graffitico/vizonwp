@@ -103,6 +103,7 @@ input[type=submit] {
 
 a:focus,
 a:active,
+a:visited,
 a {
 	color: #202020;
     -webkit-transition: all .1s;
@@ -193,8 +194,7 @@ p {
 	left: 48%;
 	color: #fff;
 	font-size: 24px;
-	border: 2px solid #fff;
-	border-radius: 50%;
+	background-image: url(/images/playback_button.svg);
 	display: inline-block;
 	width: 48px;
 	height: 48px;
@@ -283,6 +283,7 @@ p {
 	padding-bottom: 10%;
 	position: relative;
 	background-color: rgba(0,0,0,0.2);
+	background-size: cover;
 }
 
 .engage-heading-block {
@@ -357,6 +358,7 @@ a:focus a:active .btn-default {
 	text-align: center;
 	display: inline;
 	line-height: 1em;
+	font-weight: bold;
 }
 
 #marketersloveus .btn-default {
@@ -533,12 +535,7 @@ a:focus a:active .btn-default {
 	background: none;
 }
 
-.selfserve-header a, .selfserve-signup a {
-	font-size: 40px;
-}
-
 .selfserve-end .selfserve-signup {
-	padding: 2% 5%;
 	margin-bottom: 5%;
 }
 
@@ -1056,7 +1053,7 @@ div.img {
 	top: 80%;
 }
 .hover-magic-circle5 {
-	left: 86%;
+	left: 84%;
 	top: 39%;
 }
 .hover-magic-circle6 {
@@ -1374,6 +1371,7 @@ div.img {
 	position: absolute;
 	color: #fff;
 	text-align: center;
+	font-weight: bold;
 	display: none;
 	font-size: 18px;
 	width: 80%;
@@ -1798,7 +1796,7 @@ div.img {
 	}
 
 	.blog-entry-tile p  {
-	text-align:left;
+		text-align:left;
 	}
 
 	.fancybox-play {
