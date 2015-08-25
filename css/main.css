@@ -328,8 +328,14 @@ p {
 	background: #ffd846;
 	color: #202020;
 	padding: 10px 40px;
-	border-radius: 2px;
+	border-radius: 8px;
 	font-size: 18px;
+}
+
+/*.btn-default:hover,*/
+input.yellowbutton:hover {
+	background-color: #7b7b7b;
+	color: #ffd846;
 }
 
 a:focus a:active .btn-default {
@@ -518,7 +524,7 @@ a:focus a:active .btn-default {
 }
 
 .selfserve-header {
-	background-image: url("/images/selfserve-bg.svg");
+	background-image: url(/images/selfserve-bg.svg);
 	background-repeat: no-repeat;
 	background-attachment:	fixed;
  }
@@ -626,7 +632,7 @@ a:focus a:active .btn-default {
 }
 
 .black-nos h4, .black-nos p{
-color: #ffffff;	
+color: #ffffff;
 }
 
 
@@ -1185,7 +1191,7 @@ div.img {
 }
 .yellow-text-block .btn-default:hover {
 	background-color: #fff;
-	color: #202020;
+	color: #7b7b7b;
 }
 .yellow-text-block .inline-content p {
 	display: inline-block;
