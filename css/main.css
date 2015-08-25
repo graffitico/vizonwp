@@ -191,7 +191,6 @@ p {
 	display: none;
 	text-align: center;
 	left: 48%;
-	bottom: -100%;
 	color: #fff;
 	font-size: 24px;
 	border: 2px solid #fff;
@@ -343,6 +342,10 @@ p {
 	text-align: center;
 	display: inline;
 	line-height: 1em;
+}
+
+#marketersloveus .btn-default {
+	margin-top: 5%;
 }
 
 .yellow-strip-text .icon-home_yellowband_arrow {
@@ -507,26 +510,29 @@ p {
 
 .selfserve-header {
 	background-image: url("/images/selfserve-bg.svg");
-	background-attachment: fixed;
-	background-size: cover;
-}
+	background-repeat: no-repeat;
+	background-attachment:	fixed;
+ }
 
 .selfserve-header .heading-block {
 	background: none;
 }
 
-.selfserve-header a {
+.selfserve-header a, .selfserve-signup a {
 	font-size: 40px;
 }
 
-.selfserve-signup {
-	padding-top: 12%;
-	padding-right:4%;
+.selfserve-end .selfserve-signup {
+	padding: 2% 5%;
+	margin-bottom: 5%;
 }
 
-.selfserve-header .btn-default{
-	margin-top: 50%;
-	margin-left: 40%;
+.selfserve-header .selfserve-signup{
+	margin-top: 8%;
+}
+
+.black-nos .circle-holder {
+	height: 180px;
 }
 
 .gift-box {
@@ -555,10 +561,11 @@ p {
 }
 
 .circle-text {
-	border-radius: 100%;
-	border-color: #f8835e;
-	height: 180px;
 	text-align: center;
+	color: #ffd846;
+	font-size: 85px;
+	font-weight: 900;
+	margin: 15% auto 5%;
 }
 
 .sscar-icon {
@@ -574,16 +581,20 @@ p {
 	color: #ffd846;
 }
 
-.sscarousel img {
-	margin-left:40%;
-}
-
-.sscarousel .carousel-inner p {
+.sscarousel .carousel-inner img {
 	margin: 0 30%;
 }
 
 .flying-box-area {
-	margin: 15% auto;
+	margin-bottom: 5%;
+}
+
+.flying-box img {
+	height: 300px;
+}
+
+.flying-box h4 {
+	margin-top: 10%;
 }
 
 .yellow-icons .feature-icon-holder {
@@ -598,6 +609,18 @@ p {
 .flying-box-area h4, .flying-box-area p {
 	text-align: left;
 }
+
+.black-nos {
+	background-color: #202020;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.black-nos h4, .black-nos p{
+color: #ffffff;	
+}
+
+
 
 /** Feature Section */
 
@@ -976,11 +999,14 @@ div.img {
 	margin-top: 3%;
 }
 
+
 .engage-dim-section {
 	background: #202020;
 	padding-top: 3%;
 	padding-bottom: 5%;
+	padding-left: 3%;
 }
+
 
 .hover-magic-text-bg {
 	opacity: 0.6;
@@ -990,6 +1016,13 @@ div.img {
 	position: absolute;
 	left: 0;
 	top: 0;
+
+    -webkit-transition-property: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+
+    -moz-transition-timing-function: cubic-bezier(.17,.37,.67,.93);
+    -webkit-transition-timing-function: cubic-bezier(.17,.37,.67,.93);
 }
 .hover-magic-circle1 {
 	left: 34%;
@@ -1253,12 +1286,12 @@ div.img {
 	position: absolute;
 	font-size: 12px;
 
-    -webkit-transition-property: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition-property: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
 
-    -moz-transition-timing-function: ease-in-out;
-    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: cubic-bezier(.17,.37,.67,.93);
+    -webkit-transition-timing-function: cubic-bezier(.17,.37,.67,.93);
 }
 .xsmallcircle {
 	width: 90px;
@@ -1614,7 +1647,7 @@ div.img {
 	}
 
 	.yellow-text-block .inline-content p {
-		display: inline-block;
+		display: block;
 		vertical-align: middle;
 		margin: auto 5%;
 	}
@@ -1650,9 +1683,14 @@ div.img {
 		top: 0 !important;
 		margin: 20px !important;
 		max-width: 90%;
-	    -webkit-transition-duration: .5s;
-	    -webkit-transition-property: all;
-	    -webkit-transition-timing-function: ease-in-out;
+
+	    -webkit-transition: all .5s;
+	    -moz-transition: all .5s;
+	    transition: all .5s;
+
+        -moz-transition-timing-function: cubic-bezier(.17,.37,.67,.93);
+        -webkit-transition-timing-function: cubic-bezier(.17,.37,.67,.93);
+
 	}
 	.bigcircle.expanded,
 	.xbigcircle.expanded,
@@ -1856,7 +1894,6 @@ div.img {
 		height: 120px;
 	}
 
-
 	.yellow-text-block .inline-content p {
 		margin-top: 2%;
 	}
@@ -1961,9 +1998,12 @@ div.img {
 		left: 0 !important;
 		top: 0 !important;
 		margin: 20px !important;
-	    -webkit-transition-duration: .5s;
-	    -webkit-transition-property: all;
-	    -webkit-transition-timing-function: ease-in-out;
+	    -webkit-transition-property: all .5s;
+	    -moz-transition: all .5s;
+	    transition: all .5s;
+
+	    -moz-transition-timing-function: cubic-bezier(.17,.37,.67,.93);
+	    -webkit-transition-timing-function: cubic-bezier(.17,.37,.67,.93);
 	}
 	.bigcircle.expanded,
 	.xbigcircle.expanded,

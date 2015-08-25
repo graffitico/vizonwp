@@ -282,7 +282,6 @@ jQuery(function () {
     // Hoverable text - For Engage Pages
    	$('.hoverable-text').hover(function () {
 
-   		console.log('hover in');
 		$(this).find('.floating-normal-text').finish().hide();
 		$(this).find('.floating-hover-text').finish().hide();
    		$(this).addClass('expanded');
@@ -291,11 +290,8 @@ jQuery(function () {
    			$(this).siblings().addClass('faded');
    		}
    		$('.hover-magic-text-bg').css({opacity: 0.1});
-
-   		//$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onExpandTransitionEnd);
    	}, function () {
 
-   		console.log('hover out');
 		$(this).find('.floating-normal-text').finish().hide();
 		$(this).find('.floating-hover-text').finish().hide();
    		$(this).removeClass('expanded');
@@ -304,8 +300,6 @@ jQuery(function () {
    			$(this).siblings().removeClass('faded');
    		}
    		$('.hover-magic-text-bg').css({opacity: ''});
-
-   		//$(this).one("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onContractTransitionEnd);
    	});
 
    	$('.hoverable-text').on("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", onTransitionEnd);
@@ -348,11 +342,12 @@ jQuery(function () {
 
 	// Video player
 	if ($.fn.fancybox) {
+
 		$('.fancybox-play').show().fancybox({
 			type: 'iframe',
-			fitToView: false,
+			fitToView: (screenWidth > 800 ? false : true),
 			height: 450,
-			width: 800
+			width: (screenWidth > 800 ? 800 : screenWidth)
 		});
 
 		$('.flexslider .slides > li').hover(function () {
@@ -414,8 +409,8 @@ jQuery(function () {
 		var top = (parentHeight - height) / 2;
 
 		$(this).css({
-			left: (left + 5) + 'px',
-			top: (top - 5) + 'px'
+			left: left + 'px',
+			top: top + 'px'
 		});
 	});
 
