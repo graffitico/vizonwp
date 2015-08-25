@@ -44,10 +44,10 @@ get_header(); ?>
     $loop = new WP_Query( $mypost );
     ?>
 		<div class='post-list'>
-			<div class='post-item'>
+			
 				<div class='post-type'><a href="/media-coverage">Media Coverage</a></div>
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
-
+<div class="post-item" >
 
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
@@ -64,13 +64,13 @@ get_header(); ?>
 				</div>
 					</a>
 		
-
+</div>
 		
 
 	<?php endwhile; ?>
 		</div>
 		</div>
-	</div>
+
 </div>
 
 <?php 
