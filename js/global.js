@@ -224,12 +224,12 @@ jQuery(function () {
 		showTab.call(this, e);
    	});
 
-
+	var magicTimerOn, magicTimerOut, onElement = null, outElement = null, onQueue = [], outQueue = [];
 
    	function onExpandTransitionEnd () {
 
-		var element = $(this).find('.floating-hover-text');
-		element.finish().hide().fadeIn(500);
+		var element = $(this).finish().find('.floating-hover-text');
+		element.finish().css({visibility: 'hidden'}).show();
 
 		var width = element.width();
 		var height = element.height();
@@ -246,15 +246,52 @@ jQuery(function () {
 
 		element.css({
 			left: left + 'px',
-			top: top + 'px'
+			top: top + 'px',
+			visibility: 'visible'
 		});
 
+		var i = onQueue.length,
+			qelement;
+
+		while (i--) {
+
+			qelement = onQueue[i];
+
+			if (qelement !== element) {
+				qelement = $(qelement).find('.floating-hover-text');
+
+				qelement.finish().css({visibility: 'hidden'}).show();
+
+				width = qelement.width();
+				height = qelement.height();
+				parentHeight = qelement.parent().height();
+				parentWidth = qelement.parent().width();
+
+		   		if ((screenWidth < 767) && (screenWidth > 479)) {
+		   			parentHeight += 8;
+		   			parentWidth += 24;
+		   		}
+
+				left = (parentWidth - width) / 2;
+				top = (parentHeight - height) / 2;
+
+				qelement.css({
+					left: left + 'px',
+					top: top + 'px',
+					visibility: 'visible'
+				});
+
+			}
+		}
+
+		onQueue = [];
+		onElement = null;
 	}
 
 	function onContractTransitionEnd () {
 
-		var element = $(this).find('.floating-normal-text');
-		element.finish().show().fadeIn(500);
+		var element = $(this).finish().find('.floating-normal-text');
+		element.finish().css({visibility: 'hidden'}).show();
 
 		var width = element.width();
 		var height = element.height();
@@ -266,8 +303,46 @@ jQuery(function () {
 
 		element.css({
 			left: left + 'px',
-			top: top + 'px'
+			top: top + 'px',
+			visibility: 'visible'
 		});
+
+		var i = outQueue.length,
+			qelement;
+
+		while (i--) {
+
+			qelement = outQueue[i];
+
+			if (qelement !== element) {
+				qelement = $(qelement).find('.floating-normal-text');
+
+				qelement.finish().css({visibility: 'hidden'}).show();
+
+				width = qelement.width();
+				height = qelement.height();
+				parentHeight = qelement.parent().height();
+				parentWidth = qelement.parent().width();
+
+		   		if ((screenWidth < 767) && (screenWidth > 479)) {
+		   			parentHeight += 8;
+		   			parentWidth += 24;
+		   		}
+
+				left = (parentWidth - width) / 2;
+				top = (parentHeight - height) / 2;
+
+				qelement.css({
+					left: left + 'px',
+					top: top + 'px',
+					visibility: 'visible'
+				});
+
+			}
+		}
+
+		outQueue = [];
+		outElement = null;
 	}
 
 	function onTransitionEnd () {
@@ -279,7 +354,6 @@ jQuery(function () {
 		}
 	}
 
-	var magicTimerOn, magicTimerOut;
     // Hoverable text - For Engage Pages
    	$('.hoverable-text').hover(function () {
 
@@ -294,10 +368,37 @@ jQuery(function () {
    		}
    		$('.hover-magic-text-bg').css({opacity: 0.1});
 
-   		clearTimeout(magicTimerOn);
+   		if (onElement) {
+   			clearTimeout(magicTimerOn);
+   			//onExpandTransitionEnd.call(onElement);
+   		}
+
+   		onElement = t;
+
+   		var i = onQueue.length,
+   			onAdd = true;
+   		while (i--) {
+   			if (onQueue[i] === onElement) {
+   				onAdd = false;
+   			}
+   		}
+
+   		onAdd && onQueue.push(onElement);
+
+   		if (outElement && onElement === outElement) {
+   			clearTimeout(magicTimerOut);
+
+   			i = outQueue.length;
+   			while(i--) {
+   				if (outQueue[i] === onElement) {
+   					outQueue.splice(i, 1);
+   				}
+   			}
+   		}
    		magicTimerOn = setTimeout(function () {
-   			onTransitionEnd.call(t);
-   		}, 600);
+   			onExpandTransitionEnd.call(onElement);
+   		}, 650);
+
    	}, function () {
 
    		var t = this;
@@ -310,10 +411,37 @@ jQuery(function () {
    		}
    		$('.hover-magic-text-bg').css({opacity: ''});
 
-   		clearTimeout(magicTimerOut);
+   		if (outElement) {
+   			clearTimeout(magicTimerOut);
+   			//onContractTransitionEnd.call(outElement);
+   		}
+
+   		outElement = t;
+
+   		var i = outQueue.length,
+   			onAdd = true;
+   		while (i--) {
+   			if (outQueue[i] === outElement) {
+   				onAdd = false;
+   			}
+   		}
+
+   		onAdd && outQueue.push(onElement);
+
+   		if (onElement && onElement === outElement) {
+   			clearTimeout(magicTimerOn);
+
+   			var i = onQueue.length;
+   			while(i--) {
+   				if (onQueue[i] === outElement) {
+   					onQueue.splice(i, 1);
+   				}
+   			}
+   		}
    		magicTimerOut = setTimeout(function () {
-   			onTransitionEnd.call(t);
-   		}, 600);
+   			onContractTransitionEnd.call(outElement);
+   		}, 650);
+
    	});
 
    	//$('.hoverable-text').on("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", );
