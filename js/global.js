@@ -434,21 +434,15 @@ jQuery(function () {
 		$("#address-number").html(addr_html);
 	});
 
-	$(document).ready(function(){
+	$("#looking_for").on('change',function() {
 
-
-
-console.log("yyy");
-	$("#looking_for").on('change',function(){
-		console.log("sss");
 		cval = $(this).val();
 		if(cval == 'Jobs' || cval == 'Something Else'){
 			$("#traffic_container").hide();
 		}else{
-				$("#traffic_container").show();
+			$("#traffic_container").show();
 		}
-	})
-
+	});
 
 	/**************************** contact form js end **************************/
 
