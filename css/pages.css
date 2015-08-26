@@ -286,7 +286,15 @@ ul.pub-logos img:hover {
 	visibility: hidden;
 }
 
+.form-group .btn-default {
+	border: none;
+	border-radius: 4px;
+	width: 100px;
+}
 
+#map {
+	height:100%;
+}
 
 
 	/* Custom, iPhone Retina */
@@ -348,7 +356,7 @@ color: #ffffff;
 
 button#menu1 {
 border-radius: 0em;
-width: 10em;
+width: 15em;
 }
 
 #address-number .row {
