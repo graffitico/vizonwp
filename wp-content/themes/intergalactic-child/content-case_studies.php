@@ -13,9 +13,9 @@ $formats = get_theme_support( 'post-formats' );
 	<?php } ?>
 	<header class="entry-header">
 		<?php if ( 'link' == get_post_format() ) : ?>
-			<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( intergalactic_get_link_url() ) ), '</a></h1>' ); ?>
+			<?php the_title( sprintf( '<h1 style="font-weight:normal" class="entry-title heading-text"><a href="%s" rel="bookmark">', esc_url( intergalactic_get_link_url() ) ), '</a></h1>' ); ?>
 		<?php else : ?>
-			<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+			<?php the_title( sprintf( '<h1 style="font-weight:normal" class="entry-title heading-text"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 

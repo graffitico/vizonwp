@@ -45,7 +45,7 @@ get_header(); ?>
     ?>
 		<div class='post-list'>
 			
-				<div class='post-type'><a href="/media-coverage">Media Coverage</a></div>
+				<div class='post-type'><a href="/mediacoverage">Media Coverage</a></div>
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 <div class="post-item" >
 

@@ -41,11 +41,12 @@
 #job-s
 {
 	width:100%;
-	height:30px;
-	padding:25px;
+    height: 56px;	
 	border: solid #CCC 3px;
 	/*font-family:'Conv_ProximaNova-Regular_0',Sans-Serif;*/
 	font-size:16px;
+	padding: 5px;
+	padding-left: 25px;
 }
 
 input:focus,

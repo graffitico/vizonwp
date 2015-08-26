@@ -103,7 +103,7 @@ $url_parts['query'] = http_build_query($params);
 
 <?php
 
-}elseif ($post->post_title == 'insights') { 
+}elseif ($post->post_title == 'Insights') { 
 	$args = array(
 	'showposts' => '1000',
 	'category_name' => 'insights' );

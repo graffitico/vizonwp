@@ -47,7 +47,7 @@ get_header(); ?>
 
 
     	
-				<div class='post-type'><a href="/success-stories">Case Studies</a> </div>
+				<div class='post-type'><a href="/casestudies">Case Studies</a> </div>
 
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 				<div class='post-item'>
@@ -102,13 +102,13 @@ get_header(); ?>
 
 
 	<?php
-	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'industry-report', 'showposts'=>2);
+	  $mypost = array( 'post_type' => 'industry_report', 'report_type'=>'industry-report', 'showposts'=>2);
     $loop = new WP_Query( $mypost );
     ?>
 
 
 			
-				<div class='post-type'><a href="/industry-reports">Industry Report</a></div>
+				<div class='post-type'><a href="/industryreports">Industry Report</a></div>
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 <div class='post-item'>
 				<a href='<?php the_permalink(); ?>'>

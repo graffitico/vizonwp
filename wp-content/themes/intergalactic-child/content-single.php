@@ -6,6 +6,11 @@
 
 
 <div style="height:120px" ></div>
+<?php 
+if(has_tag( 'new-casestudies' , $post )){
+the_title( '<center><h3>', '</h3></center>' ); 
+}
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content-wrapper">
 		<div class="entry-meta">

@@ -30,14 +30,13 @@
 	<div id="header-wrap">
 		<div id="pre-header" class="clearfix">
 			<ul id="header-actions">
-				<li class='has-icon'>
-					<form role="search" method="get" id="searchform"  action="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<!-- <input class='search-bar' type="text" id="search_container" style="" /> -->
-					<input class='search-bar' type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+	<!-- 			<li class='has-icon'>
+					<form role="search" method="get" id="searchform"  action="<?php // echo esc_url( home_url( '/' ) ); ?>">
+					<input class='search-bar' type="text" value="<?php // echo get_search_query(); ?>" name="s" id="s" />
 
 					<span class='header-icon icon-header_searchblue'></span>
 										</form>
-				</li>
+				</li> -->
 				<li class='has-icon'>
 					<a href='/contactus'>
 						<span class='header-icon icon-home_header_contactwhite'></span>

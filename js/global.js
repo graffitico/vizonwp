@@ -419,7 +419,7 @@ jQuery(function () {
 	/**************************** contact form js start **************************/
 	$(".contact-marker").hover(function(){
 		contact_id = $(this).attr("data-id");
-
+		console.log(contact_id );
 		addr_html = $("#"+contact_id+"-content").html();
 		$("#address-number").html(addr_html);
 	});
@@ -434,8 +434,7 @@ jQuery(function () {
 		$("#address-number").html(addr_html);
 	});
 
-	$(document).ready(function(){
-
+	
 
 
 console.log("yyy");
