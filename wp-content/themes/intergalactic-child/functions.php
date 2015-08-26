@@ -401,12 +401,12 @@ Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 
     extract( $args );
 
-    $title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Posts') : $instance['title'], $instance, $this->id_base);
+    $title = apply_filters('widget_title', empty($instance['title']) ? __('Suggested Case Studies') : $instance['title'], $instance, $this->id_base);
 
     if( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
       $number = 10;
 
-    $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true ) ) );
+    $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'cat' => 'case-studies') ) );
     if( $r->have_posts() ) :
 
       echo '<section class="read-more-block"><div class="container-fluid">';

@@ -30,14 +30,13 @@
 	<div id="header-wrap">
 		<div id="pre-header" class="clearfix">
 			<ul id="header-actions">
-				<li class='has-icon'>
-					<form role="search" method="get" id="searchform"  action="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<!-- <input class='search-bar' type="text" id="search_container" style="" /> -->
-					<input class='search-bar' type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
+	<!-- 			<li class='has-icon'>
+					<form role="search" method="get" id="searchform"  action="<?php // echo esc_url( home_url( '/' ) ); ?>">
+					<input class='search-bar' type="text" value="<?php // echo get_search_query(); ?>" name="s" id="s" />
 
 					<span class='header-icon icon-header_searchblue'></span>
 										</form>
-				</li>
+				</li> -->
 				<li class='has-icon'>
 					<a href='/contactus'>
 						<span class='header-icon icon-home_header_contactwhite'></span>
@@ -169,7 +168,8 @@
 					</div>
 					<div class='contact-block no-border product-subnav-block'>
 						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
-						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' />
+						<a href="/contactus">
+						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
 					</div>
 				</div>
 				<div class='subnav-block about-subnav'>
@@ -272,13 +272,13 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/casestudies'>
-									<span class='icon icon-home_menuicons__convertxp'></span>
+									<span class='icon icon-home_menuicons__whitepaper'></span>
 									<span>Case Studies</span>
 								</a>
 							</li>
 							<li>
 								<a href='/whitepapers'>
-									<span class='icon icon-home_menuicons_apprengage'></span>
+									<span class='icon icon-home_menuicons_successstories'></span>
 									<span>White Papers</span>
 								</a>
 							</li>
@@ -290,13 +290,13 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/industryreports'>
-									<span class='icon icon-home_menuicons__Dataonboarding'></span>
+									<span class='icon icon-home_menuicons__industryreports'></span>
 									<span>Industry Reports</span>
 								</a>
 							</li>
 							<li>
 								<a href='/insights'>
-									<span class='icon icon-home_menuicons__analyticsandreporting'></span>
+									<span class='icon icon-home_menuicons__insights'></span>
 									<span>Insights</span>
 								</a>
 							</li>
@@ -304,7 +304,8 @@
 					</div>
 					<div class='contact-block no-border resources-subnav-block'>
 						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
-						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' />
+						<a href="/contactus">
+						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
 					</div>
 				</div>
 			</div>

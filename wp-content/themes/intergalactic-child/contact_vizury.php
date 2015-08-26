@@ -1156,6 +1156,28 @@ get_header();
 	</svg>
     </div>
 				<div id="address-number" class="col-sm-3">
+
+					     <div class="row">
+					       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
+					         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+					       </div>
+						   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
+							 <span> Vizury Interactive Solutions Pvt. Ltd.
+					</br>#24,  4th Floor, Salarpuria Arena,
+					</br>Hosur Main Road,
+					Adugodi,Bangalore</br>560030</br>India</br></span>
+						   </div>
+					     </div>
+						 <div class="row">
+						   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
+					         <img src="/images/contact.svg" class="address-icons pull-right">
+						   </div>
+						   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
+						     <span>+91 80 49104000 <br/> sales-india@vizury.com </span>
+					       </div>
+					     </div>
+				</div>
+
 				<div class="row add-no">
 				
 <div style="display:none" >
@@ -1449,20 +1471,19 @@ kr.vizury@vizury.com</span>
 				
 				
 				
-				
-				
-				
-				
+			
 				
 			
 				</div>
 				</div>
+
 				
 				
 	
     </div>
     </div>
-	</div>
+
+
 
 
 	<div  id="address-drop" class="visible-xs">

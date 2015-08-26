@@ -544,7 +544,7 @@ jQuery(function () {
 	/**************************** contact form js start **************************/
 	$(".contact-marker").hover(function(){
 		contact_id = $(this).attr("data-id");
-
+		console.log(contact_id );
 		addr_html = $("#"+contact_id+"-content").html();
 		$("#address-number").html(addr_html);
 	});
@@ -561,6 +561,10 @@ jQuery(function () {
 
 	$("#looking_for").on('change',function() {
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7c70cbdcb5c89dc325c18381feeb90a884dfceb0
 		cval = $(this).val();
 		if(cval == 'Jobs' || cval == 'Something Else'){
 			$("#traffic_container").hide();
