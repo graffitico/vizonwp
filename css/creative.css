@@ -342,7 +342,9 @@ aside {
 }
 
 .btn-default,
-.btn-default:active {
+.btn-default:active,
+.btn-default:focus,
+.btn-default.focus {
   border: none;
   color: #202020;
   font-size: 18px;
@@ -353,8 +355,6 @@ aside {
 }
 
 .btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
 .open > .dropdown-toggle.btn-default {
     border-color: #ededed;
     color: #f2f2f2;

@@ -169,18 +169,25 @@ jQuery(function () {
 		manageHeaderVisibility();
 	});
 
+	$('body').click(function () {
+
+	});
+
 	$('.mobilenavigation').css({
 		'max-height': ($(window).height() - $('#header').height()) + 'px'
 	});
 
+	var isOpen = false;
 	$('.dropdown-toggle').click(function () {
-		var isOpen = $(this).parent().hasClass('open');
+		//var isOpen = $(this).parent().hasClass('open');
 
 		if (isOpen) {
-			$(this).parent().removeClass('open');
+			//$(this).parent().removeClass('open');
+			isOpen = true;
 			$('.dropdown-menu').hide();
 		} else {
-			$(this).parent().addClass('open');
+			//$(this).parent().addClass('open');
+			isOpen = false;
 			$('.dropdown-menu').show();
 		}
 
