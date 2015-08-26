@@ -541,23 +541,6 @@ jQuery(function () {
 	    $(".ab-panelCon").css('bottom',$(window).scrollTop()*-1);
 	});
 
-	$('.floating-text-box .hoverable-text .floating-normal-text').each(function () {
-		var width = $(this).width();
-		var height = $(this).height();
-		var parentHeight = $(this).closest('.hoverable-text').height();
-		var parentWidth = $(this).closest('.hoverable-text').width();
-
-		var left = (parentWidth - width) / 2;
-		var top = (parentHeight - height) / 2;
-
-		$(this).css({
-			left: left + 'px',
-			top: top + 'px'
-		});
-	});
-
-
-
 	/**************************** contact form js start **************************/
 	$(".contact-marker").hover(function(){
 		contact_id = $(this).attr("data-id");
@@ -588,4 +571,24 @@ jQuery(function () {
 
 	/**************************** contact form js end **************************/
 
+
+	// Need to wait for font files to load
+	$(window).load(function () {
+
+		$('.floating-text-box .hoverable-text .floating-normal-text').each(function () {
+
+			var width = $(this).width();
+			var height = $(this).height();
+			var parentHeight = $(this).parent().height();
+			var parentWidth = $(this).parent().width();
+
+			var left = (parentWidth - width) / 2;
+			var top = (parentHeight - height) / 2;
+
+			$(this).css({
+				top: top + 'px',
+				left: left + 'px'
+			});
+		});
+	});
 });

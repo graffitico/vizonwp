@@ -1294,6 +1294,7 @@ div.img {
 }
 .hoverable-text {
 	display: block;
+	text-align: center;
 }
 .xsmallcircle,
 .bigcircle,
