@@ -46,7 +46,8 @@ if ($post->post_title == 'Case Studies') {
 if($case_posts->max_num_pages>1){?>
     <p class="navrechts">
     <?php
-
+$prev_flag =  false;
+$next_flag =  false;
 $params ;
     if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") { 
        $http  = 'https://';
@@ -72,7 +73,8 @@ $url_parts['query'] = http_build_query($params);
 
       	?>
 
-        <a href="<?php echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>">Newer Case Studies</a>
+        <a class="btn-default"  href="<?php echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>"> <span class="glyphicon glyphicon-chevron-left" ></span> Newer Case Studies  </a>&nbsp;&nbsp;
+                   
                         <?php }
     // for($i=1;$i<=$case_posts->max_num_pages;$i++){?>
        <!-- <a href="<?php // echo '?paged=' . $i; ?>" <?php  //echo ($paged==$i)? 'class="selected"':'';?>><?php //echo $i;?></a> -->
@@ -85,7 +87,8 @@ $url_parts['query'] = http_build_query($params);
 
 ?>
 
-        <a href="<?php echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>">Older Case Studies</a>
+        <a  class="btn-default"    href="<?php echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>">Older Case Studies  <span class="glyphicon glyphicon-chevron-right" ></span> </a> 
+ 
     <?php } ?>
     </p>
 <?php } ?>

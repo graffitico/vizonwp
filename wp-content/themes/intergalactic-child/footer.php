@@ -20,13 +20,13 @@
 									<a href='/products'>PRODUCTS</a>
 								</li>
 								<li class="footersubmenu">
-									<a href='products/reach'><p>Reach</p></a>
+									<a href='/products/reach'><p>Reach</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='products/convert'><p>Convert</p></a>
+									<a href='/products/convert'><p>Convert</p></a>
 								</li>
 								<li class="footersubmenu">
-									<a href='products/engage'><p>Engage</p></a>
+									<a href='/products/engage'><p>Engage</p></a>
 								</li>
 							</ul>
 						</div>

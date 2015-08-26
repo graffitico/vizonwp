@@ -18,6 +18,22 @@
 .remove-padding {
 	padding-right: 0px;
 	padding-left: 0px;
+	margin-left: -10%;
+}
+
+.add-no {
+	margin-top: 20% !important;
+	margin-left: 10%;
+}
+
+#infoform {
+	margin-top: -5%;
+}
+
+#infoform label {
+	display: inline-block;
+    vertical-align: middle;
+	margin-top: 1%;
 }
 
 span {

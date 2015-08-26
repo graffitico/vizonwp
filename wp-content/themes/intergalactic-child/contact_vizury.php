@@ -5,14 +5,12 @@
 get_header();
 ?>
 
-<div style="margin-top:100px"></div>
-
     <div id="map" class="container-fluid">
 	<div class="hidden-xs">
     <div class="row">
-    <div class="col-sm-offset-1 col-sm-10">
+    <div class="col-sm-9 text-center">
 
-	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="1440 -750 2980 1600" style="enable-background:new 1440 -750 2980 1600;" xml:space="preserve">
+	<svg version="1.1" id="Layer_1"  class="contact-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="1440 -750 2980 1600" style="enable-background:new 1440 -750 2980 1600;" xml:space="preserve">
 	<style type="text/css">
 	.st0{fill:none;stroke:#B0AFB5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
 	.st1{fill:none;stroke:#B0AFB5;stroke-miterlimit:1;}
@@ -1076,7 +1074,7 @@ get_header();
 	</g>
 	<g id="XMLID_15614_">
 		<g>
-		<a class="contact-marker"  data-id="contact-1" xlink:href="#address-number"  >
+		<a class="contact-marker"  data-id="contact-1" >
 		<path id="XMLID_9_"  d="M3367-100.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C3366.7-104.5,3366.8-102.6,3367-100.7z M3328.6-117
@@ -1085,7 +1083,7 @@ get_header();
 	</g>
 	<g id="XMLID_5_">
 		<g>
-		<a class="contact-marker"  data-id="contact-2"  xlink:href="#address-number"  >
+		<a class="contact-marker"  data-id="contact-2" >
 		<path id="XMLID_7_" d="M3793-292.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C3792.7-296.5,3792.9-294.7,3793-292.7z M3754.6-309
@@ -1094,7 +1092,7 @@ get_header();
 	</g>
 	<g id="XMLID_15_">
 		<g>
-		<a class="contact-marker" data-id="contact-3" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-3" >
 		<path id="XMLID_17_" d="M4180.1-259.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C4179.8-263.5,4179.9-261.7,4180.1-259.7z M4141.7-276
@@ -1103,7 +1101,7 @@ get_header();
 	</g>
 	<g id="XMLID_19_">
 		<g>
-		<a class="contact-marker" data-id="contact-4" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-4" >
 		<path id="XMLID_21_" d="M4007-307.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C4006.7-311.5,4006.9-309.7,4007-307.7z M3968.7-324
@@ -1112,7 +1110,7 @@ get_header();
 	</g>
 	<g id="XMLID_23_">
 		<g>
-		<a class="contact-marker"  data-id="contact-5" xlink:href="#address-number" >
+		<a class="contact-marker"  data-id="contact-5" >
 		<path id="XMLID_25_" d="M3938-196.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C3937.7-200.5,3937.9-198.7,3938-196.7z M3899.6-213
@@ -1121,7 +1119,7 @@ get_header();
 	</g>
 	<g id="XMLID_29_">
 		<g>
-		<a class="contact-marker" data-id="contact-6" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-6" >
 		<path id="XMLID_33_" d="M4041.9,145.1c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C4041.6,141.3,4041.8,143.1,4041.9,145.1z M4003.5,128.8
@@ -1130,7 +1128,7 @@ get_header();
 	</g>
 	<g id="XMLID_37_">
 		<g>
-		<a class="contact-marker" data-id="contact-7" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-7" >
 		<path id="XMLID_41_" d="M4206.9,436.2c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C4206.6,432.3,4206.8,434.2,4206.9,436.2z M4168.6,419.8
@@ -1139,7 +1137,7 @@ get_header();
 	</g>
 	<g id="XMLID_10_">
 		<g>
-		<a class="contact-marker" data-id="contact-8" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-8">
 		<path id="XMLID_13_" d="M3661-55.7c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C3660.7-59.5,3660.9-57.6,3661-55.7z M3622.6-72
@@ -1148,7 +1146,7 @@ get_header();
 	</g>
 	<g id="XMLID_1_">
 		<g>
-		<a class="contact-marker" data-id="contact-9" xlink:href="#address-number" >
+		<a class="contact-marker" data-id="contact-9" >
 		<path id="XMLID_3_" d="M2286.9,187.4c-0.2,7.2-2.1,14-4.9,20.6c-4.6,10.8-10.7,20.6-17.8,29.7c-3.5,4.6-7.3,9.1-11.1,13.6
 			c-2.9,3.4-6.6,3.4-9.4,0c-10.2-11.4-19.3-23.8-26.2-37.5c-3.5-6.9-6.2-14-7.2-21.6c-1.4-12.3,2.3-23.2,11.1-32
 			c7.9-7.9,17.8-11.6,29.1-11.1c18,0.9,33.4,14.9,35.8,32.6C2286.6,183.6,2286.7,185.4,2286.9,187.4z M2248.5,171.1
@@ -1157,54 +1155,38 @@ get_header();
 	</g>
 	</svg>
     </div>
-    </div>
-    </div>
-	</div>
-
-
-	<div  style="margin-top:100px"  id="address-drop" class="visible-xs">
-	  <div class="container">
-	      <div class="row">
-		    <div class="col-xs-offset-3 col-xs-6">
-		    <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Country
-                <span class="caret"></span>
-		      </button>
-              <ul class="dropdown-menu">
-                <li><a  data-id="contact-8" class="country_drop" >India</a></li>
-                <li><a  data-id="contact-2" class="country_drop" >China</a></li>
-                <li><a  data-id="contact-7" class="country_drop" >Australia</a></li>
-                <li><a  data-id="contact-6"  class="country_drop" >Singapore</a></li>
-			    <li><a data-id="contact-10" class="country_drop"  >Brazil</a></li>
-				<li><a data-id="contact-3" class="country_drop" >Taiwan</a></li>
-				<li><a data-id="contact-5" class="country_drop" >Indonesia</a></li>
-				<li><a  data-id="contact-1" class="country_drop" >Dubai</a></li>
-				<li><a  data-id="contact-4"  class="country_drop" >Japan</a></li>
-			 	<li><a data-id="contact-11"  class="country_drop" >Korea</a></li>
-				<li><a  data-id="contact-9" class="country_drop" >USA</a></li>
-			  </ul>
-			</div>
-			</div>
-		  </div>
-		</div>
-    </div>
-
-
-
-    <div id="address-number" class="container">
-
-    </div>
-
-
+				<div id="address-number" class="col-sm-3">
+					     <div class="row">
+					       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
+					         <img src="/images/Map-locator.svg" class="address-icons pull-right">
+					       </div>
+						   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
+							 <span> Vizury Interactive Solutions Pvt. Ltd.
+					</br>#24,  4th Floor, Salarpuria Arena,
+					</br>Hosur Main Road,
+					Adugodi,Bangalore</br>560030</br>India</br></span>
+						   </div>
+					     </div>
+						 <div class="row">
+						   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
+					         <img src="/images/contact.svg" class="address-icons pull-right">
+						   </div>
+						   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
+						     <span>+91 80 49104000 <br/> sales-india@vizury.com </span>
+					       </div>
+					     </div>
+				</div>
+				<div class="row add-no">
+				
 <div style="display:none" >
 
 <div id="contact-1-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> Vizury Interactive Solutions LLC
 </br>DIC First Step Office # G13,Building # 16
 </br>Dubai Internet City</br>, Dubai 73030
@@ -1212,10 +1194,10 @@ get_header();
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span>+971 4 458 2626 <br/>
 sales-mea@vizury.com</span>
        </div>
@@ -1227,10 +1209,10 @@ sales-mea@vizury.com</span>
 <div id="contact-2-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> Vizury(Beijing) Advertising Co. Ltd.,
 </br>Room 2908 – 2909, Tower 8, Wanda Plaza,
 </br>93 Jianguo Road,Chaoyang District,
@@ -1238,10 +1220,10 @@ sales-mea@vizury.com</span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span>+86-10-57359239  <br/> sales-china@vizury.com </span>
        </div>
      </div>
@@ -1253,10 +1235,10 @@ sales-mea@vizury.com</span>
 <div id="contact-3-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> 6F, 153 Xinyi Road, Section 3,
 </br>Daan District
 </br>Taipei City 106, </br>Taiwan
@@ -1264,10 +1246,10 @@ sales-mea@vizury.com</span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span> +886 (2) 6638 5280 ext. 6201 <br/>
 sales-taiwan@vizury.com</span>
        </div>
@@ -1279,10 +1261,10 @@ sales-taiwan@vizury.com</span>
 <div id="contact-4-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> Vizury Japan Gohdoh Kaisha
 </br>Shibuya Miyata building
 </br>8F 1-12-14 Jinnan Shibuya-ku Tokyo,
@@ -1290,10 +1272,10 @@ sales-taiwan@vizury.com</span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span>+81-3-6869-5770 <br/>
 sales-japan@vizury.com</span>
        </div>
@@ -1305,20 +1287,20 @@ sales-japan@vizury.com</span>
 <div id="contact-5-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> Jl. Masjid No. 18,
 </br>Jakarta Pusat 10210,
 Indonesia</br></span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span>+62 21 9242 2123, 818 435 486 <br/> sales-sea@vizury.com </span>
        </div>
      </div>
@@ -1330,20 +1312,20 @@ Indonesia</br></span>
 <div id="contact-6-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> Singapore One Raffles Place
 </br>1, Raffles Place, Level 24
 </br>Singapore </br>048616</br>Singapore</br></span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span>+65-6408 0533  <br/> sales-sea@vizury.com </span>
        </div>
      </div>
@@ -1355,10 +1337,10 @@ Indonesia</br></span>
 <div id="contact-7-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> Vizury Interactive Solutions Australia PTY Ltd.
 </br>Suite 402, 93 Pacific Highway
 </br>North Sydney
@@ -1366,10 +1348,10 @@ Indonesia</br></span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span>+61 2 8075 7950 <br/>
 sales-anz@vizury.com</span>
        </div>
@@ -1382,10 +1364,10 @@ sales-anz@vizury.com</span>
 <div id="contact-8-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> Vizury Interactive Solutions Pvt. Ltd.
 </br>#24,  4th Floor, Salarpuria Arena,
 </br>Hosur Main Road,
@@ -1393,10 +1375,10 @@ Adugodi,Bangalore</br>560030</br>India</br></span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span>+91 80 49104000 <br/> sales-india@vizury.com </span>
        </div>
      </div>
@@ -1408,19 +1390,19 @@ Adugodi,Bangalore</br>560030</br>India</br></span>
 <div id="contact-9-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span>Vizury Interactive Solutions Limited
 </br>Address: 599 Fairchild Dr. in Mountain View, <br/>CA</br></span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span>+19174129765 <br/>
 sales@vizury.com</span>
        </div>
@@ -1433,10 +1415,10 @@ sales@vizury.com</span>
 <div id="contact-10-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> Vizury BrasilSolucoes Interativas Ltda.,
 </br>Av. Moema, 300,
 </br>conjunto 96.
@@ -1444,10 +1426,10 @@ sales@vizury.com</span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span> + 55 11 43711275 <br/> sales-brazil@vizury.com </span>
        </div>
      </div>
@@ -1459,10 +1441,10 @@ sales@vizury.com</span>
 <div id="contact-11-content" >
 
      <div class="row">
-       <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/Map-locator.svg" class="address-icons pull-right">
        </div>
-	   <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 		 <span> Vizury Interactive Solutions Korea Limited
 </br>#435, 4 Floor, EK Tower,
 </br>Seoul
@@ -1470,10 +1452,10 @@ sales@vizury.com</span>
 	   </div>
      </div>
 	 <div class="row">
-	   <div class="col-xs-offset-4 col-xs-1 col-sm-offset-4 col-sm-1 col-md-offset-4 col-md-1 col-lg-offset-4 col-lg-1 remove-padding">
+	   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
          <img src="/images/contact.svg" class="address-icons pull-right">
 	   </div>
-	   <div class="col-xs-3 col-sm-2 col-md-1 col-lg-2 padding-addressmenu text-align: left">
+	   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
 	     <span> +82 2 6188 0503 <br/>
 kr.vizury@vizury.com</span>
        </div>
@@ -1484,6 +1466,53 @@ kr.vizury@vizury.com</span>
 
 
 </div>
+				
+				
+				
+				
+				
+				
+				
+		
+				
+				
+	
+    </div>
+    </div>
+	
+
+
+	<div  id="address-drop" class="visible-xs">
+	  <div class="container">
+	      <div class="row">
+		    <div class="col-xs-offset-3 col-xs-6">
+		    <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Country
+                <span class="caret"></span>
+		      </button>
+              <ul class="dropdown-menu">
+                <li><a  data-id="contact-8-content" class="country_drop" >India</a></li>
+                <li><a  data-id="contact-2-content" class="country_drop" >China</a></li>
+                <li><a  data-id="contact-7-content" class="country_drop" >Australia</a></li>
+                <li><a  data-id="contact-6-content"  class="country_drop" >Singapore</a></li>
+			    <li><a data-id="contact-10-content" class="country_drop"  >Brazil</a></li>
+				<li><a data-id="contact-3-content" class="country_drop" >Taiwan</a></li>
+				<li><a data-id="contact-5-content" class="country_drop" >Indonesia</a></li>
+				<li><a  data-id="contact-1-content" class="country_drop" >Dubai</a></li>
+				<li><a  data-id="contact-4-content"  class="country_drop" >Japan</a></li>
+			 	<li><a data-id="contact-11-content"  class="country_drop" >Korea</a></li>
+				<li><a  data-id="contact-9-content" class="country_drop" >USA</a></li>
+			  </ul>
+			</div>
+			</div>
+		  </div>
+		</div>
+    </div>
+
+
+
+   
+
 
 
 

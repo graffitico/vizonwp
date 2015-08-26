@@ -29,19 +29,19 @@ the_title( '<center><h3>', '</h3></center>' );
 		<footer class="entry-footer">
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$category_list = get_the_category_list( __( ', ', 'intergalactic' ) );
+				// $category_list = get_the_category_list( __( ', ', 'intergalactic' ) );
 
 				/* translators: used between list items, there is a space after the comma */
-				$tag_list = get_the_tag_list( '', __( ', ', 'intergalactic' ) );
+				// $tag_list = get_the_tag_list( '', __( ', ', 'intergalactic' ) );
 
-				if ( '' != $tag_list ) {
+				// if ( '' != $tag_list ) {
 
-					printf( '<span class="entry-tags">' . __( '<span class="heading">Tags:</span> %1$s', 'intergalactic' ) . '</span>', $tag_list );
-				}
+				// 	printf( '<span class="entry-tags">' . __( '<span class="heading">Tags:</span> %1$s', 'intergalactic' ) . '</span>', $tag_list );
+				// }
 
-				if ( 'true' == intergalactic_categorized_blog() ) {
-					printf( '<span class="entry-categories">' . __( '<span class="heading">Categories:</span> %1$s', 'intergalactic' ) . '</span>', $category_list );
-				}
+				// if ( 'true' == intergalactic_categorized_blog() ) {
+				// 	printf( '<span class="entry-categories">' . __( '<span class="heading">Categories:</span> %1$s', 'intergalactic' ) . '</span>', $category_list );
+				// }
 			?>
 
 			<?php intergalactic_post_format(); ?>

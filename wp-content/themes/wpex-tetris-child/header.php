@@ -109,7 +109,7 @@
 						<p class='text-center'>Personalized Retargeting</p>
 						<ul class='subnav-list-control'>
 							<li>
-								<a href='/products/convertgo'>
+								<a href='/products/convert/convertgo'>
 									<span class='icon icon-home_menuicons__convertxp'></span>
 									<span>Convert Go!</span>
 								</a>
@@ -127,7 +127,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/mobileweb-appreengagement'>
+								<a href='/products/convert/mobileweb-appreengagement/'>
 									<span class='icon icon-home_menuicons__webmobileapp'></span>
 									<span>Mobile Web-App Re-engagment</span>
 								</a>
