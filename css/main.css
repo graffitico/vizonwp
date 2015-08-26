@@ -135,7 +135,9 @@ input.yellowbutton {
 
 /** Image CSS */
 
-
+.home-row-margin {
+	margin-bottom: 5%;
+}
 
 .client-logo {
 	width: 210px;
@@ -268,6 +270,10 @@ p {
 	padding: 15% 40% 10% 10%;
 }
 
+.contact-map {
+	width: 70%;
+	margin-top: -2%;
+}
 
 
 /** Heading Text */
@@ -326,6 +332,11 @@ p {
 	padding: 10px 40px;
 	border-radius: 2px;
 	font-size: 18px;
+}
+
+a:focus a:active .btn-default {
+	background: #7b7b7b;
+	color: #ffffff;
 }
 
 /** Yellow Strip */
@@ -491,6 +502,7 @@ p {
 	left: 50%;
 }
 
+
 .brands-list li {
 	display: inline-block;
 }
@@ -509,13 +521,14 @@ p {
 }
 
 .selfserve-header {
-	background-image: url("/images/selfserve-bg.svg");
+	background-image: url("/images/barbg.jpg");
 	background-repeat: no-repeat;
 	background-attachment:	fixed;
  }
 
 .selfserve-header .heading-block {
 	background: none;
+	height: 60vh;
 }
 
 .selfserve-header a, .selfserve-signup a {
@@ -1536,10 +1549,48 @@ div.img {
 	padding-top:5%;
 }
 
+.sscarousel p {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.sscarousel .left {
+		left:15%;
+	}
+	
+	.sscarousel .right {
+		right: 15%;
+	}
+	
 
 /* Custom, Iphone Retina */
 @media (max-width: 479px) {
 
+	.youdecide {
+		margin-top:20%;
+	}
+	
+	.gift-box {
+		background: none;
+		padding: 5% 2%;
+	}
+	
+	.sscarousel .left {
+		left:2%;
+	}
+	
+	.sscarousel .right {
+		right: 2%;
+	}
+	
+	.sscarousel {
+		height: 650px;
+	}
+	
+	.flying-box {
+		padding: 5%;
+	}
+	
 	.heading-text {
 		margin-top: 50%;
 		margin-bottom: 10%;
@@ -2149,7 +2200,24 @@ div.img {
 		padding: 10px 30px;
 		font-size: 16px;
 	}
+	
+	.gift-box {
+		padding: none;
+	}
+	
+	.gift-box h2 {
+		font-size: 20px;
+	}
+	
+	.sscarousel p {
+	padding-left: 15%;
+	padding-right: 15%;
+	}
 
+	.youdecide {
+		margin-top: 15%;
+	}
+	
 	.brand-images-sm p {
 		color: #fff;
 		text-align: center;

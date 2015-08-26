@@ -110,7 +110,7 @@
 						<p class='text-center'>Personalized Retargeting</p>
 						<ul class='subnav-list-control'>
 							<li>
-								<a href='/products/convertgo'>
+								<a href='/products/convert/convertgo'>
 									<span class='icon icon-home_menuicons__convertxp'></span>
 									<span>Convert Go!</span>
 								</a>
@@ -128,7 +128,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/mobileweb-appreengagement'>
+								<a href='/products/convert/mobileweb-appreengagement/'>
 									<span class='icon icon-home_menuicons__webmobileapp'></span>
 									<span>Mobile Web-App Re-engagment</span>
 								</a>
@@ -246,40 +246,42 @@
 						</ul>
 					</div>
 				</div>
-				<div class='subnav-block resources-subnav'>
-					<div class='company-block resources-subnav-block'>
-						<a href='/whitepapers'>
-							<h3>
-								<span>White Papers</span>
-							</h3>
-						</a>
-						<p class='text-center'>Perception breakdown</p>
+				<div class='resources-block resources-subnav-block'>
+						<!-- <a href='/products/convert'><h3>Convert</h3></a>
+						<p class='text-center'>Case Studies</p> -->
+						<ul class='subnav-list-control'>
+							<li>
+								<a href='/casestudies'>
+									<span class='icon icon-home_menuicons__whitepaper'></span>
+									<span>Case Studies</span>
+								</a>
+							</li>
+							<li>
+								<a href='/whitepapers'>
+									<span class='icon icon-home_menuicons_successstories'></span>
+									<span>White Papers</span>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div class='convert-block resources-subnav-block'>
-						<a href='/casestudies'>
-							<h3>
-								<span>Case Studies</span>
-							</h3>
-						</a>
-						<p class='text-center'>Classic use cases for each of our offering.</p>
+					<div class='resources-block resources-subnav-block'>
+						<!-- <a href='/products/engage'><h3>Engage</h3></a>
+						<p class='text-center'>Data and Marketing Platform</p> -->
+						<ul class='subnav-list-control'>
+							<li>
+								<a href='/industryreports'>
+									<span class='icon icon-home_menuicons__industryreports'></span>
+									<span>Industry Reports</span>
+								</a>
+							</li>
+							<li>
+								<a href='/insights'>
+									<span class='icon icon-home_menuicons__insights'></span>
+									<span>Insights</span>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div class='engage-block resources-subnav-block'>
-						<a href='/industryreports'>
-							<h3>
-								<span>Industry Reports</span>
-							</h3>
-						</a>
-						<p class='text-center'>Numbers and more</p>
-					</div>
-					<div class='no-border press-block resources-subnav-block'>
-						<a href='/insights'>
-							<h3>
-								<span>Insights</span>
-							</h3>
-						</a>
-						<p class='text-center'>All that you need to know about big data marketing</p>
-					</div>
-				</div>
 			</div>
 			<nav id="mobilenavigation-container">
 				<div class='navigation-trigger'>
