@@ -538,11 +538,8 @@ a:focus a:active .btn-default {
 }
 
 .selfserve-header {
-<<<<<<< HEAD
+
 	background-image: url("/images/barbg.jpg");
-=======
-	background-image: url(/images/selfserve-bg.svg);
->>>>>>> 7c70cbdcb5c89dc325c18381feeb90a884dfceb0
 	background-repeat: no-repeat;
 	background-attachment:	fixed;
  }
@@ -1903,6 +1900,10 @@ div.img {
 	margin-bottom: 10%;
 	}
 
+	#address-drop .dropdown {
+		margin-top: 10%;
+	}
+	
 	.engage-header-icon {
 		margin-top: none;
 	}
@@ -1913,6 +1914,12 @@ div.img {
 		bottom: 3%;
 	}
 
+	.selfserve-header .heading-block {
+	background: none;
+	height: 90vh;
+	}
+
+	
 	.big-white-number-text {
 		margin-top: 1%;
 	}
@@ -2218,6 +2225,12 @@ div.img {
 		padding: 10px 30px;
 		font-size: 16px;
 	}
+	
+	.selfserve-header .heading-block {
+	background: none;
+	height: 90vh;
+	}
+
 	
 	.gift-box {
 		padding: none;
