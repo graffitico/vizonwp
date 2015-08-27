@@ -114,6 +114,11 @@ input.yellowbutton {
 
 
 /** Buttons CSS */
+#post-tags a {
+	background: #ffd846;
+	color: #202020;
+	border-radius: 2px;
+}
 .btn-default {
 	background: #ffd846;
 	color: #202020;
@@ -121,6 +126,7 @@ input.yellowbutton {
 	border-radius: 2px;
 	font-size: 18px;
 }
+#post-tags a:hover,
 .btn-default:hover {
 	background: #202020;
 	color: #fff;
@@ -209,6 +215,9 @@ input.yellowbutton {
 }
 #pre-header > ul > li.has-icon {
     height: 26px;
+}
+#commentsbox input[type="submit"] {
+	font-family: proxima;
 }
 .white-text {
 	color: #fff;
