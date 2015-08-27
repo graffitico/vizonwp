@@ -561,11 +561,6 @@ jQuery(function () {
 
 	$("#looking_for").on('change',function() {
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7c70cbdcb5c89dc325c18381feeb90a884dfceb0
-		cval = $(this).val();
 		if(cval == 'Jobs' || cval == 'Something Else'){
 			$("#traffic_container").hide();
 		}else{
