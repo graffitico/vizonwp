@@ -504,3 +504,21 @@
 
 <div id="wrap" class="clearfix">
 	<div id="main-content" class="clearfix">
+
+ <?php 
+
+// print_r(  $wp_query->query_vars['pagename']);
+ if(is_home() ||  $wp_query->query_vars['pagename'] == 'technology'  ||  $wp_query->query_vars['pagename'] == 'marketing' ) { ?> 
+
+
+ 
+
+	<div class="navigation-container">
+		<ul class="navigations-left-filter">
+			<li><a href="category/marketing/">Marketing</a></li>
+			<li><a href="category/technology/">Technology</a></li>
+		</ul>
+
+	</div>
+
+	<?php } ?>

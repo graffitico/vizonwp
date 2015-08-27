@@ -11,6 +11,7 @@
 
 get_header(); // Loads the header.php template
 
+
 if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 <div id="single-page-content" class="clearfix">
