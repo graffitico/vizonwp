@@ -674,6 +674,18 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 	text-align: center;
 }
 
+.inv-logo {
+	margin-top: 5%;
+}
+
+.inv-logo .ojas {
+	margin-top: none;
+}
+
+.inv-logo .intel-capital {
+	margin-top: 10%;
+}
+
 .inv-tab p {
 	border: 0px;
 	margin: auto 10%;
@@ -687,9 +699,10 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 /** Numbers Section Circles */
 
 .numbers-section {
-	background-image: url("/images/bg-move.jpg");
+	background-image: url("/images/home_nodes.jpg");
 	background-position: fixed;
 	background-size: cover;
+	background-color: rgba (248,131,94,0.7);
 }
 
 .circle-holder {
@@ -1585,6 +1598,12 @@ div.img {
 		margin-top:20%;
 	}
 	
+	.inv-logo {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	}
+
+	
 	.gift-box {
 		background: none;
 		padding: 5% 2%;
@@ -2224,6 +2243,11 @@ div.img {
 		height: 430px;
 		padding: 10px 30px;
 		font-size: 16px;
+	}
+	
+	.inv-logo {
+	margin-top: 5%;
+	margin-bottom: 10%;
 	}
 	
 	.selfserve-header .heading-block {
