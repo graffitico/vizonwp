@@ -129,7 +129,7 @@ get_header(); ?>
         <div class="col-md-4">
         
                 <select class="cs-select cs-skin-border skin-border-bg1" id="department-filter" >
-                    <option value="" disabled selected class="filter_dept">Browse by department</option>
+                    <option value="" disabled selected class="filter_dept">Browse by profile</option>
                    <?php 
                    $department_list = get_terms('departments');
 

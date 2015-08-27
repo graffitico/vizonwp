@@ -236,6 +236,7 @@ p {
 	position: absolute;
 	right: 8%;
 	bottom: 4%;
+	height: 25px;
 }
 
 .bottom-right-widget {
@@ -308,6 +309,10 @@ p {
 	position: relative;
 }
 
+.engadv-border {
+	border-bottom: 15px solid #7b7b7b;
+}
+
 .heading-text h2 {
 	font-size: 60px;
 	line-height: 100%;
@@ -353,6 +358,10 @@ a:focus a:active .btn-default {
 a:focus a:active .btn-default {
 	background: #7b7b7b;
 	color: #ffffff;
+}
+
+.flexslider img {
+	background-color: rgba(0,0,0,0.4);
 }
 
 /** Yellow Strip */
@@ -542,12 +551,12 @@ a:focus a:active .btn-default {
 	background-image: url("/images/barbg.jpg");
 	background-repeat: no-repeat;
 	background-attachment:	fixed;
+	background-size: cover;
  }
 
 .selfserve-header .heading-block {
 	background: none;
-	height: 60vh;
-}
+	}
 
 .selfserve-end .selfserve-signup {
 	margin-bottom: 5%;
@@ -674,16 +683,25 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 	text-align: center;
 }
 
-.inv-logo {
-	margin-top: 5%;
-}
 
 .inv-logo .ojas {
-	margin-top: none;
+	margin-top: 2%;
 }
 
 .inv-logo .intel-capital {
-	margin-top: 10%;
+	margin-top: 25%;
+}
+
+.inv-logo .ascent-capital {
+	margin-top: 15%;
+}
+
+.inv-logo .nokia {
+	margin-top: 5%;
+}
+
+.inv-logo .inventus {
+	margin-top: 25%;
 }
 
 .inv-tab p {
@@ -770,7 +788,7 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 
 .reach-nos {
 	background-color: #c2d568;
-	background-image: url('/images/reach.svg');
+	background-image: url('/images/convert.svg');
 }
 
 .reach-nos .circle-no {
@@ -1933,10 +1951,7 @@ div.img {
 		bottom: 3%;
 	}
 
-	.selfserve-header .heading-block {
-	background: none;
-	height: 90vh;
-	}
+	
 
 	
 	.big-white-number-text {
@@ -2245,16 +2260,19 @@ div.img {
 		font-size: 16px;
 	}
 	
+	.round-images-container .row {
+		margin-right:0px;
+	}
+	
 	.inv-logo {
 	margin-top: 5%;
 	margin-bottom: 10%;
 	}
 	
-	.selfserve-header .heading-block {
-	background: none;
-	height: 90vh;
+	.round-images-container {
+	background-color: #fff;
+	margin: auto 0%;
 	}
-
 	
 	.gift-box {
 		padding: none;
@@ -2318,7 +2336,7 @@ div.img {
 	}
 
 	.fancybox-play {
-		bottom: 35%;
+		bottom: 120%;
 	}
 
 	.engage-header-icon {

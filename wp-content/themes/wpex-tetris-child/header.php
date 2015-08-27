@@ -270,13 +270,13 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/casestudies'>
-									<span class='icon icon-home_menuicons__whitepaper'></span>
+									<span class='icon icon-home_menuicons__successstories'></span>
 									<span>Case Studies</span>
 								</a>
 							</li>
 							<li>
 								<a href='/whitepapers'>
-									<span class='icon icon-home_menuicons_successstories'></span>
+									<span class='icon icon-home_menuicons__whitepaper'></span>
 									<span>White Papers</span>
 								</a>
 							</li>
