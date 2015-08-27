@@ -209,8 +209,9 @@ get_header(); ?>
      
 
       </div><!-- end of accordion -->      
-      
-            
+      <div style="margin-bottom:15px" >
+      <a class="search-button" style="color:white" href="/jobopenings"> <span class="cs-placeholder" >Reset Filters</span> </a>
+      </div> 
     </div><!-- /container -->
 
     <!-- -------- -->

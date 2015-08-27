@@ -12,6 +12,9 @@ get_header(); // Loads the header.php template
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div style="height:120px" ></div>
+<center>
+<h3 class='post-title'><?php the_title(); ?></h3>
+</center>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content-wrapper">
 		<div class="entry-meta">
@@ -43,20 +46,20 @@ get_header(); // Loads the header.php template
 <?php get_sidebar(); ?>
 		<footer class="entry-footer">
 			<?php
-				/* translators: used between list items, there is a space after the comma */
-				$category_list = get_the_category_list( __( ', ', 'intergalactic' ) );
+				// /* translators: used between list items, there is a space after the comma */
+				// $category_list = get_the_category_list( __( ', ', 'intergalactic' ) );
 
-				/* translators: used between list items, there is a space after the comma */
-				$tag_list = get_the_tag_list( '', __( ', ', 'intergalactic' ) );
+				// /* translators: used between list items, there is a space after the comma */
+				// $tag_list = get_the_tag_list( '', __( ', ', 'intergalactic' ) );
 
-				if ( '' != $tag_list ) {
+				// if ( '' != $tag_list ) {
 
-					printf( '<span class="entry-tags">' . __( '<span class="heading">Tags:</span> %1$s', 'intergalactic' ) . '</span>', $tag_list );
-				}
+				// 	printf( '<span class="entry-tags">' . __( '<span class="heading">Tags:</span> %1$s', 'intergalactic' ) . '</span>', $tag_list );
+				// }
 
-				if ( 'true' == intergalactic_categorized_blog() ) {
-					printf( '<span class="entry-categories">' . __( '<span class="heading">Categories:</span> %1$s', 'intergalactic' ) . '</span>', $category_list );
-				}
+				// if ( 'true' == intergalactic_categorized_blog() ) {
+				// 	printf( '<span class="entry-categories">' . __( '<span class="heading">Categories:</span> %1$s', 'intergalactic' ) . '</span>', $category_list );
+				// }
 			?>
 
 			<?php intergalactic_post_format(); ?>
@@ -79,9 +82,20 @@ get_header(); // Loads the header.php template
 					</div>
 				<?php endif; ?>
 			
-				<?php intergalactic_post_nav(); ?>
-			</div><!-- .entry-footer-wrapper -->
+				<?php // intergalactic_post_nav(); ?>
 
+				    <?php
+// print_r(wp_get_post_terms(get_the_ID() ,  'release_type'));
+				     if(has_term( "press-release" , 'release_type'  , $post ) ){ ?>
+					<a   href="/press-release" class="btn btn-default" > back </a>
+				<?php  }elseif (has_term( "media-coverage" , 'release_type'  , $post )) { ?>
+					<a   href="/mediacoverage" class="btn btn-default" > back </a>
+				<?php } elseif (has_term( "white-paper" , 'release_type'  , $post )) { ?>
+					<a   href="/whitepapers" class="btn btn-default" > back </a>
+				<?php }  ?>
+
+			</div><!-- .entry-footer-wrapper -->
+     
 
 			<?php endwhile; ?>
 
