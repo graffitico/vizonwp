@@ -34,7 +34,14 @@ get_header(); ?>
 					</div>
 				<?php endif; ?>
 			
-				<?php intergalactic_post_nav(); ?>
+				<?php // intergalactic_post_nav(); ?>
+
+				<?php  if(in_category( 'case-studies', $post )){ ?>
+				<a   href="/casestudies" class="btn btn-default" > back </a>
+				<?php  }elseif(in_category( 'insights', $post )) { ?>
+				<a   href="/insights" class="btn btn-default" > back </a>
+				<?php } ?>
+
 			</div><!-- .entry-footer-wrapper -->
 
 		<?php endwhile; // end of the loop. ?>

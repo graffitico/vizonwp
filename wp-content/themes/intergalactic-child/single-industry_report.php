@@ -12,6 +12,9 @@ get_header(); // Loads the header.php template
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <div style="height:120px" ></div>
+<center>
+<h3 class='post-title'><?php the_title(); ?></h3>
+</center>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content-wrapper">
 		<div class="entry-meta">
@@ -44,19 +47,19 @@ get_header(); // Loads the header.php template
 		<footer class="entry-footer">
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$category_list = get_the_category_list( __( ', ', 'intergalactic' ) );
+				// $category_list = get_the_category_list( __( ', ', 'intergalactic' ) );
 
-				/* translators: used between list items, there is a space after the comma */
-				$tag_list = get_the_tag_list( '', __( ', ', 'intergalactic' ) );
+				// /* translators: used between list items, there is a space after the comma */
+				// $tag_list = get_the_tag_list( '', __( ', ', 'intergalactic' ) );
 
-				if ( '' != $tag_list ) {
+				// if ( '' != $tag_list ) {
 
-					printf( '<span class="entry-tags">' . __( '<span class="heading">Tags:</span> %1$s', 'intergalactic' ) . '</span>', $tag_list );
-				}
+				// 	printf( '<span class="entry-tags">' . __( '<span class="heading">Tags:</span> %1$s', 'intergalactic' ) . '</span>', $tag_list );
+				// }
 
-				if ( 'true' == intergalactic_categorized_blog() ) {
-					printf( '<span class="entry-categories">' . __( '<span class="heading">Categories:</span> %1$s', 'intergalactic' ) . '</span>', $category_list );
-				}
+				// if ( 'true' == intergalactic_categorized_blog() ) {
+				// 	printf( '<span class="entry-categories">' . __( '<span class="heading">Categories:</span> %1$s', 'intergalactic' ) . '</span>', $category_list );
+				// }
 			?>
 
 			<?php intergalactic_post_format(); ?>
@@ -66,9 +69,37 @@ get_header(); // Loads the header.php template
 	</div><!-- .entry-content-wrapper -->
 </article><!-- #post-## -->
 
+
+
+			<div class="entry-footer-wrapper">
+				<?php if ( '' != get_the_author_meta( 'description' ) ) : ?>
+					<div class="entry-author">
+						<div class="author-avatar">
+							<?php echo get_avatar( get_the_author_meta( 'ID' ), '140' ); ?>
+						</div>
+						<div class="author-bio">
+							<?php echo get_the_author_meta( 'description' ); ?>
+						</div>
+					</div>
+				<?php endif; ?>
+			
+				<?php // intergalactic_post_nav(); ?>
+
+				    <?php
+// print_r(wp_get_post_terms(get_the_ID() ,  'release_type'));
+				     if(has_term( "industry-report" , 'report_type'  , $post ) ){ ?>
+					<a   href="/industryreports" class="btn btn-default" > back </a>
+				<?php  }  ?>
+
+			</div><!-- .entry-footer-wrapper -->
+
+
+
 			<?php endwhile; ?>
 
-			<?php intergalactic_paging_nav(); ?>
+			<?php // intergalactic_paging_nav(); ?>
+
+
 
 		<?php else : ?>
 

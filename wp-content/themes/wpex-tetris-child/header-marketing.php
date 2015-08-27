@@ -1,66 +1,67 @@
 <?php
 /**
- * The Header for our theme.
+ * The header for our theme.
  *
- * @package WordPress
- * @subpackage Tetris WPExplorer Theme
- * @since Tetris 1.0
+ * Displays all of the <head> section and everything up till <div id="content">
+ *
+ * @package Intergalactic
  */
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" type="images/png" href="<?php echo get_site_url(); ?>/wp-content/themes/wpex-tetris/images/Vizury-V.png" />
-	
-
-	<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo('name'); ?></title>
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<?php if ( get_theme_mod('wpex_custom_favicon') ) { ?>
-		<link rel="shortcut icon" href="<?php echo get_theme_mod('wpex_custom_favicon'); ?>" />
-	<?php } ?>
-	<!--[if lt IE 9]>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-	<![endif]-->
-	<link rel="icon" href="<?php echo get_site_url(); ?>/images/logo_back.ico" type="image/x-icon" />
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><?php wp_title( '|', true, 'right' ); ?></title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<!-- <link rel="stylesheet" href="<?php // echo get_site_url() ?>/css/pages.css" > -->
+<link rel="icon" href="<?php echo get_site_url(); ?>/images/logo_back.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="/images/logo_back.ico" type="image/x-icon" />
-	<?php wp_head(); ?>
+<?php wp_head(); ?>
 </head>
 
 <!-- Begin Body -->
-<body <?php body_class(); ?> 
-		style="background-color: #000000;
-background-image: url('http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/uploads/2015/02/marketing-bg.jpg');
-background-repeat: repeat;
-background-position: top left;
-background-attachment: scroll;"
-	>
-
-<div class="h-warp">
+<body <?php body_class(); ?>>
 
 	<div id="header-wrap">
-				<div id="small-header" class="clearfix">
+		<div id="pre-header" class="clearfix">
 			<ul id="header-actions">
-				<li>
-					<input type='button' class='login-button' value='LOGIN' />
+	<!-- 			<li class='has-icon'>
+					<form role="search" method="get" id="searchform"  action="<?php // echo esc_url( home_url( '/' ) ); ?>">
+					<input class='search-bar' type="text" value="<?php // echo get_search_query(); ?>" name="s" id="s" />
+
+					<span class='header-icon icon-header_searchblue'></span>
+										</form>
+				</li> -->
+				<li class='has-icon'>
+					<a href='/contactus'>
+						<span class='header-icon icon-home_header_contactwhite'></span>
+					</a>
 				</li>
 				<li>
-					<span class='icon-home_header_searchwhite'></span>
+					<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    EN <span class="caret"></span>
+				  	</button>
+				  	<ul class="dropdown-menu">
+					    <li><a href="#">AR</a></li>
+					    <li><a href="#">JP</a></li>
+					    <li><a href="#">KO</a></li>
+					    <li><a href="#">CN</a></li>
+					    <li><a href="#">PG</a></li>
+				  	</ul>
 				</li>
 				<li>
-					<span class='icon-home_header_contactwhite'></span>
-				</li>
-				<li>
-					<span>EN</span><span class='icon-home_header_langwhite'></span>
+					<input type='button' class='login-button' value='Login' />
 				</li>
 			</ul>
-
 		</div><!-- /pre-header -->
 
 		<header id="header" class="clearfix">
-				<div id="logo">
-				<a href="<?php echo home_url(); ?>/" title="<?php echo get_bloginfo( 'name' ); ?>" rel="home"><img src="/imgs/logo.png" alt="<?php echo get_bloginfo( 'name' ) ?>" /></a>
+			<div id="logo">
+				<a href="/" class="hidden-xs hidden-sm" title="Vizury Home" rel="home"><img src="/images/logo_full.svg" class="full_logo" alt="Vizury Logo" /></a>
+				<a href="/" class="hidden-lg hidden-md" title="Vizury Home" rel="home"><img src="/images/logo_v.svg" class="full_logo" style="width: auto;" alt="Vizury Logo" /></a>
 			</div><!-- /logo -->
 			<nav id="navigation" class="clearfix">
 				<div class="vizuri_menu_class">
@@ -69,16 +70,16 @@ background-attachment: scroll;"
 							<a href="/products">PRODUCTS</a>
 						</li>
 						<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-							<a href="/about">ABOUT</a>
+							<a href="/story">ABOUT</a>
 						</li>
 						<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
 							<a href="/publishers">PUBLISHERS</a>
 						</li>
 						<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-							<a href="/resources">RESOURCES</a>
+							<a href="/casestudies">RESOURCES</a>
 						</li>
 						<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-							<a href="/blog">BLOG</a>
+							<a href="/vizuryblog">BLOG</a>
 						</li>
 					</ul>
 				</div>
@@ -86,141 +87,420 @@ background-attachment: scroll;"
 			<div class='subnav'>
 				<div class='subnav-block products-subnav'>
 					<div class='reach-block product-subnav-block'>
-						<h3><a href='/reach'>REACH</a></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<div class='convert-block product-subnav-block'>
-						<h3><a href='/convert'>CONVERT</a></h3>
-						<div>Retargeting solutions</div>
+						<a href='/products/reach'><h3>Reach</h3></a>
+						<p class='text-center'>User acquisition and activation</p>
 						<ul class='subnav-list-control'>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>CONVERT XP</a>
+								<a href='/products/reach/webreach'>
+									<span class='icon icon-home_menuicons__webreach'></span>
+									<span>Web Reach</span>
+								</a>
 							</li>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='/products/reengagement'>App Re-Engagement</a>
+								<a href='/products/reach/appreengagement'>
+									<span class='icon icon-home_menuicons__appre_reach'></span>
+									<span>App Re-engagement</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class='convert-block product-subnav-block'>
+						<a href='/products/convert'><h3>Convert</h3></a>
+						<p class='text-center'>Personalized Retargeting</p>
+						<ul class='subnav-list-control'>
+							<li>
+								<a href='/products/convert/convertgo'>
+									<span class='icon icon-home_menuicons__convertxp'></span>
+									<span>Convert Go!</span>
+								</a>
 							</li>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='/products/fbmarketing'>Facebook Marketing</a>
+								<a href='/products/convert/appretargeting'>
+									<span class='icon icon-home_menuicons_apprengage'></span>
+									<span>App Retargeting</span>
+								</a>
 							</li>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='/products/crosschannel'>Cross Channel</a>
+								<a href='/products/convert/crosschannel'>
+									<span class='icon icon-home_menuicons__crosschannel'></span>
+									<span>Cross-Channel</span>
+								</a>
 							</li>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='/products/mobileengage'>Mobile Web-App Engagement</a>
+								<a href='/products/convert/mobileweb-appreengagement'>
+									<span class='icon icon-home_menuicons__webmobileapp'></span>
+									<span>Mobile Web-App Re-engagement</span>
+								</a>
+							</li>
+							<li>
+								<a href='/products/convert/facebookremarketing'>
+									<span class='icon icon-home_menuicons__fbmarketing'></span>
+									<span>Facebook Remarketing</span>
+								</a>
 							</li>
 						</ul>
 					</div>
 					<div class='engage-block product-subnav-block'>
-						<h3>ENGAGE</h3>
-						<div>Performance marketing hub</div>
+						<a href='/products/engage'><h3>Engage</h3></a>
+						<p class='text-center'>Data and Marketing Platform</p>
 						<ul class='subnav-list-control'>
 							<li>
-								<a href='javascript://'>Data Onboarding / Aggregation</a>
+								<a href='/products/engage/dataonboarding/'>
+									<span class='icon icon-home_menuicons__Dataonboarding'></span>
+									<span>Data Onboarding & Aggregation</span>
+								</a>
 							</li>
 							<li>
-								<a href='javascript://'>Analytics & Reporting</a>
+								<a href='/products/engage/analyticsandreporting'>
+									<span class='icon icon-home_menuicons__analyticsandreporting'></span>
+									<span>Analytics & Reporting</span>
+								</a>
 							</li>
 							<li>
-								<a href='javascript://'>Marketing Channels & Optimization</a>
+								<a href='/products/engage/omnichannelmarketing'>
+									<span class='icon icon-home_menuicons__marketingchannel'></span>
+									<span>Omni-channel Marketing Optimisation</span>
+								</a>
 							</li>
 						</ul>
 					</div>
-					<div class='contact-block product-subnav-block'>
-						<div>For personalised solutions,</div>
-						<input type='button' value='GET IN TOUCH' />
+					<div class='contact-block no-border product-subnav-block'>
+						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
+						<a href="/contactus">
+						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
 					</div>
 				</div>
 				<div class='subnav-block about-subnav'>
-					<div class='company-block product-subnav-block'>
-						<h3>Company</h3>
+					<div class='company-block about-subnav-block'>
+						<a href='/story'><h3>Company</h3></a>
 						<ul class='subnav-list-control'>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>Story</a>
+								<a href='/story'>
+									<span class='icon icon-home_menuicons__ourstory'></span>
+									<span>Story</span>
+								</a>
 							</li>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>Values</a>
+								<a href='/values'>
+									<span class='icon icon-home_menuicons__values'></span>
+									<span>Values</span>
+								</a>
 							</li>
 						</ul>
 					</div>
-					<div class='convert-block product-subnav-block'>
-						<h3>Team</h3>
+					<div class='convert-block about-subnav-block'>
+						<a href='/founders'><h3>Team</h3></a>
 						<ul class='subnav-list-control'>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>Founders</a>
+								<a href='/founders'>
+									<span class='icon icon-home_menuicons__founders'></span>
+									<span>Founders</span>
+								</a>
 							</li>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>Board</a>
-							</li>
-							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>Leadership</a>
-							</li>
-							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>Investors</a>
+								<a href='/investors'>
+									<span class='icon icon-home_menuicons__investors'></span>
+									<span>Investors</span>
+								</a>
 							</li>
 						</ul>
 					</div>
-					<div class='engage-block product-subnav-block'>
-						<h3>Careers</h3>
-						<div>Life @ Vizury</div>
+					<div class='engage-block about-subnav-block'>
+						<a href='/lifeatvizury'><h3>Careers</h3></a>
 						<ul class='subnav-list-control'>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>Vizurians Speak</a>
+								<a href='/lifeatvizury'>
+									<span class='icon icon-home_menuicons__Vizurianspeak'></span>
+									<span>Life @ Vizury</span>
+								</a>
 							</li>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>Job Openings</a>
+								<a href='/jobopenings'>
+									<span class='icon icon-home_menuicons__jobopening'></span>
+									<span>Job Openings</span>
+								</a>
 							</li>
 						</ul>
 					</div>
-					<div class='no-border press-block product-subnav-block'>
-						<h3>Press Room</h3>
-						<div>Press Release</div>
+					<div class='no-border press-block about-subnav-block'>
+						<a href='/press-release'><h3>Press Room</h3></a>
 						<ul class='subnav-list-control'>
 							<li>
-								<span class='icon-temp'></span>
-								<a href='javascript://'>Media Coverage</a>
+								<a href='/press-release'>
+									<span class='icon icon-home_menuicons_pressroom'></span>
+									<span>Press Release</span>
+								</a>
 							</li>
 							<li>
-								<span class='icon-temp'></span>
+								<a href='/mediacoverage'>
+									<span class='icon icon-home_menuicons__mediacoverage'></span>
+									<span>Media Coverage</span>
+								</a>
+							</li>
+							<!--
+							<li>
+								<span class='icon-home_menuicons__exclusives'></span>
 								<a href='javascript://'>Exclusives</a>
 							</li>
+							-->
 						</ul>
 					</div>
 				</div>
-				<div class='subnav-block resources-subnav'></div>
+				<div class='subnav-block resources-subnav'>
+					<div class='resources-block resources-subnav-block'>
+						<p class='text-center'>Catch some latest trends, listen to stories of customer delight, videos that unravel industry insights and everything else that's moving the marketing world all in one place.</p>
+						<!-- <ul class='subnav-list-control'>
+							<li>
+								<a href='/products/reach/webreach'>
+									<span class='icon icon-home_menuicons__webreach'></span>
+									<span>Web Reach</span>
+								</a>
+							</li>
+							<li>
+								<a href='/products/reach/appreengagement'>
+									<span class='icon icon-home_menuicons__appre_reach'></span>
+									<span>App Re-engagement</span>
+								</a>
+							</li>
+						</ul> -->
+					</div>
+					<div class='resources-block resources-subnav-block'>
+						<!-- <a href='/products/convert'><h3>Convert</h3></a>
+						<p class='text-center'>Case Studies</p> -->
+						<ul class='subnav-list-control'>
+							<li>
+								<a href='/casestudies'>
+									<span class='icon icon-home_menuicons__whitepaper'></span>
+									<span>Case Studies</span>
+								</a>
+							</li>
+							<li>
+								<a href='/whitepapers'>
+									<span class='icon icon-home_menuicons_successstories'></span>
+									<span>White Papers</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class='resources-block resources-subnav-block'>
+						<!-- <a href='/products/engage'><h3>Engage</h3></a>
+						<p class='text-center'>Data and Marketing Platform</p> -->
+						<ul class='subnav-list-control'>
+							<li>
+								<a href='/industryreports'>
+									<span class='icon icon-home_menuicons__industryreports'></span>
+									<span>Industry Reports</span>
+								</a>
+							</li>
+							<li>
+								<a href='/insights'>
+									<span class='icon icon-home_menuicons__insights'></span>
+									<span>Insights</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class='contact-block no-border resources-subnav-block'>
+						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
+						<a href="/contactus">
+						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
+					</div>
+				</div>
 			</div>
+			<nav id="mobilenavigation-container">
+				<div class='navigation-trigger'>
+					<span class='icon-three-bars'></span>
+				</div>
+				<ul class="mobilenavigation">
+					<li class='has-submenu'>
+						<div>Products</div>
+						<span class='plus-icon'>+</span>
+						<span class='minus-icon'>-</span>
+						<ul class="mobilesubnav">
+							<li>
+								<a href='/products'>Products Overview</a>
+							</li>
+							<li class='has-submenu'>
+								<div>Reach</div>
+								<span class='plus-icon'>+</span>
+								<span class='minus-icon'>-</span>
+								<ul class='mobilesubnav'>
+									<li>
+										<a href='/products/reach'>Reach Overview</a>
+									</li>
+									<li>
+										<a href='/products/reach/webreach'>Web Reach</a>
+									</li>
+									<li>
+										<a href='/products/reach/appreengagement'>App Re-engagement</a>
+									</li>
+								</ul>
+							</li>
+							<li class='has-submenu'>
+								<div>Convert</div>
+								<span class='plus-icon'>+</span>
+								<span class='minus-icon'>-</span>
+								<ul class="mobilesubnav">
+									<li>
+										<a href='/products/convert'>Convert Overview</a>
+									</li>
+									<li>
+										<a href='/products/convert/convertgo'>Convert Go!</a>
+									</li>
+									<li>
+										<a href='/products/convert/appretargeting'>App Retargeting</a>
+									</li>
+									<li>
+										<a href='/products/convert/crosschannel'>Cross-Channel</a>
+									</li>
+									<li>
+										<a href='/products/convert/mobileweb-appreengagement'>Mobile Web-App Re-engagement</a>
+									</li>
+									<li>
+										<a href='/products/convert/facebookremarketing'>Facebook Remarketing</a>
+									</li>
+								</ul>
+							</li>
+							<li class='has-submenu'>
+								<div>Engage</div>
+								<span class='plus-icon'>+</span>
+								<span class='minus-icon'>-</span>
+								<ul class="mobilesubnav">
+									<li>
+										<a href='/products/engage'>Engage Overview</a>
+									</li>
+									<li>
+										<a href='/products/engage/dataonboarding/'>Data Onboarding & Aggregation</a>
+									</li>
+									<li>
+										<a href='/products/engage/analyticsandreporting'>Analytics and Reporting</a>
+									</li>
+									<li>
+										<a href='/products/engage/omnichannelmarketing'>Omni-channel Marketing Optimisation</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class='has-submenu'>
+						<div>About</div>
+						<span class='plus-icon'>+</span>
+						<span class='minus-icon'>-</span>
+						<ul class="mobilesubnav">
+							<li>
+								<div>Company</div>
+								<span class='plus-icon'>+</span>
+								<span class='minus-icon'>-</span>
+								<ul class="mobilesubnav">
+									<li>
+										<a href='/story'>Story</a>
+									</li>
+									<li>
+										<a href='/values'>Values</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div>Team</div>
+								<span class='plus-icon'>+</span>
+								<span class='minus-icon'>-</span>
+								<ul class="mobilesubnav">
+									<li>
+										<a href='/founders'>Founders</a>
+									</li>
+									<li>
+										<a href='/investors'>Investors</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div>Careers</div>
+								<span class='plus-icon'>+</span>
+								<span class='minus-icon'>-</span>
+								<ul class="mobilesubnav">
+									<li>
+										<a href='/lifeatvizury'>Life @ Vizury</a>
+									</li>
+									<li>
+										<a href='/jobopenings'>Job Openings</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div>Press Room</div>
+								<span class='plus-icon'>+</span>
+								<span class='minus-icon'>-</span>
+								<ul class="mobilesubnav">
+									<li>
+										<a href='/press-release'>Press Release</a>
+									</li>
+									<li>
+										<a href='/mediacoverage'>Media Coverage</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href='/publishers'>Publishers</a>
+					</li>
+					<li class='has-submenu'>
+						<div>Resources</div>
+						<span class='plus-icon'>+</span>
+						<span class='minus-icon'>-</span>
+						<ul class='mobilesubnav'>
+							<li>
+								<a href='/whitepapers'>White Papers</a>
+							</li>
+							<li>
+								<a href='/casestudies'>Case Studies</a>
+							</li>
+							<li>
+								<a href='/industryreports'>Industry Reports</a>
+							</li>
+							<li>
+								<a href='/insights'>Insights</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href='/vizuryblog'>Blog</a>
+					</li>
+					<li>
+						<a href='/contactus'>Contact Us</a>
+					</li>
+					<li class='has-submenu'>
+						<div>Language</div>
+						<span class='plus-icon'>+</span>
+						<span class='minus-icon'>-</span>
+						<ul class='mobilesubnav'>
+						    <li><a href="#">English</a></li>
+						    <li><a href="#">Arabic</a></li>
+						    <li><a href="#">Japanese</a></li>
+						    <li><a href="#">Korean</a></li>
+						    <li><a href="#">Mandarin</a></li>
+						    <li><a href="#">Portuguese</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href='/login'>
+							<input class='login-button' type='button' value='Login' />
+						</a>
+					</li>
+					<li>
+						<a href='javascript://'>
+							<input class='search-bar' type="text" id="search_container_mobile" style="" />
+							<span class='icon-home_header_searchwhite'></span>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</header><!-- /header -->
 
+		<div class='floating-header'>
+			<div class='small-logo'></div>
+		</div>
 	</div><!-- /header-wrap -->
-	</div>
-	<div id="wrap" class="clearfix">
-	<div id="main-content" class="clearfix">
-			 <div id="pre-header" class="clearfix">
-			<ul id="header-social" class="clearfix">
 
-				<li>
-				<form method="get" id="searchbar" action="<?php echo home_url( '/' ); ?>"><input type="search" name="s" value="<?php _e('', 'wpex'); ?>" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"></form>
-				</li>
-								<li><?php
-				// Show social icons if enabled
-				wpex_display_social(); 
-				get_sidebar("sidebar") ?>  </li>
-			</ul><!-- /header-social -->
-		</div><!-- /pre-header -->
-		<!--<?php
-		// Homepage tagline
-		if( is_front_page() &&  get_bloginfo('description') ) { ?>
-			<h2 id="homepage-title"><span><?php echo get_bloginfo('description'); ?></span></h2>
-		<?php } ?>-->
+<div id="wrap" class="clearfix">
+	<div id="main-content" class="clearfix">

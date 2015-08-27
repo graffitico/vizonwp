@@ -15,6 +15,7 @@ get_header(); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 <a href='<?php the_permalink(); ?>'>
 			<div class='post-item'>
+				<div class="post-date" ><?php get_post_meta( get_the_ID(), 'media_coverage_date', true ) ?></div>
 				<div class='post-title'><?php the_title(); ?></div>
 				<div class='post-description'><?php the_excerpt() ?> </div>
 				<div class='post-media'>

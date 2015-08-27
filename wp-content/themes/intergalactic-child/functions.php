@@ -406,7 +406,7 @@ Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
     if( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
       $number = 10;
 
-    $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'cat' => 'case-studies') ) );
+    $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'category_name' => 'case studies') ) );
     if( $r->have_posts() ) :
 
       echo '<section class="read-more-block"><div class="container-fluid">';
@@ -441,7 +441,7 @@ Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
                 <p><?php the_excerpt(); ?></p>
 
 
-                <a href="<?php the_permalink(); ?>" target="_blank"><img class="readmore-convert img-responsive bottom-right" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg=="></a>
+                <!-- <a href="<?php the_permalink(); ?>" target="_blank"><img class="readmore-convert img-responsive bottom-right" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg=="></a> -->
             </div>
   <?php endwhile ?>
 

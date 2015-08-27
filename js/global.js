@@ -543,6 +543,8 @@ jQuery(function () {
 
 	/**************************** contact form js start **************************/
 	$(".contact-marker").hover(function(){
+		$(".contact-marker").css('fill' , "#202020" );
+		$(this).css('fill' , "#ffd846" );
 		contact_id = $(this).attr("data-id");
 		console.log(contact_id );
 		addr_html = $("#"+contact_id+"-content").html();

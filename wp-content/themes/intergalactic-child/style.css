@@ -17,6 +17,8 @@
 }
 
 
+
+
 .entry-title{
 	margin-top:110px !important;
 }
@@ -100,3 +102,8 @@ h1.widget-title {
     margin-top: 12px;
     margin-bottom: 12px;
 }
+
+
+/*a.more-link {
+    text-transform: none;
+}*/
