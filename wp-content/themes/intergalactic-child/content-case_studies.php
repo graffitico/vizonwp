@@ -22,11 +22,11 @@ $formats = get_theme_support( 'post-formats' );
 	<?php if ( has_post_format( $formats[0] ) ) : ?>
 		<div class="entry-content">
 			<?php the_content(); ?>
-			<a class="more-link" href="<?php the_permalink(); ?>" rel="bookmark">
+			<a class="more-link btn btn-default" href="<?php the_permalink(); ?>" rel="bookmark">
 				<?php
 				/* translators: %s: Name of current post */
 				printf(
-					__( 'Read more %s', 'intergalactic' ),
+					__( 'Read More %s', 'intergalactic' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				); ?>
 			</a>
