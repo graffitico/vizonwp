@@ -138,7 +138,9 @@ input.yellobutton:focus {
 
 /** Image CSS */
 
-
+.home-row-margin {
+	margin-bottom: 5%;
+}
 
 .client-logo {
 	width: 210px;
@@ -348,6 +350,11 @@ a:focus a:active .btn-default {
 	color: #ffffff;
 }
 
+a:focus a:active .btn-default {
+	background: #7b7b7b;
+	color: #ffffff;
+}
+
 /** Yellow Strip */
 
 .yellow-text-block {
@@ -512,6 +519,7 @@ a:focus a:active .btn-default {
 	left: 50%;
 }
 
+
 .brands-list li {
 	display: inline-block;
 }
@@ -530,13 +538,15 @@ a:focus a:active .btn-default {
 }
 
 .selfserve-header {
-	background-image: url(/images/selfserve-bg.svg);
+
+	background-image: url("/images/barbg.jpg");
 	background-repeat: no-repeat;
 	background-attachment:	fixed;
  }
 
 .selfserve-header .heading-block {
 	background: none;
+	height: 60vh;
 }
 
 .selfserve-end .selfserve-signup {
@@ -1554,10 +1564,48 @@ div.img {
 	padding-top:5%;
 }
 
+.sscarousel p {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.sscarousel .left {
+		left:15%;
+	}
+	
+	.sscarousel .right {
+		right: 15%;
+	}
+	
 
 /* Custom, Iphone Retina */
 @media (max-width: 479px) {
 
+	.youdecide {
+		margin-top:20%;
+	}
+	
+	.gift-box {
+		background: none;
+		padding: 5% 2%;
+	}
+	
+	.sscarousel .left {
+		left:2%;
+	}
+	
+	.sscarousel .right {
+		right: 2%;
+	}
+	
+	.sscarousel {
+		height: 650px;
+	}
+	
+	.flying-box {
+		padding: 5%;
+	}
+	
 	.heading-text {
 		margin-top: 50%;
 		margin-bottom: 10%;
@@ -1852,6 +1900,10 @@ div.img {
 	margin-bottom: 10%;
 	}
 
+	#address-drop .dropdown {
+		margin-top: 10%;
+	}
+	
 	.engage-header-icon {
 		margin-top: none;
 	}
@@ -1862,6 +1914,12 @@ div.img {
 		bottom: 3%;
 	}
 
+	.selfserve-header .heading-block {
+	background: none;
+	height: 90vh;
+	}
+
+	
 	.big-white-number-text {
 		margin-top: 1%;
 	}
@@ -2167,7 +2225,30 @@ div.img {
 		padding: 10px 30px;
 		font-size: 16px;
 	}
+	
+	.selfserve-header .heading-block {
+	background: none;
+	height: 90vh;
+	}
 
+	
+	.gift-box {
+		padding: none;
+	}
+	
+	.gift-box h2 {
+		font-size: 20px;
+	}
+	
+	.sscarousel p {
+	padding-left: 15%;
+	padding-right: 15%;
+	}
+
+	.youdecide {
+		margin-top: 15%;
+	}
+	
 	.brand-images-sm p {
 		color: #fff;
 		text-align: center;

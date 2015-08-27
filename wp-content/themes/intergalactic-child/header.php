@@ -168,7 +168,8 @@
 					</div>
 					<div class='contact-block no-border product-subnav-block'>
 						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
-						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' />
+						<a href="/contactus">
+						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
 					</div>
 				</div>
 				<div class='subnav-block about-subnav'>
@@ -271,13 +272,13 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/casestudies'>
-									<span class='icon icon-home_menuicons__convertxp'></span>
+									<span class='icon icon-home_menuicons__whitepaper'></span>
 									<span>Case Studies</span>
 								</a>
 							</li>
 							<li>
 								<a href='/whitepapers'>
-									<span class='icon icon-home_menuicons_apprengage'></span>
+									<span class='icon icon-home_menuicons_successstories'></span>
 									<span>White Papers</span>
 								</a>
 							</li>
@@ -289,13 +290,13 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/industryreports'>
-									<span class='icon icon-home_menuicons__Dataonboarding'></span>
+									<span class='icon icon-home_menuicons__industryreports'></span>
 									<span>Industry Reports</span>
 								</a>
 							</li>
 							<li>
 								<a href='/insights'>
-									<span class='icon icon-home_menuicons__analyticsandreporting'></span>
+									<span class='icon icon-home_menuicons__insights'></span>
 									<span>Insights</span>
 								</a>
 							</li>
@@ -303,7 +304,8 @@
 					</div>
 					<div class='contact-block no-border resources-subnav-block'>
 						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
-						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' />
+						<a href="/contactus">
+						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
 					</div>
 				</div>
 			</div>

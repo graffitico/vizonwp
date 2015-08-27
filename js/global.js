@@ -563,8 +563,6 @@ jQuery(function () {
 
 	$("#looking_for").on('change',function() {
 
-
-		cval = $(this).val();
 		if(cval == 'Jobs' || cval == 'Something Else'){
 			$("#traffic_container").hide();
 		}else{

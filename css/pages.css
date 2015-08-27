@@ -238,10 +238,7 @@ border-radius: 0em;
 
 .pub-yellow-box {
 	background: #ffd846;
-	padding-left: 5%;
-	padding-right: 2%;
-	padding-top: 3%;
-	padding-bottom: 1%;
+	padding: 1%;
 	margin-bottom: 2%;
 }
 
@@ -289,7 +286,15 @@ ul.pub-logos img:hover {
 	visibility: hidden;
 }
 
+.form-group .btn-default {
+	border: none;
+	border-radius: 4px;
+	width: 100px;
+}
 
+#map {
+	height:100%;
+}
 
 
 	/* Custom, iPhone Retina */
@@ -351,7 +356,7 @@ color: #ffffff;
 
 button#menu1 {
 border-radius: 0em;
-width: 10em;
+width: 15em;
 }
 
 #address-number .row {

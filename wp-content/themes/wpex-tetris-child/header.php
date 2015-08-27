@@ -127,9 +127,9 @@
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/mobileweb-appreengagement/'>
+								<a href='/products/convert/mobileweb-appreengagement'>
 									<span class='icon icon-home_menuicons__webmobileapp'></span>
-									<span>Mobile Web-App Re-engagment</span>
+									<span>Mobile Web-App Re-engagement</span>
 								</a>
 							</li>
 							<li>
@@ -164,9 +164,10 @@
 							</li>
 						</ul>
 					</div>
-					<div class='contact-block product-subnav-block'>
+					<div class='contact-block no-border product-subnav-block'>
 						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
-						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' />
+						<a href="/contactus">
+						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
 					</div>
 				</div>
 				<div class='subnav-block about-subnav'>
@@ -246,37 +247,63 @@
 					</div>
 				</div>
 				<div class='subnav-block resources-subnav'>
-					<div class='company-block resources-subnav-block'>
-						<a href='/whitepapers'>
-							<h3>
-								<span>White Papers</span>
-							</h3>
-						</a>
-						<p class='text-center'>Perception breakdown</p>
+					<div class='resources-block resources-subnav-block'>
+						<p class='text-center'>Catch some latest trends, listen to stories of customer delight, videos that unravel industry insights and everything else that's moving the marketing world all in one place.</p>
+						<!-- <ul class='subnav-list-control'>
+							<li>
+								<a href='/products/reach/webreach'>
+									<span class='icon icon-home_menuicons__webreach'></span>
+									<span>Web Reach</span>
+								</a>
+							</li>
+							<li>
+								<a href='/products/reach/appreengagement'>
+									<span class='icon icon-home_menuicons__appre_reach'></span>
+									<span>App Re-engagement</span>
+								</a>
+							</li>
+						</ul> -->
 					</div>
-					<div class='convert-block resources-subnav-block'>
-						<a href='/casestudies'>
-							<h3>
-								<span>Case Studies</span>
-							</h3>
-						</a>
-						<p class='text-center'>Classic use cases for each of our offering.</p>
+					<div class='resources-block resources-subnav-block'>
+						<!-- <a href='/products/convert'><h3>Convert</h3></a>
+						<p class='text-center'>Case Studies</p> -->
+						<ul class='subnav-list-control'>
+							<li>
+								<a href='/casestudies'>
+									<span class='icon icon-home_menuicons__whitepaper'></span>
+									<span>Case Studies</span>
+								</a>
+							</li>
+							<li>
+								<a href='/whitepapers'>
+									<span class='icon icon-home_menuicons_successstories'></span>
+									<span>White Papers</span>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div class='engage-block resources-subnav-block'>
-						<a href='/industryreports'>
-							<h3>
-								<span>Industry Reports</span>
-							</h3>
-						</a>
-						<p class='text-center'>Numbers and more</p>
+					<div class='resources-block resources-subnav-block'>
+						<!-- <a href='/products/engage'><h3>Engage</h3></a>
+						<p class='text-center'>Data and Marketing Platform</p> -->
+						<ul class='subnav-list-control'>
+							<li>
+								<a href='/industryreports'>
+									<span class='icon icon-home_menuicons__industryreports'></span>
+									<span>Industry Reports</span>
+								</a>
+							</li>
+							<li>
+								<a href='/insights'>
+									<span class='icon icon-home_menuicons__insights'></span>
+									<span>Insights</span>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div class='no-border press-block resources-subnav-block'>
-						<a href='/insights'>
-							<h3>
-								<span>Insights</span>
-							</h3>
-						</a>
-						<p class='text-center'>All that you need to know about big data marketing</p>
+					<div class='contact-block no-border resources-subnav-block'>
+						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
+						<a href="/contactus">
+						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
 					</div>
 				</div>
 			</div>
@@ -318,7 +345,7 @@
 										<a href='/products/convert'>Convert Overview</a>
 									</li>
 									<li>
-										<a href='/products/convertgo'>Convert Go!</a>
+										<a href='/products/convert/convertgo'>Convert Go!</a>
 									</li>
 									<li>
 										<a href='/products/convert/appretargeting'>App Retargeting</a>
@@ -327,7 +354,7 @@
 										<a href='/products/convert/crosschannel'>Cross-Channel</a>
 									</li>
 									<li>
-										<a href='/products/convert/mobileweb-appengagement'>Mobile Web-App Re-engagement</a>
+										<a href='/products/convert/mobileweb-appreengagement'>Mobile Web-App Re-engagement</a>
 									</li>
 									<li>
 										<a href='/products/convert/facebookremarketing'>Facebook Remarketing</a>
