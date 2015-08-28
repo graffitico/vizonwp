@@ -333,7 +333,7 @@ border-radius: 0px;
 }*/
 
 .navigations-left-filter{
-	width: 50%;
+	/*width: 50%;*/
 }
 
 .navigations-left-filter li{
@@ -347,6 +347,15 @@ border-radius: 0px;
     text-decoration: none;
 
 }
+.navigations-right-filter li{
+	list-style: none;
+	display: inline;
+	margin-right: 20px;
+}
+.navigations-right-filter{
+/*float: right;*/
+}
+
 
 body.category-marketing{
 	background-color: #000000; background-image: url('http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/uploads/2015/02/marketing-bg.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll;
@@ -355,4 +364,22 @@ body.category-technology{
 	background-color: #000000; background-image: url('http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/uploads/2015/02/tech-bg.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll;
 }
 
+.nav-div-left{
+  width: 50%;
+  float:left;
+}
 
+.nav-div-right{
+width: 50%;
+float: right;
+}
+
+.nav-div-right ul li{
+	display: inline;
+	float:left;
+}
+
+.widget_add_to_any_subscribe_widget{
+	margin-top: 10px;
+	 margin-top: 10px;
+}
