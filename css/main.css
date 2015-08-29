@@ -397,11 +397,6 @@ a:focus a:active .btn-default {
 	height: 120px;
 }
 
-.value-holder {
-	padding: 5%;
-	background-image: url ("/images/values_postit-02.svg");
-	background-size: 500px 300px;
-}
 
 .intro-blocks-container {
 	padding: 90px 20px;
@@ -544,9 +539,6 @@ a:focus a:active .btn-default {
 		margin: auto 2%;
 	}
 
-.values-area {
-	margin: 5% auto;
-}
 
 .selfserve-header {
 
@@ -658,7 +650,26 @@ a:focus a:active .btn-default {
 color: #ffffff;
 }
 
+.values-area p {
+	padding-right: 15%;
+	padding-left: 15%;
+}
 
+.values-area h4 {
+	margin-top: -60%;
+}
+
+.value-holder img {
+	height: 300px;
+}
+
+.values-area .row {
+	margin-top: 10%;
+}
+
+.values-area {
+	margin-bottom: 10%;
+}
 
 /** Feature Section */
 
@@ -1941,6 +1952,27 @@ div.img {
 	margin: 4% auto 8%;
 }
 
+	.value-holder {
+		margin: 30% auto;
+	}
+	
+	.values-area .row {
+		margin-top: -30%;
+	}
+	
+	.value-holder img {
+		height: 250px;
+	}
+	
+	.values-area p {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	
+	.values-area h4 {
+		padding-top: 10%;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -2394,12 +2426,25 @@ div.img {
 		width:250px;
 		padding-top:5%;
 	}
+	
+	.values-area img {
+		height: 350px;
+	}
+	
+	.values-area h4 {
+		margin-top: -110%;
+	}
 
+	.values-area p {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media(min-width : 992px) and (max-width:1199px) {
 
+	
 
 }
 
