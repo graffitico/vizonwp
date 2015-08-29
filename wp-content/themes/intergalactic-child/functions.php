@@ -250,7 +250,7 @@ $final
       <div class="col-md-4"><span class="categ-head"><?php  echo intval( get_post_meta( get_the_ID(), 'experience_from', true ) )  ?>-<?php  echo intval( get_post_meta( get_the_ID(), 'experience_to', true ) )  ?> Years</span></div>
       <div class="col-md-4"><span class="categ-head"> <?php echo esc_html( get_post_meta( get_the_ID(), 'posting_location', true ) ); ?>
 
-      <a class="categ-down" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo the_ID() ?>"><img src="<?php echo get_site_url() ?>/images/categ-plus.svg" /></a>
+      <a class="categ-down" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo the_ID() ?>"></a>
 
       </span></div>
 
@@ -414,11 +414,11 @@ $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' =
        }else{
 $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'category_name' => 'case studies') ) );
      $suggest_string = 'Suggested Case Studies';
-      
+
        }
 
     $title = apply_filters('widget_title', empty($instance['title']) ? __($suggest_string) : $instance['title'], $instance, $this->id_base);
-    
+
     if( $r->have_posts() ) :
 
       echo '<section class="read-more-block"><div class="container-fluid">';
@@ -428,7 +428,7 @@ $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' =
         <li><?php // the_time( 'F d'); ?> - <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
         <?php //endwhile; ?>
       </ul> -->
-<?php 
+<?php
 
 
  while( $r->have_posts() ) : $r->the_post(); ?>

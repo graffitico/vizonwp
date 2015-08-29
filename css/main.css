@@ -1626,6 +1626,17 @@ div.img {
 	right: 15%;
 }
 
+.categ-down {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-image: url(/images/close.svg);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.categ-down.collapsed {
+	background-image: url(/images/categ-plus.svg);
+}
 
 /* Custom, Iphone Retina */
 @media (max-width: 479px) {
@@ -1957,20 +1968,20 @@ div.img {
 	.value-holder {
 		margin: 30% auto;
 	}
-	
+
 	.values-area .row {
 		margin-top: -30%;
 	}
-	
+
 	.value-holder img {
 		height: 250px;
 	}
-	
+
 	.values-area p {
 		padding-left: 15%;
 		padding-right: 15%;
 	}
-	
+
 	.values-area h4 {
 		padding-top: 10%;
 	}
@@ -2428,11 +2439,11 @@ div.img {
 		width:250px;
 		padding-top:5%;
 	}
-	
+
 	.values-area img {
 		height: 350px;
 	}
-	
+
 	.values-area h4 {
 		margin-top: -110%;
 	}
@@ -2446,7 +2457,7 @@ div.img {
 /* Medium Devices, Desktops */
 @media(min-width : 992px) and (max-width:1199px) {
 
-	
+
 
 }
 
