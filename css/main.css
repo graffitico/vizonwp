@@ -614,10 +614,11 @@ a:focus a:active .btn-default {
 
 .sscarousel .carousel-control {
 	color: #ffd846;
+	top: 300px;
 }
 
 .sscarousel .carousel-inner img {
-	margin: 0 30%;
+	margin: 0 auto;
 }
 
 .flying-box-area {
