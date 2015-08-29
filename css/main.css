@@ -1301,7 +1301,9 @@ div.img {
 .feature-holder {
 	margin-top: 2%;
 }
-
+.web-reach .feature-holder {
+	min-height: 300px;
+}
 .feature-text {
 	margin: 5%;
 	text-align: justify;
