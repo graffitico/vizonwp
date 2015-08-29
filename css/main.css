@@ -130,6 +130,7 @@ input.yellobutton:focus {
 	background-color: #ffd846;
 	border-radius: 8px;
 	color: #202020;
+	border-color: #ffd846;
 }
 
 .container {
