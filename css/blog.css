@@ -225,12 +225,24 @@ input.yellowbutton {
 #pre-header > ul > li.has-icon {
     height: 26px;
 }
-#commentsbox input[type="submit"] {
+#commentsbox input[type="submit"] , #commentsbox input[type="submit"]:active ,#commentsbox input[type="submit"]:focus   {
 	font-family: proxima;
-		background: #ffd846;
+		
 	color: #202020;
 	border-radius: 2px;
+   background-color: #ffd846;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #202020;
 }
+
+.entry button:hover, .entry input[type="button"]:hover, .entry input[type="submit"]:hover, #commentsbox input[type="submit"]:hover {
+background-color: #7b7b7b;
+    color: #ffd846;
+}
+
 .white-text {
 	color: #fff;
 }
@@ -347,7 +359,7 @@ border-radius: 0px;
 .navigations-left-filter li a{
  color: #fff !important;
     font-size: 25px;
-    text-decoration: none;
+    text-decoration: none !important;
 
 }
 .navigations-right-filter li{
@@ -400,8 +412,10 @@ float: right;
  #page-heading h1{
  	font-size: 35px !important ;
  }
-  .search-icon{
- 	margin-top: 5px;
+
+ .search-icon{
+ 	  height: 16px;
+    margin-top: 14px;
  }
 
  #blog-search-input{
@@ -420,17 +434,19 @@ body a:hover {
 	background-image: none;
 }
 
-
 h3#reply-title {
 		background-image: none;
 }
+
 #respond {
 	border-top-color: #000;
 }
+
 .meta li , ul , li, strong{
 
 font-family: proxima;
 }
+
 .span-cat{
    background-color: #ffd846;
     padding-bottom: 4px;
@@ -438,3 +454,22 @@ font-family: proxima;
     padding-right: 15px;
     padding-top: 4px;
 }
+
+.span-sub{
+   background-color: #E73420;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+}
+
+input.yellowbutton, input.yellowbutton:active, input.yellobutton:focus {
+    background-color: #ffd846;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #202020;
+}
+
+

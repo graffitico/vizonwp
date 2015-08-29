@@ -36,14 +36,14 @@ if( 'quote' != get_post_format() ) {
 					<?php if(comments_open()) { ?><li class="comment-scroll"><strong>With:</strong> <?php comments_popup_link(__('0 Comments', 'wpex'), __('1 Comment', 'wpex'), __('% Comments', 'wpex'), 'comments-link' ); ?></li><?php } ?>
 				</ul>
 					<ul class="meta clearfix">
-						<li style="position: absolute;" >
+						<li  >
 							<span class="span-cat" >
 			<?php 	echo $cat->name;  ?></span></li>
-				<li style="margin-left: 89px; " >
+				<li  >
 						
 
 
-			<a href="http://www.addtoany.com/subscribe?linkname=Vizury%20Blog&amp;linkurl=http%3A%2F%2Fweb.vizury.com%2Fblog%2Ffeed%2F" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><img alt="Subscribe" src="http://graffiti-media.co/roshni/subscribe.jpg"></a>
+			<a href="http://www.addtoany.com/subscribe?linkname=Vizury%20Blog&amp;linkurl=http%3A%2F%2Fweb.vizury.com%2Fblog%2Ffeed%2F" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><span class="span-sub" >Subscribe</span></a>
 
 					
 			<script type="text/javascript">//&lt;![CDATA[
@@ -101,11 +101,94 @@ if( 'quote' != get_post_format() ) {
 	//end post loop
 	endwhile; endif;
 	
+//   $popular_posts_args = array (
+// 	'header_start' => '<h4><span>',
+// 	'header' => 'Most read articles',
+// 	'header_end' => '</span></h4>',
+// 	'limit' => 3,
+// 	'range' => 'all',
+// 	'title_length' => 30,
+// 	'title_by_words ' => false,
+// 	'post_type' => 'post',
+// 	'cat' => $cat_id,
+// 	'excerpt_length' => 75,
+// 	'thumbnail_width' => 200,
+// 	'thumbnail_height' => 200,
+// 	'custom_html' => true,
+// 	'markup' => array(
+// 		'wpp_start' => '<ul class="wpp-list" style="display:inline-flex;">',
+// 		'wpp_end' => '</ul>',
+// 		// 'title-start' => '<h2 class="widgettitle">',
+// 		// 'title-end' => '</h2>'
+// 		) ,
+//     'post_html' => '<li style="background-color:#fff;"><ul>
+// 			<li>{thumb}</li>
+// 			<li> {title} </li>
+// 			<li> {stats} </li>
+// 			<li> {excerpt} </li>
+// 			</ul>
+// 			</li>'
+// 		);
 
-wpp_get_mostpopular( 'cat="'.$cat_id.'"' ); 
+// wpp_get_mostpopular($popular_posts_args);
+
+// wpp_get_mostpopular( 'cat="'.$cat_id.'"&posts_per_page=3' ); 
 
 	//get template sidebar
-	get_sidebar(); ?>
+
+	$r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => 3, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'category_name' => $cat->name) ) );
+     // $suggest_string = 'Suggested Case Studies';
+      
+       
+
+    //$title = apply_filters('widget_title', empty($instance['title']) ? __($suggest_string) : $instance['title'], $instance, $this->id_base);
+    
+    if( $r->have_posts() ) :
+
+      echo '<div class="container">';
+      echo '<div class="row"><div class="col-lg-12 text-center section-title"><h2>Most read articles</h2></div></div>   <div class="row">'; ?>
+<!--      <ul>
+        <?php // while( $r->have_posts() ) : $r->the_post(); ?>
+        <li><?php // the_time( 'F d'); ?> - <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+        <?php //endwhile; ?>
+      </ul> -->
+<?php 
+
+
+ while( $r->have_posts() ) : $r->the_post(); ?>
+
+  <?php if ( has_post_thumbnail() ) {
+    $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' );
+    $img_url =  esc_url( $thumbnail[0] );
+
+ } ?>
+              <div class="col-sm-4 blog-entry-tile">
+                <div class="ih-item square colored effect4" style="background-color: #626262;" >
+                    <div class="img"><a href="<?php the_permalink(); ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  $img_url; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
+
+                </div>
+                <a href="<?php the_permalink(); ?>" target="_blank">
+                <h4><?php the_title(); ?></h4></a>
+             <!--    <p><b>Author:</b> Vizury</p> -->
+                <p><b>Date:</b><?php the_time( 'M d, Y'); ?></p>
+                <p><?php the_excerpt(); ?></p>
+
+
+                <!-- <a href="<?php the_permalink(); ?>" target="_blank"><img class="readmore-convert img-responsive bottom-right" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeAQMAAAAB/jzhAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAAxJREFUeNpjYBiMAAAAlgABjcjBIQAAAABJRU5ErkJggg=="></a> -->
+            </div>
+  <?php endwhile ;
+      echo '</div></div>';
+
+    wp_reset_postdata();
+
+    endif;
+  
+
+
+
+	//get_sidebar();
+
+	 ?>
 	
 </div><!--/container -->
 

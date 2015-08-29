@@ -57,6 +57,7 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 			'comment_notes_after' => '',
 			'comment_notes_before' => '',
 			'cancel_reply_link' => __( 'Cancel reply', 'wpex' ) ,
+			'class_submit' => __( 'yellowbutton', 'wpex' ) ,
 			'label_submit' => __('Post Comment','wpex')
 		);
 		//show comment form

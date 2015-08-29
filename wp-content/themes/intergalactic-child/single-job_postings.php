@@ -98,7 +98,12 @@ get_header(); ?>
                     <input  type="hidden" id="application_job_id" name="application_job_id"   value="<?php echo the_ID() ?>" />
             resume 
             <input type="file" id="resume_attachment" name="resume_attachment" value="" size="25" required="true"  accept="application/pdf" /><br/>
-            <input name="submit" type="submit" value="submit" />
+           <div style="display:inline-block; vertical-align: middle;">
+            <button name="submit"  type="submit">submit</button>
+            <button class="cancel-modal" >cancel</button>
+
+          </div>
+
                   </form>
   </div>
 </div>
