@@ -227,6 +227,9 @@ input.yellowbutton {
 }
 #commentsbox input[type="submit"] {
 	font-family: proxima;
+		background: #ffd846;
+	color: #202020;
+	border-radius: 2px;
 }
 .white-text {
 	color: #fff;
@@ -381,5 +384,57 @@ float: right;
 
 .widget_add_to_any_subscribe_widget{
 	margin-top: 10px;
-	 margin-top: 10px;
+	 margin-left: 10px;
+}
+
+#commentform p label {
+    display: block;
+    }
+#commentform input {
+    float: none;
+}
+#post-header h1 {
+ font-size: 35px !important;
+ }
+
+ #page-heading h1{
+ 	font-size: 35px !important ;
+ }
+  .search-icon{
+ 	margin-top: 5px;
+ }
+
+ #blog-search-input{
+ 	display: none;
+ 	width: 0px;
+ }
+
+body a:hover {
+    color: #f0f0f0;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: none;
+}
+
+#single-author h4{
+	background-image: none;
+}
+
+
+h3#reply-title {
+		background-image: none;
+}
+#respond {
+	border-top-color: #000;
+}
+.meta li , ul , li, strong{
+
+font-family: proxima;
+}
+.span-cat{
+   background-color: #ffd846;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
 }

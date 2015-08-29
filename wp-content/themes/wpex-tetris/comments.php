@@ -13,7 +13,6 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 	<div id="comments" class="comments-area clearfix">
 		<?php // You can start editing here -- including this comment! ?>
 		<?php if ( have_comments() ) : ?>
-			<h3 class="comments-title"><span><?php comments_popup_link(__('Leave a comment', 'wpex'), __('1 Comment', 'wpex'), __('% Comments', 'wpex'), 'comments-link', __('Comments closed', 'wpex')); ?></span></h3>
 			<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 			<nav role="navigation" id="comment-nav-above" class="site-navigation comment-navigation">
 				<h1 class="assistive-text"><?php echo __('Comment Navigation','wpex'); ?></h1>
@@ -52,14 +51,13 @@ if ( post_password_required() || ( !have_comments() && !comments_open() && !ping
 		//custom comment form output
 		$comments_args = array(
 			'fields' => $fields,
-			'title_reply'=>'<span class="heading"><span>'. __('Leave a reply','wpex') .'</span></span>',
 			'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" aria-required="true" rows="10"></textarea></p>',
 			'must_log_in' => '<p class="must-log-in"><a href="' . wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) . '">'. __('Log In To Comment','wpex') .'</a></p>',
 			'comment_form_top' => '',
 			'comment_notes_after' => '',
 			'comment_notes_before' => '',
 			'cancel_reply_link' => __( 'Cancel reply', 'wpex' ) ,
-			'label_submit' => __('Submit Comment','wpex')
+			'label_submit' => __('Post Comment','wpex')
 		);
 		//show comment form
 		comment_form($comments_args); ?>

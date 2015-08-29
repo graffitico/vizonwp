@@ -22,15 +22,52 @@ if( 'quote' != get_post_format() ) {
 	
 	<div id="post" class="clearfix">
 		<?php
-		$cat_id = the_category_ID();
+		$cat = get_the_category();
+		$cat = $cat[0];
+		$cat_id = $cat->cat_ID;
+
 		// Show header on all post formats except quotes
 		if( 'quote' != get_post_format() ) { ?>
 			<header id="post-header">
-				<h1><?php the_title(); ?></h1>
+				<h1  ><?php the_title(); ?></h1>
 				<ul class="meta clearfix">
 					<li><strong>Posted on:</strong> <?php echo get_the_date(); ?></li>
 					<li><strong>By:</strong> <?php the_author_posts_link(); ?></li>   
 					<?php if(comments_open()) { ?><li class="comment-scroll"><strong>With:</strong> <?php comments_popup_link(__('0 Comments', 'wpex'), __('1 Comment', 'wpex'), __('% Comments', 'wpex'), 'comments-link' ); ?></li><?php } ?>
+				</ul>
+					<ul class="meta clearfix">
+						<li style="position: absolute;" >
+							<span class="span-cat" >
+			<?php 	echo $cat->name;  ?></span></li>
+				<li style="margin-left: 89px; " >
+						
+
+
+			<a href="http://www.addtoany.com/subscribe?linkname=Vizury%20Blog&amp;linkurl=http%3A%2F%2Fweb.vizury.com%2Fblog%2Ffeed%2F" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><img alt="Subscribe" src="http://graffiti-media.co/roshni/subscribe.jpg"></a>
+
+					
+			<script type="text/javascript">//&lt;![CDATA[
+			var a2a_config = a2a_config || {};
+			a2a_config.linkname="Vizury Blog";
+			a2a_config.linkurl="http://web.vizury.com/blog/feed/";
+			//]]&gt;</script><script src="http://static.addtoany.com/menu/feed.js" type="text/javascript"></script>
+
+			
+		</li>
+				<li>
+					<div>
+					<ul class="clearfix">	
+
+				<li><a target="_blank" title="facebook" href="https://www.facebook.com/vizury1to1"><img alt="facebook" src="/images/facebook-black.png"></a></li>
+				<li><a target="_blank" title="google" href="https://plus.google.com/+Vizury1to1/"><img alt="google" src="/images/google-black.png"></a></li>
+				<li><a target="_blank" title="linkedin" href="http://www.linkedin.com/company/vizury-interactive"><img alt="linkedin" src="/images/linkedin-black.png"></a></li>
+				<li><a target="_blank" title="twitter" href="https://twitter.com/VizuryOneToOne"><img alt="twitter" src="/images/twitter-black.png"></a></li>
+				
+
+				
+			</ul>
+			</div>
+		</li>
 				</ul>
 			</header><!-- /post-header -->
 		<?php } ?>
@@ -43,7 +80,7 @@ if( 'quote' != get_post_format() ) {
 		</article><!-- /entry -->
 		<!-- Entry Content End -->
 		<?php wp_link_pages(); // Paginate pages when <!- next --> is used ?>
-		<?php the_tags('<div id="post-tags" class="clearfix">','','</div>'); ?>
+		<?php // the_tags('<div id="post-tags" class="clearfix">','','</div>'); ?>
 		<?php
 		// Show author bio on all post formats except quotes
 		if( get_post_format() !== 'quote' ) { ?>

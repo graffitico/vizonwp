@@ -193,4 +193,10 @@ jQuery(function () {
 
 	})
 
+	$(".search-icon").click(function(){
+		$(this).hide();
+		$("#blog-search-input").show().animate({"width": "150px"},
+			"slow");
+	});	
+
 });

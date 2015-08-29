@@ -399,14 +399,26 @@ Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
 
   function widget($args, $instance) {
 
+// print_r($GLOBALS['post']);
+
+
     extract( $args );
 
-    $title = apply_filters('widget_title', empty($instance['title']) ? __('Suggested Case Studies') : $instance['title'], $instance, $this->id_base);
 
     if( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
       $number = 10;
+// echo $GLOBALS['post']->post_type;
+      if($GLOBALS['post']->post_type != "post"){
+$r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'post_type' => $GLOBALS['post']->post_type ) ) );
+     $suggest_string = 'Recent Posts';
+       }else{
+$r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'category_name' => 'case studies') ) );
+     $suggest_string = 'Suggested Case Studies';
+      
+       }
 
-    $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'category_name' => 'case studies') ) );
+    $title = apply_filters('widget_title', empty($instance['title']) ? __($suggest_string) : $instance['title'], $instance, $this->id_base);
+    
     if( $r->have_posts() ) :
 
       echo '<section class="read-more-block"><div class="container-fluid">';
@@ -416,7 +428,10 @@ Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
         <li><?php // the_time( 'F d'); ?> - <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
         <?php //endwhile; ?>
       </ul> -->
-<?php  while( $r->have_posts() ) : $r->the_post(); ?>
+<?php 
+
+
+ while( $r->have_posts() ) : $r->the_post(); ?>
 
   <?php if ( has_post_thumbnail() ) {
     $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' );
