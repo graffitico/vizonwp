@@ -200,7 +200,6 @@ p {
 	color: #fff;
 	font-size: 24px;
 	background-image: url(/images/playback_button.svg);
-	display: inline-block;
 	width: 48px;
 	height: 48px;
 	padding-left: 6px;
@@ -1051,13 +1050,13 @@ div.img {
 	padding: 10px;
 	position: relative;
 	height: 1000px;
+	overflow: hidden;
 }
 
 .engage-header-icon {
 	height: 250px;
 	margin-top: 3%;
 }
-
 
 .engage-dim-section {
 	background: #202020;
@@ -1598,6 +1597,9 @@ div.img {
 	width:300px;
 	padding-top:5%;
 }
+.try-convert-go img {
+	max-width: none;
+}
 
 .sscarousel p {
 	padding-left: 20%;
@@ -1932,13 +1934,13 @@ div.img {
 		padding: 20% 10%;
 	}
 
-.cgo {
-	width:100px;
-}
+	.cgo {
+		margin-top: 15%;
+	}
 
-.service-box  {
-	margin: 4% auto 8%;
-}
+	.service-box  {
+		margin: 4% auto 8%;
+	}
 
 }
 
