@@ -19,6 +19,7 @@
 <!-- <link rel="stylesheet" href="<?php // echo get_site_url() ?>/css/pages.css" > -->
 <link rel="icon" href="<?php echo get_site_url(); ?>/images/logo_back.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="/images/logo_back.ico" type="image/x-icon" />
+
 <?php wp_head(); ?>
 </head>
 
@@ -529,7 +530,8 @@
 <div class="nav-div-right" >
 <ul style="float:right" >
 	   <li>
-	   <form action="http://web.vizury.com/blog/" id="searchbar" method="get"><input type="search" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" value="" name="s"></form>
+	   <form action="<?php echo  get_site_url(); ?>" id="searchbar" method="get"><input id="blog-search-input" type="search" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" value="" name="s"><img class="search-icon"  src="/images/search.svg"></form>
+		
 		</li>	
 		<li>
 
