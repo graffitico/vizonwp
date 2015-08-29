@@ -130,6 +130,7 @@ input.yellobutton:focus {
 	background-color: #ffd846;
 	border-radius: 8px;
 	color: #202020;
+	border-color: #ffd846;
 }
 
 .container {
@@ -614,10 +615,11 @@ a:focus a:active .btn-default {
 
 .sscarousel .carousel-control {
 	color: #ffd846;
+	top: 300px;
 }
 
 .sscarousel .carousel-inner img {
-	margin: 0 30%;
+	margin: 0 auto;
 }
 
 .flying-box-area {
@@ -1299,7 +1301,9 @@ div.img {
 .feature-holder {
 	margin-top: 2%;
 }
-
+.web-reach .feature-holder {
+	min-height: 300px;
+}
 .feature-text {
 	margin: 5%;
 	text-align: justify;
