@@ -88,6 +88,10 @@ jQuery(document).on('click' , '.apply-button' , function(){
     jQuery("#application_job_id").val(job_id);
 });
 
+jQuery(document).on('click' , '.cancel-modal', function(e){
+    e.preventDefault();
+    jQuery('.modal').modal('hide');
+});
 
 function get_jobs(data){
             $.post( afp_vars.afp_ajax_url, data, function(response) {

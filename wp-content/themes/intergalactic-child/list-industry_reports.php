@@ -6,7 +6,8 @@ get_header(); ?>
 <div class='press-release-container row'>
 	
 	    <?php
-    $mypost = array( 'post_type' => 'industry_report', 'report_type'=>'industry-report');
+	     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $mypost = array( "posts_per_page"=>8 ,'post_type' => 'industry_report', 'report_type'=>'industry-report', "paged"=> $paged);
     $loop = new WP_Query( $mypost );
     ?>
     	<div class='left-press-posts col-lg-8'>
@@ -29,6 +30,10 @@ get_header(); ?>
 
 		</a>
    <?php endwhile; ?>
+   <div class="navigation">
+<div class="alignright"><?php next_posts_link(' Older Reports »',$loop->max_num_pages) ?></div>
+<div class="alignright"><?php previous_posts_link('« Newer Reports ') ?></div>
+</div>
 
 		</div>
 	</div>
