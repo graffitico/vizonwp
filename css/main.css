@@ -1601,48 +1601,57 @@ div.img {
 }
 
 .sscarousel .left {
-		left:15%;
-	}
-	
-	.sscarousel .right {
-		right: 15%;
-	}
-	
+	left:15%;
+}
+
+.sscarousel .right {
+	right: 15%;
+}
+
 
 /* Custom, Iphone Retina */
 @media (max-width: 479px) {
 
+	.modal-dialog input {
+		width: 300px;
+	}
+
+	.categ-down {
+		margin: 0;
+		display: block;
+	}
+
 	.youdecide {
 		margin-top:20%;
 	}
-	
+
 	.inv-logo {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	}
 
-	
+
 	.gift-box {
 		background: none;
 		padding: 5% 2%;
 	}
-	
+
 	.sscarousel .left {
 		left:2%;
 	}
-	
+
 	.sscarousel .right {
 		right: 2%;
 	}
-	
+
 	.sscarousel {
 		height: 650px;
 	}
-	
+
 	.flying-box {
 		padding: 5%;
 	}
-	
+
 	.heading-text {
 		margin-top: 50%;
 		margin-bottom: 10%;
@@ -1940,7 +1949,7 @@ div.img {
 	#address-drop .dropdown {
 		margin-top: 10%;
 	}
-	
+
 	.engage-header-icon {
 		margin-top: none;
 	}
@@ -1951,9 +1960,6 @@ div.img {
 		bottom: 3%;
 	}
 
-	
-
-	
 	.big-white-number-text {
 		margin-top: 1%;
 	}
@@ -2196,7 +2202,11 @@ div.img {
 		background: linear-gradient(to left, #7b7b7b, #ffffff);
 		padding: 20% 10%;
 	}
- }
+
+	.modal-dialog input {
+		width: 400px;
+	}
+}
 
 
  /* Anything less than App */
@@ -2259,29 +2269,29 @@ div.img {
 		padding: 10px 30px;
 		font-size: 16px;
 	}
-	
+
 	.round-images-container .row {
 		margin-right:0px;
 	}
-	
+
 	.inv-logo {
 	margin-top: 5%;
 	margin-bottom: 10%;
 	}
-	
+
 	.round-images-container {
 	background-color: #fff;
 	margin: auto 0%;
 	}
-	
+
 	.gift-box {
 		padding: none;
 	}
-	
+
 	.gift-box h2 {
 		font-size: 20px;
 	}
-	
+
 	.sscarousel p {
 	padding-left: 15%;
 	padding-right: 15%;
@@ -2290,7 +2300,7 @@ div.img {
 	.youdecide {
 		margin-top: 15%;
 	}
-	
+
 	.brand-images-sm p {
 		color: #fff;
 		text-align: center;
@@ -2404,6 +2414,10 @@ div.img {
 
 	#footer .white-text > div {
 		margin-bottom: 20px;
+	}
+
+	.footersubmenu p {
+		text-align: center;
 	}
 
 	img.grayscale {
