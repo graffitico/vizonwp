@@ -97,3 +97,17 @@
 	font-size: 0.7em;
 }
 
+@media all (max-width: 768px) {
+
+	.post-type-title {
+		padding-left: 20px;
+	}
+
+	.left-press-posts .post-list {
+		padding: 0px 20px;
+	}
+
+	.left-press-posts .post-item {
+		padding: 0;
+	}
+}
