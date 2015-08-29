@@ -270,13 +270,13 @@
 						<ul class='subnav-list-control'>
 							<li>
 								<a href='/casestudies'>
-									<span class='icon icon-home_menuicons__whitepaper'></span>
+									<span class='icon icon-home_menuicons__successstories'></span>
 									<span>Case Studies</span>
 								</a>
 							</li>
 							<li>
 								<a href='/whitepapers'>
-									<span class='icon icon-home_menuicons_successstories'></span>
+									<span class='icon icon-home_menuicons__whitepaper'></span>
 									<span>White Papers</span>
 								</a>
 							</li>
@@ -504,3 +504,76 @@
 
 <div id="wrap" class="clearfix">
 	<div id="main-content" class="clearfix">
+
+ <?php 
+
+// print_r(  $wp_query->query_vars['category_name']);
+ if(is_home() ||  $wp_query->query_vars['category_name'] == 'technology'  ||  $wp_query->query_vars['category_name'] == 'marketing' ) { ?> 
+
+
+ 
+
+	<div class="navigation-container">
+
+<div class="nav-div-left" >
+
+
+	<ul class="navigations-left-filter">
+		<li  ><a  <?php if($wp_query->query_vars['category_name'] == 'marketing' ) {?> style="color:red !important " <?php } ?> href="category/marketing/">Marketing</a></li>
+			<li   ><a <?php if($wp_query->query_vars['category_name'] == 'technology' ) {?> style="color:red !important" <?php } ?> href="category/technology/">Technology</a></li>
+
+	</ul>
+</div>
+
+
+<div class="nav-div-right" >
+<ul style="float:right" >
+	   <li>
+	   <form action="http://web.vizury.com/blog/" id="searchbar" method="get"><input type="search" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" value="" name="s"></form>
+		</li>	
+		<li>
+
+			<div class=" widget_add_to_any_subscribe_widget clearfix" title="Shift-click to edit this widget.">
+
+
+			<a href="http://www.addtoany.com/subscribe?linkname=Vizury%20Blog&amp;linkurl=http%3A%2F%2Fweb.vizury.com%2Fblog%2Ffeed%2F" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><img alt="Subscribe" src="http://graffiti-media.co/roshni/subscribe.jpg"></a>
+
+					
+			<script type="text/javascript">//&lt;![CDATA[
+			var a2a_config = a2a_config || {};
+			a2a_config.linkname="Vizury Blog";
+			a2a_config.linkurl="http://web.vizury.com/blog/feed/";
+			//]]&gt;</script><script src="http://static.addtoany.com/menu/feed.js" type="text/javascript"></script>
+
+			</div>
+			</li>
+		
+
+		
+</ul>
+
+
+</div>
+		<ul class="clearfix" id="header-social">	
+
+				<li><a target="_blank" title="facebook" href="https://www.facebook.com/vizury1to1"><img alt="facebook" src="http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/themes/wpex-tetris/images/social/facebook.png"></a></li>
+				<li><a target="_blank" title="google" href="https://plus.google.com/+Vizury1to1/"><img alt="google" src="http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/themes/wpex-tetris/images/social/google.png"></a></li>
+				<li><a target="_blank" title="linkedin" href="http://www.linkedin.com/company/vizury-interactive"><img alt="linkedin" src="http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/themes/wpex-tetris/images/social/linkedin.png"></a></li>
+				<li><a target="_blank" title="twitter" href="https://twitter.com/VizuryOneToOne"><img alt="twitter" src="http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/themes/wpex-tetris/images/social/twitter.png"></a></li>
+				
+
+				
+			</ul>
+<div class="clearfix"></div>
+
+
+
+
+
+
+
+
+
+	</div>
+
+	<?php } ?>

@@ -15,7 +15,7 @@ if ( have_posts()) : while ( have_posts()) : the_post(); ?>
 <?php
 // Display media
 if( 'quote' != get_post_format() ) {
-	get_template_part( 'content', get_post_format() ); 
+	//get_template_part( 'content', get_post_format() ); 
 } ?>
 
 <div id="single-post-content" class="sidebar-bg container clearfix">
