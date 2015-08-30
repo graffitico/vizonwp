@@ -94,7 +94,7 @@
 	color: #999;
 	font-size: 0.7em;
 }
-.right-press-posts .post-author {
+.left-press-posts .post-author ,.right-press-posts .post-author {
 	color: #999;
 	font-size: 0.7em;
 }
