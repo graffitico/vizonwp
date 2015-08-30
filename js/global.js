@@ -513,7 +513,6 @@ jQuery(function () {
    	if ($(window).width() < 640) {
    		$('.flexslider').flexslider();
    	} else {
-
 	   	$('.flexslider .slides').kwicks({
 			max : 800,
 			spacing : 0
@@ -567,6 +566,8 @@ jQuery(function () {
 
 	/**************************** contact form js end **************************/
 
+    // Initialize WOW.js Scrolling Animations
+    new WOW().init();
 
 	// Need to wait for font files to load
 	$(window).load(function () {

@@ -32,6 +32,12 @@
 	src: url('/fonts/ProximaNova-Semibold_0.otf');
 }
 
+
+.span_arrow{
+	 padding-bottom: 6px;
+	}   
+
+
 /** Overriding Intergalactic CSS */
 
 .single-page .entry-header {
@@ -131,6 +137,17 @@ input.yellobutton:focus {
 	border-radius: 8px;
 	color: #202020;
 	border-color: #ffd846;
+}
+
+.login-button,
+.login-button:hover {
+	background-color: rgba(032,032,032,0.95);
+	color: #fff;
+	border-radius: 4px;
+	padding: 6px 14px;
+	vertical-align: top;
+	top: -1px;
+	position: relative;
 }
 
 .container {
