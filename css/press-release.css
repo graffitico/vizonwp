@@ -99,6 +99,13 @@
 	font-size: 0.7em;
 }
 
+@media all (max-width: 991px) {
+
+	.press-release-container {
+		padding-top: 110px;
+	}
+}
+
 @media all (max-width: 768px) {
 
 	.post-type-title {
@@ -113,3 +120,6 @@
 		padding: 0;
 	}
 }
+
+
+
