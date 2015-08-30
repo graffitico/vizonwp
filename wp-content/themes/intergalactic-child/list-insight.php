@@ -31,7 +31,7 @@ get_header(); ?>
 					<iframe src="//player.vimeo.com/video/<?php  echo end($arr) ?>" width="500" height="280"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 					<!-- <iframe src="<?php // echo get_post_meta( get_the_ID(), 'vimeo_link', true ) ?>" width="250" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 					<?php }else{ ?>
-					<?php the_post_thumbnail() ?>
+					<?php the_post_thumbnail('', array('class' => "img-responsive")) ?>
 					<?php } ?>
 					
 				</div>
@@ -68,7 +68,7 @@ get_header(); ?>
 
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
-					<?php the_post_thumbnail() ?>
+					<?php the_post_thumbnail('', array('class' => "img-responsive")) ?>
 				</div>
 				<div class='post-date'> <?php echo esc_html( get_post_meta( get_the_ID(), 'media_coverage_date', true ) ); ?></div>
 				<div class='post-title'><?php the_title(); ?></div>
@@ -100,7 +100,7 @@ get_header(); ?>
 
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
-					<?php the_post_thumbnail() ?>
+					<?php the_post_thumbnail('', array('class' => "img-responsive")) ?>
 				</div>
 				<div class='post-date'> <?php echo esc_html( get_post_meta( get_the_ID(), 'media_coverage_date', true ) ); ?></div>
 				<div class='post-title'><?php the_title(); ?></div>
@@ -129,7 +129,7 @@ get_header(); ?>
 
 				<a href='<?php the_permalink(); ?>'>
 				<div class='post-media'>
-					<?php the_post_thumbnail() ?>
+					<?php the_post_thumbnail('', array('class' => "img-responsive")) ?>
 				</div>
 				<div class='post-date'> <?php echo esc_html( get_post_meta( get_the_ID(), 'media_coverage_date', true ) ); ?></div>
 				<div class='post-title'><?php the_title(); ?></div>

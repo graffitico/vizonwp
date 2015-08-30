@@ -71,8 +71,10 @@
 .right-press-posts .post-item {
 	position: relative;
 	font-size: 24px;
-	padding-bottom: 80px;
+	/*padding-bottom: 80px;*/
 	margin-right: 50px;
+	 margin-top: 57px;
+	  padding-bottom: 45px;
 }
 .right-press-posts .post-type {
 	font-size: 1.2em;
