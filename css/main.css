@@ -32,6 +32,12 @@
 	src: url('/fonts/ProximaNova-Semibold_0.otf');
 }
 
+
+.span_arrow{
+	 padding-bottom: 6px;
+	}   
+
+
 /** Overriding Intergalactic CSS */
 
 .single-page .entry-header {

@@ -19,7 +19,25 @@
 // add_action( 'pre_get_posts', 'all_posts_on_case_studies_page' );
 
 include 'short_codes.php';
-
+add_post_type_support( 'press_release', 'author' );
+add_post_type_support( 'industry_report', 'author' );
+add_post_type_support( 'paper', 'author' );
+add_image_size( 'mycustomsize', '250px' ,'', true );
+    function my_init()   
+    {  
+        if (!is_admin())   
+        {  
+            wp_deregister_script('jquery');  
+      
+            // Load the copy of jQuery that comes with WordPress  
+            // The last parameter set to TRUE states that it should be loaded  
+            // in the footer.  
+            wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, '1.11.2', TRUE);  
+      
+            wp_enqueue_script('jquery');  
+        }  
+    }  
+    add_action('init', 'my_init');
 
 add_action( 'wp_ajax_echo_shortcode', 'echo_shortcode_callback' );
 
