@@ -558,10 +558,10 @@
 </div>
 		<ul class="clearfix" id="header-social">	
 
-				<li><a target="_blank" title="facebook" href="https://www.facebook.com/vizury1to1"><img alt="facebook" src="http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/themes/wpex-tetris/images/social/facebook.png"></a></li>
-				<li><a target="_blank" title="google" href="https://plus.google.com/+Vizury1to1/"><img alt="google" src="http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/themes/wpex-tetris/images/social/google.png"></a></li>
-				<li><a target="_blank" title="linkedin" href="http://www.linkedin.com/company/vizury-interactive"><img alt="linkedin" src="http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/themes/wpex-tetris/images/social/linkedin.png"></a></li>
-				<li><a target="_blank" title="twitter" href="https://twitter.com/VizuryOneToOne"><img alt="twitter" src="http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/themes/wpex-tetris/images/social/twitter.png"></a></li>
+				<li><a target="_blank" title="facebook" href="https://www.facebook.com/vizury1to1"><span class="fb-contact"></span></a></li>
+				<li><a target="_blank" title="google" href='https://www.youtube.com/user/vizury1to1'><span class="youtube-contact"></span></a></li>
+				<li><a target="_blank" title="linkedin" href="http://www.linkedin.com/company/vizury-interactive"><span class="linkedin-contact"></span></a></li>
+				<li><a target="_blank" title="twitter" href="https://twitter.com/VizuryOneToOne"><span class="twitter-contact"></span></a></li>
 				
 
 				
