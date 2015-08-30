@@ -42,6 +42,10 @@ $formats = get_theme_support( 'post-formats' );
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				); ?>
 			</a>
+			<span class="edit-link" >
+				- <?php the_author(); ?>
+			</span>
+
 		</div><!-- .entry-summary -->
 	<?php endif; ?>
 
