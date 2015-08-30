@@ -279,7 +279,6 @@ p {
 	margin-top: -2%;
 }
 
-
 /** Heading Text */
 
 .heading-block {
@@ -447,7 +446,6 @@ a:focus a:active .btn-default {
 .home-vbox {
 	margin: 2% auto;
 	width: 200px;
-	height: 200px;
 }
 
 
@@ -759,7 +757,20 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 	padding: 10% auto;
 }
 
+.home-page {
+	 background: url('/images/home_nodes.jpg') no-repeat center center fixed;
+	 background-size: cover;
+	 animation:nodes-zoom 20s ease-in infinite;
+}
 
+.home-page-no-animation {
+	animation-name:none !important;
+}
+
+@keyframes nodes-zoom {
+	from {transform: scale(1);}
+    to {transform: scale(1.3);}
+}
 
 #heart-animation {
 	background: url('/images/heart_home.svg') no-repeat center;
