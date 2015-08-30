@@ -86,7 +86,7 @@
 								<li>
 									<a href='/contactus'>CONTACT US</a>
 								</li>
-								<li>
+								<li style="white-space: nowrap;">
 									<a href='https://www.linkedin.com/company/vizury-interactive'><span class="linkedin-contact"></span></a>
 									&nbsp;&nbsp;
 									<a href='https://twitter.com/VizuryOneToOne'><span class="twitter-contact"></span></a>

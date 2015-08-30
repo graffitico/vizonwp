@@ -200,7 +200,6 @@ p {
 	color: #fff;
 	font-size: 24px;
 	background-image: url(/images/playback_button.svg);
-	display: inline-block;
 	width: 48px;
 	height: 48px;
 	padding-left: 6px;
@@ -1063,13 +1062,13 @@ div.img {
 	padding: 10px;
 	position: relative;
 	height: 1000px;
+	overflow: hidden;
 }
 
 .engage-header-icon {
 	height: 250px;
 	margin-top: 3%;
 }
-
 
 .engage-dim-section {
 	background: #202020;
@@ -1610,6 +1609,9 @@ div.img {
 	width:300px;
 	padding-top:5%;
 }
+.try-convert-go img {
+	max-width: none;
+}
 
 .sscarousel p {
 	padding-left: 20%;
@@ -1624,6 +1626,17 @@ div.img {
 	right: 15%;
 }
 
+.categ-down {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-image: url(/images/close.svg);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.categ-down.collapsed {
+	background-image: url(/images/categ-plus.svg);
+}
 
 /* Custom, Iphone Retina */
 @media (max-width: 479px) {
@@ -1944,31 +1957,31 @@ div.img {
 		padding: 20% 10%;
 	}
 
-.cgo {
-	width:100px;
-}
+	.cgo {
+		margin-top: 15%;
+	}
 
-.service-box  {
-	margin: 4% auto 8%;
-}
+	.service-box  {
+		margin: 4% auto 8%;
+	}
 
 	.value-holder {
 		margin: 30% auto;
 	}
-	
+
 	.values-area .row {
 		margin-top: -30%;
 	}
-	
+
 	.value-holder img {
 		height: 250px;
 	}
-	
+
 	.values-area p {
 		padding-left: 15%;
 		padding-right: 15%;
 	}
-	
+
 	.values-area h4 {
 		padding-top: 10%;
 	}
@@ -2426,11 +2439,11 @@ div.img {
 		width:250px;
 		padding-top:5%;
 	}
-	
+
 	.values-area img {
 		height: 350px;
 	}
-	
+
 	.values-area h4 {
 		margin-top: -110%;
 	}
@@ -2444,7 +2457,7 @@ div.img {
 /* Medium Devices, Desktops */
 @media(min-width : 992px) and (max-width:1199px) {
 
-	
+
 
 }
 
