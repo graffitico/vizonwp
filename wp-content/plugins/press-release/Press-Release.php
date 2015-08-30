@@ -40,6 +40,9 @@ function add_press_release_fields( $press_release_id, $press_release ) {
          if ( isset( $_POST['press_release_vimeo_link'] ) && $_POST['press_release_vimeo_link'] != '' ) {
             update_post_meta( $press_release_id, 'vimeo_link', $_POST['press_release_vimeo_link'] );
         }
+       if ( isset( $_POST['press_release_link'] ) && $_POST['press_release_link'] != '' ) {
+            update_post_meta( $press_release_id, 'link', $_POST['press_release_link'] );
+        }
     
     }
 }
@@ -50,13 +53,17 @@ function add_press_release_fields( $press_release_id, $press_release ) {
 function display_press_release_meta_box( $press_release ) {
     // Retrieve current name of the Director and Movie Rating based on review ID
     $media_coverage_date = esc_html( get_post_meta( $press_release->ID, 'media_coverage_date', true ) );
-    $vimeo_link = esc_html( get_post_meta( $press_release->ID, 'vimeo_link', true ) );
+    $link = esc_html( get_post_meta( $press_release->ID, 'link', true ) );
     
     ?>
     <table>
         <tr>
             <td style="width: 100%">Media Coverage Date</td>
             <td><input type="text" name="press_release_media_coverage_date" value="<?php echo $media_coverage_date; ?>" /></td>
+        </tr>
+        <tr>
+            <td style="width: 100%"> External Link </td>
+            <td><input type="text" name="press_release_link" value="<?php echo $link; ?>" /></td>
         </tr>
 
         
@@ -65,7 +72,7 @@ function display_press_release_meta_box( $press_release ) {
 }
 function display_press_release_video_meta_box( $press_release ) {
     // Retrieve current name of the Director and Movie Rating based on review ID
-    $media_coverage_date = esc_html( get_post_meta( $press_release->ID, 'media_coverage_date', true ) );
+    // $media_coverage_date = esc_html( get_post_meta( $press_release->ID, 'media_coverage_date', true ) );
     $vimeo_link = esc_html( get_post_meta( $press_release->ID, 'vimeo_link', true ) );
     
     ?>

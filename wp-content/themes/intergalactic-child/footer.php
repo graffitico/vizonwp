@@ -104,7 +104,8 @@
 	</div><!-- /footer-wrap -->
 </div><!-- /wrap -->
 
-<script type="text/javascript" src="/js/vizury.main.min.js"></script>
+
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
+<script type="text/javascript" src="/js/vizury.main.min.js"></script>
 </body>
 </html>
