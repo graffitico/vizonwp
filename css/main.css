@@ -2309,6 +2309,9 @@ div.img {
 		width: 100%;
 	}
 
+	.portfolio-box {
+		max-width: none;
+	}
  }
 
 /* Small Devices, Tablets */
