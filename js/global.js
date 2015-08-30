@@ -219,7 +219,7 @@ jQuery(function () {
 		tapDiscard = true;
 		setTimeout(function () {
 			tapDiscard = false;
-		}, 300);
+		}, 500);
 
 		showTab.call(this, e);
    	});
@@ -354,11 +354,10 @@ jQuery(function () {
 		}
 	}
 
-    // Hoverable text - For Engage Pages
-   	$('.hoverable-text').hover(function () {
+
+	function expandStart() {
 
    		var t = this;
-
 		$(this).find('.floating-normal-text').finish().hide();
 		$(this).find('.floating-hover-text').finish().hide();
    		$(this).addClass('expanded');
@@ -398,8 +397,9 @@ jQuery(function () {
    		magicTimerOn = setTimeout(function () {
    			onExpandTransitionEnd.call(onElement);
    		}, 650);
+	}
 
-   	}, function () {
+	function contractStart () {
 
    		var t = this;
 		$(this).find('.floating-normal-text').finish().hide();
@@ -441,8 +441,9 @@ jQuery(function () {
    		magicTimerOut = setTimeout(function () {
    			onContractTransitionEnd.call(outElement);
    		}, 650);
-
-   	});
+	}
+    // Hoverable text - For Engage Pages
+   	$('.hoverable-text').hover(expandStart, contractStart);
 
    	//$('.hoverable-text').on("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", );
 
@@ -456,19 +457,13 @@ jQuery(function () {
 		tapDiscard = true;
 		setTimeout(function () {
 			tapDiscard = false;
-		}, 500);
+		}, 300);
 
 
 		if (!$(this).hasClass('expanded')) {
-   			$(this).find('.floating-normal-text').finish().hide();
-			$(this).find('.floating-hover-text').finish().hide();
-
-			$(this).addClass('expanded')
+   			expandStart.call(this);
 		} else {
-   			$(this).find('.floating-normal-text').finish().hide();
-			$(this).find('.floating-hover-text').finish().hide();
-
-			$(this).removeClass('expanded');
+   			contractStart.call(this);
 		}
 	});
 

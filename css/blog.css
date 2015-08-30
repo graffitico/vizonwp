@@ -227,7 +227,7 @@ input.yellowbutton {
 }
 #commentsbox input[type="submit"] , #commentsbox input[type="submit"]:active ,#commentsbox input[type="submit"]:focus   {
 	font-family: proxima;
-		
+
 	color: #202020;
 	border-radius: 2px;
    background-color: #ffd846;
@@ -356,11 +356,14 @@ border-radius: 0px;
 	display: inline;
 	margin-right: 20px;
 }
-.navigations-left-filter li a{
- color: #fff !important;
+.navigations-left-filter li a {
+ 	color: #fff !important;
     font-size: 25px;
     text-decoration: none !important;
-
+    font-weight: normal;
+}
+.navigations-left-filter li a:hover {
+	color: #ffd846;
 }
 .navigations-right-filter li{
 	list-style: none;

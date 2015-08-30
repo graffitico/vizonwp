@@ -106,9 +106,9 @@ a:active,
 a:visited,
 a {
 	color: #202020;
-    -webkit-transition: all .1s;
-    -moz-transition: all .1s;
-    transition: all .1s;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
     text-decoration: none;
     outline: none;
 }
@@ -2309,6 +2309,9 @@ div.img {
 		width: 100%;
 	}
 
+	.portfolio-box {
+		max-width: none;
+	}
  }
 
 /* Small Devices, Tablets */

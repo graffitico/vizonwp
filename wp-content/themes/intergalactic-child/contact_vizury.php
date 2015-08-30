@@ -6,10 +6,10 @@ get_header();
 ?>
 
     <div id="map" class="container-fluid">
-	<div class="hidden-xs">
+	
     <div class="row">
     <div class="col-sm-9 text-center">
-
+	<div class="hidden-xs">
 	<svg version="1.1" id="Layer_1"  class="contact-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="1440 -750 2980 1600" style="enable-background:new 1440 -750 2980 1600;" xml:space="preserve">
 	<style type="text/css">
 	.st0{fill:none;stroke:#B0AFB5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
@@ -1160,7 +1160,8 @@ get_header();
 </g>
 </svg>
 </div>
-				<div id="address-number" class="col-sm-3">
+	</div>
+				<div id="address-number" class="col-sm-3 col-xs-12">
 
 					     <div class="row">
 					       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
@@ -1447,7 +1448,7 @@ sales@vizury.com</span>
 </div>
 
 
-<div id="contact-11-content" >
+	<div id="contact-11-content" >
 
      <div class="row">
        <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
@@ -1471,7 +1472,7 @@ kr.vizury@vizury.com</span>
      </div>
 
 
-</div>
+	</div>
 
 
 </div>
@@ -1482,12 +1483,11 @@ kr.vizury@vizury.com</span>
 				
 			
 				</div>
-				</div>
+			
 
 				
 				
 	
-    </div>
     </div>
 
 
