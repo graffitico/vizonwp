@@ -55,7 +55,7 @@
 				  	</ul>
 				</li>
 				<li>
-					<input type='button' class='login-button' value='Login' />
+					<a href='https://central.vizury.com/login/#/' target='_blank' class='login-button'>Login</a>
 				</li>
 			</ul>
 		</div><!-- /pre-header -->

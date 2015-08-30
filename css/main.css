@@ -133,6 +133,17 @@ input.yellobutton:focus {
 	border-color: #ffd846;
 }
 
+.login-button,
+.login-button:hover {
+	background-color: rgba(032,032,032,0.95);
+	color: #fff;
+	border-radius: 4px;
+	padding: 6px 14px;
+	vertical-align: top;
+	top: -1px;
+	position: relative;
+}
+
 .container {
 	background: none;
 }
