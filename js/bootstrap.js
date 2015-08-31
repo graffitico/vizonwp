@@ -1627,7 +1627,7 @@ if (typeof jQuery === 'undefined') {
 
   // TAB PLUGIN DEFINITION
   // =====================
-
+  debugger;
   function Plugin(option) {
     return this.each(function () {
       var $this = $(this)
