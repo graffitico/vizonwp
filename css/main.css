@@ -1453,12 +1453,12 @@ div.img {
 }
 .hoverable-text .plus-icon,
 .hoverable-text.activate .minus-icon,
-.hoverable-text:hover .minus-icon {
+.hoverable-text.expanded .minus-icon {
 	display: block;
 }
 .hoverable-text .minus-icon,
 .hoverable-text.activate .plus-icon,
-.hoverable-text:hover .plus-icon {
+.hoverable-text.expanded .plus-icon {
 	display: none;
 }
 .hoverable-text .floating-hover-text {

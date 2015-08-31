@@ -257,7 +257,7 @@ jQuery(function () {
 
 			qelement = onQueue[i];
 
-			if (qelement !== element) {
+			if (qelement !== element.get(0)) {
 				qelement = $(qelement).find('.floating-hover-text');
 
 				qelement.finish().css({visibility: 'hidden'}).show();
@@ -314,7 +314,7 @@ jQuery(function () {
 
 			qelement = outQueue[i];
 
-			if (qelement !== element) {
+			if (qelement !== element.get(0)) {
 				qelement = $(qelement).find('.floating-normal-text');
 
 				qelement.finish().css({visibility: 'hidden'}).show();
@@ -426,7 +426,7 @@ jQuery(function () {
    			}
    		}
 
-   		onAdd && outQueue.push(onElement);
+   		onAdd && outQueue.push(outElement);
 
    		if (onElement && onElement === outElement) {
    			clearTimeout(magicTimerOn);
@@ -463,7 +463,6 @@ jQuery(function () {
 		if (!$(this).hasClass('expanded')) {
 			if ($('.hoverable-text.expanded').length) {
 				contractStart.call($('.hoverable-text.expanded').get(0));
-				$('.hoverable-text.expanded').removeClass('expanded');
 			}
    			expandStart.call(this);
 		} else {
