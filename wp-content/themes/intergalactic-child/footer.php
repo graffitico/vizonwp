@@ -113,6 +113,7 @@
 <script type="text/javascript" src="/js/global.js"></script>
 <script type="text/javascript" src="/js/wow.min.js"></script>
 <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/js/classie.js"></script>
 <!-- <script type="text/javascript" src="/js/SmoothScroll.js"></script> -->
 <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
