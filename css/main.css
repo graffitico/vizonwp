@@ -775,9 +775,14 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 }
 
 .home-page {
-	 background: url('/images/home_nodes.jpg') no-repeat center center fixed;
-	 background-size: cover;
-	 animation:nodes-zoom 20s ease-in infinite;
+	background: url('/images/home_nodes.jpg') no-repeat center center fixed;
+	background-size: cover;
+	animation: nodes-zoom 20s ease-in infinite;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
 }
 
 .home-page-no-animation {
