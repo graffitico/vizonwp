@@ -105,15 +105,16 @@
 </div><!-- /wrap -->
 
 <!-- <script type="text/javascript" src="/js/vizury.main.min.js"></script> -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/jquery.fittext.js"></script>
 <script type="text/javascript" src="/js/selectFx.js"></script>
+<script type="text/javascript" src="/js/kwiks.js"></script>
 <script type="text/javascript" src="/js/global.js"></script>
 <script type="text/javascript" src="/js/wow.min.js"></script>
 <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
 <!-- <script type="text/javascript" src="/js/SmoothScroll.js"></script> -->
 <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="/js/kwiks.js"></script>
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
 </body>
 </html>

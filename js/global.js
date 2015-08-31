@@ -511,8 +511,8 @@ jQuery(function () {
    	//$('#myCarousel').carousel({interval: 2000, auto: false});
 
    	if ($(window).width() < 640) {
-   		$('.flexslider').flexslider();
-   	} else {
+   		$('.flexslider').length && $('.flexslider').flexslider();
+   	} else if ($('.flexslider .slides').length) {
 	   	$('.flexslider .slides').kwicks({
 			max : 800,
 			spacing : 0
