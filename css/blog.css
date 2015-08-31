@@ -508,3 +508,47 @@ input.yellowbutton, input.yellowbutton:active, input.yellobutton:focus {
 #header-social li a span.twitter-contact:hover {
 	background-image: url(/images/home_footer_twitter_c.svg);
 }
+
+
+
+#header-social-inner li a span.fb-contact,
+#header-social-inner li a span.linkedin-contact,
+#header-social-inner li a span.youtube-contact,
+#header-social-inner li a span.twitter-contact {
+	margin-top: 10px;
+	width: 20px;
+	height: 20px;
+	   border-radius: 10px;
+	display: inline-block;
+	   background-color: black;
+
+}
+
+
+#header-social-inner li a span.fb-contact {
+
+	
+ 
+	background-image: url(/images/home_footer_fb.svg);
+}
+#header-social-inner li a span.fb-contact:hover {
+	background-image: url(/images/home_footer_fb_c.svg);
+}
+#header-social-inner li a span.linkedin-contact {
+	background-image: url(/images/home_footer_linkedin.svg);
+}
+#header-social-inner li a span.linkedin-contact:hover {
+	background-image: url(/images/home_footer_linkedin_c.svg);
+}
+#header-social-inner li a span.youtube-contact {
+	background-image: url(/images/home_footer_youtube.svg);
+}
+#header-social-inner li a span.youtube-contact:hover {
+	background-image: url(/images/home_footer_youtube_c.svg);
+}
+#header-social-inner li a span.twitter-contact {
+	background-image: url(/images/home_footer_twitter.svg);
+}
+#header-social-inner li a span.twitter-contact:hover {
+	background-image: url(/images/home_footer_twitter_c.svg);
+}
