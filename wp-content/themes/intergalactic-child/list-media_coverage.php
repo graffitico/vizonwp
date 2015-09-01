@@ -30,7 +30,7 @@ if($link == ''){ ?>
 				<div class='post-date'> <?php echo esc_html( get_post_meta( get_the_ID(), 'media_coverage_date', true ) ); ?></div>
 				
 				<div class='post-title'><?php the_title(); ?></div>
-				<div class='post-author'>- <?php   the_author(); ?> </div>
+				<!-- <div class='post-author'>- <?php //  the_author(); ?> </div> -->
 				<div class='post-description'><?php the_excerpt() ?> </div>
 				<div class='post-media'>
 					 <?php the_post_thumbnail('mycustomsize') ?>
@@ -73,7 +73,7 @@ if($link == ''){ ?>
 				</div>
 				<div class='post-date'> <?php echo esc_html( get_post_meta( get_the_ID(), 'media_coverage_date', true ) ); ?></div>
 				<div class='post-title'><?php the_title(); ?></div>
-				<div class='post-author'>- <?php   the_author(); ?> </div>
+				<!-- <div class='post-author'>- <?php //  the_author(); ?> </div> -->
 				<div class='post-description'><?php the_excerpt() ?></div>
 				<div class='link-button bottom-right'>
 					
