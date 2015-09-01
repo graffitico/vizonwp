@@ -5,7 +5,7 @@
 ?>
 
 
-<div style="height:120px" ></div>
+<div style="height:180px" ></div>
 <?php 
 if(has_tag( 'new-casestudies' , $post )){
 the_title( '<center><h3>', '</h3></center>' ); 

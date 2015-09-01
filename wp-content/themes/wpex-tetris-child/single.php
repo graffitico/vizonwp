@@ -143,7 +143,7 @@ if( 'quote' != get_post_format() ) {
     if( $r->have_posts() ) :
 
       echo '<div class="container">';
-      echo '<div class="row"><div class="col-lg-12 text-center section-title"><h2>Most read articles</h2></div></div>   <div class="row">'; ?>
+      echo '<div class="row"><div class="col-lg-12  read-more section-title"><h2>Most Read Articles</h2></div></div>   <div class="row">'; ?>
 <!--      <ul>
         <?php // while( $r->have_posts() ) : $r->the_post(); ?>
         <li><?php // the_time( 'F d'); ?> - <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>

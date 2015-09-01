@@ -520,8 +520,9 @@
 
 
 	<ul class="navigations-left-filter">
-		<li><a   style=" <?php if($wp_query->query_vars['category_name'] == 'marketing' ) {?> color:red !important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/category/marketing/">Marketing</a></li>
-			<li><a  style=" <?php if($wp_query->query_vars['category_name'] == 'technology' ) {?> color:red !important; <?php } ?> text-decoration:none !important; text-decoration-style:none !important; "  href="<?php echo get_site_url(); ?>/category/technology/">Technology</a></li>
+		<li><a   style=" <?php if($wp_query->query_vars['category_name'] =="") {?> color:#ffd846 !important; border-color:#ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/">All</a></li>
+		<li><a   style=" <?php if($wp_query->query_vars['category_name'] == 'marketing' ) {?> color:#ffd846 !important; border-color:#ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/category/marketing/">Marketing</a></li>
+			<li><a  style=" <?php if($wp_query->query_vars['category_name'] == 'technology' ) {?> color:#ffd846 !important;border-color:#ffd846!important; <?php } ?> text-decoration:none !important; text-decoration-style:none !important; "  href="<?php echo get_site_url(); ?>/category/technology/">Technology</a></li>
 
 	</ul>
 </div>
@@ -553,10 +554,9 @@
 
 		
 </ul>
-
-
-</div>
-		<ul class="clearfix" id="header-social">	
+<br/>
+<div class="clearfix"></div>
+		<ul id="header-social">	
 
 				<li><a target="_blank" title="facebook" href="https://www.facebook.com/vizury1to1"><span class="fb-contact"></span></a></li>
 				<li><a target="_blank" title="google" href='https://www.youtube.com/user/vizury1to1'><span class="youtube-contact"></span></a></li>
@@ -566,6 +566,10 @@
 
 				
 			</ul>
+
+
+</div>
+
 <div class="clearfix"></div>
 
 

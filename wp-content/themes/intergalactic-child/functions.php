@@ -422,9 +422,11 @@ $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' =
 
 
  while( $r->have_posts() ) : $r->the_post(); ?>
+
+  <?php 
 $link = '';
 $final_link = '';
-  <?php if ( has_post_thumbnail() ) {
+  if ( has_post_thumbnail() ) {
     $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' );
     $img_url =  esc_url( $thumbnail[0] );
 
@@ -437,14 +439,14 @@ $final_link = '';
     ?>
 <?php
 if($link == ''){ 
- $final_link = the_permalink(); 
+ $final_link = get_permalink(); 
  }else{ 
   $final_link =  $link; 
  
 } ?>
               <div class="col-sm-4 blog-entry-tile">
                 <div class="ih-item square colored effect4" style="background-color: #626262;" >
-                    <div class="img"><a href="<?php echo $final_link; ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  $img_url; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
+                    <div class="img"><a href="<?= $final_link; ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  $img_url; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
                     <div class="mask1"></div>
                     <div class="mask2"></div>
                     <div class="mask2"></div>
@@ -453,7 +455,7 @@ if($link == ''){
 
                     </div>
                 </div>
-                <a href="<?php echo $final_link; ?>" target="_blank">
+                <a href="<?= $final_link; ?>" target="_blank">
                 <h4><?php the_title(); ?></h4></a>
              <!--    <p><b>Author:</b> Vizury</p> -->
                 <p><b>Date:</b><?php the_time( 'M d, Y'); ?></p>
