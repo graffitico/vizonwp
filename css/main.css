@@ -296,6 +296,7 @@ p {
 	margin-top: -2%;
 }
 
+
 /** Heading Text */
 
 .heading-block {
@@ -778,13 +779,14 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 	background-image: url('/images/home_nodes.jpg');
 	background-attachment:fixed;
 	background-repeat:no-repeat;
-	background-size: cover;
 	animation: nodes-zoom 20s ease-in infinite;
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
+	background-size: 100%;
+	background-size: cover;
 }
 
 .home-page-no-animation {
@@ -1679,6 +1681,10 @@ div.img {
 
 	.modal-dialog input {
 		width: 300px;
+	}
+	
+	.bg-grad p {
+		text-align: left;
 	}
 
 	.categ-down {
