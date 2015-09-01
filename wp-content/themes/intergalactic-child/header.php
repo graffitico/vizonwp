@@ -452,10 +452,10 @@
 						<span class='minus-icon'>-</span>
 						<ul class='mobilesubnav'>
 							<li>
-								<a href='/whitepapers'>White Papers</a>
+								<a href='/casestudies'>Case Studies</a>
 							</li>
 							<li>
-								<a href='/casestudies'>Case Studies</a>
+								<a href='/whitepapers'>White Papers</a>
 							</li>
 							<li>
 								<a href='/industryreports'>Industry Reports</a>
