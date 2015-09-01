@@ -104,7 +104,7 @@
 		    </aside>
     	</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->
-<script type="text/javascript" src="/js/jquery.min.js"></script>
+
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/jquery.fittext.js"></script>
 <script type="text/javascript" src="/js/selectFx.js"></script>

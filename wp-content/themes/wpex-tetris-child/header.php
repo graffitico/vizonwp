@@ -520,8 +520,8 @@
 
 
 	<ul class="navigations-left-filter">
-		<li><a   style=" <?php if($wp_query->query_vars['category_name'] == 'marketing' ) {?> color:red !important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="category/marketing/">Marketing</a></li>
-			<li><a  style=" <?php if($wp_query->query_vars['category_name'] == 'technology' ) {?> color:red !important; <?php } ?> text-decoration:none !important; text-decoration-style:none !important; "  href="category/technology/">Technology</a></li>
+		<li><a   style=" <?php if($wp_query->query_vars['category_name'] == 'marketing' ) {?> color:red !important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/category/marketing/">Marketing</a></li>
+			<li><a  style=" <?php if($wp_query->query_vars['category_name'] == 'technology' ) {?> color:red !important; <?php } ?> text-decoration:none !important; text-decoration-style:none !important; "  href="<?php echo get_site_url(); ?>/category/technology/">Technology</a></li>
 
 	</ul>
 </div>
