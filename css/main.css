@@ -775,7 +775,9 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 }
 
 .home-page {
-	background: url('/images/home_nodes.jpg') no-repeat center center fixed;
+	background-image: url('/images/home_nodes.jpg');
+	background-attachment:fixed;
+	background-repeat:no-repeat;
 	background-size: cover;
 	animation: nodes-zoom 20s ease-in infinite;
 	position: absolute;
@@ -1641,7 +1643,7 @@ div.img {
 
 .cgo {
 	width:300px;
-	padding-top:5%;
+	margin-top:10%;
 }
 .try-convert-go img {
 	max-width: none;
