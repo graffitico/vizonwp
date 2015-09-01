@@ -14,7 +14,7 @@ get_header(); // Loads the header.php template
 <div style="height:180px" ></div>
 <center>
 <h3 class='post-title'><?php the_title(); ?></h3>
-	<div class='post-author'>- <?php   the_author(); ?> </div>
+	<div class='post-author'> <?php //  the_author(); ?> </div>
 </center>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content-wrapper">
