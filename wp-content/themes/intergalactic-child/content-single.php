@@ -15,7 +15,7 @@ the_title( '<center><h3>', '</h3></center>' );
 	<div class="entry-content-wrapper">
 		<div class="entry-meta">
 			<?php //intergalactic_posted_on(); ?>
-				<div class='post-author'>- <?php   the_author(); ?> </div>
+				<div class='post-author'> <?php //  the_author(); ?> </div>
 		</div><!-- .entry-meta -->
 		<div class="entry-content">
 			<?php the_content(); ?>
