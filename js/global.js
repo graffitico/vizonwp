@@ -257,7 +257,7 @@ jQuery(function () {
 
 			qelement = onQueue[i];
 
-			if (qelement !== element) {
+			if (qelement !== element.get(0)) {
 				qelement = $(qelement).find('.floating-hover-text');
 
 				qelement.finish().css({visibility: 'hidden'}).show();
@@ -314,7 +314,7 @@ jQuery(function () {
 
 			qelement = outQueue[i];
 
-			if (qelement !== element) {
+			if (qelement !== element.get(0)) {
 				qelement = $(qelement).find('.floating-normal-text');
 
 				qelement.finish().css({visibility: 'hidden'}).show();
@@ -426,7 +426,7 @@ jQuery(function () {
    			}
    		}
 
-   		onAdd && outQueue.push(onElement);
+   		onAdd && outQueue.push(outElement);
 
    		if (onElement && onElement === outElement) {
    			clearTimeout(magicTimerOn);
@@ -461,6 +461,9 @@ jQuery(function () {
 
 
 		if (!$(this).hasClass('expanded')) {
+			if ($('.hoverable-text.expanded').length) {
+				contractStart.call($('.hoverable-text.expanded').get(0));
+			}
    			expandStart.call(this);
 		} else {
    			contractStart.call(this);
@@ -478,7 +481,7 @@ jQuery(function () {
 
 
 	// Video player
-	if ($.fn.fancybox) {
+	if ($.fn.fancybox && false) {
 
 		$('.fancybox-play').show().fancybox({
 			type: 'iframe',
@@ -486,16 +489,17 @@ jQuery(function () {
 			height: 450,
 			width: (screenWidth > 800 ? 800 : screenWidth)
 		});
-
-		$('.flexslider .slides > li').hover(function () {
-	   		$(this).find('.normal-text').finish().hide();
-	   		$(this).find('.hover-text').delay(400).fadeIn(500);
-	   		//$(this).addClass('expanded');
-		}, function () {
-	   		$(this).find('.hover-text').finish().hide();
-	   		$(this).find('.normal-text').delay(400).fadeIn(500);
-		});
 	}
+
+	$('.flexslider .slides > li').hover(function () {
+   		$(this).find('.normal-text').finish().hide();
+   		$(this).find('.hover-text').delay(400).fadeIn(500);
+   		//$(this).addClass('expanded');
+	}, function () {
+   		$(this).find('.hover-text').finish().hide();
+   		$(this).find('.normal-text').delay(400).fadeIn(500);
+	});
+
 
 	// $(".flexslider .slides > li").on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
 
