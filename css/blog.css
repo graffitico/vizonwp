@@ -446,6 +446,7 @@ body a:hover {
     text-decoration-color: -moz-use-text-color;
     text-decoration-line: none;
     text-decoration-style: none;
+        background-color: #000;
 }
 
 #single-author h4{
