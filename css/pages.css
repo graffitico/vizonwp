@@ -300,6 +300,19 @@ ul.pub-logos img:hover {
 	/* Custom, iPhone Retina */
     @media only screen and (max-width : 480px) {
 
+ul.dropdown-menu {
+    margin-left: 88px;
+}
+
+#address-number{
+    padding-left: 152px;
+    padding-top: 100px;
+}
+	
+	#address-drop{
+    margin-top: -85px;
+}
+
 		/*----------About Page-----------*/
 
 .ab-box {
@@ -391,8 +404,22 @@ width: 15em;
 
     /* Extra Small Devices, Phones */
     @media only screen and (min-width : 480px) and (max-width:768px) {
+/*--------- contact poage form
+#infoform {
+    margin-top: 7%;
+}
+*/
 
-
+ul.dropdown-menu {
+    margin-left: 88px;
+}
+#address-drop{
+    margin-top: -85px;
+}
+#address-number{
+     padding-left: 134px;
+    padding-top: 60px;
+}
 /*----------About Page-----------*/
 
 .ab-box {

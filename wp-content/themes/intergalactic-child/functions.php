@@ -181,52 +181,24 @@ function ajax_filter_get_posts( $taxonomy ) {
 
  	if($year_range == 0){
  		$args[] = array(
-		'relation' => 'OR',
-		array(
 		'key'		=> 'experience_from',
-		'value'	=>  0 ,
-		'compare' =>'>=',
-		'type'    => 'numeric'
-		)
-		, array(
-
-		'key'		=> 'experience_to',
-		'value'	=>  1 ,
-		'compare' =>'<=',
-		'type'    => 'numeric'
-		));
+		'value'	=>    array(0,0.5,1, 1.5),
+		'compare' =>'IN'
+		
+		);
  	}elseif ($year_range == 2) {
  		$args[] = array(
-		'relation' => 'OR',
-		array(
 		'key'=> 'experience_from',
-		'value'	=>  1 ,
-		'compare' =>'>',
-		'type'    => 'numeric'
-		)
-		,array(
-
-		'key'		=> 'experience_to',
-		'value'	=>  4 ,
-		'compare' =>'<=',
-		'type'    => 'numeric'
-		));
+		'value'	=> array(2, 2.5 ,3 , 3.5 ,4 ,4.5 ) ,
+		'compare' =>'IN'
+		);
  	}elseif ($year_range == 5) {
  		$args[] = array(
-		'relation' => 'OR' ,
-       array(
 
 		'key'		=> 'experience_from',
-		'value'	=>   4 ,
-		'compare' =>'>',
-		'type'    => 'numeric'
-		), array(
-
-		'key'		=> 'experience_to',
-		'value'	=>  10 ,
-		'compare' =>'<=',
-		'type'    => 'numeric'
-		));
+		'value'	=>   array(5 , 5.5 , 6, 6.5 , 7, 7.5 , 8, 8.5 , 9 , 9.5 , 10 )  ,
+		'compare' =>'IN'
+		);
  	}
 
  }
@@ -450,15 +422,29 @@ $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' =
 
 
  while( $r->have_posts() ) : $r->the_post(); ?>
-
+$link = '';
+$final_link = '';
   <?php if ( has_post_thumbnail() ) {
     $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' );
     $img_url =  esc_url( $thumbnail[0] );
 
  } ?>
+
+
+    <?php 
+      $link = esc_html( get_post_meta( get_the_ID(), 'link', true ) );
+
+    ?>
+<?php
+if($link == ''){ 
+ $final_link = the_permalink(); 
+ }else{ 
+  $final_link =  $link; 
+ 
+} ?>
               <div class="col-sm-4 blog-entry-tile">
                 <div class="ih-item square colored effect4" style="background-color: #626262;" >
-                    <div class="img"><a href="<?php the_permalink(); ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  $img_url; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
+                    <div class="img"><a href="<?php echo $final_link; ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  $img_url; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
                     <div class="mask1"></div>
                     <div class="mask2"></div>
                     <div class="mask2"></div>
@@ -467,7 +453,7 @@ $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' =
 
                     </div>
                 </div>
-                <a href="<?php the_permalink(); ?>" target="_blank">
+                <a href="<?php echo $final_link; ?>" target="_blank">
                 <h4><?php the_title(); ?></h4></a>
              <!--    <p><b>Author:</b> Vizury</p> -->
                 <p><b>Date:</b><?php the_time( 'M d, Y'); ?></p>

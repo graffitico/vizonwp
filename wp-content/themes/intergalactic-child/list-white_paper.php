@@ -46,7 +46,7 @@ get_header(); ?>
 		</div> -->
 
 	<?php
-	  $mypost = array('showposts'=>2 , 'category_name' => 'case-studies' );
+	  $mypost = array('showposts'=>1 , 'category_name' => 'case-studies' );
     $loop = new WP_Query( $mypost );
     ?>
 
