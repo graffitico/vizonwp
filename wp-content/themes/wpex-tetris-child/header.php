@@ -519,12 +519,6 @@
 <div class="nav-div-left" >
 
 
-	<ul class="navigations-left-filter">
-		<li><a   style=" <?php if($wp_query->query_vars['category_name'] =="") {?> color:#ffd846 !important; border-color:#ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/">All</a></li>
-		<li><a   style=" <?php if($wp_query->query_vars['category_name'] == 'marketing' ) {?> color:#ffd846 !important; border-color:#ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/category/marketing/">Marketing</a></li>
-			<li><a  style=" <?php if($wp_query->query_vars['category_name'] == 'technology' ) {?> color:#ffd846 !important;border-color:#ffd846!important; <?php } ?> text-decoration:none !important; text-decoration-style:none !important; "  href="<?php echo get_site_url(); ?>/category/technology/">Technology</a></li>
-
-	</ul>
 </div>
 
 
@@ -539,7 +533,7 @@
 			<div class=" widget_add_to_any_subscribe_widget clearfix" title="Shift-click to edit this widget.">
 
 
-			<a href="http://www.addtoany.com/subscribe?linkname=Vizury%20Blog&amp;linkurl=http%3A%2F%2Fweb.vizury.com%2Fblog%2Ffeed%2F" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><img alt="Subscribe" src="http://graffiti-media.co/roshni/subscribe.jpg"></a>
+			<a href="http://www.addtoany.com/subscribe?linkname=Vizury%20Blog&amp;linkurl=http%3A%2F%2Fweb.vizury.com%2Fblog%2Ffeed%2F" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><span class="span-sub btn-default">Subscribe</span></a>
 
 					
 			<script type="text/javascript">//&lt;![CDATA[
@@ -556,7 +550,7 @@
 </ul>
 <br/>
 <div class="clearfix"></div>
-		<ul id="header-social">	
+<!-- 		<ul id="header-social">	
 
 				<li><a target="_blank" title="facebook" href="https://www.facebook.com/vizury1to1"><span class="fb-contact"></span></a></li>
 				<li><a target="_blank" title="google" href='https://www.youtube.com/user/vizury1to1'><span class="youtube-contact"></span></a></li>
@@ -566,7 +560,14 @@
 
 				
 			</ul>
+ -->
 
+	<ul class="navigations-left-filter">
+		<li><a   style=" <?php if($wp_query->query_vars['category_name'] =="") {?> color:#ffd846 !important; border-color:#ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/">All</a></li>
+		<li><a   style=" <?php if($wp_query->query_vars['category_name'] == 'marketing' ) {?> color:#ffd846 !important; border-color:#ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/category/marketing/">Marketing</a></li>
+			<li><a  style=" <?php if($wp_query->query_vars['category_name'] == 'technology' ) {?> color:#ffd846 !important;border-color:#ffd846!important; <?php } ?> text-decoration:none !important; text-decoration-style:none !important; "  href="<?php echo get_site_url(); ?>/category/technology/">Technology</a></li>
+
+	</ul>
 
 </div>
 
