@@ -523,6 +523,30 @@
 
 
 <div class="nav-div-right" >
+
+	<ul class="navigations-left-filter">
+		<li><a   style=" <?php if($wp_query->query_vars['category_name'] =="") {?> color:#000 !important; border-color:#ffd846!important;     background-color: #ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/">All</a></li>
+		<li><a   style=" <?php if($wp_query->query_vars['category_name'] == 'marketing' ) {?> color:#000  !important; border-color:#ffd846!important;     background-color: #ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/category/marketing/">Marketing</a></li>
+			<li><a  style=" <?php if($wp_query->query_vars['category_name'] == 'technology' ) {?> color:#000  !important;border-color:#ffd846!important;     background-color: #ffd846!important;<?php } ?> text-decoration:none !important; text-decoration-style:none !important; "  href="<?php echo get_site_url(); ?>/category/technology/">Technology</a></li>
+
+	</ul>
+
+
+
+<br/>
+<div class="clearfix"></div>
+<!-- 		<ul id="header-social">	
+
+				<li><a target="_blank" title="facebook" href="https://www.facebook.com/vizury1to1"><span class="fb-contact"></span></a></li>
+				<li><a target="_blank" title="google" href='https://www.youtube.com/user/vizury1to1'><span class="youtube-contact"></span></a></li>
+				<li><a target="_blank" title="linkedin" href="http://www.linkedin.com/company/vizury-interactive"><span class="linkedin-contact"></span></a></li>
+				<li><a target="_blank" title="twitter" href="https://twitter.com/VizuryOneToOne"><span class="twitter-contact"></span></a></li>
+				
+
+				
+			</ul>
+ -->
+
 <ul style="float:right" >
 	   <li>
 	   <form action="<?php echo  get_site_url(); ?>" id="searchbar" method="get"><input id="blog-search-input" type="search" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" value="" name="s"><img class="search-icon"  src="/images/search.svg"></form>
@@ -548,26 +572,6 @@
 
 		
 </ul>
-<br/>
-<div class="clearfix"></div>
-<!-- 		<ul id="header-social">	
-
-				<li><a target="_blank" title="facebook" href="https://www.facebook.com/vizury1to1"><span class="fb-contact"></span></a></li>
-				<li><a target="_blank" title="google" href='https://www.youtube.com/user/vizury1to1'><span class="youtube-contact"></span></a></li>
-				<li><a target="_blank" title="linkedin" href="http://www.linkedin.com/company/vizury-interactive"><span class="linkedin-contact"></span></a></li>
-				<li><a target="_blank" title="twitter" href="https://twitter.com/VizuryOneToOne"><span class="twitter-contact"></span></a></li>
-				
-
-				
-			</ul>
- -->
-
-	<ul class="navigations-left-filter">
-		<li><a   style=" <?php if($wp_query->query_vars['category_name'] =="") {?> color:#ffd846 !important; border-color:#ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/">All</a></li>
-		<li><a   style=" <?php if($wp_query->query_vars['category_name'] == 'marketing' ) {?> color:#ffd846 !important; border-color:#ffd846!important; <?php }   ?> text-decoration:none !important; text-decoration-style:none !important; " href="<?php echo get_site_url(); ?>/category/marketing/">Marketing</a></li>
-			<li><a  style=" <?php if($wp_query->query_vars['category_name'] == 'technology' ) {?> color:#ffd846 !important;border-color:#ffd846!important; <?php } ?> text-decoration:none !important; text-decoration-style:none !important; "  href="<?php echo get_site_url(); ?>/category/technology/">Technology</a></li>
-
-	</ul>
 
 </div>
 

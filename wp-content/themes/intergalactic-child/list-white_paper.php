@@ -116,7 +116,7 @@ get_header(); ?>
 				<div class='post-type'><a href="/industryreports">Industry Report</a></div>
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 <div class='post-item'>
-				<a href='<?php the_permalink(); ?>'>
+				<a href='<?php echo esc_html( get_post_meta( get_the_ID(), 'link', true ) );   ?>'>
 				<div class='post-media'>
 					<?php the_post_thumbnail('', array('class' => "img-responsive")) ?>
 				</div>
