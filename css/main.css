@@ -709,8 +709,7 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 }
 
 .inv-tab {
-	margin: 20% 5%;
-	text-align: center;
+	margin: 5% auto;
 }
 
 
@@ -1683,7 +1682,7 @@ div.img {
 		width: 300px;
 	}
 	
-	.bg-grad p {
+	.inv-tab p {
 		text-align: left;
 	}
 
@@ -2026,6 +2025,7 @@ div.img {
 
 	.values-area h4 {
 		padding-top: 10%;
+		margin-top: -75%;
 	}
 
 }

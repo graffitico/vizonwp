@@ -1186,8 +1186,6 @@ get_header();
 
 				</div>
 
-				<div class="row add-no">
-
 <div style="display:none" >
 
 <div id="contact-1-content" >
@@ -1487,8 +1485,6 @@ kr.vizury@vizury.com</span>
 
 
 
-
-    </div>
 
 
 
