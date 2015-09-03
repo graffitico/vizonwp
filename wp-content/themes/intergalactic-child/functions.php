@@ -25,7 +25,7 @@ add_post_type_support( 'paper', 'author' );
 add_image_size( 'mycustomsize', '250px' ,'', true );
     function my_init()   
     {  
-        if (!is_admin())   
+        if (is_admin() === false)   
         {  
             wp_deregister_script('jquery');  
       

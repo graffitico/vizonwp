@@ -11,7 +11,7 @@ get_header(); // Loads the header.php template
 		<main id="main" class="site-main" role="main">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div style="height:180px" ></div>
+<div class="articletopgap" ></div>
 <center>
 <h3 class='post-title'><?php the_title(); ?></h3>
 	<div class='post-author'> <?php //   the_author(); ?> </div>
@@ -44,6 +44,7 @@ get_header(); // Loads the header.php template
 				) );
 			?>
 		</div><!-- .entry-content -->
+
 		<center>				    <?php
 // print_r(wp_get_post_terms(get_the_ID() ,  'release_type'));
 				     if(has_term( "press-release" , 'release_type'  , $post ) ){ ?>
@@ -54,7 +55,9 @@ get_header(); // Loads the header.php template
 					<a   href="/whitepapers" class="btn btn-default" > Back </a>
 				<?php }  ?>
 </center>
-<?php get_sidebar(); ?>
+
+<?php  // get_sidebar(); ?>
+
 		<footer class="entry-footer">
 			<?php
 				// /* translators: used between list items, there is a space after the comma */
