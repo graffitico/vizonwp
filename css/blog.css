@@ -469,13 +469,13 @@ font-family: proxima;
 }
 
 .span-cat{
-   background-color: #ffd846;
-    padding-bottom: 4px;
+    background-color: #ffd846;
+    padding-bottom: 6px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
-        color: #000;
-        border-radius: 8px;
+    padding-top: 9px;
+    color: #000;
+    border-radius: 8px;
 }
 
 .span-sub{
@@ -613,4 +613,25 @@ ul#menu-header-menu li a:hover   {
 #post {
     float: left;
     width: inherit;
+}
+
+.modal-backdrop.fade.in {
+    height: 100% !important;
+    z-index: -1 !important;
+}
+
+button, input[type='button'], input[type='reset'], input[type='submit'] {
+    
+    font-size: 0.8rem;
+   }
+
+
+.modal-body input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email {
+    width: 100%;
+    height: 40px;
+        margin-top: 15px;
+}
+
+.modal-body .wpcf7-form p {
+    font-size: 18px;
 }

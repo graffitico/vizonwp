@@ -43,14 +43,10 @@ if( 'quote' != get_post_format() ) {
 						
 
 
-			<a href="http://www.addtoany.com/subscribe?linkname=Vizury%20Blog&amp;linkurl=http%3A%2F%2Fweb.vizury.com%2Fblog%2Ffeed%2F" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><span class="span-sub" >Subscribe</span></a>
-
+			<a href="javascript:void(0)"  data-toggle="modal" data-target="#myModal" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><span class="span-sub btn-default">Subscribe</span></a>
+		
 					
-			<script type="text/javascript">//&lt;![CDATA[
-			var a2a_config = a2a_config || {};
-			a2a_config.linkname="Vizury Blog";
-			a2a_config.linkurl="http://web.vizury.com/blog/feed/";
-			//]]&gt;</script><script src="http://static.addtoany.com/menu/feed.js" type="text/javascript"></script>
+	
 
 			
 		</li>

@@ -506,6 +506,25 @@
 <div id="wrap" class="clearfix">
 	<div id="main-content" class="clearfix">
 
+		<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document" style="padding:20px"  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button style="float: right;" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <!--   <h4 class="modal-title" id="myModalLabel">Subcribe</h4> -->
+      </div>
+      <div class="modal-body">
+           <?php echo do_shortcode('[contact-form-7 id="3867" title="Subscribe"]'); ?>
+      </div>
+      <div class="modal-footer">
+        
+       
+      </div>
+    </div>
+  </div>
+</div>
+
  <?php 
 
 // print_r(  $wp_query->query_vars['category_name']);
@@ -574,24 +593,7 @@
 <div class="clearfix"></div>
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
-  <div class="modal-dialog" role="document" style="padding:20px"  >
-    <div class="modal-content">
-      <div class="modal-header">
-        <button style="float: right;" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Subcribe</h4>
-      </div>
-      <div class="modal-body">
-           <?php echo do_shortcode('[contact-form-7 id="3829" title="Subscribe"]'); ?>
-      </div>
-      <div class="modal-footer">
-        
-       
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 
