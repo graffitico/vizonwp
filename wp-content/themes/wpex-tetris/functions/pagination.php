@@ -24,12 +24,18 @@ function wpex_pagination($pages = '', $range = 4) {
  
      if(1 != $pages) {
          echo "<div class=\"page-pagination\"><div class=\"page-pagination-inner clearfix\">";
+            if($paged > 1){
+          echo "<a href='".get_pagenum_link(($paged-1))."' class=\"inactive\"><span class=\"inner\"> « </span></a>";
+                }
 		 echo "<div class=\"page-of-page\"><span class=\"inner\">".$paged." of ".$pages."</span></div>"; 
          for ($i=1; $i <= $pages; $i++) {
              if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
              {
                  echo ($paged == $i)? "<span class=\"current outer\"><span class=\"inner\">".$i."</span></span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\"><span class=\"inner\">".$i."</span></a>";
              }
+         }
+        if($paged < $pages){
+        echo "<a href='".get_pagenum_link(($paged+1))."' class=\"inactive\"><span class=\"inner\"> » </span></a>";
          }
           echo "</div></div>\n";
      }

@@ -131,7 +131,7 @@ input.yellowbutton {
 	background: #ffd846;
 	color: #202020;
 	padding: 10px 40px;
-	border-radius: 2px;
+	border-radius: 8px;
 	font-size: 18px;
 }
 #post-tags a:hover,
@@ -335,7 +335,7 @@ background-color: #FFD845;
 padding: 3px 18px;
 float: right;
 color: #000;
-border-radius: 0px;
+border-radius: 8px;
 }
 
 .meta-auth li , .meta-auth li a {
@@ -609,4 +609,8 @@ ul#menu-header-menu li a:hover   {
 .blog-entry h2 {
 
        font-size: 18px;
+}
+#post {
+    float: left;
+    width: inherit;
 }

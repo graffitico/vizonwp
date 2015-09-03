@@ -44,6 +44,7 @@ get_header(); // Loads the header.php template
 				) );
 			?>
 		</div><!-- .entry-content -->
+		<center><a   href="/industryreports" class="btn btn-default" > Back </a></center>
 <?php get_sidebar(); ?>
 		<footer class="entry-footer">
 			<?php
@@ -89,7 +90,7 @@ get_header(); // Loads the header.php template
 				    <?php
 // print_r(wp_get_post_terms(get_the_ID() ,  'release_type'));
 				     if(has_term( "industry-report" , 'report_type'  , $post ) ){ ?>
-					<a   href="/industryreports" class="btn btn-default" > back </a>
+					<!-- <a   href="/industryreports" class="btn btn-default" > back </a> -->
 				<?php  }  ?>
 
 			</div><!-- .entry-footer-wrapper -->

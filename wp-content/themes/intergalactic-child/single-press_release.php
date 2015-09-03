@@ -44,6 +44,16 @@ get_header(); // Loads the header.php template
 				) );
 			?>
 		</div><!-- .entry-content -->
+		<center>				    <?php
+// print_r(wp_get_post_terms(get_the_ID() ,  'release_type'));
+				     if(has_term( "press-release" , 'release_type'  , $post ) ){ ?>
+					<a   href="/press-release" class="btn btn-default" > Back </a>
+				<?php  }elseif (has_term( "media-coverage" , 'release_type'  , $post )) { ?>
+					<a   href="/mediacoverage" class="btn btn-default" > Back </a>
+				<?php } elseif (has_term( "white-paper" , 'release_type'  , $post )) { ?>
+					<a   href="/whitepapers" class="btn btn-default" > Back </a>
+				<?php }  ?>
+</center>
 <?php get_sidebar(); ?>
 		<footer class="entry-footer">
 			<?php
@@ -85,16 +95,16 @@ get_header(); // Loads the header.php template
 			
 				<?php // intergalactic_post_nav(); ?>
 
-				    <?php
+<!-- 				    <?php
 // print_r(wp_get_post_terms(get_the_ID() ,  'release_type'));
-				     if(has_term( "press-release" , 'release_type'  , $post ) ){ ?>
+				    // if(has_term( "press-release" , 'release_type'  , $post ) ){ ?>
 					<a   href="/press-release" class="btn btn-default" > back </a>
-				<?php  }elseif (has_term( "media-coverage" , 'release_type'  , $post )) { ?>
+				<?php // }elseif (has_term( "media-coverage" , 'release_type'  , $post )) { ?>
 					<a   href="/mediacoverage" class="btn btn-default" > back </a>
-				<?php } elseif (has_term( "white-paper" , 'release_type'  , $post )) { ?>
+				<?php //} elseif (has_term( "white-paper" , 'release_type'  , $post )) { ?>
 					<a   href="/whitepapers" class="btn btn-default" > back </a>
-				<?php }  ?>
-
+				<?php //}  ?>
+ -->
 			</div><!-- .entry-footer-wrapper -->
      
 
