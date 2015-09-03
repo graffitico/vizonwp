@@ -179,7 +179,7 @@ input.yellobutton:focus {
 /** TEXTCSS */
 
 p {
-	text-align:center;
+	text-align:left;
 	font-size: 16px;
 	margin: 1%;
 	font-weight: normal;

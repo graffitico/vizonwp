@@ -153,7 +153,7 @@ input.yellowbutton {
 	background: #ffd846;
 	color: #202020;
 	padding: 10px 40px;
-	border-radius: 2px;
+	border-radius: 8px;
 	font-size: 18px;
 }
 #post-tags a:hover,
@@ -357,7 +357,7 @@ background-color: #FFD845;
 padding: 3px 18px;
 float: right;
 color: #000;
-border-radius: 0px;
+border-radius: 8px;
 }
 
 .meta-auth li , .meta-auth li a {
@@ -491,13 +491,13 @@ font-family: proxima;
 }
 
 .span-cat{
-   background-color: #ffd846;
-    padding-bottom: 4px;
+    background-color: #ffd846;
+    padding-bottom: 6px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 5px;
-        color: #000;
-        border-radius: 8px;
+    padding-top: 9px;
+    color: #000;
+    border-radius: 8px;
 }
 
 .span-sub{
@@ -631,4 +631,30 @@ ul#menu-header-menu li a:hover   {
 .blog-entry h2 {
 
        font-size: 18px;
+}
+#post {
+    float: left;
+    width: inherit;
+}
+
+.modal-backdrop.fade.in {
+    height: 100% !important;
+    z-index: -1 !important;
+}
+
+ input[type='reset'], input[type='submit'] {
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 4px;
+   }
+
+
+.modal-body input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email {
+    width: 100%;
+    height: 40px;
+        margin-top: 15px;
+}
+
+.modal-body .wpcf7-form p {
+    font-size: 18px;
 }

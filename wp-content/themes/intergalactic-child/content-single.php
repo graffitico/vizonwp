@@ -46,7 +46,7 @@ the_title( '<center><h3>', '</h3></center>' );
 			?>
 
 			<?php intergalactic_post_format(); ?>
-
+ 
 			<?php edit_post_link( __( 'Edit', 'intergalactic' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-footer -->
 	</div><!-- .entry-content-wrapper -->

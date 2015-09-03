@@ -506,6 +506,25 @@
 <div id="wrap" class="clearfix">
 	<div id="main-content" class="clearfix">
 
+		<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document" style="padding:20px"  >
+    <div class="modal-content">
+      <div class="modal-header">
+        <button style="float: right;" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <!--   <h4 class="modal-title" id="myModalLabel">Subcribe</h4> -->
+      </div>
+      <div class="modal-body">
+           <?php echo do_shortcode('[contact-form-7 id="3867" title="Subscribe"]'); ?>
+      </div>
+      <div class="modal-footer">
+        
+       
+      </div>
+    </div>
+  </div>
+</div>
+
  <?php 
 
 // print_r(  $wp_query->query_vars['category_name']);
@@ -557,14 +576,10 @@
 			<div class=" widget_add_to_any_subscribe_widget clearfix" title="Shift-click to edit this widget.">
 
 
-			<a href="http://www.addtoany.com/subscribe?linkname=Vizury%20Blog&amp;linkurl=http%3A%2F%2Fweb.vizury.com%2Fblog%2Ffeed%2F" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><span class="span-sub btn-default">Subscribe</span></a>
+			<a href="javascript:void(0)"  data-toggle="modal" data-target="#myModal" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><span class="span-sub btn-default">Subscribe</span></a>
 
 					
-			<script type="text/javascript">//&lt;![CDATA[
-			var a2a_config = a2a_config || {};
-			a2a_config.linkname="Vizury Blog";
-			a2a_config.linkurl="http://web.vizury.com/blog/feed/";
-			//]]&gt;</script><script src="http://static.addtoany.com/menu/feed.js" type="text/javascript"></script>
+		
 
 			</div>
 			</li>

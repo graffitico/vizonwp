@@ -20,6 +20,13 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
+				<center>
+				<?php  if(in_category( 'case-studies', $post )){ ?>
+				<a   href="/casestudies" class="btn btn-default" > Back </a>
+				<?php  }elseif(in_category( 'insights', $post )) { ?>
+				<a   href="/insights" class="btn btn-default" > Back </a>
+				<?php } ?>
+				</center>
 	<?php get_sidebar(); ?>
 
 			<div class="entry-footer-wrapper">
@@ -36,11 +43,11 @@ get_header(); ?>
 			
 				<?php // intergalactic_post_nav(); ?>
 
-				<?php  if(in_category( 'case-studies', $post )){ ?>
+			<!-- 	<?php // if(in_category( 'case-studies', $post )){ ?>
 				<a   href="/casestudies" class="btn btn-default" > back </a>
-				<?php  }elseif(in_category( 'insights', $post )) { ?>
+				<?php  //}elseif(in_category( 'insights', $post )) { ?>
 				<a   href="/insights" class="btn btn-default" > back </a>
-				<?php } ?>
+				<?php // } ?> -->
 
 			</div><!-- .entry-footer-wrapper -->
 

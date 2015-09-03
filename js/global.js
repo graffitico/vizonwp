@@ -481,8 +481,7 @@ jQuery(function () {
 
 
 	// Video player
-	if ($.fn.fancybox && false) {
-
+	if ($.fn.fancybox) {
 		$('.fancybox-play').show().fancybox({
 			type: 'iframe',
 			fitToView: (screenWidth > 800 ? false : true),
