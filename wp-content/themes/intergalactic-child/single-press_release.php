@@ -11,7 +11,7 @@ get_header(); // Loads the header.php template
 		<main id="main" class="site-main" role="main">
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="articletopgap" ></div>
+<div class="csontop" ></div>
 <center>
 <h3 class='post-title'><?php the_title(); ?></h3>
 	<div class='post-author'> <?php //   the_author(); ?> </div>
@@ -56,6 +56,7 @@ get_header(); // Loads the header.php template
 				<?php }  ?>
 </center>
 
+
 <?php  // get_sidebar(); ?>
 
 		<footer class="entry-footer">
@@ -84,7 +85,7 @@ get_header(); // Loads the header.php template
 </article><!-- #post-## -->
 
 
-			<div class="entry-footer-wrapper">
+			<!--<div class="entry-footer-wrapper">
 				<?php if ( '' != get_the_author_meta( 'description' ) ) : ?>
 					<div class="entry-author">
 						<div class="author-avatar">
@@ -108,7 +109,7 @@ get_header(); // Loads the header.php template
 					<a   href="/whitepapers" class="btn btn-default" > back </a>
 				<?php //}  ?>
  -->
-			</div><!-- .entry-footer-wrapper -->
+			</div> -->
      
 
 			<?php endwhile; ?>

@@ -306,7 +306,6 @@ p {
 	height: 90vh;
 	color: #fff;
 	padding-top: 8%;
-	padding-bottom: 10%;
 	position: relative;
 	background-color: rgba(0,0,0,0.2);
 	background-size: cover;
@@ -326,7 +325,6 @@ p {
 
 .heading-text {
 	margin-top: 10%;
-	margin-bottom: 10%;
 	position: relative;
 }
 
@@ -363,6 +361,16 @@ p {
 	border-radius: 8px;
 	font-size: 18px;
 	display: inline-block;
+}
+
+
+.header-mob {
+	 position: absolute;
+	 z-index: -1;
+	height: 100%;
+	top:0;
+	left:0;
+	object-fit: cover;
 }
 
 /*.btn-default:hover,*/
@@ -856,9 +864,10 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 	width: 100%;
 }
 
-div#single-page-content {
-	margin-top: 0;
+.entry-content p {
+	text-align: left;
 }
+
 
 /** ihover override **/
 div.img {
@@ -1678,12 +1687,22 @@ div.img {
 	background-image: url(/images/categ-plus.svg);
 }
 
+.csontop {
+	height: 150px;
+}
+
+
 /* Custom, Iphone Retina */
 @media (max-width: 479px) {
 
 	.modal-dialog input {
 		width: 300px;
 	}
+	
+	.csontop {
+	height: 80px;
+}
+
 
 	.entry-header {
 		margin-top: -10%;
@@ -1731,7 +1750,6 @@ div.img {
 
 	.heading-text {
 		margin-top: 50%;
-		margin-bottom: 10%;
 	}
 
 	 .heading-text h2 {
@@ -2041,9 +2059,15 @@ div.img {
  @media(min-width:480px) and (max-width:767px){
 
 	.heading-text {
-	margin-top: 20%;
-	margin-bottom: 10%;
+	margin-top: 30%;
 	}
+	
+	.csontop {
+	height: 120px;
+}
+
+	
+
 
 	#address-drop .dropdown {
 		margin-top: 10%;
@@ -2367,11 +2391,17 @@ div.img {
 @media(min-width : 768px) and (max-width:991px) {
 
 	.blog-entry-tile {
-		height: 430px;
+		height: 480px;
 		padding: 10px 30px;
 		font-size: 16px;
 	}
 
+	
+
+	.heading-text {
+		margin-top: 30%;
+	}
+	
 	.round-images-container .row {
 		margin-right:0px;
 	}
@@ -2425,9 +2455,7 @@ div.img {
 		font-weight: normal;
 	}
 
-	.heading-text {
-		margin-top: 30%;
-	}
+
 
 	.sonia-v2-small-text {
 		margin: 5% auto;
@@ -2435,7 +2463,6 @@ div.img {
 
 	.bottom-right {
 		bottom: 1%;
-		right: 5%;
 	}
 
 
@@ -2447,9 +2474,6 @@ div.img {
 		height: 130px;
 	}
 
-	.fancybox-play {
-		bottom: 120%;
-	}
 
 	.engage-header-icon {
 		height: 200px;
@@ -2509,12 +2533,21 @@ div.img {
 /* Medium Devices, Desktops */
 @media(min-width : 992px) and (max-width:1199px) {
 
+.heading-text {
+	margin-top: 20%;
+}
+
+.blog-entry-tile {
+	height: 500px;
+}
+
 
 
 }
 
 /* Large Devices, Wide Screens */
 @media(min-width : 1200px) {
+
 
 
 }
@@ -2539,5 +2572,7 @@ div.img {
 	    filter: none;
 	    -webkit-filter: grayscale(0%);
 	}
+	
+
 }
 
