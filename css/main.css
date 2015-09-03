@@ -30,6 +30,7 @@
 	font-family: 'proxima';
 	font-weight: bold;
 	src: url('/fonts/ProximaNova-Semibold_0.otf');
+	-webkit-font-smoothing: antialiased;
 }
 
 
