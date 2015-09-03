@@ -44,7 +44,7 @@ get_header(); // Loads the header.php template
 				) );
 			?>
 		</div><!-- .entry-content -->
-<?php get_sidebar(); ?>
+<?php // get_sidebar(); ?>
 		<footer class="entry-footer">
 			<?php
 				// /* translators: used between list items, there is a space after the comma */

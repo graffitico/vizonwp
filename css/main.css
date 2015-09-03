@@ -1685,6 +1685,10 @@ div.img {
 		width: 300px;
 	}
 
+	.entry-header {
+		margin-top: -10%;
+	}
+	
 	.inv-tab p {
 		text-align: left;
 	}

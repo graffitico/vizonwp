@@ -101,6 +101,7 @@
 						</div>
 		            </div>
 		        </div>
+				<p style="margin-top:5%">Served with love by <a href="www.thegraffiti.co">Graffiti Collaborative</a></p>
 		    </aside>
     	</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->

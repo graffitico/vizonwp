@@ -86,6 +86,21 @@ p {
     line-height: 1.5;
 }
 
+#header-wrap a {
+	color: #fff;
+}
+
+#header-wrap a:hover,
+#header-wrap a:focus {
+	color: #ffd846;
+	text-decoration: none;
+}
+
+
+.subnav-list-control a:hover, .subnav-list-control a:focus {
+	text-decoration:none;
+}
+
 a:focus,
 a:active,
 a {
@@ -93,9 +108,11 @@ a {
     -webkit-transition: all .1s;
     -moz-transition: all .1s;
     transition: all .1s;
-    text-decoration: none;
-    outline: none;
-    font-weight: bold;
+}
+
+.subnav ul{
+	font-family: proxima;
+	font-weight: bold;
 }
 
 .heading-block a:focus {
@@ -105,8 +122,13 @@ a {
 a:hover {
     text-decoration: none;
     color: #7b7b7b;
-    outline: none;
 }
+
+.blog-entry a:hover {
+    text-decoration: none;
+    color: #7b7b7b;
+}
+
 
 input.yellowbutton {
 	padding: 10px 40px;
