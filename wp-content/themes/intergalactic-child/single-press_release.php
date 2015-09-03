@@ -55,7 +55,9 @@ get_header(); // Loads the header.php template
 					<a   href="/whitepapers" class="btn btn-default" > Back </a>
 				<?php }  ?>
 </center>
-<?php // get_sidebar(); ?>
+
+
+<?php  // get_sidebar(); ?>
 
 		<footer class="entry-footer">
 			<?php

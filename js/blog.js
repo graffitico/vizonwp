@@ -181,7 +181,7 @@ jQuery(function () {
 	$('.dropdown-toggle').click(function () {
 		//var isOpen = $(this).parent().hasClass('open');
 
-		if (isOpen) {
+		if (!isOpen) {
 			//$(this).parent().removeClass('open');
 			isOpen = true;
 			$('.dropdown-menu').hide();
@@ -197,6 +197,6 @@ jQuery(function () {
 		$(this).hide();
 		$("#blog-search-input").show().animate({"width": "150px"},
 			"slow");
-	});	
+	});
 
 });

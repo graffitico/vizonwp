@@ -23,6 +23,8 @@
 	box-sizing: border-box;
 	color: inherit;
 	font-family: proxima;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -370,11 +372,16 @@ background-color: #000;
 }
 
 .btn-xs{
-background-color: #FFD845;
-padding: 3px 18px;
-float: right;
-color: #000;
-border-radius: 8px;
+	background-color: #FFD845;
+	padding: 3px 18px;
+	float: right;
+	color: #000;
+	border-radius: 8px;
+}
+
+.btn-xs:hover {
+	background-color: #000;
+	color: #FFD845;
 }
 
 .meta-auth li , .meta-auth li a {
@@ -481,14 +488,6 @@ float: right;
  	width: 0px;
  	    margin-top: 8px;
  }
-
-body a:hover {
-    color: #f0f0f0;
-    text-decoration-color: -moz-use-text-color;
-    text-decoration-line: none;
-    text-decoration-style: none;
-        background-color: #000;
-}
 
 #single-author h4{
 	background-image: none;
@@ -598,8 +597,8 @@ input.yellowbutton, input.yellowbutton:active, input.yellobutton:focus {
 
 #header-social-inner li a span.fb-contact {
 
-	
- 
+
+
 	background-image: url(/images/home_footer_fb.svg);
 }
 #header-social-inner li a span.fb-contact:hover {
@@ -674,4 +673,16 @@ ul#menu-header-menu li a:hover   {
 
 .modal-body .wpcf7-form p {
     font-size: 18px;
+}
+
+button.close {
+    background-color: #fff;
+    font-size: 20px;
+    padding: 0px;
+
+    border: none;
+}
+
+header a:hover {
+    background: none;
 }
