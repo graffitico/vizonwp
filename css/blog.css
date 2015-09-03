@@ -620,9 +620,10 @@ ul#menu-header-menu li a:hover   {
     z-index: -1 !important;
 }
 
-button, input[type='button'], input[type='reset'], input[type='submit'] {
-    
+ input[type='reset'], input[type='submit'] {
     font-size: 0.8rem;
+    border: none;
+    border-radius: 4px;
    }
 
 
