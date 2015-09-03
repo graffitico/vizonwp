@@ -14,7 +14,7 @@ get_header(); ?>
     		<div class="post-type-title" >Industry Reports</div>
 		<div class='post-list'>
     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
-<a href='<?php echo esc_html( get_post_meta( get_the_ID(), 'link', true ) );   ?>'>
+<a href='<?php echo esc_html( get_post_meta( get_the_ID(), 'link', true ) );   ?>'  target="_blank">
 			<div class='post-item'>
 				<div class='post-title'><?php the_title(); ?></div>
 				<!-- <div class='post-author'>- <?php  // the_author(); ?> </div> -->

@@ -99,6 +99,7 @@
 						</div>
 		            </div>
 		        </div>
+				<p style="margin-top:2%">Served with love by <a href="http://www.thegraffiti.co">Graffiti Collaborative</a></p>
 		    </aside>
     	</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->

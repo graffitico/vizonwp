@@ -1161,13 +1161,41 @@ get_header();
 </svg>
 </div>
 	</div>
+				
+				<div  id="address-drop" class="visible-xs">
+	  <div class="container">
+	      <div class="row text-center">
+		      <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Country
+                <span class="caret"></span>
+		      </button>
+              <ul class="dropdown-menu">
+                <li><a  data-id="contact-8" class="country_drop" >India</a></li>
+                <li><a  data-id="contact-2" class="country_drop" >China</a></li>
+                <li><a  data-id="contact-7" class="country_drop" >Australia</a></li>
+                <li><a  data-id="contact-6"  class="country_drop" >Singapore</a></li>
+			    <li><a data-id="contact-10" class="country_drop"  >Brazil</a></li>
+				<li><a data-id="contact-3" class="country_drop" >Taiwan</a></li>
+				<li><a data-id="contact-5" class="country_drop" >Indonesia</a></li>
+				<li><a  data-id="contact-1" class="country_drop" >Dubai</a></li>
+				<li><a  data-id="contact-4"  class="country_drop" >Japan</a></li>
+			 	<li><a data-id="contact-11"  class="country_drop" >Korea</a></li>
+				<li><a  data-id="contact-9" class="country_drop" >USA</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+    </div>
+
+				
+				
 				<div id="address-number" class="col-sm-3 col-xs-12">
 
 					     <div class="row">
-					       <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
+					       <div class="col-xs-offset-1 col-xs-1 col-sm-1 remove-padding">
 					         <img src="/images/Map-locator.svg" class="address-icons pull-right">
 					       </div>
-						   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
+						   <div class="col-xs-10 col-sm-11 padding-addressmenu text-align: left">
 							 <span> Vizury Interactive Solutions Pvt. Ltd.
 					</br>#24,  4th Floor, Salarpuria Arena,
 					</br>Hosur Main Road,
@@ -1175,10 +1203,10 @@ get_header();
 						   </div>
 					     </div>
 						 <div class="row">
-						   <div class="col-xs-offset-4 col-xs-1 col-sm-1 remove-padding">
+						   <div class="col-xs-offset-1 col-xs-1 col-sm-1 remove-padding">
 					         <img src="/images/contact.svg" class="address-icons pull-right">
 						   </div>
-						   <div class="col-xs-3 col-sm-11 padding-addressmenu text-align: left">
+						   <div class="col-xs-10 col-sm-11 padding-addressmenu text-align: left">
 						     <span>+91 80 49104000 <br/> sales-india@vizury.com </span>
 					       </div>
 					     </div>
@@ -1489,31 +1517,7 @@ kr.vizury@vizury.com</span>
 
 
 
-	<div  id="address-drop" class="visible-xs">
-	  <div class="container">
-	      <div class="row text-center">
-		      <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Select Country
-                <span class="caret"></span>
-		      </button>
-              <ul class="dropdown-menu">
-                <li><a  data-id="contact-8" class="country_drop" >India</a></li>
-                <li><a  data-id="contact-2" class="country_drop" >China</a></li>
-                <li><a  data-id="contact-7" class="country_drop" >Australia</a></li>
-                <li><a  data-id="contact-6"  class="country_drop" >Singapore</a></li>
-			    <li><a data-id="contact-10" class="country_drop"  >Brazil</a></li>
-				<li><a data-id="contact-3" class="country_drop" >Taiwan</a></li>
-				<li><a data-id="contact-5" class="country_drop" >Indonesia</a></li>
-				<li><a  data-id="contact-1" class="country_drop" >Dubai</a></li>
-				<li><a  data-id="contact-4"  class="country_drop" >Japan</a></li>
-			 	<li><a data-id="contact-11"  class="country_drop" >Korea</a></li>
-				<li><a  data-id="contact-9" class="country_drop" >USA</a></li>
-			  </ul>
-			</div>
-		  </div>
-		</div>
-    </div>
-
+	
 
 
 

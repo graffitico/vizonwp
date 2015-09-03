@@ -42,7 +42,7 @@ if ($post->post_title == 'Case Studies') {
 
 			<?php endwhile; ?>
 
-			<?php
+			<!-- <?php
 if($case_posts->max_num_pages>1){?>
     <p class="navrechts">
     <?php
@@ -72,12 +72,11 @@ $url_parts['query'] = http_build_query($params);
 
 
       	?>
-<!-- uncomment that a for older case studies -->
-        <!-- <a class="btn-default"  href="<?php // echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>"> <span class="span_arrow glyphicon glyphicon-chevron-left" ></span> Newer Case Studies  </a>&nbsp;&nbsp; -->
+        <a class="btn-default"  href="<?php // echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>"> <span class="span_arrow glyphicon glyphicon-chevron-left" ></span> Newer Case Studies  </a>&nbsp;&nbsp;
                    
                         <?php }
     // for($i=1;$i<=$case_posts->max_num_pages;$i++){?>
-       <!-- <a href="<?php // echo '?paged=' . $i; ?>" <?php  //echo ($paged==$i)? 'class="selected"':'';?>><?php //echo $i;?></a> -->
+       <a href="<?php // echo '?paged=' . $i; ?>" <?php  //echo ($paged==$i)? 'class="selected"':'';?>><?php //echo $i;?></a>
          <?php
     // }
     if($paged < $case_posts->max_num_pages){
@@ -86,12 +85,11 @@ $url_parts['query'] = http_build_query($params);
 $url_parts['query'] = http_build_query($params);
 
 ?>
-<!-- uncomment that a for older case studies -->
-        <!-- <a  class="btn-default"    href="<?php // echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>">Older Case Studies  <span class="span_arrow glyphicon glyphicon-chevron-right" ></span> </a>  -->
+        <a  class="btn-default"    href="<?php // echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>">Older Case Studies  <span class="span_arrow glyphicon glyphicon-chevron-right" ></span> </a> 
  
     <?php } ?>
     </p>
-<?php } ?>
+<?php } ?> -->
 
 		<?php else : ?>
 
