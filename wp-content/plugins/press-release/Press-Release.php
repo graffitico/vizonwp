@@ -34,13 +34,13 @@ function add_press_release_fields( $press_release_id, $press_release ) {
     // Check post type for movie reviews
     if ( $press_release->post_type == 'press_release' ) {
         // Store data in post meta table if present in post data
-        if ( isset( $_POST['press_release_media_coverage_date'] ) && $_POST['press_release_media_coverage_date'] != '' ) {
+        if ( isset( $_POST['press_release_media_coverage_date'] ) ) {
             update_post_meta( $press_release_id, 'media_coverage_date', $_POST['press_release_media_coverage_date'] );
         }
-         if ( isset( $_POST['press_release_vimeo_link'] ) && $_POST['press_release_vimeo_link'] != '' ) {
+         if ( isset( $_POST['press_release_vimeo_link'] ) ) {
             update_post_meta( $press_release_id, 'vimeo_link', $_POST['press_release_vimeo_link'] );
         }
-       if ( isset( $_POST['press_release_link'] ) && $_POST['press_release_link'] != '' ) {
+       if ( isset( $_POST['press_release_link'] )  ) {
             update_post_meta( $press_release_id, 'link', $_POST['press_release_link'] );
         }
     

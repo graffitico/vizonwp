@@ -43,14 +43,10 @@ if( 'quote' != get_post_format() ) {
 						
 
 
-			<a href="http://www.addtoany.com/subscribe?linkname=Vizury%20Blog&amp;linkurl=http%3A%2F%2Fweb.vizury.com%2Fblog%2Ffeed%2F" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><span class="span-sub" >Subscribe</span></a>
-
+			<a href="javascript:void(0)"  data-toggle="modal" data-target="#myModal" class="a2a_dd addtoany_subscribe" aria-label="Subscribe"><span class="span-sub btn-default">Subscribe</span></a>
+		
 					
-			<script type="text/javascript">//&lt;![CDATA[
-			var a2a_config = a2a_config || {};
-			a2a_config.linkname="Vizury Blog";
-			a2a_config.linkurl="http://web.vizury.com/blog/feed/";
-			//]]&gt;</script><script src="http://static.addtoany.com/menu/feed.js" type="text/javascript"></script>
+	
 
 			
 		</li>
@@ -97,42 +93,13 @@ if( 'quote' != get_post_format() ) {
 	<?php
 	//end post loop
 	endwhile; endif;
-	
-//   $popular_posts_args = array (
-// 	'header_start' => '<h4><span>',
-// 	'header' => 'Most read articles',
-// 	'header_end' => '</span></h4>',
-// 	'limit' => 3,
-// 	'range' => 'all',
-// 	'title_length' => 30,
-// 	'title_by_words ' => false,
-// 	'post_type' => 'post',
-// 	'cat' => $cat_id,
-// 	'excerpt_length' => 75,
-// 	'thumbnail_width' => 200,
-// 	'thumbnail_height' => 200,
-// 	'custom_html' => true,
-// 	'markup' => array(
-// 		'wpp_start' => '<ul class="wpp-list" style="display:inline-flex;">',
-// 		'wpp_end' => '</ul>',
-// 		// 'title-start' => '<h2 class="widgettitle">',
-// 		// 'title-end' => '</h2>'
-// 		) ,
-//     'post_html' => '<li style="background-color:#fff;"><ul>
-// 			<li>{thumb}</li>
-// 			<li> {title} </li>
-// 			<li> {stats} </li>
-// 			<li> {excerpt} </li>
-// 			</ul>
-// 			</li>'
-// 		);
-
-// wpp_get_mostpopular($popular_posts_args);
-
-// wpp_get_mostpopular( 'cat="'.$cat_id.'"&posts_per_page=3' ); 
-
-	//get template sidebar
-
+	?>
+<div>
+	<div class="col-lg-12  read-more section-title">
+<a   href="<?= wp_get_referer(); ?>" class="btn btn-default" > Back </a>
+</div>
+</div>
+<?php
 	$r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => 3, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'category_name' => $cat->name) ) );
      // $suggest_string = 'Suggested Case Studies';
       
@@ -189,7 +156,7 @@ if( 'quote' != get_post_format() ) {
 	
 </div><!--/container -->
 
-			<div class="entry-footer-wrapper">
+<!-- 			<div class="entry-footer-wrapper">
 	
 			
 
@@ -197,7 +164,7 @@ if( 'quote' != get_post_format() ) {
 				<a   href="<?= wp_get_referer(); ?>" class="btn btn-default" > back </a>
 				
 
-			</div><!-- .entry-footer-wrapper -->
+			</div><!-- .entry-footer-wrapper --> 
 
 
 <?php get_footer(); ?>

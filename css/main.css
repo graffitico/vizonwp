@@ -30,6 +30,7 @@
 	font-family: 'proxima';
 	font-weight: bold;
 	src: url('/fonts/ProximaNova-Semibold_0.otf');
+	-webkit-font-smoothing: antialiased;
 }
 
 
@@ -178,7 +179,7 @@ input.yellobutton:focus {
 /** TEXTCSS */
 
 p {
-	text-align:center;
+	text-align:left;
 	font-size: 16px;
 	margin: 1%;
 	font-weight: normal;

@@ -29,10 +29,10 @@ function add_paper_fields( $paper_id, $paper ) {
     // Check post type for movie reviews
     if ( $paper->post_type == 'paper' ) {
         // Store data in post meta table if present in post data
-        if ( isset( $_POST['paper_link'] ) && $_POST['paper_link'] != '' ) {
+        if ( isset( $_POST['paper_link'] )  ) {
             update_post_meta( $paper_id, 'link', $_POST['paper_link'] );
         }
-        if ( isset( $_POST['paper_link_text'] ) && $_POST['paper_link_text'] != '' ) {
+        if ( isset( $_POST['paper_link_text'] )  ) {
             update_post_meta( $paper_id, 'link_text', $_POST['paper_link_text'] );
         }
 
