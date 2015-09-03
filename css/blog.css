@@ -636,3 +636,15 @@ ul#menu-header-menu li a:hover   {
 .modal-body .wpcf7-form p {
     font-size: 18px;
 }
+
+button.close {
+    background-color: #fff;
+    font-size: 20px;
+    padding: 0px;
+
+    border: none;
+}
+
+header a:hover {
+    background: none;
+}

@@ -11,8 +11,8 @@
 
 class wpex_social_widget extends WP_Widget {
 	/** constructor */
-	function __construct() {
-		parent::__construct( false, $name = __('Social Profiles','wpex') );
+	function wpex_social_widget() {
+		parent::WP_Widget( false, $name = __('Social Profiles','wpex') );
 	}
 
 	/** @see WP_Widget::widget */

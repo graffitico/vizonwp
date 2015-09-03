@@ -99,6 +99,11 @@ if( 'quote' != get_post_format() ) {
 <a   href="<?= wp_get_referer(); ?>" class="btn btn-default" > Back </a>
 </div>
 </div>
+
+	
+</div><!--/container -->
+
+
 <?php
 	$r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => 3, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true , 'category_name' => $cat->name) ) );
      // $suggest_string = 'Suggested Case Studies';
@@ -153,8 +158,7 @@ if( 'quote' != get_post_format() ) {
 	//get_sidebar();
 
 	 ?>
-	
-</div><!--/container -->
+
 
 <!-- 			<div class="entry-footer-wrapper">
 	
