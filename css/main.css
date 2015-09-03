@@ -76,6 +76,8 @@ body {
 	box-sizing: border-box;
 	font-family: proxima;
 	color: inherit;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
@@ -1681,7 +1683,7 @@ div.img {
 	.modal-dialog input {
 		width: 300px;
 	}
-	
+
 	.inv-tab p {
 		text-align: left;
 	}
