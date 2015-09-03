@@ -72,8 +72,8 @@ $url_parts['query'] = http_build_query($params);
 
 
       	?>
-
-        <a class="btn-default"  href="<?php echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>"> <span class="span_arrow glyphicon glyphicon-chevron-left" ></span> Newer Case Studies  </a>&nbsp;&nbsp;
+<!-- uncomment that a for older case studies -->
+        <!-- <a class="btn-default"  href="<?php // echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>"> <span class="span_arrow glyphicon glyphicon-chevron-left" ></span> Newer Case Studies  </a>&nbsp;&nbsp; -->
                    
                         <?php }
     // for($i=1;$i<=$case_posts->max_num_pages;$i++){?>
@@ -86,8 +86,8 @@ $url_parts['query'] = http_build_query($params);
 $url_parts['query'] = http_build_query($params);
 
 ?>
-
-        <a  class="btn-default"    href="<?php echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>">Older Case Studies  <span class="span_arrow glyphicon glyphicon-chevron-right" ></span> </a> 
+<!-- uncomment that a for older case studies -->
+        <!-- <a  class="btn-default"    href="<?php // echo $url_parts['scheme'] . '://' . $url_parts['host'] . $url_parts['path'] . '?' . $url_parts['query']; //prev link ?>">Older Case Studies  <span class="span_arrow glyphicon glyphicon-chevron-right" ></span> </a>  -->
  
     <?php } ?>
     </p>

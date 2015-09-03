@@ -24,7 +24,8 @@
 	position: relative;
 	border-bottom: 1px solid #cecece;
 	font-size: 24px;
-	padding: 30px 45px 0 0;
+	padding: 30px 45px 10px 0;
+
 }
 .left-press-posts .post-title {
 	color: #000;

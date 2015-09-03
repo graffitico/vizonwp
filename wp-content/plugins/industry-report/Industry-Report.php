@@ -30,7 +30,10 @@ function add_industry_report_fields( $industry_report_id, $industry_report ) {
     if ( $industry_report->post_type == 'industry_report' ) {
         // Store data in post meta table if present in post data
         if ( isset( $_POST['industry_report_coverage_date'] ) && $_POST['industry_report_coverage_date'] != '' ) {
-            update_post_meta( $press_release_id, 'coverage_date', $_POST['industry_report_coverage_date'] );
+            update_post_meta( $industry_report_id, 'coverage_date', $_POST['industry_report_coverage_date'] );
+        }
+        if ( isset( $_POST['industry_report_external_link'] ) && $_POST['industry_report_external_link'] != '' ) {
+            update_post_meta( $industry_report_id, 'link', $_POST['industry_report_external_link'] );
         }
 
     }
@@ -41,13 +44,17 @@ function add_industry_report_fields( $industry_report_id, $industry_report ) {
 function display_industry_report_meta_box( $industry_report ) {
     // Retrieve current name of the Director and Movie Rating based on review ID
     $coverage_date = esc_html( get_post_meta( $industry_report->ID, 'coverage_date', true ) );
-
+    $link = esc_html( get_post_meta( $industry_report->ID, 'link', true ) );
     
     ?>
     <table>
         <tr>
             <td style="width: 100%">Coverage Date</td>
             <td><input type="text" name="industry_report_coverage_date" value="<?php echo $coverage_date; ?>" /></td>
+        </tr>
+       <tr>
+            <td style="width: 100%">External Link</td>
+            <td><input type="text" name="industry_report_external_link" value="<?php echo $link; ?>" /></td>
         </tr>
 
         

@@ -54,8 +54,20 @@ get_header(); ?>
 				<div class='post-type'><a href="/mediacoverage">Media Coverage</a></div>
 			 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
 <div class="post-item" >
+    <?php 
+    	$link = esc_html( get_post_meta( get_the_ID(), 'link', true ) );
 
-				<a href='<?php the_permalink(); ?>'>
+    ?>
+<?php
+if($link == ''){ ?>
+ <a href='<?php the_permalink(); ?>'> 
+ <?php }else{ ?>
+<a href='<?php echo $link ?>' target="_blank" >
+	<?php
+} ?>
+
+
+			
 				<div class='post-media'>
 					<?php the_post_thumbnail( '', array('class' => "img-responsive")) ?>
 				</div>

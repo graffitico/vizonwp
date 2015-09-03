@@ -560,7 +560,7 @@ jQuery(function () {
 	});
 
 	$("#looking_for").on('change',function() {
-
+		var cval = $(this).val();
 		if(cval == 'Jobs' || cval == 'Something Else'){
 			$("#traffic_container").hide();
 		}else{

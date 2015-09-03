@@ -189,4 +189,15 @@ if( 'quote' != get_post_format() ) {
 	
 </div><!--/container -->
 
+			<div class="entry-footer-wrapper">
+	
+			
+
+				
+				<a   href="<?= wp_get_referer(); ?>" class="btn btn-default" > back </a>
+				
+
+			</div><!-- .entry-footer-wrapper -->
+
+
 <?php get_footer(); ?>
