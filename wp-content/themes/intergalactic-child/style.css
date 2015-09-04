@@ -103,8 +103,14 @@ h1.widget-title {
 .cs-select{
     margin-top: 12px;
     margin-bottom: 12px;
-}
 
+	}
+
+@media (max-width: 479px) {
+	.entry-title{
+	margin-top:60px !important;
+	}
+}
 
 @media (max-width: 479px) and (max-width:767px {
 

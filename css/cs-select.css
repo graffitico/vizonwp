@@ -58,7 +58,9 @@ div.cs-select:focus {
 
 .cs-select > span::after {
 	content: '\25BE';
-	right: 1em;
+	right: 0em;
+	font-size: 3em;
+	top:0.5em;
 
 }
 

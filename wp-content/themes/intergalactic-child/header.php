@@ -47,11 +47,11 @@
 					    EN <span class="caret"></span>
 				  	</button>
 				  	<ul class="dropdown-menu">
-					    <li><a href="#">AR</a></li>
-					    <li><a href="#">JP</a></li>
-					    <li><a href="#">KO</a></li>
-					    <li><a href="#">CN</a></li>
-					    <li><a href="#">PG</a></li>
+					    <li><a href="http://web.vizury.com/website/ar/?v=ar">AR</a></li>
+					    <li><a href="http://web.vizury.com/website/ja/?v=ja">JP</a></li>
+					    <li><a href="http://web.vizury.com/website/ko/?v=ko">KO</a></li>
+					    <li><a href="http://web.vizury.com/website/cn/?v=cn">CN</a></li>
+					    <li><a href="http://web.vizury.com/website/pt/?v=pt">PG</a></li>
 				  	</ul>
 				</li>
 				<li>
@@ -476,12 +476,11 @@
 						<span class='plus-icon'>+</span>
 						<span class='minus-icon'>-</span>
 						<ul class='mobilesubnav'>
-						    <li><a href="#">English</a></li>
-						    <li><a href="#">Arabic</a></li>
-						    <li><a href="#">Japanese</a></li>
-						    <li><a href="#">Korean</a></li>
-						    <li><a href="#">Mandarin</a></li>
-						    <li><a href="#">Portuguese</a></li>
+						<li><a href="http://web.vizury.com/website/ar/?v=ar">AR</a></li>
+					    <li><a href="http://web.vizury.com/website/ja/?v=ja">JP</a></li>
+					    <li><a href="http://web.vizury.com/website/ko/?v=ko">KO</a></li>
+					    <li><a href="http://web.vizury.com/website/cn/?v=cn">CN</a></li>
+					    <li><a href="http://web.vizury.com/website/pt/?v=pt">PG</a></li>
 						</ul>
 					</li>
 					<li>

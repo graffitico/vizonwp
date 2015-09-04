@@ -101,7 +101,10 @@
 						</div>
 		            </div>
 		        </div>
-				<p style="margin-top:2%">Served with love by <a href="htttp://www.thegraffiti.co">Graffiti Collaborative</a></p>
+				<div style="float:right; margin-bottom: 2%;">
+				<p>© Copyright 2015 Vizury | All Rights Reserved</p>
+				<p>Served with love by <a href="http://www.thegraffiti.co">Graffiti Collaborative</a></p>
+				</div>
 		    </aside>
     	</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->
