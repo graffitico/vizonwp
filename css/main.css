@@ -226,6 +226,10 @@ p {
 	padding-top: 6px;
 }
 
+.youdecidetext {
+	margin-top:20%;
+}
+
 .carousel-content {
 	margin-top: 1%;
 }
@@ -791,12 +795,13 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 	background-repeat:no-repeat;
 	animation: nodes-zoom 30s ease-in infinite;
 	position: absolute;
-	left: 20%;
+	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
 	background-size: 100%;
 	background-size: cover;
+	background-position: center center;
 }
 
 .home-page-no-animation {
@@ -1698,6 +1703,10 @@ div.img {
 
 	.modal-dialog input {
 		width: 300px;
+	}
+	
+	.youdecidetext {
+		margin-top: 30%;
 	}
 	
 	.csontop {

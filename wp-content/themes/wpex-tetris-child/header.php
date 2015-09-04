@@ -249,7 +249,7 @@
 				</div>
 				<div class='subnav-block resources-subnav'>
 					<div class='resources-block resources-subnav-block'>
-						<p class='text-center'>Catch some latest trends, listen to stories of customer delight, videos that unravel industry insights and everything else that's moving the marketing world all in one place.</p>
+						<p class='text-center' style="margin: auto 7.5%;">Catch some latest trends, listen to stories of customer delight, videos that unravel industry insights and everything else that's moving the marketing world all in one place.</p>
 						<!-- <ul class='subnav-list-control'>
 							<li>
 								<a href='/products/reach/webreach'>
