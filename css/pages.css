@@ -70,53 +70,57 @@ span {
 	text-align: center;
 }
 
-.ab-section {
-	height: 100vh;
-}
 
 .ab-section-first {
 	height: 100%;
+
 }
 
-#viz-today {
+.abtimg {
+	object-fit: cover;
+	border-bottom: #ffd846 15px solid;
+	}
+
+.viz1 {
 	background: url("/images/about_landing.jpg") no-repeat center center fixed;
 	background-size: cover;
 	border-bottom: #ffd846 15px solid;
-}
+	}
 
-#viz-innovating {
+.viz2 {
 	background: url("/images/about-frame6.svg") no-repeat center center fixed;
 	background-size: cover;
 	border-bottom: #ffd846 15px solid;
 }
 
-#viz-growth {
+.viz3 {
 	background: url("/images/about-frame5.svg") no-repeat center center fixed;
 	background-size: cover;
 	border-bottom: #ffd846 15px solid;
 }
 
-#viz-investors {
+.viz4 {
 	background: url("/images/about-frame4.svg") no-repeat center center fixed;
 	background-size: cover;
 	border-bottom: #ffd846 15px solid;
 }
 
-#viz-team {
+.viz5 {
 	background: url("/images/about-frame3.svg") no-repeat center center fixed;
 	background-size: cover;
 	border-bottom: #ffd846 15px solid;
 }
 
-#viz-idea {
+.viz6 {
 	background: url("/images/about-frame2.svg") no-repeat center center fixed;
 	background-size: cover;
 	border-bottom: #ffd846 15px solid;
 }
 
-#viz-founders {
+.viz7 {
 	background: url("/images/about-frame1.svg") no-repeat center center fixed;
 	background-size: cover;
+	border-bottom: #ffd846 15px solid;
 }
 
 /*------About Section Ends-------*/
@@ -305,9 +309,7 @@ ul.dropdown-menu {
     padding-left: 26%;
 }
 	
-	#address-drop{
-    margin-top: -85px;
-}
+
 
 		/*----------About Page-----------*/
 
@@ -315,11 +317,8 @@ ul.dropdown-menu {
 	background:#202020;
 	color: #fff;
 	display:block;
-	margin-left: 2%;
-	margin-right: 2%;
 	opacity: 0.85;
 	padding:20px;
-	text-align: justify;
 }
 
 
@@ -405,6 +404,24 @@ width: 15em;
     margin-top: 7%;
 }
 */
+
+.ab-box {
+	background:#202020;
+	color: #fff;
+	display:block;
+	opacity: 0.85;
+	padding:20px;
+	text-align: justify;
+}
+
+.ab-section {
+	height: 90vh;
+}
+
+.ab-section-first {
+	height: 110%;
+
+}
 
 ul.dropdown-menu {
     margin-left: 88px;

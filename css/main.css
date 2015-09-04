@@ -1713,7 +1713,8 @@ div.img {
 	}
 
 	.categ-down {
-		margin: 0;
+		margin-left:auto;
+		margin-right:auto;
 		display: block;
 	}
 

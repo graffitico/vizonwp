@@ -82,6 +82,7 @@ div.cs-select:focus {
 
 .cs-select.cs-active .cs-options {
 	visibility: visible;
+	z-index:1;
 }
 
 .cs-select ul {
