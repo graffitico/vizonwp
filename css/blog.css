@@ -484,8 +484,8 @@ float: right;
  }
 
  #blog-search-input{
- 	display: none;
- 	width: 0px;
+ width: 180px;
+    border-radius: 4px;
  	    margin-top: 8px;
  }
 

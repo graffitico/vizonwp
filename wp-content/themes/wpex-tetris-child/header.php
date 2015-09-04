@@ -568,7 +568,7 @@
 
 <ul style="float:right" >
 	   <li>
-	   <form action="<?php echo  get_site_url(); ?>" id="searchbar" method="get"><input id="blog-search-input" type="search" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" value="" name="s"><img class="search-icon"  src="/images/search.svg"></form>
+	   <form action="<?php echo  get_site_url(); ?>" id="searchbar" method="get"><input id="blog-search-input" type="search" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" value="" name="s"><!-- <img class="search-icon"  src="/images/search.svg"> --></form>
 		
 		</li>	
 		<li>

@@ -7,7 +7,9 @@
 
 <div class="csontop" ></div>
 <?php 
-if(has_tag( 'new-casestudies' , $post )){
+
+
+if(has_tag( 'new-casestudies' , $post ) || get_the_category()[0]->cat_name == 'insights'){
 the_title( '<center><h3>', '</h3></center>' ); 
 }
 ?>
