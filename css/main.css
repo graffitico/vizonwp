@@ -226,6 +226,10 @@ p {
 	padding-top: 6px;
 }
 
+.youdecidetext {
+	margin-top:20%;
+}
+
 .carousel-content {
 	margin-top: 1%;
 }
@@ -426,7 +430,7 @@ a:focus a:active .btn-default {
 
 
 .intro-blocks-container {
-	padding: 90px 20px;
+	padding: 90px 20px 20px;
 }
 
 .intro-blocks-container .intro-block {
@@ -789,7 +793,7 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 	background-image: url('/images/home_nodes.jpg');
 	background-attachment:fixed;
 	background-repeat:no-repeat;
-	animation: nodes-zoom 20s ease-in infinite;
+	animation: nodes-zoom 30s ease-in infinite;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -797,6 +801,7 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 	width: 100%;
 	background-size: 100%;
 	background-size: cover;
+	background-position: center center;
 }
 
 .home-page-no-animation {
@@ -804,8 +809,9 @@ background: linear-gradient(to left, #7b7b7b, #ffffff) !important;
 }
 
 @keyframes nodes-zoom {
-	from {transform: scale(1);}
-    to {transform: scale(1.3);}
+	0% {transform: scale(1.3);}
+    50% {transform: scale(1.6);}
+	100% {transform: scale(1.3);}
 }
 
 #heart-animation {
@@ -1699,10 +1705,13 @@ div.img {
 		width: 300px;
 	}
 
-	.csontop {
-	height: 80px;
-}
+	.youdecidetext {
+		margin-top: 30%;
+	}
 
+	.csontop {
+		height: 80px;
+	}
 
 	.entry-header {
 		margin-top: -10%;
@@ -1713,7 +1722,8 @@ div.img {
 	}
 
 	.categ-down {
-		margin: 0;
+		margin-left:auto;
+		margin-right:auto;
 		display: block;
 	}
 

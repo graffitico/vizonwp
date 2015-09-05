@@ -1527,7 +1527,7 @@ kr.vizury@vizury.com</span>
 
 
 
-    <div id="infoform" class="container">
+    <div id="infoform" style="margin-top:-15%" class="container">
 
     	<div class="form form-horizontal">
     	<?php echo do_shortcode('[contact-form-7 id="306" title="Contact form 1"]'); ?>

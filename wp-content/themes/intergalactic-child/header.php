@@ -47,11 +47,11 @@
 					    EN <span class="caret"></span>
 				  	</button>
 				  	<ul class="dropdown-menu">
-					    <li><a href="#">AR</a></li>
-					    <li><a href="#">JP</a></li>
-					    <li><a href="#">KO</a></li>
-					    <li><a href="#">CN</a></li>
-					    <li><a href="#">PG</a></li>
+					    <li><a href="http://web.vizury.com/website/ar/?v=ar">AR</a></li>
+					    <li><a href="http://web.vizury.com/website/ja/?v=ja">JP</a></li>
+					    <li><a href="http://web.vizury.com/website/ko/?v=ko">KO</a></li>
+					    <li><a href="http://web.vizury.com/website/cn/?v=cn">CN</a></li>
+					    <li><a href="http://web.vizury.com/website/pt/?v=pt">PG</a></li>
 				  	</ul>
 				</li>
 				<li>
@@ -250,7 +250,7 @@
 				</div>
 				<div class='subnav-block resources-subnav'>
 					<div class='resources-block resources-subnav-block'>
-						<p class='text-center'>Catch some latest trends, listen to stories of customer delight, videos that unravel industry insights and everything else that's moving the marketing world all in one place.</p>
+						<p class='text-center' style="margin: auto 7.5%;">Catch some latest trends, listen to stories of customer delight, videos that unravel industry insights and everything else that's moving the marketing world all in one place.</p>
 						<!-- <ul class='subnav-list-control'>
 							<li>
 								<a href='/products/reach/webreach'>
@@ -476,12 +476,11 @@
 						<span class='plus-icon'>+</span>
 						<span class='minus-icon'>-</span>
 						<ul class='mobilesubnav'>
-						    <li><a href="#">English</a></li>
-						    <li><a href="#">Arabic</a></li>
-						    <li><a href="#">Japanese</a></li>
-						    <li><a href="#">Korean</a></li>
-						    <li><a href="#">Mandarin</a></li>
-						    <li><a href="#">Portuguese</a></li>
+						<li><a href="http://web.vizury.com/website/ar/?v=ar">AR</a></li>
+					    <li><a href="http://web.vizury.com/website/ja/?v=ja">JP</a></li>
+					    <li><a href="http://web.vizury.com/website/ko/?v=ko">KO</a></li>
+					    <li><a href="http://web.vizury.com/website/cn/?v=cn">CN</a></li>
+					    <li><a href="http://web.vizury.com/website/pt/?v=pt">PG</a></li>
 						</ul>
 					</li>
 					<li>
