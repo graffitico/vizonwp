@@ -1698,7 +1698,7 @@ div.img {
 	.modal-dialog input {
 		width: 300px;
 	}
-	
+
 	.csontop {
 	height: 80px;
 }
@@ -1707,7 +1707,7 @@ div.img {
 	.entry-header {
 		margin-top: -10%;
 	}
-	
+
 	.inv-tab p {
 		text-align: left;
 	}
@@ -2061,12 +2061,12 @@ div.img {
 	.heading-text {
 	margin-top: 30%;
 	}
-	
+
 	.csontop {
 	height: 120px;
 }
 
-	
+
 
 
 	#address-drop .dropdown {
@@ -2366,6 +2366,11 @@ div.img {
 	 	text-align: center;
 	}
 
+	.yellow-text-block a:hover .icon-home_yellowband_arrow {
+		background-color: transparent;
+	}
+
+
 	.engage-marketing-floating-bg,
 	.engage-insights-floating-bg,
 	.engage-data-floating-bg,
@@ -2396,12 +2401,12 @@ div.img {
 		font-size: 16px;
 	}
 
-	
+
 
 	.heading-text {
 		margin-top: 30%;
 	}
-	
+
 	.round-images-container .row {
 		margin-right:0px;
 	}
@@ -2572,7 +2577,7 @@ div.img {
 	    filter: none;
 	    -webkit-filter: grayscale(0%);
 	}
-	
+
 
 }
 

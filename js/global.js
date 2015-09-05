@@ -457,7 +457,7 @@ jQuery(function () {
 		tapDiscard = true;
 		setTimeout(function () {
 			tapDiscard = false;
-		}, 300);
+		}, 1000);
 
 
 		if (!$(this).hasClass('expanded')) {
