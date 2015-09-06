@@ -128,7 +128,7 @@ span {
  /*-------Values Section Begins---------*/
 
 .values-info {
-	background: url ("/imgs/values-info.svg") no-repeat center center;
+	background: url("/imgs/values-info.svg") no-repeat center center;
 }
 
 .yellow-box {
@@ -308,7 +308,7 @@ ul.dropdown-menu {
 #address-number{
     padding-left: 26%;
 }
-	
+
 
 
 		/*----------About Page-----------*/
