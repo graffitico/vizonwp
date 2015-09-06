@@ -97,29 +97,32 @@
 								</li>
 							</ul>
 						</div>
+						<div style='clear:both'></div>
 		            </div>
+					<div  style="text-align:right;">
+						<p>
+							<div>© Copyright 2015 Vizury | All Rights Reserved</div>
+							<div>Served with love by <a href="http://www.thegraffiti.co">Graffiti Collaborative</a></div>
+						</p>
+					</div>
 		        </div>
-				<div  style="float:right; margin-bottom: 2%;">
-				<p>© Copyright 2015 Vizury | All Rights Reserved</p>
-				<p>Served with love by <a href="http://www.thegraffiti.co">Graffiti Collaborative</a></p>
-				</div>
 		    </aside>
     	</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->
 </div><!-- /wrap -->
 
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
-<!-- <script type="text/javascript" src="/js/vizury.main.min.js"></script> -->
-<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/vizury.main.min.js"></script>
+<!-- <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/jquery.fittext.js"></script>
 <script type="text/javascript" src="/js/selectFx.js"></script>
-<script type="text/javascript" src="/js/global.js"></script>
 <script type="text/javascript" src="/js/wow.min.js"></script>
 <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
-<!-- <script type="text/javascript" src="/js/SmoothScroll.js"></script> -->
+<script type="text/javascript" src="/js/SmoothScroll.js"></script>
 <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
 <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="/js/classie.js"></script>
-<script type="text/javascript" src="/js/kwiks.js"></script>
+<script type="text/javascript" src="/js/kwiks.js"></script> -->
+<script type="text/javascript" src="/js/global.js"></script>
 </body>
 </html>
