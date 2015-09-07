@@ -109,7 +109,7 @@ get_header(); ?>
 	<?php endwhile; ?>
 
 				<?php
-	  $mypost = array( 'post_type' => 'press_release', 'release_type'=>'white-paper', 'showposts'=>2 );
+	  $mypost = array( 'post_type' => 'paper', 'paper_type'=>'white-paper', 'showposts'=>2 );
     $loop = new WP_Query( $mypost );
     ?>
 	

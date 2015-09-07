@@ -152,6 +152,7 @@ get_header(); ?>
                     <option value="0">0-1 years</option>
                     <option value="2">2-4 years</option>
                     <option value="5">5-10 years</option>
+                     <option value="10">10-20 years</option>
                 </select>
 
         </div>
@@ -161,8 +162,10 @@ get_header(); ?>
                 <select class="cs-select cs-skin-border skin-border-bg3" id="location-filter" >
                     <option value="" disabled selected>Browse by location</option>
                     <option value="Bangalore">Bangalore</option>
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Kolkata">Kolkata</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="San Francisco">San Francisco</option>
                 </select>
 
         </div>

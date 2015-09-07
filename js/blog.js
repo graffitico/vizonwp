@@ -177,8 +177,14 @@ jQuery(function () {
 		'max-height': ($(window).height() - $('#header').height()) + 'px'
 	});
 
+$(document).click(function() {
+   $('.dropdown-menu').hide();
+});
+
+
 	var isOpen = false;
-	$('.dropdown-toggle').click(function () {
+	$('.dropdown-toggle').click(function (e) {
+		e.stopPropagation();
 		//var isOpen = $(this).parent().hasClass('open');
 
 		if (!isOpen) {
