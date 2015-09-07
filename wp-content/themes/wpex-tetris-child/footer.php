@@ -88,7 +88,7 @@
 								<li>
 									<a href='/contactus'>CONTACT US</a>
 								</li>
-								<li>
+								<li style="white-space: nowrap;">
 									<a href='https://www.linkedin.com/company/vizury-interactive'><span class="linkedin-contact"></span></a>
 									&nbsp;&nbsp;
 									<a href='https://twitter.com/VizuryOneToOne'><span class="twitter-contact"></span></a>
@@ -99,24 +99,31 @@
 								</li>
 							</ul>
 						</div>
+						<div style='clear:both'></div>
 		            </div>
+					<div  style="text-align:right;">
+						<p>
+							<div>© Copyright 2015 Vizury | All Rights Reserved</div>
+							<div>Served with love by <a href="http://www.thegraffiti.co">Graffiti Collaborative</a></div>
+						</p>
+					</div>
 		        </div>
-				<p style="margin-top:2%">Served with love by <a href="htttp://www.thegraffiti.co">Graffiti Collaborative</a></p>
 		    </aside>
     	</footer><!-- /footer -->
 	</div><!-- /footer-wrap -->
 
-<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/vizury.main.min.js"></script>
+<!-- <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/jquery.fittext.js"></script>
 <script type="text/javascript" src="/js/selectFx.js"></script>
-<script type="text/javascript" src="/js/blog.js"></script>
 <script type="text/javascript" src="/js/wow.min.js"></script>
 <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="/js/creative.js"></script>
-<!-- <script type="text/javascript" src="/js/SmoothScroll.js"></script> -->
-<script type="text/javascript" src="/js/classie.js"></script>
+<script type="text/javascript" src="/js/SmoothScroll.js"></script>
 <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="/js/kwiks.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/js/classie.js"></script>
+<script type="text/javascript" src="/js/kwiks.js"></script> -->
+<script type="text/javascript" src="/js/blog.js"></script>
 
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
 </body>

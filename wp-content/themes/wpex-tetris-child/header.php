@@ -46,15 +46,15 @@
 					    EN <span class="caret"></span>
 				  	</button>
 				  	<ul class="dropdown-menu">
-					    <li><a href="#">AR</a></li>
-					    <li><a href="#">JP</a></li>
-					    <li><a href="#">KO</a></li>
-					    <li><a href="#">CN</a></li>
-					    <li><a href="#">PG</a></li>
+					    <li><a href="http://web.vizury.com/website/ar/?v=ar">AR</a></li>
+					    <li><a href="http://web.vizury.com/website/ja/?v=ja">JP</a></li>
+					    <li><a href="http://web.vizury.com/website/ko/?v=ko">KO</a></li>
+					    <li><a href="http://web.vizury.com/website/cn/?v=cn">CN</a></li>
+					    <li><a href="http://web.vizury.com/website/pt/?v=pt">PG</a></li>
 				  	</ul>
 				</li>
 				<li>
-					<input type='button' class='login-button' value='Login' />
+					<a href='https://central.vizury.com/login/#/' target='_blank' class='login-button'>Login</a>
 				</li>
 			</ul>
 		</div><!-- /pre-header -->
@@ -134,7 +134,7 @@
 								</a>
 							</li>
 							<li>
-								<a href='/products/convert/facebookremarketing'>
+								<a href='/products/convert/facebookremarketing' style="margin-bottom: 10px">
 									<span class='icon icon-home_menuicons__fbmarketing'></span>
 									<span>Facebook Remarketing</span>
 								</a>
@@ -166,9 +166,9 @@
 						</ul>
 					</div>
 					<div class='contact-block no-border product-subnav-block'>
-						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
+						<p class='text-center' style='margin-top: 0px'>For personalised marketing</p>
 						<a href="/contactus">
-						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
+						<input class='yellowbutton' style='padding: 10px 30px;  margin-top: -15%;' type='button' value='GET IN TOUCH' /></a>
 					</div>
 				</div>
 				<div class='subnav-block about-subnav'>
@@ -249,7 +249,7 @@
 				</div>
 				<div class='subnav-block resources-subnav'>
 					<div class='resources-block resources-subnav-block'>
-						<p class='text-center'>Catch some latest trends, listen to stories of customer delight, videos that unravel industry insights and everything else that's moving the marketing world all in one place.</p>
+						<p class='text-center' style="margin: auto 7.5%;">Catch some latest trends, listen to stories of customer delight, videos that unravel industry insights and everything else that's moving the marketing world all in one place.</p>
 						<!-- <ul class='subnav-list-control'>
 							<li>
 								<a href='/products/reach/webreach'>
@@ -304,7 +304,7 @@
 					<div class='contact-block no-border resources-subnav-block'>
 						<p class='text-center' style='margin-top: 0'>For personalised marketing</p>
 						<a href="/contactus">
-						<input class='yellowbutton' style='padding: 10px 30px' type='button' value='GET IN TOUCH' /></a>
+						<input class='yellowbutton' style='padding: 10px 30px;  margin-top: -15%;' type='button' value='GET IN TOUCH' /></a>
 					</div>
 				</div>
 			</div>
@@ -475,17 +475,16 @@
 						<span class='plus-icon'>+</span>
 						<span class='minus-icon'>-</span>
 						<ul class='mobilesubnav'>
-						    <li><a href="#">English</a></li>
-						    <li><a href="#">Arabic</a></li>
-						    <li><a href="#">Japanese</a></li>
-						    <li><a href="#">Korean</a></li>
-						    <li><a href="#">Mandarin</a></li>
-						    <li><a href="#">Portuguese</a></li>
+						<li><a href="http://web.vizury.com/website/ar/?v=ar">AR</a></li>
+					    <li><a href="http://web.vizury.com/website/ja/?v=ja">JP</a></li>
+					    <li><a href="http://web.vizury.com/website/ko/?v=ko">KO</a></li>
+					    <li><a href="http://web.vizury.com/website/cn/?v=cn">CN</a></li>
+					    <li><a href="http://web.vizury.com/website/pt/?v=pt">PG</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href='/login'>
-							<input class='login-button' type='button' value='Login' />
+							<a href='https://central.vizury.com/login/#/' target='_blank' class='login-button'>Login</a>
 						</a>
 					</li>
 					<li>

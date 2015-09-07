@@ -124,13 +124,15 @@ button:focus {
 	font-family:'Conv_ProximaNova-Semibold',Sans-Serif;
 	font-size:14px;
 	text-transform:uppercase;
-	float:right;
 	background:#000;
 	border: 0px;
 	padding:15px;
 	width:200px;
 	height:50px;
 	color:#FFF;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .apply-button:hover
