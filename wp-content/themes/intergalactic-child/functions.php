@@ -63,6 +63,7 @@ add_editor_style('style.css');
 
 
 function theme_enqueue_styles(){
+  wp_enqueue_style('main', '/css/vizury.min.css' );
 	wp_enqueue_style('job-op', get_template_directory_uri().'/css/job-op.css' );
 
 
@@ -200,6 +201,14 @@ function ajax_filter_get_posts( $taxonomy ) {
 		'compare' =>'IN'
 		);
  	}
+  elseif ($year_range == 10) {
+    $args[] = array(
+
+    'key'   => 'experience_from',
+    'value' =>   array(10,10.5 , 11 , 11.5 , 12 , 12.5 , 13 , 13.5, 14, 14.5 , 15, 15.5 , 16, 16.5 , 17 , 17.5 , 18 , 18.5 , 19 ,19.5 , 20 )  ,
+    'compare' =>'IN'
+    );
+  }
 
  }
 
@@ -240,7 +249,7 @@ $final
       <div class="col-md-4"><span class="categ-head"><?php  echo intval( get_post_meta( get_the_ID(), 'experience_from', true ) )  ?>-<?php  echo intval( get_post_meta( get_the_ID(), 'experience_to', true ) )  ?> Years</span></div>
       <div class="col-md-4"><span class="categ-head"> <?php echo esc_html( get_post_meta( get_the_ID(), 'posting_location', true ) ); ?>
 
-      <a class="categ-down" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo the_ID() ?>"></a>
+      <a class="categ-down collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo the_ID() ?>"></a>
 
       </span></div>
 
@@ -486,7 +495,21 @@ add_action('widgets_init', 'my_recent_widget_registration');
 remove_action( 'widgets_init', 'intergalactic_widgets_init' );
 
 
+function fb_filter_query( $query, $error = true ) {
 
+if ( is_search() ) {
+$query->is_search = false;
+$query->query_vars['s'] = false;
+$query->query['s'] = false;
+
+// to error
+if ( $error == true )
+$query->is_404 = true;
+}
+}
+
+add_action( 'parse_query', 'fb_filter_query' );
+add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
 
 
 ?>
