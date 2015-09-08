@@ -15608,198 +15608,7 @@ html[xmlns] .slides {
   background-position: 0 -26px;
   cursor: default;
 }
-/* Default custom select styles */
-div.cs-select {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  text-align: left;
-  background: #fff;
-  width: 100%;
-  max-width: 500px;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-div.cs-select:focus {
-  outline: none;
-  /* For better accessibility add a style for this in your skin */
-}
-.cs-select select {
-  display: none;
-}
-.cs-select span {
-  display: block;
-  background: #333;
-  position: relative;
-  cursor: pointer;
-  padding: 1em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-family: 'Conv_ProximaNova-Semibold', Sans-Serif;
-  font-size: 14px;
-  color: #CCC;
-  text-align: center;
-  text-transform: uppercase;
-}
-/* Placeholder and selected option */
-.cs-select > span {
-  padding-right: 3em;
-}
-.cs-select > span::after,
-.cs-select .cs-selected span::after {
-  speak: none;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.cs-select > span::after {
-  content: '\25BE';
-  right: 0em;
-  font-size: 3em;
-  top: 0.5em;
-}
-.cs-select .cs-selected span::after {
-  content: '\2713';
-  margin-left: 1em;
-}
-.cs-select.cs-active > span::after {
-  -webkit-transform: translateY(-50%) rotate(180deg);
-  transform: translateY(-50%) rotate(180deg);
-}
-/* Options */
-.cs-select .cs-options {
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  visibility: hidden;
-}
-.cs-select.cs-active .cs-options {
-  visibility: visible;
-  z-index: 1;
-}
-.cs-select ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-.cs-select ul span {
-  padding: 1em;
-}
-.cs-select ul li.cs-focus span {
-  background-color: #ddd;
-}
-/* Optgroup and optgroup label */
-.cs-select li.cs-optgroup ul {
-  padding-left: 1em;
-}
-.cs-select li.cs-optgroup > span {
-  cursor: default;
-}
-div.cs-skin-border {
-  background: transparent;
-  max-width: 100%;
-}
-@media screen and (max-width: 30em) {
-  div.cs-skin-border {
-    font-size: 1em;
-  }
-}
-.cs-skin-border > span {
-  background: #000;
-}
-.skin-border-bg1 > span {
-  background: #000000 url(../images/hamburger.svg) no-repeat;
-  background-position: 10px;
-}
-.skin-border-bg2 > span {
-  background: #000000 url(../images/suitcase.svg) no-repeat;
-  background-position: 10px;
-}
-.skin-border-bg3 > span {
-  background: #000000 url(../images/location.svg) no-repeat;
-  background-position: 10px;
-}
-.cs-skin-border > span::after,
-.cs-skin-border .cs-selected span::after {
-  font-family: 'icomoon';
-}
-.cs-skin-border ul span {
-  font-family: 'Conv_ProximaNova-Semibold', Sans-Serif;
-}
-.cs-skin-border ul span::after {
-  content: '';
-  opacity: 0;
-}
-.cs-skin-border .cs-selected span::after {
-  content: '\e00e';
-  color: #ddd9c9;
-  font-size: 1.5em;
-  opacity: 1;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-.cs-skin-border.cs-active > span {
-  color: #fff;
-}
-.cs-skin-border .cs-options {
-  color: #FFF;
-  font-size: 0.75em;
-  opacity: 0;
-  -webkit-transition: opacity 0.2s, visibility 0s 0.2s;
-  transition: opacity 0.2s, visibility 0s 0.2s;
-}
-.cs-skin-border.cs-active .cs-options {
-  opacity: 1;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-.cs-skin-border ul span {
-  padding: 1em 2em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-.cs-skin-border .cs-options li span:hover,
-.cs-skin-border li.cs-focus span {
-  background: #555;
-}
-/* CSS Document */
-/* ----------Global Styles----------- */
-.ab-panelCon {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-.yellow-text {
-  color: #ffd846;
-}
-.remove-padding {
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-left: -10%;
-}
-.add-no {
-  margin-top: 20% !important;
-  margin-left: 10%;
-}
-#infoform label {
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 1%;
-}
-span {
-  display: inline-block;
-  vertical-align: middle;
-}
+
 /*-------Investors Page Begins----------*/
 /*----------Investors Page Ends------------*/
 /*----------About Page-----------*/
@@ -19086,4 +18895,198 @@ div.img {
     filter: none;
     -webkit-filter: grayscale(0%);
   }
+}
+
+
+/* Default custom select styles */
+div.cs-select {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+div.cs-select:focus {
+  outline: none;
+  /* For better accessibility add a style for this in your skin */
+}
+.cs-select select {
+  display: none;
+}
+.cs-select span {
+  display: block;
+  background: #333;
+  position: relative;
+  cursor: pointer;
+  padding: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Conv_ProximaNova-Semibold', Sans-Serif;
+  font-size: 14px;
+  color: #CCC;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Placeholder and selected option */
+.cs-select > span {
+  padding-right: 3em;
+}
+.cs-select > span::after,
+.cs-select .cs-selected span::after {
+  speak: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.cs-select > span::after {
+  content: '\25BE';
+  right: 0em;
+  font-size: 3em;
+  top: 0.5em;
+}
+.cs-select .cs-selected span::after {
+  content: '\2713';
+  margin-left: 1em;
+}
+.cs-select.cs-active > span::after {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+/* Options */
+.cs-select .cs-options {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  visibility: hidden;
+}
+.cs-select.cs-active .cs-options {
+  visibility: visible;
+  z-index: 1;
+}
+.cs-select ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.cs-select ul span {
+  padding: 1em;
+}
+.cs-select ul li.cs-focus span {
+  background-color: #ddd;
+}
+/* Optgroup and optgroup label */
+.cs-select li.cs-optgroup ul {
+  padding-left: 1em;
+}
+.cs-select li.cs-optgroup > span {
+  cursor: default;
+}
+div.cs-skin-border {
+  background: transparent;
+  max-width: 100%;
+}
+@media screen and (max-width: 30em) {
+  div.cs-skin-border {
+    font-size: 1em;
+  }
+}
+.cs-skin-border > span {
+  background: #000;
+}
+.skin-border-bg1 > span {
+  background: #000000 url(../images/hamburger.svg) no-repeat;
+  background-position: 10px;
+}
+.skin-border-bg2 > span {
+  background: #000000 url(../images/suitcase.svg) no-repeat;
+  background-position: 10px;
+}
+.skin-border-bg3 > span {
+  background: #000000 url(../images/location.svg) no-repeat;
+  background-position: 10px;
+}
+.cs-skin-border > span::after,
+.cs-skin-border .cs-selected span::after {
+  font-family: 'icomoon';
+}
+.cs-skin-border ul span {
+  font-family: 'Conv_ProximaNova-Semibold', Sans-Serif;
+}
+.cs-skin-border ul span::after {
+  content: '';
+  opacity: 0;
+}
+.cs-skin-border .cs-selected span::after {
+  content: '\e00e';
+  color: #ddd9c9;
+  font-size: 1.5em;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.cs-skin-border.cs-active > span {
+  color: #fff;
+}
+.cs-skin-border .cs-options {
+  color: #FFF;
+  font-size: 0.75em;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, visibility 0s 0.2s;
+  transition: opacity 0.2s, visibility 0s 0.2s;
+}
+.cs-skin-border.cs-active .cs-options {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.cs-skin-border ul span {
+  padding: 1em 2em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cs-skin-border .cs-options li span:hover,
+.cs-skin-border li.cs-focus span {
+  background: #555;
+}
+/* CSS Document */
+/* ----------Global Styles----------- */
+.ab-panelCon {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.yellow-text {
+  color: #ffd846;
+}
+.remove-padding {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: -10%;
+}
+.add-no {
+  margin-top: 20% !important;
+  margin-left: 10%;
+}
+#infoform label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1%;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
 }
