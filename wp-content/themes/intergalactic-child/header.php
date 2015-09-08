@@ -69,16 +69,16 @@
 				<div class="vizuri_menu_class">
 					<ul id="menu-header-menu" class="sf-menu sf-js-enabled">
 						<li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
-							<a href="/products">PRODUCTS</a>
+							<a href="/products" hassub="true">PRODUCTS</a>
 						</li>
 						<li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-							<a href="/story">ABOUT</a>
+							<a href="/story" hassub="true">ABOUT</a>
 						</li>
 						<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
 							<a href="/publishers">PUBLISHERS</a>
 						</li>
 						<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-							<a href="/casestudies">RESOURCES</a>
+							<a href="/casestudies" hassub="true">RESOURCES</a>
 						</li>
 						<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
 							<a href="/vizuryblog">BLOG</a>

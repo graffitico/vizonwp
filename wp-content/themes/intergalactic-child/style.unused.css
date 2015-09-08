@@ -4416,36 +4416,6 @@ button.close {
   }
 }
 @media (max-width: 767px) {
-}
-@media (max-width: 767px) {
-}
-@media (max-width: 767px) {
-}
-@media (min-width: 768px) and (max-width: 991px) {
-}
-@media (min-width: 768px) and (max-width: 991px) {
-}
-@media (min-width: 768px) and (max-width: 991px) {
-}
-@media (min-width: 768px) and (max-width: 991px) {
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-@media (min-width: 1200px) {
-}
-@media (min-width: 1200px) {
-}
-@media (min-width: 1200px) {
-}
-@media (min-width: 1200px) {
-}
-@media (max-width: 767px) {
 
   .hidden-xs {
     display: none !important;
@@ -4465,16 +4435,6 @@ button.close {
   .hidden-lg {
     display: none !important;
   }
-}
-@media print {
-}
-@media print {
-}
-@media print {
-}
-@media print {
-}
-@media print {
 }
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
 @media (max-width: 767px) {
@@ -10735,7 +10695,7 @@ button#menu1 {
   width: 200px;
   height: 48px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
   #pre-header {
     display: none;
   }
@@ -11846,6 +11806,14 @@ div.img {
   text-align: center;
   font-weight: normal;
 }
+/** Image fix for ipad and other touch devices in landscape mode */
+.show-on-touch-device {
+  display: none;
+}
+.hide-on-touch-device {
+  display: block;
+}
+
 /** Intro text container */
 
 .yellow-text-block h4 {
@@ -12618,7 +12586,7 @@ div.img {
   }
 }
 /* Anything less than App */
-@media (max-width: 991px) {
+@media (max-width: 1025px) {
   .tab-pane {
     height: auto;
   }
@@ -12652,6 +12620,13 @@ div.img {
   .portfolio-box {
     max-width: none;
   }
+  .show-on-touch-device {
+    display: block;
+  }
+  .hide-on-touch-device {
+    display: none;
+  }
+
 }
 /* Small Devices, Tablets */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -12828,6 +12803,4 @@ div.img {
   .entry-title {
     margin-top: 60px !important;
   }
-}
-@media (max-width: 479px) and (max-width: 767px) {
 }
