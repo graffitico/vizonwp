@@ -123,7 +123,7 @@ function intergalactic_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_style( 'intergalactic-lato', intergalactic_fonts_url(), array(), null );
+//	wp_enqueue_style( 'intergalactic-lato', intergalactic_fonts_url(), array(), null );
 }
 add_action( 'wp_enqueue_scripts', 'intergalactic_scripts' );
 

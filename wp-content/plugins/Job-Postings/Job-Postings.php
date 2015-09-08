@@ -308,7 +308,7 @@ function display_job_posting_meta_box( $job_posting ) {
                 <select style="width: 100px" name="job_posting_experience_from">
                 <?php
                 // Generate all items of drop-down list
-                for ( $exp = 10; $exp >= 1; $exp -- ) {
+                for ( $exp = 20; $exp >= 1; $exp -- ) {
                 ?>
                     <option value="<?php echo $exp; ?>" <?php echo selected( $exp, $experience_from ); ?>>
                     <?php echo $exp; ?> years <?php } ?>
@@ -319,7 +319,7 @@ function display_job_posting_meta_box( $job_posting ) {
                 <select style="width: 100px" name="job_posting_experience_to">
                 <?php
                 // Generate all items of drop-down list
-                for ( $exp = 10; $exp >= 1; $exp -- ) {
+                for ( $exp = 20; $exp >= 1; $exp -- ) {
                 ?>
                     <option value="<?php echo $exp; ?>" <?php echo selected( $exp, $experience_to ); ?>>
                     <?php echo $exp; ?> years <?php } ?>
