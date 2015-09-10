@@ -742,3 +742,7 @@ button.close {
 header a:hover {
     background: none;
 }
+
+table, td {
+   border: 1px solid black;
+}

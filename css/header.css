@@ -246,7 +246,7 @@
 	height: 48px;
 }
 
-@media(max-width: 991px) {
+@media(max-width: 1024px) {
 
 	#pre-header {
 		display: none;
