@@ -636,6 +636,7 @@ img.hoverImages:hover {
 .footersubmenu p {
 	text-align: left;
 	margin-left:0%;
+    white-space: nowrap;
 }
 
 .footertertiarymenu{
