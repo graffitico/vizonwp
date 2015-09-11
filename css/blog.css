@@ -746,3 +746,8 @@ header a:hover {
 table, td {
    border: 1px solid black;
 }
+
+
+div.wpcf7-validation-errors {
+    border: none;
+}
