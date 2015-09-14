@@ -10,9 +10,10 @@ jQuery(function () {
 	var tapDiscard = false;
     var screenWidth = $(window).width();
 
+
     var url = window.location.href ;
 
-    console.log(url);
+   // console.log(url);
 
     if(url == 'http://stageweb.vizury.com/contactus/#wpcf7-f4-o1'  || url == 'https://stageweb.vizury.com/contactus/#wpcf7-f4-o1'  )
 {
@@ -20,6 +21,20 @@ jQuery(function () {
 
 }
 
+
+
+	// IE Specific fixes
+	if (window.navigator.userAgent.indexOf('MSIE ')) {
+
+		  $('.header-mob').css({
+		  	width: '100%'
+		  });
+
+		  $('.nav-pills > li > a > img.horizontal-logo').css({
+		  	width: '100%',
+		  	height: '75px'
+		  });
+	}
 
 
 	function showSubNav(subnavName) {
@@ -103,7 +118,7 @@ jQuery(function () {
 	});
 
 	// Mobile Navigation
-	$('.navigation-trigger').on('click touchend', function (e) {
+	$('.navigation-trigger').on('touchend', function (e) {
 
 		if (tapDiscard) {
 			return;
@@ -121,7 +136,7 @@ jQuery(function () {
 		}
 	});
 
-	$('.mobilenavigation li').on('click touchend', function (e) {
+	$('.mobilenavigation li').on('touchend', function (e) {
 
 		if (tapDiscard) {
 			return;
@@ -460,7 +475,7 @@ jQuery(function () {
    	//$('.hoverable-text').on("transitionend mozTransitionEnd webkitTransitionEnd oTransitionEnd MSTransitionEnd", );
 
 	//Simulate hover action
-	$('.hoverable-text').on('click touchend', function () {
+	$('.hoverable-text').on('touchend', function () {
 
 		if (tapDiscard) {
 			return;

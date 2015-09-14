@@ -23,20 +23,21 @@ add_post_type_support( 'press_release', 'author' );
 add_post_type_support( 'industry_report', 'author' );
 add_post_type_support( 'paper', 'author' );
 add_image_size( 'mycustomsize', '250px' ,'', true );
-    // function my_init()   
-    // {  
-    //     if (is_admin() === false)   
-    //     {  
-    //         wp_deregister_script('jquery');  
-      
-    //         // Load the copy of jQuery that comes with WordPress  
-    //         // The last parameter set to TRUE states that it should be loaded  
-    //         // in the footer.  
-    //         wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, '1.11.2', TRUE);  
-      
-    //         wp_enqueue_script('jquery');  
-    //     }  
-    // }  
+
+    // function my_init()
+    // {
+    //     if (is_admin() === false)
+    //     {
+    //         wp_deregister_script('jquery');
+
+    //         // Load the copy of jQuery that comes with WordPress
+    //         // The last parameter set to TRUE states that it should be loaded
+    //         // in the footer.
+    //         wp_register_script('jquery', '/wp-includes/js/jquery/jquery.js', FALSE, '1.11.2', TRUE);
+
+    //         wp_enqueue_script('jquery');
+    //     }
+    // }
     // add_action('init', 'my_init');
 
 add_action( 'wp_ajax_echo_shortcode', 'echo_shortcode_callback' );
@@ -65,8 +66,6 @@ add_editor_style('style.css');
 function theme_enqueue_styles(){
   wp_enqueue_style('main', '/css/vizury.min.css' );
 	wp_enqueue_style('job-op', get_template_directory_uri().'/css/job-op.css' );
-
-
 }
 
 
@@ -185,7 +184,7 @@ function ajax_filter_get_posts( $taxonomy ) {
 		'key'		=> 'experience_from',
 		'value'	=>    array(0,0.5,1, 1.5),
 		'compare' =>'IN'
-		
+
 		);
  	}elseif ($year_range == 2) {
  		$args[] = array(
@@ -432,7 +431,7 @@ $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' =
 
  while( $r->have_posts() ) : $r->the_post(); ?>
 
-  <?php 
+  <?php
 $link = '';
 $final_link = '';
   if ( has_post_thumbnail() ) {
@@ -442,16 +441,16 @@ $final_link = '';
  } ?>
 
 
-    <?php 
+    <?php
       $link = esc_html( get_post_meta( get_the_ID(), 'link', true ) );
 
     ?>
 <?php
-if($link == ''){ 
- $final_link = get_permalink(); 
- }else{ 
-  $final_link =  $link; 
- 
+if($link == ''){
+ $final_link = get_permalink();
+ }else{
+  $final_link =  $link;
+
 } ?>
               <div class="col-sm-4 blog-entry-tile">
                 <div class="ih-item square colored effect4" style="background-color: #626262;" >
