@@ -10,7 +10,9 @@
  *
  * @package Intergalactic
  */
-
+@ini_set('session.cookie_httponly', 'On');
+@ini_set('session.cookie_secure', 'On');
+@ini_set('session.use_only_cookies', 'On');
 get_header(); ?>
 
 	<div id="primary" class="content-area">

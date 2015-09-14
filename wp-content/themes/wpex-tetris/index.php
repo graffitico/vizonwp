@@ -9,6 +9,9 @@
  * @link http://wpexplorer.com
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
+@ini_set('session.cookie_httponly', 'On');
+@ini_set('session.cookie_secure', 'On');
+@ini_set('session.use_only_cookies', 'On');
 
 get_header(); // Loads the header.php template
 

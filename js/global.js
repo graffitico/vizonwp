@@ -10,6 +10,18 @@ jQuery(function () {
 	var tapDiscard = false;
     var screenWidth = $(window).width();
 
+    var url = window.location.href ;
+
+    console.log(url);
+
+    if(url == 'http://stageweb.vizury.com/contactus/#wpcf7-f4-o1'  || url == 'https://stageweb.vizury.com/contactus/#wpcf7-f4-o1'  )
+{
+	location.href = 'http://stageweb.vizury.com/contactus/';
+
+}
+
+
+
 	function showSubNav(subnavName) {
 
 		if (subnavName) {

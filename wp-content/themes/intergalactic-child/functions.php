@@ -512,4 +512,41 @@ add_action( 'parse_query', 'fb_filter_query' );
 add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
 
 
+
+// add_filter('site_url',  'wpadmin_filter', 10, 3);
+//  function wpadmin_filter( $url, $path, $orig_scheme ) {
+//   $old  = array( "/(wp-admin)/");
+//   $admin_dir = WP_ADMIN_DIR;
+//   $new  = array($admin_dir);
+//   return preg_replace( $old, $new, $url, 1);
+//  }
+
+
+
+// add_action('login_form','redirect_wp_admin');
+
+// function redirect_wp_admin(){
+// $redirect_to = $_SERVER['REQUEST_URI'];
+
+// if(count($_REQUEST)> 0 && array_key_exists('redirect_to', $_REQUEST)){
+// $redirect_to = $_REQUEST['redirect_to'];
+// $check_wp_admin = stristr($redirect_to, 'wp-admin');
+// if($check_wp_admin){
+// wp_safe_redirect( '404.php' );
+// }
+// }
+// }
+
+// add_action('init','custom_login');
+
+// function custom_login(){
+//  global $pagenow;
+//  if( 'wp-login.php' == $pagenow ) {
+//   wp_redirect('404.php');
+//   exit();
+//  }
+// }
+
+
+
 ?>

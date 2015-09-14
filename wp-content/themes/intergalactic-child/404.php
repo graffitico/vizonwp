@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<div style="margin-top:200px" ></div>
+<div style="margin-top:250px" ></div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

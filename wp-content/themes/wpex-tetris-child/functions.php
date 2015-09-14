@@ -31,5 +31,17 @@ function filter_posts_on_homepage( $query ) {
 add_action( 'pre_get_posts', 'filter_posts_on_homepage' );
 
 
+add_filter('wp_get_attachment_url', 'honor_ssl_for_attachments');
+function honor_ssl_for_attachments($url) {
+
+	$http = site_url(FALSE, 'http');
+	$https = site_url(FALSE, 'https');
+	if(is_home()){
+	echo ( $_SERVER['HTTPS'] == 'on' ) ? str_replace($http, $https, $url) : $url;
+
+	}
+
+}
+
 
 ?>
