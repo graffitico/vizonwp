@@ -7,3 +7,6 @@ Author URI: http://thegraffiti.co;
 Text Domain: US Main
 Tags: dark, black, white, one-column, right-sidebar, custom-background, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, post-formats, rtl-language-support, translation-ready, fixed-layout, responsive-layout, accessibility-ready
 */
+body{
+	background-color: #000;
+}

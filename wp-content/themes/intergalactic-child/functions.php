@@ -548,4 +548,67 @@ add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
 
 
 
+add_action('wp_head' , 'redirect_check'  );
+
+function redirect_check(){
+$site_id = get_current_blog_id();
+$site = get_blog_details( array( 'blog_id' => $site_id ));
+
+
+if( $site->blogname == "vizury.com" && is_front_page() ){
+
+  if(!isset($_GET['redirect']) && $_GET['redirect'] != "false" ){
+
+  $ip = get_client_ip();
+  $ip_data =   geoCheckIP( $ip );
+  if($ip_data != "ip_invalid" && $ip_data->status  == "success")
+  {
+    if($ip_data->countryCode == 'US' ){
+     
+        wp_redirect( home_url()."/mobile" ); exit;
+    }
+  }
+}
+
+
+}
+
+
+
+
+
+
+}
+
+// Function to get the client IP address
+function get_client_ip() {
+    $ipaddress = getenv('HTTP_CLIENT_IP')?:
+getenv('HTTP_X_FORWARDED_FOR')?:
+getenv('HTTP_X_FORWARDED')?:
+getenv('HTTP_FORWARDED_FOR')?:
+getenv('HTTP_FORWARDED')?:
+getenv('REMOTE_ADDR');
+    return $ipaddress;
+}
+
+
+function geoCheckIP( $ip )
+{
+    //check, if the provided ip is valid
+    if( !filter_var( $ip, FILTER_VALIDATE_IP ) )
+    {
+       return "ip_invalid";
+    }else{
+          //contact ip-server
+    $response=@file_get_contents( 'http://ip-api.com/json/'.$ip );
+    return json_decode($response);
+    }
+
+
+    
+}
+
+
+
+
 ?>
