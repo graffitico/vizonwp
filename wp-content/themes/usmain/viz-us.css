@@ -1,91 +1,15 @@
-/*
-Theme Name: US Main
-Description: This theme is custom created for US landing page 
-Version: 1.0
-Author: Graffiti Collaborative
-Author URI: http://thegraffiti.co;
-Text Domain: US Main
-Tags: dark, black, white, one-column, right-sidebar, custom-background, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, post-formats, rtl-language-support, translation-ready, fixed-layout, responsive-layout, accessibility-ready
-*/
-
 @import url('./animate.min.css');
 
-/*--General--*/
-
-@font-face{font-family:'proxima';src:url('/fonts/ProximaNova-Light_0.otf')}
-@font-face{font-family:'proxima';font-weight:700;src:url('/fonts/ProximaNova-Semibold_0.otf');-webkit-font-smoothing:antialiased}
-
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{font-family:proxima;font-weight:inherit;font-style:inherit;margin:0;padding:0;vertical-align:baseline;border:0;outline:0}
-html{font-size:62.5%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
-*,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-body{background:#fff}
-article,aside,details,figcaption,figure,footer,header,main,nav,section{display:block}
-ol,ul{list-style:none}
-table{border-spacing:0;border-collapse:separate}
-caption,th,td{font-weight:400;text-align:left}
-a:focus, a:hover, a:active{outline:0;color:#ffd846;text-decoration:none;}
-a img{border:0}
-p{font-size:16px;}
-table{border-collapse:collapse;}
-td{vertical-align:middle;}
-.white-text{color:#fff;}
-h1,h2,h3,h4,h5,h6 {font-weight:700px;}
-h4{font-size:18px;}
-
-/*--Navigation--*/
-
-.navigation-trigger {
-	position:absolute;
-	right:2%;
-	top:7%;
+@font-face {
+   font-family: 'proxima';
+   src: url('/fonts/ProximaNova-Light_0.otf');
 }
 
-.burger {
-	width:60px;
+@font-face {
+	font-family: 'proxima';
+	font-weight: bold;
+	src: url('/fonts/ProximaNova-Semibold_0.otf');
 }
-
-#wrap {
-	width:100%
-}
-
-.clearfix {
-	display:table;
-	content:" ";
-}
-
-#header-wrap {
-	position:fixed;
-	width:100%;
-	top:0;
-	z-index:10;
-}
-
-.mobilenavigation {
-	list-style-type:none;
-	font-family:proxima;
-	font-size: 20px;
-	line-height:1.3em;
-	background-color:rgba(32,32,32,0.75);
-	color:#fff;
-	margin:0;
-	position:relative;
-	overflow:auto;
-	padding:15%;
-}
-
-.mobilenavigation a {
-	color:#fff;
-}
-
-.mobilenavigation a:hover {
-	color:#ffd846;
-}
-
-.mobilenavigation li {
-	margin: 5% auto;
-}
-
-/*--Main Content--*/
 
 .frame-1, .frame-2, .frame-3,.frame-4 {
 	height:100vh;
@@ -263,8 +187,6 @@ h4{font-size:18px;}
 	margin-left:75%;
 	margin-top:-15%;
 }
-
-
 
 @media screen and (max-width: 479px) {
 
