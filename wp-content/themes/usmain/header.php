@@ -28,16 +28,16 @@
 	<header id="header" class="clearfix">
 		<nav>
 			<div class='navigation-trigger'>
-				<img class="burger" src='/images/burger.png'>
+				<img class="burger" src='/images/burger.svg'>
 			</div>
 			<ul class="mobilenavigation">
-				<li><a href='app-retarget'>App Retargeting</a></li>
-				<li><a href='app-reengage'>App Re-engagement</a></li>
-				<li><a href='benefits'>Benefits</a></li>
-				<li><a href='clients'>Clients</a></li>
-				<li><a href='readmore'>More about Vizury Mobile</a></li>
-				<li><a href='publishers'>Publishers</a></li>
-				<li><a href='contact'>Get in touch</a></li>
+				<li><a href='#app-retarget'>App Retargeting</a></li>
+				<li><a href='#app-reengage'>App Re-engagement</a></li>
+				<li><a href='#benefits'>Benefits</a></li>
+				<li><a href='#clients'>Clients</a></li>
+				<li><a href='#readmore'>More about Vizury Mobile</a></li>
+				<li><a href='#publishers'>Publishers</a></li>
+				<li><a href='#contact'>Get in touch</a></li>
 				<li><a href='https://www.vizury.com' target="_blank">Vizury Corporate</a></li>
 			</ul>
 		</nav>
