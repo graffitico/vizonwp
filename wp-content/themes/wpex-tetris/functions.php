@@ -78,7 +78,7 @@ add_action( 'after_setup_theme', 'wpex_setup' );
 // Replace Soliloquy affilate
 add_filter( 'tgmsp_affiliate_url', 'wpex_affiliate_url' );
 function wpex_affiliate_url() {
-	return 'http://www.wpexplorer.com/soliloquy-wordpress-plugin';
+	return 'https://www.wpexplorer.com/soliloquy-wordpress-plugin';
 }
 
 // Change default read more style

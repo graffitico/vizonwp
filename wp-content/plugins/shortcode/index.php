@@ -3,7 +3,7 @@
 Plugin Name: Shortcodes Plugin
 Description: A WordPress plugin that will list Custom shortcodes in the dropdown on the editor 
 Plugin URI: http://thegraffiti.co
-Author: Paulund
+Author: Grafitti
 Author URI:  http://thegraffiti.co
 Version: 1.0
 */

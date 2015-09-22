@@ -26,7 +26,7 @@ if ( ! function_exists( 'wpex_load_scripts' ) ) {
 		wp_enqueue_style( 'wpex-responsive', WPEX_CSS_DIR . '/responsive.css' );
 
 		// Google Fonts
-		wp_enqueue_style( 'opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese,latin-ext', 'style' );
+		wp_enqueue_style( 'opensans', 'https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700&subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese,latin-ext', 'style' );
 
 		/*******
 		*** jQuery

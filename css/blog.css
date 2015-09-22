@@ -496,10 +496,10 @@ border-radius: 4px;
 
 
 body.category-marketing{
-	background-color: #000000; background-image: url('http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/uploads/2015/02/marketing-bg.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll;
+	background-color: #000000; background-image: url('/images/marketing-bg.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll;
 }
 body.category-technology{
-	background-color: #000000; background-image: url('http://graffiti-media.co/roshni/vizury_tech_blog/wp-content/uploads/2015/02/tech-bg.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll;
+	background-color: #000000; background-image: url('/images/tech-bg.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll;
 }
 
 .nav-div-left{
