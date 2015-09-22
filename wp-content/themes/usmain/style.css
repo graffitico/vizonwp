@@ -46,6 +46,14 @@ h4{font-size:18px;}
 
 /*--Navigation--*/
 
+.full_logo {
+	width:200px;
+	height:48px;
+	position:absolute;
+	top:12%;
+	left:2%;
+}
+
 .navigation-trigger {
 	position:absolute;
 	right:2%;
@@ -404,6 +412,10 @@ h4{font-size:18px;}
 }
 
 @media screen and (max-width: 479px) {
+
+.frame-2 {
+	height: 100%;
+}
 
 }
 

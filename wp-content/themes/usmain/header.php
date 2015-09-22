@@ -26,6 +26,10 @@
 <div id="wrap" class="clearfix">
 	<div id="header-wrap">
 	<header id="header" class="clearfix">
+		<div id="logo">
+			<a href="/" class="hidden-xs hidden-sm" title="Vizury Home" rel="home"><img src="/images/logo_full.svg" class="full_logo" alt="Vizury Logo" /></a>
+			<a href="/" class="hidden-lg hidden-md" title="Vizury Home" rel="home"><img src="/images/logo_v.svg" class="full_logo" style="width: auto;" alt="Vizury Logo" /></a>
+		</div>
 		<nav>
 			<div class='navigation-trigger'>
 				<img class="burger" src='/images/burger.svg'>
