@@ -8,11 +8,14 @@ Text Domain: US Main
 Tags: dark, black, white, one-column, right-sidebar, custom-background, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, post-formats, rtl-language-support, translation-ready, fixed-layout, responsive-layout, accessibility-ready
 */
 @import url('/css/animate.min.css');
+@import url('/css/sprites.css');
 
 /*--General--*/
 
 @font-face{font-family:'proxima';src:url('/fonts/ProximaNova-Light_0.otf')}
-@font-face{font-family:'proxima';font-weight:700;src:url('/fonts/ProximaNova-Semibold_0.otf');-webkit-font-smoothing:antialiased}
+@font-face{font-family:'proximab';font-weight:700;src:url('/fonts/ProximaNova-Semibold_0.otf');-webkit-font-smoothing:antialiased}
+
+/*--General Rules--*/
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{font-family:proxima;font-weight:inherit;font-style:inherit;margin:0;padding:0;vertical-align:baseline;border:0;outline:0}
 html{font-size:62.5%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
@@ -28,10 +31,28 @@ p{font-size:16px;}
 table{border-collapse:collapse;}
 td{vertical-align:middle;}
 .white-text{color:#fff;}
-h1,h2,h3,h4,h5,h6 {font-weight:700px;}
+h1,h2,h3,h4,h5,h6 {font-weight:700px;font-family:proximab;}
 h4{font-size:18px;}
 
+.section-title {
+	margin: 2% auto;
+	text-align: center;
+	position: relative;
+}
+
+.yellow-text {
+	color:#ffd846;
+}
+
 /*--Navigation--*/
+
+.full_logo {
+	width:200px;
+	height:48px;
+	position:absolute;
+	top:12%;
+	left:2%;
+}
 
 .navigation-trigger {
 	position:absolute;
@@ -90,14 +111,15 @@ h4{font-size:18px;}
 	height:100vh;
 }
 
-.frame-1 .row {
-	height:100%;
+
+.frame1-text {
+	height: 33%;
 }
 
 .frame1-leftpane {
 	background: #fff url("/images/BG-7.jpg") no-repeat center center fixed;
 	background-size: cover;
-	height:100%;
+	height:100vh;
 }
 
 .frame-1 h2 {
@@ -108,22 +130,12 @@ h4{font-size:18px;}
 	margin-right:auto;
 }
 
-.frame1-item-1 {
-	background: #fff url("/images/BG-1.jpg") no-repeat center center fixed;
-	background-size: cover;
-	height: 100%;
-}
-
-.frame1-item-2 {
-	background: #fff url("/images/BG-2.jpg") no-repeat center center fixed;
-	background-size: cover;
-	height:100%;
-}
-
-.frame1-item-3 {
-	background: #fff url("/images/BG-3.jpg") no-repeat center center fixed;
-	background-size: cover;
-	height:100%;
+.frame1-rightpane {
+	background-image:url("/images/BG-9.jpg");
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: 100vw 100vh;
+	height: 100vh;
 }
 
 .frame-2 h2 {
@@ -186,26 +198,97 @@ h4{font-size:18px;}
 	padding-right: 10%;
 }
 
+/*--App Reengagement--*/
+
 .frame4-leftpane {
 	background: #fff url("/images/BG-6.jpg") no-repeat center center fixed;
 	background-size: cover;
 	height:100%;
 }
 
-.frame-5 {
-	background:#222;
+.carousel-control {
+	margin-top: 5%;
+	position:absolute;
 }
 
-.frame-6 {
-	height:100%;
-	margin-top:10%;
+
+.carousel-inner > .item > img {
+	height:200px;
 }
+
+.features-icon {
+	margin-top: 25%;
+	margin-left:19%;
+}
+
+.features-carousel .right {
+	right: 60%;
+	top:40%;
+	position:absolute;
+}
+
+.features-carousel .left {
+	left: 15%;
+	top:40%;
+	position:absolute;
+}
+
+.features-content {
+	position:absolute;
+	left:72%;
+	top:5%;
+}
+
+.carousel {
+	position:relative;
+}
+
+.carousel-inner {
+	position:relative;
+	overflow:hidden;
+}
+
+.carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
+	display:block;
+}
+
+.carousel-inner > .item {
+	-webkit-transition:.6s ease-in-out left;
+	transition:.6s ease-in-out left;
+}
+
+
+/*--Benefits--*/
+
+.frame-5 {
+	background-image:url('/images/BG-11.jpg');
+	background-attachment:fixed;
+	height:100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 5%;
+	padding-bottom:10%;
+}
+
+.box-touch {
+	margin-bottom: -5%;
+}
+
 
 .frame-7 {
 	background: #fff url("/images/BG-7.jpg") no-repeat center center fixed;
 	background-size: cover;
 	height:30%;
 }
+
+/*--Clients--*/
+
+.frame-6 {
+	height:100%;
+	margin: 5% auto;
+}
+
+/*--CaseStudy---*/
 
 .big-white-number {
 	font-size:120px;
@@ -230,42 +313,109 @@ h4{font-size:18px;}
 .inline-content p{
 	display:inline-block;
 	vertical-align:middle;
-	margin:auto 5%
+	margin:1%;
+	font-family:proximab;
 }
 
-.carousel-inner > .item > img {
-	height:200px;
+
+/*--Read More--*/
+
+.frame-8 {
+	margin: 3% auto;
 }
 
-.features-icon {
-	margin-top: 25%;
-	margin-left:18%;
+.blog-entry-tile {
+	height:500px;
+	padding:15px 30px;
+	margin-bottom:35px;
+	font-size:16px
 }
 
-.carousel-content h4 {
+.blog-entry-tile p {
+	text-align:left
+}
+
+.img img {
+	height: 280px;
+	text-align:center;
+}
+
+.bottom-right {
+	position: absolute;
+	right: 8%;
+	bottom: 1%;
+	height: 25px;
+}
+
+.blog-entry-tile h4 {
+	margin-top:5%;
+}
+
+/*--Publishers--*/
+
+.logos {
+	padding-bottom:40px;
+	padding-top:40px
+}
+
+.client-logo {
+	width:210px;
+}
+
+
+/*--Contact--*/
+
+.frame10 {
+	background-image:url('/images/BG-12.jpg');
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	padding-top: 10%;
+	padding-bottom: 5%;
+	height:100vh;
+	margin-top:5%;
+}
+
+#infoform {
+	margin-right: 35%;
+}
+
+#infoform label {
+	font-family:proximab;
+	font-size:16px;
 	color:#fff;
 }
 
-.features-carousel .right {
-	right: 60%;
-	top:40%;
-	position:absolute;
+#infoform button {
+	font-family: proximab;
+	color:#fff;
+	border: none;
+	background-color: #7b7b7b;
+	margin-left:60%;
+	padding: 10px 40px;
+	font-size:18px;
 }
 
-.features-carousel .left {
-	left: 15%;
-	top:40%;
-	position:absolute;
+#infoform button:hover {
+	background-color:#222;
+	text-decoration:none;
 }
 
-.features-content {
-	margin-left:75%;
-	margin-top:-15%;
+.address-box {
+	margin-top:-5%;
+	margin-left: 65%;
+	color:#fff;
 }
 
-
+.address-box p {
+	font-family:proximab;
+}
 
 @media screen and (max-width: 479px) {
+
+.frame-2 {
+	height: 100%;
+}
 
 }
 
