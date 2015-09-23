@@ -3,9 +3,13 @@
 if (!empty($img)){
  ?>
 
+<center>
 <div id="comments" class="comments-area">
 <a href="<?php echo $img['url']; ?>">
-   <h3> Download PDF Here</h3>
+
+	<input class="yellowbutton" style="padding: 10px 30px" type="button" value="Download PDF Here">
+ 
 </a>
 </div>
+</center>
 <?php } ?>
