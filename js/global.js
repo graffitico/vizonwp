@@ -13,11 +13,11 @@ jQuery(function () {
 
     var url = window.location.href ;
 
-   // console.log(url);
+   // console.log(window.location.host);
 
-    if(url == 'http://stageweb.vizury.com/contactus/#wpcf7-f4-o1'  || url == 'https://stageweb.vizury.com/contactus/#wpcf7-f4-o1'  )
+    if(url == 'http://'+window.location.host+'/contactus#wpcf7-f4-o1'  || url == 'https://'+window.location.host+'/contactus/#wpcf7-f4-o1'  )
 {
-	location.href = 'http://stageweb.vizury.com/contactus/';
+	location.href = 'http://'+window.location.host+'/contactus/';
 
 }
 

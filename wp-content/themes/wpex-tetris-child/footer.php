@@ -89,13 +89,13 @@
 									<a href='/contactus'>CONTACT US</a>
 								</li>
 								<li style="white-space: nowrap;">
-									<a href='https://www.linkedin.com/company/vizury-interactive'><span class="linkedin-contact"></span></a>
+									<a href='https://www.linkedin.com/company/vizury-interactive' target="_blank"><span class="linkedin-contact"></span></a>
 									&nbsp;&nbsp;
-									<a href='https://twitter.com/VizuryOneToOne'><span class="twitter-contact"></span></a>
+									<a href='https://twitter.com/VizuryOneToOne' target="_blank"><span class="twitter-contact"></span></a>
 									&nbsp;&nbsp;
-									<a href='https://www.facebook.com/vizury1to1'><span class="fb-contact"></span></a>
+									<a href='https://www.facebook.com/vizury1to1' target="_blank"><span class="fb-contact"></span></a>
 									&nbsp;&nbsp;
-									<a href='https://www.youtube.com/user/vizury1to1'><span class="youtube-contact"></span></a>
+									<a href='https://www.youtube.com/user/vizury1to1' target="_blank"><span class="youtube-contact"></span></a>
 								</li>
 							</ul>
 						</div>
@@ -104,7 +104,7 @@
 					<div  style="text-align:right;">
 						<p>
 							<div>© Copyright 2015 Vizury | All Rights Reserved</div>
-							<div>Served with love by <a href="http://www.thegraffiti.co">Graffiti Collaborative</a></div>
+							<div>Served with love by <a href="http://www.thegraffiti.co" target="_blank">Graffiti Collaborative</a></div>
 						</p>
 					</div>
 		        </div>
