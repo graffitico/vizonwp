@@ -501,7 +501,7 @@ jQuery(function () {
 		}
 	});
 
-	$('.viz-founders').click(function (e) {
+	$('.viz-founders').on('click touchend',  function (e) {
 
 		$('html, body').animate({
 	        scrollTop: $("#viz-founders").offset().top

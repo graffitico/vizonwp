@@ -66,7 +66,7 @@
 
 				<a href="/?redirect=false"  class="hidden-xs hidden-sm" title="Vizury Home" rel="home"><img src="/images/logo_full.svg" class="full_logo" alt="Vizury Logo" /></a>
 				<a href="/?redirect=false" class="hidden-lg hidden-md" title="Vizury Home" rel="home"><img src="/images/logo_v.svg" class="full_logo" style="width: auto;" alt="Vizury Logo" /></a>
-			
+
 
 			</div><!-- /logo -->
 			<nav id="navigation" class="clearfix">
@@ -488,7 +488,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href='/login'>
+						<a href='https://central.vizury.com/login/#/'>
 							<input class='login-button' type='button' value='Login' />
 						</a>
 					</li>
