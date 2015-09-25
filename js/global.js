@@ -34,6 +34,10 @@ jQuery(function () {
 		  	width: '100%',
 		  	height: '75px'
 		  });
+
+		  $('.home-page').css({
+		  	animation: 'none'
+		  });
 	}
 
 
