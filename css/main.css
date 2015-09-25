@@ -75,6 +75,8 @@ html {
 
 body {
   background: #fff;
+  height:100%;
+  overflow:auto;
 }
 
 * {

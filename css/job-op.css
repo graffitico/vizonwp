@@ -50,7 +50,10 @@ button:focus {
     outline: none;
 }
 
-.search-button
+.search-button,
+.search-button:active,
+.search-button:focus,
+.search-button:visited
 {
 	background:#000;
 	border: 0px;
