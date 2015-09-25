@@ -9,7 +9,7 @@ get_header();
 
     <div class="row">
     <div class="col-sm-9 text-center">
-	<div class="hidden-xs">
+	<div class="hidden-xs" style="height: 405px">
 	<svg version="1.1" id="Layer_1"  class="contact-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 776 418.5" style="enable-background:new 0 0 776 418.5;" xml:space="preserve">
 	<style type="text/css">
 	.st0{fill:none;stroke:#B0AFB5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1;}
@@ -1161,7 +1161,7 @@ get_header();
 </svg>
 </div>
 	</div>
-				
+
 				<div  id="address-drop" class="visible-xs">
 	  <div class="container">
 	      <div class="row text-center">
@@ -1187,8 +1187,8 @@ get_header();
 		</div>
     </div>
 
-				
-				
+
+
 				<div id="address-number" class="col-sm-3 col-xs-12">
 
 					     <div class="row">
@@ -1517,7 +1517,7 @@ kr.vizury@vizury.com</span>
 
 
 
-	
+
 
 
 
