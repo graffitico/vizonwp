@@ -4,7 +4,7 @@ if (!empty($img)){
  ?>
 
 <center>
-<div id="comments" class="comments-area">
+<div id="comments" class="comments-area text-center">
 <a href="<?php echo $img['url']; ?>">
 
 	<input class="yellowbutton" style="padding: 10px 30px" type="button" value="Download PDF Here">

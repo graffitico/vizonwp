@@ -127,17 +127,20 @@ if( 'quote' != get_post_format() ) {
  while( $r->have_posts() ) : $r->the_post(); ?>
 
   <?php if ( has_post_thumbnail() ) {
-    $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' );
-    $img_url =  esc_url( $thumbnail[0] );
 
+    $full_path  = get_attached_file( get_post_thumbnail_id(get_the_ID())  , 'full' );
+
+    $img_url = explode( "/wp-content", $full_path);
+    
  } ?>
               <div class="col-sm-4 blog-entry-tile">
                 <div class="ih-item square colored effect4" style="background-color: #626262;" >
-                    <div class="img"><a href="<?php the_permalink(); ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  $img_url; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
+                    <div class="img"><a href="<?php the_permalink(); ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  "/wp-content". $img_url[1]; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
 
                 </div>
                 <a href="<?php the_permalink(); ?>" target="_blank">
-                <h4><?php the_title(); ?></h4></a>
+                <h4><?php 
+                the_title(); ?></h4></a>
              <!--    <p><b>Author:</b> Vizury</p> -->
                 <p><b>Date:</b><?php the_time( 'M d, Y'); ?></p>
                 <p><?php the_excerpt(); ?></p>
