@@ -133,7 +133,7 @@ h4{font-size:18px;}
 
 /*--Main Content--*/
 
-.frame-1, .frame-2, .frame-3-big,.frame-4 {
+.frame-1, .frame-2, .frame-3-big,.frame-4-big {
 	height:100vh;
 }
 
@@ -171,11 +171,15 @@ h4{font-size:18px;}
     transform: translateX(-50%) translateY(-50%);
 }
 
-.frame-3-big h2, .frame-4 h2 {
+.frame-3-big h2, .frame-4-big h2 {
 	position: absolute;
     margin-top: 20%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+.frame3-rightpane p , .frame4-rightpane p{
+	margin-top:20%;
 }
 
 .frame2-leftpane {
@@ -216,24 +220,57 @@ h4{font-size:18px;}
 	height:100%;
 }
 
-#thecarousel {
+#thecarousel, #thecarouseltwo {
 	top:40%;
 }
 
-#thecarousel img {
+#thecarousel img, #thecarouseltwo img {
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
+	margin-left:18%;
 }
 
 .carousel-indicators {
-	margin-top:10%;
+	bottom:10%;
+	left:25%;
+}
+
+#thecarousel .right, #thecarouseltwo .right {
+	right: 60%;
+}
+
+#thecarousel .left, #thecarouseltwo .left {
+	left: 10%;
 }
 
 .feature-content {
 	text-align: center;
 	padding: auto 5%;
 }
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
 
 /*--App Reengagement--*/
 
@@ -250,10 +287,18 @@ h4{font-size:18px;}
 .carousel {
 	position:relative;
 	overflow:hidden;
+	height: 350px;
+	width:100vw;
 }
 
 .carousel-inner {
 	position:relative;
+	top:20%;
+}
+
+.carousel-caption {
+	left:60%;
+	top:10%;
 }
 
 .carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
@@ -451,138 +496,83 @@ h4{font-size:18px;}
 
 /*---Sprite---*/
 
-.adorika, .adplus, .adrope, .adskom, .appnexus,
-.baidu, .batanga, .bolanews, .cleartrip, .crazy4media,
-.creafi, .dafiti, .danmurphys, .darriens, .deli-ads,
-.dmg, .doubleclick, .ebay, .ethihad, .exchange,
-.flipkart, .geniee, .global-adspace, .hdfc, .intag,
-.ironsource, .jabong, .kapanlagi, .kompas, .lemmonet,
-.malaysiakini, .mangoads, .marimedia, .mediashakers, .mediawhite,
-.microsoft, .msn, .netshoes, .one52, .openx,
-.policybazaar-high, .pubmatic, .pulsepoint, .rekket, .rubicon,
-.say, .sony, .souq-high, .the-iconic, .tribun-news,
-.twitter, .walmart, .wego, .xrost, .yahoo,
-.yieldone, .yintai, .zetanet
-{ max-width: 100%; background-size: 100%; background-image: url('/images/sprite-us.png'); }
+.adorika, .alibaba, .appnexus, .casale, .creafi,
+.ctrip, .doubleclick, .ebay-us, .ethihad, .expedia,
+.facebook, .facebook2, .flipkart, .futureads, .google,
+.groupon, .inmobi, .jetairways, .lazada, .lemmonet,
+.marimedia, .millennial, .mopub, .netshoes, .nexage,
+.paytm, .pubmatic, .pulsepoint, .rakuten, .rubicon,
+.smaato, .souq-high, .walmart
+{ max-width: 100%; background-size: 100%; background-image: url('/images/sprite_us.png'); }
  
 .adorika { background-position: 0 0%; background-size: 100%; }
-.adplus { background-position: 0 1.754386%; background-size: 100%; }
-.adrope { background-position: 0 3.508772%; background-size: 100%; }
-.adskom { background-position: 0 5.263158%; background-size: 100%; }
-.appnexus { background-position: 0 7.017544%; background-size: 100%; }
-.baidu { background-position: 0 8.77193%; background-size: 100%; }
-.batanga { background-position: 0 10.526316%; background-size: 100%; }
-.bolanews { background-position: 0 12.280702%; background-size: 100%; }
-.cleartrip { background-position: 0 14.035088%; background-size: 100%; }
-.crazy4media { background-position: 0 15.789474%; background-size: 100%; }
-.creafi { background-position: 0 17.54386%; background-size: 100%; }
-.dafiti { background-position: 0 19.298246%; background-size: 100%; }
-.danmurphys { background-position: 0 21.052632%; background-size: 100%; }
-.darriens { background-position: 0 22.807018%; background-size: 100%; }
-.deli-ads { background-position: 0 24.561404%; background-size: 100%; }
-.dmg { background-position: 0 26.315789%; background-size: 100%; }
-.doubleclick { background-position: 0 28.070175%; background-size: 100%; }
-.ebay { background-position: 0 29.824561%; background-size: 100%; }
-.ethihad { background-position: 0 31.578947%; background-size: 100%; }
-.exchange { background-position: 0 33.333333%; background-size: 100%; }
-.flipkart { background-position: 0 35.087719%; background-size: 100%; }
-.geniee { background-position: 0 36.842105%; background-size: 100%; }
-.global-adspace { background-position: 0 38.596491%; background-size: 100%; }
-.hdfc { background-position: 0 40.350877%; background-size: 100%; }
-.intag { background-position: 0 42.105263%; background-size: 100%; }
-.ironsource { background-position: 0 43.859649%; background-size: 100%; }
-.jabong { background-position: 0 45.614035%; background-size: 100%; }
-.kapanlagi { background-position: 0 47.368421%; background-size: 100%; }
-.kompas { background-position: 0 49.122807%; background-size: 100%; }
-.lemmonet { background-position: 0 50.877193%; background-size: 100%; }
-.malaysiakini { background-position: 0 52.631579%; background-size: 100%; }
-.mangoads { background-position: 0 54.385965%; background-size: 100%; }
-.marimedia { background-position: 0 56.140351%; background-size: 100%; }
-.mediashakers { background-position: 0 57.894737%; background-size: 100%; }
-.mediawhite { background-position: 0 59.649123%; background-size: 100%; }
-.microsoft { background-position: 0 61.403509%; background-size: 100%; }
-.msn { background-position: 0 63.157895%; background-size: 100%; }
-.netshoes { background-position: 0 64.912281%; background-size: 100%; }
-.one52 { background-position: 0 66.666667%; background-size: 100%; }
-.openx { background-position: 0 68.421053%; background-size: 100%; }
-.policybazaar-high { background-position: 0 70.175439%; background-size: 100%; }
-.pubmatic { background-position: 0 71.929825%; background-size: 100%; }
-.pulsepoint { background-position: 0 73.684211%; background-size: 100%; }
-.rekket { background-position: 0 75.438596%; background-size: 100%; }
-.rubicon { background-position: 0 77.192982%; background-size: 100%; }
-.say { background-position: 0 78.947368%; background-size: 100%; }
-.sony { background-position: 0 80.701754%; background-size: 100%; }
-.souq-high { background-position: 0 82.45614%; background-size: 100%; }
-.the-iconic { background-position: 0 84.210526%; background-size: 100%; }
-.tribun-news { background-position: 0 85.964912%; background-size: 100%; }
-.twitter { background-position: 0 87.719298%; background-size: 100%; }
-.walmart { background-position: 0 89.473684%; background-size: 100%; }
-.wego { background-position: 0 91.22807%; background-size: 100%; }
-.xrost { background-position: 0 92.982456%; background-size: 100%; }
-.yahoo { background-position: 0 94.736842%; background-size: 100%; }
-.yieldone { background-position: 0 96.491228%; background-size: 100%; }
-.yintai { background-position: 0 98.245614%; background-size: 100%; }
-.zetanet { background-position: 0 100%; background-size: 100%; }
+.alibaba { background-position: 0 3.125%; background-size: 100%; }
+.appnexus { background-position: 0 6.25%; background-size: 100%; }
+.casale { background-position: 0 9.375%; background-size: 100%; }
+.creafi { background-position: 0 12.5%; background-size: 100%; }
+.ctrip { background-position: 0 15.625%; background-size: 100%; }
+.doubleclick { background-position: 0 18.75%; background-size: 100%; }
+.ebay-us { background-position: 0 21.875%; background-size: 100%; }
+.ethihad { background-position: 0 25%; background-size: 100%; }
+.expedia { background-position: 0 28.125%; background-size: 100%; }
+.facebook { background-position: 0 31.25%; background-size: 100%; }
+.facebook2 { background-position: 0 34.375%; background-size: 100%; }
+.flipkart { background-position: 0 37.5%; background-size: 100%; }
+.futureads { background-position: 0 40.625%; background-size: 100%; }
+.google { background-position: 0 43.75%; background-size: 100%; }
+.groupon { background-position: 0 46.875%; background-size: 100%; }
+.inmobi { background-position: 0 50%; background-size: 100%; }
+.jetairways { background-position: 0 53.125%; background-size: 100%; }
+.lazada { background-position: 0 56.25%; background-size: 100%; }
+.lemmonet { background-position: 0 59.375%; background-size: 100%; }
+.marimedia { background-position: 0 62.5%; background-size: 100%; }
+.millennial { background-position: 0 65.625%; background-size: 100%; }
+.mopub { background-position: 0 68.75%; background-size: 100%; }
+.netshoes { background-position: 0 71.875%; background-size: 100%; }
+.nexage { background-position: 0 75%; background-size: 100%; }
+.paytm { background-position: 0 78.125%; background-size: 100%; }
+.pubmatic { background-position: 0 81.25%; background-size: 100%; }
+.pulsepoint { background-position: 0 84.375%; background-size: 100%; }
+.rakuten { background-position: 0 87.5%; background-size: 100%; }
+.rubicon { background-position: 0 90.625%; background-size: 100%; }
+.smaato { background-position: 0 93.75%; background-size: 100%; }
+.souq-high { background-position: 0 96.875%; background-size: 100%; }
+.walmart { background-position: 0 100%; background-size: 100%; }
 
 /*---HTML--
 
 <img class="adorika" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="adplus" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="adrope" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="adskom" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="alibaba" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="appnexus" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="baidu" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="batanga" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="bolanews" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="cleartrip" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="crazy4media" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="casale" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="creafi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="dafiti" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="danmurphys" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="darriens" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="deli-ads" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="dmg" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="ctrip" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="doubleclick" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="ebay" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="ebay-us" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="ethihad" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="exchange" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="expedia" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="facebook" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="facebook2" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="flipkart" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="geniee" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="global-adspace" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="hdfc" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="intag" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="ironsource" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="jabong" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="kapanlagi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="kompas" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="futureads" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="google" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="groupon" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="inmobi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="jetairways" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="lazada" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="lemmonet" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="malaysiakini" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="mangoads" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="marimedia" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="mediashakers" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="mediawhite" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="microsoft" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="msn" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="millennial" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="mopub" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="netshoes" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="one52" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="openx" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="policybazaar-high" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="nexage" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="paytm" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="pubmatic" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="pulsepoint" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="rekket" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="rakuten" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="rubicon" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="say" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="sony" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
+<img class="smaato" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="souq-high" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="the-iconic" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="tribun-news" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="twitter" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="walmart" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="wego" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="xrost" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="yahoo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="yieldone" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="yintai" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
-<img class="zetanet" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 
 --/

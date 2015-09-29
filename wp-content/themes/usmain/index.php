@@ -35,7 +35,7 @@
 <div class="frame-3-big hidden-sm hidden-xs">
 	<div class="col-md-6 frame3-leftpane">
 		<h2 class="white-text">App Retargeting</h2>
-	<div id="thecarousel" class="carousel slide" data-ride="carousel">
+	<div id="thecarousel" class="carousel slide carousel-fade" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-targer="#thecarousel" data-slide-to="0" class="active"></li>
 			<li data-targer="#thecarousel" data-slide-to="1"></li>
@@ -154,14 +154,10 @@
 </div>
 </section>
 <section id="app-reengage">
-<div class="frame-4">
+<div class="frame-4-big hidden-sm hidden-xs">
 	<div class="col-md-6 frame4-leftpane">
 		<h2 class="white-text">App Re-engagement</h2>
-	</div>
-	<div class="col-md-6 frame4-rightpane">
-		<p class="text-center">If your customer has not come-back to your app within 7 days from install, there’s a good chance he will never come back. Stay connected with your users and interact with them across sms, websites, In-app ads, push notifications to make sure they never leave.</p>
-	</div>
-	<div id="thecarouseltwo" class="carousel slide" data-ride="carousel">
+	<div id="thecarouseltwo" class="carousel slide carousel-fade" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-targer="#thecarouseltwo" data-slide-to="0" class="active"></li>
 			<li data-targer="#thecarouseltwo" data-slide-to="1"></li>
@@ -170,50 +166,99 @@
 			<li data-targer="#thecarouseltwo" data-slide-to="4"></li>
 			<li data-targer="#thecarouseltwo" data-slide-to="5"></li>
 		</ol>
-		<div class="carousel-inner">
-			<div class="item active">
-				<img alt="" class="features-icon" src="/images/appre_getitright_W.svg">
-				<div class="carousel-caption">
-					<h4>Get it right with data</h4>
-					<p>Gather In-app data to understand your users and their behavioral patterns. Easy to set-up, our solution can access data using postbacks through analytics partners, server to server integration and event loggers. Choose the option that best suits your tech.</p>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img class="features-icon" src="/images/appre_getitright_W.svg">
+					<div class="carousel-caption">
+						<h4>Get it right with data</h4>
+						<p>Gather In-app data to understand your users and their behavioral patterns. Easy to set-up, our solution can access data using postbacks through analytics partners, server to server integration and event loggers. Choose the option that best suits your tech.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/appre_segmentandcustomize_W.svg">
+					<div class="carousel-caption">
+						<h4>Segment and customize</h4>
+						<p>Define niche user segments based on inactivity period and purchase cycle. Create customized messages for each segment and engage efficiently.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/appre_pushnotification_W.svg">
+					<div class="carousel-caption">
+						<h4>Personalize Push</h4>
+						<p>Unleash the true potential of push notifications. Based on user intent and past activity, customize your push notifications to deliver personalized offers and recommendations.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/appre_uninstallprediction_W.svg">
+					<div class="carousel-caption">
+						<h4>Uninstall prediction</h4>
+						<p>Our algorithms analyse historical data and set active period window for your customers. Keep close track and read the signals, get alerts about likely uninstalls.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/appre_platform_W.svg">
+					<div class="carousel-caption">
+						<h4>Platform-agnostic</h4>
+						<p>Our App re-engagement solution is perfect for the mobile platform and works seamlessly on both iOS and Android devices.</p>
+					</div>
 				</div>
 			</div>
-			<div class="item">
-				<img class="features-icon" src="/images/appre_segmentandcustomize_W.svg">
-				<div class="carousel-caption">
-					<h4>Segment and customize</h4>
-					<p>Define niche user segments based on inactivity period and purchase cycle. Create customized messages for each segment and engage efficiently.</p>
-				</div>
-			</div>
-			<div class="item">
-				<img class="features-icon" src="/images/appre_pushnotification_W.svg">
-				<div class="carousel-caption">
-					<h4>Personalize Push</h4>
-					<p>Unleash the true potential of push notifications. Based on user intent and past activity, customize your push notifications to deliver personalized offers and recommendations.</p>
-				</div>
-			</div>
-			<div class="item">
-				<img class="features-icon" src="/images/appre_uninstallprediction_W.svg">
-				<div class="carousel-caption">
-					<h4>Uninstall prediction</h4>
-					<p>Our algorithms analyse historical data and set active period window for your customers. Keep close track and read the signals, get alerts about likely uninstalls.</p>
-				</div>
-			</div>
-			<div class="item">
-				<img class="features-icon" src="/images/appre_platform_W.svg">
-				<div class="carousel-caption">
-					<h4>Platform-agnostic</h4>
-					<p>Our App re-engagement solution is perfect for the mobile platform and works seamlessly on both iOS and Android devices.</p>
-				</div>
+			<a class="left carousel-control" href="#thecarouseltwo" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#thecarouseltwo" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+	</div>
+	</div>
+	<div class="col-md-6 frame4-rightpane">
+		<p class="text-center">If your customer has not come-back to your app within 7 days from install, there’s a good chance he will never come back. Stay connected with your users and interact with them across sms, websites, In-app ads, push notifications to make sure they never leave.</p>
+	</div>
+</div>
+<div class="frame-4-small hidden-md hidden-lg">
+	<img src="/images/BG-3.jpg">
+	<h2 class="white-text mob-appre-text">App Re-engagement</h2>
+		<div class="row">
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/appre_getitright.svg">
+			<div class="feature-content">
+				<h4>Get it right with data</h4>
+				<p>Gather In-app data to understand your users and their behavioral patterns. Easy to set-up, our solution can access data using postbacks through analytics partners, server to server integration and event loggers. Choose the option that best suits your tech.</p>
 			</div>
 		</div>
-		<a class="left carousel-control" href="#thecarouseltwo" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-		</a>
-		<a class="right carousel-control" href="#thecarouseltwo" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-		</a>
-	</div>
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/appre_segmentandcustomize.svg">
+			<div class="feature-content">
+				<h4>Segment and customize</h4>
+				<p>Define niche user segments based on inactivity period and purchase cycle. Create customized messages for each segment and engage efficiently.</p>
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/appre_pushnotification.svg">
+			<div class="feature-content">
+				<h4>Personalize Push</h4>
+				<p>Unleash the true potential of push notifications. Based on user intent and past activity, customize your push notifications to deliver personalized offers and recommendations.</p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/appre_uninstallprediction.svg">
+			<div class="feature-content">
+				<h4>Uninstall prediction</h4>
+				<p>Our algorithms analyse historical data and set active period window for your customers. Keep close track and read the signals, get alerts about likely uninstalls.</p>
+			</div>	
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-sm-12">
+			<img class="features-icon" src="/images/appre_platform.svg">
+			<div class="feature-content">
+				<h4>Platform-agnostic</h4>
+				<p>Our App re-engagement solution is perfect for the mobile platform and works seamlessly on both iOS and Android devices.</p>
+			</div>
+		</div>
+		</div>
 </div>
 </section>
 <section id="benefits">
@@ -340,34 +385,26 @@
 	<div class="container logo-section">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="cleartrip client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6  col-md-3 col-sm-6 logos"><img class="dafiti client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="danmurphys client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="ebay client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="ebay-us" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6  col-md-3 col-sm-6 logos"><img class="ethihad" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="expedia" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="flipkart" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="ethihad client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="flipkart client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="hdfc client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="jabong client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="alibaba" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="groupon" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="inmobi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="jetairways" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="netshoes client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="policy client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="sony client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="souq client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="the-iconic client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="walmart client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="wego client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="yintai client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="netshoes" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="souq-high" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="paytm" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="walmart" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
 			</div>
 		</div>
 	</div>
@@ -400,26 +437,42 @@
 	<div class="container logo-section">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="adorika client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="appnexus client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="baidu client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="yieldone client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="adorika" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="appnexus" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="casale" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="creafi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="doubleclick client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="exchange client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="microsoft client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="msn client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="ctrip" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="doubleclick" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="facebook" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="facebook2" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="openx client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="pubmatic client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="twitter client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="yahoo client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="futureads" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="google" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="lazada" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="lemmonet" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="marimedia" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="millennial" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="mopub" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="nexage" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="pubmatic" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="pulsepoint" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="rakuten" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="rubicon" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
 			</div>
 		</div>
 	</div>
