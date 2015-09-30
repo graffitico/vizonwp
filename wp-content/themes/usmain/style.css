@@ -75,9 +75,9 @@ h4{font-size:18px;}
 .full_logo {
 	width:200px;
 	height:48px;
-	position:absolute;
-	top:12%;
-	left:2%;
+	position:relative;
+	top:30%;
+	left:10%;
 }
 
 .navigation-trigger {
@@ -269,6 +269,10 @@ h4{font-size:18px;}
 }
 .carousel-fade .carousel-control {
   z-index: 2;
+}
+
+.carousel-caption {
+	
 }
 
 

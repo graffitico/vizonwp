@@ -27,7 +27,7 @@
 	</div>
 	<div class="col-md-6 col-xs-12 frame2-rightpane">
 		<p class="text-center">Shoppers love apps! They spend about 90% of their mobile time there. Gear up to explore the app-o-sphere with Vizury’s App marketing suite. Record behavioral signals, deliver tailored ads to your customers as they open other apps. Personalize push notifications and have users acting on it. Get more than just downloads, get sales from your apps. Connect with inactive users. Start right and stay ahead.</p>
-		<a href="#" class="btn-us">Get in Touch</a>
+		<a href="#contact" class="btn-us">Get in Touch</a>
 	</div>
 </div>
 </section>
