@@ -19,6 +19,8 @@
 <!-- <link rel="stylesheet" href="<?php // echo get_site_url() ?>/css/pages.css" > -->
 <!-- <link rel="icon" href="../images/logo_back.ico" type="image/x-icon" /> -->
 <!-- <link rel="shortcut icon" href="../images/logo_back.ico" type="image/x-icon" /> -->
+<link rel="icon" href="<?php echo  get_template_directory_uri() ; ?>/logo_back.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo  get_template_directory_uri() ; ?>/logo_back.ico" type="image/x-icon" />
 
 <?php wp_head(); ?>
 </head>
