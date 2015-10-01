@@ -12,6 +12,8 @@
 	<link href="<?= get_template_directory_uri() ?>/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?= get_template_directory_uri() ?>/style.css" rel="stylesheet">
     
+<link rel="icon" href="<?php echo  get_template_directory_uri() ; ?>/logo_back.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo  get_template_directory_uri() ; ?>/logo_back.ico" type="image/x-icon" />
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,21 +32,19 @@
 			<a href="/" class="hidden-xs hidden-sm" title="Vizury Home" rel="home"><img src="/images/logo_full.svg" class="full_logo" alt="Vizury Logo" /></a>
 			<a href="/" class="hidden-lg hidden-md" title="Vizury Home" rel="home"><img src="/images/logo_v.svg" class="full_logo" style="width: auto;" alt="Vizury Logo" /></a>
 		</div>
-		<nav>
-			<div class='navigation-trigger'>
-				<img class="burger" src='/images/burger.svg'>
-			</div>
-			<ul class="mobilenavigation">
-				<li><a href='#app-retarget'>App Retargeting</a></li>
-				<li><a href='#app-reengage'>App Re-engagement</a></li>
-				<li><a href='#benefits'>Benefits</a></li>
-				<li><a href='#clients'>Clients</a></li>
-				<li><a href='#readmore'>More about Vizury Mobile</a></li>
-				<li><a href='#publishers'>Publishers</a></li>
-				<li><a href='#contact'>Get in touch</a></li>
-				<li><a href='https://www.vizury.com' target="_blank">Vizury Corporate</a></li>
-			</ul>
-		</nav>
+		<div class='navigation-trigger'>
+			<img class="burger" src='/images/burger.svg'>
+		</div>
+		<ul id="navigation">
+			<li><a href='#app-retarget'>App Retargeting</a></li>
+			<li><a href='#app-reengage'>App Re-engagement</a></li>
+			<li><a href='#benefits'>Benefits</a></li>
+			<li><a href='#clients'>Clients</a></li>
+			<li><a href='#readmore'>More about Vizury Mobile</a></li>
+			<li><a href='#publishers'>Publishers</a></li>
+			<li><a href='#contact'>Get in touch</a></li>
+			<li><a href='https://www.vizury.com' target="_blank">Vizury Corporate</a></li>
+		</ul>
 	</header>
 	</div>
 	

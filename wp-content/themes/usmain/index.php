@@ -17,134 +17,248 @@
 		</div>
 	</div>
 </div>
+<div class="yellow-text-block">
+	<h4 class="yellow-strip-text">Beyond Installs - A Consortium of Mobile Marketers.<a href='/vizuryblog/beyond-installs-the-consortium-on-mobile-app-marketing/' target="_blank"><img class="readmore1" src="/images/readmore_white.svg"></a></h4>
+</div>
 <section id="shoppers">
 <div class="frame-2">
 	<div class="col-md-6 col-xs-12 frame2-leftpane">
 		<h2 class="white-text">Shoppers love apps!</h2>
 	</div>
 	<div class="col-md-6 col-xs-12 frame2-rightpane">
-		<p class="text-center">Shoppers love apps! They spend about 90% of their mobile time there. Gear up to explore the app-o-sphere with Vizury’s App marketing suite. Record behavioral signals, deliver tailored ads to your customers as they open other apps. Get more than just downloads, get sales from your apps. Connect with inactive users. Start right and stay ahead.</p>
-		<a href="#" class="btn-us">Get in Touch</a>
+		<p class="text-center">Shoppers love apps! They spend about 90% of their mobile time there. Gear up to explore the app-o-sphere with Vizury’s App marketing suite. Record behavioral signals, deliver tailored ads to your customers as they open other apps. Personalize push notifications and have users acting on it. Get more than just downloads, get sales from your apps. Connect with inactive users. Start right and stay ahead.</p>
+		<a href="#contact" class="btn-us">Get in Touch</a>
 	</div>
 </div>
 </section>
 <section id="app-retarget">
-<div class="frame-3">
+<div class="frame-3-big hidden-sm hidden-xs">
 	<div class="col-md-6 frame3-leftpane">
 		<h2 class="white-text">App Retargeting</h2>
-			<div class="container ">
-				<div class="row">
-					<div id="second-carousel" class="features-carousel carousel slide">
-						<div class="col-md-12 text-center">
-							<div class="carousel-inner">
-								<div class="item active">
-									<img class="features-icon" src="/images/SDK_features_retarget_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Light on SDK, heavy on data</h4>
-										<p>Kiss goodbye to SDK integrations. Vizury’s app user re-engagement uses a unique server-to-server integration for harvesting behavioural data. Alternatively Vizury’s app can easily integrate with a third party mobile analytics partner and build critical data around user intent.</p>
-									</div>
-								</div>
-								<div class="item">
-									<img class="features-icon" src="/images/platform_features_retarget_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Platform agnostic</h4>
-										<p>Don’t worry about technology, we have that sorted. Our App re‐engagement solution works well on both iOS and Android devices. Our html5 ads render perfectly on the mobile platform.</p>
-									</div>
-								</div>
-								<div class="item">
-									<img class="features-icon" src="/images/specificity_features_retarget_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Specificity in messaging</h4>
-										<p>Know what your customers are looking for. Data fuelled behavioural patterns help tailor unique offers for every customer.</p>
-									</div>
-								</div>
-								<div class="item">
-									<img class="features-icon" src="/images/deterministic_features_retarget_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Deterministic approach through device ID</h4>
-										<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
-									</div>
-								</div>
-								<div class="item">
-									<img class="features-icon" src="/images/Bannerdeep_features_retarget_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Banner deep linking</h4>
-										<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
-									</div>
-								</div>
-								<div class="item">
-									<img class="features-icon" src="/images/reportinsights_features_retarget_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Reports and insights</h4>
-										<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
-									</div>
-								</div>
-							</div>
-							<a class="left carousel-control" href="#second-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#second-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-						</div>
+	<div id="thecarousel" class="carousel slide carousel-fade" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-targer="#thecarousel" data-slide-to="0" class="active"></li>
+			<li data-targer="#thecarousel" data-slide-to="1"></li>
+			<li data-targer="#thecarousel" data-slide-to="2"></li>
+			<li data-targer="#thecarousel" data-slide-to="3"></li>
+			<li data-targer="#thecarousel" data-slide-to="4"></li>
+			<li data-targer="#thecarousel" data-slide-to="5"></li>
+		</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img class="features-icon" src="/images/SDK_features_retarget_W.svg">
+					<div class="carousel-caption">
+						<h4>Light on SDK, heavy on data</h4>
+						<p>Kiss goodbye to SDK integrations. Vizury’s app user re-engagement uses a unique server-to-server integration for harvesting behavioural data. Alternatively Vizury’s app can easily integrate with a third party mobile analytics partner and build critical data around user intent.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/platform_features_retarget_W.svg">
+					<div class="carousel-caption">
+						<h4>Platform agnostic</h4>
+						<p>Don’t worry about technology, we have that sorted. Our App re‐engagement solution works well on both iOS and Android devices. Our html5 ads render perfectly on the mobile platform.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/specificity_features_retarget_W.svg">
+					<div class="carousel-caption">
+						<h4>Specificity in messaging</h4>
+						<p>Know what your customers are looking for. Data fuelled behavioural patterns help tailor unique offers for every customer.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/deterministic_features_retarget_W.svg">
+					<div class="carousel-caption">
+						<h4>Deterministic approach through device ID</h4>
+						<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/Bannerdeep_features_retarget_W.svg">
+					<div class="carousel-caption">
+						<h4>Banner deep linking</h4>
+						<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/reportinsights_features_retarget_W.svg">
+					<div class="carousel-caption">
+						<h4>Reports and insights</h4>
+						<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
 					</div>
 				</div>
 			</div>
+			<a class="left carousel-control" href="#thecarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#thecarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+	</div>
 	</div>
 	<div class="col-md-6 frame3-rightpane">
 		<p class="text-center">Customers almost always download an app, linger a while and then go away. It takes proactive, consistent and targeted messaging to get customers to click on the “buy” button. We at Vizury, have mastered the art of retargeting – no overkill – just precisely calibrated campaigns that give your brands a lift and ROI on your marketing spend.</p>
 	</div>
 </div>
+<div class="frame-3-small hidden-md hidden-lg">
+	<img src="/images/BG-2.jpg">
+	<h2 class="white-text mob-appre-text">App Retargeting</h2>
+		<div class="row">
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/SDK_features_appreng.svg">
+			<div class="feature-content">
+				<h4>Light on SDK, heavy on data</h4>
+				<p>Kiss goodbye to SDK integrations. Vizury’s app user re-engagement uses a unique server-to-server integration for harvesting behavioural data. Alternatively Vizury’s app can easily integrate with a third party mobile analytics partner and build critical data around user intent.</p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/platform_features_appreng.svg">
+			<div class="feature-content">
+				<h4>Platform agnostic</h4>
+				<p>Don’t worry about technology, we have that sorted. Our App re‐engagement solution works well on both iOS and Android devices. Our html5 ads render perfectly on the mobile platform.</p>
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/specificity_features_appreng.svg">
+			<div class="feature-content">
+				<h4>Specificity in messaging</h4>
+				<p>Know what your customers are looking for. Data fuelled behavioural patterns help tailor unique offers for every customer.</p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/deterministic_features_appreng.svg">
+			<div class="feature-content">
+				<h4>Deterministic approach through device ID</h4>
+				<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/Bannerdeep_features_appreng.svg">
+			<div class="feature-content">
+				<h4>Banner deep linking</h4>
+				<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/reportinsights_features_appreng.svg">
+			<div class="feature-content">
+				<h4>Reports and insights</h4>
+				<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
+			</div>
+		</div>
+		</div>
+</div>
 </section>
 <section id="app-reengage">
-<div class="frame-4">
+<div class="frame-4-big hidden-sm hidden-xs">
 	<div class="col-md-6 frame4-leftpane">
 		<h2 class="white-text">App Re-engagement</h2>
-			<div class="container">
-				<div class="row">
-					<div id="second-carousel" class="features-carousel carousel slide">
-						<div class="col-md-12 text-center">
-							<div class="carousel-inner">
-								<div class="item active">
-									<img alt="" class="features-icon" src="/images/appre_getitright_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Get it right with data</h4>
-										<p>Gather In-app data to understand your users and their behavioral patterns. Easy to set-up, our solution can access data using postbacks through analytics partners, server to server integration and event loggers. Choose the option that best suits your tech.</p>
-									</div>
-								</div>
-								<div class="item">
-									<img class="features-icon" src="/images/appre_segmentandcustomize_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Segment and customize</h4>
-										<p>Define niche user segments based on inactivity period and purchase cycle. Create customized messages for each segment and engage efficiently.</p>
-									</div>
-								</div>
-								<div class="item">
-									<img class="features-icon" src="/images/appre_pushnotification_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Personalize Push</h4>
-										<p>Unleash the true potential of push notifications. Based on user intent and past activity, customize your push notifications to deliver personalized offers and recommendations.</p>
-									</div>
-								</div>
-								<div class="item">
-									<img class="features-icon" src="/images/appre_uninstallprediction_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Uninstall prediction</h4>
-										<p>Our algorithms analyse historical data and set active period window for your customers. Keep close track and read the signals, get alerts about likely uninstalls.</p>
-									</div>
-								</div>
-								<div class="item">
-									<img class="features-icon" src="/images/appre_platform_W.svg">
-									<div class="carousel-content features-content">
-										<h4>Platform-agnostic</h4>
-										<p>Our App re-engagement solution is perfect for the mobile platform and works seamlessly on both iOS and Android devices.</p>
-									</div>
-								</div>
-							</div>
-							<a class="left carousel-control" href="#second-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control" href="#second-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-						</div>
+	<div id="thecarouseltwo" class="carousel slide carousel-fade" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-targer="#thecarouseltwo" data-slide-to="0" class="active"></li>
+			<li data-targer="#thecarouseltwo" data-slide-to="1"></li>
+			<li data-targer="#thecarouseltwo" data-slide-to="2"></li>
+			<li data-targer="#thecarouseltwo" data-slide-to="3"></li>
+			<li data-targer="#thecarouseltwo" data-slide-to="4"></li>
+			<li data-targer="#thecarouseltwo" data-slide-to="5"></li>
+		</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img class="features-icon" src="/images/appre_getitright_W.svg">
+					<div class="carousel-caption">
+						<h4>Get it right with data</h4>
+						<p>Gather In-app data to understand your users and their behavioral patterns. Easy to set-up, our solution can access data using postbacks through analytics partners, server to server integration and event loggers. Choose the option that best suits your tech.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/appre_segmentandcustomize_W.svg">
+					<div class="carousel-caption">
+						<h4>Segment and customize</h4>
+						<p>Define niche user segments based on inactivity period and purchase cycle. Create customized messages for each segment and engage efficiently.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/appre_pushnotification_W.svg">
+					<div class="carousel-caption">
+						<h4>Personalize Push</h4>
+						<p>Unleash the true potential of push notifications. Based on user intent and past activity, customize your push notifications to deliver personalized offers and recommendations.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/appre_uninstallprediction_W.svg">
+					<div class="carousel-caption">
+						<h4>Uninstall prediction</h4>
+						<p>Our algorithms analyse historical data and set active period window for your customers. Keep close track and read the signals, get alerts about likely uninstalls.</p>
+					</div>
+				</div>
+				<div class="item">
+					<img class="features-icon" src="/images/appre_platform_W.svg">
+					<div class="carousel-caption">
+						<h4>Platform-agnostic</h4>
+						<p>Our App re-engagement solution is perfect for the mobile platform and works seamlessly on both iOS and Android devices.</p>
 					</div>
 				</div>
 			</div>
+			<a class="left carousel-control" href="#thecarouseltwo" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#thecarouseltwo" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+	</div>
 	</div>
 	<div class="col-md-6 frame4-rightpane">
-		<p class="text-center">If your customer has not come-back to your app within 7 days from install, there’s a good chance he will never come back. Stay connected with your users and interact with them across multiple touch points. Make sure they never leave.</p>
+		<p class="text-center">If your customer has not come-back to your app within 7 days from install, there’s a good chance he will never come back. Stay connected with your users and interact with them across sms, websites, In-app ads, push notifications to make sure they never leave.</p>
 	</div>
+</div>
+<div class="frame-4-small hidden-md hidden-lg">
+	<img src="/images/BG-3.jpg">
+	<h2 class="white-text mob-appre-text">App Re-engagement</h2>
+		<div class="row">
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/appre_getitright.svg">
+			<div class="feature-content">
+				<h4>Get it right with data</h4>
+				<p>Gather In-app data to understand your users and their behavioral patterns. Easy to set-up, our solution can access data using postbacks through analytics partners, server to server integration and event loggers. Choose the option that best suits your tech.</p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/appre_segmentandcustomize.svg">
+			<div class="feature-content">
+				<h4>Segment and customize</h4>
+				<p>Define niche user segments based on inactivity period and purchase cycle. Create customized messages for each segment and engage efficiently.</p>
+			</div>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/appre_pushnotification.svg">
+			<div class="feature-content">
+				<h4>Personalize Push</h4>
+				<p>Unleash the true potential of push notifications. Based on user intent and past activity, customize your push notifications to deliver personalized offers and recommendations.</p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<img class="features-icon" src="/images/appre_uninstallprediction.svg">
+			<div class="feature-content">
+				<h4>Uninstall prediction</h4>
+				<p>Our algorithms analyse historical data and set active period window for your customers. Keep close track and read the signals, get alerts about likely uninstalls.</p>
+			</div>	
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-sm-12">
+			<img class="features-icon" src="/images/appre_platform.svg">
+			<div class="feature-content">
+				<h4>Platform-agnostic</h4>
+				<p>Our App re-engagement solution is perfect for the mobile platform and works seamlessly on both iOS and Android devices.</p>
+			</div>
+		</div>
+		</div>
 </div>
 </section>
 <section id="benefits">
@@ -239,7 +353,7 @@
 							<p style="text-align:right" class="hidden-xs wow slideInUp">Unify your brand experience - converse with your customers with personalized SMS’s, ads, push notifications.</p>
 						</td>
 						<td>
-							<img class="img-responsive wow slideInUp" style="float: right; width: 100%"  src="/images/Mobilemarketing.svg" alt="" />
+							<img class="img-responsive wow slideInUp" style="float: right; width: 100%"  src="/images/Mobilemarketing-us.svg" alt="" />
 						</td>
 					</tr>
 				</tbody>
@@ -271,34 +385,26 @@
 	<div class="container logo-section">
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="cleartrip client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6  col-md-3 col-sm-6 logos"><img class="dafiti client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="danmurphys client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="ebay client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="ebay-us" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6  col-md-3 col-sm-6 logos"><img class="ethihad" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="expedia" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="flipkart" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="ethihad client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="flipkart client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="hdfc client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="jabong client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="alibaba" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="groupon" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="inmobi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="jetairways" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="netshoes client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="policy client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="sony client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="souq client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="the-iconic client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="walmart client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="wego client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="yintai client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="netshoes" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="souq-high" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="paytm" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-12 col-sm-6 col-md-3 col-sm-6 logos"><img class="walmart" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
 			</div>
 		</div>
 	</div>
@@ -313,7 +419,7 @@
                         <div class="carousel-content has-content text-center inline-content">
                             <p class="big-white-number white-text">20x</p>
                             <p class="big-white-number-text white-text">Higher conversions for Yintai.</p>
-                            <p class="white-text-more-button"><a href='/case-studies/vizury-augments-yintai-app-revenue-with-data-driven-re-targeting/'/><span class="xl-font icon-home_yellowband_arrow"></span></a></p>
+                            <p class="white-text-more-button"><a href='/case-studies/vizury-augments-yintai-app-revenue-with-data-driven-re-targeting/'/><img class="readmore2" src="/images/readmore_white.svg"></a></p>
                         </div>
                     </div>
                 </div>
@@ -321,24 +427,103 @@
         </div>
     </div>
 </div>
+<section id="publishers">
+<div class="frame-9">
+	<div class="container-fluid">
+		<div class="row text-center section-title">
+			<h2>Publishers</h2>
+		</div>
+	</div>
+	<div class="container logo-section">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="adorika" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="appnexus" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="casale" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="creafi" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="ctrip" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="doubleclick" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="facebook" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="facebook2" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="futureads" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="google" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="lazada" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="lemmonet" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="marimedia" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="millennial" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="mopub" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="nexage" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="pubmatic" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="pulsepoint" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="rakuten" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="rubicon" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<section class="yellow-text-block">
+    <div class="container">
+        <div class="row" style="margin-bottom: 15px; padding-top:20px">
+            <div class="col-lg-12 text-center">
+                <p class="yellow-strip-text">Advanced measurement, attribution and SDK less integration now possible with our mobile analytics partners.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <img class="appsflyer" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
+            </div>
+            <div class="col-lg-4 text-center">
+                <img class="apsalar" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
+            </div>
+            <div class="col-lg-4 text-center">
+                <img class="adjust" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
+			</div>
+        </div>
+</section>
 <section id="read-more-block">
-    <div class="container-fluid frame-8">
+    <div class="container frame-8">
         <div class="row">
             <div class="col-lg-12 section-title">
                 <h2>Read more</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5 col-sm-offset-1 col-md-offset-2 col-md-4 blog-entry-tile">
+            <div class="col-md-4 blog-entry-tile">
                 <div class="img"><a href="/vizuryblog/app-retargeting-go-light-kiss-goodbye-to-sdk/" target="_blank"><img src="/images/GoodbyeSDK!forblog.png" /></a></div>
                 <a href="/vizuryblog/app-retargeting-go-light-kiss-goodbye-to-sdk/" target="_blank">
-				<h4>SDK less integration</h4></a>
-                <p><b>Author:</b> Nikunj Jhunjhunwala</p>
-                <p><b>Date:</b>May 7, 2015</p>
-                <p>If you have been doing app retargeting you know what a third party SDK is. Simply put, SDK is a few lines of code (like our super-light 30kb) that gathers anonymous behavioural data within the app.</p>
+				<h4>Solving The Mobile Web vs App Puzzle…</h4></a>
+                <p><b>Author:</b> Dharshan Chandran</p>
+                <p><b>Date:</b> July 1, 2015</p>
+                <p>57% of internet users search for content online with their mobile and 58% of users use mobile to purchase products. These are numbers from 2015. India is a massive market for the new age internet consumer.</p>
                 <a href="/vizuryblog/app-retargeting-go-light-kiss-goodbye-to-sdk/" target="_blank"><img  class="bottom-right" src="/images/read-more.svg" /></a>
             </div>
-            <div class="col-sm-5 col-md-4 blog-entry-tile">
+            <div class="col-md-4 blog-entry-tile">
+                <div class="img"><a href="/vizuryblog/mobile-remarketing-tips-to-engage-e-commerce-app-users/" target="_blank"><img src="/images/Appretargeting_Blog2.jpg" /></a></div>
+                <a href="/vizuryblog/mobile-remarketing-tips-to-engage-e-commerce-app-users/" target="_blank">
+				<h4>Mobile Remarketing Tips</h4></a>
+                <p><b>Author:</b> Akshatha Kamath</p>
+                <p><b>Date:</b> February 4, 2015</p>
+                <p>Over 50 per cent of online shoppers worldwide buy on mobiles and an even larger cluster use mobiles to check out products before they buy. Naturally, there is a lot of drum beat to promote ecommerce app downloads.</p>
+                <a href="/vizuryblog/mobile-remarketing-tips-to-engage-e-commerce-app-users/" target="_blank"><img  class="bottom-right" src="/images/read-more.svg" /></a>
+            </div>
+			<div class="col-md-4 blog-entry-tile">
                 <div class="img"><a href="/vizuryblog/mobile-remarketing-tips-to-engage-e-commerce-app-users/" target="_blank"><img src="/images/Appretargeting_Blog2.jpg" /></a></div>
                 <a href="/vizuryblog/mobile-remarketing-tips-to-engage-e-commerce-app-users/" target="_blank">
 				<h4>Mobile remarketing tips</h4></a>
@@ -350,56 +535,21 @@
         </div>
     </div>
 </section>
-<section id="publishers">
-<div class="frame-9">
-	<div class="container-fluid">
-		<div class="row text-center section-title">
-			<h2>Publishers</h2>
-		</div>
-	</div>
-	<div class="container logo-section">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="adorika client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="appnexus client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="baidu client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="yieldone client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="doubleclick client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="exchange client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="microsoft client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="msn client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="openx client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="pubmatic client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="twitter client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-				<div class="col-lg-3 col-xs-6 col-md-3 col-sm-3 logos"><img class="yahoo client-logo" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg=="></div>
-			</div>
-		</div>
-	</div>
-</div>
-</section>
 <section id="contact">
 <div class="frame10">
 	<div id="infoform">
-    <form class="form form-horizontal" role="form">
+    <!-- <form class="form form-horizontal" role="form">
     <div class="row">
-        <div class="form-group">
-        <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label" for="company">Company</label>
-          <div class="col-md-3 col-lg-4">
-            <input type="text" class="form-control" id="company" placeholder="Company Name">
-          </div>
-        </div>
         <div class="form-group">
         <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label" for="name">Name</label>
           <div class="col-md-3 col-lg-4">
             <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+        </div>
+		<div class="form-group">
+        <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label" for="company">Company</label>
+          <div class="col-md-3 col-lg-4">
+            <input type="text" class="form-control" id="company" placeholder="Company Name">
           </div>
         </div>
         <div class="form-group">
@@ -408,11 +558,19 @@
               <input type="text" class="form-control" id="title" placeholder="Your Designation">
             </div>
         </div>
+		<div class="form-group">
+        <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label" for="email">Email</label>
+          <div class="col-md-3 col-lg-4">
+            <input type="text" class="form-control" id="email" placeholder="Email">
+          </div>
+        </div>
         <div class="form-group">
         <label class="col-md-offset-3 col-md-2 col-lg-offset-2 col-lg-3 control-label remove-padding" for="what">What are you looking for *</label>
           <div class="col-md-3 col-lg-4">
             <select class="form-control">
-              <option>Re-Targeting/Vizury Convert</option>
+              <option>App Retargeting</option>
+			  <option>App Re-engagement</option>
+			  <option>Re-Targeting/Vizury Convert</option>
        	      <option>New User Acquisition - Vizury Reach</option>
               <option>DMP - Vizury Engage</option>
               <option>Jobs</option>
@@ -444,7 +602,9 @@
 		</div>
         </div>
 	</div>
-    </form>
+    </form> -->
+<?php echo do_shortcode('[contact-form-7 id="4" title="contact" html_class="form form-horizontal"  ]'); ?>
+
    </div>
    <div class="address-box">
 		<p>Vizury Interactive Solutions Limited<br>599, Fairchild Dr. in Mountain View,<br>CA</p>

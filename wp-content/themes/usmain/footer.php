@@ -5,6 +5,8 @@
 <?php wp_footer(); // Footer hook, do not delete, ever ?>
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/jquery.min.js"></script>
 <script type="text/javascript" src="/js/vizury.main.min.js"></script>
+<script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/viz-us.js"></script>
 <!-- <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/jquery.fittext.js"></script>
 <script type="text/javascript" src="/js/selectFx.js"></script>
@@ -15,6 +17,5 @@
 <script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="/js/classie.js"></script>
 <script type="text/javascript" src="/js/kwiks.js"></script> -->
-<script type="text/javascript" src="/js/global.js"></script>
   </body>
 </html>
