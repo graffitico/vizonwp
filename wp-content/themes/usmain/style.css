@@ -33,6 +33,20 @@ h1,h2,h3,h4,h5,h6 {font-weight:700px;font-family:proximab;}
 h4{font-size:18px;}
 img {max-width:100%;}
 
+.wpcf7-response-output.wpcf7-validation-errors {
+    width: 200px;
+    margin: auto;
+    color:red;
+}
+
+.screen-reader-response {
+    display: none;
+}
+
+span.wpcf7-not-valid-tip {
+    color: red;
+}
+
 .section-title {
 	margin: 2% auto;
 	text-align: center;
