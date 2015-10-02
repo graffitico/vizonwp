@@ -15,7 +15,7 @@ Tags: dark, black, white, one-column, right-sidebar, custom-background, custom-h
 
 /*--General Rules--*/
 
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{font-family:proxima;font-weight:inherit;font-style:inherit;margin:0px;padding:0px;vertical-align:baseline;border:0px;outline:0px;word-wrap: normal;max-width:100vw;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{font-family:proxima;font-weight:inherit;font-style:inherit;margin:0;padding:0;vertical-align:baseline;border:0;outline:0;word-wrap: normal;}
 html{font-size:62.5%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 *,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 body{background:#fff;overflow-x:hidden;}
@@ -47,7 +47,7 @@ img {max-width:100%;}
 
 .yellow-text-block {
 	position:relative;
-	background-color:#86E2D5;
+	background-color:#36D7B7;
 	text-align:center!important;
 	color:#222;
 	padding:1%;
@@ -76,9 +76,9 @@ img {max-width:100%;}
 .full_logo {
 	width:200px;
 	height:48px;
-	position:absolute;
-	margin-top:1%;
-	margin-left:2%;
+	position:relative;
+	top:40%;
+	left:10%;
 }
 
 .navigation-trigger {
@@ -153,7 +153,7 @@ img {max-width:100%;}
 }
 
 .frame1-leftpane {
-	background: #fff url("/images/BG-0.jpg") no-repeat 100% 80% fixed;
+	background: #fff url("/images/BG-7.jpg") no-repeat center center fixed;
 	background-size: cover;
 	height:100vh;
 	max-width:100%;
@@ -197,11 +197,12 @@ img {max-width:100%;}
 .frame2-leftpane {
 	background-image: url("/images/BG-4.jpg");
 	background-repeat:no-repeat;
-	background-position: 100% %;
+	background-position: 100% 50%;
 	background-attachment:fixed;
-	background-size: 50vw;
+	background-size: cover;
 	height:100vh;
 	max-width:100%;
+	width:50vw;
 }
 
 .frame2-rightpane , .frame3-rightpane{
@@ -257,7 +258,7 @@ img {max-width:100%;}
 }
 
 #thecarousel .left, #thecarouseltwo .left {
-	/*left: 10%;*/
+	left: 10%;
 }
 
 .feature-content {
@@ -282,7 +283,7 @@ img {max-width:100%;}
 }
 
 .carousel-caption {
-	left:56%;
+	left:58%;
 	top:10%;
 	text-shadow:none;
 	color:#202020;
@@ -293,51 +294,9 @@ img {max-width:100%;}
 	display:block;
 }
 
-.carousel > .carousel-control.left {
-	left:10%;
-}
-
 .right-text {
 	padding-left:10%;
 	padding-right:10%;
-}
-
-.carousel {
-  .item {
-    .transition(.7s ease-in-out opacity);
-    left: 0 !important;
-  }
-  .next.left, .prev.right {
-    opacity: 1;
-    z-index: 1;
-  }
-  .active.left, .active.right {
-    opacity: 0;
-    z-index: 2;
-  }
-}
-
-
-.carousel .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  -moz-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
-}
-
-.carousel .carousel-inner .active {
-  opacity: 1;
-}
-.carousel .carousel-inner .active.left,
-.carousel .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-.carousel .carousel-inner .next.left,
-.carousel .carousel-inner .prev.right {
-  opacity: 1;
 }
 
 /*--App Reengagement--*/
@@ -370,9 +329,8 @@ img {max-width:100%;}
 	padding:auto 5%;
 }
 
-.row.box-touch {
-	margin-bottom: -10%;
-	margin-top:-10%;
+.box-touch {
+	margin-bottom: -5%;
 }
 
 
@@ -499,17 +457,15 @@ img {max-width:100%;}
 	color:#fff;
 }
 
-#infoform button .btn-default {
+#infoform button {
 	font-family: proximab;
 	color:#fff;
 	border: none;
 	background-color: #7b7b7b;
 	margin-left:60%;
-	padding: 5px 40px;
+	padding: 10px 40px;
 	font-size:18px;
 }
-
-
 
 #infoform button:hover {
 	background-color:#222;
@@ -528,10 +484,6 @@ img {max-width:100%;}
 
 @media screen and (max-width: 479px) {
 
-row {
-	margin-left:0px;
-}
-
 .frame-2 {
 	height: 100%;
 }
@@ -542,51 +494,6 @@ row {
 	margin: 2% auto;
 }
 
-.frame2mob img {
-	object-fit:cover;
-}
-
-.mobbannertext {
-	margin-top:-10%;
-}
-
-.bodytext {
-	margin-top:25%;
-}
-
-.features-icon {
-	margin-top: 10%;
-	margin-bottom:5%;
-}
-
-#benefits img {
-	height:166px;
-}
-
-.yellow-text-block {
-	padding-bottom:10%;
-}
-
-.bottom-right {
-	bottom:0%;
-}
-
-.blog-entry-tile {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-.address-boxmob {
-	margin-top:10%;
-	margin-bottom: 10%;
-	text-align:center;
-}
-
-#infoform button .btn-default  {
-	margin-left:auto;
-}
-
 }
 
 @media screen (min-width:480px) and (max-width: 767px) {
@@ -595,37 +502,6 @@ row {
 	height: 150px;
 	display: block;
 	margin: 2% auto;
-}
-
-.feature-content {
-	padding-left:10%;
-	padding-right:10%;
-}
-
-.blog-entry-tile {
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-.blog-entry-tile p {
-	margin-left:15%;
-	margin-right:15%;
-}
-
-.bottom-right {
-	bottom:0%;
-	right:25%;
-}
-
-.address-boxmob {
-	margin-top:10%;
-	margin-bottom: 10%;
-	text-align:center;
-}
-
-#infoform button .btn-default  {
-	margin-left:auto;
 }
 
 }
@@ -644,58 +520,51 @@ row {
 
 /*---Sprite---*/
 
-.adjust, .appsflyer, .apsalar, .adorika, .alibaba,
-.appnexus, .casale, .creafi, .ctrip, .doubleclick,
-.ebay-us, .ethihad, .expedia, .facebook, .facebook2,
-.flipkart, .futureads, .google, .groupon, .inmobi,
-.jetairways, .lazada, .lemmonet, .marimedia, .millennial,
-.mopub, .netshoes, .nexage, .paytm, .pubmatic,
-.pulsepoint, .rakuten, .rubicon, .smaato, .souq-high,
-.walmart
+.adorika, .alibaba, .appnexus, .casale, .creafi,
+.ctrip, .doubleclick, .ebay-us, .ethihad, .expedia,
+.facebook, .facebook2, .flipkart, .futureads, .google,
+.groupon, .inmobi, .jetairways, .lazada, .lemmonet,
+.marimedia, .millennial, .mopub, .netshoes, .nexage,
+.paytm, .pubmatic, .pulsepoint, .rakuten, .rubicon,
+.smaato, .souq-high, .walmart
 { max-width: 100%; background-size: 100%; background-image: url('/images/sprite_us.png'); }
  
-.adjust { background-position: 0 0%; background-size: 100%; }
-.appsflyer { background-position: 0 4.69986%; background-size: 100%; }
-.apsalar { background-position: 0 9.399721%; background-size: 100%; }
-.adorika { background-position: 0 13.829302%; background-size: 119.047619%; }
-.alibaba { background-position: 0 16.522136%; background-size: 119.047619%; }
-.appnexus { background-position: 0 19.21497%; background-size: 119.047619%; }
-.casale { background-position: 0 21.907805%; background-size: 119.047619%; }
-.creafi { background-position: 0 24.600639%; background-size: 119.047619%; }
-.ctrip { background-position: 0 27.293473%; background-size: 119.047619%; }
-.doubleclick { background-position: 0 29.986308%; background-size: 119.047619%; }
-.ebay-us { background-position: 0 32.679142%; background-size: 119.047619%; }
-.ethihad { background-position: 0 35.371976%; background-size: 119.047619%; }
-.expedia { background-position: 0 38.064811%; background-size: 119.047619%; }
-.facebook { background-position: 0 40.757645%; background-size: 119.047619%; }
-.facebook2 { background-position: 0 43.450479%; background-size: 119.047619%; }
-.flipkart { background-position: 0 46.143314%; background-size: 119.047619%; }
-.futureads { background-position: 0 48.836148%; background-size: 119.047619%; }
-.google { background-position: 0 51.528982%; background-size: 119.047619%; }
-.groupon { background-position: 0 54.221817%; background-size: 119.047619%; }
-.inmobi { background-position: 0 56.914651%; background-size: 119.047619%; }
-.jetairways { background-position: 0 59.607485%; background-size: 119.047619%; }
-.lazada { background-position: 0 62.300319%; background-size: 119.047619%; }
-.lemmonet { background-position: 0 64.993154%; background-size: 119.047619%; }
-.marimedia { background-position: 0 67.685988%; background-size: 119.047619%; }
-.millennial { background-position: 0 70.378822%; background-size: 119.047619%; }
-.mopub { background-position: 0 73.071657%; background-size: 119.047619%; }
-.netshoes { background-position: 0 75.764491%; background-size: 119.047619%; }
-.nexage { background-position: 0 78.457325%; background-size: 119.047619%; }
-.paytm { background-position: 0 81.15016%; background-size: 119.047619%; }
-.pubmatic { background-position: 0 83.842994%; background-size: 119.047619%; }
-.pulsepoint { background-position: 0 86.535828%; background-size: 119.047619%; }
-.rakuten { background-position: 0 89.228663%; background-size: 119.047619%; }
-.rubicon { background-position: 0 91.921497%; background-size: 119.047619%; }
-.smaato { background-position: 0 94.614331%; background-size: 119.047619%; }
-.souq-high { background-position: 0 97.307166%; background-size: 119.047619%; }
-.walmart { background-position: 0 100%; background-size: 119.047619%; }
+.adorika { background-position: 0 0%; background-size: 100%; }
+.alibaba { background-position: 0 3.125%; background-size: 100%; }
+.appnexus { background-position: 0 6.25%; background-size: 100%; }
+.casale { background-position: 0 9.375%; background-size: 100%; }
+.creafi { background-position: 0 12.5%; background-size: 100%; }
+.ctrip { background-position: 0 15.625%; background-size: 100%; }
+.doubleclick { background-position: 0 18.75%; background-size: 100%; }
+.ebay-us { background-position: 0 21.875%; background-size: 100%; }
+.ethihad { background-position: 0 25%; background-size: 100%; }
+.expedia { background-position: 0 28.125%; background-size: 100%; }
+.facebook { background-position: 0 31.25%; background-size: 100%; }
+.facebook2 { background-position: 0 34.375%; background-size: 100%; }
+.flipkart { background-position: 0 37.5%; background-size: 100%; }
+.futureads { background-position: 0 40.625%; background-size: 100%; }
+.google { background-position: 0 43.75%; background-size: 100%; }
+.groupon { background-position: 0 46.875%; background-size: 100%; }
+.inmobi { background-position: 0 50%; background-size: 100%; }
+.jetairways { background-position: 0 53.125%; background-size: 100%; }
+.lazada { background-position: 0 56.25%; background-size: 100%; }
+.lemmonet { background-position: 0 59.375%; background-size: 100%; }
+.marimedia { background-position: 0 62.5%; background-size: 100%; }
+.millennial { background-position: 0 65.625%; background-size: 100%; }
+.mopub { background-position: 0 68.75%; background-size: 100%; }
+.netshoes { background-position: 0 71.875%; background-size: 100%; }
+.nexage { background-position: 0 75%; background-size: 100%; }
+.paytm { background-position: 0 78.125%; background-size: 100%; }
+.pubmatic { background-position: 0 81.25%; background-size: 100%; }
+.pulsepoint { background-position: 0 84.375%; background-size: 100%; }
+.rakuten { background-position: 0 87.5%; background-size: 100%; }
+.rubicon { background-position: 0 90.625%; background-size: 100%; }
+.smaato { background-position: 0 93.75%; background-size: 100%; }
+.souq-high { background-position: 0 96.875%; background-size: 100%; }
+.walmart { background-position: 0 100%; background-size: 100%; }
 
 /*---HTML--
 
-<img class="adjust" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
-<img class="appsflyer" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
-<img class="apsalar" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAABkAQMAAACVTr9NAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABpJREFUeNrtwQENAAAAwqD3T20PBxQAAMCPAQzkAAECRwQ7AAAAAElFTkSuQmCC">
 <img class="adorika" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="alibaba" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
 <img class="appnexus" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANIAAAA6AQMAAAD/QJXuAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAABVJREFUeNpjYBgFo2AUjIJRMAqoBwAGWAABoEx5fAAAAABJRU5ErkJggg==">
