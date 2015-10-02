@@ -603,7 +603,6 @@
         </div>
 	</div>
     </form> -->
-<<<<<<< HEAD
 	
 <?php echo do_shortcode('[contact-form-7 id="4" title="contact" html_class="form form-horizontal"  ]'); ?>
 

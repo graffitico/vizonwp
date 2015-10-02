@@ -414,6 +414,10 @@ span.wpcf7-not-valid-tip {
 	margin: 5% auto;
 }
 
+.frame-6.container {
+	margin-left:0px;
+}
+
 /*--CaseStudy---*/
 
 .big-white-number {
@@ -513,7 +517,7 @@ span.wpcf7-not-valid-tip {
 	color:#fff;
 }
 
-#infoform button .btn-default {
+#infoform .btn-default {
 	font-family: proximab;
 	color:#fff;
 	border: none;
@@ -523,15 +527,13 @@ span.wpcf7-not-valid-tip {
 	font-size:18px;
 }
 
-
-
 #infoform button:hover {
 	background-color:#222;
 	text-decoration:none;
 }
 
 .address-box {
-	margin-top:-10%;
+	margin-top:-8%;
 	margin-left: 65%;
 	color:#fff;
 }
