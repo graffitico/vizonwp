@@ -39,7 +39,7 @@ function honor_ssl_for_attachments($url) {
 
 
 
-	 if(!is_single()){
+	 if(!is_single() && !is_admin()){
 	
 	echo ( $_SERVER['HTTPS'] == 'on' ) ? str_replace($http, $https, $url) : $url;
 

@@ -563,7 +563,7 @@ if( $site->blogname == "vizury.com" && is_front_page() ){
   $ip_data =   geoCheckIP( $ip );
   if($ip_data != "ip_invalid" && $ip_data->status  == "success")
   {
-    if($ip_data->countryCode == 'USJ' ){
+    if($ip_data->countryCode == 'US' ){
      
         wp_redirect( home_url()."/mobile" ); exit;
     }

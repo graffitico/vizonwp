@@ -541,6 +541,7 @@
 		<p>Vizury Interactive Solutions Limited<br>599, Fairchild Dr. in Mountain View,<br>CA - +19174129765</p>
 	</div>
 	<div id="infoform">
+
    <!-- <form class="form form-horizontal" role="form">
     <div class="row">
         <div class="form-group">
@@ -602,8 +603,10 @@
         </div>
 	</div>
     </form> -->
+<<<<<<< HEAD
 	
 <?php echo do_shortcode('[contact-form-7 id="4" title="contact" html_class="form form-horizontal"  ]'); ?>
+
    </div>
    <div class="address-box hidden-sm hidden-xs">
 		<p>Vizury Interactive Solutions Limited<br>599, Fairchild Dr. in Mountain View,<br>CA - +19174129765</p>
