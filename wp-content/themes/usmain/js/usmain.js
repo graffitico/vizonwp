@@ -5,11 +5,8 @@
     var clicks = $(this).data('clicks');
   if (clicks || click==0) {
      $('.mobilenavigation').fadeIn( "slow" );
-     $('.burger').attr('src', '/images/cross-01.svg');
+     $('.burger').attr('src', '/images/burger-cross-1.svg');
      
-     $(this).css({
-     	'width' : '30px',
-     });
   } else {
      $('.mobilenavigation').fadeOut( "slow" );
      $('.burger').attr('src', '/images/burger.svg');
@@ -23,6 +20,12 @@
   ++click;
 });
 
+$('.mobilenavigation li a').mouseup(function(){
+	$(".mobilenavigation").css("display", "none");
+	$('.burger').attr('src', '/images/burger.svg');
+	$('.navigation-trigger').css("width","auto");
+});
+
     $(document).mouseup(function (e)
 {
     var container = $(".mobilenavigation");
@@ -32,6 +35,12 @@
     {
         container.hide();
         $('.burger').attr('src', '/images/burger.svg');
+		$('.navigation-trigger').css("width","auto");
     }
 });
+
+
+
+
+
 })(jQuery);
