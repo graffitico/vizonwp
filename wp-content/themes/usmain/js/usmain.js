@@ -23,6 +23,12 @@
   ++click;
 });
 
+$('.mobilenavigation li a').mouseup(function(){
+	$(".mobilenavigation").css("display", "none");
+	$('.burger').attr('src', '/images/burger.svg');
+	$('.navigation-trigger').css("width","auto");
+});
+
     $(document).mouseup(function (e)
 {
     var container = $(".mobilenavigation");
@@ -32,6 +38,12 @@
     {
         container.hide();
         $('.burger').attr('src', '/images/burger.svg');
+		$('.navigation-trigger').css("width","auto");
     }
 });
+
+
+
+
+
 })(jQuery);

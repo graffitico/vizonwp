@@ -240,44 +240,30 @@ $final
     );
 
   if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-
-    <div class="panel panel-default">
+ <div class="panel panel-default">
       <div class="row job-result panel-heading">
-
       <div class="col-md-4"><span class="categ-head"><?php echo the_title(); ?></span></div>
       <div class="col-md-4"><span class="categ-head"><?php  echo intval( get_post_meta( get_the_ID(), 'experience_from', true ) )  ?>-<?php  echo intval( get_post_meta( get_the_ID(), 'experience_to', true ) )  ?> Years</span></div>
       <div class="col-md-4"><span class="categ-head"> <?php echo esc_html( get_post_meta( get_the_ID(), 'posting_location', true ) ); ?>
-
       <a class="categ-down collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo the_ID() ?>"></a>
-
       </span></div>
-
       </div><!-- end of row -->
-
       <!-- Job Description -->
       <div class="row">
-
       <div id="collapse-<?php echo the_ID() ?>" class="col-md-12 panel-collapse collapse out">
       <section class="job-desc panel-body">
-
      <?php echo the_content(); ?>
       <button data-toggle="modal" data-target="#apply-modal" class="apply-button" data-id="<?php echo the_ID() ?>" >Apply</button>
       </section>
       </div>
-
       </div><!-- end of row/Job Description -->
-
       </div><!-- end of panel-default -->
-
-
   <?php endwhile; ?>
   <?php else: ?>
     <h2>No job posts found</h2>
   <?php endif;
-
   die();
 }
-
 add_action('wp_ajax_filter_posts', 'ajax_filter_get_posts');
 add_action('wp_ajax_nopriv_filter_posts', 'ajax_filter_get_posts');
 
@@ -421,16 +407,8 @@ $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' =
 
       echo '<section class="read-more-block"><div class="container-fluid">';
       if( $title ) echo '<div class="row"><div class="col-lg-12 text-center section-title"><h2>' . $title . '</h2></div></div>   <div class="row">'; ?>
-<!--      <ul>
-        <?php // while( $r->have_posts() ) : $r->the_post(); ?>
-        <li><?php // the_time( 'F d'); ?> - <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
-        <?php //endwhile; ?>
-      </ul> -->
 <?php
-
-
  while( $r->have_posts() ) : $r->the_post(); ?>
-
   <?php
 $link = '';
 $final_link = '';
@@ -438,10 +416,7 @@ $final_link = '';
     $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'intergalactic-large' );
     $img_url =  esc_url( $thumbnail[0] );
 
- } ?>
-
-
-    <?php
+ } 
       $link = esc_html( get_post_meta( get_the_ID(), 'link', true ) );
 
     ?>
@@ -551,6 +526,9 @@ add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
 add_action('wp_head' , 'redirect_check'  );
 
 function redirect_check(){
+
+
+
 $site_id = get_current_blog_id();
 $site = get_blog_details( array( 'blog_id' => $site_id ));
 
@@ -559,15 +537,17 @@ if( $site->blogname == "vizury.com" && is_front_page() ){
 
   if(!isset($_GET['redirect']) && $_GET['redirect'] != "false" ){
 
-  $ip = get_client_ip();
-  $ip_data =   geoCheckIP( $ip );
-  if($ip_data != "ip_invalid" && $ip_data->status  == "success")
-  {
-    if($ip_data->countryCode == 'US' ){
+  //$ip = get_client_ip();
+//print_r(do_shortcode('[geoip_detect2 property="country.isoCode"]'));
+// die();
+//   $ip_data =   geoCheckIP( $ip );
+//   if($ip_data != "ip_invalid" && $ip_data->status  == "success")
+//   {
+    if(do_shortcode('[geoip_detect2 property="country.isoCode"]') == 'US' ){
      
-        wp_redirect( home_url()."/mobile" ); exit;
+        wp_safe_redirect( home_url()."/mobile" ); exit;
     }
-  }
+ // }
 }
 
 
@@ -580,35 +560,31 @@ if( $site->blogname == "vizury.com" && is_front_page() ){
 
 }
 
-// Function to get the client IP address
-function get_client_ip() {
-    $ipaddress = getenv('HTTP_CLIENT_IP')?:
-getenv('HTTP_X_FORWARDED_FOR')?:
-getenv('HTTP_X_FORWARDED')?:
-getenv('HTTP_FORWARDED_FOR')?:
-getenv('HTTP_FORWARDED')?:
-getenv('REMOTE_ADDR');
-    return $ipaddress;
-}
+//// Function to get the client IP address
+// function get_client_ip() {
+//     $ipaddress = getenv('HTTP_CLIENT_IP')?:
+// getenv('HTTP_X_FORWARDED_FOR')?:
+// getenv('HTTP_X_FORWARDED')?:
+// getenv('HTTP_FORWARDED_FOR')?:
+// getenv('HTTP_FORWARDED')?:
+// getenv('REMOTE_ADDR');
+//     return $ipaddress;
+// }
 
 
-function geoCheckIP( $ip )
-{
-    //check, if the provided ip is valid
-    if( !filter_var( $ip, FILTER_VALIDATE_IP ) )
-    {
-       return "ip_invalid";
-    }else{
-          //contact ip-server
-    $response=@file_get_contents( 'http://ip-api.com/json/'.$ip );
-    return json_decode($response);
-    }
+// function geoCheckIP( $ip )
+// {
+//     //check, if the provided ip is valid
+//     if( !filter_var( $ip, FILTER_VALIDATE_IP ) )
+//     {
+//        return "ip_invalid";
+//     }else{
+//           //contact ip-server
+//     $response=@file_get_contents( 'http://ip-api.com/json/'.$ip );
+//     return json_decode($response);
+//     }
 
 
     
-}
-
-
-
-
+// }
 ?>
