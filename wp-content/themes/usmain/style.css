@@ -18,7 +18,7 @@ Tags: dark, black, white, one-column, right-sidebar, custom-background, custom-h
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{font-family:proxima;font-weight:inherit;font-style:inherit;margin:0px;padding:0px;vertical-align:baseline;border:0px;outline:0px;word-wrap: normal;max-width:100vw;}
 html{font-size:62.5%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 *,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-body{background:#fff;overflow-x:hidden;}
+html, body{background:#fff;overflow-x:hidden;}
 article,aside,details,figcaption,figure,footer,header,main,nav,section{display:block}
 ol,ul{list-style:none}
 table{border-spacing:0;border-collapse:separate}
@@ -60,11 +60,12 @@ span.wpcf7-not-valid-tip {
 }
 
 .yellow-text-block {
-	position:relative;
 	background-color:#86E2D5;
 	text-align:center!important;
 	color:#222;
 	padding:1%;
+	height:100%;
+	position:relative;
 }
 
 .yellow-strip-text {
@@ -73,6 +74,8 @@ span.wpcf7-not-valid-tip {
 	display:inline;
 	line-height:1em;
 	font-weight:700;
+	position:relative;
+	bottom:2%;
 }
 
 .readmore1 {
@@ -157,19 +160,16 @@ span.wpcf7-not-valid-tip {
 
 /*--Main Content--*/
 
-.frame-1, .frame-2, .frame-3-big,.frame-4-big {
-	height:100vh;
-}
-
-
 .frame1-text {
 	height: 33%;
 }
 
 .frame1-leftpane {
-	background: #fff url("/images/BG-0.jpg") no-repeat 100% 80% fixed;
+	background-image: url("/images/BG-13.jpg");
+	background-attachment:fixed;
+	background-position:30% 0%;
+	background-repeat:no-repeat;
 	background-size: cover;
-	height:100vh;
 	max-width:100%;
 }
 
@@ -191,35 +191,17 @@ span.wpcf7-not-valid-tip {
 	background-size:100% 100%;
 }
 
-.frame-2 h2 {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+.frame-2 h2, .frame-3-big h2, .frame-4-big h2 {
+	position: relative;
+    top:50%;
+	font-size:44px;
 }
 
-.frame-3-big h2, .frame-4-big h2 {
-	position: absolute;
-    margin-top: 20%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.frame3-rightpane p , .frame4-rightpane p{
-	margin-top:20%;
-}
-
-.frame2-leftpane {
-	background-image: url("/images/BG-4.jpg");
-	background-repeat:no-repeat;
-	background-attachment:fixed;
+.frame2-pane {
+	background: #fff url("/images/BG-1.jpg") no-repeat center center fixed;
 	background-size: cover;
-	height:100vh;
+	height:40vh;
 	max-width:100%;
-}
-
-.frame2-rightpane , .frame3-rightpane{
-	background: #fff;
 }
 
 .frame2-rightpane p {
@@ -237,78 +219,73 @@ span.wpcf7-not-valid-tip {
 	position: absolute;
 	padding: 10px 40px;
 	font-size:22px;
-    margin-top: 60%;
+    margin-top: 5%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 
 /*--App Retargeting--*/
 
-.frame3-leftpane {
-	background: #fff url("/images/BG-5.jpg") no-repeat center center fixed;
+.frame3-pane {
+	background: #fff url("/images/BG-2.jpg") no-repeat center center fixed;
 	background-size: cover;
-	height:100vh;
+	height:40vh;
 	max-width:100%;
-	width:50vw;
+	margin-top:8%;
 }
 
-#thecarousel, #thecarouseltwo {
-	top:40%;
-}
-
-#thecarousel img, #thecarouseltwo img {
-	display:block;
-	margin-left:18vw;
-}
-
-.carousel-indicators {
-	bottom:10%;
-	left:25%;
-}
-
-#thecarousel .right, #thecarouseltwo .right {
-	right: 60%;
-}
-
-#thecarousel .left, #thecarouseltwo .left {
-	/*left: 10%;*/
-}
-
-.feature-content {
-	text-align: center;
-	padding: auto 5%;
+.features-icon {
+	height:200px;
+	position:relative;
+	left:40%;
 }
 
 .carousel-inner > .item > img {
-	height:30vh;
+	height:200px;
+	text-align:center;
+	margin-left:0;
+}
+
+.carousel-inner {
+	height:400px;
 }
 
 .carousel {
 	position:relative;
-	overflow:hidden;
-	height: 50vh;
-	width:100vw;
+	height:400px;
 }
 
-.carousel-inner {
-	position:relative;
-	top:20%;
+.carousel-control.right {
+	right:30%;
+	bottom:60%;
+}
+
+.carousel-control.left {
+	left:30%;
+	bottom:60%;
 }
 
 .carousel-caption {
-	left:56%;
-	top:10%;
 	text-shadow:none;
 	color:#202020;
-	width:35%;
+	position:relative;
+	margin-top:50px;
+	left:0%;
+	padding-left:20%;
+	padding-right:20%;
+}
+
+.carousel-indicators li {
+	border:1px solid #222;
+}
+
+.carousel-indicators {
+	top:55%;
+	height:20px;
 }
 
 .carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
 	display:block;
-}
-
-.carousel > .carousel-control.left {
-	left:10%;
 }
 
 .right-text {
@@ -356,14 +333,19 @@ span.wpcf7-not-valid-tip {
 
 /*--App Reengagement--*/
 
-.frame4-leftpane {
-	background: #fff url("/images/BG-6.jpg") no-repeat center center fixed;
-	background-size: cover;
-	height:100vh;
+.frame4-pane {
+	background: #fff url("/images/BG-3.jpg") no-repeat center center fixed;
+	background-size: 100% 100%;
+	height:40vh;
 	max-width:100%;
-	width:50vw;
 }
 
+.bodytext {
+	margin-top:5%;
+	margin-bottom:5%;
+	padding-left:20%;
+	padding-right:20%;
+}
 
 
 /*--Benefits--*/
@@ -378,6 +360,7 @@ span.wpcf7-not-valid-tip {
 	background-size: cover;
 	padding-top: 5%;
 	padding-bottom:10%;
+	margin-top:5%;
 }
 
 .frame-5 p {
@@ -499,16 +482,18 @@ span.wpcf7-not-valid-tip {
 	background-image:url('/images/BG-12.jpg');
 	background-repeat:no-repeat;
 	background-attachment: fixed;
-	background-size:100% 100%;
-	padding-top: 10%;
+	background-size:cover;
+	padding-top: 5%;
 	padding-bottom: 5%;
-	/*height:100vh;*/
+	height:100%;
 	max-width:100%;
 	margin-top:5%;
 }
 
-#infoform {
-	margin-right: 35%;
+.address-boxmob {
+	font-weight:700;
+	color:#fff;
+	margin-bottom:3%;
 }
 
 #infoform label {
@@ -522,13 +507,13 @@ span.wpcf7-not-valid-tip {
 	color:#fff;
 	border: none;
 	background-color: #7b7b7b;
-	margin-left:60%;
+	margin-left:58%;
 	padding: 5px 40px;
 	font-size:18px;
 }
 
 .btn-default:hover {
-	background-color:#222;
+	background-color:#fff;
 	text-decoration:none;
 }
 
@@ -538,9 +523,6 @@ span.wpcf7-not-valid-tip {
 	color:#fff;
 }
 
-.address-box p {
-	font-family:proximab;
-}
 
 .pull-right {
 	float:right !important;
@@ -566,7 +548,9 @@ span.wpcf7-not-valid-tip {
 .features-icon {
 	height: 150px;
 	display: block;
-	margin: 2% auto;
+	left:25%;
+	margin-top: 10%;
+	margin-bottom:5%;
 }
 
 .frame2mob img {
@@ -581,10 +565,6 @@ span.wpcf7-not-valid-tip {
 	margin-top:25%;
 }
 
-.features-icon {
-	margin-top: 10%;
-	margin-bottom:5%;
-}
 
 #benefits img {
 	height:300px;
@@ -619,9 +599,6 @@ span.wpcf7-not-valid-tip {
 .bodytext {
 	margin-top:10%;
 	margin-bottom:10%;
-}
-
-.bodytext{
 	padding-left:10%;
 	padding-right:10%;
 }
@@ -629,7 +606,13 @@ span.wpcf7-not-valid-tip {
 .feature-content {
 	padding-left:10%;
 	padding-right:10%;
+	text-align:center;
 }
+
+.feature-content h4 {
+	text-align:center;
+}
+
 
 .btn-us {
 	margin-top:10%;
@@ -647,7 +630,7 @@ span.wpcf7-not-valid-tip {
 }
 
 .frame-5 {
-	margin-top:20%;
+	margin-top:40%;
 }
 
 .big-white-number {
@@ -699,6 +682,7 @@ span.wpcf7-not-valid-tip {
 	height: 150px;
 	display: block;
 	margin: 8% auto 2%;
+	left:0!important;
 }
 
 .platform {
@@ -708,6 +692,11 @@ span.wpcf7-not-valid-tip {
 .feature-content {
 	padding-left:20%;
 	padding-right:20%;
+	text-align:Center;
+}
+
+.feature-content h4 {
+	text-align:center;
 }
 
 .blog-entry-tile img {
@@ -829,6 +818,7 @@ span.wpcf7-not-valid-tip {
 	height: 150px;
 	display: block;
 	margin: 8% auto 2%;
+	left:0!important;
 }
 
 .mobbannertext {
@@ -852,7 +842,13 @@ span.wpcf7-not-valid-tip {
 .feature-content p{
 	padding-left:10%;
 	padding-right:10%;
+	text-align:center;
 }
+
+.feature-content h4 {
+	text-align:center;
+}
+
 
 .readmore2 {
 	height:30px;
@@ -922,6 +918,7 @@ span.wpcf7-not-valid-tip {
 
 #infoform {
 	margin-left:-15%;
+	margin-right:0%;
 }
 
 .btn-default {
@@ -929,57 +926,10 @@ span.wpcf7-not-valid-tip {
 }	
 
 .address-box {
-	margin-top:-38%;
-	margin-left:65%;
+	margin-top:-28%;
+	margin-left:73%;
 }
 
-
-#thecarousel, #thecarouseltwo {
-	top:25%;
-}
-
-
-.carousel-indicators {
-	bottom:10%;
-	left:25%;
-}
-
-#thecarousel .right, #thecarouseltwo .right {
-	right: 60%;
-}
-
-#thecarousel .left, #thecarouseltwo .left {
-	/*left: 10%;*/
-}
-
-.feature-content {
-	text-align: center;
-	padding: auto 5%;
-}
-
-.carousel-inner > .item > img {
-	height:200px;
-}
-
-.carousel {
-	position:relative;
-	overflow:hidden;
-	height: 50vh;
-	width:100vw;
-}
-
-.carousel-inner {
-	position:relative;
-	top:20%;
-}
-
-.carousel-caption {
-	left:56%;
-	top:10%;
-	text-shadow:none;
-	color:#202020;
-	width:35%;
-}
 
 .right-text {
 	padding-left:10%;
@@ -1022,7 +972,6 @@ span.wpcf7-not-valid-tip {
 	background-attachment: fixed;
 	height:100vh;
 }
-
 
 
 }

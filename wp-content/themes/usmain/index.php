@@ -22,16 +22,16 @@
 </div>
 </section>
 <div class="yellow-text-block hidden-xs hidden-sm container-fluid">
-	<h4 class="yellow-strip-text">Beyond Installs - A Consortium of Mobile Marketers.<a href='/vizuryblog/beyond-installs-the-consortium-on-mobile-app-marketing/' target="_blank"><img class="readmore1" src="/images/readmore_black.svg"></a></h4>
+	<h4 class="yellow-strip-text">Beyond Installs - A Consortium of Mobile Marketers.</h4><a href='/vizuryblog/beyond-installs-the-consortium-on-mobile-app-marketing/' target="_blank"><img class="readmore1" src="/images/readmore_black.svg"></a>
 </div>
 <section id="shoppers">
 <div class="frame-2 hidden-xs hidden-sm container-fluid">
-	<div class="col-md-6 col-xs-12 frame2-leftpane img-responsive">
-		<h2 class="white-text">Shoppers love apps!</h2>
+	<div class="frame2-pane">
+		<h2 class="white-text text-center">Shoppers love apps!</h2>
 	</div>
-	<div class="col-md-6 col-xs-12 frame2-rightpane">
-		<p class="text-center">Shoppers love apps! They spend about 90% of their mobile time there. Gear up to explore the app-o-sphere with Vizury’s App marketing suite. Record behavioral signals, deliver tailored ads to your customers as they open other apps. Personalize push notifications and have users acting on it. Get more than just downloads, get sales from your apps. Connect with inactive users. Start right and stay ahead.</p>
-		<a href="#contact" class="btn-us">Get In Touch</a>
+	<div class="bodytext">
+	<p class="text-center">Shoppers love apps! They spend about 90% of their mobile time there. Gear up to explore the app-o-sphere with Vizury’s App marketing suite. Record behavioral signals, deliver tailored ads to your customers as they open other apps. Personalize push notifications and have users acting on it. Get more than just downloads, get sales from your apps. Connect with inactive users. Start right and stay ahead.</p>
+	<a href="#contact" class="btn-us">Get In Touch</a>
 	</div>
 </div>
 <div class="container-fluid frame2mob hidden-md hidden-lg">
@@ -45,10 +45,14 @@
 </div>
 </section>
 <section id="app-retarget">
-<div class="frame-3-big img-responsive hidden-sm hidden-xs container-fluid">
-	<div class="col-md-6 frame3-leftpane">
-		<h2 class="white-text">App Retargeting</h2>
-	<div id="thecarousel" class="carousel slide carousel-fade" data-ride="carousel">
+<div class="frame-3-big hidden-sm hidden-xs">
+	<div class="frame3-pane">
+		<h2 class="white-text text-center">App Retargeting</h2>
+	</div>
+	<div class="bodytext">
+		<p class="text-center">Customers almost always download an app, linger a while and then go away. It takes proactive, consistent and targeted messaging to get customers to click on the “buy” button. We at Vizury, have mastered the art of retargeting – no overkill – just precisely calibrated campaigns that give your brands a lift and ROI on your marketing spend.</p>
+	</div>
+	<div id="thecarousel" class="carousel slide carousel-fade container" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-targer="#thecarousel" data-slide-to="0" class="active"></li>
 			<li data-targer="#thecarousel" data-slide-to="1"></li>
@@ -59,42 +63,42 @@
 		</ol>
 			<div class="carousel-inner">
 				<div class="item active">
-					<img class="features-icon" src="/images/SDK_features_retarget_W.svg">
+					<img class="features-icon" src="/images/SDK_features_appreng.svg">
 					<div class="carousel-caption">
 						<h4>Light on SDK, heavy on data</h4>
 						<p>Kiss goodbye to SDK integrations. Vizury’s app user re-engagement uses a unique server-to-server integration for harvesting behavioural data. Alternatively Vizury’s app can easily integrate with a third party mobile analytics partner and build critical data around user intent.</p>
 					</div>
 				</div>
 				<div class="item">
-					<img class="features-icon" src="/images/platform_features_retarget_W.svg">
+					<img class="features-icon" src="/images/platform_features_appreng.svg">
 					<div class="carousel-caption">
 						<h4>Platform agnostic</h4>
 						<p>Don’t worry about technology, we have that sorted. Our App re‐engagement solution works well on both iOS and Android devices. Our html5 ads render perfectly on the mobile platform.</p>
 					</div>
 				</div>
 				<div class="item">
-					<img class="features-icon" src="/images/specificity_features_retarget_W.svg">
+					<img class="features-icon" src="/images/specificity_features_appreng.svg">
 					<div class="carousel-caption">
 						<h4>Specificity in messaging</h4>
 						<p>Know what your customers are looking for. Data fuelled behavioural patterns help tailor unique offers for every customer.</p>
 					</div>
 				</div>
 				<div class="item">
-					<img class="features-icon" src="/images/deterministic_features_retarget_W.svg">
+					<img class="features-icon" src="/images/deterministic_features_appreng.svg">
 					<div class="carousel-caption">
 						<h4>Deterministic approach through device ID</h4>
 						<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
 					</div>
 				</div>
 				<div class="item">
-					<img class="features-icon" src="/images/Bannerdeep_features_retarget_W.svg">
+					<img class="features-icon" src="/images/Bannerdeep_features_appreng.svg">
 					<div class="carousel-caption">
 						<h4>Banner deep linking</h4>
 						<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
 					</div>
 				</div>
 				<div class="item">
-					<img class="features-icon" src="/images/reportinsights_features_retarget_W.svg">
+					<img class="features-icon" src="/images/reportinsights_features_appreng.svg">
 					<div class="carousel-caption">
 						<h4>Reports and insights</h4>
 						<p>While most mobile marketing partners operate on a probabilistic user identification model, we have a deterministic approach to identification, thanks to our proprietary and powerful algorithms.</p>
@@ -107,10 +111,6 @@
 			<a class="right carousel-control" href="#thecarousel" role="button" data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
-	</div>
-	</div>
-	<div class="col-md-6 frame3-rightpane">
-		<p class="text-center right-text">Customers almost always download an app, linger a while and then go away. It takes proactive, consistent and targeted messaging to get customers to click on the “buy” button. We at Vizury, have mastered the art of retargeting – no overkill – just precisely calibrated campaigns that give your brands a lift and ROI on your marketing spend.</p>
 	</div>
 </div>
 <div class="frame-3-small hidden-md hidden-lg container-fluid">
@@ -169,49 +169,52 @@
 </section>
 <section id="app-reengage">
 <div class="frame-4-big hidden-sm hidden-xs container-fluid">
-	<div class="col-md-6 frame4-leftpane">
-		<h2 class="white-text">App Re-engagement</h2>
-	<div id="thecarouseltwo" class="carousel slide carousel-fade" data-ride="carousel">
-		<ol class="carousel-indicators">
+	<div class="frame4-pane">
+		<h2 class="white-text text-center">App Re-engagement</h2>
+	</div>
+	<div class="bodytext">
+		<p class="text-center">If your customer has not come-back to your app within 7 days from install, there’s a good chance he will never come back. Stay connected with your users and interact with them across sms, websites, In-app ads, push notifications to make sure they never leave.</p>
+	</div>
+	<div id="thecarouseltwo" class="carousel slide carousel-fade text-center container" data-ride="carousel">
+		<ol class="carousel-indicators text-center">
 			<li data-targer="#thecarouseltwo" data-slide-to="0" class="active"></li>
 			<li data-targer="#thecarouseltwo" data-slide-to="1"></li>
 			<li data-targer="#thecarouseltwo" data-slide-to="2"></li>
 			<li data-targer="#thecarouseltwo" data-slide-to="3"></li>
 			<li data-targer="#thecarouseltwo" data-slide-to="4"></li>
-			<li data-targer="#thecarouseltwo" data-slide-to="5"></li>
 		</ol>
-			<div class="carousel-inner">
+			<div class="carousel-inner text-center">
 				<div class="item active">
-					<img class="features-icon" src="/images/appre_getitright_W.svg">
-					<div class="carousel-caption">
+					<img class="features-icon text-center" src="/images/appre_getitright.svg">
+					<div class="carousel-caption text-center">
 						<h4>Get it right with data</h4>
 						<p>Gather In-app data to understand your users and their behavioral patterns. Easy to set-up, our solution can access data using postbacks through analytics partners, server to server integration and event loggers. Choose the option that best suits your tech.</p>
 					</div>
 				</div>
 				<div class="item">
-					<img class="features-icon" src="/images/appre_segmentandcustomize_W.svg">
-					<div class="carousel-caption">
+					<img class="features-icon text-center" src="/images/appre_segmentandcustomize.svg">
+					<div class="carousel-caption text-center">
 						<h4>Segment and customize</h4>
 						<p>Define niche user segments based on inactivity period and purchase cycle. Create customized messages for each segment and engage efficiently.</p>
 					</div>
 				</div>
 				<div class="item">
-					<img class="features-icon" src="/images/appre_pushnotification_W.svg">
-					<div class="carousel-caption">
+					<img class="features-icon text-center" src="/images/appre_pushnotification.svg">
+					<div class="carousel-caption text-center">
 						<h4>Personalize Push</h4>
 						<p>Unleash the true potential of push notifications. Based on user intent and past activity, customize your push notifications to deliver personalized offers and recommendations.</p>
 					</div>
 				</div>
 				<div class="item">
-					<img class="features-icon" src="/images/appre_uninstallprediction_W.svg">
-					<div class="carousel-caption">
+					<img class="features-icon text-center" src="/images/appre_uninstallprediction.svg">
+					<div class="carousel-caption text-center">
 						<h4>Uninstall prediction</h4>
 						<p>Our algorithms analyse historical data and set active period window for your customers. Keep close track and read the signals, get alerts about likely uninstalls.</p>
 					</div>
 				</div>
 				<div class="item">
-					<img class="features-icon" src="/images/appre_platform_W.svg">
-					<div class="carousel-caption">
+					<img class="features-icon text-center" src="/images/appre_platform.svg">
+					<div class="carousel-caption text-center">
 						<h4>Platform-agnostic</h4>
 						<p>Our App re-engagement solution is perfect for the mobile platform and works seamlessly on both iOS and Android devices.</p>
 					</div>
@@ -223,10 +226,6 @@
 			<a class="right carousel-control" href="#thecarouseltwo" role="button" data-slide="next">
 				<span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
-	</div>
-	</div>
-	<div class="col-md-6 frame4-rightpane">
-		<p class="text-center right-text">If your customer has not come-back to your app within 7 days from install, there’s a good chance he will never come back. Stay connected with your users and interact with them across sms, websites, In-app ads, push notifications to make sure they never leave.</p>
 	</div>
 </div>
 <div class="frame-4-small hidden-md hidden-lg container-fluid">
@@ -544,7 +543,7 @@
 </section>
 <section id="contact">
 <div class="frame10 container-fluid">
-	<div class="address-boxmob hidden-md hidden-lg">
+	<div class="address-boxmob text-center">
 		<p>Vizury Interactive Solutions Limited<br>599, Fairchild Dr. in Mountain View,<br>CA - PO Box 54043<br>+19174129765</p>
 	</div>
 	<div id="infoform">
@@ -614,9 +613,6 @@
 <?php echo do_shortcode('[contact-form-7 id="4" title="contact" html_class="form form-horizontal"  ]'); ?>
 
    </div>
-   <div class="address-box hidden-sm hidden-xs">
-		<p>Vizury Interactive Solutions Limited<br>599, Fairchild Dr. in Mountain View,<br>CA - PO Box 54043<br>+19174129765</p>
-	</div>
 </div>
 </section>
 
