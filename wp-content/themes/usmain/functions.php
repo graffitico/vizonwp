@@ -40,7 +40,7 @@ function custom_textarea_confirmation_validation_filter( $result, $tag ) {
      if($tag->name)
      {
      	
-     	if(!preg_match('/^[a-z0-9 .\-]+$/i', $_POST[$tag->name])){
+     	if(preg_match('/[<>]+$/i', $_POST[$tag->name])){
  			$result->invalidate( $tag, "Sorry No Special Characters Allowed" );
      	}
      	

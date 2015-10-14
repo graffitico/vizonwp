@@ -18,7 +18,7 @@
 
 // add_action( 'pre_get_posts', 'all_posts_on_case_studies_page' );
 
-include 'short_codes.php';
+// include 'short_codes.php';
 add_post_type_support( 'press_release', 'author' );
 add_post_type_support( 'industry_report', 'author' );
 add_post_type_support( 'paper', 'author' );
@@ -523,7 +523,7 @@ add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
 
 
 
-add_action('wp_head' , 'redirect_check'  );
+add_action('template_redirect' , 'redirect_check'  );
 
 function redirect_check(){
 
@@ -545,8 +545,19 @@ if( $site->blogname == "vizury.com" && is_front_page() ){
 //   {
     if(do_shortcode('[geoip_detect2 property="country.isoCode"]') == 'US' ){
      
-        wp_safe_redirect( home_url()."/mobile" ); exit;
+        wp_redirect( home_url()."/mobile" ); exit;
     }
+    // else if(do_shortcode('[geoip_detect2 property="country.isoCode"]') == 'CN'){
+    //      wp_safe_redirect( home_url()."/mobile" ); exit; 
+    // }
+    // else if(do_shortcode('[geoip_detect2 property="country.isoCode"]') == 'KO'){
+    //      wp_safe_redirect( home_url()."/mobile" ); exit; 
+    // }
+    //  else if(do_shortcode('[geoip_detect2 property="country.isoCode"]') == 'CN'){
+    //      wp_safe_redirect( home_url()."/mobile" ); exit; 
+    // }
+
+
  // }
 }
 
@@ -587,4 +598,95 @@ if( $site->blogname == "vizury.com" && is_front_page() ){
 
     
 // }
+
+
+add_action('add_meta_boxes', 'add_custom_product_meta_boxes');
+add_action( 'save_post', 'add_product_landing_fields', 10, 2 );
+
+function add_custom_product_meta_boxes(){
+
+$post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+$template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
+  // check for a template type
+  if ($template_file == 'products_landing.php') {
+    add_meta_box("product_landing_meta", "Products Editables", "display_product_landing_meta", "page", "normal", "low");
+
+  }
+
+  }
+
+function display_product_landing_meta( $post ) {
+    // Retrieve current name of the Director and Movie Rating based on review ID
+    // $media_coverage_date = esc_html( get_post_meta( $press_release->ID, 'media_coverage_date', true ) );
+    $yellow_text = esc_html( get_post_meta( $post->ID, 'yellow_text', true ) );
+    $arrow_link = esc_html( get_post_meta( $post->ID, 'arrow_link', true ) );
+    
+    
+    ?>
+    <table>
+
+         <tr>
+            <td style="width: 100%">Yellow Text</td>
+            <td><input type="text" name="product_landing_yellow_text" value="<?php echo $yellow_text; ?>" /></td>
+        </tr>
+                 <tr>
+            <td style="width: 100%">Arrow link</td>
+            <td><input type="text" name="product_landing_arrow_link" value="<?php echo $arrow_link; ?>" /></td>
+        </tr>
+        
+    </table>
+    <?php
+}
+
+function add_product_landing_fields( $post_id, $post ) {
+    // Check post type for movie reviews
+ 
+        // Store data in post meta table if present in post data
+        if ( isset( $_POST['product_landing_arrow_link'] ) ) {
+            update_post_meta( $post_id, 'arrow_link', $_POST['product_landing_arrow_link'] );
+        }
+         if ( isset( $_POST['product_landing_yellow_text'] ) ) {
+            update_post_meta( $post_id, 'yellow_text', $_POST['product_landing_yellow_text'] );
+        }
+
+    
+    
+}
+
+
+
+function yellow_tag_func() {
+
+global $post; 
+$postid = $post->ID;
+
+ $yellow_text ="" ; 
+ $arrow_link = ""; 
+ $yellow_text = esc_html( get_post_meta(  $postid, 'yellow_text', true ) ); 
+ $arrow_link = esc_html( get_post_meta(  $postid, 'arrow_link', true ) );
+
+ $html = '<div class="yellow-text-block">
+  <h4 class="yellow-strip-text">';
+   if($yellow_text != "" && $arrow_link != "" ){
+     $html .= $yellow_text;
+     $html .= '<a href="'. $arrow_link .'"  target="_blank"><span class="icon-home_yellowband_arrow"></span></a>';
+           }
+    $html .= '</h4></div>';
+
+  return $html;
+}
+add_shortcode( 'yellowtag', 'yellow_tag_func' );
+
+
+
+
+
+
+
 ?>
+<!-- yellow 
+<div class="yellow-text-block">
+  <h4 class="yellow-strip-text"><?php $yellow_text ="" ; $arrow_link = "";  $yellow_text = esc_html( get_post_meta(  get_the_ID(), 'yellow_text', true ) ); $arrow_link = esc_html( get_post_meta(  get_the_ID(), 'arrow_link', true ) ); if($yellow_text != "" && $arrow_link != "" ){ echo $yellow_text; ?><a href='<?= $arrow_link  ?>' target="_blank"><span class="icon-home_yellowband_arrow"></span></a><?php } ?></h4>
+</div>
+
+ yellow -->

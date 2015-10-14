@@ -47,11 +47,11 @@
 					    EN <span class="caret"></span>
 				  	</button>
 				  	<ul class="dropdown-menu">
-					    <li><a href="http://web.vizury.com/website/ar/?v=ar" target="_blank">AR</a></li>
+					    <!-- <li><a href="http://web.vizury.com/website/ar/?v=ar" target="_blank">AR</a></li> -->
 					    <li><a href="http://web.vizury.com/website/ja/?v=ja" target="_blank">JP</a></li>
-					    <li><a href="http://web.vizury.com/website/ko/?v=ko" target="_blank">KO</a></li>
+					    <!-- <li><a href="http://web.vizury.com/website/ko/?v=ko" target="_blank">KO</a></li> -->
 					    <li><a href="http://web.vizury.com/website/cn/?v=cn" target="_blank">CN</a></li>
-					    <li><a href="http://web.vizury.com/website/pt/?v=pt" target="_blank">PG</a></li>
+					    <!-- <li><a href="http://web.vizury.com/website/pt/?v=pt" target="_blank">PG</a></li> -->
 				  	</ul>
 				</li>
 				<li>

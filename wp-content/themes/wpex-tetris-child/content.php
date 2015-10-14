@@ -20,7 +20,7 @@ if ( is_singular() ) { ?>
 	<article <?php post_class('blog-entry clearfix'); ?>>
 		<?php if( has_post_thumbnail() ) { ?>
 			<div class="blog-entry-thumbnail">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img src="<?php echo aq_resize( wp_get_attachment_url( get_post_thumbnail_id() ),  wpex_img( 'blog_entry_width' ), wpex_img( 'blog_entry_height' ), wpex_img( 'blog_entry_crop' ) ); ?>" alt="<?php echo the_title(); ?>" /></a>
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"> <?php the_post_thumbnail(); ?> <!-- <img src="<?php // echo aq_resize( wp_get_attachment_url( get_post_thumbnail_id() ),  wpex_img( 'blog_entry_width' ), wpex_img( 'blog_entry_height' ), wpex_img( 'blog_entry_crop' ) ); ?>" alt="<?php //echo the_title(); ?>" /> --></a>
 			</div><!-- /blog-entry-thumbnail -->
 		<?php } ?>
 		<div class="entry-text clearfix">

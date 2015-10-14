@@ -34,7 +34,7 @@
 			<a href="#introduction" class="hidden-xs hidden-sm" title="Vizury Home" rel="home"><img src="/images/logo_full.svg" class="full_logo" alt="Vizury Logo" /></a>
 			<a href="#introduction" class="hidden-lg hidden-md" title="Vizury Home" rel="home"><img src="/images/logo_v.svg" class="full_logo" style="width: auto;" alt="Vizury Logo" /></a>
 		</div>
-		<div class='navigation-trigger'>
+		<div class='navigation-trigger' data-clicks="1" >
 			<img class="burger" src='/images/burger.svg'>
 		</div>
 		<ul id="navigation" class="mobilenavigation">
@@ -44,7 +44,8 @@
 			<li><a href='#clients'>Clients</a></li>
 			<li><a href='#publishers'>Publishers</a></li>
 			<li><a href='#contact'>Get in touch</a></li>
-			<li><a href='https://www.vizury.com' target="_blank">Vizury Corporate</a></li>
+			<li><a href='/?redirect=false' target="_blank">Vizury Corporate</a></li>
+
 		</ul>
 	</header>
 	</div>
