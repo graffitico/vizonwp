@@ -33,6 +33,11 @@ h1,h2,h3,h4,h5,h6 {font-weight:700px;font-family:proximab;}
 h4{font-size:18px;}
 img {max-width:100%;}
 
+
+.address-boxmob.text-center {
+    margin-bottom: 30px;
+}
+
 .wpcf7-response-output.wpcf7-validation-errors {
     width: 200px;
     margin: auto;
@@ -191,6 +196,7 @@ span.wpcf7-not-valid-tip {
 	background-size:100% 100%;
 }
 
+
 .frame-2 h2, .frame-3-big h2, .frame-4-big h2 {
 	position: relative;
     top:50%;
@@ -201,6 +207,25 @@ span.wpcf7-not-valid-tip {
 	background: #fff url("/images/BG-1.jpg") no-repeat center center fixed;
 	background-size: cover;
 	height:40vh;
+
+.frame-2 h2 {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.frame-3-big h2, .frame-4-big h2 {
+	position: relative;
+    top:50%;
+}
+
+.frame2-leftpane {
+	background-image: url("/images/BG-4.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	height:100vh;
+>>>>>>> 8ec706bcc9a2fe8d846eb61f6a80192c9e269348
 	max-width:100%;
 }
 
@@ -238,6 +263,7 @@ span.wpcf7-not-valid-tip {
 	height:200px;
 	position:relative;
 	left:40%;
+	width:50vw;
 }
 
 .carousel-inner > .item > img {
@@ -282,6 +308,10 @@ span.wpcf7-not-valid-tip {
 .carousel-indicators {
 	top:55%;
 	height:20px;
+
+.carousel-caption {
+	text-shadow:none;
+	color:#202020;
 }
 
 .carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
@@ -337,6 +367,7 @@ span.wpcf7-not-valid-tip {
 	background: #fff url("/images/BG-3.jpg") no-repeat center center fixed;
 	background-size: 100% 100%;
 	height:40vh;
+	height:50vh;
 	max-width:100%;
 }
 
@@ -916,6 +947,10 @@ span.wpcf7-not-valid-tip {
 	margin-left:5%;
 }
 
+.features-icon {
+	margin-left:16vw;
+}
+
 #infoform {
 	margin-left:-15%;
 	margin-right:0%;
@@ -929,6 +964,13 @@ span.wpcf7-not-valid-tip {
 	margin-top:-28%;
 	margin-left:73%;
 }
+
+
+#thecarousel, #thecarouseltwo {
+	top:25%;
+}
+
+
 
 
 .right-text {

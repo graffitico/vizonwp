@@ -13,7 +13,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
+<title><?php bloginfo('name'); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <!-- <link rel="stylesheet" href="<?php // echo get_site_url() ?>/css/pages.css" > -->
@@ -48,11 +48,11 @@
 					    EN <span class="caret"></span>
 				  	</button>
 				  	<ul class="dropdown-menu">
-					    <li><a href="http://web.vizury.com/website/ar/?v=ar" target="_blank">AR</a></li>
+					    <!-- <li><a href="http://web.vizury.com/website/ar/?v=ar" target="_blank">AR</a></li> -->
 					    <li><a href="http://web.vizury.com/website/ja/?v=ja" target="_blank">JP</a></li>
-					    <li><a href="http://web.vizury.com/website/ko/?v=ko" target="_blank">KO</a></li>
+					    <!-- <li><a href="http://web.vizury.com/website/ko/?v=ko" target="_blank">KO</a></li> -->
 					    <li><a href="http://web.vizury.com/website/cn/?v=cn" target="_blank">CN</a></li>
-					    <li><a href="http://web.vizury.com/website/pt/?v=pt" target="_blank">PG</a></li>
+					    <!-- <li><a href="http://web.vizury.com/website/pt/?v=pt" target="_blank">PG</a></li> -->
 				  	</ul>
 				</li>
 				<li>

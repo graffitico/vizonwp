@@ -1,13 +1,14 @@
 (function($){
-	var click = 0;
+
      $('.navigation-trigger').click(function(event) {
   
     var clicks = $(this).data('clicks');
-  if (clicks || click==0) {
+    // console.log("clicks" , clicks);
+  if (clicks ) {
      $('.mobilenavigation').fadeIn( "slow" );
      $('.burger').attr('src', '/images/burger-cross-1.svg');
      
-  } else {
+  }else {
      $('.mobilenavigation').fadeOut( "slow" );
      $('.burger').attr('src', '/images/burger.svg');
      $(this).css({
@@ -17,8 +18,15 @@
      
   }
   $(this).data("clicks", !clicks);
-  ++click;
+  ++clicks;
 });
+
+
+$("#navigation li a").click(function(){
+  // console.log("ban");
+$('.navigation-trigger').data('clicks' , true);
+});
+
 
 $('.mobilenavigation li a').mouseup(function(){
 	$(".mobilenavigation").css("display", "none");
@@ -39,6 +47,14 @@ $('.mobilenavigation li a').mouseup(function(){
     }
 });
 
+  $("#looking_for").on('change',function() {
+    var cval = $(this).val();
+    if(cval == 'Jobs' || cval == 'Something Else'){
+      $("#traffic_container").hide();
+    }else{
+      $("#traffic_container").show();
+    }
+  });
 
 
 

@@ -126,7 +126,10 @@ if( 'quote' != get_post_format() ) {
 
  while( $r->have_posts() ) : $r->the_post(); ?>
 
-  <?php if ( has_post_thumbnail() ) {
+  <?php
+
+$img_url = ""; 
+   if ( has_post_thumbnail() ) {
 
     $full_path  = get_attached_file( get_post_thumbnail_id(get_the_ID())  , 'full' );
 
@@ -135,7 +138,7 @@ if( 'quote' != get_post_format() ) {
  } ?>
               <div class="col-sm-4 blog-entry-tile">
                 <div class="ih-item square colored effect4" style="background-color: #626262;" >
-                    <div class="img"><a href="<?php the_permalink(); ?>" target="_blank"><img  src="<?php if(isset($img_url)){ echo  "/wp-content". $img_url[1]; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
+                    <div class="img"><a href="<?php the_permalink(); ?>" target="_blank"><img  src="<?php if($img_url != ""){ echo  "/wp-content". $img_url[1]; }else{ echo  '/images/logo_v.svg' ; }?>"></a></div>
 
                 </div>
                 <a href="<?php the_permalink(); ?>" target="_blank">
